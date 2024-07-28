@@ -522,7 +522,7 @@
             </div>
             <div class="detail">
               <h4>Email Us</h4>
-              <p>sutirtha38@gmail.com</p>
+              <p>contact.viralme.ie@gmail.com</p>
             </div>
           </div>
           <ul class="social_links">
@@ -560,6 +560,45 @@
 <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/wow.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+
+<script>
+  // Make the WhatsApp button draggable
+  document.addEventListener('DOMContentLoaded', function() {
+      const whatsappButton = document.querySelector('.whatsapp_float');
+      let isDragging = false;
+
+      whatsappButton.addEventListener('mousedown', function(e) {
+          isDragging = true;
+          const offsetX = e.clientX - whatsappButton.getBoundingClientRect().left;
+          const offsetY = e.clientY - whatsappButton.getBoundingClientRect().top;
+
+          function mouseMoveHandler(e) {
+              if (isDragging) {
+                  whatsappButton.style.left = `${e.clientX - offsetX}px`;
+                  whatsappButton.style.top = `${e.clientY - offsetY}px`;
+              }
+          }
+
+          function mouseUpHandler() {
+              isDragging = false;
+              document.removeEventListener('mousemove', mouseMoveHandler);
+              document.removeEventListener('mouseup', mouseUpHandler);
+          }
+
+          document.addEventListener('mousemove', mouseMoveHandler);
+          document.addEventListener('mouseup', mouseUpHandler);
+      });
+  });
+</script>
+
+
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/353894376007" class="whatsapp_float" target="_blank">
+  <img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+</a>
+
+
 
 </body>
 </html>
