@@ -2553,7 +2553,7 @@ display:none;
 /* WhatsApp Floating Button */
 .whatsapp_float {
     position: fixed;
-    bottom: 40px;
+    bottom: 110px; /* Adjust the position to avoid overlap with Facebook button */
     right: 40px;
     width: 60px; /* Adjust size as needed */
     height: 60px; /* Adjust size as needed */
@@ -2562,6 +2562,24 @@ display:none;
 }
 
 .whatsapp_float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #999;
+}
+
+/* Facebook Floating Button */
+.facebook_float {
+    position: fixed;
+    bottom: 40px; /* Adjust the position to avoid overlap with WhatsApp button */
+    right: 40px;
+    width: 60px; /* Adjust size as needed */
+    height: 60px; /* Adjust size as needed */
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.facebook_float img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
