@@ -2554,15 +2554,13 @@ display:none;
 }
 
 
-
-
 /* WhatsApp Floating Button */
 .whatsapp_float {
     position: fixed;
-    bottom: 110px; /* Adjust the position to avoid overlap with Facebook button */
+    bottom: 180px; /* Adjusted to be above Instagram */
     right: 40px;
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
+    width: 60px;
+    height: 60px;
     z-index: 1000;
     cursor: pointer;
 }
@@ -2574,13 +2572,31 @@ display:none;
     box-shadow: 2px 2px 3px #999;
 }
 
+/* Instagram Floating Button */
+.instagram_float {
+    position: fixed;
+    bottom: 110px; /* Positioned between WhatsApp and Facebook */
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.instagram_float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #999;
+}
+
 /* Facebook Floating Button */
 .facebook_float {
     position: fixed;
-    bottom: 40px; /* Adjust the position to avoid overlap with WhatsApp button */
+    bottom: 40px; /* Remains at the bottom */
     right: 40px;
-    width: 60px; /* Adjust size as needed */
-    height: 60px; /* Adjust size as needed */
+    width: 60px;
+    height: 60px;
     z-index: 1000;
     cursor: pointer;
 }
@@ -2591,7 +2607,3 @@ display:none;
     border-radius: 50%;
     box-shadow: 2px 2px 3px #999;
 }
-
-
-
-/*  */
