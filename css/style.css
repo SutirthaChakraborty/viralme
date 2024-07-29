@@ -611,7 +611,9 @@ div#main-nav {
 
 #service {
     padding: 60px 0px;
-    background: url('../img/slide4.jpg') top left no-repeat !important;
+    background: url('../img/slide4.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 #service h2{
   color: #fff;
@@ -2503,6 +2505,10 @@ display:none;
 
 /* Media query for devices with max width of 768px (tablets and smaller devices) */
 @media (max-width: 768px) {
+    #service {
+        background-attachment: scroll;
+        background-position: center center;
+    }
     #service h2 {
         font-size: 1.5em;
     }
@@ -2585,3 +2591,7 @@ display:none;
     border-radius: 50%;
     box-shadow: 2px 2px 3px #999;
 }
+
+
+
+/*  */
