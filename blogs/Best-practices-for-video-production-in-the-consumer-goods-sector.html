@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Practices for Video Production in Consumer Goods</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff5722;
+        }
+        h2 {
+            color: #3f51b5;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .topic:hover {
+            transform: scale(1.02);
+        }
+        .info {
+            display: none;
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-left: 5px solid #00838f;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #303f9f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Best Practices for Video Production in Consumer Goods</h1>
+
+        <div class="topic" onclick="toggleInfo('script')">
+            <h2>1. Develop a Clear Script</h2>
+            <div id="script" class="info">
+                A well-structured script is crucial. Ensure it aligns with your brand message and resonates with your target audience. 
+                Keep it concise and engaging.
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleInfo('storyboard')">
+            <h2>2. Create a Storyboard</h2>
+            <div id="storyboard" class="info">
+                A storyboard maps out each scene visually. This helps you plan camera angles, transitions, and overall composition.
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleInfo('quality')">
+            <h2>3. Invest in Quality Production</h2>
+            <div id="quality" class="info">
+                Use quality cameras, lighting, and sound equipment. Good production values enhance brand perception and engagement.
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleInfo('branding')">
+            <h2>4. Incorporate Strong Branding</h2>
+            <div id="branding" class="info">
+                Ensure your brand is prominently featured. Use brand colors, logos, and appropriate messaging to reinforce identity.
+            </div>
+        </div>
+
+        <div class="topic" onclick="toggleInfo('distribution')">
+            <h2>5. Optimize for Distribution</h2>
+            <div id="distribution" class="info">
+                Tailor your videos for different platforms (YouTube, Instagram, etc.). Consider video length and format specific to each channel.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var infoDiv = document.getElementById(id);
+            if (infoDiv.style.display === 'block') {
+                infoDiv.style.display = 'none';
+            } else {
+                infoDiv.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

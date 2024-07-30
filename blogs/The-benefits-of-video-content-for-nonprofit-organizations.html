@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits of Video Content for Nonprofit Organizations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .benefit {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            background: #f9f9f9;
+            transition: background 0.3s;
+        }
+        .benefit:hover {
+            background: #e3f2e9;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #moreInfo {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benefits of Video Content for Nonprofit Organizations</h1>
+    </header>
+    <div class="container">
+        <div class="benefit">
+            <h2>1. Increased Engagement</h2>
+            <p>Video content captures attention and encourages viewers to engage more than text or images.</p>
+            <button onclick="toggleInfo('engagementInfo')">Learn More</button>
+            <div id="engagementInfo" class="moreInfo">
+                <p>Videos tend to get more shares on social media and keep viewers on your website longer.</p>
+            </div>
+        </div>
+        <div class="benefit">
+            <h2>2. Storytelling Power</h2>
+            <p>Video allows nonprofits to tell their stories effectively, making emotional connections with viewers.</p>
+            <button onclick="toggleInfo('storytellingInfo')">Learn More</button>
+            <div id="storytellingInfo" class="moreInfo">
+                <p>Visual storytelling can illustrate a nonprofit's mission, achievements, and impacts in a compelling format.</p>
+            </div>
+        </div>
+        <div class="benefit">
+            <h2>3. Accessibility and Reach</h2>
+            <p>Videos can be easily shared and accessed on multiple platforms, expanding audience reach.</p>
+            <button onclick="toggleInfo('accessibilityInfo')">Learn More</button>
+            <div id="accessibilityInfo" class="moreInfo">
+                <p>Mobile users are more likely to engage with video content, ensuring your message gets across to a wider audience.</p>
+            </div>
+        </div>
+        <div class="benefit">
+            <h2>4. Fundraising Opportunities</h2>
+            <p>Video can enhance fundraising campaigns, making donors feel more connected to the cause.</p>
+            <button onclick="toggleInfo('fundraisingInfo')">Learn More</button>
+            <div id="fundraisingInfo" class="moreInfo">
+                <p>Presenting a heartfelt video can inspire donations, showcasing the difference contributions can make.</p>
+            </div>
+        </div>
+        <div class="benefit">
+            <h2>5. Enhanced SEO</h2>
+            <p>Incorporating video into your website can improve your search engine ranking.</p>
+            <button onclick="toggleInfo('seoInfo')">Learn More</button>
+            <div id="seoInfo" class="moreInfo">
+                <p>Videos keep visitors on your page longer, which is a positive signal to search engines.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            const infoDiv = document.getElementById(infoId);
+            infoDiv.style.display = infoDiv.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

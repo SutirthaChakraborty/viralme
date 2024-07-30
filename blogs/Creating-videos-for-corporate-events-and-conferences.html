@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Videos for Corporate Events and Conferences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007acc;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .video-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .video-container video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .faq {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #e9ecef;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .faq:hover {
+            background-color: #d3d3d3;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #eeeeee;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Creating Videos for Corporate Events and Conferences</h1>
+</header>
+
+<section>
+    <h2>Importance of Video in Corporate Events</h2>
+    <p>Video content enhances engagement, captures key moments, and offers a visually appealing way to communicate information.</p>
+    <button class="button" onclick="toggleVideo()">Watch Overview Video</button>
+    <div class="video-container" id="videoContainer">
+        <video controls>
+            <source src="corporate_event_overview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section>
+    <h2>Key Steps in Creating Event Videos</h2>
+    <ol>
+        <li>Planning: Define your objectives and target audience.</li>
+        <li>Pre-Event Preparation: Arrange interviews, gather materials, and set the agenda.</li>
+        <li>Filming: Capture footage of sessions, speakers, and networking.</li>
+        <li>Editing: Enhance video with graphics, music, and titles.</li>
+        <li>Distribution: Share via social media, email, or corporate websites.</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq" onclick="toggleAnswer(this)">
+        <strong>What types of videos are effective for corporate events?</strong>
+        <div class="answer">Promotional videos, highlight reels, speaker interviews, and post-event recaps.</div>
+    </div>
+    <div class="faq" onclick="toggleAnswer(this)">
+        <strong>How long should event videos be?</strong>
+        <div class="answer">Aim for 3-5 minutes for highlight reels, and up to 20 minutes for detailed sessions.</div>
+    </div>
+    <div class="faq" onclick="toggleAnswer(this)">
+        <strong>What tools can I use for editing?</strong>
+        <div class="answer">Popular tools include Adobe Premiere Pro, Final Cut Pro, and iMovie.</div>
+    </div>
+</section>
+
+<script>
+    function toggleVideo() {
+        const videoContainer = document.getElementById('videoContainer');
+        if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+            videoContainer.style.display = "block";
+        } else {
+            videoContainer.style.display = "none";
+        }
+    }
+
+    function toggleAnswer(element) {
+        const answer = element.querySelector('.answer');
+        if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+        } else {
+            answer.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

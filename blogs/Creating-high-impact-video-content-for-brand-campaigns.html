@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating High-Impact Video Content for Brand Campaigns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .section {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .play-button:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Creating High-Impact Video Content for Brand Campaigns</h1>
+
+    <div class="section">
+        <h2>Why Video Content Matters</h2>
+        <p>Video content is essential for brand campaigns as it engages audiences effectively, conveys emotions, and enhances storytelling. It can be used for tutorials, product demos, and brand storytelling, making it a versatile tool for marketers.</p>
+    </div>
+
+    <div class="section">
+        <h2>Key Elements of High-Impact Video</h2>
+        <ul>
+            <li><strong>Compelling Storytelling:</strong> Craft a narrative that resonates with your audience.</li>
+            <li><strong>High-Quality Production:</strong> Invest in good visuals and sound to enhance viewer experience.</li>
+            <li><strong>Clear Call to Action:</strong> Guide viewers on what to do next after watching the video.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Interactive Video Example</h2>
+        <div class="video-container">
+            <video id="brandVideo" src="your-video-url.mp4" preload="metadata"></video>
+            <button class="play-button" onclick="togglePlay()">▶</button>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('brandVideo');
+        const playButton = document.querySelector('.play-button');
+
+        function togglePlay() {
+            if (video.paused) {
+                video.play();
+                playButton.style.display = 'none';
+            } else {
+                video.pause();
+                playButton.style.display = 'block';
+            }
+        }
+
+        video.addEventListener('ended', () => {
+            playButton.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role of Video in Enhancing Website UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .video-container {
+            width: 80%;
+            margin: 20px 0;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            max-height: 400px;
+            border-radius: 10px;
+        }
+        .info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .info:hover {
+            transform: scale(1.02);
+        }
+        .toggle-info {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-info:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Role of Video in Enhancing Website User Interface</h1>
+        <div class="video-container">
+            <video controls>
+                <source src="your-video-url.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button class="toggle-info">Learn More</button>
+        <div class="info hidden">
+            <h2>Why Video?</h2>
+            <p>Videos play a crucial role in enhancing user experiences by providing dynamic content. They can catch attention, explain complex topics, and convey emotions more effectively than text and static images.</p>
+            <h2>Benefits of Using Video:</h2>
+            <ul>
+                <li><strong>Improved Engagement:</strong> Videos keep users on the page longer.</li>
+                <li><strong>Better Retention:</strong> Information in video format is easier to remember.</li>
+                <li><strong>Enhanced Communication:</strong> Videos can demonstrate products or services more clearly.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const toggleButton = document.querySelector('.toggle-info');
+        const infoSection = document.querySelector('.info');
+
+        toggleButton.addEventListener('click', () => {
+            infoSection.classList.toggle('hidden');
+            toggleButton.textContent = infoSection.classList.contains('hidden') ? 'Learn More' : 'Show Less';
+        });
+    </script>
+</body>
+</html>

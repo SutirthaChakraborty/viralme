@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhance Digital Customer Experience with Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .video-section {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhance Digital Customer Experience with Video</h1>
+    </header>
+    <div class="container">
+        <h2>Why Use Video?</h2>
+        <ul>
+            <li>Increases engagement and retention.</li>
+            <li>Conveys information clearly and concisely.</li>
+            <li>Builds trust and emotional connection.</li>
+        </ul>
+        <button id="showVideoBtn">Show Video Example</button>
+        
+        <div class="video-section" id="videoSection">
+            <h3>Customer Testimonial Video</h3>
+            <iframe src="https://www.youtube.com/embed/sBzxGwoQZyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <h2>Types of Videos to Enhance Experience</h2>
+        <ol>
+            <li>Product Demonstrations</li>
+            <li>Tutorials and How-To Guides</li>
+            <li>Customer Testimonials</li>
+            <li>Live Streams and Webinars</li>
+            <li>Behind-the-Scenes Content</li>
+        </ol>
+
+        <h2>Best Practices</h2>
+        <ul>
+            <li>Keep videos short and engaging.</li>
+            <li>Optimize for mobile devices.</li>
+            <li>Use captions for accessibility.</li>
+            <li>Analyze viewer engagement and iterate.</li>
+        </ul>
+    </div>
+    
+    <script>
+        document.getElementById("showVideoBtn").onclick = function() {
+            var videoSection = document.getElementById("videoSection");
+            if(videoSection.style.display === "none" || videoSection.style.display === "") {
+                videoSection.style.display = "block";
+                this.innerHTML = "Hide Video Example";
+            } else {
+                videoSection.style.display = "none";
+                this.innerHTML = "Show Video Example";
+            }
+        };
+    </script>
+</body>
+</html>

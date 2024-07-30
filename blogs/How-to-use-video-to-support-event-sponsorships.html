@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Video to Support Event Sponsorships</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .interactive {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .box {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .video {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Using Video to Support Event Sponsorships</h1>
+</header>
+
+<div class="content">
+    <h2>Why Use Video?</h2>
+    <p>Video is a powerful tool for engaging audiences and enhancing event sponsorship experiences. It can showcase brand visibility, increase engagement, and provide insights into the event.</p>
+</div>
+
+<div class="interactive">
+    <div class="box" onclick="toggleVideo('benefit1')">
+        <h3>Showcase Sponsor Products</h3>
+        <p>Use video to highlight products or services offered by sponsors.</p>
+        <button>Learn More</button>
+        <div class="video" id="benefit1">
+            <video width="240" controls>
+                <source src="showcase_sponsor.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="box" onclick="toggleVideo('benefit2')">
+        <h3>Enhance Audience Engagement</h3>
+        <p>Interactive videos can captivate the audience and keep them engaged.</p>
+        <button>Learn More</button>
+        <div class="video" id="benefit2">
+            <video width="240" controls>
+                <source src="audience_engagement.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="box" onclick="toggleVideo('benefit3')">
+        <h3>Highlight Key Moments</h3>
+        <p>Capture highlights and key moments from the event for future promotion.</p>
+        <button>Learn More</button>
+        <div class="video" id="benefit3">
+            <video width="240" controls>
+                <source src="key_moments.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="box" onclick="toggleVideo('benefit4')">
+        <h3>Conduct Interviews</h3>
+        <p>Feature interviews with sponsors and industry leaders for deeper insights.</p>
+        <button>Learn More</button>
+        <div class="video" id="benefit4">
+            <video width="240" controls>
+                <source src="sponsor_interviews.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleVideo(id) {
+        var video = document.getElementById(id);
+        if (video.style.display === "none" || video.style.display === "") {
+            video.style.display = "block";
+        } else {
+            video.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

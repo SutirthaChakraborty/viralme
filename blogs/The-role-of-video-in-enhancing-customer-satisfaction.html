@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role of Video in Enhancing Customer Satisfaction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .video-section {
+            margin: 20px 0;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .stat {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .stat:hover {
+            background-color: #2980b9;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>The Role of Video in Enhancing Customer Satisfaction</h1>
+    <p>Video content plays a crucial role in engaging customers and enhancing their overall satisfaction. With its ability to convey messages effectively, video has become a preferred medium for businesses to connect with their audience.</p>
+    
+    <div class="video-section">
+        <h2>Watch Our Video</h2>
+        <video width="100%" controls>
+            <source src="https://www.example.com/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="stats">
+        <div class="stat" onclick="showDetail('videoUsage')">
+            <h3>Video Usage</h3>
+            <p>72% of customers prefer video for learning about products.</p>
+        </div>
+        <div class="stat" onclick="showDetail('customerEngagement')">
+            <h3>Customer Engagement</h3>
+            <p>Videos can increase customer engagement rates by up to 80%.</p>
+        </div>
+        <div class="stat" onclick="showDetail('conversionRates')">
+            <h3>Conversion Rates</h3>
+            <p>Including video on landing pages can increase conversions by 86%.</p>
+        </div>
+    </div>
+
+    <div id="detail" style="display:none; margin-top:20px;">
+        <h2>Details</h2>
+        <p id="detailsContent"></p>
+        <button onclick="hideDetail()">Close</button>
+    </div>
+</div>
+
+<script>
+    function showDetail(stat) {
+        let content = '';
+        switch(stat) {
+            case 'videoUsage':
+                content = 'Video usage has skyrocketed in recent years, proving to be a powerful tool for customer education. It allows customers to grasp product details quickly and effectively.';
+                break;
+            case 'customerEngagement':
+                content = 'Engaging customers with video content can dramatically improve their experience. Interactive videos can take engagement to the next level by directly involving viewers.';
+                break;
+            case 'conversionRates':
+                content = 'Numerous studies indicate that videos boost conversion rates. When potential customers see a product in action, they are more likely to make a purchase.';
+                break;
+        }
+        document.getElementById('detailsContent').innerText = content;
+        document.getElementById('detail').style.display = 'block';
+    }
+
+    function hideDetail() {
+        document.getElementById('detail').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits of Video Content for Education and Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        h2 {
+            color: #d35400;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        .btn {
+            background-color: #4caf50; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        #video-container {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Benefits of Video Content for Educational and Training Purposes</h1>
+    
+    <div class="card">
+        <h2>1. Enhanced Engagement</h2>
+        <p>Video content captures attention better than text alone, keeping learners engaged and interested in the subject matter.</p>
+        <button class="btn" onclick="toggleVideo('video1')">Watch Video</button>
+        <div id="video1" class="video-container">
+            <video width="100%" controls>
+                <source src="engagement-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>2. Improved Retention</h2>
+        <p>Studies show that people remember information better when it’s presented in a video format, resulting in improved retention and recall.</p>
+        <button class="btn" onclick="toggleVideo('video2')">Watch Video</button>
+        <div id="video2" class="video-container">
+            <video width="100%" controls>
+                <source src="retention-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>3. Accessibility</h2>
+        <p>Video content can be accessed anytime and anywhere, providing flexibility for learners to study at their own pace.</p>
+        <button class="btn" onclick="toggleVideo('video3')">Watch Video</button>
+        <div id="video3" class="video-container">
+            <video width="100%" controls>
+                <source src="accessibility-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>4. Diverse Learning Styles</h2>
+        <p>Videos cater to various learning styles, allowing visual learners, auditory learners, and kinesthetic learners to grasp complex concepts more effectively.</p>
+        <button class="btn" onclick="toggleVideo('video4')">Watch Video</button>
+        <div id="video4" class="video-container">
+            <video width="100%" controls>
+                <source src="diverse-learning-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function toggleVideo(videoId) {
+            var videoContainer = document.getElementById(videoId);
+            if (videoContainer.style.display === "none") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>

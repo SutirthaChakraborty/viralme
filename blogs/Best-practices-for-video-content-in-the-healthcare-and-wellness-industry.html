@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Practices for Video Content in Healthcare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #009688;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .practice {
+            border: 2px solid #009688;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .practice:hover {
+            background-color: #e0f2f1;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #004d40;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Practices for Video Content in Healthcare and Wellness</h1>
+    </header>
+    <div class="container">
+        <div class="practice" onclick="toggleDetails('practice1')">
+            <h3>1. Focus on Clear Messaging</h3>
+            <div id="practice1" class="details">
+                <p>Ensure your videos convey information clearly and concisely. Avoid jargon and aim for language that is relatable to a diverse audience.</p>
+            </div>
+        </div>
+        
+        <div class="practice" onclick="toggleDetails('practice2')">
+            <h3>2. Utilize Quality Visuals</h3>
+            <div id="practice2" class="details">
+                <p>Invest in high-quality visuals and editing. Professionally produced videos are more likely to engage viewers and establish credibility.</p>
+            </div>
+        </div>
+
+        <div class="practice" onclick="toggleDetails('practice3')">
+            <h3>3. Address Patient Concerns</h3>
+            <div id="practice3" class="details">
+                <p>Focus on common patient questions and concerns. Providing valuable information can establish trust and authority.</p>
+            </div>
+        </div>
+
+        <div class="practice" onclick="toggleDetails('practice4')">
+            <h3>4. Optimize for Digital Platforms</h3>
+            <div id="practice4" class="details">
+                <p>Ensure your videos are optimized for different platforms, including social media, mobile devices, and websites, considering aspect ratios and resolutions.</p>
+            </div>
+        </div>
+
+        <div class="practice" onclick="toggleDetails('practice5')">
+            <h3>5. Include Calls-to-Action</h3>
+            <div id="practice5" class="details">
+                <p>Incorporate clear calls-to-action that guide viewers on what to do next, whether it’s visiting a website, scheduling an appointment, or sharing the video.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(practiceId) {
+            const details = document.getElementById(practiceId);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

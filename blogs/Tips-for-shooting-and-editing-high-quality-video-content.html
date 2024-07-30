@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Shooting and Editing Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to right, #f0f4f8, #a8e0f8);
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .tips-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .tip {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .tip:hover {
+            background: #e0f7fa;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .button {
+            padding: 10px 15px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tips for Shooting and Editing High-Quality Video Content</h1>
+    <div class="tips-container">
+        <div class="tip" onclick="toggleContent('tip1')">
+            <strong>1. Use a Tripod</strong>
+            <div id="tip1" class="content">A tripod stabilizes your shots, preventing shaky footage. Invest in a sturdy tripod for professional results.</div>
+        </div>
+        <div class="tip" onclick="toggleContent('tip2')">
+            <strong>2. Natural Lighting</strong>
+            <div id="tip2" class="content">Utilize natural light for a soft, flattering effect. Shoot during golden hour for the best results.</div>
+        </div>
+        <div class="tip" onclick="toggleContent('tip3')">
+            <strong>3. Clear Audio</strong>
+            <div id="tip3" class="content">Use an external microphone to capture clear sound. Poor audio can ruin an otherwise great video.</div>
+        </div>
+        <div class="tip" onclick="toggleContent('tip4')">
+            <strong>4. Plan Your Shots</strong>
+            <div id="tip4" class="content">Create a storyboard or shot list. Having a clear plan improves efficiency and ensures you get necessary footage.</div>
+        </div>
+        <div class="tip" onclick="toggleContent('tip5')">
+            <strong>5. Edit for Engagement</strong>
+            <div id="tip5" class="content">Use cuts, transitions, and text overlays creatively. Keeping your video dynamic engages viewers better.</div>
+        </div>
+        <div class="tip" onclick="toggleContent('tip6')">
+            <strong>6. Color Correction</strong>
+            <div id="tip6" class="content">Enhance your video’s colors during editing. Proper color correction can elevate video quality significantly.</div>
+        </div>
+    </div>
+    <button class="button" onclick="alert('Happy filming!')">Get More Tips!</button>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'none' || content.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional-Quality Videos on a Budget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .tip {
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 10px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .tip:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #moreTips {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tips for Producing Professional-Quality Videos on a Budget</h1>
+    
+    <div class="tip">
+        <strong>1. Use Natural Lighting:</strong> Take advantage of natural light by filming during the day. Position your subject near windows for soft, flattering light.
+    </div>
+    
+    <div class="tip">
+        <strong>2. Invest in a Good Microphone:</strong> Audio quality is crucial. Use an external microphone for clearer sound instead of relying on your camera's built-in mic.
+    </div>
+    
+    <div class="tip">
+        <strong>3. Plan Your Shots:</strong> Create a storyboard or shot list to organize your filming process and ensure you capture all necessary footage.
+    </div>
+    
+    <button id="showMore">Show More Tips</button>
+    
+    <div id="moreTips">
+        <div class="tip">
+            <strong>4. Use Free Editing Software:</strong> Programs like DaVinci Resolve or HitFilm Express offer professional features without the cost.
+        </div>
+        
+        <div class="tip">
+            <strong>5. Keep Your Background Clean:</strong> A clutter-free background helps keep the focus on your subject and enhances the professional look of your video.
+        </div>
+        
+        <div class="tip">
+            <strong>6. Experiment with Angles:</strong> Try different camera angles to add interest to your shots. Use tripods or stabilizers for steady footage.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showMore').onclick = function() {
+            var moreTips = document.getElementById('moreTips');
+            if (moreTips.style.display === "none") {
+                moreTips.style.display = "block";
+                this.innerText = "Show Less Tips";
+            } else {
+                moreTips.style.display = "none";
+                this.innerText = "Show More Tips";
+            }
+        };
+    </script>
+
+</body>
+</html>

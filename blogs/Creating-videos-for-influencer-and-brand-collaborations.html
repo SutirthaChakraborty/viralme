@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Videos for Influencer and Brand Collaborations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4caf50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .step {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid #4caf50;
+            background-color: #e8f5e9;
+            transition: background-color 0.3s;
+        }
+        .step:hover {
+            background-color: #c8e6c9;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+        }
+        button:hover {
+            background-color: #388e3c;
+        }
+        .faq {
+            background-color: #ffe0b2;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            display: none;
+        }
+        .faq.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Creating Videos for Influencer and Brand Collaborations</h1>
+    <div class="container">
+
+        <div class="step" onclick="toggleFAQ('faq1')">
+            <h2>1. Understanding Your Audience</h2>
+            <p>Identify the demographics and preferences of your target audience.</p>
+            <div id="faq1" class="faq">
+                <p>Researching your audience helps tailor content that appeals directly to them.</p>
+            </div>
+        </div>
+
+        <div class="step" onclick="toggleFAQ('faq2')">
+            <h2>2. Planning Collaboration Goals</h2>
+            <p>Set clear objectives for your collaboration with the brand.</p>
+            <div id="faq2" class="faq">
+                <p>Defining goals like reach, engagement, and conversion rates is crucial for success.</p>
+            </div>
+        </div>
+
+        <div class="step" onclick="toggleFAQ('faq3')">
+            <h2>3. Creative Concept Development</h2>
+            <p>Brainstorm innovative ideas that align with both the influencer and the brand.</p>
+            <div id="faq3" class="faq">
+                <p>A unique concept captures attention and resonates with the audience effectively.</p>
+            </div>
+        </div>
+
+        <div class="step" onclick="toggleFAQ('faq4')">
+            <h2>4. Production and Editing</h2>
+            <p>Utilize high-quality equipment and editing tools to create engaging content.</p>
+            <div id="faq4" class="faq">
+                <p>Professional production enhances credibility and viewer engagement.</p>
+            </div>
+        </div>
+
+        <div class="step" onclick="toggleFAQ('faq5')">
+            <h2>5. Promotion and Distribution</h2>
+            <p>Share the video on relevant platforms to reach your target audience.</p>
+            <div id="faq5" class="faq">
+                <p>Utilizing social media, email marketing, and influencer networks can amplify reach.</p>
+            </div>
+        </div>
+
+        <button onclick="alert('Let’s Get Started!')">Start Creating Your Video Now!</button>
+    </div>
+
+    <script>
+        function toggleFAQ(faqId) {
+            const faq = document.getElementById(faqId);
+            faq.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

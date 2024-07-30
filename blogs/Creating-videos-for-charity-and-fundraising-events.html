@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Videos for Charity and Fundraising Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        .interactive-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Creating Videos for Charity and Fundraising Events</h1>
+</header>
+
+<section>
+    <h2>Why Use Videos?</h2>
+    <p>Videos are a powerful tool for engaging audiences and motivating donations. They can showcase your cause, share stories, and highlight the impact of contributions.</p>
+</section>
+
+<section>
+    <h2>How to Create Engaging Videos</h2>
+    <p>Follow these steps to create compelling videos for your charity events:</p>
+    <ul>
+        <li>**Plan Your Content**: Define your message and target audience.</li>
+        <li>**Use High-Quality Footage**: Ensure your video is visually appealing.</li>
+        <li>**Include a Call to Action**: Encourage viewers to donate or participate.</li>
+        <li>**Share on Social Media**: Utilize platforms like Facebook and Instagram for wider reach.</li>
+    </ul>
+</section>
+
+<section class="video-container">
+    <video controls>
+        <source src="charity_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>Interactive Fundraising Ideas</h2>
+    <p>Engage your audience with these interactive ideas:</p>
+    <button class="interactive-button" onclick="showIdea()">Click for a Fundraising Idea!</button>
+    <p id="fundraising-idea" style="display:none; margin-top: 10px;"></p>
+</section>
+
+<script>
+    const ideas = [
+        "Host a virtual talent show where participants can showcase their skills and ask for donations.",
+        "Create a themed costume race and encourage participants to fundraise through sponsorships.",
+        "Organize a live streaming event with guest speakers to discuss your cause and encourage donations."
+    ];
+
+    function showIdea() {
+        const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
+        document.getElementById('fundraising-idea').innerText = randomIdea;
+        document.getElementById('fundraising-idea').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

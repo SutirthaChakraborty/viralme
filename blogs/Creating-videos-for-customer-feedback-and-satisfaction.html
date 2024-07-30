@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Videos for Customer Feedback and Satisfaction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #008cba;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #008cba;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #008cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f7f;
+        }
+        .feedback-section {
+            display: none;
+            margin-top: 20px;
+            background: #e7f0f7;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .feedback-video {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Creating Videos for Customer Feedback and Satisfaction</h1>
+</header>
+
+<div class="container">
+    <h2>Why Video Feedback?</h2>
+    <p>Engaging with customers through video helps gather authentic feedback and enhances customer satisfaction.</p>
+    <ul>
+        <li>Real-Time Insights</li>
+        <li>Personalized Responses</li>
+        <li>Improves Customer Engagement</li>
+    </ul>
+
+    <button id="toggleFeedback">Watch Feedback Video</button>
+
+    <div class="feedback-section" id="feedbackSection">
+        <h3>Customer Feedback Video</h3>
+        <video class="feedback-video" width="100%" controls>
+            <source src="customer-feedback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Customer feedback is essential for improving products and services!</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("toggleFeedback").addEventListener("click", function() {
+        var feedbackSection = document.getElementById("feedbackSection");
+        if (feedbackSection.style.display === "none" || feedbackSection.style.display === "") {
+            feedbackSection.style.display = "block";
+        } else {
+            feedbackSection.style.display = "none";
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Video for Market Segmentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        .segment {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .segment:hover {
+            transform: scale(1.05);
+        }
+        #details {
+            display: none;
+            margin-top: 20px;
+            background-color: #bdc3c7;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .video-container {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>How to Use Video for Effective Market Segmentation</h1>
+    <p>Market segmentation is essential for delivering targeted marketing messages. Utilizing video can enhance this process significantly. Below are some key segments and how to leverage video effectively in each.</p>
+
+    <div class="segment" onclick="showDetails('demographics')">
+        <h2>1. Demographic Segmentation</h2>
+        <p>Targeting based on age, gender, income, and education level.</p>
+    </div>
+    <div class="segment" onclick="showDetails('psychographics')">
+        <h2>2. Psychographic Segmentation</h2>
+        <p>Understanding personality traits, values, and interests.</p>
+    </div>
+    <div class="segment" onclick="showDetails('behavioral')">
+        <h2>3. Behavioral Segmentation</h2>
+        <p>Focusing on purchasing behavior and brand loyalty.</p>
+    </div>
+    <div class="segment" onclick="showDetails('geographic')">
+        <h2>4. Geographic Segmentation</h2>
+        <p>Considering location-based preferences and regional trends.</p>
+    </div>
+
+    <div id="details"></div>
+
+    <div class="video-container" id="video-container">
+        <h2>Explainer Video on Market Segmentation</h2>
+        <iframe src="https://www.youtube.com/embed/your-video-id" height="315" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function showDetails(segment) {
+            const details = {
+                demographics: "Demographic segmentation allows you to tailor your video messages based on specific age groups or genders, making your marketing more relatable. For example, creating videos that resonate with Millennials might involve using modern humor and trendy visuals.",
+                psychographics: "Psychographic segmentation dives into consumer personalities and values. Videos focusing on lifestyle choices, hobbies, or social causes can create stronger emotional connections.",
+                behavioral: "Behavioral segmentation focuses on customer behavior patterns. Videos showcasing testimonials from loyal customers or demonstrating product usage can foster trust and encourage purchases.",
+                geographic: "Geographic segmentation means adapting your video content to different regional preferences. Local dialects, culture references, or climate-specific products can all be highlighted in your video campaigns."
+            };
+
+            const detailsDiv = document.getElementById('details');
+            detailsDiv.innerHTML = `<h2>${segment.charAt(0).toUpperCase() + segment.slice(1)} Segment Details</h2><p>${details[segment]}</p>`;
+            detailsDiv.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

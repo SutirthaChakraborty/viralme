@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video in Cross-Promotional Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .tip {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .tip:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #videoContainer {
+            display: none;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tips for Using Video in Cross-Promotional Marketing Campaigns</h1>
+
+    <div class="tip">
+        <h2>1. Create Engaging Content</h2>
+        <p>Focus on storytelling to capture your audience's attention. Use visuals and narratives that resonate with both brands.</p>
+        <button onclick="toggleVideo('video1')">Watch Example</button>
+    </div>
+
+    <div class="tip">
+        <h2>2. Leverage Social Media</h2>
+        <p>Share your videos across multiple platforms to maximize reach. Tailor content for each platform's audience.</p>
+        <button onclick="toggleVideo('video2')">Watch Example</button>
+    </div>
+
+    <div class="tip">
+        <h2>3. Collaborate with Influencers</h2>
+        <p>Partner with influencers to enhance credibility and reach. Their endorsement can significantly boost engagement.</p>
+        <button onclick="toggleVideo('video3')">Watch Example</button>
+    </div>
+
+    <div id="videoContainer">
+        <video id="video1" controls>
+            <source src="example1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video2" controls>
+            <source src="example2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video id="video3" controls>
+            <source src="example3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function toggleVideo(videoId) {
+            const videos = document.querySelectorAll('video');
+            const videoContainer = document.getElementById('videoContainer');
+            videos.forEach(video => {
+                video.style.display = 'none';
+            });
+            const selectedVideo = document.getElementById(videoId);
+            selectedVideo.style.display = 'block';
+            videoContainer.style.display = 'block';
+            selectedVideo.play();
+        }
+    </script>
+
+</body>
+</html>

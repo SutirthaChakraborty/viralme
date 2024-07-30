@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Benefits of Video Content for B2B Relationships</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .button {
+            background: #28a745;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #218838;
+        }
+        .fact {
+            display: none;
+            padding: 10px;
+            background-color: #e2e3e5;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Benefits of Video Content for B2B Relationships</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Enhanced Engagement</h2>
+            <p>Video content captures attention and increases user engagement significantly.</p>
+            <button class="button" onclick="toggleFact('fact1')">Learn More</button>
+            <div id="fact1" class="fact">Businesses using video on landing pages can increase conversions by up to 80%!</div>
+        </div>
+        <div class="card">
+            <h2>Building Trust</h2>
+            <p>Video helps humanize your brand, fostering trust and credibility in B2B relationships.</p>
+            <button class="button" onclick="toggleFact('fact2')">Learn More</button>
+            <div id="fact2" class="fact">93% of businesses believe video helps build customer trust.</div>
+        </div>
+        <div class="card">
+            <h2>Effective Communication</h2>
+            <p>Video can simplify complex ideas, making it easier for your audience to grasp concepts.</p>
+            <button class="button" onclick="toggleFact('fact3')">Learn More</button>
+            <div id="fact3" class="fact">People retain 95% of information presented in a video compared to 10% when reading text.</div>
+        </div>
+        <div class="card">
+            <h2>Increased Reach</h2>
+            <p>Video content is highly shareable, allowing your message to reach a broader audience.</p>
+            <button class="button" onclick="toggleFact('fact4')">Learn More</button>
+            <div id="fact4" class="fact">Video posts on social media get 1200% more shares than text and images combined.</div>
+        </div>
+    </div>
+    <script>
+        function toggleFact(factId) {
+            var fact = document.getElementById(factId);
+            if (fact.style.display === "none" || fact.style.display === "") {
+                fact.style.display = "block";
+            } else {
+                fact.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

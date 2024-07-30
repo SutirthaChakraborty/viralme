@@ -1,0 +1,47 @@
+#### HTML Code for Using Video in Corporate Training Programs
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Training Video</title>
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe, .video-container object, .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Corporate Training Video</h1>
+  <div class="video-container">
+    <iframe src="https://www.example.com/corporate-training-video" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <script>
+    // Interactive JavaScript for video playback controls
+    const video = document.querySelector('iframe');
+    video.addEventListener('mouseover', function() {
+      video.play();
+    });
+    video.addEventListener('mouseout', function() {
+      video.pause();
+    });
+  </script>
+</body>
+</html>
+
+
+#### Explanation of the HTML Code
+To incorporate video into corporate training programs, the provided HTML code demonstrates the use of an iframe to embed a video from a specified source. The code also includes interactive CSS and JavaScript to enhance the user experience. The CSS styles the video container to maintain a responsive aspect ratio, while the JavaScript adds interactive functionality for video playback controls. This combination of HTML, CSS, and JavaScript allows for the seamless integration of video content into corporate training materials.

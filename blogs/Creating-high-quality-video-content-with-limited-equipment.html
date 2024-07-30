@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating High-Quality Video Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .video-container {
+            margin: 20px auto;
+            max-width: 600px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .tips {
+            background-color: #fff;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .tip {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e7f9e7;
+            border-left: 5px solid #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Creating High-Quality Video Content with Limited Equipment</h1>
+    <div class="video-container">
+        <video controls preload="auto">
+            <source src="https://media.geeksforgeeks.org/wp-content/uploads/20190616234019/Canvas.move_.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="tips">
+        <h2>Tips for High-Quality Video Production</h2>
+        <div class="tip">**1. Use Natural Lighting:** Natural light can enhance video quality significantly.</div>
+        <div class="tip">**2. Stabilize Your Shots:** Use a tripod or a stable surface to avoid shaky footage.</div>
+        <div class="tip">**3. Clear Audio:** Invest in a good microphone or record in a quiet environment.</div>
+        <div class="tip">**4. Plan Your Shots:** Storyboarding can help in organizing your video flow.</div>
+        <div class="tip">**5. Edit Thoughtfully:** Use editing software to cut unnecessary parts and enhance your video.</div>
+    </div>
+
+    <button onclick="showMoreTips()">Show More Tips</button>
+    <div id="moreTips" style="display:none;">
+        <div class="tip">**6. Use Simple Backgrounds:** Keep backgrounds uncluttered to focus on the subject.</div>
+        <div class="tip">**7. Frame Your Shots:** Follow the rule of thirds for better composition.</div>
+        <div class="tip">**8. Experiment with Angles:** Different angles can add interest to your video.</div>
+    </div>
+
+    <script>
+        function showMoreTips() {
+            var moreTips = document.getElementById("moreTips");
+            if (moreTips.style.display === "none") {
+                moreTips.style.display = "block";
+            } else {
+                moreTips.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
