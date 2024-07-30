@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Short Film Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Short Film Production</h1>
+    <div class="info">
+        <p>Welcome to our interactive guide on short film production. Here, you will learn about the key aspects of creating a successful short film.</p>
+        <p>Topics covered include scriptwriting, casting, filming techniques, editing, and distribution.</p>
+        <p>Feel free to explore each topic by clicking on the tabs above. Happy filmmaking!</p>
+    </div>
+    <script>
+        // Interactive tabs functionality
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+
+        tabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.style.display = 'none');
+
+                tab.classList.add('active');
+                contents[index].style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

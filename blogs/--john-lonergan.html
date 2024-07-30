@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>John Lonergan</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-image: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.image {
+			width: 200px;
+			height: 250px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		.info {
+			font-size: 18px;
+			color: #666;
+			margin-top: 20px;
+		}
+		.interactive {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		.interactive:hover {
+			background-color: #e0e0e0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>John Lonergan</h1>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/John_Lonergan.jpg/220px-John_Lonergan.jpg" class="image" alt="John Lonergan">
+		<p class="info">John Lonergan (1821-1890) was an Irish Jesuit priest and theologian. He was a prominent figure in the development of modern Catholic theology.</p>
+		<button class="interactive" onclick="alert('John Lonergan was born in 1821 in Ireland.')">Click to learn more about John Lonergan's birthplace</button>
+		<button class="interactive" onclick="alert('John Lonergan was a Jesuit priest and theologian who made significant contributions to Catholic theology.')">Click to learn more about John Lonergan's work</button>
+	</div>
+	<script>
+		function switchBackground() {
+			var interactive = document.querySelector('.interactive');
+			interactive.style.background = 'linear-gradient(to bottom, #f0f0f0, #e0e0e0)';
+		}
+	</script>
+</body>
+</html>

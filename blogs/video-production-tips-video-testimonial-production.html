@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Testimonial Production Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #006699;
+            color: white;
+            border-radius: 10px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        .tip {
+            background-color: #e6f7ff;
+            border: 1px solid #b3e0ff;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .tip:hover {
+            transform: scale(1.02);
+        }
+
+        .tip h3 {
+            margin: 0 0 10px;
+        }
+
+        button {
+            background-color: #006699;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #004d66;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ff4d4d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Video Testimonial Production Tips</h1>
+        <p>Enhance your video testimonials with these essential tips!</p>
+    </header>
+
+    <section>
+        <div class="tip">
+            <h3>1. Prepare Your Questions</h3>
+            <p>Formulate open-ended questions that prompt detailed responses from your interviewee.</p>
+        </div>
+
+        <div class="tip">
+            <h3>2. Choose the Right Location</h3>
+            <p>Select a quiet, well-lit location that reflects your brand's personality.</p>
+        </div>
+
+        <div class="tip">
+            <h3>3. Use Quality Equipment</h3>
+            <p>Invest in a good camera and microphone to ensure high video and audio quality.</p>
+        </div>
+
+        <div class="tip">
+            <h3>4. Engage with the Interviewee</h3>
+            <p>Build rapport to make your subject feel comfortable and natural on camera.</p>
+        </div>
+
+        <div class="tip">
+            <h3>5. Keep It Short and Sweet</h3>
+            <p>Aim for concise testimonials to maintain viewer interest; ideally under 2 minutes.</p>
+        </div>
+
+        <button onclick="showSummary()">Show Summary</button>
+        <div id="result"></div>
+    </section>
+
+    <script>
+        function showSummary() {
+            const summary = `
+                <h3>Testimonial Production Summary</h3>
+                <p>To create an impactful video testimonial, focus on preparation, quality, and engagement. 
+                A single, powerful message often resonates more than a long-winded story.</p>
+                <p>Utilize these tips to enhance your video production and effectively convey your brand's value.</p>
+            `;
+            document.getElementById('result').innerHTML = summary;
+        }
+    </script>
+</body>
+
+</html>

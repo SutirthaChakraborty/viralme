@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Star Spotlight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            border: 2px solid #2c3e50;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sports Star Spotlight</h1>
+    <div class="container">
+        <h2 id="name">Select a Sports Star</h2>
+        <button onclick="showInfo('lebron')">LeBron James</button>
+        <button onclick="showInfo('serena')">Serena Williams</button>
+        <button onclick="showInfo('messi')">Lionel Messi</button>
+
+        <div id="lebron" class="info">
+            <h3>LeBron James</h3>
+            <p>LeBron James is a professional basketball player from the USA. He has won four NBA championships and is a four-time NBA MVP.</p>
+        </div>
+        <div id="serena" class="info">
+            <h3>Serena Williams</h3>
+            <p>Serena Williams is a professional tennis player widely regarded as one of the greatest athletes. She has won 23 Grand Slam singles titles.</p>
+        </div>
+        <div id="messi" class="info">
+            <h3>Lionel Messi</h3>
+            <p>Lionel Messi is an Argentine professional footballer. He is known for his incredible dribbling skills and has won multiple Ballon d'Or awards.</p>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(star) {
+            var stars = ['lebron', 'serena', 'messi'];
+            stars.forEach(function(s) {
+                document.getElementById(s).style.display = 'none';
+            });
+            document.getElementById(star).style.display = 'block';
+            document.getElementById("name").innerText = star.charAt(0).toUpperCase() + star.slice(1) + " Selected";
+        }
+    </script>
+
+</body>
+</html>

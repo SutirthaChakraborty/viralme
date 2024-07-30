@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internship</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.header {
+			background-color: #337ab7;
+			color: #fff;
+			padding: 20px;
+			border-bottom: 1px solid #337ab7;
+		}
+		
+		.content {
+			padding: 20px;
+		}
+		
+		.button {
+			background-color: #337ab7;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Internship</h1>
+			<p> Gain valuable work experience and skills!</p>
+		</div>
+		<div class="content">
+			<p>What is an internship?</p>
+			<p>A short-term work experience program that allows students and recent graduates to work in a specific industry or company, gaining hands-on experience and skills.</p>
+			<button class="button" onclick="showContent()">Learn More</button>
+			<div id="info" style="display: none;">
+				<p>Types of internships:</p>
+				<ul>
+					<li>Summer internship</li>
+					<li>Part-time internship</li>
+					<li>Full-time internship</li>
+				</ul>
+				<p>Benefits of internships:</p>
+				<ul>
+					<li>Gain practical work experience</li>
+					<li>Develop new skills and knowledge</li>
+					<li>Build professional network</li>
+					<li>Enhance resume and job prospects</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		function showContent() {
+			var info = document.getElementById("info");
+			if (info.style.display === "none") {
+				info.style.display = "block";
+			} else {
+				info.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
+
+<!--JavaScript Code for Interactive Button -->
+<script>
+  var button = document.querySelector('.button');
+  button.addEventListener('click', function() {
+    var info = document.getElementById('info');
+    if (info.style.display === 'none') {
+      info.style.display = 'block';
+    } else {
+      info.style.display = 'none';
+    }
+  });
+</script>

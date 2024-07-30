@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff5733;
+        }
+        button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c70000;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Video Production Company!</h1>
+        <p>Your story deserves to be told through captivating visuals.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>Corporate Videos</li>
+                <li>Promotional Content</li>
+                <li>Event Coverage</li>
+                <li>Documentaries</li>
+                <li>Animation & Motion Graphics</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <p>We bring creativity, expertise, and state-of-the-art technology to your project. Our dedicated team ensures that every frame tells a story.</p>
+            <button id="toggleTestimonials">See What Clients Say</button>
+            <div id="testimonials" class="hidden">
+                <p>"They transformed our vision into a stunning reality!" - Client A</p>
+                <p>"Professional, creative, and a pleasure to work with." - Client B</p>
+                <p>"Highly recommend for any video needs!" - Client C</p>
+            </div>
+        </section>
+        <section>
+            <h2>Getting Started</h2>
+            <p>Contact us today to discuss your project and receive a free consultation!</p>
+            <button onclick="location.href='mailto:info@videoproductioncompany.com';">Contact Us</button>
+        </section>
+    </main>
+    <script>
+        document.getElementById('toggleTestimonials').addEventListener('click', function() {
+            var testimonials = document.getElementById('testimonials');
+            testimonials.classList.toggle('hidden');
+            this.textContent = testimonials.classList.contains('hidden') ? 'See What Clients Say' : 'Hide Testimonials';
+        });
+    </script>
+</body>
+</html>

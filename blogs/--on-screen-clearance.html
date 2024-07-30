@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>On Screen Clearance</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.clearfix {
+			clear: both;
+			display: table;
+			content: "";
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.clear {
+			clear: both;
+			display: block;
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>On Screen Clearance</h1>
+		<p>On screen clearance refers to the process of removing any unwanted or unnecessary elements from the main content area of a web page, in order to improve the user experience and make the content more readable.</p>
+		<p>There are several techniques used to achieve on screen clearance, including:</p>
+		<ul>
+			<li>Using the <code>&lt;div&gt;</code> element with the <code>clear</code> attribute set to <code>both</code>, as shown below:</li>
+			<div class="clearfix"></div>
+			<li>Using the <code>&lt;div&gt;</code> element with the <code>clear</code> attribute set to <code>left</code> or <code>right</code>, as shown below:</li>
+			<div class="clear" style="clear: left;"></div>
+			<li>Using the <code>&lt;br&gt;</code> element, as shown below:</li>
+			<br>
+			<li>Using CSS to apply a margin or padding to the elements, as shown below:</li>
+			<p style="margin-bottom: 20px;">This paragraph has a margin-bottom of 20px.</p>
+		</ul>
+		<p>It is important to note that on screen clearance is not the same as clearing a floating element. Clearing a floating element is used to remove any unwanted whitespace that may occur when using the <code>float</code> property.</p>
+		<script>
+			// Get the container element
+			const container = document.querySelector('.container');
+			
+			// Add an event listener to the container element
+			container.addEventListener('click', () => {
+				// Get the clear element
+				const clear = document.querySelector('.clear');
+				
+				// Toggle the visibility of the clear element
+				clear.style.visibility = clear.style.visibility === 'hidden' ? 'visible' : 'hidden';
+			});
+		</script>
+	</div>
+</body>
+</html>

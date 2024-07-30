@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Corporate Event & Educational Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .topic {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .topic:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore Interactive Topics</h1>
+    <div class="topic" onclick="alert('Corporate Events')">Corporate Events</div>
+    <div class="topic" onclick="alert('Educational Videos')">Educational Videos</div>
+    <div class="topic" onclick="alert('Animated Promotions')">Animated Promotions</div>
+    <div class="topic" onclick="alert('Marketing Strategies')">Marketing Strategies</div>
+    <div class="topic" onclick="alert('Travel & Tourism')">Travel & Tourism</div>
+    <div class="topic" onclick="alert('Video Production')">Video Production</div>
+    <script>
+        document.querySelectorAll('.topic').forEach(item => {
+            item.addEventListener('click', () => {
+                item.style.backgroundColor = '#ffcc00';
+            });
+        });
+    </script>
+</body>
+</html>

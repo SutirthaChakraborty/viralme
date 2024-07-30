@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eco Conscious Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #008000;
+        }
+        p {
+            color: #333;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore Eco Conscious Policies</h1>
+    <p>Learn about sustainable practices and eco-friendly initiatives.</p>
+    <button class="button" onclick="showInfo()">Click Here for More Info</button>
+    
+    <div id="info" style="display: none;">
+        <p>Implementing eco-conscious policies can help reduce carbon footprint and promote environmental sustainability.</p>
+        <p>By adopting renewable energy sources and reducing waste, businesses can contribute to a greener future.</p>
+    </div>
+    
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

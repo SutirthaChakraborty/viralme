@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dublin City University</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dublin City University</h1>
+</header>
+
+<div class="container">
+    <h2>About DCU</h2>
+    <p>Dublin City University (DCU) is a research-intensive university located in Dublin, Ireland. Established in 1975, it has grown rapidly and is known for its innovative programs and strong emphasis on research and technology.</p>
+    
+    <h2>Key Features</h2>
+    <ul>
+        <li>**Diverse Programs:** Offers undergraduate and postgraduate programs across various fields.</li>
+        <li>**Research Excellence:** Renowned for its cutting-edge research and partnerships with industries.</li>
+        <li>**Campus Life:** Vibrant campus culture with numerous clubs and societies.</li>
+        <li>**Global Perspective:** Welcomes students from around the world, fostering a multicultural environment.</li>
+    </ul>
+    
+    <button class="button" onclick="toggleInfo()">Learn More</button>
+    
+    <div class="info" id="moreInfo">
+        <h3>DCU's Vision</h3>
+        <p>DCU aims to transform lives and societies through education, research, and innovation. The university focuses on creating impact-driven graduates who are ready to meet global challenges.</p>
+        
+        <h3>Campus Facilities</h3>
+        <p>The campus features state-of-the-art facilities including modern lecture halls, laboratories, and recreational areas, ensuring a well-rounded student experience.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById("moreInfo");
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

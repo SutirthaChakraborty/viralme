@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apple Pro Mac</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Apple Pro Mac</h1>
+    <div class="info">
+        <p>This interactive page provides information about the Apple Pro Mac.</p>
+        <p>Click the button below to explore more!</p>
+        <button onclick="showDetails()">Show Details</button>
+        <div id="details" style="display: none;">
+            <p>The Apple Pro Mac is a powerful and versatile computer designed for professionals.</p>
+            <p>It offers high performance, stunning display, and innovative features.</p>
+            <p>Experience the future of computing with Apple Pro Mac!</p>
+        </div>
+    </div>
+    <script>
+        function showDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

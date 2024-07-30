@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Non-Audio Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            border: 1px solid #4CAF50;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #fff;
+        }
+        .toggle-button {
+            padding: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        .content {
+            margin-top: 15px;
+        }
+        .color-box {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 2px solid #4CAF50;
+            transition: transform 0.3s;
+        }
+        .color-box:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploring Non-Audio Video</h1>
+    </header>
+    <section>
+        <h2>What is Non-Audio Video?</h2>
+        <p>Non-audio video refers to video content that lacks an audible sound track. This can include silent films, animations without dialogue, and video presentations with just visual elements.</p>
+        <button class="toggle-button" onclick="toggleContent('definition')">Show Definition</button>
+        <div id="definition" class="hidden content">
+            <p>A non-audio video focuses solely on visual storytelling, where the narrative is conveyed through images, gestures, and text, without the use of sound.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Types of Non-Audio Video</h2>
+        <div id="types" class="content">
+            <div class="color-box" style="background-color: #ff9999;" onclick="alert('Silent Films')"></div>
+            <div class="color-box" style="background-color: #99ccff;" onclick="alert('Animated Videos')"></div>
+            <div class="color-box" style="background-color: #99ff99;" onclick="alert('Visual Presentations')"></div>
+            <div class="color-box" style="background-color: #ffcc99;" onclick="alert('Visual Art')"></div>
+        </div>
+    </section>
+    <section>
+        <h2>Why Use Non-Audio Video?</h2>
+        <p>Non-audio video can engage audiences in unique ways. It can transcend language barriers, provide visual focus, and create emotional resonance through imagery alone.</p>
+        <button class="toggle-button" onclick="toggleContent('benefits')">Show Benefits</button>
+        <div id="benefits" class="hidden content">
+            <ul>
+                <li>Universal understanding without language</li>
+                <li>Focus on visual appeal and aesthetics</li>
+                <li>Enhanced creativity and expression</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

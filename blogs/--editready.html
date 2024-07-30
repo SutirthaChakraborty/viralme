@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditReady: Your Ultimate Editing Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .info {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        #quiz {
+            display: none;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .quiz-option {
+            margin: 5px 0;
+        }
+        .result {
+            display: none;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EditReady: Your Ultimate Editing Tool</h1>
+</header>
+
+<div class="info">
+    <h2>What is EditReady?</h2>
+    <p>EditReady is a powerful editing tool designed to enhance your editing experience. Whether you're editing videos, images, or written content, EditReady offers seamless features to elevate your work.</p>
+    <button class="button" onclick="toggleQuiz()">Test Your Knowledge!</button>
+</div>
+
+<div id="quiz">
+    <h2>Quiz: How Well Do You Know EditReady?</h2>
+    <div class="quiz-option">
+        <label><input type="radio" name="question1" value="A"> A) It is only for video editing.</label><br>
+        <label><input type="radio" name="question1" value="B"> B) It supports various types of media editing.</label><br>
+        <label><input type="radio" name="question1" value="C"> C) It is a social media app.</label><br>
+    </div>
+    <button class="button" onclick="checkAnswer()">Submit Answer</button>
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    function toggleQuiz() {
+        const quiz = document.getElementById('quiz');
+        quiz.style.display = (quiz.style.display === 'none' || quiz.style.display === '') ? 'block' : 'none';
+    }
+
+    function checkAnswer() {
+        const options = document.getElementsByName('question1');
+        let selectedOption;
+        for (const option of options) {
+            if (option.checked) {
+                selectedOption = option.value;
+                break;
+            }
+        }
+
+        const result = document.getElementById('result');
+        if (selectedOption === 'B') {
+            result.textContent = "Correct! EditReady supports various types of media editing.";
+            result.style.color = 'green';
+        } else {
+            result.textContent = "Incorrect! Try again.";
+            result.style.color = 'red';
+        }
+        result.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

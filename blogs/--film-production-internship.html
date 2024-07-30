@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Production Internship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .accordion {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .active, .accordion:hover {
+            background-color: #0056b3;
+        }
+        .panel {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #e7f1ff;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Film Production Internships</h1>
+    </header>
+    <div class="container">
+        <h2>What is a Film Production Internship?</h2>
+        <p>A film production internship is a hands-on opportunity for aspiring filmmakers to gain real-world experience in the film industry. These internships typically cover various aspects, including production, editing, sound design, and post-production.</p>
+
+        <button class="accordion">Benefits of a Film Production Internship</button>
+        <div class="panel">
+            <ul>
+                <li>Practical experience in film-making.</li>
+                <li>Networking opportunities with industry professionals.</li>
+                <li>Understanding of production workflows.</li>
+                <li>Skill development in various technical areas.</li>
+                <li>Possible job opportunities post-internship.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">How to Apply for an Internship</button>
+        <div class="panel">
+            <ol>
+                <li>Research various film production companies.</li>
+                <li>Prepare a tailored resume and cover letter.</li>
+                <li>Gather your portfolio showcasing relevant work.</li>
+                <li>Attend networking events or workshops.</li>
+                <li>Follow up on your applications.</li>
+            </ol>
+        </div>
+
+        <button class="accordion">Essential Skills for Film Interns</button>
+        <div class="panel">
+            <ul>
+                <li>Communication and teamwork skills.</li>
+                <li>Technical skills related to cameras and editing software.</li>
+                <li>Problem-solving abilities.</li>
+                <li>Attention to detail.</li>
+                <li>Time management skills.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var accordions = document.getElementsByClassName("accordion");
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

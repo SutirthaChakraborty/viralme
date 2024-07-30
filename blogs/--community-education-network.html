@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Education Network</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f8ff, #e6e6fa);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #3b5998;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .card {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Community Education Network</h1>
+    <p>Connecting Communities Through Learning</p>
+</header>
+
+<div class="container">
+    <div class="card" onclick="showInfo('what')">
+        <h2>What is Community Education?</h2>
+        <p>Explore the definition and importance of community education.</p>
+        <button class="button">Learn More</button>
+    </div>
+    <div class="card" onclick="showInfo('benefits')">
+        <h2>Benefits of Community Education</h2>
+        <p>Discover how it enhances skills, awareness, and community relations.</p>
+        <button class="button">Learn More</button>
+    </div>
+    <div class="card" onclick="showInfo('programs')">
+        <h2>Available Programs</h2>
+        <p>Check out various programs offered in your locality.</p>
+        <button class="button">Learn More</button>
+    </div>
+</div>
+
+<div id="info" style="display:none; margin-top: 20px;">
+    <h2 id="infoTitle"></h2>
+    <p id="infoContent"></p>
+</div>
+
+<div class="footer">
+    <p>&copy; 2023 Community Education Network. All rights reserved.</p>
+</div>
+
+<script>
+    function showInfo(topic) {
+        document.getElementById('info').style.display = 'block';
+        const title = document.getElementById('infoTitle');
+        const content = document.getElementById('infoContent');
+
+        if (topic === 'what') {
+            title.innerText = 'What is Community Education?';
+            content.innerText = 'Community education refers to structured processes that help individuals develop skills and knowledge for personal and community improvement. It focuses on the needs of the community and is accessible to all.',
+        } else if (topic === 'benefits') {
+            title.innerText = 'Benefits of Community Education';
+            content.innerText = 'Community education promotes self-improvement, boosts local economies, encourages active civic participation, and creates a more informed population.',
+        } else if (topic === 'programs') {
+            title.innerText = 'Available Programs';
+            content.innerText = 'Available programs may include adult education classes, vocational training, health and wellness workshops, family literacy programs, and much more tailored to community needs.',
+        }
+    }
+</script>
+
+</body>
+</html>

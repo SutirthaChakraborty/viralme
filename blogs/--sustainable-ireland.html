@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #e6f7ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        .container {
+            margin: auto;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .button {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .info {
+            display: none;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 5px solid #007BFF;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sustainable Ireland</h1>
+        <h2>What is Sustainability?</h2>
+        <p>Sustainability refers to meeting our own needs without compromising the ability of future generations to meet their own needs. It encompasses environmental, economic, and social dimensions.</p>
+        
+        <button class="button" onclick="toggleInfo('energy')">Renewable Energy</button>
+        <div id="energy" class="info">
+            <p>Ireland is investing heavily in renewable energy sources like wind, solar, and biomass. The aim is to reduce carbon emissions and dependence on fossil fuels.</p>
+        </div>
+        
+        <button class="button" onclick="toggleInfo('agriculture')">Sustainable Agriculture</button>
+        <div id="agriculture" class="info">
+            <p>Irish farmers are adopting sustainable farming practices such as crop rotation, organic farming, and agroforestry to enhance biodiversity and soil health.</p>
+        </div>
+        
+        <button class="button" onclick="toggleInfo('biodiversity')">Biodiversity Conservation</button>
+        <div id="biodiversity" class="info">
+            <p>Efforts in Ireland include protecting natural habitats, restoring ecosystems, and conserving native species to maintain biodiversity.</p>
+        </div>
+
+        <button class="button" onclick="toggleInfo('transport')">Sustainable Transport</button>
+        <div id="transport" class="info">
+            <p>Promoting public transport, cycling, and electric vehicles are key strategies in reducing emissions and building a sustainable transport system.</p>
+        </div>
+
+        <h2>Join the Movement</h2>
+        <p>Everyone can contribute to a more sustainable Ireland. Small actions like reducing waste, conserving water, and supporting local businesses can make a significant impact.</p>
+    </div>
+    <footer>
+        <p>&copy; 2023 Sustainable Ireland Initiative</p>
+    </footer>
+    <script>
+        function toggleInfo(topic) {
+            const infoDiv = document.getElementById(topic);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+        
+        // Initialize all info sections to be hidden
+        document.querySelectorAll('.info').forEach(div => div.style.display = "none");
+    </script>
+</body>
+</html>

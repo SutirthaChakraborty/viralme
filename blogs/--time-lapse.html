@@ -1,0 +1,72 @@
+#### HTML Code for Interactive Time Lapse Information
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Time Lapse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+        }
+        #timeLapseImage {
+            width: 100%;
+            height: auto;
+            border: 2px solid #555;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #playButton, #pauseButton {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        #playButton {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #pauseButton {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Interactive Time Lapse</h1>
+        <img id="timeLapseImage" src="time-lapse-image.jpg" alt="Time Lapse Image">
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+    </div>
+
+    <script>
+        let playButton = document.getElementById('playButton');
+        let pauseButton = document.getElementById('pauseButton');
+        let timeLapseImage = document.getElementById('timeLapseImage');
+        
+        playButton.addEventListener('click', function() {
+            // JavaScript to start the time lapse animation
+            timeLapseImage.src = "time-lapse-animation.gif";
+        });
+        
+        pauseButton.addEventListener('click', function() {
+            // JavaScript to pause the time lapse animation
+            timeLapseImage.src = "time-lapse-image.jpg";
+        });
+    </script>
+</body>
+</html>

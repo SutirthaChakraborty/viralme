@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production for Realtors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section {
+            margin-bottom: 20px;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .info {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #0056b3;
+            border-radius: 5px;
+            background-color: #e9f7fe;
+        }
+
+        .toggle-button {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Video Production for Realtors</h1>
+
+        <div class="video-section">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="info" id="infoDiv">
+            <h2>Why Use Video?</h2>
+            <p>Video marketing has proven to be one of the most effective tools for real estate agents. It captures attention, provides a virtual tour, and engages potential buyers. The use of video can elevate your listings and create a personal brand image. Discover the advantages of video marketing below:</p>
+            <ul>
+                <li>Enhances visibility</li>
+                <li>Builds trust and connection</li>
+                <li>Improves SEO</li>
+                <li>Increases conversion rates</li>
+            </ul>
+        </div>
+        
+        <button class="toggle-button" id="toggleButton">Show More Benefits</button>
+
+        <div class="info" id="additionalInfo" style="display: none;">
+            <h2>Additional Benefits</h2>
+            <ul>
+                <li>Potential for viral marketing</li>
+                <li>Showcases property features effectively</li>
+                <li>Combination of storytelling and visuals</li>
+                <li>Cost-effective in the long term</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggleButton').onclick = function() {
+            var additionalInfo = document.getElementById('additionalInfo');
+            if (additionalInfo.style.display === 'none') {
+                additionalInfo.style.display = 'block';
+                this.innerText = 'Show Less Benefits';
+            } else {
+                additionalInfo.style.display = 'none';
+                this.innerText = 'Show More Benefits';
+            }
+        }
+    </script>
+
+</body>
+</html>

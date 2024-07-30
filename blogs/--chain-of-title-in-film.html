@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain of Title in Film</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6347;
+        }
+
+        h2 {
+            color: #4682b4;
+        }
+
+        .explanation {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #4682b4;
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+
+        .toggle-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #4682b4;
+            border-radius: 5px;
+            background-color: #e7f3fe;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Understanding Chain of Title in Film</h1>
+    <div class="explanation">
+        <h2>What is Chain of Title?</h2>
+        <p>The chain of title is a vital legal process that documents the ownership and rights of a film's intellectual
+            property. It outlines the rights transferred from one owner to another, ensuring clarity in ownership
+            for potential buyers, distributors, and other stakeholders.</p>
+        <button class="toggle-button" onclick="toggleContent('definition')">Learn More</button>
+        <div id="definition" class="toggle-content">
+            <p>The chain must include all agreements, licenses, and contracts regarding the film's script, music,
+                performers, and production elements. A clear chain of title protects against copyright infringement and
+                helps avoid legal disputes.</p>
+        </div>
+    </div>
+
+    <div class="explanation">
+        <h2>Importance of Chain of Title</h2>
+        <p>A clear chain of title is crucial for the following reasons:</p>
+        <ul>
+            <li>Establishes clear ownership.</li>
+            <li>Facilitates licensing deals and revenue generation.</li>
+            <li>Prevents copyright claims and legal issues.</li>
+        </ul>
+        <button class="toggle-button" onclick="toggleContent('importance')">Expand Details</button>
+        <div id="importance" class="toggle-content">
+            <p>Without a proper chain of title, filmmakers risk losing control over their work and facing potential
+                lawsuits from rightful owners. Proper documentation protects both the creators and the investors.</p>
+        </div>
+    </div>
+
+    <div class="explanation">
+        <h2>How to Establish Chain of Title</h2>
+        <p>Creating a comprehensive chain of title involves:</p>
+        <ol>
+            <li>Documenting all agreements, including writer, director, and producer contracts.</li>
+            <li>Gathering copyrights and registrations for all original content.</li>
+            <li>Keep thorough records of any transfers of rights.</li>
+        </ol>
+        <button class="toggle-button" onclick="toggleContent('establish')">Show Steps</button>
+        <div id="establish" class="toggle-content">
+            <p>Regularly review and update these documents to maintain a watertight chain of title as projects evolve.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tara McCarthy - Interactive Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        .interactive-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #4a90e2;
+            border-radius: 8px;
+            background-color: #e6f7ff;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #d1e7dd;
+            border: 1px solid #0f5132;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tara McCarthy</h1>
+    <p>Tara McCarthy is a prominent figure known for her contributions in various fields. Click the buttons below to learn more about her achievements and background.</p>
+
+    <div class="interactive-section">
+        <button onclick="toggleInfo('bio')">Toggle Biography</button>
+        <div id="bio" class="info">
+            <p>Tara McCarthy has made significant strides in her career, focusing on innovation and leadership. She is recognized for her work in technology and community development.</p>
+        </div>
+    </div>
+
+    <div class="interactive-section">
+        <button onclick="toggleInfo('achievements')">Toggle Achievements</button>
+        <div id="achievements" class="info">
+            <p>Throughout her career, Tara has received numerous awards, including the Innovator of the Year award and recognition for her community service initiatives.</p>
+        </div>
+    </div>
+
+    <div class="interactive-section">
+        <button onclick="toggleInfo('future')">Toggle Future Goals</button>
+        <div id="future" class="info">
+            <p>Tara aims to expand her influence in the tech industry and continue her advocacy for sustainable practices in business.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var infoDiv = document.getElementById(id);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

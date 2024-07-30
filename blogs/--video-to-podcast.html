@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to Podcast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4A90E2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .faq {
+            margin-top: 30px;
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .faq .question {
+            cursor: pointer;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .faq .answer {
+            display: none;
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Transform Your Video into a Podcast</h1>
+    <p>With the rise of audio consumption, converting your video content into a podcast is a smart move. Podcasts allow your audience to consume content on-the-go, making it more accessible and versatile.</p>
+
+    <h2>Benefits of Turning Video into Podcast</h2>
+    <ul>
+        <li>Increased Audience Reach</li>
+        <li>Flexible Content Consumption</li>
+        <li>Cost-Effective Marketing</li>
+        <li>Enhances Brand Engagement</li>
+    </ul>
+
+    <a href="#" class="btn">Start Your Journey</a>
+
+    <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="question">1. How do I convert my video to a podcast?</div>
+        <div class="answer">You can use audio extraction tools or software to extract the audio from your video files. Platforms like Audacity or online converters can help you with this process.</div>
+
+        <div class="question">2. Do I need to edit my audio?</div>
+        <div class="answer">Yes, editing your audio is recommended to ensure clarity and quality. You can remove pauses, background noise, and add music or effects.</div>
+
+        <div class="question">3. How do I distribute my podcast?</div>
+        <div class="answer">You can use podcast hosting platforms like Libsyn, Podbean, or Anchor to distribute your podcast to major directories like Apple Podcasts and Spotify.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.question').forEach((item) => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #info {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .accordion {
+            background-color: #eaeaea;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .active, .accordion:hover {
+            background-color: #d3d3d3;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Live Streaming Event</h1>
+        <p>Join us for a thrilling experience from anywhere in the world!</p>
+    </header>
+
+    <div id="info">
+        <h2>What is Live Streaming?</h2>
+        <p>Live streaming is the delivery of content in real-time over the internet. It allows users to view or participate in events as they happen.</p>
+        
+        <button class="accordion">Benefits of Live Streaming</button>
+        <div class="panel">
+            <ul>
+                <li>Accessibility: Watch from anywhere.</li>
+                <li>Engagement: Real-time interaction with audiences.</li>
+                <li>Cost-effective: Reach a large audience with fewer resources.</li>
+                <li>Flexibility: Host events at your convenience.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">How to Stream Live?</button>
+        <div class="panel">
+            <ol>
+                <li>Choose a platform (YouTube, Twitch, Zoom, etc.).</li>
+                <li>Setup necessary equipment (camera, microphone, etc.).</li>
+                <li>Promote your event prior to the stream.</li>
+                <li>Go live and interact with your audience!</li>
+            </ol>
+        </div>
+
+        <button class="accordion">Tips for Successful Streaming</button>
+        <div class="panel">
+            <ul>
+                <li>Ensure a stable internet connection.</li>
+                <li>Engage with the chat for viewer interaction.</li>
+                <li>Experiment with different formats to see what works best.</li>
+                <li>Follow up with your audience post-event.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Live Streaming Event. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+#### HTML Code for Creating Interactive Product Review Videos
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/rateyo@2.3.2/lib/cjs/rateyo.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/rateyo@2.3.2/lib/cjs/jquery.rateyo.min.css">
+  <title>Product Review and Rating</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Review Video</h1>
+    <div class="rating">
+      <span id="rating">0</span>/5
+    </div>
+    <div class="stars" id="stars">
+      <span class="star" data-value="1"></span>
+      <span class="star" data-value="2"></span>
+      <span class="star" data-value="3"></span>
+      <span class="star" data-value="4"></span>
+      <span class="star" data-value="5"></span>
+    </div>
+  </div>
+
+  <script>
+    $(function () {
+      $("#stars").rateYo({
+        rating: 0,
+        fullStar: true,
+        onSet: function (rating, rateYoInstance) {
+          $("#rating").text(rating);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+#### Explanation
+The provided HTML code creates an interactive product review video page. It includes a star rating widget that allows users to rate the product. The code uses the rateYo jQuery plugin to create the star-rating widget, enabling users to fill the background color of the un-rated part of an SVG-based star on mouse hover [[1]](https://www.geeksforgeeks.org/create-a-product-review-and-rating-system-using-html-css-and-javascript/).
+
+The HTML code includes the necessary CSS and JavaScript files to style and add functionality to the product review page. It also utilizes jQuery for interactivity and the rateYo plugin for the star rating feature.
+
+This code can be further customized and integrated with video content to create an engaging product review experience for users.
+
+Hope this helps! If you have further questions or need additional assistance, feel free to ask.

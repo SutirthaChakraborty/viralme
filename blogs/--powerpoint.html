@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive PowerPoint Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .slide {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Interactive PowerPoint Presentation</h1>
+
+<div class="slide active" id="slide1">
+    <h2>Introduction to PowerPoint</h2>
+    <p>PowerPoint is a powerful tool for creating presentations.</p>
+</div>
+
+<div class="slide" id="slide2">
+    <h2>Adding Slides</h2>
+    <p>Use the "New Slide" button to add new slides to your presentation.</p>
+</div>
+
+<div class="slide" id="slide3">
+    <h2>Adding Transitions</h2>
+    <p>Transitions can make your presentation more engaging. Try different transition effects!</p>
+</div>
+
+<button onclick="showSlide(1)">Slide 1</button>
+<button onclick="showSlide(2)">Slide 2</button>
+<button onclick="showSlide(3)">Slide 3</button>
+
+<script>
+    function showSlide(slideIndex) {
+        var slides = document.getElementsByClassName("slide");
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+        slides[slideIndex - 1].classList.add("active");
+    }
+</script>
+
+</body>
+</html>

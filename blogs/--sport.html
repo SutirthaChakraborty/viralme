@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Interactive Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2e8b57;
+        }
+        .sport {
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .sport:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Interactive Sports Guide</h1>
+
+<div class="sport" onclick="toggleInfo('soccerInfo')">
+    <h2>Soccer</h2>
+    <p>Click for more information.</p>
+    <div id="soccerInfo" class="hidden">
+        <p>Soccer, known as football outside North America, is played by two teams of eleven players with a round ball. It is the most popular sport in the world, celebrated for its rich history and dynamic gameplay.</p>
+    </div>
+</div>
+
+<div class="sport" onclick="toggleInfo('basketballInfo')">
+    <h2>Basketball</h2>
+    <p>Click for more information.</p>
+    <div id="basketballInfo" class="hidden">
+        <p>Basketball is a fast-paced sport played by two teams of five players. It involves shooting a ball through the opponent's hoop to score points. Originating in the United States, it is now played globally and has a massive following.</p>
+    </div>
+</div>
+
+<div class="sport" onclick="toggleInfo('tennisInfo')">
+    <h2>Tennis</h2>
+    <p>Click for more information.</p>
+    <div id="tennisInfo" class="hidden">
+        <p>Tennis is played between two players (singles) or two teams of two players (doubles), using rackets to hit a ball over a net. It combines athletic skill with strategic play and has prestigious tournaments like Wimbledon.</p>
+    </div>
+</div>
+
+<div class="sport" onclick="toggleInfo('cricketInfo')">
+    <h2>Cricket</h2>
+    <p>Click for more information.</p>
+    <div id="cricketInfo" class="hidden">
+        <p>Cricket is a bat-and-ball game played between two teams of eleven players on a circular field. It has roots in England and has gained immense popularity in countries like India and Australia.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(infoId) {
+        const infoDiv = document.getElementById(infoId);
+        infoDiv.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

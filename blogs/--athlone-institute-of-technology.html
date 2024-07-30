@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlone Institute of Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0088cc;
+        }
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .topic {
+            background: white;
+            border: 2px solid #00aaff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(30% - 40px);
+            transition: transform 0.3s;
+        }
+        .topic:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Athlone Institute of Technology</h1>
+        <p>Your gateway to higher education in Ireland!</p>
+    </header>
+    <div class="container">
+        <button class="button" onclick="toggleInfo()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <h2>About AIT</h2>
+            <p>Athlone Institute of Technology (AIT) is known for its innovative teaching methods and a wide variety of courses across various disciplines. It focuses on students' skills, employability, and the importance of research and innovation.</p>
+        </div>
+        <h2>Key Topics</h2>
+        <div class="topics">
+            <div class="topic">
+                <h3>Courses Offered</h3>
+                <p>AIT offers an array of undergraduate and postgraduate programs across disciplines such as engineering, business, IT, and arts.</p>
+            </div>
+            <div class="topic">
+                <h3>Campus Life</h3>
+                <p>The campus provides a vibrant student life with numerous clubs, organizations, and events fostering a sense of community.</p>
+            </div>
+            <div class="topic">
+                <h3>Research</h3>
+                <p>AIT is dedicated to research and innovation, with numerous partnerships with industry and academic institutions worldwide.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Athlone Institute of Technology</p>
+    </footer>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

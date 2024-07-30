@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Mission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #a5d6a7);
+            color: #2e7d32;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #66bb6a;
+            color: white;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #388e3c;
+        }
+        .toggle-button {
+            padding: 10px;
+            background-color: #43a047;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .toggle-button:hover {
+            background-color: #357a38;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #388e3c;
+            border-radius: 5px;
+            background-color: #c8e6c9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Green Mission: A Sustainable Future</h1>
+</header>
+
+<div class="content">
+    <h2>What is a Green Mission?</h2>
+    <p>A Green Mission is an initiative aimed at promoting sustainability, protecting the environment, and conserving natural resources. By adopting eco-friendly practices, we strive to reduce carbon footprints and eliminate waste.</p>
+    
+    <button class="toggle-button" onclick="toggleInfo('info1')">Learn More</button>
+    <div id="info1" class="info">
+        <p>Key objectives of a Green Mission include reducing pollution, promoting renewable energy, recycling, and engaging communities in environmental conservation efforts.</p>
+    </div>
+    
+    <h2>How You Can Contribute</h2>
+    <p>Everyone can play a part in achieving a sustainable future. Here are some ways you can contribute:</p>
+    <ul>
+        <li>Reduce, Reuse, Recycle</li>
+        <li>Conserve water and energy</li>
+        <li>Support renewable energy sources</li>
+        <li>Participate in tree planting initiatives</li>
+    </ul>
+    
+    <button class="toggle-button" onclick="toggleInfo('info2')">Discover Tips</button>
+    <div id="info2" class="info">
+        <p>Simple changes such as using reusable bags, biking instead of driving, and turning off lights when not in use can lead to significant positive impacts!</p>
+    </div>
+    
+    <h2>The Importance of Community Involvement</h2>
+    <p>Community involvement is crucial for the success of a Green Mission. Collaborating with local organizations enhances efforts to protect the environment.</p>
+    
+    <button class="toggle-button" onclick="toggleInfo('info3')">Community Initiatives</button>
+    <div id="info3" class="info">
+        <p>Join community clean-up days, participate in awareness programs, and engage with neighbors to create a green neighborhood.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(id) {
+        var info = document.getElementById(id);
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

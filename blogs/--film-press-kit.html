@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Press Kit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin-bottom: 20px;
+            border: 1px solid #ff4081;
+            border-radius: 5px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .topic:hover {
+            background-color: #ffe0f0;
+        }
+        button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e91e63;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ffe0f0;
+            border: 1px solid #ff4081;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Film Press Kit</h1>
+    <p>A Film Press Kit is an essential tool for promoting a film to the media.</p>
+
+    <div class="topic">
+        <h2>What is a Film Press Kit?</h2>
+        <button onclick="toggleDetails('details1')">Show Details</button>
+        <div id="details1" class="details">
+            <p>A Film Press Kit contains promotional materials including press releases, production notes, bios of the cast and crew, and high-resolution images. It helps journalists and media professionals gain a comprehensive understanding of the film.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Importance of a Press Kit</h2>
+        <button onclick="toggleDetails('details2')">Show Details</button>
+        <div id="details2" class="details">
+            <p>A well-crafted press kit is vital for generating media coverage. It ensures that journalists have easy access to necessary information, which can lead to more features, interviews, and articles about the film.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Components of a Press Kit</h2>
+        <button onclick="toggleDetails('details3')">Show Details</button>
+        <div id="details3" class="details">
+            <p>Key components include:</p>
+            <ul>
+                <li>Press Release</li>
+                <li>Director's Statement</li>
+                <li>Cast and Crew Bios</li>
+                <li>Production Stills</li>
+                <li>Film Synopsis</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

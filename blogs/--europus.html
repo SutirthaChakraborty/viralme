@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europus Interactive Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        .info-box {
+            border: 2px solid #4a90e2;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #e6f7ff;
+            transition: transform 0.3s;
+        }
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Europus</h1>
+    <p>Discover the fascinating world of Europus, a topic rich in history and culture.</p>
+
+    <div class="info-box" id="info1">
+        <h2>What is Europus?</h2>
+        <p>Europus is a term that can refer to various historical and cultural contexts. Click the button below to learn more!</p>
+        <button onclick="toggleInfo('info1')">Toggle More Info</button>
+        <div class="more-info" style="display:none;">
+            <p>Europus often relates to ancient civilizations and their contributions to modern society.</p>
+        </div>
+    </div>
+
+    <div class="info-box" id="info2">
+        <h2>Historical Significance</h2>
+        <p>Europus has played a crucial role in shaping the cultural landscape of Europe. Click the button below to explore!</p>
+        <button onclick="toggleInfo('info2')">Toggle More Info</button>
+        <div class="more-info" style="display:none;">
+            <p>From art to philosophy, Europus has influenced many aspects of European heritage.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(infoId) {
+            const moreInfo = document.querySelector(`#${infoId} .more-info`);
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

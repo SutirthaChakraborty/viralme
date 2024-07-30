@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Corporate Videos</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.video-container {
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin: 20px auto;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-container iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+		
+		.animation {
+			animation: animated 10s ease-in-out infinite;
+		}
+		
+		@keyframes animated {
+			0% {
+				transform: translateY(0);
+			}
+			50% {
+				transform: translateY(-20px);
+			}
+			100% {
+				transform: translateY(0);
+			}
+		}
+		
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.description {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Animated Corporate Videos</h1>
+		<p class="description">Animated corporate videos are a powerful tool for businesses to communicate their message, showcase their products or services, and engage their audience. In this interactive example, we'll explore the benefits and best practices of creating animated corporate videos.</p>
+		<div class="video-container">
+			<iframe src="https://player.vimeo.com/video/123456789" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<p class="description">Benefits of Animated Corporate Videos:</p>
+		<ul>
+			<li>Increased engagement: Animated videos can capture the audience's attention and keep them engaged.</li>
+			<li>Cost-effective: Animated videos can be more cost-effective than live-action videos.</li>
+			<li>Flexibility: Animated videos can be easily edited and updated.</li>
+			<li>Scalability: Animated videos can be easily shared and distributed.</li>
+		</ul>
+		<p class="description">Best Practices for Creating Animated Corporate Videos:</p>
+		<ul>
+			<li>Know your audience: Understand who your target audience is and what they want to see.</li>
+			<li>Keep it simple: Keep the animation simple and easy to follow.</li>
+			<li>Use storytelling: Use storytelling techniques to make the video more engaging.</li>
+			<li>Use humor: Use humor to make the video more entertaining.</li>
+		</ul>
+		<p class="description">Tools for Creating Animated Corporate Videos:</p>
+		<ul>
+			<li>Adobe Animate: A popular animation software used by professionals.</li>
+			<li>Blender: A free and open-source 3D creation software.</li>
+			<li>GoAnimate (now known as Vyond): A cloud-based animation software used by businesses.</li>
+		</ul>
+		<script>
+			const video = document.querySelector('.video-container iframe');
+			video.addEventListener('play', () => {
+				video.classList.add('animation');
+			});
+			video.addEventListener('pause', () => {
+				video.classList.remove('animation');
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+
+This code creates an interactive and colorful webpage that showcases the benefits and best practices of creating animated corporate videos. The webpage includes a video player that plays a sample animation, and interactive elements such as buttons and hover effects. The code uses HTML, CSS, and JavaScript to create the interactive elements and animation effects.

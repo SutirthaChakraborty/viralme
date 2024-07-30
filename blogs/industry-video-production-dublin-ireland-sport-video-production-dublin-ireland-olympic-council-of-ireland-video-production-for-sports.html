@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production in Dublin - Sports & Olympic Council</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .video {
+            display: none;
+            margin-top: 10px;
+        }
+        .interactive-section {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        #videoContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Video Production in Dublin, Ireland</h1>
+    <div class="section">
+        <h2>Industry Overview</h2>
+        <p>Dublin has become a prominent hub for video production, especially in the sports sector. With state-of-the-art facilities and professional expertise, the city caters to various aspects of video creation, from pre-production to post-production. The demand for high-quality sports video production is on the rise, driven by local and international sporting events.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Sport Video Production</h2>
+        <p>Sport video production in Dublin focuses on capturing live events, creating promotional videos, and documenting athlete journeys. Organizations and broadcasters look for innovative storytelling to engage audiences and highlight champions.</p>
+        <a href="#" class="btn" onclick="toggleVideo('sportVideo')">Watch a Sample Sport Video</a>
+        <div id="videoContainer" class="video" id="sportVideo">
+            <video controls>
+                <source src="https://www.example.com/sport-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Olympic Council of Ireland Video Production</h2>
+        <p>The Olympic Council of Ireland collaborates with video production companies to create impactful content. These videos promote Olympic values, athlete achievements, and inspire future generations to engage in sports.</p>
+        <a href="#" class="btn" onclick="toggleVideo('olympicVideo')">Watch a Sample Olympic Video</a>
+        <div id="videoContainer" class="video" id="olympicVideo">
+            <video controls>
+                <source src="https://www.example.com/olympic-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleVideo(videoId) {
+        const videoElement = document.getElementById(videoId);
+        if (videoElement.style.display === "none" || videoElement.style.display === "") {
+            videoElement.style.display = "block";
+        } else {
+            videoElement.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>H.264</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #333;
+		}
+		.header h1 {
+			margin: 0;
+		}
+		.content {
+			padding: 20px;
+		}
+		.code {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			overflow-x: auto;
+		}
+		.code pre {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			font-family: monospace;
+			background-color: transparent;
+			border: none;
+		}
+		.interactive {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			overflow-x: auto;
+		}
+		.interactive button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.interactive button:hover {
+			background-color: #3e8e41;
+		}
+		.interactive button:active {
+			background-color: #2c6a3f;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>H.264</h1>
+		</div>
+		<div class="content">
+			<p>H.264是一种视频压缩算法，用于将视频数据压缩到较小的文件大小，以便于存储和传输。H.264是一种广泛使用的视频压缩算法，用于各种应用场景，如视频流媒体、DVD、Blu-ray等。</p>
+			<p>H.264算法的主要特点是使用了变换和量化技术来压缩视频数据。变换技术将视频数据转换为频率域，量化技术将频率域数据转换为离散值，以减少数据量。H.264算法还使用了其他技术，如 motion compensation 和 intra prediction，以提高压缩率和质量。</p>
+			<div class="code">
+				<pre>
+&lt;video width="640" height="480" controls&gt;
+  &lt;source src="h264.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+				</pre>
+			</div>
+			<div class="interactive">
+				<button onclick="playVideo()">播放视频</button>
+				<script>
+					function playVideo() {
+						var video = document.querySelector('video');
+						video.play();
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Responsibility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #00695c;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4db6ac;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        button {
+            background-color: #009688;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #00796b;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #009688;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .info {
+            display: none;
+            background-color: #b2dfdb;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: max-height 0.2s ease-out;
+        }
+        .interactive {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Environmental Responsibility</h1>
+    </header>
+
+    <section>
+        <h2>What is Environmental Responsibility?</h2>
+        <p>Environmental responsibility refers to the duty that individuals and organizations have to preserve the environment through sustainable practices and reducing their ecological footprint.</p>
+        <button onclick="toggleInfo('info1')">Learn More</button>
+        <div id="info1" class="info">
+            <p>It involves actions to protect the natural world, including reducing waste, conserving water, minimizing energy use, and promoting sustainability.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why is it Important?</h2>
+        <p>Protecting our environment ensures a healthy planet for future generations. It also helps mitigate climate change, conserve biodiversity, and maintain natural resources.</p>
+        <button onclick="toggleInfo('info2')">Learn More</button>
+        <div id="info2" class="info">
+            <p>The impact of environmental irresponsibility can lead to severe consequences, such as pollution, loss of habitats, and increased global warming.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>How Can We Be Environmentally Responsible?</h2>
+        <p>Simple actions such as recycling, using public transport, and conserving energy can make a significant difference.</p>
+        <button onclick="toggleInfo('info3')">Learn More</button>
+        <div id="info3" class="info">
+            <p>Additionally, supporting eco-friendly businesses and participating in community clean-up efforts are effective ways to contribute positively to the environment.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Interactive Quiz: Are You Environmentally Responsible?</h2>
+        <div class="interactive">
+            <button onclick="checkQuiz()">Take the Quiz</button>
+            <div id="quizResult" class="info"></div>
+        </div>
+    </section>
+
+    <script>
+        function toggleInfo(infoId) {
+            const infoDiv = document.getElementById(infoId);
+            infoDiv.style.display = (infoDiv.style.display === "none" || infoDiv.style.display === "") ? "block" : "none";
+        }
+
+        function checkQuiz() {
+            const response = prompt("Do you recycle? (yes/no)").toLowerCase();
+            let resultMessage;
+            if (response === 'yes') {
+                resultMessage = "Great job! Recycling is a vital part of environmental responsibility.";
+            } else {
+                resultMessage = "Consider starting to recycle; it makes a significant positive impact!";
+            }
+            document.getElementById("quizResult").innerHTML = resultMessage;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maynooth University</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Maynooth University</h1>
+    <div class="info">
+        <p>Maynooth University is a leading university in Ireland, offering a range of undergraduate and postgraduate programs.</p>
+        <p>Explore our campus, research opportunities, and vibrant student life!</p>
+        <button onclick="showMoreInfo()">Show More</button>
+    </div>
+    <div id="moreInfo" style="display: none;">
+        <p>Located in County Kildare, Maynooth University is known for its academic excellence and research contributions.</p>
+        <p>Join us in shaping the future through innovation and education.</p>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

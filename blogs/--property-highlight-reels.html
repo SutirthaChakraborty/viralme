@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Highlight Reels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .topic {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 8px;
+            background: #e7f0ff;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .interactive {
+            margin: 20px 0;
+            padding: 10px;
+            border: 2px dashed #28a745;
+            border-radius: 8px;
+            background: #eaf7ec;
+        }
+
+        .slider {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .slide {
+            min-width: 100%;
+            animation: fade 1s;
+        }
+
+        @keyframes fade {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Understanding Property Highlight Reels</h1>
+
+        <div class="topic" id="definition">
+            <h2>What are Property Highlight Reels?</h2>
+            <p>Property highlight reels are short video clips that showcase the best features of a property. They are often used in real estate marketing to attract potential buyers.</p>
+        </div>
+
+        <div class="topic" id="importance">
+            <h2>Why Are They Important?</h2>
+            <p>Highlight reels help in creating an emotional connection, providing a virtual walkthrough, and enhancing the property's visibility online.</p>
+        </div>
+
+        <div class="topic" id="components">
+            <h2>Key Components of Highlight Reels</h2>
+            <ul>
+                <li>Quality visuals</li>
+                <li>Clear audio narration</li>
+                <li>Engaging background music</li>
+                <li>Call-to-action elements</li>
+            </ul>
+        </div>
+
+        <div class="interactive">
+            <h2>Interactive Highlight Reel Demo</h2>
+            <div class="slider" id="slider">
+                <div class="slides">
+                    <div class="slide"><img src="https://via.placeholder.com/600x400?text=Property+Feature+1" alt="Feature 1"></div>
+                    <div class="slide"><img src="https://via.placeholder.com/600x400?text=Property+Feature+2" alt="Feature 2"></div>
+                    <div class="slide"><img src="https://via.placeholder.com/600x400?text=Property+Feature+3" alt="Feature 3"></div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:10px;">
+                <button class="btn" onclick="prevSlide()">Previous</button>
+                <button class="btn" onclick="nextSlide()">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function showSlide(index) {
+            if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else if (index >= totalSlides) {
+                currentSlide = 0;
+            } else {
+                currentSlide = index;
+            }
+            slides.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        showSlide(currentSlide);
+    </script>
+
+</body>
+</html>

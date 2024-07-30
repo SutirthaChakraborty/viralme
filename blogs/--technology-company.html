@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Company Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Technology Company</h1>
+    <p>Innovating the Future of Technology</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>About Us</h2>
+        <p>We are a leading technology company dedicated to creating innovative solutions that enhance everyday life.</p>
+        <button onclick="showMore('about')">Learn More</button>
+        <div id="about" style="display:none;">
+            <p>Founded in 2020, we specialize in software development, AI, and cloud computing.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Our Services</h2>
+        <p>We offer a range of services that include software development, consulting, and AI solutions.</p>
+        <button onclick="showMore('services')">Learn More</button>
+        <div id="services" style="display:none;">
+            <p>Our team works tirelessly to deliver cutting-edge technology tailored to our clients' needs.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us for more information!</p>
+        <button onclick="showMore('contact')">Learn More</button>
+        <div id="contact" style="display:none;">
+            <p>Email: info@techcompany.com</p>
+            <p>Phone: +1-234-567-8901</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    function showMore(section) {
+        var content = document.getElementById(section);
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

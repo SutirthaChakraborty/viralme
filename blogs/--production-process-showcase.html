@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Production Process Showcase</title>
+    <style>
+        .step {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+        .step:hover {
+            background-color: #e9e9e9;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="step">Step 1: Raw Material Acquisition</div>
+<div class="details">In this stage, raw materials are sourced from suppliers.</div>
+
+<div class="step">Step 2: Manufacturing</div>
+<div class="details">The raw materials are processed and transformed into finished products.</div>
+
+<div class="step">Step 3: Quality Control</div>
+<div class="details">Products are inspected to ensure they meet quality standards.</div>
+
+<script>
+    var steps = document.getElementsByClassName('step');
+    for (var i = 0; i < steps.length; i++) {
+        steps[i].addEventListener('click', function() {
+            var details = this.nextElementSibling;
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+            } else {
+                details.style.display = 'block';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Video in Recruitment and Hiring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2E8B57;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-section {
+            margin: 20px 0;
+        }
+
+        .topic {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-left: 5px solid #00796b;
+            margin: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .topic:hover {
+            background-color: #b2ebf2;
+        }
+
+        button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Using Video in Recruitment and Hiring</h1>
+    
+    <div class="video-section">
+        <h2>Introduction to Video Recruitment</h2>
+        <video id="introVideo" width="100%" controls>
+            <source src="path/to/your/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="topic" onclick="toggleDetails('benefits')">
+        <h3>Benefits of Video in Recruitment</h3>
+        <p id="benefits" style="display:none;">
+            Using video in recruitment allows for a deeper insight into a candidate's personality, improves engagement, 
+            and can showcase your company's culture effectively. 
+        </p>
+    </div>
+
+    <div class="topic" onclick="toggleDetails('types')">
+        <h3>Types of Recruitment Videos</h3>
+        <p id="types" style="display:none;">
+            - Job Description Videos<br>
+            - Employee Testimonials<br>
+            - Company Culture Videos<br>
+            - Interview Tips and Preparation
+        </p>
+    </div>
+
+    <div class="topic" onclick="toggleDetails('tips')">
+        <h3>Tips for Creating Effective Recruitment Videos</h3>
+        <p id="tips" style="display:none;">
+            - Keep it short and engaging.<br>
+            - Focus on the key messages.<br>
+            - Use high-quality visuals and audio.<br>
+            - Include a call-to-action.
+        </p>
+    </div>
+
+    <button onclick="showBestPractices()">Show Best Practices</button>
+    <div id="bestPractices" style="display:none;" class="topic">
+        <h3>Best Practices for Video Recruitment</h3>
+        <ul>
+            <li>Ensure video accessibility for all.</li>
+            <li>Share videos on multiple platforms.</li>
+            <li>Utilize analytics for video performance.</li>
+            <li>Maintain a consistent brand message.</li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2023 Recruitment Insights
+    </footer>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+
+    function showBestPractices() {
+        var practices = document.getElementById("bestPractices");
+        practices.style.display = practices.style.display === "none" ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>

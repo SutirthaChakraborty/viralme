@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apple Mail Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 80%;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apple Mail Information</h1>
+    <div class="info">
+        <p>Welcome to the Apple Mail information page. Apple Mail is a popular email client developed by Apple Inc. It is known for its user-friendly interface and seamless integration with other Apple devices.</p>
+        <p>To learn more about Apple Mail, click the button below:</p>
+        <button class="btn" onclick="showMoreInfo()">Show More</button>
+        <div id="moreInfo" style="display: none;">
+            <p>Apple Mail allows users to manage multiple email accounts, organize emails into folders, and easily search for specific messages. It also supports features like VIP contacts and smart mailboxes.</p>
+            <p>With Apple Mail, you can send and receive emails securely, sync your emails across devices using iCloud, and customize your email settings to suit your preferences.</p>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

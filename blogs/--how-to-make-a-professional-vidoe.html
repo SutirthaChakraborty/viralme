@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Professional Video Making</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Professional Video Making</h1>
+    <div class="info">
+        <p>Welcome to our guide on making professional videos. Follow these steps:</p>
+        <ol>
+            <li>Plan your video content</li>
+            <li>Use high-quality equipment</li>
+            <li>Set up proper lighting</li>
+            <li>Record clear audio</li>
+            <li>Edit your video for a polished look</li>
+        </ol>
+        <p>Click the button below for more details!</p>
+        <button onclick="showDetails()">Show More</button>
+        <p id="details" style="display: none;">For in-depth tips and tricks on professional video making, check out our resources section.</p>
+    </div>
+    <script>
+        function showDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

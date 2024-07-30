@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explainer Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #4a90e2;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4a90e2;
+        }
+        .toggle-info {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-info:hover {
+            background-color: #357ab8;
+        }
+        .info {
+            display: none;
+            margin-top: 15px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explainer Video Production</h1>
+    <p>Engage & Inform with Powerful Videos</p>
+</header>
+
+<section>
+    <h2>What is an Explainer Video?</h2>
+    <p>Explainer videos are short, engaging videos that explain your business, product, or service through compelling visuals and storytelling.</p>
+    <button class="toggle-info" onclick="toggleVisibility('explainerDetails')">Learn More</button>
+    <div id="explainerDetails" class="info">
+        <p>These videos are typically 1-3 minutes long and are often used on a landing page, product page, or social media to increase conversions and educate your audience.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Benefits of Explainer Videos</h2>
+    <p>Explainer videos can boost understanding and retention, leading to better engagement.</p>
+    <button class="toggle-info" onclick="toggleVisibility('benefitsDetails')">Explore Benefits</button>
+    <div id="benefitsDetails" class="info">
+        <ul>
+            <li>Increase Conversion Rates</li>
+            <li>Enhance Brand Awareness</li>
+            <li>Boost SEO Rankings</li>
+            <li>Simplify Complex Ideas</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Steps in Production</h2>
+    <p>Creating an effective explainer video involves several key steps.</p>
+    <button class="toggle-info" onclick="toggleVisibility('productionSteps')">See Steps</button>
+    <div id="productionSteps" class="info">
+        <ol>
+            <li>Concept Development</li>
+            <li>Script Writing</li>
+            <li>Storyboarding</li>
+            <li>Production & Animation</li>
+            <li>Review & Revisions</li>
+            <li>Final Delivery</li>
+        </ol>
+    </div>
+</section>
+
+<section>
+    <h2>Engage with Your Audience</h2>
+    <p>Explainer videos can significantly increase engagement on your website and social media platforms.</p>
+    <button class="toggle-info" onclick="toggleVisibility('engagementDetails')">Discover Engagement Tips</button>
+    <div id="engagementDetails" class="info">
+        <p>Utilize strong calls to action and optimize your videos for mobile viewing to maximize audience interaction and engagement.</p>
+    </div>
+</section>
+
+<script>
+    function toggleVisibility(id) {
+        var infoDiv = document.getElementById(id);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

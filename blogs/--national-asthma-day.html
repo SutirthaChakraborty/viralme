@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Asthma Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #004d40;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+        .info-card {
+            background-color: #ffffff;
+            border: 1px solid #b2dfdb;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px auto;
+            max-width: 500px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+        }
+        .hidden {
+            display: none;
+        }
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #004d40;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #004d40;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>National Asthma Day</h1>
+    <p>Join us in raising awareness about asthma and its impacts on daily life. Learn how to manage it effectively!</p>
+
+    <div class="info-card" onclick="toggleInfo('info1')">
+        <h2>What is Asthma?</h2>
+        <p id="info1" class="hidden">Asthma is a chronic respiratory condition that inflames and narrows the airways, leading to difficulty in breathing. Symptoms include wheezing, shortness of breath, chest tightness, and coughing.</p>
+    </div>
+
+    <div class="info-card" onclick="toggleInfo('info2')">
+        <h2>Common Triggers</h2>
+        <p id="info2" class="hidden">Triggers for asthma attacks can include allergens (pollen, dust mites, mold), irritants (smoke, strong odors), strenuous exercise, and respiratory infections.</p>
+    </div>
+
+    <div class="info-card" onclick="toggleInfo('info3')">
+        <h2>Managing Asthma</h2>
+        <p id="info3" class="hidden">Effective management includes medication, avoiding triggers, monitoring symptoms, and having a written asthma action plan tailored to individual needs.</p>
+    </div>
+
+    <button class="button" onclick="showReminder()">Get a Reminder!</button>
+    <div id="reminder" class="hidden"></div>
+
+    <div class="footer">
+        <p>Learn more about asthma at <a href="https://www.asthma.org" target="_blank">Asthma.org</a></p>
+    </div>
+
+    <script>
+        function toggleInfo(infoId) {
+            const infoElement = document.getElementById(infoId);
+            if (infoElement.classList.contains('hidden')) {
+                infoElement.classList.remove('hidden');
+            } else {
+                infoElement.classList.add('hidden');
+            }
+        }
+
+        function showReminder() {
+            const reminderElement = document.getElementById('reminder');
+            reminderElement.innerHTML = '<p style="color: #00575b;">Remember to take your asthma medication and avoid triggers today! Stay safe!</p>';
+            reminderElement.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>

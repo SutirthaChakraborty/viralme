@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autocue Services</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		#autocue {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#autocue h2 {
+			margin-top: 0;
+		}
+		
+		#autocue ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		#autocue li {
+			margin-bottom: 10px;
+		}
+		
+		#autocue li::before {
+			content: "\002B";
+			margin-right: 10px;
+			color: #666;
+		}
+		
+		#autocue .section {
+			margin-bottom: 20px;
+		}
+		
+		#autocue .section h2 {
+			margin-top: 0;
+		}
+		
+		#autocue .section p {
+			margin-bottom: 10px;
+		}
+		
+		#autocue .section ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		#autocue .section li {
+			margin-bottom: 10px;
+		}
+		
+		#autocue .section li::before {
+			content: "\002B";
+			margin-right: 10px;
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div id="autocue">
+		<h2>Autocue Services</h2>
+		<p>Autocue services provide a range of solutions for professionals and businesses looking to streamline their workflow and improve communication.</p>
+		<ul>
+			<li><span>::</span>Scriptwriting and editing services for TV, film, and corporate productions</li>
+			<li><span>::</span>Teleprompter systems for live events, presentations, and interviews</li>
+			<li><span>::</span>Audio and video recording services for podcasts, interviews, and training videos</li>
+			<li><span>::</span>Live captioning and subtitling services for accessibility and translation</li>
+		</ul>
+		<h2>Why Choose Autocue Services?</h2>
+		<p>With Autocue Services, you can:</p>
+		<ul>
+			<li><span>::</span>Improve the quality of your content with our expert scriptwriting and editing services</li>
+			<li><span>::</span>Enhance your presentation skills with our teleprompter systems</li>
+			<li><span>::</span>Reach a wider audience with our audio and video recording services</li>
+			<li><span>::</span>Ensure accessibility and translation with our live captioning and subtitling services</li>
+		</ul>
+		<h2>How Autocue Services Can Help You</h2>
+		<p>Whether you're a:</p>
+		<ul>
+			<li><span>::</span>TV producer looking for scriptwriting and editing services</li>
+			<li><span>::</span>Corporate trainer seeking teleprompter systems for presentations</li>
+			<li><span>::</span>Podcaster looking for audio and video recording services</li>
+			<li><span>::</span>Event planner requiring live captioning and subtitling services</li>
+		</ul>
+		<p>Autocue Services can provide the solutions you need to succeed.</p>
+	</div>
+	
+	<script>
+		// Add interactivity to the page
+		const autocue = document.getElementById('autocue');
+		
+		// Add event listener to the sections
+		autocue.addEventListener('click', (e) => {
+			if (e.target.tagName === 'H2') {
+				const section = e.target.nextElementSibling;
+				section.classList.toggle('show');
+			}
+		});
+		
+		// Add event listener to the links
+		autocue.addEventListener('click', (e) => {
+			if (e.target.tagName === 'A') {
+				alert('You clicked a link!');
+			}
+		});
+	</script>
+</body>
+</html>

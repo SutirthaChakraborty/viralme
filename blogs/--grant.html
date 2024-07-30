@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grant Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .grant-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 80%;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grant Information</h1>
+    <div class="grant-info">
+        <p>Welcome to the Grant Information Page!</p>
+        <p>Click the button below to learn more about grants.</p>
+        <button onclick="showMore()">Show More</button>
+        <p id="moreInfo" style="display: none;">Grants are non-repayable funds or products disbursed or given by one party (grant makers), often a government department, corporation, foundation, or trust, to a recipient, often (but not always) a nonprofit entity, educational institution, business, or an individual.</p>
+    </div>
+    <script>
+        function showMore() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

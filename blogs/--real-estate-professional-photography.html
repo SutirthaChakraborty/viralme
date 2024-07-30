@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Professional Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: calc(33.333% - 10px);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate Professional Photography</h1>
+    <p>Showcase properties like never before!</p>
+</header>
+
+<div class="container">
+    <h2>Why Professional Photography Matters?</h2>
+    <p>High-quality photos are essential for attracting potential buyers. They highlight the best features of a property, creating a lasting first impression.</p>
+    
+    <h2>Key Benefits:</h2>
+    <ul>
+        <li>Increased Buyer Interest</li>
+        <li>Higher Selling Prices</li>
+        <li>Effective Marketing</li>
+        <li>Enhanced Online Presence</li>
+    </ul>
+
+    <button class="button" onclick="showGallery()">View Gallery</button>
+
+    <div class="gallery" id="gallery" style="display: none;">
+        <img src="https://via.placeholder.com/300" alt="Real Estate Photo 1">
+        <img src="https://via.placeholder.com/300" alt="Real Estate Photo 2">
+        <img src="https://via.placeholder.com/300" alt="Real Estate Photo 3">
+        <img src="https://via.placeholder.com/300" alt="Real Estate Photo 4">
+        <img src="https://via.placeholder.com/300" alt="Real Estate Photo 5">
+        <img src="https://via.placeholder.com/300" alt="Real Estate Photo 6">
+    </div>
+
+    <h2>Tips for Great Real Estate Photography:</h2>
+    <ol>
+        <li>Use Natural Light</li>
+        <li>Declutter Spaces</li>
+        <li>Choose the Right Angles</li>
+        <li>Highlight Unique Features</li>
+        <li>Edit Photos for Clarity</li>
+    </ol>
+
+    <h2>Want to Know More?</h2>
+    <p>Contact us for personalized photography services that elevate your real estate listings!</p>
+</div>
+
+<footer>
+    &copy; 2023 Real Estate Photography - All Rights Reserved
+</footer>
+
+<script>
+    function showGallery() {
+        var gallery = document.getElementById("gallery");
+        if (gallery.style.display === "none") {
+            gallery.style.display = "flex";
+        } else {
+            gallery.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

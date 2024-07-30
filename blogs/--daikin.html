@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daikin - Climate Control Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0071bc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .info-box {
+            background-color: white;
+            border: 2px solid #0071bc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: 0.3s;
+        }
+        .info-box:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .accordion {
+            background-color: #0071bc;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: 0.4s;
+            width: 100%;
+            margin: 5px 0;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #005f8f;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+        }
+        .footer {
+            background-color: #0071bc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Daikin</h1>
+        <p>Your Comfort, Our Expertise</p>
+    </header>
+    <div class="content">
+        <div class="info-box">
+            <h2>About Daikin</h2>
+            <p>Daikin is a global leader in air conditioning technology and HVAC solutions. Established in 1924, it specializes in creating energy-efficient heating, cooling, and refrigeration systems.</p>
+        </div>
+        <button class="accordion">Daikin Products</button>
+        <div class="panel">
+            <p>Our product range includes:</p>
+            <ul>
+                <li>Air Conditioners</li>
+                <li>Heat Pumps</li>
+                <li>Air Purifiers</li>
+                <li>VRV Systems</li>
+                <li>Chillers</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Innovative Technologies</button>
+        <div class="panel">
+            <p>Daikin is committed to developing innovative solutions such as:</p>
+            <ul>
+                <li>Inverter Technology</li>
+                <li>Smart Controls</li>
+                <li>Eco-Friendly Refrigerants</li>
+                <li>Energy Recovery Ventilation</li>
+            </ul>
+        </div>
+
+        <button class="accordion">Environmental Commitment</button>
+        <div class="panel">
+            <p>Daikin leads with sustainability by:</p>
+            <ul>
+                <li>Reducing Carbon Footprint</li>
+                <li>Promoting Renewable Energy</li>
+                <li>Manufacturing Eco-Friendly Products</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Daikin. All rights reserved.</p>
+    </div>
+    <script>
+        const accordions = document.getElementsByClassName("accordion");
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

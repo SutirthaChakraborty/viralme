@@ -1,0 +1,44 @@
+#### HTML Code for European Broadcasting Union Information
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>European Broadcasting Union</title>
+  <style>
+    /* Interactive CSS */
+    .highlight {
+      background-color: yellow;
+    }
+    .clickable {
+      cursor: pointer;
+      text-decoration: underline;
+      color: blue;
+    }
+  </style>
+  <script>
+    // Interactive JavaScript
+    function highlightText() {
+      var textToHighlight = document.getElementById('info');
+      textToHighlight.classList.add('highlight');
+    }
+
+    function showMoreInfo() {
+      var moreInfo = document.getElementById('more-info');
+      moreInfo.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <h1>European Broadcasting Union</h1>
+  <p id="info">The European Broadcasting Union (EBU) is an alliance of public service media organizations from the European Broadcasting Area and the Council of Europe. It consists of 123 member organizations from 56 countries and 31 associate members from 20 countries.</p>
+  <p>For more details, <span class="clickable" onclick="showMoreInfo()">click here</span>.</p>
+  <div id="more-info" style="display: none;">
+    <p>The EBU was created in 1950 to address the need for a strong organization to coordinate broadcasting activities in western Europe. It operates almost 2,000 television, radio, and online channels and services, reaching audiences of more than one billion people worldwide in over 160 languages.</p>
+  </div>
+  <button onclick="highlightText()">Highlight EBU</button>
+</body>
+</html>
+
+
+This HTML code provides information about the European Broadcasting Union (EBU) and includes interactive CSS and JavaScript elements. When the user clicks on "click here," more information about the EBU is displayed. Additionally, clicking the "Highlight EBU" button will highlight the text related to the EBU.

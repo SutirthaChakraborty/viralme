@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alison Spittle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        h2 {
+            color: #ffcc00;
+        }
+        #info {
+            display: none;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #quote {
+            font-style: italic;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Alison Spittle</h1>
+    <p>Discover the life and career of the talented comedian Alison Spittle.</p>
+    <button id="toggleInfo">Learn More</button>
+    <div id="info">
+        <h2>Biography</h2>
+        <p>Alison Spittle is an Irish comedian, writer, and actress, known for her unique sense of humor and engaging storytelling. She began her career in stand-up comedy and gained a significant following through her appearances on various platforms.</p>
+        <h2>Career Highlights</h2>
+        <ul>
+            <li>Featured on RTE's <em>Republic of Telly</em>.</li>
+            <li>Host of the acclaimed podcast <em>Spittle's Diary</em>.</li>
+            <li>Appeared in the TV series <em>Nowhere Fast</em>.</li>
+        </ul>
+        <h2>Fun Fact</h2>
+        <p>Spittle often incorporates personal experiences into her comedy, resonating well with her audience.</p>
+    </div>
+    <div id="quote">"Laughter is the best medicine!" - Alison Spittle</div>
+
+    <script>
+        document.getElementById("toggleInfo").addEventListener("click", function() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+                this.textContent = "Show Less";
+            } else {
+                info.style.display = "none";
+                this.textContent = "Learn More";
+            }
+        });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Beauty Blog Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            color: #fff;
+            border-radius: 5px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #6a1b9a;
+        }
+        .awards-section {
+            margin: 20px 0;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+            background-color: #e1bee7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Irish Beauty Blog Awards</h1>
+    <p>Celebrating Excellence in Beauty Blogging</p>
+</header>
+
+<div class="awards-section">
+    <h2>About the Awards</h2>
+    <p>The Irish Beauty Blog Awards recognize and celebrate the outstanding contributions of beauty bloggers in Ireland. These awards showcase talent, creativity, and passion within the beauty community.</p>
+    
+    <button class="button" onclick="toggleContent('about')">Learn More About the Awards</button>
+    <div id="about" class="toggle-content">
+        <p>The awards cover various categories including Best Beauty Blog, Best Makeup Artist, Best Skincare Blog, and more. Winners are selected based on public and industry votes, promoting engagement across social media.</p>
+    </div>
+</div>
+
+<div class="awards-section">
+    <h2>Categories</h2>
+    <ul>
+        <li>Best Beauty Blog</li>
+        <li>Best Makeup Artist</li>
+        <li>Best Skincare Blog</li>
+        <li>Best Haircare Blog</li>
+    </ul>
+    
+    <button class="button" onclick="toggleContent('categories')">Discover Award Categories</button>
+    <div id="categories" class="toggle-content">
+        <p>Each category highlights unique talents and exceptional contributions, encouraging bloggers to showcase their work and engage with their audience.</p>
+    </div>
+</div>
+
+<div class="awards-section">
+    <h2>Nomination Process</h2>
+    <p>Nominations for the awards open annually, inviting bloggers and their followers to submit entries for their favorite beauty influencers.</p>
+    
+    <button class="button" onclick="toggleContent('process')">Understand the Nomination Process</button>
+    <div id="process" class="toggle-content">
+        <p>Nominees are then shortlisted based on public votes, leading to a final round of judging by industry experts, ensuring a fair and transparent process.</p>
+    </div>
+</div>
+
+<div class="awards-section">
+    <h2>Get Involved!</h2>
+    <p>Join us at the awards night and celebrate the best of beauty blogging in Ireland!</p>
+    
+    <button class="button" onclick="toggleContent('involved')">How to Participate</button>
+    <div id="involved" class="toggle-content">
+        <p>Follow our social media accounts for updates, participate in the voting process, and celebrate your favorite beauty bloggers!</p>
+    </div>
+</div>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

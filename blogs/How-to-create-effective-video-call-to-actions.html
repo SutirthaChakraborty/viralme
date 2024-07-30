@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Effective Video Call-to-Actions</title>
+    <style>
+        .cta-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creating Effective Video Call-to-Actions</h1>
+    <p>Video call-to-actions are crucial for engaging your audience. Here are some tips:</p>
+    <ul>
+        <li>Keep it concise and clear</li>
+        <li>Use action-oriented language</li>
+        <li>Include a sense of urgency</li>
+    </ul>
+    <button class="cta-button" onclick="alert('Remember to subscribe for more videos!')">Subscribe</button>
+    <button class="cta-button" onclick="alert('Don't miss out on our limited-time offer!')">Learn More</button>
+    <script>
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.backgroundColor = '#FFC107';
+            });
+        });
+    </script>
+</body>
+</html>

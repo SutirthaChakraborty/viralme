@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob Heffernan - A Journey in Race Walking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .tab {
+            display: inline-block;
+            padding: 10px;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+        .tab:hover {
+            background: #2980b9;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+        .active {
+            display: block;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #707070;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Rob Heffernan</h1>
+    <h2>Irish Race Walker</h2>
+
+    <div class="tab" onclick="showContent('profile')">Profile</div>
+    <div class="tab" onclick="showContent('achievements')">Achievements</div>
+    <div class="tab" onclick="showContent('training')">Training & Tips</div>
+
+    <div id="profile" class="content active">
+        <h3>Profile</h3>
+        <p>Rob Heffernan is a distinguished Irish race walker, born on 25th March 1979 in Cork, Ireland. He is known for his incredible skills in race walking, representing Ireland in multiple Olympic Games and World Championships.</p>
+    </div>
+
+    <div id="achievements" class="content">
+        <h3>Achievements</h3>
+        <ul>
+            <li>Bronze Medal at the 2012 European Championships.</li>
+            <li>Irish national record holder for the 50km walk.</li>
+            <li>Competed in the 2008, 2012, and 2016 Olympics.</li>
+        </ul>
+    </div>
+
+    <div id="training" class="content">
+        <h3>Training & Tips</h3>
+        <p>Rob emphasizes the importance of consistency in training. Here are some tips:</p>
+        <ol>
+            <li>Focus on technique and form.</li>
+            <li>Incorporate strength training.</li>
+            <li>Rest and recovery are crucial.</li>
+        </ol>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Rob Heffernan Information
+</footer>
+
+<script>
+    function showContent(contentId) {
+        const contents = document.querySelectorAll('.content');
+        contents.forEach(content => {
+            content.classList.remove('active');
+        });
+        document.getElementById(contentId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>

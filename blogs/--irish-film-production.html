@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>爱尔兰电影制片</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		#header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		#content {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#irish-film {
+			background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Trinity_College_Dublin.jpg/1024px-Trinity_College_Dublin.jpg');
+			background-size: cover;
+			background-position: center;
+			height: 300px;
+			margin-top: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		#irish-film h2 {
+			color: #fff;
+			text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			margin-top: 0;
+		}
+		#irish-film p {
+			color: #fff;
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		#history {
+			margin-top: 20px;
+		}
+		#history h3 {
+			margin-top: 0;
+		}
+		#history ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		#history li {
+			margin-bottom: 10px;
+		}
+		#history li:before {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #333;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1>爱尔兰电影制片</h1>
+	</header>
+	<main id="content">
+		<section id="irish-film">
+			<h2>爱尔兰电影制片</h2>
+			<p>爱尔兰电影制片是一家爱尔兰电影制片公司，成立于2000年。公司总部位于都柏林，拥有多个办公室和工作室。爱尔兰电影制片主要生产电视剧、电影和纪录片，服务于爱尔兰和国际市场。</p>
+		</section>
+		<section id="history">
+			<h3>历史</h3>
+			<ul>
+				<li>2000年：爱尔兰电影制片成立</li>
+				<li>2005年：公司首次生产电视剧《The Tudors》</li>
+				<li>2010年：公司生产电影《The Guard》</li>
+				<li>2015年：公司生产电视剧《Penny Dreadful》</li>
+			</ul>
+		</section>
+	</main>
+	<script>
+		var irishFilm = document.getElementById('irish-film');
+		var history = document.getElementById('history');
+		
+		irishFilm.addEventListener('mouseover', function() {
+			irishFilm.style.backgroundSize = '100%';
+			irishFilm.style.backgroundPosition = 'center';
+		});
+		
+		irishFilm.addEventListener('mouseout', function() {
+			irishFilm.style.backgroundSize = 'cover';
+			irishFilm.style.backgroundPosition = 'center';
+		});
+		
+		history.addEventListener('mouseover', function() {
+			history.style.background = 'rgba(0, 0, 0, 0.1)';
+			history.style.borderRadius = '10px';
+		});
+		
+		history.addEventListener('mouseout', function() {
+			history.style.background = 'none';
+			history.style.borderRadius = '0';
+		});
+	</script>
+</body>
+</html>

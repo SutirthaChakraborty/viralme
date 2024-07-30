@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marketing Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .video {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marketing Video Production</h1>
+    <div class="video">
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/examplevideo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>Marketing video production is essential for promoting products and services effectively. It helps businesses reach a wider audience and engage customers.</p>
+    <button onclick="playVideo()">Play Video</button>
+    <script>
+        function playVideo() {
+            var video = document.querySelector('iframe');
+            video.src += "&autoplay=1";
+        }
+    </script>
+</body>
+</html>

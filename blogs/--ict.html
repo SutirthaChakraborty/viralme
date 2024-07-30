@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive ICT Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive ICT Information</h1>
+    <div class="info">
+        <p>ICT stands for Information and Communication Technology. It encompasses a wide range of technologies used to manage and communicate information.</p>
+        <p>Examples of ICT include computers, the internet, telecommunications, and software applications.</p>
+        <p>ICT plays a crucial role in modern society, enabling communication, data management, and access to information.</p>
+        <button onclick="showMore()">Show More</button>
+    </div>
+    <script>
+        function showMore() {
+            var additionalInfo = "ICT skills are essential in today's digital world for both individuals and businesses. By leveraging ICT tools, organizations can improve efficiency and productivity.";
+            var infoParagraph = document.createElement('p');
+            infoParagraph.textContent = additionalInfo;
+            document.querySelector('.info').appendChild(infoParagraph);
+        }
+    </script>
+</body>
+</html>

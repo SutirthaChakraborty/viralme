@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>数据集团（ATA Group）</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+		#ata-group {
+			background-color: #fff;
+			width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#ata-group h2 {
+			color: #337ab7;
+			margin-top: 0;
+		}
+		#ata-group ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		#ata-group li {
+			margin-bottom: 10px;
+		}
+		#ata-group li:hover {
+			background-color: #f5f5f5;
+		}
+		#ata-group a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		#ata-group a:hover {
+			color: #23527c;
+		}
+		#ata-group .icon {
+			width: 24px;
+			height: 24px;
+			background-size: 24px 24px;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin-right: 10px;
+		}
+		#ata-group .icon-list {
+			background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/ata-group@2x.png');
+		}
+		#ata-group .icon-list:hover {
+			background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/ata-group@2x.png');
+			background-size: 24px 24px;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div id="ata-group">
+		<h2>数据集团（ATA Group）</h2>
+		<p>数据集团（ATA Group）是全球领先的数据管理和分析解决方案提供商，帮助企业和组织实现数据驱动的决策和操作。ATA Group 的解决方案涵盖了数据整合、数据分析、数据可视化和数据科学等领域。</p>
+		<ul>
+			<li class="icon-list">
+				<span class="icon"></span>
+				<a href="#">数据整合</a>
+				<p>ATA Group 的数据整合解决方案可以帮助企业集成各种数据源，提供统一的数据视图和分析平台。</p>
+			</li>
+			<li class="icon-list">
+				<span class="icon"></span>
+				<a href="#">数据分析</a>
+				<p>ATA Group 的数据分析解决方案可以帮助企业快速分析和可视化数据，提供数据驱动的决策支持。</p>
+			</li>
+			<li class="icon-list">
+				<span class="icon"></span>
+				<a href="#">数据可视化</a>
+				<p>ATA Group 的数据可视化解决方案可以帮助企业将数据转换为有价值的信息，提供数据驱动的决策支持。</p>
+			</li>
+			<li class="icon-list">
+				<span class="icon"></span>
+				<a href="#">数据科学</a>
+				<p>ATA Group 的数据科学解决方案可以帮助企业应用数据科学技术和方法，实现数据驱动的决策和操作。</p>
+			</li>
+		</ul>
+		<script>
+			var icons = document.querySelectorAll('.icon-list');
+			icons.forEach(function(icon) {
+				icon.addEventListener('mouseover', function() {
+					icon.querySelector('.icon').style.backgroundImage = 'url(' + this.querySelector('a').href + ')';
+				});
+				icon.addEventListener('mouseout', function() {
+					icon.querySelector('.icon').style.backgroundImage = '';
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+
+Note: The above code is a basic HTML structure with CSS styles and JavaScript code to make the icons change when hovering over them. You can customize the code as needed to fit your specific requirements.

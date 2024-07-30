@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>环境保护</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.envi {
+			background-color: #34A85A;
+			padding: 20px;
+			border: 1px solid #34A85A;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		.envi h2 {
+			color: #fff;
+			margin-top: 0;
+		}
+		.envi p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.envi img {
+			width: 100%;
+			height: 200px;
+			margin-bottom: 20px;
+			border-radius: 10px;
+		}
+		#slider {
+			width: 300px;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+		.slider {
+			width: 300px;
+			height: 300px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			padding: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		.slider img {
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>环境保护</h1>
+		<div class="envi">
+			<h2>什么是环境保护?</h2>
+			<p>环境保护是指保护自然环境、保持生态平衡、防止污染和破坏环境的活动。环境保护的目的是为了保护人类的生命和健康、保持自然的美丽和多样性、保护生物的生存和发展。</p>
+			<img src="https://picsum.photos/200/300" alt="环境保护图片">
+		</div>
+		<div id="slider">
+			<div class="slider">
+				<img src="https://picsum.photos/300/300" alt="环境保护图片">
+			</div>
+		</div>
+		<script>
+			var slider = document.getElementById('slider');
+			var sliderImg = document.querySelector('.slider img');
+			var sliderWidth = slider.offsetWidth;
+			var sliderHeight = slider.offsetHeight;
+			var sliderLeft = 0;
+			var sliderTop = 0;
+			var sliderSpeed = 5;
+			var sliderInterval;
+
+			sliderInterval = setInterval(function() {
+				sliderLeft += sliderSpeed;
+				sliderTop += sliderSpeed;
+				slider.style.left = sliderLeft + 'px';
+				slider.style.top = sliderTop + 'px';
+				if (sliderLeft >= sliderWidth) {
+					sliderLeft = 0;
+					sliderTop = 0;
+				}
+			}, 100);
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Closed Captions</title>
+    <style>
+        .caption {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Closed Captions</h1>
+    <button onclick="toggleCaption()">Toggle Caption</button>
+    <div class="caption" id="caption">Closed captions provide text for the audio content</div>
+    
+    <script>
+        function toggleCaption() {
+            var caption = document.getElementById("caption");
+            if (caption.style.display === "none") {
+                caption.style.display = "block";
+            } else {
+                caption.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

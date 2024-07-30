@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance for Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .info-container {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .toggle-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Insurance for Video Production</h1>
+    <div class="info-container">
+        <p>Video production can be an exciting yet unpredictable field. Various unexpected incidents can occur during shoots, making insurance a crucial element for any production team.</p>
+        
+        <button class="toggle-button" onclick="toggleDetails('general')">What is Video Production Insurance?</button>
+        <div id="general" class="details">
+            <p>Video production insurance protects producers, crews, and equipment against potential losses. It covers liability for accidents, damages, and other issues that may arise during production.</p>
+        </div>
+
+        <button class="toggle-button" onclick="toggleDetails('types')">Types of Coverage</button>
+        <div id="types" class="details">
+            <ul>
+                <li><strong>General Liability:</strong> Covers accidents that might happen on set.</li>
+                <li><strong>Equipment Insurance:</strong> Protects against theft or damage to production gear.</li>
+                <li><strong>Workers' Compensation:</strong> Covers medical expenses for crew injuries.</li>
+                <li><strong>Cancellation Insurance:</strong> Protects against lost income due to project cancellation.</li>
+            </ul>
+        </div>
+
+        <button class="toggle-button" onclick="toggleDetails('importance')">Why is it Important?</button>
+        <div id="importance" class="details">
+            <p>Having the right insurance minimizes risks, protects investments, and ensures smooth production operations. It also provides peace of mind for producers and crew members alike.</p>
+        </div>
+
+        <button class="toggle-button" onclick="toggleDetails('getting')">How to Get Insured</button>
+        <div id="getting" class="details">
+            <p>Consulting with specialty insurance brokers who understand the nuances of video production is essential. They can tailor a policy that meets your specific project needs.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

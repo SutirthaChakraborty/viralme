@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advertising</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		#main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+		}
+		
+		#section1 {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ddd;
+			margin-bottom: 20px;
+		}
+		
+		#section2 {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			margin-bottom: 20px;
+		}
+		
+		#section3 {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ddd;
+		}
+		
+		.interactive {
+			background-color: #ccc;
+			padding: 10px;
+			border: 1px solid #666;
+			cursor: pointer;
+		}
+		
+		.interactive:hover {
+			background-color: #666;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1>Advertising</h1>
+	</header>
+	<main id="main">
+		<section id="section1">
+			<h2>What is Advertising?</h2>
+			<p>Advertising, or ad, is a form of communication that is paid for by an advertiser and intended to persuade an audience to purchase or take some action on a product, service, or idea.</p>
+			<button class="interactive">Learn More</button>
+		</section>
+		<section id="section2">
+			<h2>Types of Advertising</h2>
+			<p>There are many types of advertising, including:</p>
+			<ul>
+				<li>Print Advertising (newspapers, magazines, billboards)</li>
+				<li>Digital Advertising (online ads, social media ads)</li>
+				<li>Television Advertising (TV commercials)</li>
+				<li>Radio Advertising (radio commercials)</li>
+			</ul>
+			<button class="interactive">Explore Types</button>
+		</section>
+		<section id="section3">
+			<h2>Why is Advertising Important?</h2>
+			<p>Advertising is important because it helps businesses reach a wider audience, increase brand awareness, and drive sales.</p>
+			<button class="interactive">Discover More</button>
+		</section>
+	</main>
+	<script>
+		var section1 = document.getElementById('section1');
+		var section2 = document.getElementById('section2');
+		var section3 = document.getElementById('section3');
+		
+		document.querySelector('.interactive').addEventListener('click', function() {
+			section1.style.display = 'none';
+			section2.style.display = 'block';
+		});
+		
+		document.querySelector('.interactive').addEventListener('click', function() {
+			section2.style.display = 'none';
+			section3.style.display = 'block';
+		});
+	</script>
+</body>
+</html>

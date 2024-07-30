@@ -1,0 +1,119 @@
+#### HTML Code for Ireland Women's National Field Hockey Team
+
+Here is an example of interactive and colorful HTML code that you can use to display information about the Ireland Women's National Field Hockey Team:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ireland Women's National Field Hockey Team</title>
+    <style>
+        /* CSS for interactive elements */
+        .player-card {
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .player-card:hover {
+            background-color: #e6e6e6;
+        }
+        
+        .player-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+        .player-position {
+            margin-top: 5px;
+            color: #666666;
+        }
+        
+        /* JavaScript for interactive elements */
+        function showPlayerDetails(playerId) {
+            var playerDetails = document.getElementById(playerId);
+            playerDetails.style.display = "block";
+        }
+        
+        function hidePlayerDetails(playerId) {
+            var playerDetails = document.getElementById(playerId);
+            playerDetails.style.display = "none";
+        }
+    </style>
+</head>
+<body>
+    <h1>Ireland Women's National Field Hockey Team</h1>
+    
+    <div class="player-card" onclick="showPlayerDetails('player1')">
+        <img src="player1.jpg" alt="Player 1">
+        <h2 class="player-name">Player 1</h2>
+        <p class="player-position">Forward</p>
+    </div>
+    
+    <div class="player-card" onclick="showPlayerDetails('player2')">
+        <img src="player2.jpg" alt="Player 2">
+        <h2 class="player-name">Player 2</h2>
+        <p class="player-position">Midfielder</p>
+    </div>
+    
+    <div class="player-card" onclick="showPlayerDetails('player3')">
+        <img src="player3.jpg" alt="Player 3">
+        <h2 class="player-name">Player 3</h2>
+        <p class="player-position">Defender</p>
+    </div>
+    
+    <div id="player1" style="display: none;">
+        <h2>Player 1 Details</h2>
+        <p>Height: 170cm</p>
+        <p>Weight: 60kg</p>
+        <p>Age: 25</p>
+        <button onclick="hidePlayerDetails('player1')">Close</button>
+    </div>
+    
+    <div id="player2" style="display: none;">
+        <h2>Player 2 Details</h2>
+        <p>Height: 165cm</p>
+        <p>Weight: 55kg</p>
+        <p>Age: 27</p>
+        <button onclick="hidePlayerDetails('player2')">Close</button>
+    </div>
+    
+    <div id="player3" style="display: none;">
+        <h2>Player 3 Details</h2>
+        <p>Height: 175cm</p>
+        <p>Weight: 65kg</p>
+        <p>Age: 23</p>
+        <button onclick="hidePlayerDetails('player3')">Close</button>
+    </div>
+    
+    <script>
+        // JavaScript for interactive elements
+        // You can add more players and their details as needed
+        // Remember to update the image source and player information
+        
+        // Example function to show player details
+        function showPlayerDetails(playerId) {
+            var playerDetails = document.getElementById(playerId);
+            playerDetails.style.display = "block";
+        }
+        
+        // Example function to hide player details
+        function hidePlayerDetails(playerId) {
+            var playerDetails = document.getElementById(playerId);
+            playerDetails.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a simple webpage that showcases the Ireland Women's National Field Hockey Team. It includes player cards with their names and positions, and when clicked, it reveals additional details about each player. The CSS styles the player cards and provides a hover effect, while the JavaScript functions handle the interactivity by showing and hiding player details.
+
+Feel free to customize the code by adding more players and their details, updating the images, and modifying the CSS styles to match your desired design.

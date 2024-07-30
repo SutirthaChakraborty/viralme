@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divergent Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 5px solid #4a90e2;
+            transition: background-color 0.3s ease;
+        }
+        .topic:hover {
+            background-color: #e8f5fd;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4a90e2;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+        #moreInfo {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Divergent Media</h1>
+    <div class="topic">
+        <h2>What is Divergent Media?</h2>
+        <p>Divergent media refers to a variety of media forms that present different perspectives and often challenge mainstream narratives. This encompasses art, literature, film, and digital content that promotes unique voices.</p>
+    </div>
+    
+    <div class="topic">
+        <h2>Types of Divergent Media</h2>
+        <ul>
+            <li>Independent Films</li>
+            <li>Experimental Art</li>
+            <li>Alternative Literature</li>
+            <li>Digital Activism</li>
+        </ul>
+    </div>
+    
+    <div class="topic">
+        <h2>Importance of Divergent Media</h2>
+        <p>Divergent media encourages critical thinking, promotes cultural diversity, and allows marginalized voices to be heard, fostering a more inclusive society.</p>
+    </div>
+    
+    <button id="toggleInfo">Show More Information</button>
+    <div id="moreInfo">
+        <h2>How to Engage with Divergent Media</h2>
+        <p>Engaging with divergent media can include attending local art events, exploring independent film festivals, reading diverse authors, and participating in discussions around these topics.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("toggleInfo").addEventListener("click", function() {
+        var infoDiv = document.getElementById("moreInfo");
+        infoDiv.style.display = infoDiv.style.display === "none" || infoDiv.style.display === "" ? "block" : "none";
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for Producing High-Quality Video with Limited Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .tips-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tip {
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            background: #fff;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            transition: transform 0.2s;
+        }
+        .tip:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .tip-title {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .tip-description {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tips for Producing High-Quality Video with Limited Resources</h1>
+<div class="tips-container">
+    <div class="tip" onclick="toggleDescription(this);">
+        <div class="tip-title">1. Plan Your Shots</div>
+        <div class="tip-description">Creating a storyboard can help maximize your shooting efficiency.</div>
+    </div>
+    <div class="tip" onclick="toggleDescription(this);">
+        <div class="tip-title">2. Use Natural Light</div>
+        <div class="tip-description">Maximize available daylight by shooting near windows without artificial light.</div>
+    </div>
+    <div class="tip" onclick="toggleDescription(this);">
+        <div class="tip-title">3. Invest in Good Audio</div>
+        <div class="tip-description">Quality audio is crucial; consider cheaper external mics instead of built-in ones.</div>
+    </div>
+    <div class="tip" onclick="toggleDescription(this);">
+        <div class="tip-title">4. Keep it Steady</div>
+        <div class="tip-description">Use a tripod, or stabilize your camera using household objects to avoid shaky footage.</div>
+    </div>
+    <div class="tip" onclick="toggleDescription(this);">
+        <div class="tip-title">5. Edit Wisely</div>
+        <div class="tip-description">Use free or low-cost editing software to enhance your video without breaking the bank.</div>
+    </div>
+</div>
+
+<script>
+    function toggleDescription(tipElement) {
+        const description = tipElement.querySelector('.tip-description');
+        description.classList.toggle('show');
+    }
+</script>
+
+</body>
+</html>

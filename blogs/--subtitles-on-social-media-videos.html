@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subtitles on Social Media Videos</title>
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .video {
+            width: 100%;
+        }
+        .subtitles {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video class="video" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="subtitles">Click play to watch the video</div>
+    </div>
+
+    <script>
+        const video = document.querySelector('.video');
+        const subtitles = document.querySelector('.subtitles');
+
+        video.addEventListener('play', () => {
+            subtitles.style.display = 'none';
+        });
+
+        video.addEventListener('pause', () => {
+            subtitles.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

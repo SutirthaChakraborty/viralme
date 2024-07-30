@@ -1,0 +1,71 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Rider</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		#event-rider {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#event-rider h2 {
+			margin-top: 0;
+		}
+		
+		#event-rider ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		#event-rider li {
+			margin-bottom: 10px;
+		}
+		
+		#event-rider .highlight {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border-left: 5px solid #337ab7;
+		}
+		
+		#event-rider .highlight:hover {
+			background-color: #e0e0e0;
+		}
+	</style>
+</head>
+<body>
+	<div id="event-rider">
+		<h2>Event Rider</h2>
+		<p>An event rider is a professional horse rider who competes in the sport of eventing.</p>
+		<ul>
+			<li><span class="highlight">What is Eventing?</span> Eventing is a triathlon for horses and riders, consisting of dressage, cross-country, and show jumping.</li>
+			<li><span class="highlight">Types of Event Riders</span> There are different types of event riders, including professional riders, amateur riders, and junior riders.</li>
+			<li><span class="highlight">Skills Required</span> Event riders need to have strong riding skills, horse knowledge, and the ability to work well under pressure.</li>
+			<li><span class="highlight">Equipment</span> Event riders use specialized equipment, including saddles, bridles, and riding boots.</li>
+		</ul>
+		<script>
+			const eventRider = {
+				name: "Simon Williams",
+				country: "United Kingdom",
+				achievements: ["Winner of the Burghley Horse Trials", "Olympic Medalist"],
+				description: "Simon Williams is a renowned event rider from the United Kingdom. He has won numerous competitions, including the Burghley Horse Trials and has represented his country at the Olympic Games."
+			};
+			
+			document.getElementById("event-rider").addEventListener("click", function() {
+				alert(eventRider.description);
+			});
+		</script>
+	</div>
+</body>
+</html>

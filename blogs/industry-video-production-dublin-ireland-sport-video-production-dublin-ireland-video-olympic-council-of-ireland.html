@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production in Dublin, Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #35424a;
+            color: white;
+            padding: 20px 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .interactive-button {
+            background-color: #5cb85c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive-button:hover {
+            background-color: #4cae4c;
+        }
+        #info-text {
+            display: none;
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Industry Video Production in Dublin, Ireland</h1>
+</header>
+
+<section>
+    <h2>Sport Video Production in Dublin</h2>
+    <p>Dublin is a vibrant hub for sports video production that showcases the passion and talent of athletes across various disciplines. From capturing live events to creating promotional content for teams and tournaments, video production plays a crucial role in sports marketing and outreach.</p>
+    <button class="interactive-button" onclick="toggleInfo('sportInfo')">Learn More</button>
+    <div id="sportInfo" class="info-text">
+        <p>Sports video production in Dublin involves a range of services including live streaming, highlight reels, and athlete interviews. Companies use state-of-the-art equipment to enhance the viewer's experience and deliver high-quality content that resonates with sports enthusiasts.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Video Production for the Olympic Council of Ireland</h2>
+    <p>The Olympic Council of Ireland relies heavily on video production to promote events, athletes, and the spirit of the Olympics in Ireland. Engaging content helps to inspire and inform the public, fostering a deeper connection with sports.</p>
+    <button class="interactive-button" onclick="toggleInfo('olympicInfo')">Learn More</button>
+    <div id="olympicInfo" class="info-text">
+        <p>The Olympic Council's video production includes documentaries, athlete profiles, and coverage of national events. These videos create a narrative that showcases the dedication and hard work of Irish athletes on the international stage.</p>
+    </div>
+</section>
+
+<script>
+    function toggleInfo(id) {
+        var infoText = document.getElementById(id);
+        infoText.style.display = infoText.style.display === 'none' || infoText.style.display === '' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

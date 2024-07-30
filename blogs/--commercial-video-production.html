@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #4682b4;
+            color: white;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        h2 {
+            margin-top: 40px;
+            color: #4169e1;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin: 20px 0;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .topic:hover {
+            transform: scale(1.05);
+            background-color: #e6f7ff;
+        }
+        .toggle-description {
+            margin-top: 10px;
+            cursor: pointer;
+            color: #4682b4;
+            text-decoration: underline;
+        }
+        .description {
+            display: none;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-left: 5px solid #008080;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Commercial Video Production</h1>
+    <p>Creating Compelling Visual Content for Businesses</p>
+</header>
+
+<div class="container">
+    <h2>What is Commercial Video Production?</h2>
+    <p>Commercial video production involves producing high-quality video content tailored for marketing, advertising, or promotional purposes. This includes everything from concept development to filming, editing, and post-production.</p>
+    
+    <div class="topic">
+        <h3>The Process</h3>
+        <div class="toggle-description">Learn More</div>
+        <div class="description">
+            <p>The production process typically consists of three main phases: pre-production, production, and post-production. Each phase plays a crucial role in ensuring that the final product meets the client’s expectations.</p>
+        </div>
+    </div>
+    
+    <div class="topic">
+        <h3>Types of Commercial Videos</h3>
+        <div class="toggle-description">Learn More</div>
+        <div class="description">
+            <p>Commercial videos can take many forms: promotional videos, explainer videos, testimonials, product demos, and corporate videos are a few examples. Each serves a different purpose and targets various audiences.</p>
+        </div>
+    </div>
+    
+    <div class="topic">
+        <h3>Importance of Storytelling</h3>
+        <div class="toggle-description">Learn More</div>
+        <div class="description">
+            <p>Effective commercial videos often use storytelling techniques to engage viewers. A compelling narrative helps to connect the audience with the brand, reinforcing the message and prompting action.</p>
+        </div>
+    </div>
+    
+    <div class="topic">
+        <h3>Distribution Strategies</h3>
+        <div class="toggle-description">Learn More</div>
+        <div class="description">
+            <p>Once the video is produced, distribution is key to its success. Strategies may include social media sharing, email marketing, embedding on websites, or leveraging video advertising on various platforms.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.toggle-description').forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            const description = this.nextElementSibling;
+            description.style.display = (description.style.display === 'block') ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLearning Interactive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .topic {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .interactive {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to eLearning</h1>
+    <div class="topic">
+        <h2>What is eLearning?</h2>
+        <p>eLearning refers to the use of electronic media and technology for educational purposes. It encompasses a wide range of learning experiences, from online courses to interactive tutorials.</p>
+        <button class="button" onclick="toggleInteractive('interactive1')">Learn More</button>
+        <div id="interactive1" class="interactive">
+            <p>eLearning allows for flexible learning environments, enabling learners to access materials anytime and anywhere.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Benefits of eLearning</h2>
+        <p>eLearning offers numerous advantages, including cost-effectiveness, accessibility, and personalized learning experiences.</p>
+        <button class="button" onclick="toggleInteractive('interactive2')">Discover Benefits</button>
+        <div id="interactive2" class="interactive">
+            <ul>
+                <li>Cost-effective: Reduces travel and accommodation expenses.</li>
+                <li>Accessible: Learn from anywhere with an internet connection.</li>
+                <li>Personalized: Tailor learning experiences to individual needs.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Interactive Learning Tools</h2>
+        <p>Interactive tools enhance the learning experience by engaging users through quizzes, simulations, and multimedia content.</p>
+        <button class="button" onclick="toggleInteractive('interactive3')">Explore Tools</button>
+        <div id="interactive3" class="interactive">
+            <p>Examples include:</p>
+            <ul>
+                <li>Quizzes to test knowledge.</li>
+                <li>Simulations for practical experience.</li>
+                <li>Videos and animations for visual learning.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleInteractive(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

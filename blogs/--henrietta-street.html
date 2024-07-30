@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Henrietta Street</title>
+    <style>
+        .highlight {
+            color: blue;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Henrietta Street!</h1>
+    <p>Henrietta Street is a historic street located in the heart of Dublin, Ireland. It is known for its beautiful Georgian architecture and rich cultural heritage.</p>
+    <p>Explore the history and charm of Henrietta Street by clicking on the <span class="highlight">interactive</span> elements below:</p>
+    
+    <div id="info" style="display: none;">
+        <p><span class="highlight">Georgian Architecture:</span> Henrietta Street showcases stunning examples of Georgian architecture, with its elegant facades and intricate details.</p>
+        <p><span class="highlight">Cultural Heritage:</span> The street has a fascinating history, once being home to wealthy residents and later becoming a symbol of urban decay and regeneration.</p>
+    </div>
+    
+    <script>
+        document.querySelector('.highlight').addEventListener('click', function() {
+            document.getElementById('info').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

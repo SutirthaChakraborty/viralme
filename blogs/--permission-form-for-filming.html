@@ -1,0 +1,104 @@
+Here's the HTML code for an interactive and colorful permission form for filming:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filming Permission Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Permission Form for Filming</h1>
+  <form id="filmingPermissionForm">
+    <div class="form-group">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="location">Filming Location:</label>
+      <input type="text" id="location" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Filming Date:</label>
+      <input type="date" id="date" required>
+    </div>
+    <div class="form-group">
+      <label for="purpose">Purpose of Filming:</label>
+      <textarea id="purpose" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+JavaScript (script.js):
+javascript
+document.getElementById('filmingPermissionForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // Add logic to handle form submission (e.g., send data to server, show success message)
+  // This is where you can add interactive behavior using JavaScript
+});

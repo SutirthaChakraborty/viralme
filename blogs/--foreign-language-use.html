@@ -1,0 +1,103 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Foreign Language Use</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.language {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.language img {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin: 10px;
+		}
+		.language h2 {
+			margin-top: 0;
+		}
+		.interactive {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.interactive p {
+			margin-bottom: 20px;
+		}
+		.interactive button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.interactive button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Foreign Language Use</h1>
+		<div class="language">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt="French Flag">
+			<h2>French</h2>
+			<p>French is a Romance language spoken by around 274 million people worldwide. It is an official language in several countries, including France, Canada, Belgium, Switzerland, and Luxembourg.</p>
+			<button id="french-button">Click to hear French phrase</button>
+			<script>
+				document.getElementById("french-button").addEventListener("click", function() {
+					var audio = new Audio("https://raw.githubusercontent.com/lingua-io/lingua-io.github.io/master/audio/french_hello.mp3");
+					audio.play();
+				});
+			</script>
+		</div>
+		<div class="language">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_Spain.svg/1200px-Flag_of_Spain.svg.png" alt="Spanish Flag">
+			<h2>Spanish</h2>
+			<p>Spanish is a Romance language spoken by around 460 million people worldwide. It is an official language in several countries, including Spain, Mexico, Colombia, Argentina, and Peru.</p>
+			<button id="spanish-button">Click to hear Spanish phrase</button>
+			<script>
+				document.getElementById("spanish-button").addEventListener("click", function() {
+					var audio = new Audio("https://raw.githubusercontent.com/lingua-io/lingua-io.github.io/master/audio/spanish_hello.mp3");
+					audio.play();
+				});
+			</script>
+		</div>
+		<div class="interactive">
+			<h2>Try Your Foreign Language Skills!</h2>
+			<p>Click on the buttons below to hear a phrase in the corresponding language.</p>
+			<button id="german-button">Deutsch (German)</button>
+			<button id="italian-button">Italiano (Italian)</button>
+			<script>
+				document.getElementById("german-button").addEventListener("click", function() {
+					var audio = new Audio("https://raw.githubusercontent.com/lingua-io/lingua-io.github.io/master/audio/german_hello.mp3");
+					audio.play();
+				});
+				document.getElementById("italian-button").addEventListener("click", function() {
+					var audio = new Audio("https://raw.githubusercontent.com/lingua-io/lingua-io.github.io/master/audio/italian_hello.mp3");
+					audio.play();
+				});
+			</script>
+		</div>
+	</div>
+</body>
+</html>
+
+
+Note: This code uses external audio files to play the phrases. Make sure to replace the audio file URLs with the actual paths to your audio files if you want to use this code.

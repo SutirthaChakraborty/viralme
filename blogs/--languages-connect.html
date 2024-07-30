@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Languages Connect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .language {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .language:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Languages Connect</h1>
+    <div class="language" onclick="alert('English is a widely spoken language globally.')">English</div>
+    <div class="language" onclick="alert('Spanish is the second most spoken language in the world.')">Spanish</div>
+    <div class="language" onclick="alert('Mandarin Chinese has the most native speakers of any language.')">Mandarin Chinese</div>
+    <div class="language" onclick="alert('French is known as the language of love and diplomacy.')">French</div>
+    <script>
+        document.querySelectorAll('.language').forEach(item => {
+            item.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        });
+    </script>
+</body>
+</html>

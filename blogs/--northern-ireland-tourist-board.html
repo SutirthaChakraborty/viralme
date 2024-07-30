@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northern Ireland Tourist Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007A33;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #007A33;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .destination {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #e0f7fa;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .destination:hover {
+            transform: scale(1.05);
+            background-color: #b2ebf2;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007A33;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Northern Ireland Tourist Board</h1>
+        <nav>
+            <a href="#attractions">Attractions</a>
+            <a href="#accommodation">Accommodation</a>
+            <a href="#events">Events</a>
+        </nav>
+    </header>
+    <div class="content">
+        <section id="attractions">
+            <h2>Top Attractions</h2>
+            <div class="destination" onclick="showInfo('Giant's Causeway')">
+                <h3>Giant's Causeway</h3>
+                <p>Famous for its unique hexagonal basalt columns.</p>
+            </div>
+            <div class="destination" onclick="showInfo('Belfast Titanic Quarter')">
+                <h3>Belfast Titanic Quarter</h3>
+                <p>The birthplace of the Titanic, with a world-class visitor experience.</p>
+            </div>
+            <div class="destination" onclick="showInfo('Derry's Walls')">
+                <h3>Derry's Walls</h3>
+                <p>Historic city walls offering panoramic views of the city.</p>
+            </div>
+        </section>
+        <section id="accommodation">
+            <h2>Accommodation Options</h2>
+            <p>From luxury hotels to cozy B&Bs, Northern Ireland offers a variety of places to stay.</p>
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <p>Check out the latest festivals and events happening across Northern Ireland.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Northern Ireland Tourist Board</p>
+    </footer>
+    <script>
+        function showInfo(attraction) {
+            alert("You clicked on: " + attraction + ". Learn more about it on the official website!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Video Production in Dublin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .sections {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Industry Video Production in Dublin, Ireland</h1>
+    <h2>Sport Video Production & Athlete Interviews</h2>
+</header>
+
+<div class="container">
+    <p>Explore the vibrant world of <strong>sport video production</strong> in Dublin, Ireland! This sector has been instrumental in shaping the narratives around athletic performance, particularly for the <strong>Olympic Council of Ireland</strong>. Here, we delve into various aspects of video production, focusing on athlete interviews, event highlights, and the creative process behind impactful storytelling.</p>
+    
+    <button onclick="toggleSection('athleteInterviews')">Athlete Interviews</button>
+    <div id="athleteInterviews" class="sections">
+        <p>Athlete interviews are at the core of sport video production, providing insight into the mind of competitors. These interviews foster a deeper connection with fans, showcasing the passion, dedication, and challenges faced by athletes on their journey.</p>
+    </div>
+    
+    <button onclick="toggleSection('eventHighlights')">Event Highlights</button>
+    <div id="eventHighlights" class="sections">
+        <p>Event highlights capture the excitement and triumphs of sports events. In Dublin, production companies specialize in creating dynamic reels that showcase key moments, behind-the-scenes action, and athlete performances that are unforgettable.</p>
+    </div>
+
+    <button onclick="toggleSection('productionServices')">Production Services</button>
+    <div id="productionServices" class="sections">
+        <p>From filming to editing, production companies in Dublin offer a range of services to bring sport stories to life. Utilizing state-of-the-art technology, the industry has evolved to deliver high-quality content that resonates with audiences both locally and globally.</p>
+    </div>
+    
+    <button onclick="toggleSection('olympicCouncil')">Olympic Council of Ireland</button>
+    <div id="olympicCouncil" class="sections">
+        <p>The Olympic Council of Ireland plays a crucial role in promoting Irish athletes on the global stage. Collaborating with video production teams, they ensure that compelling narratives are told, highlighting the dedication and hard work of Irish Olympians.</p>
+    </div>
+</div>
+
+<script>
+    function toggleSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        const sections = document.querySelectorAll('.sections');
+
+        sections.forEach((sec) => {
+            if (sec !== section) {
+                sec.style.display = 'none';
+            }
+        });
+        
+        section.style.display = section.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

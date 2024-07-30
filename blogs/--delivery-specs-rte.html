@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delivery Specs Rte</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.specs {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.specs li {
+			margin-bottom: 10px;
+		}
+		.specs li::before {
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: #4CAF50;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+		.specs li.spec1::before {
+			background-color: #ff69b4;
+		}
+		.specs li.spec2::before {
+			background-color: #3498db;
+		}
+		.specs li.spec3::before {
+			background-color: #9b59b6;
+		}
+		.specs li.spec4::before {
+			background-color: #2ecc71;
+		}
+		.specs li.spec5::before {
+			background-color: #e74c3c;
+		}
+		.specs li.spec6::before {
+			background-color: #1abc9c;
+		}
+		.specs li.spec7::before {
+			background-color: #f1c40f;
+		}
+		.specs li.spec8::before {
+			background-color: #e67e73;
+		}
+		.specs li.spec9::before {
+			background-color: #8e44ad;
+		}
+		.specs li.spec10::before {
+			background-color: #2c3e50;
+		}
+		.interactive {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		.interactive:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Delivery Specs Rte</h1>
+		<ul class="specs">
+			<li class="spec1">Delivery Date: <input type="date" id="date1" value="2023-02-20"></li>
+			<li class="spec2">Delivery Time: <input type="time" id="time1" value="14:30"></li>
+			<li class="spec3">Delivery Address: <input type="text" id="address1" value="123 Main St"></li>
+			<li class="spec4">Package Weight: <input type="number" id="weight1" value="5"></li>
+			<li class="spec5">Package Size: <input type="text" id="size1" value="10x10x10"></li>
+			<li class="spec6">Special Instructions: <textarea id="instructions1" rows="4">No special instructions</textarea></li>
+			<li class="spec7">Customer Name: <input type="text" id="name1" value="John Doe"></li>
+			<li class="spec8">Customer Phone: <input type="tel" id="phone1" value="123-456-7890"></li>
+			<li class="spec9">Customer Email: <input type="email" id="email1" value="john.doe@example.com"></li>
+			<li class="spec10">Tracking Number: <input type="text" id="tracking1" value="ABC123"></li>
+		</ul>
+		<button class="interactive" onclick="saveSpecs()">Save Specs</button>
+	</div>
+
+	<script>
+		function saveSpecs() {
+			var specs = {};
+			specs.date = document.getElementById("date1").value;
+			specs.time = document.getElementById("time1").value;
+			specs.address = document.getElementById("address1").value;
+			specs.weight = document.getElementById("weight1").value;
+			specs.size = document.getElementById("size1").value;
+			specs.instructions = document.getElementById("instructions1").value;
+			specs.name = document.getElementById("name1").value;
+			specs.phone = document.getElementById("phone1").value;
+			specs.email = document.getElementById("email1").value;
+			specs.tracking = document.getElementById("tracking1").value;
+			console.log(specs);
+			alert("Delivery specs saved!");
+		}
+	</script>
+</body>
+</html>

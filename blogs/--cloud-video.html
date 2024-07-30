@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud Video</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .video {
+            width: 80%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cloud Video</h1>
+        <video class="video" controls>
+            <source src="cloud_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a href="#" class="button">Learn More</a>
+    </div>
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+            alert('Cloud video refers to the storage and streaming of video content over the internet.');
+        });
+    </script>
+</body>
+</html>

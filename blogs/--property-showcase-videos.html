@@ -1,0 +1,82 @@
+Sure! Here's an example of interactive and colorful HTML code that showcases property videos:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Showcase Videos</title>
+    <style>
+        /* CSS to style the video container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+        
+        /* CSS to style the video iframe */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* CSS to style the interactive buttons */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Property Showcase Videos</h1>
+    
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <div>
+        <a class="button" onclick="playVideo()">Play</a>
+        <a class="button" onclick="pauseVideo()">Pause</a>
+        <a class="button" onclick="stopVideo()">Stop</a>
+    </div>
+    
+    <script>
+        // JavaScript to control the video playback
+        function playVideo() {
+            var iframe = document.querySelector('.video-container iframe');
+            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
+        
+        function pauseVideo() {
+            var iframe = document.querySelector('.video-container iframe');
+            iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
+        
+        function stopVideo() {
+            var iframe = document.querySelector('.video-container iframe');
+            iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+        }
+    </script>
+</body>
+</html>
+
+
+In this HTML code, we have a video container that maintains a 16:9 aspect ratio using CSS. Inside the container, there is an iframe that embeds a YouTube video. You can replace `VIDEO_ID` with the actual YouTube video ID.
+
+Below the video, there are three interactive buttons: "Play", "Pause", and "Stop". These buttons are styled using CSS and have corresponding JavaScript functions (`playVideo`, `pauseVideo`, and `stopVideo`) that control the video playback by sending postMessage commands to the iframe.
+
+Feel free to customize the code and add more functionality as per your requirements.

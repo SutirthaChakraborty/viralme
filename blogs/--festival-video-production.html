@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Festival Video Production</title>
+	<style>
+		body {
+			background-color: #f5f5f5;
+			font-family: Arial, sans-serif;
+		}
+		
+		#header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		#content {
+			max-width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#video-container {
+			margin: 20px 0;
+			padding: 20px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-js {
+			width: 100%;
+			height: 300px;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-js:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+		}
+		
+		.info {
+			font-size: 14px;
+			color: #666;
+			margin-top: 10px;
+		}
+		
+		.info a {
+			color: #337ab7;
+			text-decoration: none;
+		}
+		
+		.info a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1>Festival Video Production</h1>
+		<p>Learn about the process of creating engaging festival videos</p>
+	</header>
+	<main id="content">
+		<h2>What is Festival Video Production?</h2>
+		<p>Festival video production is the process of creating high-quality videos for festivals, events, and performances. This can include pre-production, production, and post-production activities such as planning, filming, and editing.</p>
+		<h2>Pre-Production</h2>
+		<p>Pre-production is the planning stage of festival video production. This includes:</p>
+		<ul>
+			<li>Concept development: Developing ideas and concepts for the video</li>
+			<li>Scriptwriting: Writing a script for the video</li>
+			<li>Storyboarding: Creating a visual representation of the video</li>
+			<li>Location scouting: Finding and selecting locations for filming</li>
+			<li>Equipment preparation: Preparing camera, lighting, and sound equipment</li>
+		</ul>
+		<h2>Production</h2>
+		<p>Production is the filming stage of festival video production. This includes:</p>
+		<ul>
+			<li>Camera setup: Setting up camera equipment and lighting</li>
+			<li>Sound recording: Recording high-quality audio</li>
+			<li>Filming: Capturing footage of the festival or event</li>
+			<li>Interviews: Conducting interviews with festival attendees or performers</li>
+		</ul>
+		<h2>Post-Production</h2>
+		<p>Post-production is the editing stage of festival video production. This includes:</p>
+		<ul>
+			<li>Editing: Cutting and arranging footage into a cohesive video</li>
+			<li>Visual effects: Adding special effects, graphics, and animations</li>
+			<li>Sound design: Adding music, sound effects, and audio mixing</li>
+			<li>Color grading: Enhancing the color and brightness of the video</li>
+		</ul>
+		<div id="video-container">
+			<video id="video-js" controls>
+				<source src="festival-video.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<p class="info">Watch this example festival video to see the process in action:</p>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch on YouTube</a>
+		</div>
+		<p class="info">Want to learn more about festival video production? Check out these resources:</p>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Festival Video Production Tutorial</a></li>
+			<li><a href="https://www.vimeo.com/ondemand/festival-video-production" target="_blank">Festival Video Production Course</a></li>
+			<li><a href="https://www.filmconvert.com/festival-video-production" target="_blank">Festival Video Production Software</a></li>
+		</ul>
+	</main>
+	<script>
+		// Get the video element
+		var video = document.getElementById('video-js');
+		
+		// Add an event listener for the video's play event
+		video.addEventListener('play', function() {
+			// Change the video's background color to indicate it's playing
+			video.style.background = '#333';
+		});
+		
+		// Add an event listener for the video's pause event
+		video.addEventListener('pause', function() {
+			// Change the video's background color back to its original color
+			video.style.background = '#f0f0f0';
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTE File Format</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .toggle-btn {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .info-section {
+            display: none;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding RTE File Format</h1>
+</header>
+
+<div class="content">
+    <h2>What is RTE File Format?</h2>
+    <p>The RTE file format is commonly used for processing data in various applications, especially in the realm of geographic information systems (GIS). RTE files can store information related to road networks, terrain elevation, and other geospatial data.</p>
+    
+    <button class="toggle-btn" onclick="toggleInfo()">Learn More</button>
+    <div id="info" class="info-section">
+        <h3>Key Features of RTE Files:</h3>
+        <ul>
+            <li><strong>Data Storage:</strong> Utilizes structured formats to store spatial data efficiently.</li>
+            <li><strong>Interoperability:</strong> Often used in combination with other GIS file formats.</li>
+            <li><strong>Simplicity:</strong> Provides a straightforward way to represent geographical data.</li>
+        </ul>
+        <h3>Common Applications:</h3>
+        <ul>
+            <li>Urban planning and development</li>
+            <li>Road network analysis</li>
+            <li>Transport logistics and mapping</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 RTE File Format Info. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById('info');
+        if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block';
+        } else {
+            info.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

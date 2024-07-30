@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Prospectus Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .video-example {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Prospectus Examples</h1>
+</header>
+
+<section>
+    <h2>What is a Video Prospectus?</h2>
+    <p>A video prospectus is a digital presentation that showcases important information about a program, organization, or opportunity. It combines visuals and audio to engage the audience effectively.</p>
+</section>
+
+<section>
+    <h2>Examples of Video Prospectuses</h2>
+    <p>Click the buttons below to view different examples of video prospectuses:</p>
+    <button onclick="toggleVideo('example1')">Example 1: University Program</button>
+    <div id="example1" class="video-example">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <button onclick="toggleVideo('example2')">Example 2: Corporate Training</button>
+    <div id="example2" class="video-example">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <button onclick="toggleVideo('example3')">Example 3: Non-Profit Initiative</button>
+    <div id="example3" class="video-example">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<script>
+    function toggleVideo(exampleId) {
+        const videoDiv = document.getElementById(exampleId);
+        if (videoDiv.style.display === "none" || videoDiv.style.display === "") {
+            videoDiv.style.display = "block";
+        } else {
+            videoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

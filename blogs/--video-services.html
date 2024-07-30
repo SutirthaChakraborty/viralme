@@ -1,0 +1,53 @@
+Here's the HTML code for an interactive, colorful display about video services:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .video-service {
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .video-service:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Popular Video Services</h1>
+    <div class="video-service" onclick="showInfo('netflix')">Netflix</div>
+    <div class="video-service" onclick="showInfo('hulu')">Hulu</div>
+    <div class="video-service" onclick="showInfo('amazon')">Amazon Prime Video</div>
+
+    <div id="service-info"></div>
+
+    <script>
+        function showInfo(service) {
+            let info = "";
+            if (service === 'netflix') {
+                info = "Netflix is a subscription-based streaming service offering a wide variety of TV shows, movies, and original content.";
+            } else if (service === 'hulu') {
+                info = "Hulu provides on-demand streaming of TV shows, movies, and original content with and without commercials.";
+            } else if (service === 'amazon') {
+                info = "Amazon Prime Video offers a vast library of movies and TV shows, including original content, available to Amazon Prime members.";
+            }
+            document.getElementById('service-info').innerHTML = info;
+        }
+    </script>
+</body>
+</html>

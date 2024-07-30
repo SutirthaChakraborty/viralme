@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #2c3e50;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1abc9c;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .content {
+            display: none;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #ffffff;
+        }
+        .topic {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Environmental Policy</h1>
+    <div class="topic">
+        <button onclick="toggleContent('definition')">What is Environmental Policy?</button>
+        <div id="definition" class="content">
+            <p>Environmental policy refers to the commitment of an organization or government to the laws, regulations, and other policy mechanisms concerning environmental issues. It aims to manage human impact on the environment.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <button onclick="toggleContent('importance')">Importance of Environmental Policy</button>
+        <div id="importance" class="content">
+            <p>These policies are crucial for protecting natural resources, improving public health, and promoting sustainability. They also help in mitigating the effects of climate change.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <button onclick="toggleContent('types')">Types of Environmental Policies</button>
+        <div id="types" class="content">
+            <p>There are various types of environmental policies including:</p>
+            <ul>
+                <li>Regulatory Policies</li>
+                <li>Market-based Policies</li>
+                <li>Informational Policies</li>
+                <li>Voluntary Programs</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="topic">
+        <button onclick="toggleContent('challenges')">Challenges in Environmental Policy</button>
+        <div id="challenges" class="content">
+            <p>Common challenges include:</p>
+            <ul>
+                <li>Lack of funding</li>
+                <li>Political resistance</li>
+                <li>Public awareness and education</li>
+                <li>Enforcement of policies</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

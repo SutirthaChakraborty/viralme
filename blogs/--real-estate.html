@@ -1,0 +1,88 @@
+Sure, here's the HTML, CSS, and JavaScript code to create an interactive, colorful real estate information page:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Real Estate Information</title>
+</head>
+<body>
+  <h1>Welcome to Real Estate 101</h1>
+  <div class="info-container">
+    <p>Explore the latest trends in real estate</p>
+    <button onclick="showMoreInfo()">Show More</button>
+    <div id="moreInfo" style="display: none;">
+      <p>Learn about property investment strategies</p>
+      <button onclick="changeColor()">Change Color</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+h1 {
+  color: #2e86de;
+}
+
+.info-container {
+  background-color: #f9e79f;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+
+JavaScript (script.js):
+javascript
+function showMoreInfo() {
+  var moreInfo = document.getElementById("moreInfo");
+  if (moreInfo.style.display === "none") {
+    moreInfo.style.display = "block";
+  } else {
+    moreInfo.style.display = "none";
+  }
+}
+
+function changeColor() {
+  var body = document.querySelector("body");
+  body.style.backgroundColor = getRandomColor();
+}
+
+function getRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+This code creates a simple web page with real estate information, including a button to show more details and another button to change the background color. When the "Show More" button is clicked, it reveals additional information, and the "Change Color" button changes the background color of the page.

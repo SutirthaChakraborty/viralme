@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Awards Ceremony</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+		
+		.awards-container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.awards-list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.awards-list li {
+			margin-bottom: 10px;
+		}
+		
+		.awards-list li a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		
+		.awards-list li a:hover {
+			color: #23527c;
+		}
+		
+		.awards-button {
+			background-color: #337ab7;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.awards-button:hover {
+			background-color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="awards-container">
+		<h1>Online Awards Ceremony</h1>
+		<p>Welcome to our online awards ceremony, where we recognize and celebrate outstanding achievements in various fields.</p>
+		<ul class="awards-list">
+			<li><a href="#">Award 1: Best Website Design</a></li>
+			<li><a href="#">Award 2: Best Mobile App</a></li>
+			<li><a href="#">Award 3: Best Social Media Campaign</a></li>
+			<li><a href="#">Award 4: Best Online Course</a></li>
+			<li><a href="#">Award 5: Best Online Community</a></li>
+		</ul>
+		<button class="awards-button">Vote Now</button>
+	</div>
+	
+	<script>
+		// Get the awards list and button
+		var awardsList = document.querySelector('.awards-list');
+		var awardsButton = document.querySelector('.awards-button');
+		
+		// Add event listener to the button
+		awardsButton.addEventListener('click', function() {
+			// Loop through the awards list and add a "voted" class to each item
+			awardsList.querySelectorAll('li').forEach(function(item) {
+				item.classList.add('voted');
+			});
+		});
+	</script>
+</body>
+</html>

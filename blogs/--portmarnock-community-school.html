@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portmarnock Community School</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.header {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #4CAF50;
+		}
+		.header h1 {
+			margin: 0;
+		}
+		.info {
+			margin-top: 20px;
+		}
+		.info p {
+			margin-bottom: 10px;
+		}
+		.info ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.info ul li {
+			margin-bottom: 10px;
+		}
+		.info ul li:before {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background-color: #4CAF50;
+			border-radius: 50%;
+			margin-right: 10px;
+		}
+		.interactive {
+			margin-top: 20px;
+		}
+		.interactive button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		.interactive button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Portmarnock Community School</h1>
+		</div>
+		<div class="info">
+			<p>Portmarnock Community School is a co-educational secondary school located in Portmarnock, Dublin, Ireland.</p>
+			<ul>
+				<li>Established in 1964</li>
+				<li>Roll number: 600</li>
+				<li>Age range: 12-18 years</li>
+				<li>Curriculum: Junior Certificate and Leaving Certificate</li>
+			</ul>
+			<p>The school has a strong focus on academic achievement, extracurricular activities, and community involvement.</p>
+		</div>
+		<div class="interactive">
+			<button onclick="alert('Portmarnock Community School is a co-educational secondary school located in Portmarnock, Dublin, Ireland.')">Learn More</button>
+			<button onclick="alert('The school has a strong focus on academic achievement, extracurricular activities, and community involvement.')">Explore Extracurricular Activities</button>
+		</div>
+	</div>
+	<script>
+		const buttons = document.querySelectorAll('.interactive button');
+		buttons.forEach(button => {
+			button.addEventListener('click', event => {
+				event.preventDefault();
+				alert(button.textContent);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Production Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Production Category</h1>
+    <div class="video-info">
+        <p>Welcome to the Video Production Category! Click the button below to explore more.</p>
+        <button onclick="showTopics()">Show Topics</button>
+        <div id="topics" style="display: none;">
+            <h2>Topics:</h2>
+            <ul>
+                <li>Scriptwriting</li>
+                <li>Storyboarding</li>
+                <li>Shooting Techniques</li>
+                <li>Lighting and Sound</li>
+                <li>Editing and Post-Production</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showTopics() {
+            var topics = document.getElementById("topics");
+            if (topics.style.display === "none") {
+                topics.style.display = "block";
+            } else {
+                topics.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

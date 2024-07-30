@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ian McKinley</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .info {
+            border: 2px solid #007bff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Information about Ian McKinley</h1>
+    <div class="info">
+        <p>Ian McKinley is a talented actor known for his roles in various movies and TV shows.</p>
+        <p>He has received critical acclaim for his performances and has a strong fan following.</p>
+        <p>Click below to learn more about Ian McKinley!</p>
+        <button onclick="window.location.href='https://www.imdb.com/name/nm0000000/'" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Learn More</button>
+    </div>
+    <script>
+        document.querySelector('button').addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#0056b3';
+        });
+        document.querySelector('button').addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#007bff';
+        });
+    </script>
+</body>
+</html>

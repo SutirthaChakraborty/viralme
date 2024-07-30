@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Film Tax Incentive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffcc00, #ff6699);
+            color: #333;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #00264d;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .toggle-btn {
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .details {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Irish Film Tax Incentive</h1>
+        <h2>Understanding the Basics</h2>
+        <p>The Irish Film Tax Incentive is aimed at attracting foreign productions to Ireland, allowing for significant tax relief for qualifying film and television projects.</p>
+        
+        <button class="toggle-btn" onclick="toggleDetails()">Learn More</button>
+        
+        <div id="moreDetails" class="details hidden">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Provides a 32% tax credit on eligible expenditure.</li>
+                <li>Applies to both feature films and television dramas.</li>
+                <li>Minimum spend is €125,000 on qualifying Irish production costs.</li>
+                <li>Encourages investment in the Irish film industry and boosts local economy.</li>
+            </ul>
+            <h3>Eligibility Criteria:</h3>
+            <ul>
+                <li>Must be certified as a qualifying film or series.</li>
+                <li>Must meet cultural tests to ensure local relevance.</li>
+                <li>Open to international productions, promoting global collaboration.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("moreDetails");
+            if (details.classList.contains("hidden")) {
+                details.classList.remove("hidden");
+            } else {
+                details.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>

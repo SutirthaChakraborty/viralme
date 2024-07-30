@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Olympic Council of Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #0047ab;
+        }
+        p {
+            color: #333;
+        }
+        button {
+            background-color: #0047ab;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #002a6c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Olympic Council of Ireland</h1>
+    <p>Learn more about the Olympic Council of Ireland by clicking the button below:</p>
+    <button onclick="showInfo()">Click Here</button>
+    <div id="info" style="display: none;">
+        <p>The Olympic Council of Ireland (OCI) is the National Olympic Committee for Ireland.</p>
+        <p>It is responsible for representing Irish athletes at the Olympic Games and promoting Olympic values.</p>
+        <p>The OCI works to develop and support Olympic sports in Ireland.</p>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

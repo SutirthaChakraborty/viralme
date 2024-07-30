@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Free Template Safety Statement</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.safety-statement {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.safety-statement h2 {
+			margin-top: 0;
+		}
+		.safety-statement p {
+			margin-bottom: 20px;
+		}
+		.interactive {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.interactive label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.interactive input[type="checkbox"] {
+			margin-right: 10px;
+		}
+		.interactive button[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.interactive button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Free Template Safety Statement</h1>
+		<div class="safety-statement">
+			<h2>Safety Statement</h2>
+			<p>
+				Our company is committed to providing a safe and healthy work environment for all employees, contractors, and visitors. We recognize that safety is a shared responsibility and expect all personnel to take an active role in maintaining a safe working condition.
+			</p>
+			<p>
+				We will provide the necessary resources, training, and equipment to ensure that all personnel have the means to perform their duties safely. We will also conduct regular safety inspections and audits to identify and correct any hazards or deficiencies.
+			</p>
+			<p>
+				By signing below, I acknowledge that I have read, understood, and will comply with the safety statement and policies of [Company Name].
+			</p>
+		</div>
+		<div class="interactive">
+			<h2>Interactive Safety Statement</h2>
+			<label>
+				<input type="checkbox" id="safety-checkbox" />
+				I have read, understood, and will comply with the safety statement and policies of [Company Name].
+			</label>
+			<button type="submit" id="submit-button">Submit</button>
+			<script>
+				document.getElementById("submit-button").addEventListener("click", function() {
+					if (document.getElementById("safety-checkbox").checked) {
+						alert("Thank you for acknowledging the safety statement!");
+					} else {
+						alert("Please acknowledge the safety statement before submitting.");
+					}
+				});
+			</script>
+		</div>
+	</div>
+</body>
+</html>

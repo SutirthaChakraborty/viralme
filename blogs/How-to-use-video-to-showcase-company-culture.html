@@ -1,0 +1,86 @@
+#### Generating Interactive, Colorful HTML Code for Showcasing Company Culture Through Video
+
+Here's the HTML code for creating an interactive and colorful webpage to showcase company culture through video. This code includes CSS and JS to make the page interactive and engaging.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Culture Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #video-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        #video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        #overlay:hover {
+            opacity: 1;
+        }
+        #overlay h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        #overlay p {
+            font-size: 1.2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video id="video" controls>
+            <source src="company_culture_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="overlay">
+            <h2>Discover Our Culture</h2>
+            <p>Learn about our values, team, and work environment through this video.</p>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        video.onplay = function() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a webpage with a video player and an overlay that provides information about the company culture when the video is not playing. The CSS styles make the page visually appealing and the JavaScript adds interactivity to the video overlay.

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Video: A Colorful Exploration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #008cba;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .video-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+        video {
+            max-width: 100%;
+            border: 2px solid #008cba;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploring Web Video</h1>
+        <p>Discover the impact and importance of video content on the web!</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>What is Web Video?</h2>
+            <p>A web video refers to digital videos that are available online, from streaming platforms to social media.</p>
+            <button class="button" onclick="showMore('webVideo')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Types of Web Video</h2>
+            <p>Includes vlogs, tutorials, webinars, live streams, and promotional videos.</p>
+            <button class="button" onclick="showMore('types')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Benefits of Video</h2>
+            <p>Increases engagement, boosts SEO, conveys information effectively.</p>
+            <button class="button" onclick="showMore('benefits')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Video Marketing</h2>
+            <p>Utilizing video for branding, sales pitches, and audience engagement.</p>
+            <button class="button" onclick="showMore('marketing')">Learn More</button>
+        </div>
+    </div>
+    <div class="video-container" id="video-container">
+        <h2>Watch a Sample Web Video</h2>
+        <video controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script>
+        function showMore(topic) {
+            const topics = {
+                webVideo: "Web video encompasses all video content available online, making it accessible to a global audience from various devices.",
+                types: "Types of web video can be categorized into vlogs (video blogs), tutorials (how-to videos), webinars (online seminars), live streams, and promotional videos tailored for marketing.",
+                benefits: "The benefits of using video include higher engagement rates as viewers are more likely to watch videos than read text, improved SEO as search engines may rank video content higher, and the ability to communicate complex information effectively through visuals.",
+                marketing: "Video marketing is a strategy that leverages video content for advertising and promoting products or services, fostering better audience connection and boosting conversion rates."
+            };
+            alert(topics[topic] || "No information available.");
+        }
+    </script>
+</body>
+</html>

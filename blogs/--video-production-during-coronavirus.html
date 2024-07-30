@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production During Coronavirus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        .toggle-section {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e7f3fe;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Production During Coronavirus</h1>
+</header>
+
+<div class="content">
+    <h2>Overview</h2>
+    <p>The COVID-19 pandemic forced many video production companies to adapt quickly to new constraints and challenges. This era reshaped how content was created, distributed, and consumed.</p>
+
+    <button onclick="toggleSection('adapting-section')">Learn How Productions Adapted</button>
+    <div id="adapting-section" class="toggle-section hidden">
+        <h3>Adapting to New Norms</h3>
+        <ul>
+            <li>Remote Collaboration: Teams utilized virtual tools for meetings and production planning.</li>
+            <li>Health Protocols: Enhanced safety measures were implemented on set.</li>
+            <li>Home Studios: Filmmakers invested in home production setups.</li>
+        </ul>
+    </div>
+
+    <button onclick="toggleSection('tech-section')">Explore New Technologies</button>
+    <div id="tech-section" class="toggle-section hidden">
+        <h3>Technologies in Video Production</h3>
+        <ul>
+            <li>Live Streaming: Increased use of live video for events and performances.</li>
+            <li>Virtual Reality: Engaging audiences in new, immersive ways.</li>
+            <li>Cloud Editing: Teams could collaborate regardless of location.</li>
+        </ul>
+    </div>
+
+    <button onclick="toggleSection('audience-section')">Understand Audience Changes</button>
+    <div id="audience-section" class="toggle-section hidden">
+        <h3>Changing Viewer Habits</h3>
+        <ul>
+            <li>Increased Viewership: More people turned to online content during lockdowns.</li>
+            <li>Demand for Diverse Content: A rise in interest for educational and comforting material.</li>
+            <li>Shift to Digital Platforms: Streaming services saw significant growth in subscriptions.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section.classList.contains('hidden')) {
+            section.classList.remove('hidden');
+        } else {
+            section.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

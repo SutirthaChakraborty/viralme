@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Branded Content Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .example {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .example:hover {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Branded Content Examples</h1>
+        <p>Click on the examples below to learn more:</p>
+        <div class="example" onclick="showExample('Example 1')">Example 1</div>
+        <div class="example" onclick="showExample('Example 2')">Example 2</div>
+        <div class="example" onclick="showExample('Example 3')">Example 3</div>
+        <div id="exampleDetails"></div>
+    </div>
+
+    <script>
+        function showExample(example) {
+            let details = document.getElementById('exampleDetails');
+            details.innerHTML = `<p>Details for ${example} will be displayed here.</p>`;
+        }
+    </script>
+</body>
+</html>

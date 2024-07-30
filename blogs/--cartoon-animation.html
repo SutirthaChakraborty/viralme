@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoon Animation</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff6347;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 2px solid #f0e68c;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            border-color: #ff6347;
+        }
+
+        .button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #ff4500;
+        }
+
+        #animation-display {
+            margin-top: 20px;
+            text-align: center;
+            display: none;
+        }
+    
+        #animation {
+            width: 300px;
+            height: 300px;
+            background-color: #f0e68c;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .character {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ff69b4;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: bottom 0.5s, transform 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Learn About Cartoon Animation</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>What is Cartoon Animation?</h2>
+            <p>Cartoon animation is a form of animation that uses illustrations to create a series of moving images.</p>
+        </div>
+
+        <div class="card">
+            <h2>History of Animation</h2>
+            <p>Animation has evolved from simple cave drawings to complex software-generated imagery.</p>
+        </div>
+
+        <div class="card">
+            <h2>Techniques</h2>
+            <p>Various techniques such as 2D, 3D, stop motion, and claymation are used to bring cartoons to life.</p>
+        </div>
+
+        <div class="card">
+            <h2>Popular Shows</h2>
+            <p>Shows like "Cartoon Network", "Disney", and "Nickelodeon" have shaped the world of animation.</p>
+        </div>
+
+        <div class="card">
+            <h2>Animation Process</h2>
+            <button class="button" onclick="showAnimation()">View Animation</button>
+        </div>
+    </div>
+
+    <div id="animation-display">
+        <div id="animation">
+            <div class="character" id="character"></div>
+        </div>
+    </div>
+
+    <script>
+        function showAnimation() {
+            document.getElementById('animation-display').style.display = 'block';
+            let character = document.getElementById('character');
+            let position = 0;
+            let distance = 250; // Distance to move
+            let interval = setInterval(() => {
+                if (position < distance) {
+                    position += 5;
+                    character.style.bottom = position + 'px';
+                } else {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        position = 0;
+                        let reset = setInterval(() => {
+                            if (position < 250) {
+                                position += 5;
+                                character.style.bottom = position + 'px';
+                            } else {
+                                clearInterval(reset);
+                                character.style.transform = 'translateX(-50%)';
+                                character.style.bottom = '0px';
+                            }
+                        }, 30);
+                    }, 500);
+                }
+            }, 30);
+        }
+    </script>
+</body>
+</html>

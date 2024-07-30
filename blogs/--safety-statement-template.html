@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Safety Statement, Template, Safety Guidelines, Workplace Safety">
+    <meta name="description" content="Interactive Safety Statement Template with guidelines and examples.">
+    <title>Interactive Safety Statement Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interactive Safety Statement Template</h1>
+    <div class="container">
+        <h2>What is a Safety Statement?</h2>
+        <p>A safety statement is a formal document that outlines how an organization manages health and safety in the workplace. It is essential for compliance with safety regulations and for ensuring a safe working environment.</p>
+        
+        <h2>Key Components</h2>
+        <ul>
+            <li>**Policy Statement**: A declaration of the organization's commitment to safety.</li>
+            <li>**Risk Assessment**: Identification and evaluation of potential hazards.</li>
+            <li>**Safety Procedures**: Detailed instructions on how to handle specific risks.</li>
+            <li>**Training and Communication**: Plans for educating employees about safety practices.</li>
+        </ul>
+
+        <button class="button" onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="info">
+            <h3>Additional Information</h3>
+            <p>Regular reviews and updates of the safety statement are crucial to adapt to new risks and changes in the workplace. Engaging employees in safety discussions can enhance compliance and foster a culture of safety.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Marketing Videos in Dublin, Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .video-category {
+            margin: 20px 0;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .video-category:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .category-header {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .category-video {
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Category Marketing Videos in Dublin, Ireland</h1>
+    <p>Explore the best marketing videos tailored for your business!</p>
+</header>
+
+<div class="container">
+    <div class="video-category" onclick="toggleVideo('category1')">
+        <div class="category-header">Social Media Marketing</div>
+        <div class="description">Learn how to engage with your audience effectively through social media platforms.</div>
+        <video id="category1" class="category-video" controls>
+            <source src="social_media_marketing_dublin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-category" onclick="toggleVideo('category2')">
+        <div class="category-header">Content Marketing</div>
+        <div class="description">Discover the power of valuable content to attract and retain customers.</div>
+        <video id="category2" class="category-video" controls>
+            <source src="content_marketing_dublin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-category" onclick="toggleVideo('category3')">
+        <div class="category-header">SEO Strategies</div>
+        <div class="description">Boost your visibility and rankings on search engines with effective SEO tactics.</div>
+        <video id="category3" class="category-video" controls>
+            <source src="seo_strategies_dublin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Marketing Videos Dublin. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleVideo(categoryId) {
+        var video = document.getElementById(categoryId);
+        var videos = document.querySelectorAll('.category-video');
+
+        videos.forEach(function(v) {
+            if (v !== video) {
+                v.pause();
+                v.currentTime = 0;
+                v.style.display = 'none';
+            }
+        });
+
+        if (video.style.display === 'none' || video.style.display === '') {
+            video.style.display = 'block';
+            video.play();
+        } else {
+            video.pause();
+            video.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

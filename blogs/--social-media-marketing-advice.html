@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing Advice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .advice {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .advice:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .interactive {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Social Media Marketing Advice</h1>
+    <div class="advice">
+        <h2>1. Know Your Audience</h2>
+        <p>Understanding your target audience is crucial for effective social media marketing. Tailor your content to meet their interests and needs.</p>
+        <button class="button" onclick="toggleInteractive('interactive1')">Learn More</button>
+        <div id="interactive1" class="interactive">
+            <p>Use tools like surveys and analytics to gather data about your audience's preferences.</p>
+        </div>
+    </div>
+
+    <div class="advice">
+        <h2>2. Create Engaging Content</h2>
+        <p>High-quality, engaging content is key to capturing attention on social media platforms.</p>
+        <button class="button" onclick="toggleInteractive('interactive2')">Learn More</button>
+        <div id="interactive2" class="interactive">
+            <p>Consider using videos, infographics, and interactive posts to boost engagement.</p>
+        </div>
+    </div>
+
+    <div class="advice">
+        <h2>3. Utilize Analytics</h2>
+        <p>Regularly analyze your social media performance to understand what works and what doesn't.</p>
+        <button class="button" onclick="toggleInteractive('interactive3')">Learn More</button>
+        <div id="interactive3" class="interactive">
+            <p>Use insights from analytics to refine your strategy and improve your content.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInteractive(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

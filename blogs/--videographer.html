@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videographer Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 250px;
+            margin: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h2 {
+            color: #e94e77;
+            text-align: center;
+        }
+        .card p {
+            padding: 10px;
+            text-align: justify;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #interactive {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding the Role of a Videographer</h1>
+    <div class="container">
+        <div class="card">
+            <h2>What is a Videographer?</h2>
+            <p>A videographer is a person who records and edits video content for various platforms, including special events, corporate videos, and documentaries.</p>
+            <button onclick="showInfo('info1')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Skills Required</h2>
+            <p>Key skills include camera operation, lighting, audio techniques, editing software proficiency, and storytelling.</p>
+            <button onclick="showInfo('info2')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Equipment Used</h2>
+            <p>Common equipment includes cameras, tripods, microphones, lighting setups, and editing software like Adobe Premiere Pro.</p>
+            <button onclick="showInfo('info3')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Career Opportunities</h2>
+            <p>Videographers can work as freelancers, for production companies, or within corporate settings, covering events and creating promotional content.</p>
+            <button onclick="showInfo('info4')">Learn More</button>
+        </div>
+    </div>
+
+    <div id="interactive">
+        <h2>Interactive Videography Quiz</h2>
+        <p>Guess the correct answer to test your knowledge!</p>
+        <label for="quiz">What is the primary software used for video editing?</label>
+        <select id="quiz">
+            <option value="wrong">iMovie</option>
+            <option value="correct">Adobe Premiere Pro</option>
+            <option value="wrong">Windows Movie Maker</option>
+        </select>
+        <button onclick="checkAnswer()">Submit</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function showInfo(info) {
+            document.getElementById('interactive').style.display = 'block';
+            let infoText = "";
+            switch(info) {
+                case 'info1':
+                    infoText = "A videographer captures videos during events, managing all aspects from camera operation to editing.";
+                    break;
+                case 'info2':
+                    infoText = "They need strong skills in technology, creativity, and communication to produce high-quality content.";
+                    break;
+                case 'info3':
+                    infoText = "High-quality cameras, drones for aerial shots, and professional microphones are essential tools.";
+                    break;
+                case 'info4':
+                    infoText = "Videographers can also specialize in specific areas like weddings, corporate events, or film production.";
+                    break;
+            }
+            alert(infoText);
+        }
+
+        function checkAnswer() {
+            const selection = document.getElementById('quiz').value;
+            const result = document.getElementById('result');
+            if (selection === "correct") {
+                result.textContent = "Correct! Adobe Premiere Pro is indeed one of the primary editing software used by videographers.";
+                result.style.color = "green";
+            } else {
+                result.textContent = "Oops! That's not correct. Try again!";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

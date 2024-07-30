@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Hospital Kilmainham</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #e1f5fe, #fce4ec);
+            color: #333;
+            transition: background 0.5s;
+        }
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            color: #3f51b5;
+        }
+        .info-box {
+            background: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .info-box:hover {
+            transform: scale(1.03);
+        }
+        .toggle-button {
+            cursor: pointer;
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .toggle-button:hover {
+            background-color: #5c6bc0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Royal Hospital Kilmainham</h1>
+    </header>
+    <div class="container">
+        <h2>Overview</h2>
+        <div class="info-box">
+            <p>The Royal Hospital Kilmainham, situated in Dublin, Ireland, was founded in 1684 as a retirement home for soldiers. It is a significant historical building and has played various roles throughout its history.</p>
+        </div>
+
+        <h2>Architectural Significance</h2>
+        <div class="info-box">
+            <p>This magnificent complex, designed by architect Sir William Robinson, is an exquisite example of 17th-century architecture. Its grounds also include beautiful gardens that showcase its historical legacy.</p>
+        </div>
+
+        <h2>Current Use</h2>
+        <div class="info-box">
+            <p>Today, the Royal Hospital Kilmainham serves as a museum, particularly housing the Irish Museum of Modern Art (IMMA). It is a cultural hub that hosts various art exhibitions and events.</p>
+        </div>
+
+        <button class="toggle-button" onclick="toggleBackground()">Toggle Background Color</button>
+    </div>
+
+    <script>
+        function toggleBackground() {
+            const currentColor = document.body.style.background;
+            if (currentColor === 'linear-gradient(to right, #e1f5fe, #fce4ec)') {
+                document.body.style.background = 'linear-gradient(to right, #ffe082, #ffcc80)';
+            } else {
+                document.body.style.background = 'linear-gradient(to right, #e1f5fe, #fce4ec)';
+            }
+        }
+    </script>
+</body>
+</html>

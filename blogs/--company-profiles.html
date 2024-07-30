@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profiles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+        .company-name {
+            font-size: 24px;
+            color: #3498db;
+        }
+        .company-info {
+            margin: 10px 0;
+        }
+        .toggle-info {
+            cursor: pointer;
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+        .additional-info {
+            display: none;
+            margin-top: 10px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Company Profiles</h1>
+
+    <div class="profile-card">
+        <div class="company-name">Tech Innovators Inc.</div>
+        <div class="company-info">Industry: Technology</div>
+        <div class="company-info">Location: San Francisco, CA</div>
+        <div class="toggle-info">More Info</div>
+        <div class="additional-info">Founded: 2010<br>Employees: 150<br>Specialties: Software Development, AI Solutions</div>
+    </div>
+
+    <div class="profile-card">
+        <div class="company-name">Green Energy Solutions</div>
+        <div class="company-info">Industry: Renewable Energy</div>
+        <div class="company-info">Location: Austin, TX</div>
+        <div class="toggle-info">More Info</div>
+        <div class="additional-info">Founded: 2015<br>Employees: 80<br>Specialties: Solar Panels, Wind Energy</div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-info').forEach(item => {
+            item.addEventListener('click', event => {
+                const additionalInfo = event.target.nextElementSibling;
+                additionalInfo.style.display = additionalInfo.style.display === 'none' || additionalInfo.style.display === '' ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>

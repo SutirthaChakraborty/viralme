@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leverage Video for Audience Segmentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .video-container {
+            display: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>How to Leverage Video for Audience Segmentation</h1>
+</header>
+
+<section>
+    <h2>Why Use Video for Segmentation?</h2>
+    <p>Video content increases engagement and provides valuable insights into audience preferences. Tailoring videos to different segments ensures that your message resonates.</p>
+    <button class="button" onclick="showVideo('introVideo')">Watch Introduction</button>
+    <div id="introVideo" class="video-container">
+        <video width="320" height="240" controls>
+            <source src="intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section>
+    <h2>Types of Audience Segmentation</h2>
+    <p>Segmentation can be based on demographics, interests, behavior, and more. Tailored videos can help convey relevant messages to each audience group.</p>
+    <button class="button" onclick="showVideo('demographicsVideo')">Watch Demographics Video</button>
+    <div id="demographicsVideo" class="video-container">
+        <video width="320" height="240" controls>
+            <source src="demographics.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<section>
+    <h2>Implementing Video Personalization</h2>
+    <p>Use data analytics to understand viewer preferences and create personalized video experiences that cater to each segment effectively.</p>
+    <button class="button" onclick="showVideo('personalizationVideo')">Watch Personalization Video</button>
+    <div id="personalizationVideo" class="video-container">
+        <video width="320" height="240" controls>
+            <source src="personalization.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
+
+<script>
+    function showVideo(videoId) {
+        var videos = document.getElementsByClassName('video-container');
+        for (var i = 0; i < videos.length; i++) {
+            videos[i].style.display = 'none';
+        }
+        document.getElementById(videoId).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branded Content Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        .example {
+            border: 2px solid #2e8b57;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #ffffff;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .example:hover {
+            background-color: #e8f5e9;
+            transform: scale(1.02);
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #2e8b57;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #276747;
+        }
+        #content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f1f8e9;
+            border: 1px solid #c8e6c9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Branded Content Examples</h1>
+
+    <div class="example">
+        <h2>1. Red Bull's Stratos</h2>
+        <p>Red Bull sponsored Félix Baumgartner's jump from space, creating an incredible story around their brand.</p>
+        <button onclick="toggleContent('content1')">More Info</button>
+        <div id="content1" class="content">
+            <p>This event garnered worldwide media attention and linked the brand with daring and adventure.</p>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>2. Dove's Real Beauty Campaign</h2>
+        <p>Dove's campaign focused on body positivity and self-esteem, aligning the brand with real women and their stories.</p>
+        <button onclick="toggleContent('content2')">More Info</button>
+        <div id="content2" class="content">
+            <p>This initiative led to meaningful conversations about beauty standards and connected emotionally with the audience.</p>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>3. Nike's "Just Do It" Stories</h2>
+        <p>Nike produces content that showcases athletes' journeys, inspiring viewers to push their limits.</p>
+        <button onclick="toggleContent('content3')">More Info</button>
+        <div id="content3" class="content">
+            <p>These stories not only promote products but also empower individuals to embrace their athletic potential.</p>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>4. Coca-Cola's Share a Coke Campaign</h2>
+        <p>Coca-Cola printed popular names on bottles, encouraging personal connections among consumers.</p>
+        <button onclick="toggleContent('content4')">More Info</button>
+        <div id="content4" class="content">
+            <p>This campaign turned regular bottles into personalized items, engaging customers in a unique way.</p>
+        </div>
+    </div>
+
+    <div class="example">
+        <h2>5. Apple's "Shot on iPhone"</h2>
+        <p>Apple highlights photographs taken by users, promoting the quality of iPhone cameras while creating community.</p>
+        <button onclick="toggleContent('content5')">More Info</button>
+        <div id="content5" class="content">
+            <p>This initiative taps into user creativity and shows real-life applications of their technology.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

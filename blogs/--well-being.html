@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Well-Being Interactive Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-left: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Well-Being</h1>
+
+    <div class="section">
+        <h2>What is Well-Being?</h2>
+        <p>Well-being is a holistic concept that encompasses physical, mental, and emotional health. It reflects how individuals feel about their lives and their ability to cope with challenges.</p>
+    </div>
+
+    <div class="section">
+        <h2>Factors Influencing Well-Being</h2>
+        <ul>
+            <li>Physical Health</li>
+            <li>Mental Health</li>
+            <li>Social Connections</li>
+            <li>Work-Life Balance</li>
+            <li>Financial Stability</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Interactive Well-Being Quiz</h2>
+        <div class="interactive">
+            <label for="mood">How do you feel today?</label>
+            <select id="mood">
+                <option value="happy">Happy</option>
+                <option value="neutral">Neutral</option>
+                <option value="sad">Sad</option>
+            </select>
+            <button onclick="checkMood()">Check Mood</button>
+            <span class="result" id="moodResult"></span>
+        </div>
+    </div>
+
+    <script>
+        function checkMood() {
+            const mood = document.getElementById('mood').value;
+            let message = '';
+            switch(mood) {
+                case 'happy':
+                    message = 'Great! Keep up the positive vibes!';
+                    break;
+                case 'neutral':
+                    message = 'It’s okay to feel neutral. Find something that brings you joy!';
+                    break;
+                case 'sad':
+                    message = 'It’s important to acknowledge your feelings. Consider talking to someone.';
+                    break;
+                default:
+                    message = 'Please select a mood.';
+            }
+            document.getElementById('moodResult').innerText = message;
+        }
+    </script>
+
+</body>
+</html>

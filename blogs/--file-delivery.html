@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Delivery Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .content {
+            margin-top: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding File Delivery</h1>
+</header>
+
+<div class="content">
+    <h2>What is File Delivery?</h2>
+    <p>File delivery refers to the process of transferring files from one location to another, often involving the use of digital methods.</p>
+    
+    <h3>Key Methods of File Delivery:</h3>
+    <button class="button" onclick="toggleInfo('cloudStorageInfo')">Cloud Storage</button>
+    <div id="cloudStorageInfo" class="info">
+        <p>Cloud storage allows users to save and access files online. Services like Google Drive and Dropbox make sharing simple and efficient.</p>
+    </div>
+
+    <button class="button" onclick="toggleInfo('emailInfo')">Email Delivery</button>
+    <div id="emailInfo" class="info">
+        <p>Email is a traditional way to send files. You can attach documents directly to your emails, making it easy to share with others.</p>
+    </div>
+
+    <button class="button" onclick="toggleInfo('ftpInfo')">FTP (File Transfer Protocol)</button>
+    <div id="ftpInfo" class="info">
+        <p>FTP allows users to transfer files over the Internet. It is often used for uploading files to web servers or downloading files from them.</p>
+    </div>
+
+    <button class="button" onclick="toggleInfo('physicalDeliveryInfo')">Physical Delivery</button>
+    <div id="physicalDeliveryInfo" class="info">
+        <p>Physical delivery involves sending files on physical media such as USB drives or DVDs, often used when large files need to be sent securely.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(id) {
+        const infoDiv = document.getElementById(id);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

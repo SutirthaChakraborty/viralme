@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imma - The Virtual Influencer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #FF6F61;
+        }
+        #info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        #info:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        #toggleButton {
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        #toggleButton:hover {
+            background-color: #FF4D4D;
+        }
+        #details {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the World of Imma!</h1>
+    <div id="info">
+        <h2>Who is Imma?</h2>
+        <p>Imma is a virtual influencer from Japan, designed using advanced computer graphics.</p>
+        <button id="toggleButton">Learn More!</button>
+        <div id="details">
+            <h3>More About Imma:</h3>
+            <p>Imma has gained popularity on social media for her stylish outfits and unique personality.</p>
+            <p>She collaborates with brands, promotes products, and interacts with fans just like a real influencer!</p>
+            <p>Her presence showcases the future of digital marketing and influencer collaboration.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleButton').onclick = function() {
+            var details = document.getElementById('details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                this.innerText = 'Show Less';
+            } else {
+                details.style.display = 'none';
+                this.innerText = 'Learn More!';
+            }
+        };
+    </script>
+</body>
+</html>

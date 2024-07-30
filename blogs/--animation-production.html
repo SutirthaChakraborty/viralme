@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff6347;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(#fff, #e6f7ff);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ff6347;
+            border-radius: 5px;
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .topic:hover {
+            background-color: #ffe4e1;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #ff6347;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff4500;
+        }
+
+        .hidden {
+            display: none;
+        }
+        
+        .animation-example {
+            width: 200px;
+            height: 200px;
+            background-color: #6495ed;
+            margin: auto;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-30px); }
+            60% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animation Production</h1>
+
+        <div class="topic">
+            <h2>What is Animation?</h2>
+            <p>Animation is the process of creating motion and shape change by rapidly displaying a sequence of static images that minimally differ from each other.</p>
+            <button class="button" onclick="toggleDetails('definitionDetails')">More Details</button>
+            <div id="definitionDetails" class="hidden">
+                <p>Animation can be produced through various techniques, including traditional hand-drawn animation, stop-motion, and computer-generated imagery (CGI).</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>Steps in Animation Production</h2>
+            <ul>
+                <li>Concept Development</li>
+                <li>Scriptwriting</li>
+                <li>Storyboarding</li>
+                <li>Designing Characters</li>
+                <li>Voice Recording</li>
+                <li>Animation</li>
+                <li>Post-Production</li>
+            </ul>
+            <button class="button" onclick="toggleDetails('stepsDetails')">Explore Steps</button>
+            <div id="stepsDetails" class="hidden">
+                <p>Each step involves specific techniques and tools that contribute to the final output of the animation.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>Types of Animation</h2>
+            <p>Common types of animation include:</p>
+            <ol>
+                <li>2D Animation</li>
+                <li>3D Animation</li>
+                <li>Stop Motion</li>
+                <li>Motion Graphics</li>
+            </ol>
+            <button class="button" onclick="toggleDetails('typesDetails')">Learn More</button>
+            <div id="typesDetails" class="hidden">
+                <p>Each type has its unique styles and software requirements.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>Example of Animation</h2>
+            <div class="animation-example"></div>
+            <p>This is a simple bouncing animation to demonstrate motion.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+            } else {
+                details.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

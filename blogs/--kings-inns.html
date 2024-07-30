@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kings Inns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            color: #666;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Kings Inns</h1>
+    <p class="info">Kings Inns is a historic institution in Dublin, Ireland, providing legal education and training.</p>
+    <button onclick="showMoreInfo()">Show More Information</button>
+    <p id="moreInfo" style="display: none;">Learn about the rich history and prestigious alumni of Kings Inns.</p>
+    
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

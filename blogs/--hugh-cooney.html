@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugh Cooney</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        .info {
+            background-color: #e7f3fe;
+            border-left: 6px solid #4a90e2;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #d1e7dd;
+            border: 1px solid #badbcc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hugh Cooney</h1>
+    <div class="info">
+        <p>Hugh Cooney is a notable figure known for his contributions in various fields. Click the button below to learn more about his achievements and background.</p>
+        <button onclick="toggleDetails()">Show More Details</button>
+        <div class="details" id="details">
+            <p>Hugh Cooney has made significant impacts in areas such as technology and community service. His innovative approaches have inspired many, and he continues to be a role model for aspiring professionals.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

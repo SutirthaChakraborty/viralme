@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Event Marketing Video Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .interactive-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .video-content {
+            display: none;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .video-content video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Corporate Event Marketing Video Content</h1>
+    </header>
+    <div class="container">
+        <h2>Your Premier Marketing Agency in Dublin, Ireland</h2>
+        <p>Specializing in educational animated promotional videos tailored for your corporate events!</p>
+        
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>Expertise in live streaming video production services</li>
+            <li>Engaging animated content for effective communication</li>
+            <li>Strategically crafted marketing strategies to enhance your reach</li>
+        </ul>
+
+        <div class="interactive-section">
+            <h3>Watch Our Sample Video</h3>
+            <button class="btn" id="watchVideoBtn">Watch Now</button>
+            <div class="video-content" id="videoContent">
+                <video controls>
+                    <source src="sample-promo-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Your Marketing Agency, Dublin, Ireland</p>
+    </footer>
+
+    <script>
+        document.getElementById('watchVideoBtn').onclick = function() {
+            const videoContent = document.getElementById('videoContent');
+            videoContent.style.display = videoContent.style.display === 'none' ? 'block' : 'none';
+            this.textContent = this.textContent === 'Watch Now' ? 'Hide Video' : 'Watch Now';
+        };
+    </script>
+</body>
+</html>

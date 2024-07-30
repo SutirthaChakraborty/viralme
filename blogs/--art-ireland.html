@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Art Ireland</title>
+	<style>
+		body {
+			background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Ireland_flag_icon.svg/1200px-Ireland_flag_icon.svg.png');
+			background-size: cover;
+			background-position: center;
+			color: #fff;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.art-piece {
+			width: 30%;
+			margin: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.art-piece img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 10px 10px 0 0;
+		}
+		
+		.art-piece .info {
+			padding: 10px;
+			background-color: #f0f0f0;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+		
+		.art-piece .info h2 {
+			margin-top: 0;
+		}
+		
+		.art-piece .info p {
+			font-size: 14px;
+			color: #666;
+		}
+		
+		.art-piece:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Art Ireland</h1>
+		<p>Explore the vibrant art scene in Ireland, from traditional Irish folk art to modern contemporary pieces.</p>
+		<div class="art-piece">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Ireland_flag_icon.svg/1200px-Ireland_flag_icon.svg.png" alt="Irish Flag">
+			<div class="info">
+				<h2>Irish Flag</h2>
+				<p>The Irish flag is a symbol of Ireland's rich history and culture. Designed by Thomas Francis Meagher in 1848, the flag features three equal vertical bands of green, white, and orange.</p>
+			</div>
+		</div>
+		<div class="art-piece">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/James_Howard_Murray.jpg/220px-James_Howard_Murray.jpg" alt="James Howard Murray">
+			<div class="info">
+				<h2>James Howard Murray</h2>
+				<p>James Howard Murray was a prominent Irish artist known for his impressionist landscapes. Born in 1865, Murray's work was heavily influenced by the Irish countryside.</p>
+			</div>
+		</div>
+		<div class="art-piece">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Paul_Ogden.jpg/220px-Paul_Ogden.jpg" alt="Paul Ogden">
+			<div class="info">
+				<h2>Paul Ogden</h2>
+				<p>Paul Ogden is a contemporary Irish artist known for his abstract paintings. Born in 1965, Ogden's work explores the relationship between color and texture.</p>
+			</div>
+		</div>
+		<script>
+			const artPieces = document.querySelectorAll('.art-piece');
+			artPieces.forEach((artPiece) => {
+				artPiece.addEventListener('mouseover', () => {
+					artPiece.classList.add('hover');
+				});
+				artPiece.addEventListener('mouseout', () => {
+					artPiece.classList.remove('hover');
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

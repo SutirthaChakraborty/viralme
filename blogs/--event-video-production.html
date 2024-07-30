@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            padding: 20px;
+            border-radius: 8px;
+            color: white;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e1f5fe;
+            border-left: 5px solid #2196f3;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2196f3;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1976d2;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Event Video Production</h1>
+    <p>Capture the essence of your events with professional video production!</p>
+</header>
+
+<div class="section">
+    <h2>What is Event Video Production?</h2>
+    <p>Event video production involves capturing and producing high-quality videos during events such as weddings, conferences, concerts, and corporate gatherings. The goal is to create emotional and compelling narratives that audiences can cherish.</p>
+    <button onclick="toggleInfo('info1')">Learn More</button>
+    <div id="info1" class="interactive">
+        <p>It includes pre-production planning, on-site filming, editing, and post-production to deliver finalized content that can be shared with attendees or used for marketing purposes.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Key Elements</h2>
+    <ol>
+        <li>Pre-Production Planning</li>
+        <li>On-Site Filming</li>
+        <li>Editing and Post-Production</li>
+        <li>Distribution and Sharing</li>
+    </ol>
+    <button onclick="toggleInfo('info2')">Explore Key Elements</button>
+    <div id="info2" class="interactive">
+        <p>Each element is crucial for creating a polished final product that effectively captures the event's atmosphere and message.</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Why Choose Video Production?</h2>
+    <p>Utilizing video for events enhances engagement, provides a visual recap for attendees, and serves as an effective marketing tool. Videos can boost social media reach and showcase your brand’s personality.</p>
+    <button onclick="toggleInfo('info3')">Discover Benefits</button>
+    <div id="info3" class="interactive">
+        <p>From increased audience reach to preserving memories, professional video production adds immense value to any event.</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2023 Event Video Production. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleInfo(id) {
+        const infoDiv = document.getElementById(id);
+        infoDiv.style.display = infoDiv.style.display === 'none' || infoDiv.style.display === '' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

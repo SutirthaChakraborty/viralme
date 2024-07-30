@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Film Legal Issues</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .issue {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            background-color: #e1f7d5;
+            margin-top: 5px;
+            padding: 10px;
+            border-left: 6px solid #4CAF50;
+        }
+        .toggle {
+            color: #2196F3;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Legal Issues in Short Films</h1>
+</header>
+
+<section>
+    <h2>Common Legal Issues</h2>
+    <div class="issue" onclick="toggleDetails(this)">
+        Copyright Infringement
+        <span class="toggle">[Toggle]</span>
+        <div class="details">
+            Using copyrighted material without permission can lead to severe legal consequences. Always ensure you have the rights to any music, script, or other content.
+        </div>
+    </div>
+    
+    <div class="issue" onclick="toggleDetails(this)">
+        Contracts and Agreements
+        <span class="toggle">[Toggle]</span>
+        <div class="details">
+            Ensure that contracts with cast and crew are clear regarding rights, payments, and ownership of the film. This prevents disputes during and after production.
+        </div>
+    </div>
+    
+    <div class="issue" onclick="toggleDetails(this)">
+        Location Releases
+        <span class="toggle">[Toggle]</span>
+        <div class="details">
+            If filming on private property, obtain permission through a location release form. This protects against future claims from property owners.
+        </div>
+    </div>
+    
+    <div class="issue" onclick="toggleDetails(this)">
+        Defamation
+        <span class="toggle">[Toggle]</span>
+        <div class="details">
+            Be cautious with character portrayals that could be viewed as defamatory. This includes false statements about individuals or organizations.
+        </div>
+    </div>
+    
+    <div class="issue" onclick="toggleDetails(this)">
+        Insurance
+        <span class="toggle">[Toggle]</span>
+        <div class="details">
+            Consider obtaining production insurance to cover any potential liabilities, such as accidents or damage during filming.
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Short Film Legal Insights | Stay informed and protect your creativity!</p>
+</footer>
+
+<script>
+    function toggleDetails(element) {
+        const details = element.querySelector('.details');
+        if (details.style.display === "block") {
+            details.style.display = "none";
+        } else {
+            details.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

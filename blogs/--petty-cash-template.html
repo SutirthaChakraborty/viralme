@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小额现金模板</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.petty-cash-template {
+			width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.petty-cash-template h2 {
+			color: #337ab7;
+			margin-top: 0;
+		}
+		.petty-cash-template .section {
+			margin-bottom: 20px;
+		}
+		.petty-cash-template .section-label {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.petty-cash-template .section-input {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		.petty-cash-template .section-submit {
+			background-color: #337ab7;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.petty-cash-template .section-submit:hover {
+			background-color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="petty-cash-template">
+		<h2>小额现金模板</h2>
+		<section class="section">
+			<label class="section-label">日期:</label>
+			<input type="date" class="section-input" id="date" />
+		</section>
+		<section class="section">
+			<label class="section-label">项目:</label>
+			<input type="text" class="section-input" id="project" />
+		</section>
+		<section class="section">
+			<label class="section-label">金额:</label>
+			<input type="number" class="section-input" id="amount" />
+		</section>
+		<section class="section">
+			<label class="section-label">备注:</label>
+			<textarea class="section-input" id="remark"></textarea>
+		</section>
+		<button class="section-submit" id="submit">提交</button>
+		<div id="result"></div>
+	</div>
+
+	<script>
+		const resultElement = document.getElementById('result');
+		const submitButton = document.getElementById('submit');
+
+		submitButton.addEventListener('click', () => {
+			const date = document.getElementById('date').value;
+			const project = document.getElementById('project').value;
+			const amount = document.getElementById('amount').value;
+			const remark = document.getElementById('remark').value;
+
+			if (date && project && amount && remark) {
+				resultElement.innerHTML = `
+					<h3>小额现金记录</h3>
+					<p>日期:${date}</p>
+					<p>项目:${project}</p>
+					<p>金额:${amount}</p>
+					<p>备注:${remark}</p>
+				`;
+			} else {
+				resultElement.innerHTML = '请填写所有信息!';
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+#### HTML Code for Interactive Product Testimonials
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Testimonials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Product Testimonials</h1>
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <p>"**I absolutely love this product!** It has made a significant difference in my daily routine."</p>
+            <p>- John Doe</p>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <p>"**This product exceeded my expectations.** I couldn't be happier with my purchase."</p>
+            <p>- Jane Smith</p>
+        </div>
+    </div>
+    <button onclick="showNextTestimonial()">Next Testimonial</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+#### CSS Code (styles.css)
+
+css
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.testimonial {
+    display: none;
+}
+
+.testimonial-content {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#### JavaScript Code (script.js)
+
+javascript
+let currentTestimonial = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+
+function showNextTestimonial() {
+    testimonials[currentTestimonial].style.display = 'none';
+    currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+    testimonials[currentTestimonial].style.display = 'block';
+}
+

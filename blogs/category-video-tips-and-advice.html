@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tips and Advice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007acc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .tips {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .tip-title {
+            font-size: 1.5em;
+            color: #007acc;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+        .answer {
+            display: none;
+            background-color: #e7f4ff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Tips and Advice</h1>
+    </header>
+    <div class="container">
+        <div class="tips">
+            <div class="tip-title">1. Choose the Right Topic</div>
+            <button onclick="toggleAnswer('answer1')">Show Advice</button>
+            <div id="answer1" class="answer">Focus on trending subjects or niches you are passionate about. Research keywords that people are searching for.</div>
+        </div>
+        <div class="tips">
+            <div class="tip-title">2. Invest in Good Lighting</div>
+            <button onclick="toggleAnswer('answer2')">Show Advice</button>
+            <div id="answer2" class="answer">Natural light or softbox lights can enhance video quality significantly. Make sure the subject is well-lit.</div>
+        </div>
+        <div class="tips">
+            <div class="tip-title">3. Edit for Engagement</div>
+            <button onclick="toggleAnswer('answer3')">Show Advice</button>
+            <div id="answer3" class="answer">Keep your videos concise with engaging edits. Use cuts, transitions, and graphics to maintain viewer interest.</div>
+        </div>
+        <div class="tips">
+            <div class="tip-title">4. Optimize for SEO</div>
+            <button onclick="toggleAnswer('answer4')">Show Advice</button>
+            <div id="answer4" class="answer">Use targeted keywords in your title, description, and tags. This will make your videos more discoverable.</div>
+        </div>
+        <div class="tips">
+            <div class="tip-title">5. Promote Your Videos</div>
+            <button onclick="toggleAnswer('answer5')">Show Advice</button>
+            <div id="answer5" class="answer">Share your videos across social media platforms and engage with viewers to boost their reach.</div>
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

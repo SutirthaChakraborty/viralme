@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Tips and Advice: MXF, TG4, DPP Wrapper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4A90E2;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px 15px; 
+            border: none; 
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .tips {
+            display: none;
+            padding: 10px;
+            background-color: #e7f7e6;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Tips and Advice: MXF, TG4, DPP Wrapper</h1>
+        <p>Welcome to our interactive guide on video formats! Here you will find tips and advice to help you understand the MXF format, TG4 specifics, and DPP wrapper usage.</p>
+        
+        <h2>Understanding MXF Format</h2>
+        <button onclick="toggleTips('mxfTips')">Show/Hide MXF Tips</button>
+        <div id="mxfTips" class="tips">
+            <ul>
+                <li>MXF stands for Material Exchange Format – a professional video and audio format.</li>
+                <li>Ensure your video editing software supports MXF for easy import and export.</li>
+                <li>Use appropriate metadata within MXF files for better organization and retrieval.</li>
+            </ul>
+        </div>
+
+        <h2>Working with TG4</h2>
+        <button onclick="toggleTips('tg4Tips')">Show/Hide TG4 Tips</button>
+        <div id="tg4Tips" class="tips">
+            <ul>
+                <li>TG4 specializes in Irish-language programming, consider localization in your projects.</li>
+                <li>Stay updated on TG4's technical specifications for submission standards.</li>
+                <li>Emphasize cultural relevance and audience engagement in your content.</li>
+            </ul>
+        </div>
+
+        <h2>DPP Wrapper Insights</h2>
+        <button onclick="toggleTips('dppTips')">Show/Hide DPP Tips</button>
+        <div id="dppTips" class="tips">
+            <ul>
+                <li>DPP (Digital Production Partnership) standards ensure content quality and interoperability.</li>
+                <li>Follow the DPP recommendations for file naming and metadata details.</li>
+                <li>Use the DPP format for compatibility with broadcasters ensuring seamless workflow.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleTips(tipsId) {
+            const tips = document.getElementById(tipsId);
+            tips.style.display = tips.style.display === "none" || tips.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

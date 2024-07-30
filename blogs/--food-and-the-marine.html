@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and the Marine Environment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #00695c;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #004d40;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .food-item {
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background: #b2ebf2;
+            transition: transform 0.2s;
+        }
+        .food-item:hover {
+            transform: scale(1.05);
+            background: #80deea;
+        }
+        button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background: #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #b2dfdb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Marine Food and Its Importance</h1>
+    <div class="container">
+        <div class="food-item">
+            <h2>Seaweed</h2>
+            <button onclick="toggleDetails('seaweed')">Learn More</button>
+            <div id="seaweed" class="details">
+                <p>Seaweed is packed with vitamins and minerals, and plays a vital role in marine ecosystems.</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <h2>Fish</h2>
+            <button onclick="toggleDetails('fish')">Learn More</button>
+            <div id="fish" class="details">
+                <p>Fish are primary protein sources for millions globally and are essential for marine biodiversity.</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <h2>Shellfish</h2>
+            <button onclick="toggleDetails('shellfish')">Learn More</button>
+            <div id="shellfish" class="details">
+                <p>Shellfish like shrimp and oysters provide vital ecological functions and are delicious delicacies.</p>
+            </div>
+        </div>
+        <div class="food-item">
+            <h2>Plankton</h2>
+            <button onclick="toggleDetails('plankton')">Learn More</button>
+            <div id="plankton" class="details">
+                <p>Plankton form the base of the marine food web, supporting a multitude of marine life.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = (details.style.display === 'none' || details.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

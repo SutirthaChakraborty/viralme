@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>European Youth Olympic Festival</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #2e6e95;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #2e6e95;
+        }
+        .info-block {
+            background-color: #fff;
+            border: 2px solid #2e6e95;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .info-block:hover {
+            transform: scale(1.02);
+        }
+        .toggle-btn {
+            background-color: #2e6e95;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .toggle-content {
+            display: none;
+            padding: 10px;
+            background-color: #e7f3ff;
+            border: 1px solid #bcdff9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>European Youth Olympic Festival</h1>
+</header>
+
+<div class="info-block">
+    <h2>What is the European Youth Olympic Festival?</h2>
+    <p>The European Youth Olympic Festival (EYOF) is a multi-sport event for young athletes aged 14 to 18 from across Europe. It promotes the Olympic spirit and encourages sports among the youth.</p>
+    <button class="toggle-btn" onclick="toggleVisibility('whatIsEyof')">Learn More</button>
+    <div id="whatIsEyof" class="toggle-content">
+        <p>This festival is organized every two years and serves as a stepping stone for young athletes aiming for future Olympic participation.</p>
+    </div>
+</div>
+
+<div class="info-block">
+    <h2>History of EYOF</h2>
+    <p>The inaugural EYOF took place in 1991, with participants from 36 countries. Since then, it has grown, both in terms of participants and the number of sports included.</p>
+    <button class="toggle-btn" onclick="toggleVisibility('historyEyof')">Learn More</button>
+    <div id="historyEyof" class="toggle-content">
+        <p>The festival has been held in various cities, and every edition inspires future generations of athletes and promotes unity among European youth.</p>
+    </div>
+</div>
+
+<div class="info-block">
+    <h2>Participating Sports</h2>
+    <p>EYOF features a wide array of sports including athletics, swimming, gymnastics, and winter sports like skiing and ice hockey, depending on the season of the festival.</p>
+    <button class="toggle-btn" onclick="toggleVisibility('sportsEyof')">Learn More</button>
+    <div id="sportsEyof" class="toggle-content">
+        <p>This variety allows young athletes to showcase their skills and represents the diversity of sports across Europe.</p>
+    </div>
+</div>
+
+<script>
+    function toggleVisibility(id) {
+        const content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

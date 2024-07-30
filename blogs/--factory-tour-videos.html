@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factory Tour Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .video-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            transition: transform 0.2s;
+            width: 300px;
+            text-align: center;
+        }
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        .video-title {
+            font-weight: bold;
+            color: #555;
+            margin: 10px 0;
+        }
+        video {
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore Factory Tour Videos</h1>
+    <div class="container">
+        <div class="video-card">
+            <video controls>
+                <source src="factory-tour-video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-title">Automobile Manufacturing Process</div>
+            <button onclick="showInfo('automobile')">More Information</button>
+            <p id="automobile" class="info" style="display: none;">Discover the intricacies of automobile production, from assembly lines to quality checks!</p>
+        </div>
+
+        <div class="video-card">
+            <video controls>
+                <source src="factory-tour-video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-title">Textile Manufacturing</div>
+            <button onclick="showInfo('textile')">More Information</button>
+            <p id="textile" class="info" style="display: none;">Learn about fabric creation, dyeing processes, and cutting technologies!</p>
+        </div>
+        
+        <div class="video-card">
+            <video controls>
+                <source src="factory-tour-video3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-title">Electronics Assembly</div>
+            <button onclick="showInfo('electronics')">More Information</button>
+            <p id="electronics" class="info" style="display: none;">Explore how electronic devices are assembled with precision and care!</p>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(id) {
+            const infoElement = document.getElementById(id);
+            if (infoElement.style.display === "none" || infoElement.style.display === "") {
+                infoElement.style.display = "block";
+            } else {
+                infoElement.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

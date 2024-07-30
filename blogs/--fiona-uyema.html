@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiona Uyema - Culinary Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .interactive {
+            background-color: #ffe4e1;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive:hover {
+            background-color: #ffb6c1;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Fiona Uyema's Culinary World!</h1>
+    </header>
+    <div class="content">
+        <p>Hello Everyone! Fiona Uyema believes that **healthy delicious food** should be accessible to everybody. After living and traveling across Asia, she returned to Ireland to share the incredible fresh and vibrant flavors she experienced.</p>
+        <div class="interactive" onclick="showRecipe()">
+            Click here to discover a delicious recipe!
+        </div>
+        <div id="recipe" style="display:none; margin-top: 15px;">
+            <h2>Recipe: Asian-Inspired Quinoa Salad</h2>
+            <ul>
+                <li>1 cup quinoa</li>
+                <li>2 cups water</li>
+                <li>1 cup mixed vegetables (carrots, bell peppers, peas)</li>
+                <li>2 tablespoons soy sauce</li>
+                <li>1 tablespoon sesame oil</li>
+                <li>Chopped green onions for garnish</li>
+            </ul>
+            <p>Instructions: Cook quinoa in water until fluffy. Stir in vegetables, soy sauce, and sesame oil. Serve warm or cold, garnished with green onions.</p>
+        </div>
+    </div>
+    <footer>
+        <p>Follow Fiona on her culinary journey and explore more recipes!</p>
+    </footer>
+    <script>
+        function showRecipe() {
+            var recipeDiv = document.getElementById("recipe");
+            if (recipeDiv.style.display === "none") {
+                recipeDiv.style.display = "block";
+            } else {
+                recipeDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

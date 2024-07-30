@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inhaler Information</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Inhaler Information Page</h1>
+        <p>Click the button below to learn more about inhalers.</p>
+        <button class="button" onclick="showInfo()">Click Here</button>
+        <div id="info" style="display: none;">
+            <h2>About Inhalers</h2>
+            <p>An inhaler is a medical device used for delivering medication into the body via the lungs. It is commonly used to treat respiratory conditions such as asthma and COPD.</p>
+            <h3>Types of Inhalers</h3>
+            <ul>
+                <li>Metered-Dose Inhalers (MDIs)</li>
+                <li>Dry Powder Inhalers (DPIs)</li>
+                <li>Nebulizers</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

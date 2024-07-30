@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Video Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background-color: #ff6f61;
+            color: white;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .topic {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .toggle-button {
+            background-color: #007bff;
+        }
+        .toggle-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Training Video Guide</h1>
+        <p>Learn effectively with engaging training videos!</p>
+    </header>
+    <div class="container">
+        <div class="topic">
+            <h2>What is a Training Video?</h2>
+            <p>A training video is an instructional video designed to teach a specific skill or process.</p>
+            <button class="toggle-button" onclick="toggleContent(this)">Learn More</button>
+            <div class="toggle-content">
+                <p>These videos can be used in a variety of settings, including corporate training, educational environments, and online platforms. They typically combine visuals and audio to enhance learning.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>Benefits of Training Videos</h2>
+            <p>Training videos offer numerous advantages for effective learning.</p>
+            <button class="toggle-button" onclick="toggleContent(this)">Learn More</button>
+            <div class="toggle-content">
+                <ul>
+                    <li>Flexible learning pace</li>
+                    <li>Engaging multimedia content</li>
+                    <li>Consistent messaging</li>
+                    <li>Accessible anytime, anywhere</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h2>Best Practices in Creating Training Videos</h2>
+            <p>Effective training videos follow several best practices.</p>
+            <button class="toggle-button" onclick="toggleContent(this)">Learn More</button>
+            <div class="toggle-content">
+                <p>These include:</p>
+                <ol>
+                    <li>Define clear objectives.</li>
+                    <li>Keep it concise and focused.</li>
+                    <li>Incorporate visuals and examples.</li>
+                    <li>Provide opportunities for interaction.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+            button.innerHTML = (content.style.display === "block") ? "Show Less" : "Learn More";
+        }
+    </script>
+</body>
+</html>

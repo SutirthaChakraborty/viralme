@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Videography in Dublin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive-section {
+            margin: 20px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Videography in Dublin, Ireland</h1>
+    </header>
+    <div class="container">
+        <h2>Launch of Videography Booking Platform: Film Your Event</h2>
+        <p>Welcome to the launch of our innovative videography booking platform, <strong>Film Your Event</strong>. We specialize in capturing the essence of your events through professional videography services in Dublin, Ireland.</p>
+        
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>Experienced videographers with a keen eye for detail.</li>
+            <li>Quick and cost-effective booking process.</li>
+            <li>Packages tailored to suit various event types.</li>
+            <li>Live-streaming options available for wider audience reach.</li>
+        </ul>
+
+        <div class="interactive-section">
+            <h3>Watch Our Showcase</h3>
+            <video class="video" controls>
+                <source src="event-showcase.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Click the button below to learn more about our services!</p>
+            <button onclick="showMoreInfo()">Learn More</button>
+            <div id="more-info" style="display:none;">
+                <p>We offer a range of services including:</p>
+                <ul>
+                    <li>Corporate Events</li>
+                    <li>Weddings</li>
+                    <li>Conferences</li>
+                    <li>Live Performances</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("more-info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

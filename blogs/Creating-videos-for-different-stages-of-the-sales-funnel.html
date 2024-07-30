@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Funnel Video Creation</title>
+    <style>
+        .stage {
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .stage:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sales Funnel Video Creation</h1>
+    <div class="stage" onclick="showVideo('awareness')">Awareness Stage</div>
+    <div class="stage" onclick="showVideo('interest')">Interest Stage</div>
+    <div class="stage" onclick="showVideo('decision')">Decision Stage</div>
+    <div class="stage" onclick="showVideo('action')">Action Stage</div>
+
+    <div id="videoContainer"></div>
+
+    <script>
+        function showVideo(stage) {
+            let videoContainer = document.getElementById('videoContainer');
+            let videoUrl = getVideoUrl(stage);
+            videoContainer.innerHTML = `<iframe width="560" height="315" src="${videoUrl}" frameborder="0" allowfullscreen></iframe>`;
+        }
+
+        function getVideoUrl(stage) {
+            switch (stage) {
+                case 'awareness':
+                    return 'https://www.youtube.com/embed/video1';
+                case 'interest':
+                    return 'https://www.youtube.com/embed/video2';
+                case 'decision':
+                    return 'https://www.youtube.com/embed/video3';
+                case 'action':
+                    return 'https://www.youtube.com/embed/video4';
+                default:
+                    return '';
+            }
+        }
+    </script>
+</body>
+</html>

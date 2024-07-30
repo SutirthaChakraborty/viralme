@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Production Tips</title>
+    <style>
+        .tip {
+            background-color: #f7f7f7;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tip:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Production Tips</h1>
+    <div class="tip" onclick="showTip('tip1')">Tip 1: Lighting is Key</div>
+    <div class="tip" onclick="showTip('tip2')">Tip 2: Use High-Quality Audio</div>
+    <div class="tip" onclick="showTip('tip3')">Tip 3: Plan Your Shots</div>
+    
+    <div id="tip1" style="display: none;">Proper lighting can make a huge difference in the quality of your video production. Make sure to use natural light or invest in good lighting equipment.</div>
+    <div id="tip2" style="display: none;">Clear audio is essential for engaging videos. Invest in a good microphone and minimize background noise for professional sound quality.</div>
+    <div id="tip3" style="display: none;">Plan your shots in advance to ensure a cohesive and visually appealing video. Consider the framing, angles, and transitions between scenes.</div>
+    
+    <script>
+        function showTip(tipId) {
+            var tip = document.getElementById(tipId);
+            if (tip.style.display === "none") {
+                tip.style.display = "block";
+            } else {
+                tip.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

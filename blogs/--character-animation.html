@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Character Animation</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#character {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			animation: spin 2s infinite;
+		}
+		
+		@keyframes spin {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+		
+		#character:hover {
+			animation-play-state: paused;
+		}
+		
+		#character:hover + #info {
+			display: block;
+		}
+		
+		#info {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div id="character"></div>
+	<div id="info">
+		<h2>Character Animation</h2>
+		<p>Character animation is the process of creating the illusion of movement in a 2D or 3D character using various animation techniques, such as keyframe animation, tweening, and physics-based animation.</p>
+		<p>Character animation is used in a wide range of applications, including films, television shows, video games, and advertisements.</p>
+		<p>There are several types of character animation, including:</p>
+		<ul>
+			<li>Keyframe animation: This involves setting specific keyframes to define the character's movement and pose at specific points in time.</li>
+			<li>Tweening: This involves using interpolation to fill in the missing frames between keyframes, creating a smoother and more natural-looking animation.</li>
+			<li>Physics-based animation: This involves using physics engines to simulate real-world physics and create more realistic animations.</li>
+		</ul>
+	</div>
+	<script>
+		const character = document.getElementById('character');
+		const info = document.getElementById('info');
+		
+		character.addEventListener('mouseover', () => {
+			info.style.display = 'block';
+		});
+		
+		character.addEventListener('mouseout', () => {
+			info.style.display = 'none';
+		});
+	</script>
+</body>
+</html>

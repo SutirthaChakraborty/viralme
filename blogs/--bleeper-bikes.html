@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleeper Bikes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .interactive-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #info {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bleeper Bikes</h1>
+        <p>Bleeper Bikes are a revolutionary transportation option designed to be simple, efficient, and eco-friendly. They provide a convenient way to navigate urban areas while promoting a healthier lifestyle.</p>
+        
+        <h2>Why Choose Bleeper Bikes?</h2>
+        <ul>
+            <li>Eco-Friendly: Reduce your carbon footprint.</li>
+            <li>Health Benefits: Enjoy exercise while commuting.</li>
+            <li>Cost-Effective: Save money on transportation.</li>
+            <li>Convenience: Easily access bikes in urban locations.</li>
+        </ul>
+        
+        <div class="interactive-section">
+            <button id="toggle-info">Learn More</button>
+            <div id="info">
+                <h2>How Bleeper Bikes Work</h2>
+                <p>Bleeper Bikes are dockless and can be unlocked using a mobile app. You simply find a bike nearby, scan the QR code, and ride! Once you are done, you can leave the bike in a designated parking area.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggle-info').addEventListener('click', function() {
+            var info = document.getElementById('info');
+            if (info.style.display === "none") {
+                info.style.display = "block";
+                this.innerText = "Hide Info";
+            } else {
+                info.style.display = "none";
+                this.innerText = "Learn More";
+            }
+        });
+    </script>
+</body>
+
+</html>

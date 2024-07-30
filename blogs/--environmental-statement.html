@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environmental Statement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            color: #333;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Environmental Statement</h1>
+    <p>Welcome to our interactive page on environmental statement. Click the button below to learn more!</p>
+    <button onclick="showInfo()">Show Info</button>
+    <div id="info" style="display: none;">
+        <p>Environmental statement refers to a company's commitment to sustainability and environmental responsibility. It outlines the organization's efforts to reduce its carbon footprint, conserve resources, and protect the environment.</p>
+        <p>By implementing eco-friendly practices and policies, businesses can contribute to a greener future for our planet.</p>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

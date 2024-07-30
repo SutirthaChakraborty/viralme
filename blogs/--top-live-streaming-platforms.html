@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Live Streaming Platforms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .platform {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .platform:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top Live Streaming Platforms</h1>
+    <div class="platform" onclick="alert('Twitch is a popular live streaming platform for gamers.')">Twitch</div>
+    <div class="platform" onclick="alert('YouTube Live allows users to stream live video content to their audience.')">YouTube Live</div>
+    <div class="platform" onclick="alert('Facebook Live enables users to broadcast live videos to their Facebook followers.')">Facebook Live</div>
+    <script>
+        document.querySelectorAll('.platform').forEach(item => {
+            item.addEventListener('click', () => {
+                item.style.backgroundColor = '#27ae60';
+            });
+        });
+    </script>
+</body>
+</html>

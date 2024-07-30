@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information and Communications Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .info {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Information and Communications Technology</h1>
+    <p>Click the button below to learn more about ICT:</p>
+    <div class="info" onclick="showInfo()">Click Here for More Information</div>
+    <div id="infoContent" style="display: none;">
+        <p>Information and Communications Technology (ICT) refers to technologies that provide access to information through telecommunications. It encompasses any communication device or application, encompassing: radio, television, cellular phones, computer and network hardware and software, satellite systems, etc.</p>
+    </div>
+    <script>
+        function showInfo() {
+            var infoContent = document.getElementById('infoContent');
+            if (infoContent.style.display === 'none') {
+                infoContent.style.display = 'block';
+            } else {
+                infoContent.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

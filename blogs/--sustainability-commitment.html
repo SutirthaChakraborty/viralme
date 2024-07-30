@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability Commitment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9f0;
+            color: #333;
+        }
+
+        header {
+            background: #4caf50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn {
+            background: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        #impactResult {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #4caf50;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #4caf50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sustainability Commitment</h1>
+    <p>Explore our initiatives and impact on the planet!</p>
+</header>
+
+<section>
+    <div class="card">
+        <h3>What is Sustainability?</h3>
+        <p>Sustainability means meeting our own needs without compromising the ability of future generations to meet their own needs. It integrates environmental stewardship, economic stability, and social equity.</p>
+    </div>
+    
+    <div class="card">
+        <h3>Our Goals</h3>
+        <ul>
+            <li>Reduce carbon footprint</li>
+            <li>Promote renewable energy</li>
+            <li>Conserve natural resources</li>
+            <li>Support community-driven initiatives</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Calculate Your Impact</h3>
+        <label for="hours">Hours spent on sustainable practices:</label>
+        <input type="number" id="hours" value="0">
+        <button class="btn" onclick="calculateImpact()">Calculate</button>
+        <div id="impactResult"></div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Sustainability Commitment. All rights reserved.</p>
+</footer>
+
+<script>
+    function calculateImpact() {
+        const hours = document.getElementById('hours').value;
+        const impact = hours * 10; // Assume each hour contributes to reducing carbon by 10 units
+        document.getElementById('impactResult').innerText = `You have contributed ${impact} units to sustainability!`;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivery Specs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .specs {
+            border: 2px solid #007bff;
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .specs:hover {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Delivery Specifications</h1>
+    <div class="specs" onclick="showInfo('Delivery Time')">Click here to view Delivery Time</div>
+    <div class="specs" onclick="showInfo('Shipping Options')">Click here to view Shipping Options</div>
+    <div class="specs" onclick="showInfo('Tracking Information')">Click here to view Tracking Information</div>
+
+    <script>
+        function showInfo(info) {
+            alert("You selected: " + info);
+        }
+    </script>
+</body>
+</html>

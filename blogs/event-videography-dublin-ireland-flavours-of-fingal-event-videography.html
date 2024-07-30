@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Videography in Dublin - Flavours of Fingal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .event-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .event {
+            background-color: #e0ffe0;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .event:hover {
+            background-color: #c8f7c5;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Flavours of Fingal Event Videography</h1>
+    <p>Capturing the Essence of Dublin's Culinary Events</p>
+</header>
+
+<div class="container">
+    <h2>About Event Videography</h2>
+    <p>Event videography is the art of capturing live events through video. In Dublin, particularly during the Flavours of Fingal festival, skilled videographers bring the vibrant food culture to life, documenting every flavor, presentation, and moment.</p>
+
+    <h2>Upcoming Events</h2>
+    <ul class="event-list">
+        <li class="event" onclick="showDetails('event1Details')">
+            Fingal Food Festival - Sept 2024
+        </li>
+        <div id="event1Details" class="hidden">
+            <p>Join us for a celebration of local food, where videographers capture the excitement and flavors of Fingal!</p>
+        </div>
+
+        <li class="event" onclick="showDetails('event2Details')">
+            Dublin Taste - Nov 2024
+        </li>
+        <div id="event2Details" class="hidden">
+            <p>A showcase of Dublin's finest culinary talents, documented by professional videographers.</p>
+        </div>
+
+        <li class="event" onclick="showDetails('event3Details')">
+            Fingal Street Feast - July 2024
+        </li>
+        <div id="event3Details" class="hidden">
+            <p>Experience the culinary diversity of Fingal, with videographers capturing every delicious moment.</p>
+        </div>
+    </ul>
+</div>
+
+<footer>
+    <p>Contact us for your videography needs!</p>
+    <p>Email: info@fingaleventvideography.ie</p>
+</footer>
+
+<script>
+    function showDetails(eventId) {
+        const details = document.getElementById(eventId);
+        if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+        } else {
+            details.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

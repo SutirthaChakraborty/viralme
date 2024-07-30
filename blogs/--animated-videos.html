@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .info {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #animateButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        #animateButton:hover {
+            background-color: #45a049;
+        }
+        .animated {
+            display: inline-block;
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Animated Videos</h1>
+    <div class="info">
+        <p>Animated videos are a powerful medium for storytelling, marketing, and education.</p>
+        <p>They can convey complex ideas through visual storytelling, making content engaging and memorable.</p>
+        <p>Common types include 2D animation, 3D animation, whiteboard animations, and motion graphics.</p>
+    </div>
+    
+    <button id="animateButton">Click to Animate!</button>
+    <div id="animationContainer" class="animated" style="display: none;"></div>
+
+    <script>
+        document.getElementById('animateButton').addEventListener('click', function() {
+            const animationContainer = document.getElementById('animationContainer');
+            if (animationContainer.style.display === 'none') {
+                animationContainer.style.display = 'inline-block';
+            } else {
+                animationContainer.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>

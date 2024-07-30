@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Michael Conlan Video</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.video-container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-container iframe {
+			width: 100%;
+			height: 350px;
+			border: none;
+		}
+		
+		.info-container {
+			margin-top: 20px;
+			padding: 20px;
+			background-color: #f0f0f0;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.info-container h2 {
+			margin-top: 0;
+		}
+		
+		.info-container p {
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="video-container">
+		<iframe src="https://www.youtube.com/embed/michael-conlan-video" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="info-container">
+		<h2>Michael Conlan</h2>
+		<p>Michael Conlan is a Northern Irish professional boxer who competes in the featherweight division. He is a former amateur boxing world champion and a member of the Irish Olympic boxing team.</p>
+		<p>Conlan turned professional in 2017 and has since won several titles, including the WBA (Regular) and IBF featherweight titles. He is known for his aggressive fighting style and powerful punches.</p>
+		<p>Conlan has been praised for his sportsmanship and humility, and has been involved in several high-profile fights throughout his career. He is considered one of the top featherweight boxers in the world and is a fan favorite among boxing enthusiasts.</p>
+	</div>
+	<script>
+		// Add event listener to the video container
+		var videoContainer = document.querySelector('.video-container');
+		videoContainer.addEventListener('click', function() {
+			// Get the iframe element
+			var iframe = videoContainer.querySelector('iframe');
+			// Check if the iframe is playing
+			if (iframe.contentWindow.document.body.innerHTML !== '') {
+				// Pause the video
+				iframe.contentWindow.document.body.innerHTML = '';
+			} else {
+				// Play the video
+				iframe.contentWindow.document.body.innerHTML = '<video autoplay="true" loop="true" muted="true" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></video>';
+			}
+		});
+	</script>
+</body>
+</html>

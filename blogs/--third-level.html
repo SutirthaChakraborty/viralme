@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Level - An Interactive Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f2f2f2, #ffffff);
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .info {
+            display: none;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Understanding the Third Level</h1>
+    <p>The concept of the <strong>Third Level</strong> can refer to various aspects in different fields, including education, technology, and organizational structures.</p>
+    <button class="button" id="toggleButton">Learn More About the Third Level</button>
+    <div class="info" id="infoDiv">
+        <h2>Key Aspects of the Third Level</h2>
+        <ul>
+            <li><strong>Education:</strong> Refers to tertiary education beyond high school.</li>
+            <li><strong>Organizational Structure:</strong> Represents a hierarchy tier in management.</li>
+            <li><strong>Technology:</strong> In software, it could indicate the depth of a system's architecture.</li>
+        </ul>
+        <p>This level is essential for understanding complex systems and how they interact.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("toggleButton").onclick = function() {
+        var infoDiv = document.getElementById("infoDiv");
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+            this.innerText = "Show Less";
+        } else {
+            infoDiv.style.display = "none";
+            this.innerText = "Learn More About the Third Level";
+        }
+    };
+</script>
+
+</body>
+</html>

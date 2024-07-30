@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejero Live</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0a74da;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            border: 2px solid #0a74da;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #info {
+            display: none;
+            background-color: #e7f3ff;
+            padding: 10px;
+            border-left: 6px solid #0a74da;
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0a74da;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Dejero Live</h1>
+        <h2>What is Dejero Live?</h2>
+        <p>Dejero Live is a robust platform designed for live broadcasting. It allows users to send high-quality video from anywhere in the world by utilizing available internet connections.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li>Adaptive Bitrate Streaming</li>
+            <li>Multiple Connectivity Options</li>
+            <li>Real-Time Monitoring</li>
+            <li>User-Friendly Interface</li>
+        </ul>
+        
+        <h2>Discover More</h2>
+        <a href="#" class="button" id="toggleInfo">Learn More</a>
+        
+        <div id="info">
+            <p>Dejero Live employs advanced technology to ensure broadcasters can maintain a seamless connection and superior quality of live video feeds, regardless of location.</p>
+            <p>Whether you're covering an event, live streaming a sports game, or broadcasting news, Dejero Live has the tools to support your needs!</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2023 Dejero Live. All rights reserved.
+    </div>
+    
+    <script>
+        document.getElementById('toggleInfo').addEventListener('click', function(event) {
+            event.preventDefault();
+            var info = document.getElementById('info');
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+                this.innerText = "Show Less";
+            } else {
+                info.style.display = "none";
+                this.innerText = "Learn More";
+            }
+        });
+    </script>
+</body>
+</html>

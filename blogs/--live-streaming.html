@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #005f7f;
+        }
+        .info-box {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #4CAF50;
+            background-color: #e8f5e9;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Live Streaming</h1>
+        <div class="topic">
+            <h2>What is Live Streaming?</h2>
+            <p>Live streaming is the process of transmitting real-time video and audio over the internet, enabling viewers to watch events as they happen.</p>
+            <button class="btn" onclick="toggleInfo('info1')">Learn More</button>
+            <div id="info1" class="info-box">
+                Live streaming is commonly used for broadcasting events like sports, concerts, gaming, and webinars. It allows for immediate interaction between the content creator and the audience through chat features.
+            </div>
+        </div>
+        <div class="topic">
+            <h2>How Does Live Streaming Work?</h2>
+            <p>Live streaming works by capturing audio and video in real time, encoding it, and transmitting it over the internet to viewers who can watch it on various devices.</p>
+            <button class="btn" onclick="toggleInfo('info2')">Learn More</button>
+            <div id="info2" class="info-box">
+                The process involves several components: a video source (camera), a streaming encoder (software/hardware that converts the video to a format suitable for streaming), and a content delivery network (CDN) to distribute the stream to viewers.
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Platforms for Live Streaming</h2>
+            <p>Many platforms facilitate live streaming, including Twitch, YouTube Live, Facebook Live, and Zoom, each offering unique features tailored to different content types.</p>
+            <button class="btn" onclick="toggleInfo('info3')">Learn More</button>
+            <div id="info3" class="info-box">
+                Examples include gaming on Twitch, educational content on YouTube Live, social interactions on Facebook Live, and professional meetings on Zoom.
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Benefits of Live Streaming</h2>
+            <p>Live streaming provides a way to reach audiences globally, offering real-time engagement and interaction.</p>
+            <button class="btn" onclick="toggleInfo('info4')">Learn More</button>
+            <div id="info4" class="info-box">
+                Benefits include increased visibility, the ability to reach a larger audience, the opportunity for audience interaction, and the creation of a sense of community.
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            var infoBox = document.getElementById(infoId);
+            if (infoBox.style.display === "none" || infoBox.style.display === "") {
+                infoBox.style.display = "block";
+            } else {
+                infoBox.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

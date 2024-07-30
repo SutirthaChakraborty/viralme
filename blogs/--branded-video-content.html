@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Branded Video Content</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #333;
+		}
+		
+		.header h1 {
+			margin: 0;
+		}
+		
+		.video-container {
+			margin: 20px 0;
+			background-color: #333;
+			padding: 10px;
+			border: 1px solid #333;
+			border-radius: 10px;
+		}
+		
+		.video-container video {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+		}
+		
+		.description {
+			margin: 20px 0;
+			font-size: 16px;
+		}
+		
+		.interactive {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin: 20px 0;
+		}
+		
+		.interactive h2 {
+			margin: 0;
+		}
+		
+		.interactive ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.interactive li {
+			margin: 10px 0;
+		}
+		
+		.interactive a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		
+		.interactive a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Branded Video Content</h1>
+		</div>
+		<div class="video-container">
+			<video poster="branded-video-content.jpg" controls>
+				<source src="branded-video-content.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+		</div>
+		<div class="description">
+			<p>Branded video content is a type of video marketing that involves creating and distributing videos that showcase a company's products, services, or values. It can be used to build brand awareness, generate leads, and drive sales.</p>
+		</div>
+		<div class="interactive">
+			<h2>Interactive Elements</h2>
+			<ul>
+				<li><a href="#quiz">Quiz: How Well Do You Know Your Brand?</a></li>
+				<li><a href="#poll">Poll: What's Your Favorite Type of Branded Video Content?</a></li>
+				<li><a href="#game">Game: Brand the Video!</a></li>
+			</ul>
+		</div>
+		<script>
+			// Quiz
+			var quiz = {
+				questions: [
+					{ question: "What is the primary goal of branded video content?", answers: ["To entertain", "To educate", "To persuade"] },
+					{ question: "What type of branded video content is most effective at building brand awareness?", answers: ["Explainer videos", "Product demos", "Testimonials"] },
+					{ question: "What is the best way to distribute branded video content?", answers: ["Social media", "Email marketing", "Paid advertising"] }
+				],
+				currentQuestion: 0,
+				score: 0
+			};
+			
+			document.getElementById("quiz").addEventListener("click", function() {
+				var question = quiz.questions[quiz.currentQuestion];
+				var answers = question.answers;
+				var correctAnswer = question.correctAnswer;
+				// Display the question and answers
+				alert(question.question + "\n" + answers.join("\n"));
+				// Get the user's answer
+				var userAnswer = prompt("Enter your answer:");
+				// Check if the user's answer is correct
+				if (userAnswer === correctAnswer) {
+					quiz.score++;
+					alert("Correct!");
+				} else {
+					alert("Incorrect. The correct answer is " + correctAnswer + ".");
+				}
+				// Move on to the next question
+				quiz.currentQuestion++;
+				if (quiz.currentQuestion >= quiz.questions.length) {
+					alert("Quiz complete! Your score is " + quiz.score + " out of " + quiz.questions.length + ".");
+				}
+			});
+			
+			// Poll
+			var poll = {
+				questions: [
+					{ question: "What's your favorite type of branded video content?", answers: ["Explainer videos", "Product demos", "Testimonials"] }
+				],
+				currentQuestion: 0
+			};
+			
+			document.getElementById("poll").addEventListener("click", function() {
+				var question = poll.questions[poll.currentQuestion];
+				var answers = question.answers;
+				// Display the question and answers
+				alert(question.question + "\n" + answers.join("\n"));
+				// Get the user's answer
+				var userAnswer = prompt("Enter your answer:");
+				// Display the results
+				alert("Results: " + answers[0] + ": " + getPercentage(answers[0], poll.questions.length) + "%, " + answers[1] + ": " + getPercentage(answers[1], poll.questions.length) + "%, " + answers[2] + ": " + getPercentage(answers[2], poll.questions.length) + "%");
+				// Move on to the next question
+				poll.currentQuestion++;
+				if (poll.currentQuestion >= poll.questions.length) {
+					alert("Poll complete!");
+				}
+			});
+			
+			function getPercentage(answer, total) {
+				var count = 0;
+				for (var i = 0; i < total; i++) {
+					if (answers[i] === answer) {
+						count++;
+					}
+				}
+				return (count / total) * 100 + "%";
+			}
+			
+			// Game
+			var game = {
+				questions: [
+					{ question: "What is the primary goal of branded video content?", correctAnswer: "To persuade" },
+					{ question: "What type of branded video content is most effective at building brand awareness?", correctAnswer: "Explainer videos" },
+					{ question: "What is the best way to distribute branded video content?", correctAnswer: "Social media" }
+				],
+				currentQuestion: 0,
+				score: 0
+			};
+			
+			document.getElementById("game").addEventListener("click", function() {
+				var question = game.questions[game.currentQuestion];
+				var correctAnswer = question.correctAnswer;
+				// Display the question
+				alert(question.question);
+				// Get the user's answer
+				var userAnswer = prompt("Enter your answer:");
+				// Check if the user's answer is correct
+				if (userAnswer === correctAnswer) {
+					game.score++;
+					alert("Correct!");
+				} else {
+					alert("Incorrect. The correct answer is " + correctAnswer + ".");
+				}
+				// Move on to the next question
+				game.currentQuestion++;
+				if (game.currentQuestion >= game.questions.length) {
+					alert("Game complete! Your score is " + game.score + " out of " + game.questions.length + ".");
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Olympic Council</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #009639;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #004c6d;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #003b52;
+        }
+        .info {
+            display: none;
+            background-color: #e7f1ff;
+            border: 1px solid #004c6d;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .header {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="header">Irish Olympic Council</h1>
+    <h2>About Us</h2>
+    <p>The Irish Olympic Council is the national body responsible for the promotion and development of Olympic sports in Ireland.</p>
+    <button class="btn" onclick="toggleInfo('vision')">Vision</button>
+    <div id="vision" class="info">
+        <p>To inspire the nation through Olympic values and enhanced performance in sport.</p>
+    </div>
+    
+    <button class="btn" onclick="toggleInfo('mission')">Mission</button>
+    <div id="mission" class="info">
+        <p>To support athletes in their pursuit of excellence at the Olympic Games and promote participation in sports.</p>
+    </div>
+
+    <button class="btn" onclick="toggleInfo('history')">History</button>
+    <div id="history" class="info">
+        <p>Founded in 1922, the Irish Olympic Council has been a significant player in representing Ireland at the Olympic Games.</p>
+    </div>
+
+    <button class="btn" onclick="toggleInfo('sports')">Sports Supported</button>
+    <div id="sports" class="info">
+        <p>The Council supports multiple sports including athletics, rowing, boxing, and many others.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(id) {
+        const infoDiv = document.getElementById(id);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

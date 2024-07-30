@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Megan McEvoy</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.image {
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			margin: 20px auto;
+			display: block;
+		}
+		
+		.info {
+			font-size: 18px;
+			color: #666;
+			margin-bottom: 20px;
+		}
+		
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Megan McEvoy</h1>
+		<div class="image">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Megan_McEvoy.jpg/220px-Megan_McEvoy.jpg" alt="Megan McEvoy">
+		</div>
+		<p class="info">Megan McEvoy is an American model and actress. She was born on March 4, 1993, in Long Island, New York.</p>
+		<button class="button" onclick="alert('Megan McEvoy is a successful model and actress, known for her appearances in various fashion magazines and TV shows.')">Learn More</button>
+		<script>
+			let info = document.querySelector('.info');
+			let button = document.querySelector('.button');
+			
+			button.addEventListener('click', () => {
+				alert('Megan McEvoy is a successful model and actress, known for her appearances in various fashion magazines and TV shows.');
+			});
+		</script>
+	</div>
+</body>
+</html>

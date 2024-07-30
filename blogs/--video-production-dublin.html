@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Production Dublin</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .video {
+            width: 80%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Video Production Dublin</h1>
+        <p>Click on the video below to learn more about our services:</p>
+        <video class="video" controls>
+            <source src="video_production_dublin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script>
+        const video = document.querySelector('.video');
+        video.addEventListener('mouseover', function() {
+            this.play();
+        });
+        video.addEventListener('mouseout', function() {
+            this.pause();
+        });
+    </script>
+</body>
+</html>

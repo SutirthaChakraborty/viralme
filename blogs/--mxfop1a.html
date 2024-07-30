@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MXFOP1A Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #0077cc;
+        }
+        .info-box {
+            background-color: #fff;
+            border: 2px solid #0077cc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.2s;
+        }
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding MXFOP1A</h1>
+    <div class="info-box" id="infoBox">
+        <p>Click the button below to learn more about MXFOP1A!</p>
+    </div>
+    <button onclick="showInfo()">Learn More</button>
+
+    <script>
+        function showInfo() {
+            const infoBox = document.getElementById('infoBox');
+            infoBox.innerHTML = `
+                <h2>What is MXFOP1A?</h2>
+                <p>MXFOP1A is a format used for the exchange of audio-visual material.</p>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Supports multiple audio and video streams</li>
+                    <li>Ensures high-quality media preservation</li>
+                    <li>Facilitates efficient workflow in media production</li>
+                </ul>
+                <h3>Applications:</h3>
+                <p>Commonly used in broadcasting, film production, and archival storage.</p>
+            `;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding MP4: A Multimedia Format</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #3498db;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        .accordion {
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin: 5px 0;
+            transition: background-color 0.3s;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #2980b9;
+        }
+        .panel {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Understanding MP4</h1>
+    <p>MP4, or MPEG-4 Part 14, is a digital multimedia format commonly used to store video and audio. It can also be used to store other data like subtitles and still images.</p>
+    
+    <button class="accordion">What is MP4?</button>
+    <div class="panel">
+        <p>The MP4 file format is popular due to its efficient compression, enabling high-quality videos at relatively small file sizes. It supports a wide range of codecs for both audio and video.</p>
+    </div>
+
+    <button class="accordion">Key Features of MP4</button>
+    <div class="panel">
+        <ul>
+            <li>Supports multiple tracks for audio, video, and subtitles.</li>
+            <li>Provides high compression efficiency.</li>
+            <li>Compatible with a wide range of devices and platforms.</li>
+            <li>Allows streaming over the internet.</li>
+        </ul>
+    </div>
+
+    <button class="accordion">How to Play MP4 Files?</button>
+    <div class="panel">
+        <p>MP4 files can be played on most media players, including VLC, Windows Media Player, and QuickTime. Web browsers like Chrome and Firefox also support direct playback of MP4 files.</p>
+    </div>
+
+    <button class="accordion">How to Create MP4 Files?</button>
+    <div class="panel">
+        <p>You can create MP4 files using video editing software such as Adobe Premiere, Final Cut Pro, or free tools like HandBrake. These tools allow you to export your video projects in the MP4 format.</p>
+    </div>
+
+    <button class="accordion">Future of MP4 Format</button>
+    <div class="panel">
+        <p>The MP4 format continues to evolve, with emerging technologies enhancing compression and streaming capabilities, ensuring its relevance in the digital media landscape.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Learn About MP4. All rights reserved.</p>
+</footer>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

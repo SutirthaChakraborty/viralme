@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>资金信息</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.header {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #3e8e41;
+		}
+		.content {
+			padding: 20px;
+		}
+		.interactive {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.interactive:hover {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>资金信息</h2>
+		</div>
+		<div class="content">
+			<p>资金信息是指企业、个人或组织在一定时间内获得的资金资源，包括贷款、投资、捐赠、子公司投资等多种形式。</p>
+			<p>以下是资金信息的主要类型：</p>
+			<div class="interactive" onclick="showFundingType1()">贷款</div>
+			<div class="interactive" onclick="showFundingType2()">投资</div>
+			<div class="interactive" onclick="showFundingType3()">捐赠</div>
+			<div class="interactive" onclick="showFundingType4()">子公司投资</div>
+			<div id="fundingType1" style="display: none;">
+				<p>贷款是指企业或个人将其资产或未来收入作为担保，向银行或其他金融机构申请的资金。贷款的类型有：</p>
+				<ul>
+					<li>短期贷款：用于解决短期资金缺口的贷款。</li>
+					<li>中期贷款：用于解决中期资金缺口的贷款。</li>
+					<li>长期贷款：用于解决长期资金缺口的贷款。</li>
+				</ul>
+			</div>
+			<div id="fundingType2" style="display: none;">
+				<p>投资是指个人或组织将其资产或未来收入用于购买或投资他人的资产或项目。投资的类型有：</p>
+				<ul>
+					<li>股票投资：用于购买股票的投资。</li>
+					<li>债券投资：用于购买债券的投资。</li>
+					<li>房地产投资：用于购买房地产的投资。</li>
+				</ul>
+			</div>
+			<div id="fundingType3" style="display: none;">
+				<p>捐赠是指个人或组织将其资产或未来收入用于帮助他人或社会公益事业的资金。捐赠的类型有：</p>
+				<ul>
+					<li>慈善捐赠：用于帮助他人的捐赠。</li>
+					<li>社会捐赠：用于社会公益事业的捐赠。</li>
+				</ul>
+			</div>
+			<div id="fundingType4" style="display: none;">
+				<p>子公司投资是指母公司将其资产或未来收入用于投资子公司的资金。子公司投资的类型有：</p>
+				<ul>
+					<li>全资子公司投资：用于全资拥有子公司的投资。</li>
+					<li>部分子公司投资：用于部分拥有子公司的投资。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		function showFundingType1() {
+			document.getElementById("fundingType1").style.display = "block";
+			document.getElementById("fundingType2").style.display = "none";
+			document.getElementById("fundingType3").style.display = "none";
+			document.getElementById("fundingType4").style.display = "none";
+		}
+		function showFundingType2() {
+			document.getElementById("fundingType1").style.display = "none";
+			document.getElementById("fundingType2").style.display = "block";
+			document.getElementById("fundingType3").style.display = "none";
+			document.getElementById("fundingType4").style.display = "none";
+		}
+		function showFundingType3() {
+			document.getElementById("fundingType1").style.display = "none";
+			document.getElementById("fundingType2").style.display = "none";
+			document.getElementById("fundingType3").style.display = "block";
+			document.getElementById("fundingType4").style.display = "none";
+		}
+		function showFundingType4() {
+			document.getElementById("fundingType1").style.display = "none";
+			document.getElementById("fundingType2").style.display = "none";
+			document.getElementById("fundingType3").style.display = "none";
+			document.getElementById("fundingType4").style.display = "block";
+		}
+	</script>
+</body>
+</html>

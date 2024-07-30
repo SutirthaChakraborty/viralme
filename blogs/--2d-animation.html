@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2D Animation</title>
+    <style>
+        #animation-container {
+            width: 400px;
+            height: 400px;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        #animated-object {
+            width: 50px;
+            height: 50px;
+            background-color: #ff6347;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>2D Animation</h1>
+    <p>2D animation involves creating movement in a two-dimensional artistic space.</p>
+    <div id="animation-container">
+        <div id="animated-object"></div>
+    </div>
+    <script>
+        const animatedObject = document.getElementById('animated-object');
+        let isMoving = false;
+
+        animatedObject.addEventListener('click', () => {
+            if (isMoving) {
+                animatedObject.style.transform = 'translate(-50%, -50%)';
+            } else {
+                animatedObject.style.transform = 'translate(100px, 100px)';
+            }
+            isMoving = !isMoving;
+        });
+    </script>
+</body>
+</html>

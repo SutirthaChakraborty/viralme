@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry Video Production in Dublin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        #info {
+            display: none;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Video Production in Dublin, Ireland</h1>
+    <div class="container">
+        <div class="card">
+            <h2>Sport Video Production</h2>
+            <p>Delivering high-quality sports content for event coverage, team highlights, and more!</p>
+            <button class="button" onclick="toggleInfo('sportInfo')">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Olympic Council of Ireland</h2>
+            <p>20 videos produced and counting for the Olympic Council of Ireland. Showcasing the spirit of Irish athletes!</p>
+            <button class="button" onclick="toggleInfo('olympicInfo')">Learn More</button>
+        </div>
+    </div>
+
+    <div id="info">
+        <div id="sportInfo" class="info-section">
+            <h3>About Sport Video Production</h3>
+            <p>We specialize in capturing live sports events, athlete interviews, and creating promotional video content that engages audiences. Our team is equipped with the latest technology to bring the thrill of sports to the screen.</p>
+        </div>
+        <div id="olympicInfo" class="info-section">
+            <h3>Videos for the Olympic Council</h3>
+            <p>Our collaboration with the Olympic Council of Ireland has resulted in over 20 videos that highlight the achievements and stories of Irish athletes. From training sessions to competition highlights, we provide comprehensive video coverage that inspires.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(infoId) {
+            const infoSection = document.getElementById(infoId);
+            const isDisplayed = infoSection.style.display === 'block';
+            document.getElementById('info').style.display = 'block';
+            document.querySelectorAll('.info-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            if (!isDisplayed) {
+                infoSection.style.display = 'block';
+            } else {
+                document.getElementById('info').style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

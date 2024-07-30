@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Olympians</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4caf50;
+        }
+        .athlete {
+            border: 1px solid #4caf50;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .athlete:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Celebrating Irish Olympians</h1>
+</header>
+
+<div class="container">
+    <h2>Notable Irish Olympians</h2>
+    <div class="athlete">
+        <h3>Katie Taylor</h3>
+        <p>Sport: Boxing</p>
+        <button onclick="toggleDetails('details1')">Show Details</button>
+        <div id="details1" class="details">
+            <p>Katie Taylor is a two-time Olympic gold medalist in lightweight boxing, winning her medals in 2012 and 2016.</p>
+        </div>
+    </div>
+    
+    <div class="athlete">
+        <h3>Paul O'Donovan</h3>
+        <p>Sport: Rowing</p>
+        <button onclick="toggleDetails('details2')">Show Details</button>
+        <div id="details2" class="details">
+            <p>Paul O'Donovan won gold in the Men's Lightweight Double Sculls at the 2016 Olympics and is a world champion.</p>
+        </div>
+    </div>
+
+    <div class="athlete">
+        <h3>John Treacy</h3>
+        <p>Sport: Athletics</p>
+        <button onclick="toggleDetails('details3')">Show Details</button>
+        <div id="details3" class="details">
+            <p>John Treacy won a silver medal in the marathon at the 1984 Olympics and is a prominent figure in Irish athletics.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(detailId) {
+        const details = document.getElementById(detailId);
+        if (details.style.display === "block") {
+            details.style.display = "none";
+        } else {
+            details.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

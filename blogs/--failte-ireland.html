@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fáilte Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff7f50;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background-color: #fff;
+            border: 2px solid #ff7f50;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 30%;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #ff6347;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+            background-color: #e6e6fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Fáilte Ireland</h1>
+    <p>Explore the heart of Irish tourism with Fáilte Ireland, the National Tourism Development Authority.</p>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>Enhancing Ireland's reputation as a premier destination.</p>
+            <button onclick="showInfo('mission')">Learn More</button>
+        </div>
+        
+        <div class="card">
+            <h2>Tourism Strategy</h2>
+            <p>Supporting sustainable growth in the tourism sector.</p>
+            <button onclick="showInfo('strategy')">Learn More</button>
+        </div>
+        
+        <div class="card">
+            <h2>Visitor Experiences</h2>
+            <p>Creating authentic and memorable experiences for visitors.</p>
+            <button onclick="showInfo('experiences')">Learn More</button>
+        </div>
+    </div>
+
+    <div id="info"></div>
+
+    <script>
+        function showInfo(topic) {
+            const infoBox = document.getElementById('info');
+            let content = '';
+
+            if (topic === 'mission') {
+                content = '<h3>Our Mission</h3><p>Fáilte Ireland is dedicated to helping the tourism sector grow and thrive by enhancing Ireland\'s image and supporting businesses in providing better tourist experiences.</p>';
+            } else if (topic === 'strategy') {
+                content = '<h3>Tourism Strategy</h3><p>Our strategy focuses on sustainable tourism, aiming to balance economic growth with environmental and social responsibilities, ensuring that tourism contributes positively to communities and nature.</p>';
+            } else if (topic === 'experiences') {
+                content = '<h3>Visitor Experiences</h3><p>We work closely with operators and stakeholders to create unique Irish experiences, promoting culture, heritage, and the stunning natural landscapes that Ireland has to offer.</p>';
+            }
+
+            infoBox.innerHTML = content;
+            infoBox.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

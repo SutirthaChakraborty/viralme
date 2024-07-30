@@ -1,0 +1,49 @@
+#### HTML Code for Interactive, Colorful Animated Advertisements
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Advertisements</title>
+  <style>
+    .ad-container {
+      width: 300px;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    .ad-image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.5s ease;
+    }
+    .ad-image:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="ad-container">
+    <img class="ad-image" src="your_ad_image.jpg" alt="Animated Ad">
+  </div>
+
+  <script>
+    const adImage = document.querySelector('.ad-image');
+
+    adImage.addEventListener('mouseover', function() {
+      adImage.style.filter = 'grayscale(0)';
+    });
+
+    adImage.addEventListener('mouseout', function() {
+      adImage.style.filter = 'grayscale(1)';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4500;
+        }
+        .award-section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .interactive-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive-button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Live Streaming Awards 2024</h1>
+    <div class="award-section">
+        <h2>About the Awards</h2>
+        <p>The Live Streaming Awards recognize the best in streaming entertainment, highlighting outstanding creators, innovative content, and captivating performances.</p>
+        <button class="interactive-button" onclick="toggleDetails('about-details')">Learn More</button>
+        <div id="about-details" class="hidden">
+            <p>The awards celebrate various categories, including Best Streamer, Best Live Event, and Best Interactive Content, bringing the community together to honor talent and creativity.</p>
+        </div>
+    </div>
+
+    <div class="award-section">
+        <h2>Categories</h2>
+        <ul>
+            <li>Best Streamer</li>
+            <li>Best Live Event</li>
+            <li>Best Interactive Content</li>
+            <li>Best Community Engagement</li>
+            <li>Best Technical Achievement</li>
+        </ul>
+        <button class="interactive-button" onclick="toggleDetails('categories-details')">View Category Details</button>
+        <div id="categories-details" class="hidden">
+            <p>Each category showcases the unique talents and contributions of streamers who have made an impact in the live streaming world.</p>
+        </div>
+    </div>
+
+    <div class="award-section">
+        <h2>Voting Process</h2>
+        <p>Fans and viewers can participate in the voting process to determine the winners in each category.</p>
+        <button class="interactive-button" onclick="toggleDetails('voting-details')">How to Vote</button>
+        <div id="voting-details" class="hidden">
+            <p>Voting will take place through our official website, where fans can cast their votes for their favorite streamers and events. Each vote counts!</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+            } else {
+                details.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

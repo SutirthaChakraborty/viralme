@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacks: A Colorful Exploration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 2em;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .topic:hover {
+            background-color: #e8f5e9;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Exploring Hacks
+    </header>
+    <div class="container">
+        <div class="topic" onclick="toggleDetails('details1')">
+            What are Hacks?
+            <div id="details1" class="details">
+                Hacks are clever solutions and shortcuts that allow people to exploit the capabilities of different systems, often in unexpected ways. They can range from technology to everyday life tips.
+            </div>
+        </div>
+        <div class="topic" onclick="toggleDetails('details2')">
+            Types of Hacks
+            <div id="details2" class="details">
+                1. Computer Hacks<br>
+                2. Life Hacks<br>
+                3. Physical Hacks<br>
+                Each type often aims to improve efficiency or add functionality in creative ways.
+            </div>
+        </div>
+        <div class="topic" onclick="toggleDetails('details3')">
+            Ethical vs Unethical Hacks
+            <div id="details3" class="details">
+                Ethical hacking is performed to identify vulnerabilities and improve security. Unethical hacking, on the other hand, is aimed at exploiting systems for personal gain.
+            </div>
+        </div>
+        <div class="topic" onclick="toggleDetails('details4')">
+            Famous Hackers
+            <div id="details4" class="details">
+                Notable hackers include Kevin Mitnick, known for his social engineering skills, and Adrian Lamo, known for hacking into Microsoft and The New York Times.
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Hacks Exploration. All Rights Reserved.
+    </footer>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "block") {
+                details.style.display = "none";
+            } else {
+                details.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

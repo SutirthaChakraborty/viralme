@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleprompter Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .info {
+            display: none;
+            background: #e9ecef;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .highlight {
+            background-color: #ffeeba;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Understanding Teleprompters</h1>
+    <button class="toggle-button" onclick="toggleInfo()">What is a Teleprompter?</button>
+    <div class="info" id="info">
+        <p>A teleprompter is a device that displays text for a speaker to read while maintaining eye contact with the audience. It is widely used in television broadcasts, public speaking, and presentations.</p>
+    </div>
+    
+    <button class="toggle-button" onclick="showUsage()">How is it Used?</button>
+    <div class="info" id="usage" style="display:none;">
+        <p>Teleprompters help speakers deliver their lines smoothly without looking down at notes. This improves engagement and professionalism during presentations.</p>
+    </div>
+    
+    <button class="toggle-button" onclick="showBenefits()">Benefits of Using Teleprompters</button>
+    <div class="info" id="benefits" style="display:none;">
+        <ul>
+            <li>Enhanced delivery</li>
+            <li>Increased confidence</li>
+            <li>Improved audience engagement</li>
+            <li>Professional appearance</li>
+        </ul>
+    </div>
+    
+    <button class="toggle-button" onclick="showTypes()">Types of Teleprompters</button>
+    <div class="info" id="types" style="display:none;">
+        <ul>
+            <li>Traditional Teleprompters</li>
+            <li>Teleprompter Apps</li>
+            <li>Camera-Mounted Teleprompters</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    © 2023 Teleprompter Info. All Rights Reserved.
+</footer>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById("info");
+        info.style.display = info.style.display === "none" ? "block" : "none";
+    }
+
+    function showUsage() {
+        var usage = document.getElementById("usage");
+        usage.style.display = usage.style.display === "none" ? "block" : "none";
+    }
+
+    function showBenefits() {
+        var benefits = document.getElementById("benefits");
+        benefits.style.display = benefits.style.display === "none" ? "block" : "none";
+    }
+
+    function showTypes() {
+        var types = document.getElementById("types");
+        types.style.display = types.style.display === "none" ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>

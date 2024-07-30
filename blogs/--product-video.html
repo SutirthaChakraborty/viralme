@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Video</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.video-container {
+			width: 100%;
+			height: 500px;
+			background-color: #f0f0f0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.video-container video {
+			width: 100%;
+			height: 100%;
+			border: 1px solid #ccc;
+		}
+		
+		.controls {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		
+		.controls button {
+			margin: 0 10px;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.controls button:hover {
+			background-color: #444;
+		}
+	</style>
+</head>
+<body>
+	<div class="video-container">
+		<video id="video" width="100%" height="100%" controls>
+			<source src="product_video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<div class="controls">
+			<button id="play-btn">_play</button>
+			<button id="pause-btn">pause</button>
+			<button id="stop-btn">stop</button>
+		</div>
+	</div>
+	
+	<script>
+		var video = document.getElementById("video");
+		var playBtn = document.getElementById("play-btn");
+		var pauseBtn = document.getElementById("pause-btn");
+		var stopBtn = document.getElementById("stop-btn");
+		
+		playBtn.addEventListener("click", function() {
+			video.play();
+		});
+		
+		pauseBtn.addEventListener("click", function() {
+			video.pause();
+		});
+		
+		stopBtn.addEventListener("click", function() {
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
+
+
+This code creates a video player with controls (play, pause, stop) and uses JavaScript to interact with the video element. The video element is given an id of "video" and the controls are given ids of "play-btn", "pause-btn", and "stop-btn". The JavaScript code listens for clicks on these buttons and uses the video element's play(), pause(), and currentTime properties to control the video playback.

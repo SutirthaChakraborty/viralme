@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen James Smith - Poet & Writer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        #content {
+            padding: 20px;
+        }
+        .topic {
+            background-color: #e7f3fe;
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid #4a90e2;
+            transition: background-color 0.3s;
+        }
+        .topic:hover {
+            background-color: #d5e9f7;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+        #info {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stephen James Smith</h1>
+        <p>Explore the Life and Work of the Esteemed Poet</p>
+    </header>
+    <div id="content">
+        <div class="topic">
+            <h2>Biography</h2>
+            <button onclick="toggleInfo('bioInfo')">Learn More</button>
+            <div id="bioInfo" class="info">
+                <p>Stephen James Smith is an acclaimed Irish poet known for his powerful words and exploring themes of identity, love, and social issues. His work resonates with audiences both in Ireland and abroad.</p>
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Major Works</h2>
+            <button onclick="toggleInfo('worksInfo')">Learn More</button>
+            <div id="worksInfo" class="info">
+                <p>Some of his notable collections include "The Last of the Survivors" and "A Narrative of Reckoning," which showcase his lyrical prowess and poignant reflections on modern life.</p>
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Influences</h2>
+            <button onclick="toggleInfo('influencesInfo')">Learn More</button>
+            <div id="influencesInfo" class="info">
+                <p>Stephen draws inspiration from both contemporary and classical poets, incorporating elements of Irish folklore and personal experience into his writing.</p>
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Public Speaking & Readings</h2>
+            <button onclick="toggleInfo('speakingInfo')">Learn More</button>
+            <div id="speakingInfo" class="info">
+                <p>He is a sought-after speaker, often participating in literary festivals and events where he shares his insights on poetry and creativity.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            var infoDiv = document.getElementById(infoId);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

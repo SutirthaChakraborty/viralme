@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Industry Video Production in Dublin, Ireland</title>
+    <style>
+        .topic {
+            color: blue;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Education Video Production in Dublin, Ireland</h1>
+    <p>Explore the world of video production in Dublin, Ireland. Click on the topics below to learn more:</p>
+    
+    <div class="topic" onclick="showInfo('industry')">Industry Video Production</div>
+    <div class="topic" onclick="showInfo('education')">Education Video Production</div>
+    <div class="topic" onclick="showInfo('languages')">Video Education Production in Ireland</div>
+
+    <div id="info"></div>
+
+    <script>
+        function showInfo(topic) {
+            let info = document.getElementById('info');
+            if (topic === 'industry') {
+                info.innerHTML = "Industry video production in Dublin, Ireland focuses on creating high-quality videos for businesses.";
+            } else if (topic === 'education') {
+                info.innerHTML = "Education video production in Dublin, Ireland involves producing educational videos for schools and institutions.";
+            } else if (topic === 'languages') {
+                info.innerHTML = "Video education production in Ireland covers a wide range of languages to cater to diverse audiences.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>摄影画廊</title>
+	<style>
+		body {
+			margin: 0;
+			background-color: #f0f0f0;
+		}
+		.gallery {
+			width: 80%;
+			margin: 40px auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.gallery img {
+			width: 30%;
+			margin: 10px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		.gallery img:hover {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		.photo-info {
+			font-size: 18px;
+			color: #666;
+			margin-bottom: 20px;
+		}
+		.photo-info span {
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>摄影画廊</h1>
+	<div class="gallery">
+		<img src="image1.jpg" alt="图像1" data-info="图像1,摄影师:John Smith,日期:2022-01-01">
+		<img src="image2.jpg" alt="图像2" data-info="图像2,摄影师:Jane Doe,日期:2022-02-01">
+		<img src="image3.jpg" alt="图像3" data-info="图像3,摄影师:John Smith,日期:2022-03-01">
+		<!-- 添加更多图片 -->
+	</div>
+	<script>
+		const gallery = document.querySelector('.gallery');
+		gallery.addEventListener('click', (e) => {
+			if (e.target.tagName === 'IMG') {
+				const info = e.target.dataset.info;
+				alert(`摄影作品:${info}`);
+			}
+		});
+	</script>
+</body>
+</html>
+
+
+在上面的代码中，我们使用 HTML 和 CSS 创建了一个摄影画廊，展示了一些图片，并添加了交互功能，当用户点击图片时，弹出一个对话框显示图片的信息。

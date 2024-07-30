@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best Live Streaming Platforms</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.platform-card {
+			background-color: #f7f7f7;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin: 20px 0;
+		}
+		.platform-card h2 {
+			margin-top: 0;
+		}
+		.platform-card img {
+			width: 50px;
+			height: 50px;
+			margin: 10px;
+			border-radius: 50%;
+		}
+		.platform-card ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.platform-card li {
+			margin-bottom: 10px;
+		}
+		.platform-card li span {
+			font-weight: bold;
+		}
+		.platform-card button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.platform-card button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Best Live Streaming Platforms</h1>
+		<div class="platform-card">
+			<h2>YouTube Live</h2>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/YouTube-logo.png/220px-YouTube-logo.png" alt="YouTube Logo">
+			<ul>
+				<li>Large user base and audience engagement</li>
+				<li>Monetization options through ads and sponsorships</li>
+				<li>Integration with YouTube's vast video library</li>
+				<li>Real-time chat and comment system</li>
+				<li>Available on desktop, mobile, and TV</li>
+			</ul>
+			<button>Learn More</button>
+		</div>
+		<div class="platform-card">
+			<h2>Facebook Live</h2>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Facebook_Logo_%282019%29.svg/220px-Facebook_Logo_%282019%29.svg.png" alt="Facebook Logo">
+			<ul>
+				<li>Large user base and audience engagement</li>
+				<li>Monetization options through ads and sponsorships</li>
+				<li>Integration with Facebook's vast social network</li>
+				<li>Real-time chat and comment system</li>
+				<li>Available on desktop, mobile, and TV</li>
+			</ul>
+			<button>Learn More</button>
+		</div>
+		<div class="platform-card">
+			<h2>Periscope</h2>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Periscope_Logo.svg/220px-Periscope_Logo.svg.png" alt="Periscope Logo">
+			<ul>
+				<li>Exclusive features for Twitter users</li>
+				<li>Real-time chat and comment system</li>
+				<li>Integration with Twitter's vast social network</li>
+				<li>Available on mobile devices only</li>
+			</ul>
+			<button>Learn More</button>
+		</div>
+		<div class="platform-card">
+			<h2>Twitch Live</h2>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Twitch_Logo.svg/220px-Twitch_Logo.svg.png" alt="Twitch Logo">
+			<ul>
+				<li>Exclusive features for gamers and gaming content</li>
+				<li>Real-time chat and comment system</li>
+				<li>Integration with Twitch's vast gaming community</li>
+				<li>Available on desktop, mobile, and TV</li>
+			</ul>
+			<button>Learn More</button>
+		</div>
+	</div>
+	<script>
+		// Get all platform cards
+		const platformCards = document.querySelectorAll('.platform-card');
+
+		// Add event listener to each platform card
+		platformCards.forEach((card) => {
+			card.addEventListener('click', () => {
+				// Get the current platform card
+				const currentCard = card;
+
+				// Get the platform name
+				const platformName = currentCard.querySelector('h2').textContent;
+
+				// Display a pop-up box with more information
+				alert(`You have selected ${platformName}.`);
+			});
+		});
+	</script>
+</body>
+</html>

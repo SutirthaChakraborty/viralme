@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>filming in public</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			width: 800px;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		#info {
+			margin-bottom: 20px;
+		}
+		#info p {
+			margin-bottom: 10px;
+		}
+		#info span {
+			font-weight: bold;
+			color: #00698f;
+		}
+		#tips {
+			margin-bottom: 20px;
+		}
+		#tips li {
+			margin-bottom: 10px;
+		}
+		#tips li span {
+			font-weight: bold;
+			color: #00698f;
+		}
+		#interactive {
+			margin-top: 20px;
+		}
+		#interactive p {
+			margin-bottom: 10px;
+		}
+		#interactive button {
+			background-color: #00698f;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		#interactive button:hover {
+			background-color: #004e7f;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="title">filming in public</div>
+		<div id="info">
+			<p>filming in public refers to the act of capturing video or images in a public place, such as a street, park, or mall. it can be done for personal or professional purposes, and can be a great way to capture unique and interesting footage.</p>
+			<p><span>important notes:</span> when filming in public, it is important to be respectful of others and to follow any local laws or regulations. it is also important to be mindful of your surroundings and to keep a safe distance from others.</p>
+		</div>
+		<div id="tips">
+			<ul>
+				<li>get permission: always get permission from the owner or manager of the location before filming. this can help prevent any legal issues.</li>
+				<li>be respectful: be respectful of others and keep a safe distance. avoid disrupting the normal flow of activity in the area.</li>
+				<li>follow laws: follow any local laws or regulations regarding filming in public. some areas may have specific rules or restrictions.</li>
+				<li>be mindful: be mindful of your surroundings and keep an eye out for any potential hazards or obstacles.</li>
+			</ul>
+		</div>
+		<div id="interactive">
+			<p>try it yourself:</p>
+			<button onclick="startRecording()">start recording</button>
+			<button onclick="stopRecording()">stop recording</button>
+			<p id="recorded"></p>
+			<script>
+				let recording = false;
+				let video = document.createElement("video");
+				video.srcObject = null;
+				document.getElementById("interactive").appendChild(video);
+				function startRecording() {
+					if (!recording) {
+						recording = true;
+						navigator.mediaDevices.getUserMedia({ video: true })
+							.then(stream => {
+								video.srcObject = stream;
+								video.play();
+							})
+							.catch(error => {
+								alert("error: " + error.message);
+							});
+					}
+				}
+				function stopRecording() {
+					if (recording) {
+						recording = false;
+						video.srcObject.getTracks().forEach(track => track.stop());
+						video.srcObject = null;
+						document.getElementById("recorded").innerHTML = "recording stopped";
+					}
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>

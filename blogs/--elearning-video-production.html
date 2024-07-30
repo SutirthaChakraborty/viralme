@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Learning Video Production</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#video-prod {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin-bottom: 20px;
+		}
+		#video-prod h2 {
+			color: #337ab7;
+			margin-top: 0;
+		}
+		#video-prod p {
+			margin-bottom: 20px;
+		}
+		#interactive-vid {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin-bottom: 20px;
+		}
+		#interactive-vid h2 {
+			color: #337ab7;
+			margin-top: 0;
+		}
+		#interactive-vid p {
+			margin-bottom: 20px;
+		}
+		#interactive-vid .vid-type {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			margin-bottom: 20px;
+		}
+		#interactive-vid .vid-type label {
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		#interactive-vid .vid-type input[type="radio"] {
+			margin-right: 10px;
+		}
+		#interactive-vid .vid-type .vid-tip {
+			font-size: 12px;
+			color: #666;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>E-Learning Video Production</h1>
+		<div id="video-prod">
+			<h2>What is E-Learning Video Production?</h2>
+			<p>E-Learning video production refers to the process of creating video content for educational purposes, such as online courses, tutorials, and training programs.</p>
+			<p>It involves planning, scripting, filming, editing, and publishing video content to engage learners and facilitate learning.</p>
+		</div>
+		<div id="interactive-vid">
+			<h2>Interactive E-Learning Video Production</h2>
+			<p>Interactive e-learning video production involves adding interactive elements to video content, such as quizzes, games, and assessments, to enhance learner engagement and interaction.</p>
+			<div class="vid-type">
+				<label>Video Type:</label>
+				<input type="radio" name="vid-type" value="lecture" checked> Lecture
+				<input type="radio" name="vid-type" value="interactive"> Interactive
+				<span class="vid-tip">Choose the type of video you want to create:</span>
+			</div>
+			<p>Interactive e-learning video production can be achieved using various tools and technologies, such as:</p>
+			<ul>
+				<li>Authoring tools like Articulate Storyline, Adobe Captivate, and Lectora Inspire</li>
+				<li>Video editing software like Adobe Premiere Pro, Final Cut Pro, and DaVinci Resolve</li>
+				<li>Interactive video platforms like Wibbitz, GoAnimate (now Vyond), and Raw Shorts</li>
+			</ul>
+		</div>
+		<script>
+			var vidType = document.querySelector('input[name="vid-type"]:checked').value;
+			document.querySelector('.vid-type').style.display = vidType === 'interactive' ? 'block' : 'none';
+		</script>
+	</div>
+</body>
+</html>

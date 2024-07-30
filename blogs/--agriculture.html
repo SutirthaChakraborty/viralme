@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Interactive Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 5px solid #4CAF50;
+            background: #e7f7e7;
+            transition: transform 0.3s;
+        }
+
+        .topic:hover {
+            transform: scale(1.02);
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #details {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            display: none;
+            background-color: #e7f7e7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Understanding Agriculture</h1>
+
+    <div class="topic">
+        <h2>What is Agriculture?</h2>
+        <p>Agriculture is the science and art of cultivating soil, growing crops, and raising animals for food, fiber, and other products.</p>
+        <button onclick="showDetails('agriculture')">Learn More</button>
+    </div>
+
+    <div class="topic">
+        <h2>Types of Agriculture</h2>
+        <p>Agriculture can be classified into various types such as subsistence, commercial, organic, and sustainable agriculture.</p>
+        <button onclick="showDetails('types')">Learn More</button>
+    </div>
+
+    <div class="topic">
+        <h2>Importance of Agriculture</h2>
+        <p>Agriculture plays a vital role in the economy, provides employment, and ensures food security.</p>
+        <button onclick="showDetails('importance')">Learn More</button>
+    </div>
+
+    <div class="topic">
+        <h2>Sustainable Agriculture</h2>
+        <p>Sustainable agriculture aims to meet society's food and textile needs without compromising future generations' ability to do the same.</p>
+        <button onclick="showDetails('sustainable')">Learn More</button>
+    </div>
+
+    <div id="details"></div>
+</div>
+
+<script>
+    function showDetails(topic) {
+        let details = "";
+        switch (topic) {
+            case 'agriculture':
+                details = "<h3>What is Agriculture?</h3><p>Agriculture is vital for food security and economic stability. It encompasses a range of activities, from planting and harvesting to livestock management.</p>";
+                break;
+            case 'types':
+                details = "<h3>Types of Agriculture</h3><p>1. <strong>Subsistence Agriculture:</strong> Farmers grow food primarily for their own consumption.<br>2. <strong>Commercial Agriculture:</strong> Farmers grow crops and raise animals for sale in the market.<br>3. <strong>Organic Agriculture:</strong> Farming without synthetic fertilizers or pesticides.<br>4. <strong>Sustainable Agriculture:</strong> Eco-friendly practices to preserve resources.</p>";
+                break;
+            case 'importance':
+                details = "<h3>Importance of Agriculture</h3><p>Agriculture is essential for food production, economic development, and job creation. It supports millions worldwide and provides the raw materials for food processing industries.</p>";
+                break;
+            case 'sustainable':
+                details = "<h3>Sustainable Agriculture</h3><p>This method focuses on maintaining healthy ecosystems and biodiversity, enhancing soil quality, and reducing pollution while ensuring profitable farming.</p>";
+                break;
+            default:
+                details = "<h3>Information not found.</h3>";
+        }
+        document.getElementById('details').innerHTML = details;
+        document.getElementById('details').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

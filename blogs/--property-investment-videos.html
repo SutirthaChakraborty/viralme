@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Investment Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .video {
+            margin: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .video:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            width: 300px;
+            height: 200px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Property Investment Videos</h1>
+</header>
+
+<div class="video-container">
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+        <p>Understanding the Basics of Property Investment</p>
+    </div>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+        <p>Top 5 Tips for New Property Investors</p>
+    </div>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+        <p>How to Analyze Property Investment Deals</p>
+    </div>
+</div>
+
+<p class="toggle" onclick="toggleInfo()">Show More Information</p>
+<div id="more-info" style="display:none;">
+    <h2>Why Invest in Property?</h2>
+    <p>Property investment can be a lucrative opportunity, providing both cash flow and capital appreciation.</p>
+    <h3>Key Benefits:</h3>
+    <ul>
+        <li>Stable income through rental yields</li>
+        <li>Long-term asset appreciation</li>
+        <li>Diverse investment portfolio</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; 2024 Property Investment Videos</p>
+</footer>
+
+<script>
+    function toggleInfo() {
+        const info = document.getElementById('more-info');
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

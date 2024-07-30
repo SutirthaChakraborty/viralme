@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environmental Impact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        .impact-info {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Environmental Impact</h1>
+    <div class="impact-info">
+        <p>Learn about the environmental impact of human activities on our planet.</p>
+        <button onclick="showImpact()">Show Impact</button>
+        <div id="impactContent" style="display: none;">
+            <p>Deforestation, pollution, and climate change are some of the key issues affecting our environment.</p>
+        </div>
+    </div>
+    <script>
+        function showImpact() {
+            var impactContent = document.getElementById("impactContent");
+            if (impactContent.style.display === "none") {
+                impactContent.style.display = "block";
+            } else {
+                impactContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Event</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.event-header {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 20px;
+			border-bottom: 1px solid #4CAF50;
+		}
+		
+		.event-detail {
+			padding: 20px;
+		}
+		
+		.event-button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.event-button:hover {
+			background-color: #3e8e41;
+		}
+		
+		.event-button:active {
+			background-color: #2c6c40;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="event-header">
+			<h1>Online Event: <span id="event-name">Conference on Artificial Intelligence</span></h1>
+			<p id="event-date">Date: <span id="event-date-value">2023-03-12</span></p>
+			<p id="event-time">Time: <span id="event-time-value">10:00 AM - 5:00 PM</span></p>
+		</header>
+		<main class="event-detail">
+			<p>Join us for a day of exciting talks and workshops on the latest advancements in Artificial Intelligence.</p>
+			<p>Our keynote speakers will be discussing topics such as machine learning, natural language processing, and computer vision.</p>
+			<p>Attendees will have the opportunity to network with other professionals and learn from industry experts.</p>
+			<button class="event-button" id="register-btn">Register Now!</button>
+		</main>
+		<script>
+			const eventName = "Conference on Artificial Intelligence";
+			const eventDate = new Date("2023-03-12T10:00:00");
+			const eventTime = eventDate.toLocaleTimeString();
+			
+			document.getElementById("event-name").innerText = eventName;
+			document.getElementById("event-date-value").innerText = eventDate.toLocaleDateString();
+			document.getElementById("event-time-value").innerText = eventTime;
+			
+			document.getElementById("register-btn").addEventListener("click", function() {
+				alert("Thank you for registering! You will receive a confirmation email shortly.");
+			});
+		</script>
+	</div>
+</body>
+</html>

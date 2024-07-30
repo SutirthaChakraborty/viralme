@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Explainer Video Category - Dublin, Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #e67e22;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .video-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animated Explainer Video Category</h1>
+        <p>Transforming Ideas into Engaging Visuals in Dublin, Ireland</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>What is an Animated Explainer Video?</h2>
+            <p>Animated explainer videos are short, engaging videos that explain a concept, product, or service using animation. They simplify complex ideas with creative visuals and narratives, making them ideal for businesses in Dublin looking to connect with their audience.</p>
+        </section>
+        <section>
+            <h2>Benefits of Animated Explainer Videos</h2>
+            <ul>
+                <li>Enhance understanding of your product or service</li>
+                <li>Increase engagement through visual storytelling</li>
+                <li>Boost conversion rates and sales</li>
+                <li>Improve brand recall</li>
+                <li>Effective for all audience types</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Examples of Successful Animated Explainer Videos</h2>
+            <button class="button" onclick="toggleVideo('video1')">Watch a Sample Video</button>
+            <div id="video1" class="video-container">
+                <iframe src="https://www.youtube.com/embed/your-example-video" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h2>Get Started with Your Animated Explainer Video</h2>
+            <button class="button" onclick="toggleVideo('video2')">See Our Process</button>
+            <div id="video2" class="video-container">
+                <iframe src="https://www.youtube.com/embed/your-process-video" allowfullscreen></iframe>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Animated Video Experts Dublin, Ireland</p>
+    </footer>
+    <script>
+        function toggleVideo(videoId) {
+            var videoContainer = document.getElementById(videoId);
+            if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

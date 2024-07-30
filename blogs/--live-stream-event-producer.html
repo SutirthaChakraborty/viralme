@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream Event Producer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .info {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            background-color: #eef;
+            border: 1px solid #cce;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Live Stream Event Producer</h1>
+</header>
+
+<div class="content">
+    <div class="info">
+        <h2>What is a Live Stream Event Producer?</h2>
+        <p>A live stream event producer orchestrates live events, from planning to execution. They manage technical setups, direct the flow of the stream, and ensure a seamless experience for viewers.</p>
+        <button class="button" onclick="toggleInfo('info1')">Learn More</button>
+        <div id="info1" class="interactive">
+            <p>Producers handle equipment, coordinate with hosts, and engage with the audience to create interactive experiences.</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <h2>Key Responsibilities</h2>
+        <ul>
+            <li>Planning and Scheduling Events</li>
+            <li>Coordinating with Tech Teams</li>
+            <li>Managing Live Broadcasts</li>
+            <li>Engaging with Viewers</li>
+        </ul>
+        <button class="button" onclick="toggleInfo('info2')">Learn More</button>
+        <div id="info2" class="interactive">
+            <p>They ensure high video quality, appropriate audio levels, and run rehearsals for live performances to avert potential issues.</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <h2>Skills Required</h2>
+        <p>Successful live stream producers possess a blend of technical and interpersonal skills, including:</p>
+        <ul>
+            <li>Technical Proficiency</li>
+            <li>Strong Communication Skills</li>
+            <li>Problem-Solving Abilities</li>
+            <li>Creativity and Adaptability</li>
+        </ul>
+        <button class="button" onclick="toggleInfo('info3')">Learn More</button>
+        <div id="info3" class="interactive">
+            <p>They should be able to troubleshoot issues on-the-fly and facilitate smooth interactions during live events.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(id) {
+        var infoElement = document.getElementById(id);
+        if (infoElement.style.display === "none" || infoElement.style.display === "") {
+            infoElement.style.display = "block";
+        } else {
+            infoElement.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

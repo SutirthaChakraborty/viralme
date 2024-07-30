@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Generation 6 Bur</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Next Generation 6 Bur</h1>
+        <p>Click the button below to learn more about the next generation 6 bur.</p>
+        <button class="button" onclick="showInfo()">Click Here</button>
+        <div id="info" style="display: none;">
+            <p>This is a brief description of the next generation 6 bur.</p>
+            <p>Stay tuned for more updates!</p>
+        </div>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

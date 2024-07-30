@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos for Change NGO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3cb371;
+        }
+        .video-container {
+            display: none;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Videos for Change Charity NGO</h1>
+        <div class="card">
+            <h2>About Us</h2>
+            <p>Videos for Change is a charity NGO dedicated to harnessing the power of video storytelling to create social change. We empower communities to share their stories, advocate for their rights, and inspire action.</p>
+            <button onclick="toggleVideo('aboutVideo')">Watch Our Story</button>
+            <div id="aboutVideo" class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/example1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Our Impact</h2>
+            <p>Over the past year, our videos have reached millions, encouraging dialogue on critical issues and showcasing the efforts of local activists.</p>
+            <button onclick="toggleVideo('impactVideo')">See Our Impact</button>
+            <div id="impactVideo" class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/example2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Get Involved</h2>
+            <p>Join our efforts! You can volunteer, donate, or contribute your voice through storytelling. Together, we can create a better world.</p>
+            <button onclick="toggleVideo('getInvolvedVideo')">Join Us</button>
+            <div id="getInvolvedVideo" class="video-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/example3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Videos for Change. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleVideo(videoId) {
+            var videoContainer = document.getElementById(videoId);
+            if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>美容 Beauty</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.title {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		.description {
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+		
+		.image {
+			width: 100%;
+			height: 200px;
+			margin-bottom: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.interactive {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.interactive:hover {
+			background-color: #f0f0f0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">美容 Beauty</h1>
+		<p class="description">美容是指对人的外部美丽和健康的护理和管理。它包括了各种美容方法和产品，如化妆、护肤、美发等。</p>
+		<img src="https://picsum.photos/200/300" class="image" alt="美容图片">
+		<div class="interactive">
+			<h2>护肤</h2>
+			<p>护肤是美容的一部分，目的是保护和改善皮肤的健康和美丽。常用的护肤方法包括洁面、爽肤、防晒等。</p>
+			<button onclick="alert('护肤方法：洁面、爽肤、防晒')">了解更多</button>
+		</div>
+		<div class="interactive">
+			<h2>化妆</h2>
+			<p>化妆是美容的一部分，目的是改变和美化人的外表。常用的化妆方法包括基础妆、日常妆、夜间妆等。</p>
+			<button onclick="alert('化妆方法：基础妆、日常妆、夜间妆')">了解更多</button>
+		</div>
+		<script>
+			document.querySelectorAll('.interactive button').forEach(button => {
+				button.addEventListener('click', () => {
+					alert(button.textContent);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

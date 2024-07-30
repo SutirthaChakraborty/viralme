@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Waterways Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #3366cc;
+        }
+        p {
+            color: #333333;
+        }
+        .info {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        button {
+            background-color: #3366cc;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Waterways Ireland</h1>
+    <div class="info">
+        <p>Waterways Ireland manages, maintains, and develops inland navigable waterways across Ireland.</p>
+        <p>Explore the beauty of Ireland's waterways and enjoy activities such as boating, fishing, and cycling along the canals.</p>
+        <p>Learn more about the rich history and biodiversity of the waterways through guided tours and events.</p>
+        <button onclick="alert('Discover the beauty of Waterways Ireland!')">Explore Now</button>
+    </div>
+    <script>
+        document.querySelector('button').addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#ff9900';
+        });
+        document.querySelector('button').addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#3366cc';
+        });
+    </script>
+</body>
+</html>

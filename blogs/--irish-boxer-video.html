@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Boxer Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #004d00;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e6f7ff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .info:hover {
+            background-color: #cceeff;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Irish Boxer Video</h1>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="info">
+            <h2>About Irish Boxing</h2>
+            <p>Irish boxing has a rich history, showcasing the resilience and skill of its athletes. From amateur competitions to the professional ring, Irish boxers have made their mark worldwide with notable achievements.</p>
+            <button class="button" onclick="toggleDetails()">Show More Details</button>
+            <p id="details" style="display: none;">Famed boxers like Conor McGregor and Katie Taylor have brought attention to the sport, inspiring a new generation of fighters. The culture of boxing in Ireland is deeply rooted in community and pride.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById('details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

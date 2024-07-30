@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Tips & Marketing Trends 2021</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        .tip {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .tip:hover {
+            transform: scale(1.02);
+        }
+        .trend {
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .interactive {
+            display: none;
+            margin: 10px 0;
+            padding: 15px;
+            background: #d1e7dd;
+            border-left: 5px solid #0f5132;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Production Tips & Marketing Trends 2021</h1>
+    </header>
+
+    <h2>Video Production Tips</h2>
+    <div class="tip" onclick="toggleContent('tip1')">
+        <strong>1. Plan Your Content</strong>
+        <p>Click to see more!</p>
+    </div>
+    <div id="tip1" class="interactive">
+        Planning your content is crucial. Create a storyboard to visualize the flow and message before filming.
+    </div>
+
+    <div class="tip" onclick="toggleContent('tip2')">
+        <strong>2. Invest in Good Equipment</strong>
+        <p>Click to see more!</p>
+    </div>
+    <div id="tip2" class="interactive">
+        While smartphones can capture great video, investing in quality cameras and audio equipment enhances professionalism.
+    </div>
+
+    <div class="tip" onclick="toggleContent('tip3')">
+        <strong>3. Edit Thoughtfully</strong>
+        <p>Click to see more!</p>
+    </div>
+    <div id="tip3" class="interactive">
+        Use editing software to trim, transition, and add effects that resonate with your audience and convey your message clearly.
+    </div>
+
+    <h2>Marketing Trends</h2>
+    <div class="trend">
+        <strong>1. Short-Form Video Dominance</strong>
+        <p>Short videos are more engaging. Platforms like TikTok and Instagram Reels are perfect for quick content delivery.</p>
+    </div>
+
+    <div class="trend">
+        <strong>2. Live Streaming Popularity</strong>
+        <p>Live streams foster engagement. Consider Q&As or behind-the-scenes content to connect in real-time.</p>
+    </div>
+
+    <div class="trend">
+        <strong>3. Personalization and Storytelling</strong>
+        <p>A personalized approach resonates with audiences. Combine storytelling with testimonials for authentic engagement.</p>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if(content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

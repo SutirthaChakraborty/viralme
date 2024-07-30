@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Video Production</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .video {
+            width: 80%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Animated Video Production</h1>
+        <p>Click the button below to watch a sample animated video:</p>
+        <button class="btn" onclick="playVideo()">Play Video</button>
+        <video class="video" controls style="display: none;">
+            <source src="sample_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script>
+        function playVideo() {
+            var video = document.querySelector('.video');
+            video.style.display = 'block';
+            video.play();
+        }
+    </script>
+</body>
+</html>

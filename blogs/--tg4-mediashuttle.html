@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TG4 MediaShuttle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #4a90e2;
+            border-radius: 8px;
+            background-color: #e6f7ff;
+        }
+        .button {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #357ab8;
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4a90e2;
+            border-radius: 5px;
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to TG4 MediaShuttle</h1>
+    <div class="content">
+        <p><strong>TG4</strong> is the National Irish Language Public Service Broadcaster, providing a wide range of content including music, sports, documentaries, and children's programming. The <strong>TG4 Player</strong> serves as a global hub for Irish language and cultural content, accessible to audiences worldwide.</p>
+        <button class="button" onclick="toggleInteractive()">Learn More About TG4 MediaShuttle</button>
+        <div class="interactive" id="interactiveContent">
+            <h2>What is TG4 MediaShuttle?</h2>
+            <p>TG4 MediaShuttle is a platform that allows users to manage and share media content efficiently. It supports various media formats and provides tools for seamless streaming and broadcasting.</p>
+            <p>With TG4 MediaShuttle, users can:</p>
+            <ul>
+                <li>Upload and manage video content</li>
+                <li>Stream live events</li>
+                <li>Access a library of Irish cultural content</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleInteractive() {
+            var content = document.getElementById("interactiveContent");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

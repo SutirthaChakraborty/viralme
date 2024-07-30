@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inspire</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.inspire {
+			background-color: #3498db;
+			color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+		}
+		
+		.inspire:hover {
+			background-color: #2ecc71;
+		}
+		
+		.inspire h2 {
+			margin-top: 0;
+		}
+		
+		.inspire p {
+			margin-bottom: 20px;
+		}
+		
+		.interactive {
+			background-color: #f1c40f;
+			color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+			cursor: pointer;
+		}
+		
+		.interactive:hover {
+			background-color: #e67e73;
+		}
+		
+		.interactive span {
+			font-weight: bold;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div class="inspire">
+		<h2>Inspire</h2>
+		<p>Inspire is a verb that means to fill someone with the urge or ability to do or feel something.</p>
+		<p>It can also refer to a feeling of enthusiasm or excitement that motivates someone to take action.</p>
+		<p>For example:</p>
+		<p>"The beautiful scenery inspired me to write a poem."</p>
+		<p>"The inspiring speech motivated me to make a change in my life."</p>
+	</div>
+	
+	<div class="interactive" onclick="alert('The interactive element is clicked!')">
+		<span>Click me!</span>
+	</div>
+	
+	<script>
+		function inspire() {
+			alert('You are inspiring!');
+		}
+		
+		document.getElementById('inspire-btn').addEventListener('click', inspire);
+	</script>
+	
+	<button id="inspire-btn">Inspire Me!</button>
+</body>
+</html>

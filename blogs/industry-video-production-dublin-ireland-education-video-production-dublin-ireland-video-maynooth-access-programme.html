@@ -1,0 +1,81 @@
+Here is an interactive and colorful HTML code that provides information about video production in Dublin, Ireland and the Maynooth Access Programme:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Production in Dublin, Ireland</title>
+  <style>
+    /* CSS for interactive elements */
+    .accordion {
+      background-color: #f9f9f9;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
+
+    .active, .accordion:hover {
+      background-color: #ccc;
+    }
+
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+    }
+  </style>
+  <script>
+    // JavaScript for interactive elements
+    function toggleAccordion() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    }
+
+    var accordions = document.getElementsByClassName("accordion");
+    for (var i = 0; i < accordions.length; i++) {
+      accordions[i].addEventListener("click", toggleAccordion);
+    }
+  </script>
+</head>
+<body>
+  <h1>Video Production in Dublin, Ireland</h1>
+
+  <h2>About the Industry</h2>
+  <button class="accordion">Click to expand</button>
+  <div class="panel">
+    <p>
+      Dublin, Ireland has a thriving video production industry. It offers various opportunities for individuals interested in film and television production. Many educational institutions in Dublin, such as the Institute of Art, Design and Technology Dun Laoghaire and the Dublin Institute of Technology, provide degree programs in film and television production [[1]].
+    </p>
+  </div>
+
+  <h2>Maynooth Access Programme</h2>
+  <button class="accordion">Click to expand</button>
+  <div class="panel">
+    <p>
+      The Maynooth Access Programme is designed to provide access to higher education for students from underrepresented backgrounds. It offers support and resources to help students succeed in their education. The program may also provide opportunities for students to explore video production as a career path [[1]].
+    </p>
+  </div>
+
+  <script>
+    // JavaScript to open the first accordion by default
+    accordions[0].click();
+  </script>
+</body>
+</html>
+
+
+This HTML code includes interactive elements using CSS and JavaScript. The accordion buttons can be clicked to expand or collapse the corresponding sections of information. You can customize the code further to add more content or modify the styling as needed.
+
+Please note that this code is provided in plain text format. To use it, simply copy and paste it into an HTML file and open it in a web browser to see the interactive elements in action.

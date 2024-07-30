@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production in Dublin | Technical Tips for In-House Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+        section {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .tips {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        @media (max-width: 600px) {
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Production in Dublin, Ireland</h1>
+    <p>Technical Tips for Producing In-House Video Content</p>
+</header>
+
+<section>
+    <h2>Understanding Your Equipment</h2>
+    <button class="tip-btn">Show Tips</button>
+    <div class="tips">
+        <p>1. Invest in a good quality camera for high-resolution video.</p>
+        <p>2. Use a tripod to stabilize your shots.</p>
+        <p>3. Consider using an external microphone for better audio quality.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Lighting Techniques</h2>
+    <button class="tip-btn">Show Tips</button>
+    <div class="tips">
+        <p>1. Utilize natural light as much as possible.</p>
+        <p>2. Use softbox lights to reduce harsh shadows.</p>
+        <p>3. Experiment with three-point lighting to achieve a balanced look.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Editing Your Video</h2>
+    <button class="tip-btn">Show Tips</button>
+    <div class="tips">
+        <p>1. Choose user-friendly editing software like Adobe Premiere Pro or Final Cut Pro.</p>
+        <p>2. Use cuts and transitions effectively to keep your audience engaged.</p>
+        <p>3. Keep your videos concise and to the point.</p>
+    </div>
+</section>
+
+<script>
+    const buttons = document.querySelectorAll('.tip-btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const tips = this.nextElementSibling;
+            tips.style.display = tips.style.display === 'block' ? 'none' : 'block'; 
+        });
+    });
+</script>
+
+</body>
+</html>

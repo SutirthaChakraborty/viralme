@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #ff4500;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #animationBox {
+            width: 100%;
+            height: 300px;
+            border: 2px solid #ff4500;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+        .cube {
+            width: 100px;
+            height: 100px;
+            transform-style: preserve-3d;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 5s infinite linear;
+        }
+        .cube div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            opacity: 0.9;
+        }
+        .front  { background: #ff4500; transform: translateZ(50px); }
+        .back   { background: #28a745; transform: rotateY(180deg) translateZ(50px); }
+        .right  { background: #007bff; transform: rotateY(90deg) translateZ(50px); }
+        .left   { background: #ffc107; transform: rotateY(-90deg) translateZ(50px); }
+        .top    { background: #6f42c1; transform: rotateX(90deg) translateZ(50px); }
+        .bottom { background: #17a2b8; transform: rotateX(-90deg) translateZ(50px); }
+        @keyframes rotate {
+            from { transform: rotateX(0) rotateY(0); }
+            to { transform: rotateX(360deg) rotateY(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Exploring 3D Animation</h1>
+    <p>3D Animation is a process of creating animated images in a three-dimensional digital environment. This technology is widely used in films, video games, simulations, and more.</p>
+    
+    <div id="animationBox">
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="right"></div>
+            <div class="left"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+    
+    <button onclick="stopAnimation()">Stop Animation</button>
+    <button onclick="startAnimation()">Start Animation</button>
+</div>
+
+<script>
+    const cube = document.querySelector('.cube');
+    let isAnimating = true;
+
+    function stopAnimation() {
+        cube.style.animationPlayState = 'paused';
+        isAnimating = false;
+    }
+
+    function startAnimation() {
+        cube.style.animationPlayState = 'running';
+        isAnimating = true;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Techniques</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff6347;
+        }
+
+        .technique {
+            border: 2px solid #ff6347;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .technique:hover {
+            transform: scale(1.05);
+        }
+
+        .description {
+            display: none;
+            background-color: #fff8dc;
+            border: 1px solid #ff6347;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .toggle-button {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exploring Animation Techniques</h1>
+
+<div class="technique">
+    <h2>1. Traditional Animation</h2>
+    <button class="toggle-button">Learn More</button>
+    <div class="description">
+        <p>Traditional animation involves creating a series of hand-drawn images that are photographed and shown in sequence. It is the oldest form of animation and requires extensive artistic skills.</p>
+    </div>
+</div>
+
+<div class="technique">
+    <h2>2. 2D Animation</h2>
+    <button class="toggle-button">Learn More</button>
+    <div class="description">
+        <p>2D animation uses digital technology to create characters and scenes in a two-dimensional space. It allows for easier manipulation than traditional methods.</p>
+    </div>
+</div>
+
+<div class="technique">
+    <h2>3. 3D Animation</h2>
+    <button class="toggle-button">Learn More</button>
+    <div class="description">
+        <p>3D animation creates a three-dimensional digital environment where characters can move and interact. This technique is widely used in modern film and video games.</p>
+    </div>
+</div>
+
+<div class="technique">
+    <h2>4. Stop Motion Animation</h2>
+    <button class="toggle-button">Learn More</button>
+    <div class="description">
+        <p>Stop motion animation is a technique where objects are physically manipulated in small increments and photographed frame by frame to create the illusion of movement.</p>
+    </div>
+</div>
+
+<div class="technique">
+    <h2>5. Motion Graphics</h2>
+    <button class="toggle-button">Learn More</button>
+    <div class="description">
+        <p>Motion graphics combines graphic design with animation principles. It's used primarily in multimedia projects like title sequences for films and video advertisements.</p>
+    </div>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('.toggle-button');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const description = this.nextElementSibling;
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

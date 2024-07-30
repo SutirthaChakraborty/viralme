@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fermanagh Lakelands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #005757;
+        }
+        header {
+            background-color: #009688;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #00796b;
+        }
+        .lake {
+            border: 2px solid #004d40;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #b2dfdb;
+            transition: transform 0.2s;
+        }
+        .lake:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #00796b;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #004d40;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #00796b;
+            background-color: #e0f2f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Fermanagh Lakelands</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to the Stunning Fermanagh Lakelands</h2>
+        <p>The Fermanagh Lakelands is a breathtaking region in Northern Ireland, known for its serene lakes, vibrant landscapes, and rich cultural heritage.</p>
+        
+        <div class="lake" onclick="toggleInfo()">
+            <h3>Lough Erne</h3>
+            <p>Explore the largest lake in Fermanagh, famous for its water sports and scenic beauty.</p>
+        </div>
+        <div class="lake" onclick="toggleInfo()">
+            <h3>Lough Melvin</h3>
+            <p>A picturesque spot ideal for fishing and enjoying the tranquility of nature.</p>
+        </div>
+        <div class="lake" onclick="toggleInfo()">
+            <h3>Lough Macnean</h3>
+            <p>Known for its diverse wildlife and stunning landscapes; a perfect place for adventure.</p>
+        </div>
+        
+        <button onclick="toggleInfo()">Learn More</button>
+        <div id="info">
+            <p>Fermanagh is not only known for its stunning lakes but also for its historical sites such as Castle Coole and the Marble Arch Caves. Enjoy activities like kayaking, cycling, and hiking.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            const info = document.getElementById("info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

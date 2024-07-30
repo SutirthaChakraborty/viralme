@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Videos for Fundraising Campaigns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .interactive {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .video-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .video-button:hover {
+            background-color: #45a049;
+        }
+        .video-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Creating Videos for Fundraising Campaigns</h1>
+</header>
+
+<section>
+    <h2>Why Use Videos?</h2>
+    <p>Videos are a powerful tool for fundraising campaigns as they can convey emotions, tell stories, and engage viewers effectively. They help in building a connection with potential donors and can significantly increase donation rates.</p>
+</section>
+
+<section>
+    <h2>Types of Fundraising Videos</h2>
+    <ul>
+        <li><strong>Impact Stories:</strong> Showcase the difference your organization makes.</li>
+        <li><strong>Live Q&A Sessions:</strong> Engage with your audience in real-time.</li>
+        <li><strong>Event Highlights:</strong> Share the excitement of your fundraising events.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Interactive Video Examples</h2>
+    <div class="interactive">
+        <button class="video-button" onclick="toggleVideo('impactStory')">Watch Impact Story</button>
+        <button class="video-button" onclick="toggleVideo('liveQA')">Watch Live Q&A</button>
+        <button class="video-button" onclick="toggleVideo('eventHighlights')">Watch Event Highlights</button>
+    </div>
+    <div id="impactStory" class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id_1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="liveQA" class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id_2" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="eventHighlights" class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id_3" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<script>
+    function toggleVideo(videoId) {
+        const videos = document.querySelectorAll('.video-container');
+        videos.forEach(video => {
+            video.style.display = 'none';
+        });
+        const selectedVideo = document.getElementById(videoId);
+        selectedVideo.style.display = selectedVideo.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

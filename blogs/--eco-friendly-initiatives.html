@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Initiatives</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #004d40;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .initiative {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background: #b2dfdb;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .initiative:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #00796b;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Eco-Friendly Initiatives</h1>
+    <p>Discover How We Can Make a Difference!</p>
+</header>
+
+<section>
+    <div class="initiative" onclick="toggleDescription('recycling')">
+        <h2>Recycling Programs</h2>
+        <p id="recycling" style="display:none;">Recycling helps reduce waste and conserve natural resources. By participating in local recycling programs, communities can reduce landfill waste and promote sustainability.</p>
+    </div>
+
+    <div class="initiative" onclick="toggleDescription('renewable')">
+        <h2>Renewable Energy Sources</h2>
+        <p id="renewable" style="display:none;">Investing in solar, wind, and hydroelectric power reduces reliance on fossil fuels. Communities can support renewable energy initiatives to promote cleaner energy sources.</p>
+    </div>
+
+    <div class="initiative" onclick="toggleDescription('conservation')">
+        <h2>Conservation Efforts</h2>
+        <p id="conservation" style="display:none;">Wildlife conservation protects endangered species and their habitats. Supporting conservation projects can help preserve biodiversity and ecosystem health.</p>
+    </div>
+
+    <div class="initiative" onclick="toggleDescription('sustainable')">
+        <h2>Sustainable Agriculture</h2>
+        <p id="sustainable" style="display:none;">Sustainable farming practices enhance food production without harming the environment. Community-supported agriculture (CSA) initiatives connect consumers directly with farmers.</p>
+    </div>
+</section>
+
+<footer>
+    <p>Join the movement towards a sustainable future!</p>
+</footer>
+
+<script>
+    function toggleDescription(id) {
+        const description = document.getElementById(id);
+        if (description.style.display === "none") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

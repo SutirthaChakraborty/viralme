@@ -1,0 +1,107 @@
+Sure! Here's an example of interactive and colorful HTML code that can be used to display information about educational videos:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Videos</title>
+    <style>
+        /* Styling for the video container */
+        .video-container {
+            width: 400px;
+            height: 300px;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Styling for the video thumbnail */
+        .video-thumbnail {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        /* Styling for the video title */
+        .video-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Styling for the video description */
+        .video-description {
+            font-size: 16px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* Styling for the play button */
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: #ff6767;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /* Styling for the play button icon */
+        .play-button i {
+            transform: translateX(1px);
+        }
+    </style>
+    <script>
+        // JavaScript code for playing the video
+        window.addEventListener('DOMContentLoaded', function() {
+            var videoContainer = document.querySelector('.video-container');
+            var playButton = document.querySelector('.play-button');
+            var videoTitle = document.querySelector('.video-title');
+            var videoDescription = document.querySelector('.video-description');
+
+            playButton.addEventListener('click', function() {
+                // Simulate playing the video
+                alert('Playing the video: ' + videoTitle.textContent);
+            });
+
+            videoContainer.addEventListener('mouseover', function() {
+                // Change the background color on hover
+                videoContainer.style.backgroundColor = '#ddd';
+            });
+
+            videoContainer.addEventListener('mouseout', function() {
+                // Reset the background color after hover
+                videoContainer.style.backgroundColor = '#f1f1f1';
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="video-container">
+        <img class="video-thumbnail" src="video-thumbnail.jpg" alt="Video Thumbnail">
+        <div class="play-button">
+            <i class="fa fa-play"></i>
+        </div>
+    </div>
+    <h2 class="video-title">Introduction to Biology</h2>
+    <p class="video-description">Learn the basics of biology in this educational video.</p>
+</body>
+</html>
+
+
+In this code, we have created a video container with a thumbnail image, a play button, and information about the video. The CSS styles are used to make it interactive and colorful. The JavaScript code adds functionality to play the video and change the background color on hover.
+
+Please note that the code includes a placeholder image for the video thumbnail (`video-thumbnail.jpg`). Make sure to replace it with the actual thumbnail image URL or modify the code to use a different method to load the thumbnail.
+
+Feel free to modify the code to suit your specific needs. Let me know if you have any further questions!

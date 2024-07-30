@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production in Dublin During COVID-19</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        .interactive-section {
+            background-color: #fff;
+            border: 2px solid #2e8b57;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+        .interactive-section:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3cb371;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #2e8b57;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Video Production in Dublin, Ireland During COVID-19</h1>
+<p>During the COVID-19 pandemic, video production in Dublin adapted to new challenges, utilizing tools like EditReady and Dropbox to ensure seamless delivery of content.</p>
+
+<div class="interactive-section">
+    <h2>Key Adaptations in Video Production</h2>
+    <ul>
+        <li><strong>Remote Collaboration:</strong> Teams shifted to remote work, relying on cloud services like Dropbox for file sharing.</li>
+        <li><strong>Efficient Editing:</strong> EditReady streamlined the editing process, allowing for quick turnaround times.</li>
+        <li><strong>Health Protocols:</strong> Productions adhered to strict health guidelines to ensure safety on set.</li>
+    </ul>
+    <button onclick="toggleDetails()">Show More Details</button>
+    <div id="moreDetails" style="display:none;">
+        <p>Video production companies in Dublin implemented new protocols to maintain quality while ensuring safety. This included virtual meetings, online script reviews, and remote editing sessions.</p>
+    </div>
+</div>
+
+<div class="video-container">
+    <video controls>
+        <source src="https://www.dropbox.com/s/example/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("moreDetails");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

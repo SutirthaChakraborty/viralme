@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Climate Change Action</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			border-bottom: 1px solid #333;
+		}
+		.content {
+			padding: 20px;
+		}
+		.accordion {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ccc;
+			margin-bottom: 20px;
+			cursor: pointer;
+		}
+		.accordion:hover {
+			background-color: #ccc;
+		}
+		.accordion-icon {
+			font-size: 18px;
+			margin-right: 10px;
+		}
+		.accordion-content {
+			padding: 10px;
+			margin-top: 10px;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			display: none;
+		}
+		.accordion-content.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="header">Climate Change Action</h1>
+		<div class="content">
+			<h2>What is Climate Change?</h2>
+			<p>Climate change refers to the long-term warming of the planet, which is primarily caused by the increasing levels of greenhouse gases in the Earth's atmosphere.</p>
+			<div class="accordion">
+				<h3 class="accordion-icon">+</h3>
+				<h3>Causes of Climate Change</h3>
+				<div class="accordion-content">
+					<ul>
+						<li>Burning of fossil fuels (coal, oil, gas)</li>
+						<li>Deforestation</li>
+						<li>Agricultural activities</li>
+						<li>Industrial processes</li>
+					</ul>
+				</div>
+			</div>
+			<div class="accordion">
+				<h3 class="accordion-icon">+</h3>
+				<h3>Effects of Climate Change</h3>
+				<div class="accordion-content">
+					<ul>
+						<li>Rising sea levels</li>
+						<li>More frequent and severe weather events</li>
+						<li>Changes in precipitation patterns</li>
+						<li>Loss of biodiversity</li>
+					</ul>
+				</div>
+			</div>
+			<h2>What Can We Do?</h2>
+			<p>We can all play a role in reducing our carbon footprint and mitigating the effects of climate change. Here are some simple actions you can take:</p>
+			<div class="accordion">
+				<h3 class="accordion-icon">+</h3>
+				<h3>Reduce Your Carbon Footprint</h3>
+				<div class="accordion-content">
+					<ul>
+						<li>Use public transportation or walk/bike</li>
+						<li>Use energy-efficient appliances</li>
+						<li>Turn off lights and electronics when not in use</li>
+						<li>Use eco-friendly products</li>
+					</ul>
+				</div>
+			</div>
+			<div class="accordion">
+				<h3 class="accordion-icon">+</h3>
+				<h3>Get Involved</h3>
+				<div class="accordion-content">
+					<ul>
+						<li>Support renewable energy projects</li>
+						<li>Participate in climate protests</li>
+						<li>Donate to organizations working on climate change</li>
+						<li>Spread awareness about climate change</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var accordions = document.querySelectorAll('.accordion');
+		accordions.forEach(function(accordion) {
+			accordion.addEventListener('click', function() {
+				var content = accordion.nextElementSibling;
+				if (content.classList.contains('show')) {
+					content.classList.remove('show');
+				} else {
+					content.classList.add('show');
+				}
+			});
+		});
+	</script>
+</body>
+</html>

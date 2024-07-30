@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            background-color: #e7f0fe;
+            border: 1px solid #4a90e2;
+            border-radius: 5px;
+            margin: 15px 0;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Production Verification</h1>
+        <p>Production verification ensures that products meet specified requirements and standards. It is a critical part of quality assurance in manufacturing.</p>
+        
+        <div class="card">
+            <h2>Key Stages of Production Verification</h2>
+            <ul>
+                <li>Planning: Define production requirements and criteria.</li>
+                <li>Execution: Carry out manufacturing processes under specified conditions.</li>
+                <li>Inspection: Regular checks at different stages to ensure compliance.</li>
+                <li>Reporting: Document results and find deviations.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Verification Techniques</h2>
+            <button onclick="showTechniques()">Show Verification Techniques</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script>
+        function showTechniques() {
+            const techniques = [
+                "1. Visual Inspection: Checking for defects visually.",
+                "2. Measurement: Using tools to measure physical properties.",
+                "3. Functional Testing: Verifying that the product performs as intended.",
+                "4. Destructive Testing: Testing until failure to understand limits.",
+                "5. Non-Destructive Testing: Techniques that do not damage the product."
+            ];
+            document.getElementById("result").innerHTML = techniques.join('<br>');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Subtitles</title>
+    <style>
+        .subtitle {
+            font-size: 24px;
+            color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Subtitles</h1>
+    <p>Hover over the subtitles below to see the effect:</p>
+    <p class="subtitle">Subtitle 1</p>
+    <p class="subtitle">Subtitle 2</p>
+
+    <script>
+        const subtitles = document.querySelectorAll('.subtitle');
+
+        subtitles.forEach(subtitle => {
+            subtitle.addEventListener('mouseover', () => {
+                subtitle.style.color = 'red';
+            });
+
+            subtitle.addEventListener('mouseout', () => {
+                subtitle.style.color = 'blue';
+            });
+        });
+    </script>
+</body>
+</html>

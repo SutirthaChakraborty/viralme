@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion Graphics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6347;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .info {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            transition: transform 0.3s;
+        }
+        .info:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #animation {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6347;
+            position: relative;
+            margin: 20px auto;
+            animation: move 5s infinite alternate;
+        }
+        @keyframes move {
+            from { transform: translateY(0); }
+            to { transform: translateY(-30px); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Motion Graphics</h1>
+    <div class="info">
+        <h2>What are Motion Graphics?</h2>
+        <p>Motion graphics are pieces of digital footage or animation that create the illusion of motion or rotation, and are usually combined with audio for use in multimedia projects.</p>
+        <button onclick="toggleDetails()">Learn More</button>
+        <div id="details" style="display:none;">
+            <h3>Applications of Motion Graphics</h3>
+            <ul>
+                <li>Film and Television</li>
+                <li>Advertising</li>
+                <li>Video Games</li>
+                <li>Web Design</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="animation"></div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

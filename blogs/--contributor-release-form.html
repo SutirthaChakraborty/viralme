@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>贡献者释放表</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.header {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #3e8e41;
+		}
+		
+		.content {
+			padding: 20px;
+		}
+		
+		.field {
+			margin-bottom: 20px;
+		}
+		
+		.label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		
+		.input-field {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			贡献者释放表
+		</div>
+		<div class="content">
+			<form id="releaseForm">
+				<div class="field">
+					<label class="label">贡献者姓名</label>
+					<input type="text" class="input-field" id="name" required>
+				</div>
+				<div class="field">
+					<label class="label">贡献者Email</label>
+					<input type="email" class="input-field" id="email" required>
+				</div>
+				<div class="field">
+					<label class="label">贡献内容</label>
+					<textarea class="input-field" id="content" required></textarea>
+				</div>
+				<div class="field">
+					<label class="label">贡献日期</label>
+					<input type="date" class="input-field" id="date" required>
+				</div>
+				<button class="button" onclick="submitForm()">提交</button>
+			</form>
+		</div>
+	</div>
+	
+	<script>
+		function submitForm() {
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var content = document.getElementById("content").value;
+			var date = document.getElementById("date").value;
+			
+			if (name && email && content && date) {
+				alert("提交成功!");
+			} else {
+				alert("请填写所有字段!");
+			}
+		}
+	</script>
+</body>
+</html>

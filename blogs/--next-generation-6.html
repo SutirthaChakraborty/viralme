@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Generation 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        .interactive-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #4a90e2;
+            border-radius: 8px;
+            background-color: #e6f7ff;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #4a90e2;
+            border-radius: 5px;
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Next Generation 6</h1>
+    <p>The Next Generation 6 (NG6) is a revolutionary concept in technology, focusing on enhanced connectivity, artificial intelligence, and sustainable practices.</p>
+
+    <div class="interactive-section">
+        <h2>Learn More About NG6</h2>
+        <button onclick="toggleInfo()">Click to Toggle Information</button>
+        <div class="info" id="info">
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Advanced AI Integration</li>
+                <li>Seamless Connectivity</li>
+                <li>Focus on Sustainability</li>
+                <li>Enhanced User Experience</li>
+            </ul>
+            <p><strong>Impact:</strong> NG6 aims to transform industries by leveraging technology to create smarter solutions for everyday challenges.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

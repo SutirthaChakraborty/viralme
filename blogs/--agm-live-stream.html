@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGM Live Stream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .topic {
+            margin: 20px 0;
+        }
+        .topic h2 {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            background: #e7f3ff;
+            border-left: 6px solid #007bff;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AGM Live Stream</h1>
+        <p>Discover the significance of live streaming Annual General Meetings</p>
+    </header>
+    <div class="container">
+        <div class="topic">
+            <h2 onclick="toggleDetails('introduction')">What is AGM Live Stream?</h2>
+            <div id="introduction" class="details">
+                <p>AGM Live Stream refers to the online broadcasting of an Annual General Meeting, allowing shareholders to participate remotely.</p>
+            </div>
+        </div>
+        <div class="topic">
+            <h2 onclick="toggleDetails('benefits')">Benefits of AGM Live Streaming</h2>
+            <div id="benefits" class="details">
+                <p>Live streaming AGMs increases accessibility, enhances shareholder engagement, and allows participation from anywhere in the world.</p>
+            </div>
+        </div>
+        <div class="topic">
+            <h2 onclick="toggleDetails('technology')">Technology Behind AGM Live Streaming</h2>
+            <div id="technology" class="details">
+                <p>AGM Live Streaming utilizes platforms like Zoom, YouTube, and specialized webinar software to facilitate real-time communication.</p>
+            </div>
+        </div>
+        <div class="topic">
+            <h2 onclick="toggleDetails('best-practices')">Best Practices for Conducting AGM Live Streams</h2>
+            <div id="best-practices" class="details">
+                <p>Ensure high video/audio quality, provide clear instructions for participation, and record the session for future reference.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 AGM Live Stream Resources</p>
+    </footer>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

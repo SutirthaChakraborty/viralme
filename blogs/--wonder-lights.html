@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Lights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #e5e5e5;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff6f61;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .container {
+            padding: 20px;
+        }
+        .info-card {
+            background: #16213e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.2s;
+        }
+        .info-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(255, 112, 58, 1);
+        }
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #ff4c3b;
+        }
+        .light-show {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .light-show.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Wonder Lights</h1>
+        <p>Discover the magic of colorful lights illuminating the night sky!</p>
+        
+        <div class="info-card">
+            <h2>What are Wonder Lights?</h2>
+            <p>Wonder Lights are spectacular light displays that create enchanting atmospheres during festivities and special occasions.</p>
+        </div>
+        
+        <div class="info-card">
+            <h2>Types of Wonder Lights</h2>
+            <ul>
+                <li>LED Light Displays</li>
+                <li>Fairy Lights</li>
+                <li>Projector Lights</li>
+                <li>Color Changing Lights</li>
+            </ul>
+        </div>
+
+        <button class="button" id="showLightInfoButton">Show Light Benefits</button>
+        <div class="light-show" id="lightBenefits">
+            <p>Wonder Lights can enhance mood, improve decor, and create unforgettable memories during celebrations!</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showLightInfoButton').addEventListener('click', function() {
+            const lightShow = document.getElementById('lightBenefits');
+            lightShow.classList.toggle('active');
+            this.textContent = lightShow.classList.contains('active') ? 'Hide Light Benefits' : 'Show Light Benefits';
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Department of Agriculture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #008000;
+        }
+        p {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Department of Agriculture</h1>
+    <p>Explore the latest agricultural innovations and practices.</p>
+    <button onclick="showInfo()">Click here for more information</button>
+    <div id="info" style="display: none;">
+        <p>The Department of Agriculture is dedicated to promoting sustainable farming and ensuring food security.</p>
+        <p>Our research focuses on improving crop yields and developing eco-friendly farming techniques.</p>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

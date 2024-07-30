@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Video Costs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .cost-section {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #ecf0f1;
+            transition: transform 0.3s;
+        }
+        .cost-section:hover {
+            transform: scale(1.02);
+        }
+        .button {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #3498db;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #bdc3c7;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Video Costs</h1>
+    <p>The cost of producing videos can vary significantly based on several factors. Click on the topics below to learn more.</p>
+
+    <div class="cost-section">
+        <h2>Pre-Production Costs</h2>
+        <button class="button" onclick="toggleDetails('preProduction')">Details</button>
+        <div id="preProduction" class="details">
+            <p>Pre-production includes scripting, planning, location scouting, and hiring talent. Depending on the complexity, costs can range from $1,000 to $10,000.</p>
+        </div>
+    </div>
+
+    <div class="cost-section">
+        <h2>Production Costs</h2>
+        <button class="button" onclick="toggleDetails('production')">Details</button>
+        <div id="production" class="details">
+            <p>Production involves filming, equipment rental, and crew wages. A typical production can cost between $5,000 and $50,000.</p>
+        </div>
+    </div>
+
+    <div class="cost-section">
+        <h2>Post-Production Costs</h2>
+        <button class="button" onclick="toggleDetails('postProduction')">Details</button>
+        <div id="postProduction" class="details">
+            <p>Post-production includes editing, sound design, and color correction. This stage can cost anywhere from $2,000 to $20,000.</p>
+        </div>
+    </div>
+
+    <div class="cost-section">
+        <h2>Distribution Costs</h2>
+        <button class="button" onclick="toggleDetails('distribution')">Details</button>
+        <div id="distribution" class="details">
+            <p>Distribution involves marketing and advertising costs to get your video seen. This can range from $500 to $5,000 or more depending on the strategy.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const detailsElement = document.getElementById(id);
+            if (detailsElement.style.display === "none" || detailsElement.style.display === "") {
+                detailsElement.style.display = "block";
+            } else {
+                detailsElement.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

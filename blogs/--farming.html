@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farming Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Farming Information</h1>
+    <p>Explore the world of farming and agriculture!</p>
+    <button onclick="showInfo()">Click here for more details</button>
+    <div id="info" style="display: none;">
+        <p>Farming is the practice of cultivating land and raising crops or animals for food, fiber, or other products.</p>
+        <p>It involves various activities such as planting, harvesting, irrigation, and livestock management.</p>
+        <p>Modern farming techniques include precision agriculture, organic farming, and sustainable practices.</p>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

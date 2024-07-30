@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Standards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7e6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .info-box {
+            background-color: #ffffff;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+        .info-box:hover {
+            background-color: #f1f1f1;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Green Standards</h1>
+    <div class="info-box" id="definition">
+        <h2>What are Green Standards?</h2>
+        <p>Green Standards are guidelines and criteria aimed at promoting sustainability and environmentally friendly practices in various industries.</p>
+    </div>
+
+    <div class="info-box" id="importance">
+        <h2>Why are Green Standards Important?</h2>
+        <p>They help reduce environmental impact, promote energy efficiency, and encourage the use of renewable resources.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Examples of Green Standards</h2>
+        <ul>
+            <li>LEED Certification</li>
+            <li>ISO 14001</li>
+            <li>Energy Star Rating</li>
+        </ul>
+    </div>
+
+    <button class="button" onclick="toggleDetails()">Show More Details</button>
+    <div id="moreDetails" class="hidden">
+        <h2>More on Green Standards</h2>
+        <p>Implementing green standards can lead to significant cost savings, improved public perception, and compliance with regulations.</p>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("moreDetails");
+            if (details.classList.contains("hidden")) {
+                details.classList.remove("hidden");
+            } else {
+                details.classList.add("hidden");
+            }
+        }
+    </script>
+
+</body>
+</html>

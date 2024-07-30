@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pre Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pre Production</h1>
+    <div class="info">
+        <p>Pre-production is the phase where planning for a project takes place before the production process begins.</p>
+        <p>It involves tasks such as scriptwriting, storyboarding, casting, location scouting, and budgeting.</p>
+        <p>Proper pre-production sets the foundation for a successful project.</p>
+    </div>
+    <button onclick="showMoreInfo()">Show More</button>
+    <div id="moreInfo" style="display: none;">
+        <p>During pre-production, decisions are made regarding the creative and logistical aspects of the project.</p>
+        <p>It helps in identifying potential issues early on and ensures a smoother production process.</p>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

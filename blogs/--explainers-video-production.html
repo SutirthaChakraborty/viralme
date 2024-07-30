@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explainers Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #5f27cd;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        #content {
+            padding: 20px;
+        }
+        h1 {
+            color: #6ab04c;
+        }
+        .step {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .step:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .toggle {
+            display: none;
+        }
+        button {
+            background-color: #e84118;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #c23616;
+        }
+        footer {
+            background: #5f27cd;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explainers Video Production</h1>
+    <p>Engaging and Informative Video Content</p>
+</header>
+
+<div id="content">
+    <div class="step">
+        <h2>1. Research & Scriptwriting</h2>
+        <p>Understand the message, audience, and goals. Develop a clear script that conveys the core message effectively.</p>
+        <button onclick="toggleVisibility('toggle1')">Learn More</button>
+        <div id="toggle1" class="toggle">
+            <p>In this phase, conducting research is crucial to identify audience needs and preferences. A concise script forms the backbone of the video.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>2. Storyboarding</h2>
+        <p>Create a visual outline of the video, determining scenes, transitions, and overall flow.</p>
+        <button onclick="toggleVisibility('toggle2')">Learn More</button>
+        <div id="toggle2" class="toggle">
+            <p>A storyboard allows you to visualize scenes and assists in organizing thoughts to maintain coherence throughout the video.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>3. Production</h2>
+        <p>Record video footage and audio as per the established script and storyboard.</p>
+        <button onclick="toggleVisibility('toggle3')">Learn More</button>
+        <div id="toggle3" class="toggle">
+            <p>This includes filming, voiceover recordings, and the gathering of any necessary assets to complete the production.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>4. Editing</h2>
+        <p>Combine footage, add animations, music, and special effects to create the final product.</p>
+        <button onclick="toggleVisibility('toggle4')">Learn More</button>
+        <div id="toggle4" class="toggle">
+            <p>Editing is where the magic happens, transforming raw footage into a compelling narrative with attention to detail for the audience’s engagement.</p>
+        </div>
+    </div>
+
+    <div class="step">
+        <h2>5. Distribution</h2>
+        <p>Share the final video across various platforms to reach a wider audience.</p>
+        <button onclick="toggleVisibility('toggle5')">Learn More</button>
+        <div id="toggle5" class="toggle">
+            <p>Choose platforms like YouTube, social media, or company websites. Monitor engagement to improve future videos.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Video Production Insights. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function toggleVisibility(id) {
+        const element = document.getElementById(id);
+        if (element.style.display === "block") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

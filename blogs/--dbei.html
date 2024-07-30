@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBEI Interactive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .info-box {
+            background-color: #e6e6fa;
+            border: 2px solid #9370db;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #32cd32;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #28a745;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the DBEI Interactive Page!</h1>
+    <p>DBEI stands for Digital Business and Economic Intelligence. It encompasses various aspects of digital transformation in business and economic strategies.</p>
+
+    <div class="info-box" id="info1">
+        <h2>What is DBEI?</h2>
+        <p>DBEI refers to the integration of digital technologies into business processes to enhance efficiency and decision-making.</p>
+    </div>
+
+    <div class="info-box" id="info2">
+        <h2>Importance of DBEI</h2>
+        <p>Understanding DBEI is crucial for businesses to remain competitive in a rapidly changing digital landscape.</p>
+    </div>
+
+    <button onclick="toggleInfo()">Show More Information</button>
+    <div id="moreInfo" style="display:none;">
+        <h2>Key Components of DBEI</h2>
+        <ul>
+            <li>Data Analytics</li>
+            <li>Digital Marketing</li>
+            <li>Customer Relationship Management (CRM)</li>
+            <li>Supply Chain Management</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Impact of Video Length on Viewer Engagement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #4caf50;
+            color: white;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .chart {
+            width: 100%;
+            height: 300px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Impact of Video Length on Viewer Engagement</h1>
+</header>
+
+<div class="content">
+    <h2>Understanding Video Length</h2>
+    <p>The length of a video can significantly impact viewer engagement. Shorter videos often lead <br> 
+    to higher completion rates, while longer videos may provide deeper insights but risk losing the audience’s attention.</p>
+    <button class="button" onclick="showShortVideoData()">Show Short Video Data</button>
+    <button class="button" onclick="showLongVideoData()">Show Long Video Data</button>
+    
+    <h3>Engagement Chart</h3>
+    <canvas id="engagementChart" class="chart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('engagementChart').getContext('2d');
+    let engagementData = {
+        labels: ['0-1 min', '1-3 mins', '3-10 mins', '10-30 mins', '30+ mins'],
+        datasets: [{
+            label: 'Viewer Engagement (%)',
+            data: [80, 70, 55, 40, 20],
+            backgroundColor: [
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 206, 86, 0.2)'
+            ],
+            borderColor: [
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgba(255, 99, 132, 1)',
+                'rgba(255, 206, 86, 1)'
+            ],
+            borderWidth: 1
+        }]
+    };
+
+    const engagementChart = new Chart(ctx, {
+        type: 'bar',
+        data: engagementData,
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Engagement (%)'
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Video Length'
+                    }
+                }
+            }
+        }
+    });
+
+    function showShortVideoData() {
+        engagementChart.data.datasets[0].data = [80, 70, 55, 40, 20];
+        engagementChart.update();
+    }
+
+    function showLongVideoData() {
+        engagementChart.data.datasets[0].data = [90, 75, 60, 45, 25];
+        engagementChart.update();
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manufacturing Plant Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to our Manufacturing Plant Showcase!</h1>
+        <p>Explore the latest technologies and innovations in manufacturing.</p>
+        <button class="button" onclick="showInformation()">Show More</button>
+        <div id="information" style="display: none;">
+            <p>Learn about our state-of-the-art machinery and production processes.</p>
+            <p>Discover how we ensure quality and efficiency in our manufacturing operations.</p>
+        </div>
+    </div>
+    <script>
+        function showInformation() {
+            var info = document.getElementById("information");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

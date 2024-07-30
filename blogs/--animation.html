@@ -1,0 +1,48 @@
+Here's the interactive, colorful HTML code for an animation demonstration:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Demo</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #ff6b6b;
+      border-radius: 8px;
+      animation: move 2s infinite alternate;
+    }
+    @keyframes move {
+      from { transform: translateX(0); }
+      to { transform: translateX(200px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <script>
+    const box = document.querySelector('.box');
+    box.addEventListener('mouseover', function() {
+      this.style.backgroundColor = '#48dbfb';
+    });
+    box.addEventListener('mouseout', function() {
+      this.style.backgroundColor = '#ff6b6b';
+    });
+  </script>
+</body>
+</html>
+
+
+This code creates a simple animation of a colored box moving horizontally, with an interactive change in color when hovering over the box.

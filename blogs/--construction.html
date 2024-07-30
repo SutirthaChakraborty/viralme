@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Construction Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .topic {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: box-shadow 0.3s;
+        }
+        .topic:hover {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background: #e7f3fe;
+            padding: 15px;
+            border-left: 5px solid #2196F3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Interactive Construction Guide</h1>
+</header>
+
+<div class="container">
+    <div class="topic">
+        <h2>Types of Construction</h2>
+        <button class="btn" onclick="toggleDetails('details1')">Learn More</button>
+        <div id="details1" class="details">
+            <p>There are various types of construction including residential, commercial, industrial, and infrastructure. Each type has different requirements, regulations, and practices.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Construction Materials</h2>
+        <button class="btn" onclick="toggleDetails('details2')">Learn More</button>
+        <div id="details2" class="details">
+            <p>Common materials used in construction include concrete, wood, steel, and masonry. Each material has its benefits and drawbacks depending on the project.</p>
+        </div>
+    </div>
+    
+    <div class="topic">
+        <h2>Construction Safety</h2>
+        <button class="btn" onclick="toggleDetails('details3')">Learn More</button>
+        <div id="details3" class="details">
+            <p>Safety in construction is critical. Key practices include wearing protective gear, proper equipment use, and following safety regulations to prevent accidents.</p>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Construction Phases</h2>
+        <button class="btn" onclick="toggleDetails('details4')">Learn More</button>
+        <div id="details4" class="details">
+            <p>The construction process typically consists of five phases: design, pre-construction, construction, post-construction, and maintenance.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Interactive Construction Guide. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

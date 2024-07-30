@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explainer Video</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.video-container {
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		
+		.video-container iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+		
+		.description {
+			margin-top: 20px;
+			font-size: 16px;
+			color: #666;
+		}
+		
+		.interactive-button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.interactive-button:hover {
+			background-color: #3e8e41;
+		}
+		
+		#interactive-button-text {
+			font-size: 18px;
+			margin-right: 10px;
+		}
+		
+		#interactive-button-icon {
+			font-size: 20px;
+			margin-left: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Explainer Video</h1>
+		<p class="description">Explainer videos are short, engaging videos that explain a product, service, or idea in an easy-to-understand manner. They are often used in marketing and advertising to promote a brand or product.</p>
+		<div class="video-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<button class="interactive-button" id="interactive-button">
+			<span id="interactive-button-text">Learn More</span>
+			<span id="interactive-button-icon">›</span>
+		</button>
+	</div>
+	
+	<script>
+		document.getElementById("interactive-button").addEventListener("click", function() {
+			alert("Explainer videos are a great way to communicate complex information in a simple and engaging way. They can be used to promote a brand, product, or service, and are often used in marketing and advertising.");
+		});
+	</script>
+</body>
+</html>
+
+
+Note: Replace `VIDEO_ID` with the actual ID of the YouTube video you want to embed.

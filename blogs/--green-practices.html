@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Green Practices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
+        p {
+            color: #333;
+        }
+        .info-box {
+            background-color: #e0ffe0;
+            border: 1px solid green;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Green Practices</h1>
+    <div class="info-box">
+        <p>Green practices refer to environmentally friendly actions that help reduce our carbon footprint and protect the planet.</p>
+        <p>Examples include recycling, using renewable energy sources, and reducing water consumption.</p>
+        <p>Click the button below to learn more about green practices!</p>
+        <button onclick="showMoreInfo()">Show More</button>
+    </div>
+    <div id="more-info" style="display: none;" class="info-box">
+        <p>By adopting green practices, we can contribute to a sustainable future for generations to come.</p>
+        <p>Together, we can make a difference in preserving our planet's natural resources.</p>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("more-info");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

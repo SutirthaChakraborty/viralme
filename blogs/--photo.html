@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography: Capture the Moment!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4682b4;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .button {
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff6347;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photography: Capture the Moment!</h1>
+        <p>Explore the world of photography and unleash your creative potential.</p>
+    </header>
+    <div class="container">
+        <div class="card" onclick="showDetails('landscape')">
+            <img src="https://example.com/landscape.jpg" alt="Landscape Photography">
+            <h2>Landscape Photography</h2>
+            <p>Breath-taking scenes that showcase the beauty of nature.</p>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card" onclick="showDetails('portrait')">
+            <img src="https://example.com/portrait.jpg" alt="Portrait Photography">
+            <h2>Portrait Photography</h2>
+            <p>Capturing the essence of individuals through stunning portraits.</p>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card" onclick="showDetails('macro')">
+            <img src="https://example.com/macro.jpg" alt="Macro Photography">
+            <h2>Macro Photography</h2>
+            <p>Discover the intricate details of tiny subjects.</p>
+            <button class="button">Learn More</button>
+        </div>
+    </div>
+    
+    <section id="details" style="display: none; text-align: center; margin-top: 20px;">
+        <h2>Photography Details</h2>
+        <p id="detailText"></p>
+        <button class="button" onclick="closeDetails()">Close</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Photography Insights | Inspiration for Your Next Shoot</p>
+    </footer>
+
+    <script>
+        function showDetails(type) {
+            let detailsText;
+
+            switch(type) {
+                case 'landscape':
+                    detailsText = 'Landscape photography captures the vastness and beauty of nature. Perfect lighting and angles can enhance the richness of the scene.';
+                    break;
+                case 'portrait':
+                    detailsText = 'Portrait photography focuses on capturing the personality and emotion of individuals. A good portrait tells a story and connects with viewers.';
+                    break;
+                case 'macro':
+                    detailsText = 'Macro photography reveals the beauty of small subjects. It requires specialized equipment to capture intricate details that are often unnoticed.';
+                    break;
+                default:
+                    detailsText = 'Select a photography type to learn more.';
+            }
+
+            document.getElementById('detailText').innerText = detailsText;
+            document.getElementById('details').style.display = 'block';
+        }
+
+        function closeDetails() {
+            document.getElementById('details').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

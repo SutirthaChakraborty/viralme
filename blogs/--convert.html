@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Convert</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.convert {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.convert:hover {
+			background-color: #3e8e41;
+		}
+		.result {
+			margin-top: 20px;
+			font-weight: bold;
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Convert</h1>
+		<form>
+			<label for="input">Enter a value:</label>
+			<input type="number" id="input" value="0">
+			<select id="unit">
+				<option value="cm">Centimeters to Meters</option>
+				<option value="m">Meters to Centimeters</option>
+				<option value="kg">Kilograms to Pounds</option>
+				<option value="lb">Pounds to Kilograms</option>
+				<option value="°F">Fahrenheit to Celsius</option>
+				<option value="°C">Celsius to Fahrenheit</option>
+			</select>
+			<button class="convert" onclick="convert()">Convert</button>
+		</form>
+		<div class="result" id="result"></div>
+	</div>
+
+	<script>
+		function convert() {
+			let input = document.getElementById("input").value;
+			let unit = document.getElementById("unit").value;
+			let result = 0;
+
+			switch (unit) {
+				case "cm":
+					result = input / 100;
+					break;
+				case "m":
+					result = input * 100;
+					break;
+				case "kg":
+					result = input * 2.20462;
+					break;
+				case "lb":
+					result = input / 2.20462;
+					break;
+				case "°F":
+					result = (input - 32) * 5/9;
+					break;
+				case "°C":
+					result = (input * 9/5) + 32;
+					break;
+			}
+
+			document.getElementById("result").innerHTML = `The result is: ${result}`;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+Here's the HTML code to create an interactive, colorful explanation of the transition year:
+
+#### HTML Code:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition Year</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      color: #4CAF50;
+    }
+    p {
+      color: #333;
+    }
+    .interactive-box {
+      width: 200px;
+      height: 200px;
+      background-color: #f7b731;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .interactive-box:hover {
+      background-color: #eb2f06;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Exploring the Transition Year</h1>
+  <div class="interactive-box" onclick="changeColor()">Hover over me!</div>
+  <p>Click the box to see the transition effect!</p>
+  <script>
+    function changeColor() {
+      document.querySelector('.interactive-box').style.backgroundColor = '#6F1E51';
+    }
+  </script>
+</body>
+</html>
+
+
+The HTML code includes CSS for styling and JavaScript for interaction. When opened in a browser, it will display an interactive box that changes color and size when hovered over or clicked.

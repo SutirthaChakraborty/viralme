@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>11. HTML Basics</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.title {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		.list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.list li {
+			padding: 10px;
+			border-bottom: 1px solid #eee;
+		}
+		.list li:last-child {
+			border-bottom: none;
+		}
+		.highlight {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">HTML Basics</h1>
+		<p>HTML (Hypertext Markup Language) is the standard markup language used to create web pages.</p>
+		<ul class="list">
+			<li>HTML is written in plain text and consists of a series of elements, represented by tags.</li>
+			<li>Tags are surrounded by angle brackets (&lt; and &gt;) and usually come in pairs, with the opening tag preceding the content and the closing tag following the content.</li>
+			<li>Some tags are self-closing, meaning they do not have a corresponding closing tag.</li>
+			<li>HTML tags can be used to define the structure and content of a web page, including headings, paragraphs, images, links, forms, and more.</li>
+		</ul>
+		<p>Let's explore some basic HTML elements:</p>
+		<button class="highlight" onclick="showElement('heading')">Heading</button>
+		<button class="highlight" onclick="showElement('paragraph')">Paragraph</button>
+		<button class="highlight" onclick="showElement('image')">Image</button>
+		<button class="highlight" onclick="showElement('link')">Link</button>
+		<button class="highlight" onclick="showElement('form')">Form</button>
+		<div id="content"></div>
+
+		<script>
+			function showElement(element) {
+				var content = document.getElementById('content');
+				content.innerHTML = '';
+				switch (element) {
+					case 'heading':
+						content.innerHTML += '<h1>Hello, World!</h1>';
+						break;
+					case 'paragraph':
+						content.innerHTML += '<p>This is a paragraph of text.</p>';
+						break;
+					case 'image':
+						content.innerHTML += '<img src="image.jpg" alt="An image">';
+						break;
+					case 'link':
+						content.innerHTML += '<a href="https://www.example.com">Visit Example.com</a>';
+						break;
+					case 'form':
+						content.innerHTML += '<form><input type="text" name="name"><input type="submit" value="Submit"></form>';
+						break;
+				}
+			}
+		</script>
+	</div>
+</body>
+</html>

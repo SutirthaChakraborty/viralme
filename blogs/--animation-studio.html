@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .animation {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Animation Studio</h1>
+    </header>
+    <div class="container">
+        <h2>What is an Animation Studio?</h2>
+        <p>An animation studio is a place where creative minds come together to produce animated content, including films, TV shows, and video games.</p>
+        
+        <h2>Interactive Animation Showcase</h2>
+        <button onclick="toggleAnimation()">Click to See Animation</button>
+        <div class="animation" id="animation">
+            <h3>Animation Example</h3>
+            <div style="width: 100px; height: 100px; background-color: #ff5733; animation: move 2s infinite;">
+                <p style="text-align: center; color: white;">Move Me!</p>
+            </div>
+        </div>
+        
+        <h2>Our Services</h2>
+        <ul>
+            <li>2D Animation</li>
+            <li>3D Animation</li>
+            <li>Character Design</li>
+            <li>Visual Effects</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleAnimation() {
+            const animationDiv = document.getElementById('animation');
+            if (animationDiv.style.display === 'none' || animationDiv.style.display === '') {
+                animationDiv.style.display = 'block';
+            } else {
+                animationDiv.style.display = 'none';
+            }
+        }
+        
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes move {
+                0% { transform: translateY(0); }
+                50% { transform: translateY(-30px); }
+                100% { transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

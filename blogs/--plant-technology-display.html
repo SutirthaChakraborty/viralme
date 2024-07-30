@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Technology Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5e9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4caf50;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .topic {
+            background: #fff;
+            border: 2px solid #4caf50;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            transition: transform 0.2s;
+        }
+        .topic:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Plant Technology Display</h1>
+    <div class="container">
+        <div class="topic">
+            <h2>Hydroponics</h2>
+            <button onclick="toggleInfo('info1')">Learn More</button>
+            <div id="info1" class="info">
+                Hydroponics is a method of growing plants without soil, using mineral nutrient solutions in an aqueous solvent.
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Aeroponics</h2>
+            <button onclick="toggleInfo('info2')">Learn More</button>
+            <div id="info2" class="info">
+                Aeroponics is growing plants in an air/mist environment without the use of soil or an aggregate medium.
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Vertical Farming</h2>
+            <button onclick="toggleInfo('info3')">Learn More</button>
+            <div id="info3" class="info">
+                Vertical farming involves growing crops in stacked layers, often integrating controlled-environment agriculture.
+            </div>
+        </div>
+        <div class="topic">
+            <h2>Biotechnology</h2>
+            <button onclick="toggleInfo('info4')">Learn More</button>
+            <div id="info4" class="info">
+                Biotechnology uses living systems and organisms to develop or create products, including genetically modified plants.
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            const infoDiv = document.getElementById(infoId);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Live Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            padding: 20px;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #6c5ce7;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #5b4cc4;
+        }
+        .faq {
+            display: none;
+            background-color: #eaeaea;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Event Live Streaming</h1>
+    <p>Your gateway to live virtual experiences!</p>
+</header>
+
+<section>
+    <h2>What is Live Streaming?</h2>
+    <p>Live streaming allows you to broadcast video content in real-time over the internet.</p>
+    
+    <h3>Benefits of Live Streaming:</h3>
+    <ul>
+        <li>Global Reach</li>
+        <li>Engagement with Audiences</li>
+        <li>Cost-Effective</li>
+        <li>Enhanced Interaction</li>
+    </ul>
+    
+    <button onclick="toggleFAQ()">FAQ</button>
+    <div class="faq" id="faqSection">
+        <h3>Frequently Asked Questions:</h3>
+        <p><strong>1. What equipment do I need?</strong><br> A good camera, microphone, and stable internet connection.</p>
+        <p><strong>2. How can I enhance viewer interaction?</strong><br> Use chat features and polls during the stream.</p>
+        <p><strong>3. Is it expensive?</strong><br> Costs can vary; many platforms offer free or budget-friendly options.</p>
+    </div>
+</section>
+
+<script>
+    function toggleFAQ() {
+        const faqSection = document.getElementById('faqSection');
+        if (faqSection.style.display === "none" || faqSection.style.display === "") {
+            faqSection.style.display = "block";
+        } else {
+            faqSection.style.display = "none";
+        }
+    }
+    
+    window.onload = function() {
+        document.getElementById('faqSection').style.display = "none";
+    }
+</script>
+
+</body>
+</html>

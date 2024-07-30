@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Best Video Formats for Social Media Platforms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-format {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .format-title {
+            color: #007bff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .format-description {
+            color: #666;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Best Video Formats for Social Media Platforms</h1>
+    <div class="video-format">
+        <div class="format-title">MP4</div>
+        <div class="format-description">MP4 is widely supported and recommended for most social media platforms.</div>
+    </div>
+    <div class="video-format">
+        <div class="format-title">MOV</div>
+        <div class="format-description">MOV is commonly used for high-quality videos on platforms like Facebook.</div>
+    </div>
+    <div class="video-format">
+        <div class="format-title">AVI</div>
+        <div class="format-description">AVI is suitable for Twitter and Instagram, but may have compatibility issues on some platforms.</div>
+    </div>
+    <script>
+        alert("Click on each video format to learn more!");
+        const formats = document.querySelectorAll('.video-format');
+        formats.forEach(format => {
+            format.addEventListener('click', () => {
+                format.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

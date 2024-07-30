@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Production Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 80%;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Production Insights</h1>
+    <div class="info">
+        <p>Welcome to our interactive guide on video production insights. Click the button below to explore more!</p>
+        <button class="button" onclick="showInsights()">Show Insights</button>
+        <div id="insights" style="display: none;">
+            <p>1. Lighting is crucial for creating high-quality videos.</p>
+            <p>2. Use a tripod to keep your shots steady and professional.</p>
+            <p>3. Audio quality is just as important as video quality.</p>
+            <p>4. Plan your shots and storyboard before filming.</p>
+            <p>5. Editing is where the magic happens - pay attention to details.</p>
+        </div>
+    </div>
+    <script>
+        function showInsights() {
+            var insights = document.getElementById("insights");
+            if (insights.style.display === "none") {
+                insights.style.display = "block";
+            } else {
+                insights.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

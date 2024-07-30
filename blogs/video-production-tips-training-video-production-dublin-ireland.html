@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Tips: Training in Dublin, Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .tip {
+            background-color: #e7f1ff;
+            border-left: 4px solid #007bff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            transition: transform 0.2s;
+        }
+        .tip:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #007bff;
+            padding: 15px;
+            background-color: #e7f1ff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Production Tips: Training in Dublin, Ireland</h1>
+    </header>
+    <div class="container">
+        <h2>Quick Tips for Effective Video Production</h2>
+        <div class="tip" onclick="toggleContent('tip1')">
+            <h3>1. Plan Your Content</h3>
+            <p>Outline your script and prepare a storyboard to visualize scenes.</p>
+        </div>
+        <div id="tip1" class="interactive">
+            <p>Proper planning ensures clarity in message delivery and organization during filming.</p>
+        </div>
+        
+        <div class="tip" onclick="toggleContent('tip2')">
+            <h3>2. Invest in Good Equipment</h3>
+            <p>A quality camera and sound equipment will significantly enhance your video quality.</p>
+        </div>
+        <div id="tip2" class="interactive">
+            <p>Choose equipment based on your production needs; even mobile cameras can produce great content.</p>
+        </div>
+
+        <div class="tip" onclick="toggleContent('tip3')">
+            <h3>3. Use Natural Lighting</h3>
+            <p>Natural light can provide excellent illumination for your scenes.</p>
+        </div>
+        <div id="tip3" class="interactive">
+            <p>Position your subjects facing the light source to create soft shadows and highlights.</p>
+        </div>
+
+        <div class="tip" onclick="toggleContent('tip4')">
+            <h3>4. Edit for Impact</h3>
+            <p>Editing is where the magic happens; choose a great editing software to refine your video.</p>
+        </div>
+        <div id="tip4" class="interactive">
+            <p>Focus on pacing, transitions, and adding music to enhance the emotional impact.</p>
+        </div>
+
+        <div class="tip" onclick="toggleContent('tip5')">
+            <h3>5. Practice, Practice, Practice!</h3>
+            <p>Improving your skills requires time and practice—don't shy away from experimentation!</p>
+        </div>
+        <div id="tip5" class="interactive">
+            <p>Recording multiple practices can make you more comfortable and improve your delivery.</p>
+        </div>
+        
+        <button onclick="showMore()">Show More Resources</button>
+        <div id="resources" class="interactive">
+            <h2>Additional Resources</h2>
+            <p>Check out local courses and workshops in Dublin specializing in video production.</p>
+            <ul>
+                <li><a href="https://www.dublin.ie/events/video-production-workshop/">Dublin Video Production Workshop</a></li>
+                <li><a href="https://www.courses.ie/video-production-dublin/">Courses in Video Production</a></li>
+                <li><a href="https://www.eventbrite.ie/d/ireland--dublin/video-production/">Video Production Events in Dublin</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+        function showMore() {
+            const resources = document.getElementById("resources");
+            resources.style.display = resources.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

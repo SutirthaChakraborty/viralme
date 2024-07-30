@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Form in Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: #feb47b;
+            color: black;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #ff7e5f;
+        }
+        .hidden {
+            display: none;
+        }
+        .toggle-info {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Release Form in Video Production</h1>
+        <p>Understand the importance and components of a release form.</p>
+    </header>
+    <div class="content">
+        <h2>What is a Release Form?</h2>
+        <p>A release form is a legal document that allows a video production team to use footage of individuals or property without the risk of legal implications.</p>
+        
+        <div class="toggle-info">
+            <button onclick="toggleInfo('definition')">Learn More</button>
+            <div id="definition" class="hidden">
+                <p>Release forms protect the production company and ensure that everyone understands how their image, likeness, or location may be used.</p>
+            </div>
+        </div>
+        
+        <h2>Key Components of a Release Form</h2>
+        <ul>
+            <li>Personal Information</li>
+            <li>Clear Usage Rights</li>
+            <li>Signature and Date</li>
+            <li>Contact Information</li>
+        </ul>
+
+        <div class="toggle-info">
+            <button onclick="toggleInfo('components')">Learn More</button>
+            <div id="components" class="hidden">
+                <p>Each component ensures that the person gives informed consent and understands the potential uses of the footage.</p>
+            </div>
+        </div>
+
+        <h2>Who Needs a Release Form?</h2>
+        <p>Anyone appearing in your video, including actors, extras, and those providing location access should sign a release form.</p>
+        
+        <div class="toggle-info">
+            <button onclick="toggleInfo('needs')">Learn More</button>
+            <div id="needs" class="hidden">
+                <p>Having a release form protects your project from potential lawsuits and clears any ambiguity regarding rights.</p>
+            </div>
+        </div>
+
+        <h2>Why is it Important?</h2>
+        <p>A release form is crucial for protecting legal rights and ensuring ethical practices in video production.</p>
+
+        <div class="toggle-info">
+            <button onclick="toggleInfo('importance')">Learn More</button>
+            <div id="importance" class="hidden">
+                <p>Without a release form, you may face lawsuits which can lead to costly legal battles and loss of reputation.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.classList.contains('hidden')) {
+                info.classList.remove('hidden');
+            } else {
+                info.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

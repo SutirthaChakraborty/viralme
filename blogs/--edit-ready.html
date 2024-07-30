@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Ready</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .edit-box {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .edit-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .edit-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="edit-box">
+        <h2>Edit Ready</h2>
+        <input type="text" class="edit-input" placeholder="Enter text to edit">
+        <button class="edit-button">Edit</button>
+        <p id="edited-text"></p>
+    </div>
+
+    <script>
+        document.querySelector('.edit-button').addEventListener('click', function() {
+            let inputText = document.querySelector('.edit-input').value;
+            document.getElementById('edited-text').innerText = inputText.toUpperCase();
+        });
+    </script>
+</body>
+</html>

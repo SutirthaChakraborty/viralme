@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Industry Video Production in Dublin, Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .video {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Industry Video Production in Dublin, Ireland</h1>
+    <div class="video">
+        <p>Explore the environmental sector in Dublin with An Bealach Glas on TG4.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <button onclick="playVideo()">Play Video</button>
+    <script>
+        function playVideo() {
+            var video = document.querySelector('iframe');
+            video.src += "&autoplay=1";
+        }
+    </script>
+</body>
+</html>

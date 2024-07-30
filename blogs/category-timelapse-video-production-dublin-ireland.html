@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timelapse Video Production in Dublin, Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        .interactive-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #2e8b57;
+            border-radius: 5px;
+            background-color: #e0f7fa;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #2e8b57;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #3cb371;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Timelapse Video Production in Dublin, Ireland</h1>
+    <p>Timelapse video production is a captivating way to showcase projects, events, and the beauty of Dublin. Companies like <strong>Lensmen</strong> and <strong>One Productions</strong> specialize in creating stunning timelapse videos that compress hours, days, or even months into a few captivating minutes.</p>
+
+    <div class="interactive-section">
+        <h2>Explore Timelapse Techniques</h2>
+        <p>Click the button below to learn more about the techniques used in timelapse video production.</p>
+        <button onclick="toggleTechniques()">Show/Hide Techniques</button>
+        <div id="techniques" style="display:none;">
+            <ul>
+                <li><strong>Frame Rate:</strong> Shooting at a lower frame rate to create the timelapse effect.</li>
+                <li><strong>Interval Shooting:</strong> Capturing images at set intervals over time.</li>
+                <li><strong>Post-Production:</strong> Editing to speed up the footage and add effects.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="timelapse-dublin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function toggleTechniques() {
+            var techniques = document.getElementById("techniques");
+            if (techniques.style.display === "none") {
+                techniques.style.display = "block";
+            } else {
+                techniques.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

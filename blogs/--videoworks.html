@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoworks: An Interactive Exploration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .topic {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 15px;
+            padding: 15px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .topic:hover {
+            transform: scale(1.05);
+        }
+
+        .topic h3 {
+            color: #FF5733;
+        }
+
+        #info {
+            display: none;
+            background-color: #e7f0ff;
+            border: 2px solid #2196F3;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <h1>Exploring Videoworks</h1>
+        <div class="topic">
+            <h3>What is Videoworks?</h3>
+            <p>A videowork is a piece of art presented in video format that can express concepts, tell stories, or provide a visual experience.</p>
+            <button onclick="toggleInfo('info1')">Learn More</button>
+            <div id="info1" class="info">
+                <p>Videoworks combine visuals, sound, and often text to create a narrative or experience, used frequently in contemporary art and digital content.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h3>Types of Videoworks</h3>
+            <p>Videoworks come in various types including experimental videos, documentaries, and narrative films.</p>
+            <button onclick="toggleInfo('info2')">Learn More</button>
+            <div id="info2" class="info">
+                <p>Each type serves a different purpose and has unique artistic styles. They can be displayed in galleries, online platforms, or festivals.</p>
+            </div>
+        </div>
+
+        <div class="topic">
+            <h3>The Importance of Videoworks</h3>
+            <p>Videoworks play a crucial role in modern art, pushing boundaries and exploring new mediums.</p>
+            <button onclick="toggleInfo('info3')">Learn More</button>
+            <div id="info3" class="info">
+                <p>They allow artists to engage with contemporary issues and connect with audiences on multiple levels, making art more accessible.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            const infoDiv = document.getElementById(id);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+
+        // Initialize info sections to be hidden
+        document.querySelectorAll('.info').forEach(function(info) {
+            info.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

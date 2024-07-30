@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corporate Event FAQs</title>
+    <style>
+        .faq {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #e6e6e6;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq">
+    <h3>What is a Corporate Event?</h3>
+    <div class="answer">A corporate event is a gathering sponsored by a business for its employees, clients, or stakeholders.</div>
+</div>
+
+<div class="faq">
+    <h3>Why are Corporate Events Important?</h3>
+    <div class="answer">Corporate events are important for networking, team building, and promoting company culture.</div>
+</div>
+
+<div class="faq">
+    <h3>How can Educational Content be Incorporated into Corporate Events?</h3>
+    <div class="answer">Educational content can be included through workshops, seminars, or keynote speakers.</div>
+</div>
+
+<div class="faq">
+    <h3>What is Animated Promotional Marketing?</h3>
+    <div class="answer">Animated promotional marketing involves using animated videos or graphics to promote products or services.</div>
+</div>
+
+<div class="faq">
+    <h3>Why Include FAQs in Marketing Materials?</h3>
+    <div class="answer">FAQs help address common customer queries and provide valuable information upfront.</div>
+</div>
+
+<script>
+    var faqs = document.getElementsByClassName("faq");
+    for (var i = 0; i < faqs.length; i++) {
+        faqs[i].addEventListener("click", function() {
+            this.getElementsByClassName("answer")[0].style.display = (this.getElementsByClassName("answer")[0].style.display === "block") ? "none" : "block";
+        });
+    }
+</script>
+
+</body>
+</html>

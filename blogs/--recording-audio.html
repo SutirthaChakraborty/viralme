@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recording Audio</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #recordButton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #stopButton {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recording Audio</h1>
+        <p>Click the button below to start recording:</p>
+        <button id="recordButton">Record</button>
+        <button id="stopButton">Stop</button>
+        <audio controls id="audioPlayer"></audio>
+    </div>
+
+    <script>
+        let audioChunks = [];
+        let mediaRecorder;
+
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(stream => {
+                mediaRecorder = new MediaRecorder(stream);
+
+                mediaRecorder.ondataavailable = event => {
+                    audioChunks.push(event.data);
+                };
+
+                mediaRecorder.onstop = () => {
+                    let audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    let audioUrl = URL.createObjectURL(audioBlob);
+                    document.getElementById('audioPlayer').src = audioUrl;
+                };
+            });
+
+        document.getElementById('recordButton').addEventListener('click', () => {
+            mediaRecorder.start();
+            document.getElementById('recordButton').style.display = 'none';
+            document.getElementById('stopButton').style.display = 'inline';
+        });
+
+        document.getElementById('stopButton').addEventListener('click', () => {
+            mediaRecorder.stop();
+            document.getElementById('recordButton').style.display = 'inline';
+            document.getElementById('stopButton').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

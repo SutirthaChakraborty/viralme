@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Production Dublin Ireland - Animated 2D Explainer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .video {
+            width: 80%;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        .video img {
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .overlay:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Production Dublin Ireland - Animated 2D Explainer</h1>
+    <div class="video">
+        <img src="video-thumbnail.jpg" alt="Video Thumbnail">
+        <div class="overlay">
+            <p>Click to Play</p>
+        </div>
+    </div>
+    <script>
+        const video = document.querySelector('.video');
+        video.addEventListener('click', function() {
+            alert('Video is playing!');
+            // Add your video play functionality here
+        });
+    </script>
+</body>
+</html>

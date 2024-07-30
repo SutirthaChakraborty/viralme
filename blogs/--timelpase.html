@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timelapse: Capturing the Passage of Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f3e3;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff5733;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .info {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .info:hover {
+            transform: scale(1.02);
+        }
+        .button {
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #c7381e;
+        }
+        #videoContainer {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Timelapse Photography</h1>
+        <div class="info">
+            <h2>What is Timelapse?</h2>
+            <p>Timelapse is a photography technique that involves taking a series of photographs at set intervals to record changes that take place over time. When played at normal speed, time appears to be moving faster, thus compressing time.</p>
+        </div>
+        <div class="info">
+            <h2>Applications of Timelapse</h2>
+            <ul>
+                <li>Documenting natural events (e.g., blooming flowers, sunsets)</li>
+                <li>Construction projects progress over time</li>
+                <li>Scientific research (e.g., geological changes)</li>
+                <li>Artistic videos capturing the essence of time</li>
+            </ul>
+        </div>
+        <div class="info">
+            <h2>How to Make a Timelapse Video?</h2>
+            <ol>
+                <li>Choose a subject and plan the shooting intervals.</li>
+                <li>Use a tripod to keep the camera steady.</li>
+                <li>Set your camera to take photos at regular intervals.</li>
+                <li>Compile the images using video editing software.</li>
+            </ol>
+        </div>
+        <button class="button" onclick="toggleVideo()">Watch a Timelapse Video</button>
+        <div id="videoContainer">
+            <video controls>
+                <source src="timelapse.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    
+    <script>
+        function toggleVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            if (videoContainer.style.display === "none") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

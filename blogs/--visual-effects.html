@@ -1,0 +1,53 @@
+#### HTML Code for Interactive Visual Effects
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visual Effects Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #container {
+            margin-top: 50px;
+        }
+        .effect-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Visual Effects</h1>
+    <div id="container">
+        <div class="effect-box" id="fade-in-out">Fade In/Out</div>
+        <div class="effect-box" id="slide-up-down">Slide Up/Down</div>
+        <div class="effect-box" id="color-change">Color Change</div>
+    </div>
+
+    <script>
+        document.getElementById('fade-in-out').addEventListener('click', function() {
+            this.classList.toggle('fade');
+        });
+        document.getElementById('slide-up-down').addEventListener('click', function() {
+            this.classList.toggle('slide');
+        });
+        document.getElementById('color-change').addEventListener('click', function() {
+            this.style.backgroundColor = getRandomColor();
+        });
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>

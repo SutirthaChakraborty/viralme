@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .athlete-info {
+            display: none;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #e7f3fe;
+            border: 1px solid #007bff;
+        }
+        .interactive-buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Famous Athletes</h1>
+    <div class="interactive-buttons">
+        <button class="btn" onclick="showInfo('michaelJordan')">Michael Jordan</button>
+        <button class="btn" onclick="showInfo('serenaWilliams')">Serena Williams</button>
+        <button class="btn" onclick="showInfo('usainBolt')">Usain Bolt</button>
+    </div>
+
+    <div id="michaelJordan" class="athlete-info">
+        <h2>Michael Jordan</h2>
+        <p>Michael Jordan is widely regarded as one of the greatest basketball players of all time. He played 15 seasons in the NBA and won six championships with the Chicago Bulls.</p>
+    </div>
+
+    <div id="serenaWilliams" class="athlete-info">
+        <h2>Serena Williams</h2>
+        <p>Serena Williams is an American professional tennis player and former world No. 1. She has won 23 Grand Slam singles titles, the most by any player in the Open Era.</p>
+    </div>
+
+    <div id="usainBolt" class="athlete-info">
+        <h2>Usain Bolt</h2>
+        <p>Usain Bolt is a Jamaican former sprinter, widely considered the fastest person ever. He won eight Olympic gold medals and is known for his world record performances in the 100m and 200m races.</p>
+    </div>
+
+    <script>
+        function showInfo(athleteId) {
+            var infoDivs = document.getElementsByClassName('athlete-info');
+            for (var i = 0; i < infoDivs.length; i++) {
+                infoDivs[i].style.display = 'none';
+            }
+            document.getElementById(athleteId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

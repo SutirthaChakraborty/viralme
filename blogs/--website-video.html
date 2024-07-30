@@ -1,0 +1,46 @@
+Sure! Here's an example of interactive, colorful HTML code for embedding a video on a website:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Video</title>
+  <style>
+    /* CSS for video container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }
+
+    /* CSS for video */
+    .video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video class="video" controls>
+      <source src="path_to_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <script>
+    // JavaScript for video autoplay
+    const video = document.querySelector('.video');
+    video.autoplay = true;
+  </script>
+</body>
+</html>
+
+
+In this code, we have an HTML structure that includes a video container and a video element. The CSS sets up the dimensions and positioning of the video container, while the JavaScript enables autoplay for the video. You can customize the code by providing the path to your video file in the `src` attribute of the `<source>` tag.
+
+Please note that this code is a basic example and can be further enhanced with additional CSS styling and JavaScript functionality to suit your specific needs.

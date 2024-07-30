@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Government Grants Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .grant-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Government Grants Information</h1>
+    <div class="grant-info">
+        <p>Welcome to our page on Government Grants. Click the button below to learn more!</p>
+        <button onclick="showDetails()">Show Details</button>
+        <div id="details" style="display: none;">
+            <p>Government grants are funds provided by the government to individuals or organizations for specific purposes such as education, research, or community development.</p>
+            <p>Grants are typically non-repayable, meaning they do not need to be paid back.</p>
+            <p>For more information on government grants, visit the official government website.</p>
+        </div>
+    </div>
+    <script>
+        function showDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

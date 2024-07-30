@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating High-Quality Video with a Smartphone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        #tips {
+            display: none;
+            margin-top: 20px;
+        }
+        #tips ul {
+            list-style-type: square;
+            margin: 10px 0;
+        }
+        #videoExamples {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Creating High-Quality Video with a Smartphone</h1>
+    <div class="section">
+        <h2>Why Use a Smartphone for Video?</h2>
+        <p>Smartphones are equipped with powerful cameras and features that make them ideal for video creation. With ease of use, portability, and accessibility, anyone can make high-quality videos right from their pocket.</p>
+    </div>
+
+    <div class="section">
+        <h2>Tips for Shooting High-Quality Videos</h2>
+        <button class="button" onclick="toggleTips()">Show/Hide Tips</button>
+        <div id="tips">
+            <ul>
+                <li>Use Natural Lighting: The best light is often found outdoors or near windows.</li>
+                <li>Stabilize Your Shot: Use a tripod or stabilize with your body.</li>
+                <li>Set the Right Frame Rate: Choose a frame rate appropriate for your video.</li>
+                <li>Consider Audio Quality: Use an external microphone for clearer sound.</li>
+                <li>Plan Your Shots: Storyboard your video to stay organized.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Editing Your Videos</h2>
+        <p>Use mobile editing apps to enhance your videos. Popular choices include:</p>
+        <ul>
+            <li>Adobe Premiere Rush</li>
+            <li>InShot</li>
+            <li>iMovie (iOS)</li>
+            <li>KineMaster</li>
+        </ul>
+        <button class="button" onclick="toggleVideos()">Show/Hide Video Examples</button>
+        <div id="videoExamples">
+            <p>Here are some great examples of smartphone video projects:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=yourvideo1" target="_blank">Video Example 1</a></li>
+                <li><a href="https://www.youtube.com/watch?v=yourvideo2" target="_blank">Video Example 2</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleTips() {
+            var tips = document.getElementById("tips");
+            tips.style.display = tips.style.display === "none" ? "block" : "none";
+        }
+
+        function toggleVideos() {
+            var videos = document.getElementById("videoExamples");
+            videos.style.display = videos.style.display === "none" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>

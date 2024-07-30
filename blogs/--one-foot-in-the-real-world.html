@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>一只脚在现实世界</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#foot {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			background-color: #666;
+			border-radius: 50%;
+			margin: 0 auto;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#foot::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		#real-world {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #f2f2f2;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			opacity: 0;
+			transition: opacity 0.5s;
+		}
+		#real-world.show {
+			opacity: 1;
+		}
+		@keyframes slideIn {
+			from {
+				transform: translate(0, 100%);
+			}
+			to {
+				transform: translate(0, 0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="foot"></div>
+		<div id="real-world">
+			<h2>一只脚在现实世界</h2>
+			<p>一只脚在现实世界，另一只脚在精神世界。我们可以通过我们的脚来感受现实世界的美丽和复杂性。</p>
+			<button id="show-real-world">显示现实世界</button>
+		</div>
+	</div>
+	<script>
+		const foot = document.getElementById('foot');
+		const realWorld = document.getElementById('real-world');
+		const showRealWorldButton = document.getElementById('show-real-world');
+
+		function showRealWorld() {
+			realWorld.classList.add('show');
+		}
+
+		foot.addEventListener('click', showRealWorld);
+
+		// 添加 CSS3动画
+		realWorld.style.animation = 'slideIn 0.5s';
+	</script>
+</body>
+</html>

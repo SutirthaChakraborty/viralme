@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #4c6ef5, #40c057);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .info-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #fff;
+            transition: transform 0.3s;
+        }
+        .info-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4c6ef5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #3b5bde;
+        }
+        .animation-details {
+            display: none;
+            background: #e9ecef;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 5px solid #4c6ef5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Animation Services</h1>
+        <p>Unleash the power of visual storytelling</p>
+    </header>
+    <div class="container">
+        <div class="info-section">
+            <h2>What Are Animation Services?</h2>
+            <p>Animation services encompass a range of techniques and styles to produce animated content for various mediums including video games, films, web content, and advertising.</p>
+            <button onclick="toggleDetails('details1')">Learn More</button>
+            <div id="details1" class="animation-details">
+                Animation can enhance engagement, convey complex messages, and bring ideas to life through visual art.
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Types of Animation</h2>
+            <p>Different styles of animation cater to diverse requirements. Key types include:</p>
+            <ul>
+                <li>2D Animation</li>
+                <li>3D Animation</li>
+                <li>Stop Motion</li>
+                <li>Motion Graphics</li>
+                <li>Whiteboard Animation</li>
+            </ul>
+            <button onclick="toggleDetails('details2')">Learn More</button>
+            <div id="details2" class="animation-details">
+                Each type serves unique purposes; for instance, 3D animation is particularly popular in gaming and film industries, while motion graphics are ideal for advertisements.
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2>Benefits of Animation Services</h2>
+            <p>Utilizing animation in your projects provides several advantages:</p>
+            <ul>
+                <li>Enhanced Engagement</li>
+                <li>Improved Retention</li>
+                <li>Effective Storytelling</li>
+                <li>Versatile Content</li>
+                <li>Brand Differentiation</li>
+            </ul>
+            <button onclick="toggleDetails('details3')">Learn More</button>
+            <div id="details3" class="animation-details">
+                Animation services can effectively communicate nuanced ideas while captivating audiences visually.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

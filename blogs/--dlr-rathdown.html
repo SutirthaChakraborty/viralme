@@ -1,0 +1,35 @@
+#### HTML Code for DLR Rathdown Information with Interactive CSS and JS
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DLR Rathdown Information</title>
+  <style>
+    .highlighted {
+      background-color: yellow;
+    }
+  </style>
+  <script>
+    function highlightText() {
+      const textToHighlight = document.getElementById('textToHighlight').value;
+      const highlightedText = document.getElementById('highlightedText');
+      highlightedText.innerHTML = textToHighlight.replace(/(DLR Rathdown)/g, '<span class="highlighted">$1</span>');
+    }
+  </script>
+</head>
+<body>
+  <h1>DLR Rathdown Information</h1>
+  <p>Enter text to highlight "DLR Rathdown": <input type="text" id="textToHighlight" oninput="highlightText()"></p>
+  <p id="highlightedText"></p>
+</body>
+</html>
+
+
+This HTML code provides a simple interactive webpage where users can enter text, and occurrences of "DLR Rathdown" will be highlighted with a yellow background. The provided code includes both CSS for styling and JavaScript for the interactive highlighting functionality.
+
+The CSS defines a class called "highlighted" that sets the background color to yellow. The JavaScript function "highlightText" retrieves the user input, identifies occurrences of "DLR Rathdown," and applies the "highlighted" class to them, resulting in the interactive highlighting effect.
+
+This code demonstrates a basic interactive feature using HTML, CSS, and JavaScript to engage users with the topic of "DLR Rathdown."

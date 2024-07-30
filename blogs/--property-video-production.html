@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Property Video Production</h1>
+    <p>Watch our interactive video to learn more about property video production:</p>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <script>
+        document.querySelector('.video-container').addEventListener('click', function() {
+            var iframe = document.querySelector('iframe');
+            var src = iframe.getAttribute('src');
+            iframe.setAttribute('src', src + '?autoplay=1');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporting Video - Interactive Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #009688;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-container {
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: center;
+        }
+        #video-player {
+            width: 100%;
+            height: auto;
+            border: 2px solid #009688;
+        }
+        .info-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .interactive-button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #009688;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive-button:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore the World of Sporting Videos</h1>
+</header>
+
+<div class="video-container">
+    <video id="video-player" controls>
+        <source src="sports_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="info-section">
+    <h2>What are Sporting Videos?</h2>
+    <p>Sporting videos serve to entertain, educate, and inspire both fans and athletes. They can include game highlights, tutorials, live broadcasts, and documentary-style pieces showcasing the lives of athletes.</p>
+    
+    <h3>Types of Sporting Videos:</h3>
+    <ul>
+        <li>Game Highlights</li>
+        <li>Training and Tutorials</li>
+        <li>Interviews with Athletes</li>
+        <li>Behind-the-Scenes Features</li>
+        <li>Live Streams of Events</li>
+    </ul>
+
+    <h3>Why are Sporting Videos Important?</h3>
+    <p>They enhance fan engagement, offer insights into sport techniques, showcase accomplishments, and even serve educational purposes in sports science and coaching.</p>
+
+    <button class="interactive-button" onclick="toggleFunFacts()">Show Fun Facts About Sporting Videos</button>
+    <div id="fun-facts" style="display:none; margin-top: 10px;">
+        <p><strong>Did You Know?</strong></p>
+        <ul>
+            <li>The first sports video was recorded in 1894!</li>
+            <li>Over 70% of fans prefer video content for sports over text-based articles.</li>
+            <li>Sporting videos increase engagement on social media platforms by up to 1200%!</li>
+            <li>Live sports account for about 20% of all television viewership worldwide.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleFunFacts() {
+        var funFacts = document.getElementById('fun-facts');
+        if (funFacts.style.display === 'none') {
+            funFacts.style.display = 'block';
+        } else {
+            funFacts.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

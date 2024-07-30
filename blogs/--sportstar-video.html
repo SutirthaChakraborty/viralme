@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportstar Video Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4500;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            border: 5px solid #ff4500;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+        .info {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .details {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .details-content {
+            display: none;
+            margin-top: 10px;
+            background-color: #e7f3fe;
+            padding: 10px;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sportstar Video Showcase</h1>
+    <div class="video-container">
+        <video controls>
+            <source src="sportstar-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="info">
+        <h2>About the Sportstar</h2>
+        <p>This video showcases the incredible skills and achievements of our featured sportstar. Watch as they demonstrate their talent and dedication to their sport.</p>
+        <span class="details">More Details</span>
+        <div class="details-content">
+            <p>Our sportstar has won multiple championships and is known for their exceptional performance in high-pressure situations. Their journey is an inspiration to many aspiring athletes.</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.details').addEventListener('click', function() {
+            const content = document.querySelector('.details-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+
+</body>
+</html>

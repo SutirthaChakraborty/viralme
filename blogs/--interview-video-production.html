@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interview Video Production</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #333;
+		}
+		
+		.header h1 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		
+		.content {
+			padding: 20px;
+		}
+		
+		.content p {
+			margin-bottom: 20px;
+		}
+		
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			height: 0;
+		}
+		
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.interactive {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		
+		.interactive:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Interview Video Production</h1>
+		</div>
+		<div class="content">
+			<p>Interview video production is a crucial step in creating high-quality video content. It involves planning, filming, and editing the video to ensure it meets the client's requirements.</p>
+			<p>Here are some key factors to consider when producing an interview video:</p>
+			<ul>
+				<li><span class="interactive" onclick="showTip1()">Camera Angles</span></li>
+				<li><span class="interactive" onclick="showTip2()">Lighting</span></li>
+				<li><span class="interactive" onclick="showTip3()">Sound</span></li>
+				<li><span class="interactive" onclick="showTip4()">Editing</span></li>
+			</ul>
+			<div id="tip1" style="display: none;">
+				<p>Camera angles are crucial in setting the tone and mood of the interview. Here are some common camera angles:</p>
+				<ul>
+					<li>Over-the-shoulder (OTS) shot: This shot shows the interviewer's face and the interviewee's shoulder.</li>
+					<li>Close-up shot: This shot focuses on the interviewee's face.</li>
+					<li>Wide shot: This shot shows the entire scene, including the interviewer and interviewee.</li>
+				</ul>
+			</div>
+			<div id="tip2" style="display: none;">
+				<p>Lighting is essential in creating a visually appealing and professional-looking interview. Here are some tips:</p>
+				<ul>
+					<li>Use natural light: If possible, film near a window or outside to take advantage of natural light.</li>
+					<li>Use softbox lights: Softbox lights can help reduce harsh shadows and create a soft, even lighting.</li>
+					<li>Use backlight: Backlight can help separate the interviewee from the background and create a sense of depth.</li>
+				</ul>
+			</div>
+			<div id="tip3" style="display: none;">
+				<p>Sound is critical in capturing high-quality audio for your interview video. Here are some tips:</p>
+				<ul>
+					<li>Use a high-quality microphone: Invest in a good-quality microphone to ensure clear and crisp audio.</li>
+					<li>Reduce background noise: Use soundproofing materials or white noise to reduce background noise.</li>
+					<li>Use a lavalier microphone: A lavalier microphone can help capture clear audio even in noisy environments.</li>
+				</ul>
+			</div>
+			<div id="tip4" style="display: none;">
+				<p>Editing is the final step in creating an interview video. Here are some tips:</p>
+				<ul>
+					<li>Keep it simple: Avoid over-editing and keep the video concise and to the point.</li>
+					<li>Use transitions: Transitions can help guide the viewer through the video and create a smooth flow.</li>
+					<li>Add captions and subtitles: Captions and subtitles can help make the video more accessible and improve comprehension.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="video-container">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	<script>
+		function showTip1() {
+			document.getElementById("tip1").style.display = "block";
+		}
+		
+		function showTip2() {
+			document.getElementById("tip2").style.display = "block";
+		}
+		
+		function showTip3() {
+			document.getElementById("tip3").style.display = "block";
+		}
+		
+		function showTip4() {
+			document.getElementById("tip4").style.display = "block";
+		}
+	</script>
+</body>
+</html>
+
+
+Note: Replace `VIDEO_ID` with the actual ID of the YouTube video you want to embed.

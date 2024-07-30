@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Videography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .interactive:hover {
+            background-color: #c0392b;
+        }
+        .video {
+            display: none;
+            width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Real Estate Videography</h1>
+    
+    <div class="section">
+        <h2>What is Real Estate Videography?</h2>
+        <p>Real estate videography involves creating high-quality video content that showcases properties for sale. It helps potential buyers visualize the property and makes listings more engaging.</p>
+    </div>
+
+    <div class="section">
+        <h2>Why is Videography Important?</h2>
+        <ul>
+            <li>Increases Engagement: Video content captures attention more effectively than photos.</li>
+            <li>Improves Understanding: Offers a better perspective of the property layout and space.</li>
+            <li>Boosts Marketing: Properties with video listings are far more likely to attract buyers.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Types of Real Estate Videos</h2>
+        <ul>
+            <li>Property Walkthroughs</li>
+            <li>Aerial Drone Footage</li>
+            <li>Neighborhood Tours</li>
+            <li>Agent Introductions</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Watch a Sample Video</h2>
+        <div class="interactive" onclick="toggleVideo()">Click to View Sample Video</div>
+        <iframe class="video" id="sampleVideo" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            const video = document.getElementById('sampleVideo');
+            if (video.style.display === "none" || video.style.display === "") {
+                video.style.display = "block";
+                video.src += "?autoplay=1"; // Autoplay when shown
+            } else {
+                video.style.display = "none";
+                video.src = video.src.replace("?autoplay=1", ""); // Stop when hidden
+            }
+        }
+    </script>
+    
+</body>
+</html>

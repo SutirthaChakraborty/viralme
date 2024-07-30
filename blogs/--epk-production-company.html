@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPK Production Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .box {
+            background-color: #e7f3fe;
+            border: 1px solid #b3d4fc;
+            border-radius: 8px;
+            padding: 15px;
+            width: 30%;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #info {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to EPK Production Company</h1>
+    <p>Creating compelling Electronic Press Kits</p>
+</header>
+
+<div class="container">
+    <div class="box" onclick="showInfo('services')">
+        <h2>Our Services</h2>
+        <p>Click to learn about our services.</p>
+    </div>
+    <div class="box" onclick="showInfo('team')">
+        <h2>Meet the Team</h2>
+        <p>Click to learn about our talented team.</p>
+    </div>
+    <div class="box" onclick="showInfo('projects')">
+        <h2>Recent Projects</h2>
+        <p>Click to see our recent works.</p>
+    </div>
+</div>
+
+<div id="info"></div>
+
+<script>
+    function showInfo(type) {
+        const info = {
+            services: `
+                <h3>Services We Offer:</h3>
+                <ul>
+                    <li>High-Quality Video Production</li>
+                    <li>Professional Photography</li>
+                    <li>Graphic Design for Press Kits</li>
+                    <li>Tailored Marketing Solutions</li>
+                    <li>Expert Consultation and Collaboration</li>
+                </ul>
+            `,
+            team: `
+                <h3>Meet Our Team:</h3>
+                <p>Our dedicated team consists of talented videographers, photographers, designers, and marketers.</p>
+                <ul>
+                    <li>John Doe - Creative Director</li>
+                    <li>Jane Smith - Lead Videographer</li>
+                    <li>Emily Johnson - Marketing Specialist</li>
+                    <li>Michael Brown - Graphic Designer</li>
+                </ul>
+            `,
+            projects: `
+                <h3>Our Recent Projects:</h3>
+                <ul>
+                    <li>Project A - A Complete EPK for Artist X</li>
+                    <li>Project B - Documentary Covering Local Events</li>
+                    <li>Project C - Press Kit for Company Y Launch</li>
+                    <li>Project D - Promotional Video for Non-Profit Z</li>
+                </ul>
+            `
+        };
+
+        document.getElementById('info').innerHTML = info[type];
+    }
+</script>
+
+</body>
+</html>

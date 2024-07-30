@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakelands</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            color: #00695c;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d40;
+            color: white;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .box {
+            flex: 0 0 30%;
+            background-color: #b2dfdb;
+            border: 1px solid #004d40;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #004d40;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #004d40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Discover Lakelands</h1>
+    <p>Explore the Beauty of Natural Water Bodies</p>
+</header>
+
+<div class="content">
+    <div class="box">
+        <h2>What are Lakelands?</h2>
+        <p>Lakelands are regions characterized by numerous lakes and water bodies, often surrounded by forests and wildlife. They serve as natural habitats and recreation areas.</p>
+        <button class="button" onclick="showInfo('info1')">Learn More</button>
+        <p id="info1" style="display:none;">These areas provide important ecosystems for flora and fauna, and serve recreational purposes like fishing, boating, and hiking.</p>
+    </div>
+    
+    <div class="box">
+        <h2>Importance of Lakelands</h2>
+        <p>Lakelands play a crucial role in biodiversity and are essential for water conservation, flood control, and educational opportunities.</p>
+        <button class="button" onclick="showInfo('info2')">Learn More</button>
+        <p id="info2" style="display:none;">They help maintain water quality and provide a home for many species, including migratory birds.</p>
+    </div>
+    
+    <div class="box">
+        <h2>Popular Lakelands Around the World</h2>
+        <p>Some famous lakelands include the Great Lakes in North America, Lake District in England, and the Swiss Lakes.</p>
+        <button class="button" onclick="showInfo('info3')">Learn More</button>
+        <p id="info3" style="display:none;">These lakelands offer stunning landscapes and numerous outdoor activities for visitors.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Lakes and Nature Conservation. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function showInfo(id) {
+        const info = document.getElementById(id);
+        if (info.style.display === 'none') {
+            info.style.display = 'block';
+        } else {
+            info.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

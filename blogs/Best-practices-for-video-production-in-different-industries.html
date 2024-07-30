@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Practices for Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+        .industry {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .industry:hover {
+            transform: scale(1.05);
+        }
+        .topic {
+            font-weight: bold;
+            color: #e94e77;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Best Practices for Video Production</h1>
+
+    <div class="industry" onclick="toggleDescription('tech')">
+        <span class="topic">Tech Industry</span>
+        <p>Focus on demo videos and tutorials to showcase product functionality.</p>
+        <div id="tech" class="description">
+            <p>Utilize clear graphics and concise messaging. Aim for short, engaging videos that quickly inform the viewer.</p>
+        </div>
+    </div>
+
+    <div class="industry" onclick="toggleDescription('health')">
+        <span class="topic">Healthcare Industry</span>
+        <p>Prioritize education and patient stories for relatable content.</p>
+        <div id="health" class="description">
+            <p>Ensure sensitivity in content, using clear language and visuals to explain conditions and treatments effectively.</p>
+        </div>
+    </div>
+
+    <div class="industry" onclick="toggleDescription('education')">
+        <span class="topic">Educational Industry</span>
+        <p>Create informative videos and engaging course content.</p>
+        <div id="education" class="description">
+            <p>Utilize animations and real-life examples to make learning more appealing. Keep videos interactive when possible.</p>
+        </div>
+    </div>
+
+    <div class="industry" onclick="toggleDescription('marketing')">
+        <span class="topic">Marketing Industry</span>
+        <p>Focus on storytelling and brand representation.</p>
+        <div id="marketing" class="description">
+            <p>Use emotional appeals through visuals and narratives. Incorporate call-to-action elements to drive engagement.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none" || desc.style.display === "") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

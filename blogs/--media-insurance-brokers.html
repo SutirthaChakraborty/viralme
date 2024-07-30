@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Insurance Brokers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        .faq {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px;
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+        }
+        .faq:hover {
+            background: #e2e6ea;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 5px solid #0077cc;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding Media Insurance Brokers</h1>
+</header>
+
+<div class="container">
+    <p>Media insurance brokers specialize in providing tailored insurance solutions for various media-related businesses, such as film, television, and digital media production. Their expertise helps mitigate risks associated with production, equipment, and liabilities.</p>
+    
+    <button class="btn" onclick="toggleInfo()">Learn More</button>
+    <div id="info" style="display:none;">
+        <h2>Types of Media Insurance</h2>
+        <ul>
+            <li>Production Insurance</li>
+            <li>Equipment Insurance</li>
+            <li>Liability Insurance</li>
+            <li>Errors and Omissions Insurance</li>
+        </ul>
+        
+        <h2>Why Choose a Media Insurance Broker?</h2>
+        <p>Media insurance brokers provide invaluable guidance, ensuring that businesses have the appropriate coverage for their unique needs and risks within the media industry.</p>
+    </div>
+    
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq" onclick="toggleAnswer(this)">
+        <h3>What is Production Insurance?</h3>
+        <div class="answer">
+            <p>Production insurance protects against risks related to the filming process, covering delays, equipment loss, and accidents on set.</p>
+        </div>
+    </div>
+    <div class="faq" onclick="toggleAnswer(this)">
+        <h3>Do I need Liability Insurance?</h3>
+        <div class="answer">
+            <p>Yes, liability insurance safeguards against claims of negligence or harm that may arise during production activities.</p>
+        </div>
+    </div>
+    <div class="faq" onclick="toggleAnswer(this)">
+        <h3>How can I find the right media insurance broker?</h3>
+        <div class="answer">
+            <p>Look for brokers with expertise in media insurance, positive client reviews, and a comprehensive understanding of your specific needs.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleInfo() {
+        var infoDiv = document.getElementById('info');
+        if (infoDiv.style.display === "none") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+
+    function toggleAnswer(element) {
+        var answerDiv = element.querySelector('.answer');
+        if (answerDiv.style.display === "none" || answerDiv.style.display === "") {
+            answerDiv.style.display = "block";
+        } else {
+            answerDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

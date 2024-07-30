@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming Video Production: The First Fortnight Festival Case Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .accordion {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .active, .accordion:hover {
+            background-color: #ddd;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Live Streaming Video Production Case Study</h1>
+        <h2>First Fortnight Arts & Culture Festival</h2>
+        <button class="accordion">Introduction</button>
+        <div class="panel">
+            <p>The First Fortnight Festival is an annual arts and cultural event in Ireland focused on raising awareness of mental health issues. In 2023, the festival adopted live streaming to broaden its reach.</p>
+        </div>
+
+        <button class="accordion">Objectives of Live Streaming</button>
+        <div class="panel">
+            <p>The primary objectives included increasing accessibility, engaging a global audience, and fostering community involvement in mental health discussions through arts.</p>
+        </div>
+
+        <button class="accordion">Technical Breakdown</button>
+        <div class="panel">
+            <p>Utilizing high-quality cameras, live streaming software, and professional sound equipment, the production upheld the festival's artistic integrity while ensuring a seamless viewer experience.</p>
+        </div>
+
+        <button class="accordion">Audience Engagement</button>
+        <div class="panel">
+            <p>Interactive Q&A sessions, social media integration, and live feedback during streams encouraged active participation from viewers worldwide.</p>
+        </div>
+
+        <button class="accordion">Impact and Results</button>
+        <div class="panel">
+            <p>The festival reported a 150% increase in attendance and engagement metrics, showcasing the effectiveness of live streaming in promoting arts and mental health awareness.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 First Fortnight Festival. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

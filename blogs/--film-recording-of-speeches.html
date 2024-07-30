@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Recording of Speeches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive-section {
+            margin: 20px 0;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Film Recording of Speeches</h1>
+        <p>The recording of speeches in film provides a powerful medium for communication. It allows speakers to share their messages with a broader audience and preserves their words for future generations.</p>
+        
+        <h2>Importance of Film Recording</h2>
+        <p>Film recordings enhance the impact of speeches through visual storytelling and capture the nuances of body language, which can significantly affect the message's reception.</p>
+        
+        <div class="interactive-section">
+            <h2>Explore the Benefits</h2>
+            <button onclick="showBenefits()">Click to Show Benefits</button>
+            <ul id="benefit-list" style="display: none;">
+                <li>Wider Audience Reach</li>
+                <li>Preservation of Ideas</li>
+                <li>Visual Engagement</li>
+                <li>Analysis of Delivery Style</li>
+            </ul>
+        </div>
+        
+        <h2>How to Film a Speech</h2>
+        <p>The process involves careful planning, including selecting the right location, ensuring proper lighting, audio equipment, and framing the speaker effectively.</p>
+        
+        <div class="interactive-section">
+            <h2>Learn Filming Basics</h2>
+            <button onclick="showFilmingTips()">Click for Filming Tips</button>
+            <ul id="filming-tips" style="display: none;">
+                <li>Choose a quiet, well-lit location.</li>
+                <li>Use a tripod for stability.</li>
+                <li>Test audio equipment prior to filming.</li>
+                <li>Plan your shot angles and framing ahead of time.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showBenefits() {
+            const benefitList = document.getElementById("benefit-list");
+            benefitList.style.display = benefitList.style.display === "none" ? "block" : "none";
+        }
+        function showFilmingTips() {
+            const filmingTips = document.getElementById("filming-tips");
+            filmingTips.style.display = filmingTips.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

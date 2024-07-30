@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flavours of Fingal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .flavour {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffcc00;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .flavour:hover {
+            background-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flavours of Fingal</h1>
+    <div class="flavour">Local Produce</div>
+    <div class="flavour">Food Trucks</div>
+    <div class="flavour">Cooking Demos</div>
+    <div class="flavour">Live Music</div>
+    <script>
+        document.querySelectorAll('.flavour').forEach(item => {
+            item.addEventListener('click', () => {
+                alert(`You clicked on ${item.innerText}`);
+            });
+        });
+    </script>
+</body>
+</html>

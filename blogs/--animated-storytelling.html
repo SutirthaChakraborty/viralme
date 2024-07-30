@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Storytelling</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		#story {
+			width: 80%;
+			margin: 40px auto;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#story h1 {
+			color: #337ab7;
+			margin-top: 0;
+		}
+		
+		#story p {
+			margin-bottom: 20px;
+		}
+		
+		.animate {
+			animation: animate 5s infinite;
+		}
+		
+		@keyframes animate {
+			0% {
+				transform: translateX(0);
+			}
+			50% {
+				transform: translateX(100px);
+			}
+			100% {
+				transform: translateX(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="story">
+		<h1>Animated Storytelling</h1>
+		<p>Animated storytelling is the process of using animation to convey a narrative or message. It can be used in a variety of mediums, including films, television shows, video games, and even interactive digital experiences.</p>
+		<p><span class="animate">Animated storytelling can be used to engage audiences in a way that live-action storytelling cannot. It allows creators to add visual effects, character designs, and settings that would be impossible or impractical to achieve in real life.</span></p>
+		<p>Some common techniques used in animated storytelling include:</p>
+		<ul>
+			<li>Character animation: the movement and interaction of characters within the story.</li>
+			<li>Environmental animation: the animation of settings and backgrounds to create a sense of depth and immersion.</li>
+			<li>Special effects: the use of visual effects to enhance the storytelling and create a sense of wonder.</li>
+		</ul>
+		<script>
+			const animateElements = document.querySelectorAll('.animate');
+			animateElements.forEach((element) => {
+				element.addEventListener('animationiteration', () => {
+					element.style.transform = 'translateX(0)';
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

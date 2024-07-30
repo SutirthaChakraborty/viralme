@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communicating Europe Initiative Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(90deg, #4C6EF5, #8B9DFF);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .accordion {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        .accordion-header {
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s;
+        }
+        .accordion-header:hover {
+            background-color: #e0e0e0;
+        }
+        .accordion-content {
+            padding: 0 15px;
+            display: none;
+            background-color: #ffffff;
+        }
+        .accordion i {
+            transition: transform 0.3s;
+        }
+        .active i {
+            transform: rotate(90deg);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Communicating Europe Initiative Project</h1>
+        <p>Enhancing Understanding and Dialogue Across Europe</p>
+    </header>
+
+    <section>
+        <h2>About the Initiative</h2>
+        <p>The Communicating Europe Initiative aims to foster awareness and understanding of European Union policies and values among citizens across member states.</p>
+    </section>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Goals of the Project</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="accordion-content">
+            <p>To promote transparency, encourage civic engagement, and build trust in the European institutions by ensuring better communication with citizens.</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Key Activities</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="accordion-content">
+            <p>Public campaigns, educational workshops, online platforms for feedback, and collaborations with local organizations to enhance community outreach.</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Target Audience</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="accordion-content">
+            <p>Citizens of the EU, particularly the youth, professionals, and local communities who are encouraged to participate in EU dialogues.</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+            <span>Impact Assessment</span>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="accordion-content">
+            <p>The project will be evaluated based on citizen engagement metrics, awareness levels, and feedback from participants through surveys and discussions.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Communicating Europe Initiative. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleAccordion(element) {
+            const content = element.nextElementSibling;
+            const isActive = content.style.display === "block";
+            const accordions = document.querySelectorAll('.accordion-content');
+
+            accordions.forEach(acc => acc.style.display = "none");
+            content.style.display = isActive ? "none" : "block";
+           
+            const headers = document.querySelectorAll('.accordion-header');
+            headers.forEach(head => head.classList.remove("active"));
+            element.classList.toggle("active", !isActive);
+        }
+    </script>
+</body>
+</html>

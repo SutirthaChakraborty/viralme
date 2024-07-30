@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days of the German Language</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a76a8;
+            text-align: center;
+        }
+        .day-card {
+            background-color: #fff;
+            border: 2px solid #4a76a8;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            transition: transform 0.2s;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+        }
+        .day-card:hover {
+            transform: scale(1.05);
+        }
+        .day-info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #d8eaf6;
+            border-radius: 5px;
+            color: #333;
+        }
+        button {
+            background-color: #4a76a8;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #394e69;
+        }
+        #info {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Days of the German Language</h1>
+    <div id="days-container">
+        <div class="day-card">
+            <h2>Tag des Deutsch</h2>
+            <button onclick="toggleInfo('info1')">Info</button>
+            <div class="day-info" id="info1">Celebrated on the 14th of September, it's a day to promote the German language.</div>
+        </div>
+        <div class="day-card">
+            <h2>Internationaler Tag der Deutschen Sprache</h2>
+            <button onclick="toggleInfo('info2')">Info</button>
+            <div class="day-info" id="info2">Held on the 18th of April, focusing on the importance of the German language globally.</div>
+        </div>
+        <div class="day-card">
+            <h2>Tag der Deutschen Einheit</h2>
+            <button onclick="toggleInfo('info3')">Info</button>
+            <div class="day-info" id="info3">Observed on the 3rd of October, celebrating the reunification of Germany.</div>
+        </div>
+        <div class="day-card">
+            <h2>Schiller Tag</h2>
+            <button onclick="toggleInfo('info4')">Info</button>
+            <div class="day-info" id="info4">Celebrated on the 10th of November in honor of the poet Friedrich Schiller.</div>
+        </div>
+    </div>
+
+    <div id="info">
+        <button onclick="showAll()">Show All Info</button>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            const infoElement = document.getElementById(id);
+            if (infoElement.style.display === 'block') {
+                infoElement.style.display = 'none';
+            } else {
+                infoElement.style.display = 'block';
+            }
+        }
+
+        function showAll() {
+            const infoElements = document.querySelectorAll('.day-info');
+            infoElements.forEach((el) => {
+                el.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>

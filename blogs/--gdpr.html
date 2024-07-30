@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDPR Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .toggle {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .toggle.active {
+            background-color: #dc3545;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding GDPR</h1>
+    </header>
+    <div class="section">
+        <h2>What is GDPR?</h2>
+        <p>The General Data Protection Regulation (GDPR) is a comprehensive data protection law in the European Union (EU) that enhances individuals' rights and aims to protect personal data.</p>
+        <button class="toggle" onclick="toggleContent(this)">Learn More</button>
+        <div class="content">
+            <p>Enforced from May 25, 2018, GDPR sets guidelines for the collection and processing of personal information. It requires consent from users and gives the right to access, delete, and transfer data.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Key Principles of GDPR</h2>
+        <p>GDPR is based on several core principles that govern the handling of personal data.</p>
+        <button class="toggle" onclick="toggleContent(this)">Show Principles</button>
+        <div class="content">
+            <ul>
+                <li>Lawfulness, fairness, and transparency</li>
+                <li>Purpose limitation</li>
+                <li>Data minimization</li>
+                <li>Accuracy</li>
+                <li>Storage limitation</li>
+                <li>Integrity and confidentiality</li>
+                <li>Accountability</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Rights Under GDPR</h2>
+        <p>Individuals have specific rights regarding their personal data under GDPR.</p>
+        <button class="toggle" onclick="toggleContent(this)">Explore Rights</button>
+        <div class="content">
+            <ul>
+                <li>The right to access</li>
+                <li>The right to rectification</li>
+                <li>The right to erasure ("right to be forgotten")</li>
+                <li>The right to restrict processing</li>
+                <li>The right to data portability</li>
+                <li>The right to object</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(button) {
+            const content = button.nextElementSibling;
+            content.classList.toggle('active');
+            button.classList.toggle('active');
+            button.textContent = button.classList.contains('active') ? 'Hide' : 'Learn More' || 'Show Principles' || 'Explore Rights';
+        }
+    </script>
+</body>
+</html>

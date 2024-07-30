@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bord Bia Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .info-box {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="info-box">
+        <h1>Welcome to Bord Bia</h1>
+        <p>Bord Bia is the Irish Food Board, promoting Irish food and drink worldwide.</p>
+        <button onclick="showMoreInfo()">Click for more information</button>
+        <p id="more-info" style="display: none;">Bord Bia provides market intelligence, supports exporters, and promotes sustainability in the food industry.</p>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("more-info");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

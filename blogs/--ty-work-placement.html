@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TY Work Placement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+        button {
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: #28a745;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #e9ecef;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transition Year (TY) Work Placement</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>What is TY Work Placement?</h2>
+            <p>Transition Year Work Placement is an integral part of the Transition Year program, allowing students to experience the workplace first-hand, develop skills, and gain a better understanding of career options.</p>
+            
+            <button onclick="toggleInfo('section1')">Benefits of TY Work Placement</button>
+            <div id="section1" class="info">
+                <ul>
+                    <li>Develops practical skills</li>
+                    <li>Enhances employability</li>
+                    <li>Boosts confidence</li>
+                    <li>Encourages independence</li>
+                    <li>Connects classroom learning to real-world experiences</li>
+                </ul>
+            </div>
+
+            <button onclick="toggleInfo('section2')">How to Prepare for Work Placement</button>
+            <div id="section2" class="info">
+                <ol>
+                    <li>Research potential placements.</li>
+                    <li>Prepare a CV and cover letter.</li>
+                    <li>Practice interview skills.</li>
+                    <li>Set personal goals for the experience.</li>
+                </ol>
+            </div>
+
+            <button onclick="toggleInfo('section3')">Tips for Success During Placement</button>
+            <div id="section3" class="info">
+                <p>Be punctual, communicate effectively, show enthusiasm, and seek feedback throughout your experience!</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Transition Year Program
+    </footer>
+
+    <script>
+        function toggleInfo(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.style.display = (section.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

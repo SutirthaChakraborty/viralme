@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007f00;
+        }
+        .interactive {
+            background-color: #e0ffe0;
+            border: 2px solid #007f00;
+            padding: 10px;
+            margin: 20px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive:hover {
+            background-color: #c0ffc0;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #007f00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Ireland!</h1>
+    <p>Explore the rich culture, history, and stunning landscapes of Ireland.</p>
+
+    <div class="interactive" onclick="toggleInfo('historyInfo')">
+        **Click here to learn about Ireland's History**
+    </div>
+    <div id="historyInfo" class="info">
+        Ireland has a complex history that includes ancient Celtic traditions, Viking invasions, and British rule. The struggle for independence culminated in the establishment of the Irish Free State in 1922.
+    </div>
+
+    <div class="interactive" onclick="toggleInfo('cultureInfo')">
+        **Click here to discover Irish Culture**
+    </div>
+    <div id="cultureInfo" class="info">
+        Irish culture is known for its music, dance, and literature. Traditional Irish music features instruments like the fiddle and bodhrán, while famous writers include James Joyce and W.B. Yeats.
+    </div>
+
+    <div class="interactive" onclick="toggleInfo('landscapesInfo')">
+        **Click here to see Ireland's Landscapes**
+    </div>
+    <div id="landscapesInfo" class="info">
+        Ireland is famous for its breathtaking landscapes, including the Cliffs of Moher, the Ring of Kerry, and the Giant's Causeway, showcasing its natural beauty and geological wonders.
+    </div>
+
+    <script>
+        function toggleInfo(infoId) {
+            var infoDiv = document.getElementById(infoId);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

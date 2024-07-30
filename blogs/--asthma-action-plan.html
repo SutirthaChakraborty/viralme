@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asthma Action Plan</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.description {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		.steps {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.steps li {
+			margin-bottom: 20px;
+		}
+		.steps li span {
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		.interactive {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.interactive input[type="radio"] {
+			margin-right: 10px;
+		}
+		.interactive label {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">Asthma Action Plan</h1>
+		<p class="description">An asthma action plan is a personalized plan that outlines what steps to take to manage your asthma symptoms and prevent attacks.</p>
+		<h2>What is an Asthma Action Plan?</h2>
+		<p>The plan is designed to help you manage your asthma symptoms by identifying triggers, setting goals, and outlining steps to take when your symptoms worsen.</p>
+		<h2>Components of an Asthma Action Plan</h2>
+		<ul class="steps">
+			<li>
+				<span>Step 1:</span> Identify your asthma triggers, such as allergens, irritants, or respiratory infections.
+			</li>
+			<li>
+				<span>Step 2:</span> Set goals for managing your asthma symptoms, such as reducing frequency or severity of attacks.
+			</li>
+			<li>
+				<span>Step 3:</span> Outline steps to take when your symptoms worsen, such as increasing medication or seeking medical attention.
+			</li>
+			<li>
+				<span>Step 4:</span> Monitor your symptoms and adjust your plan as needed.
+			</li>
+		</ul>
+		<h2>Interactive Asthma Action Plan</h2>
+		<div class="interactive">
+			<p>Identify your asthma triggers:</p>
+			<input type="radio" id="allergens" name="triggers" value="allergens">
+			<label for="allergens">Allergens</label>
+			<input type="radio" id="irritants" name="triggers" value="irritants">
+			<label for="irritants">Irritants</label>
+			<input type="radio" id="respiratory_infections" name="triggers" value="respiratory_infections">
+			<label for="respiratory_infections">Respiratory infections</label>
+			<button onclick="displayTriggers()">Submit</button>
+			<div id="trigger_result"></div>
+			<script>
+				function displayTriggers() {
+					var selectedTrigger = document.querySelector('input[name="triggers"]:checked').value;
+					document.getElementById("trigger_result").innerHTML = "You selected: " + selectedTrigger;
+				}
+			</script>
+		</div>
+	</div>
+</body>
+</html>

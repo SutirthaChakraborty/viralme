@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Climate Action</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		.climate-action {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.climate-action h2 {
+			margin-top: 0;
+		}
+		
+		.climate-action p {
+			margin-bottom: 20px;
+		}
+		
+		.climate-action ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.climate-action li {
+			margin-bottom: 10px;
+		}
+		
+		.climate-action li:hover {
+			background-color: #f2f2f2;
+		}
+		
+		.climate-action .icon {
+			margin-right: 10px;
+			font-size: 18px;
+			color: #337ab7;
+		}
+		
+		.climate-action .icon:hover {
+			color: #23527c;
+		}
+		
+		.climate-action .slider {
+			width: 50%;
+			margin: 20px auto;
+			background-color: #337ab7;
+			padding: 10px;
+			border: 1px solid #23527c;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 16px;
+			text-align: center;
+			cursor: pointer;
+		}
+		
+		.climate-action .slider:hover {
+			background-color: #23527c;
+		}
+		
+		.climate-action .slider:active {
+			background-color: #1a1d23;
+		}
+		
+		.climate-action .slider::before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			background-color: #fff;
+			border-radius: 50%;
+			margin: 0 auto;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			transition: transform 0.5s ease;
+		}
+		
+		.climate-action .slider:hover::before {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="climate-action">
+		<h2>Climate Action</h2>
+		<p>Climate action refers to the efforts made to reduce the impact of climate change by reducing greenhouse gas emissions and mitigating the effects of climate-related disasters.</p>
+		<ul>
+			<li>
+				<span class="iconmaterial-symbols:recycle"></span>
+				Reduce, Reuse, Recycle
+			</li>
+			<li>
+				<span class="iconmaterial-symbols:lightbulb"></span>
+				Energy Efficiency
+			</li>
+			<li>
+				<span class="iconmaterial-symbols:tree"></span>
+				Renewable Energy
+			</li>
+			<li>
+				<span class="iconmaterial-symbols:train"></span>
+				Sustainable Transportation
+			</li>
+			<li>
+				<span class="iconmaterial-symbols:water"></span>
+				Water Conservation
+			</li>
+		</ul>
+		<p>Take action now and make a difference!</p>
+		<button class="slider">Take Action</button>
+		<script>
+			const slider = document.querySelector('.slider');
+			slider.addEventListener('click', () => {
+				alert('Thank you for taking action!');
+			});
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Primary Languages Initiative</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .toggle-btn:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Post-Primary Languages Initiative</h1>
+    </header>
+    <div class="container">
+        <h2>What is the Post-Primary Languages Initiative?</h2>
+        <p>The Post-Primary Languages Initiative (PPLI) is an educational program aimed at enhancing language learning in post-primary schools across the region.</p>
+
+        <button class="toggle-btn" onclick="toggleInfo('info1')">Learn More</button>
+        <div id="info1" class="info">
+            <p>The initiative focuses on promoting various languages, providing resources for teachers, and supporting students to become proficient in multiple languages. It aims to increase language uptake and improve overall quality in language education.</p>
+        </div>
+
+        <h2>Why is it Important?</h2>
+        <p>Language learning is essential for cultural understanding and global communication.</p>
+
+        <button class="toggle-btn" onclick="toggleInfo('info2')">Learn More</button>
+        <div id="info2" class="info">
+            <p>Being multilingual enhances cognitive abilities, improves employment opportunities, and fosters a sense of identity. The PPLI aims to make language education more accessible and relevant to students.</p>
+        </div>
+
+        <h2>Key Features of the Initiative</h2>
+        <p>The PPLI includes various components designed to improve language learning:</p>
+        <ul>
+            <li>Curriculum Development</li>
+            <li>Teacher Training</li>
+            <li>Resource Provision</li>
+            <li>Student Engagement Programs</li>
+        </ul>
+
+        <button class="toggle-btn" onclick="toggleInfo('info3')">Learn More</button>
+        <div id="info3" class="info">
+            <p>These components work together to ensure that language learning is engaging and effective, allowing students to learn in a supportive environment and achieve their language goals.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            const infoDiv = document.getElementById(id);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

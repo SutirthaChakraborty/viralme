@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact of Video Content on Brand Perception</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f4c3, #bbdefb);
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1e88e5;
+        }
+        h2 {
+            color: #d32f2f;
+        }
+        .info-box {
+            background-color: #fff;
+            border: 2px solid #1e88e5;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .info-box:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #1e88e5;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #039be5;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Impact of Video Content on Brand Perception</h1>
+
+    <div class="info-box">
+        <h2>Why Video Content Matters</h2>
+        <p>Video content can effectively engage audiences and convey brand messages. It enhances understanding and emotional connection.</p>
+    </div>
+
+    <div class="info-box">
+        <h2>Key Benefits of Video Content</h2>
+        <ul>
+            <li>Increased Brand Awareness</li>
+            <li>Enhanced Customer Engagement</li>
+            <li>Improved Conversion Rates</li>
+        </ul>
+    </div>
+
+    <div class="info-box">
+        <h2>Statistics that Matter</h2>
+        <p>Studies show that brands with video content have:</p>
+        <ul>
+            <li>Higher retention rates (95% vs 10% for text)</li>
+            <li>Express 76% more brand recall</li>
+            <li>Increase purchase intent by 73%</li>
+        </ul>
+    </div>
+
+    <div class="video-container">
+        <button id="playButton">Watch an Example Video</button>
+        <video id="sampleVideo" width="600" controls style="display:none;">
+            <source src="sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const sampleVideo = document.getElementById('sampleVideo');
+
+        playButton.addEventListener('click', function() {
+            sampleVideo.style.display = 'block';
+            sampleVideo.play();
+            playButton.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

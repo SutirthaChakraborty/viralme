@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for Using Video in Trade Shows and Exhibitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .tip {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .tip:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .video-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tips for Using Video in Trade Shows and Exhibitions</h1>
+
+    <div class="tip">
+        <h2>1. Keep it Short and Engaging</h2>
+        <p>Attention spans are short. Aim for videos that are 1-2 minutes long to keep your audience engaged.</p>
+        <button class="button" onclick="toggleVideo('video1')">Watch Example</button>
+        <div id="video1" class="video-container">
+            <video controls>
+                <source src="example1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="tip">
+        <h2>2. Use High-Quality Visuals</h2>
+        <p>Ensure your video has high resolution and professional editing to reflect your brand's quality.</p>
+        <button class="button" onclick="toggleVideo('video2')">Watch Example</button>
+        <div id="video2" class="video-container">
+            <video controls>
+                <source src="example2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="tip">
+        <h2>3. Incorporate Call-to-Actions</h2>
+        <p>Encourage viewers to take action, whether it's visiting your booth or checking out your website.</p>
+        <button class="button" onclick="toggleVideo('video3')">Watch Example</button>
+        <div id="video3" class="video-container">
+            <video controls>
+                <source src="example3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function toggleVideo(videoId) {
+            var videoContainer = document.getElementById(videoId);
+            if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+Sure, here's a simple, interactive, and colorful HTML code snippet that demonstrates information about video production companies in Dublin:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Production Companies in Dublin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    h1 {
+      color: #0044cc;
+    }
+    .company-info {
+      background-color: #e6f7ff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .company-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #009933;
+    }
+    .company-description {
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+  <script>
+    function showDetails(company) {
+      const companyName = company.querySelector('.company-name').textContent;
+      const companyDesc = company.querySelector('.company-description').textContent;
+      alert(`Company: ${companyName}\nDescription: ${companyDesc}`);
+    }
+  </script>
+</head>
+<body>
+  <h1>Video Production Companies in Dublin</h1>
+  <div class="company-info" onclick="showDetails(this)">
+    <div class="company-name">Company A</div>
+    <div class="company-description">Specializing in corporate video production.</div>
+  </div>
+  <div class="company-info" onclick="showDetails(this)">
+    <div class="company-name">Company B</div>
+    <div class="company-description">Offers full-service video production for events.</div>
+  </div>
+  <div class="company-info" onclick="showDetails(this)">
+    <div class="company-name">Company C</div>
+    <div class="company-description">Known for high-quality commercial video production.</div>
+  </div>
+</body>
+</html>

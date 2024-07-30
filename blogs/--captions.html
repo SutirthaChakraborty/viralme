@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Captions</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.caption {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.image {
+			width: 100%;
+			height: 200px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 10px 10px 0 0;
+		}
+		
+		.interactive {
+			cursor: pointer;
+		}
+		
+		.interactive:hover {
+			background-color: #f0f0f0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Captions</h1>
+		<p>Captions are a crucial element in multimedia presentations, providing context and meaning to images, videos, and other media.</p>
+		<div class="image" style="background-image: url('https://picsum.photos/200/300')"></div>
+		<div class="caption">Image description goes here</div>
+		
+		<button class="interactive">Toggle caption</button>
+		
+		<script>
+			const caption = document.querySelector('.caption');
+			const button = document.querySelector('.interactive');
+			
+			button.addEventListener('click', () => {
+				caption.toggleAttribute('hidden');
+				if (caption.hidden) {
+					button.textContent = 'Show caption';
+				} else {
+					button.textContent = 'Hide caption';
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>

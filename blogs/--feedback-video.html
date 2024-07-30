@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Feedback Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+        }
+
+        .video-container {
+            position: relative;
+            padding: 56.25% 0 0 0; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .feedback-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-button:hover {
+            background-color: #45a049;
+        }
+
+        .feedback-section {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .feedback-input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .submit-feedback {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-feedback:hover {
+            background-color: #1976D2;
+        }
+
+        .success-message {
+            display: none;
+            margin-top: 20px;
+            color: #f44336;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Feedback Video</h1>
+    <p>Watch the video below and provide your feedback!</p>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <button class="feedback-button" onclick="toggleFeedback()">Provide Feedback</button>
+
+    <div class="feedback-section" id="feedback-section">
+        <input type="text" class="feedback-input" id="feedback-input" placeholder="Your feedback here..." />
+        <button class="submit-feedback" onclick="submitFeedback()">Submit</button>
+        <div class="success-message" id="success-message">Thank you for your feedback!</div>
+    </div>
+
+    <script>
+        function toggleFeedback() {
+            const feedbackSection = document.getElementById('feedback-section');
+            feedbackSection.style.display = feedbackSection.style.display === 'none' || feedbackSection.style.display === '' ? 'block' : 'none';
+        }
+
+        function submitFeedback() {
+            const input = document.getElementById('feedback-input').value;
+            const successMessage = document.getElementById('success-message');
+
+            if (input) {
+                successMessage.style.display = 'block'; 
+                document.getElementById('feedback-input').value = ''; // Clear input
+            } else {
+                alert("Please enter your feedback before submitting.");
+            }
+        }
+    </script>
+
+</body>
+</html>

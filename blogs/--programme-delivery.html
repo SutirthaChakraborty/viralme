@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programme Delivery</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Programme Delivery</h1>
+        <p>Welcome to our interactive session on Programme Delivery. Click the button below to start exploring!</p>
+        <button class="button" onclick="showInfo()">Show More</button>
+        <div id="info" style="display: none;">
+            <p>Programme delivery involves the planning, coordination, and execution of various activities to ensure successful implementation of a project or initiative.</p>
+            <p>It includes defining objectives, allocating resources, monitoring progress, and adapting to changes to achieve desired outcomes.</p>
+            <p>Effective programme delivery requires clear communication, stakeholder engagement, risk management, and continuous evaluation.</p>
+        </div>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
