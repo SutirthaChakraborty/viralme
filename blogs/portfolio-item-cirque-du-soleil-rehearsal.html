@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cirque du Soleil Rehearsal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .keywords {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cirque du Soleil Rehearsal Portfolio</h1>
+    <p>Explore the magic behind the scenes</p>
+</header>
+
+<div class="portfolio-item">
+    <h2>About the Rehearsal</h2>
+    <p>Experience the intricate preparations of <span class="keywords">Cirque du Soleil</span> as artists rehearse breathtaking performances that blend acrobatics, dance, and theater.</p>
+    <button onclick="showDetails()">Show More Details</button>
+    <div id="details" style="display:none;">
+        <p>The rehearsal process involves extensive training, choreography, and collaboration among performers and directors to create a seamless show.</p>
+        <p>Key elements include:</p>
+        <ul>
+            <li>Physical Conditioning</li>
+            <li>Choreography Development</li>
+            <li>Costume Fittings</li>
+            <li>Technical Rehearsals</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function showDetails() {
+        var details = document.getElementById("details");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

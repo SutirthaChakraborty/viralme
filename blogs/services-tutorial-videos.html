@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Tutorial Videos</title>
+    <style>
+        @keyframes slideIn {
+            from {opacity: 0; transform: translateY(-100px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .service-card {
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .service-description {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .video-icon {
+            width: 50px;
+            height: 50px;
+            background: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zM12 19c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5zm0-6h-4v6h4V13zm0-4h-4v2h4V9"/></svg>');
+            background-size: contain;
+        }
+

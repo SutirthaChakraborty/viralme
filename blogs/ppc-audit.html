@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPC Audit Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PPC Audit: Optimize Your Campaigns</h1>
+        <p>Conducting a **PPC audit** is essential for improving your **pay-per-click advertising** performance. It helps identify areas for optimization and ensures your budget is spent effectively.</p>
+        
+        <h2>Key Components of a PPC Audit</h2>
+        <ul>
+            <li><span class="keyword" onclick="toggleInfo('keyword1')">Keyword Analysis</span></li>
+            <li><span class="keyword" onclick="toggleInfo('keyword2')">Ad Copy Review</span></li>
+            <li><span class="keyword" onclick="toggleInfo('keyword3')">Landing Page Evaluation</span></li>
+            <li><span class="keyword" onclick="toggleInfo('keyword4')">Performance Metrics</span></li>
+        </ul>
+
+        <div id="keyword1" class="info">Analyze the relevance and performance of your keywords to ensure they align with your target audience.</div>
+        <div id="keyword2" class="info">Review your ad copy for clarity, relevance, and compelling calls to action to improve click-through rates.</div>
+        <div id="keyword3" class="info">Evaluate landing pages for user experience and conversion optimization to maximize ROI.</div>
+        <div id="keyword4" class="info">Monitor key performance indicators (KPIs) like CTR, CPC, and conversion rates to gauge campaign success.</div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var infoDiv = document.getElementById(id);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

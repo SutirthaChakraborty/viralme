@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the best marketing videos of the decade that revolutionized advertising and engagement.">
+    <title>Best Marketing Videos of the Decade</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .video {
+            margin: 20px 0;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .video:hover {
+            transform: scale(1.05);
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>The Best Marketing Videos of the Decade</h1>
+        <p>Discover how these videos changed the landscape of advertising.</p>
+    </div>
+    <div class="container">
+        <div class="video" onclick="toggleDescription('desc1')">
+            <h2>Video 1: Always #LikeAGirl</h2>
+            <div class="description" id="desc1">
+                <p>This empowering video from Always took social media by storm, changing perceptions and encouraging conversations about gender stereotypes.</p>
+            </div>
+        </div>
+        <div class="video" onclick="toggleDescription('desc2')">
+            <h2>Video 2: Dove Real Beauty Sketches</h2>
+            <div class="description" id="desc2">
+                <p>Dove captured the self-perception of women with this touching video, promoting body positivity and self-love.</p>
+            </div>
+        </div>
+        <div class="video" onclick="toggleDescription('desc3')">
+            <h2>Video 3: Old Spice: The Man Your Man Could Smell Like</h2>
+            <div class="description" id="desc3">
+                <p>This humorous and creative ad revitalized the Old Spice brand, making it a viral hit and a prime example of effective marketing.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDescription(descId) {
+            const desc = document.getElementById(descId);
+            desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

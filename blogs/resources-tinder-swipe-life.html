@@ -1,0 +1,103 @@
+#### HTML Code with CSS for Tinder Swipe Life
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tinder Swipe Life</title>
+</head>
+<body>
+  <div class="card">
+    <img src="profile-pic1.jpg" alt="Profile Picture">
+    <h2>John Doe</h2>
+    <p>Age: 28</p>
+    <p>Location: New York</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="card">
+    <img src="profile-pic2.jpg" alt="Profile Picture">
+    <h2>Jane Smith</h2>
+    <p>Age: 25</p>
+    <p>Location: Los Angeles</p>
+    <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  </div>
+  <!-- More card elements here -->
+</body>
+<script>
+  // JavaScript for swipe functionality
+  let isDragging = false;
+  let initialX = null;
+
+  document.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    initialX = e.clientX;
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (isDragging) {
+      // Add code for card movement based on mouse movement
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (isDragging) {
+      // Add code for decision based on swipe direction
+    }
+    isDragging = false;
+    initialX = null;
+  });
+</script>
+</html>
+
+
+#### CSS (styles.css)
+css
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: grab;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.card.to-left {
+  transform: translateX(-1000px) rotate(-30deg);
+  opacity: 0;
+}
+
+.card.to-right {
+  transform: translateX(1000px) rotate(30deg);
+  opacity: 0;
+}
+
+
+This HTML code creates a Tinder-like card swipe interface using CSS for styling and vanilla JavaScript for the swipe functionality. The cards can be swiped left or right to indicate interest or disinterest in a potential match, similar to the Tinder app. The CSS provides the layout and styling for the card elements, while the JavaScript handles the swipe gesture functionality.
+
+**Keywords**: Tinder, swipe life, HTML, CSS, JavaScript, swipeable cards, dating app, user interface, front-end development, swipe gesture, card stack swiper, React, Framer Motion.

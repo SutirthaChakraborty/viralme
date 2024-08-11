@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our manifesto on posting what we do, promoting transparency, creativity, and community engagement.">
+    <title>Our Manifesto: Post What We Do</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Manifesto</h1>
+    <h2>Post What We Do</h2>
+</header>
+
+<section>
+    <h3>Our Vision</h3>
+    <p>We promote transparency, creativity, and community engagement by sharing what we do with the world.</p>
+    <button onclick="toggleContent()">Learn More</button>
+    <div id="moreInfo" class="hidden">
+        <p>Posting our work encourages collaboration and inspires others. We believe in opening our processes to foster innovation and trust.</p>
+    </div>
+</section>
+
+<section>
+    <h3>Join Us</h3>
+    <p>By embracing authenticity and sharing our experiences, we cultivate a vibrant community that values shared knowledge.</p>
+</section>
+
+<script>
+    function toggleContent() {
+        const content = document.getElementById('moreInfo');
+        if (content.classList.contains('hidden')) {
+            content.classList.remove('hidden');
+        } else {
+            content.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Production: The 3 S's Explained</title>
+  <style>
+    /* Add some interactivity with CSS */
+    .info-box {
+      width: 300px;
+      height: 120px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s;
+    }
+    .info-box:hover {
+      background-color: #f0f0f0;
+    }
+    .keyword {
+      font-weight: bold;
+      color: #4CAF50;
+      cursor: pointer;
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 5px;
+      border-radius: 3px;
+      box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+    }
+    .tooltip p {
+      margin: 0;
+    }
+  </style>
+  <script>
+    function showTooltip(keyword, tooltipText) {
+      document.getElementById(keyword).classList.add("active");
+      document.getElementById(tooltipText).style display='block';
+    }
+    function hideTooltip(keyword) {
+      document.getElementById(keyword).classList.remove("active");
+      document.getElementById(keyword + "-tooltip").style.display="none";
+    }
+  </script>
+</head>
+<body>
+  <h1>The 3 S's of Video Production</h1>
+  
+  <div class="info-box" id="storytelling" onclick="showTooltip('storytelling', 'storytelling-tooltip')">
+    <div>1. <span class="keyword storytelling">Storytelling</span></div>
+    <div class="tooltip" id="storytelling-tooltip">
+      <p>Focus on a compelling narrative that engages viewers and creates emotional connections

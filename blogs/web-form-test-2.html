@@ -1,0 +1,65 @@
+To create a simple HTML form with CSS styling and some interactive features, you can use the following code. I've included relevant keywords in the code to enhance search visibility. The form will have basic validation and some hover effects.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Form Test 2 - A user-friendly form for data submission with interactive CSS and basic validation">
+    <title>Web Form Test 2</title>
+    <style>
+        .form-container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+            background-color: #f0f0f0;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .error-message {
+            color: red;
+            display: none;
+        }
+    </style>
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const message = document.getElementById("message");
+
+            const nameVal = name.value.trim

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Lapse Footage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Time Lapse Footage</h1>
+    </header>
+    <div class="content">
+        <p>Time lapse footage captures a sequence of events at set intervals, dramatically accelerating the passage of time.</p>
+        <p>The technique is widely used in nature documentaries, construction projects, and urban life to showcase transitions that would otherwise go unnoticed.</p>
+        <p>To create an engaging time lapse clip, utilize high-quality equipment, steady intervals, and post-production adjustments for a polished final product.</p>
+        <button id="expandInfo">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <p>Popular tools for capturing time lapse include DSLRs, GoPros, and smartphones equipped with time lapse modes. Editing software like Adobe Premiere Pro is ideal for trimming and speeding up footage.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById("expandInfo").onclick = function() {
+            var infoDiv = document.getElementById("moreInfo");
+            if (infoDiv.style.display === "none") {
+                infoDiv.style.display = "block";
+                this.textContent = "Show Less";
+            } else {
+                infoDiv.style.display = "none";
+                this.textContent = "Learn More";
+            }
+        }
+    </script>
+</body>
+</html>

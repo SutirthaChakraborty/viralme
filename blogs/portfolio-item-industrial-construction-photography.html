@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Construction Photography Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .portfolio-item {
+            float: left;
+            margin: 20px;
+            width: 33.33%;
+            padding: 15px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .portfolio-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .portfolio-item p {
+            margin: 5px 0;
+        }
+        /* Add interactive effect on hover */
+        .portfolio-item:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .description-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .description-modal-content {
+            border-radius: 5px;
+        }
+        .modal-trigger:hover .description-modal {
+            display: block;
+        }
+    </style>
+    <script>
+        function showDescription(id) {
+            const modal = document.getElementById('description-' + id);
+            modal.style.display = modal.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Industrial Construction Photography Portfolio</h1>
+        <button class="modal-trigger">

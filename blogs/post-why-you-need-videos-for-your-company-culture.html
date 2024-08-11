@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Culture: Importance of Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .keyword-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .keyword {
+            color: #777;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .keyword:hover {
+            color: #428BCA;
+        }
+        .video-explanation {
+            margin-top: 10px;
+            text-align: justify;
+            padding: 10px;
+            border-left: 4px solid #428BCA;
+            width: 60%;
+            min-width: 300px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #428BCA;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #387898;
+        }
+    </style>
+    <script>
+        function toggleExplanation keyword) {
+            var explanations = document.getElementsByClassName('video-explanation');
+            for (var i = 0; i < explanations.length; i++) {
+                explanations[i].style.display = 'none';
+            }
+            var explanation = document.getElementById(`explanation-${keyword}`);
+            explanation.style.display = explanation.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+   

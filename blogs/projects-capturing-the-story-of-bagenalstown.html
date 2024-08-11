@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bagenalstown Project</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.project-container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.project-image {
+			width: 100%;
+			height: 200px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 10px 10px 0 0;
+		}
+		
+		.project-info {
+			padding: 20px;
+		}
+		
+		.project-info h2 {
+			margin-top: 0;
+		}
+		
+		.project-info p {
+			margin-bottom: 20px;
+		}
+		
+		.project-button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.project-button:hover {
+			background-color: #3e8e41;
+		}
+		
+		.project-modal {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: none;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.project-modal-content {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			width: 80%;
+			margin: 40px auto;
+		}
+		
+		.project-modal-content h2 {
+			margin-top: 0;
+		}
+		
+		.project-modal-content p {
+			margin-bottom: 20px;
+		}
+		
+		.project-modal-content .close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="project-container">
+		<img src="bagenalstown.jpg" alt="Bagenalstown" class="project-image">
+		<div class="project-info">
+			<h2>Bagenalstown Project</h2>
+			<p>Bagenalstown is a charming town located in County Carlow, Ireland. This project aims to capture the story of this town through a series of photographs and stories.</p>
+			<button class="project-button">View Project</button>
+		</div>
+	</div>
+	
+	<div class="project-modal" id="project-modal">
+		<div class="project-modal-content">
+			<h2>Bagenalstown Project</h2>
+			<p>Bagenalstown is a charming town located in County Carlow, Ireland. This project aims to capture the story of this town through a series of photographs and stories.</p>
+			<button class="close">Close</button>
+		</div>
+	</div>
+	
+	<script>
+		const projectButton = document.querySelector('.project-button');
+		const projectModal = document.querySelector('#project-modal');
+		
+		projectButton.addEventListener('click', () => {
+			projectModal.style.display = 'block';
+		});
+		
+		const closeBtn = document.querySelector('.close');
+		closeBtn.addEventListener('click', () => {
+			projectModal.style.display = 'none';
+		});
+	</script>
+</body>
+</html>
+
+
+Keywords: Bagenalstown, Ireland, County Carlow, Photography, Storytelling, Project, Interactive, CSS, JavaScript, HTML.

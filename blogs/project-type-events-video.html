@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Project Type Events and Videos: Engaging Content for Every Occasion.">
+    <title>Project Type Events Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .project-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .video {
+            text-align: center;
+        }
+        .video iframe {
+            border: none;
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Type Events & Videos</h1>
+        <p>Discover engaging videos on various project types and event concepts.</p>
+    </header>
+    <div class="project-container">
+        <div class="project-card">
+            <h2>Community Events</h2>
+            <p>Engage your community with interactive events that inspire connection.</p>
+        </div>
+        <div class="project-card">
+            <h2>Corporate Projects</h2>
+            <p>Explore best practices in corporate events for professional networking.</p>
+        </div>
+        <div class="project-card">
+            <h2>Art & Culture</h2>
+            <p>Promote cultural events featuring art, music, and performances.</p>
+        </div>
+    </div>
+    <div class="video">
+        <h2>Featured Video</h2>
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+    <script>
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.toggle('active');
+                alert(`You clicked on ${card.querySelector('h2').innerText}`);
+            });
+        });
+    </script>
+</body>
+</html>

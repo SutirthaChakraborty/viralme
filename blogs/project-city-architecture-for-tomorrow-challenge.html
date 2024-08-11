@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project City Architecture for Tomorrow</title>
+    <style>
+        /* CSS styles for a responsive showcase */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project-header h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .project-description {
+            font-size: 18px;
+        }
+        .project-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+        .project-image {
+            border: 5px solid #333;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        .project-image:hover {
+            border-color: #666;
+        }
+        .project-details {
+            display: none;
+        }
+    </style>
+    <script>
+        // JavaScript for interactive project details
+        function showDetails(imgIndex) {
+            document.querySelector('.project-details').style.display = (imgIndex === 'all') ? 'block' : 'none';
+            var images = document.querySelectorAll('.project-images img');
+            images.forEach(function (img, index) {
+                img.classList.remove('active');
+            });
+            images[imgIndex].classList.add('active');
+        }
+
+        window.onload = function () {
+            var allImages = document.querySelectorAll('.project-images img');
+            allImages.forEach(function (img, index) {
+                var imgNum = index + 1;
+                img.addEventListener('click', function () {
+                    showDetails(imgNum);
+                });
+            });
+        };
+    </script>
+</head>
+<body

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Testimonials | Video Production Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .testimonial {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+            background-color: #f1f1f1;
+            transition: background-color 0.3s;
+        }
+        .testimonial:hover {
+            background-color: #e9ecef;
+        }
+        .video {
+            display: none;
+            margin: 15px 0;
+        }
+        .toggle-video {
+            color: #007BFF;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Customer Testimonials</h1>
+    <div class="testimonial">
+        <p>"The video production team captured our brand's essence perfectly! They made the entire process seamless and enjoyable."</p>
+        <span class="toggle-video" onclick="toggleVideo('video1')">Watch Video</span>
+        <div id="video1" class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/sample1" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"Incredible service. Our testimonial video exceeded expectations and helped us connect with our audience!"</p>
+        <span class="toggle-video" onclick="toggleVideo('video2')">Watch Video</span>
+        <div id="video2" class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/sample2" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"Working with this video production company was a game-changer for our marketing strategy. Highly recommend!"</p>
+        <span class="toggle-video" onclick="toggleVideo('video3')">Watch Video</span>
+        <div id="video3" class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/sample3" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleVideo(videoId) {
+        var videoElement = document.getElementById(videoId);
+        if (videoElement.style.display === "none" || videoElement.style.display === "") {
+            videoElement.style.display = "block";
+        } else {
+            videoElement.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

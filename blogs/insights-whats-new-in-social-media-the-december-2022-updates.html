@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Insights - December 2022 Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .update {
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Social Media Insights - December 2022 Updates</h1>
+    
+    <div class="update">
+        <h2>Instagram's New Algorithm Changes</h2>
+        <span class="toggle">Show Details</span>
+        <div class="details">
+            Instagram updated its algorithm to prioritize content from users' close friends, enhancing personal connections and engagement.
+        </div>
+    </div>
+
+    <div class="update">
+        <h2>Twitter's Edit Button Feature</h2>
+        <span class="toggle">Show Details</span>
+        <div class="details">
+            Twitter introduced an edit button for tweets, allowing users to correct typos and improve clarity post-publication.
+        </div>
+    </div>
+
+    <div class="update">
+        <h2>Facebook's Enhanced Privacy Settings</h2>
+        <span class="toggle">Show Details</span>
+        <div class="details">
+            Facebook rolled out new privacy features, giving users more control over their data and who can see their posts.
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const details = toggle.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

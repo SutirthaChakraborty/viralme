@@ -1,0 +1,75 @@
+#### HTML Code for "Thank You" Video
+
+Here's a small HTML code snippet that you can use to create a "Thank You" video on your webpage. The code includes CSS and JavaScript to make the video interactive:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You Video</title>
+    <style>
+        /* CSS for video container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+        
+        /* CSS for video */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* CSS for play button */
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        /* CSS for play button icon */
+        .play-button i {
+            color: #fff;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <div class="play-button">
+            <i class="fas fa-play"></i>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for play button functionality
+        var playButton = document.querySelector('.play-button');
+        var videoIframe = document.querySelector('.video-container iframe');
+
+        playButton.addEventListener('click', function() {
+            videoIframe.src += '?autoplay=1';
+            playButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
+
+To use this code, replace `VIDEO_ID` in the `src` attribute of the `<iframe>` tag with the ID of your YouTube video. The code creates a responsive video container with a play button overlay. When the play button is clicked, the video starts playing.
+
+Feel free to customize the CSS styles and add more functionality as needed.

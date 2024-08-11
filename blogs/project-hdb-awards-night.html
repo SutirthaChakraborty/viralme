@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join us for the Project HDB Awards Night celebrating innovation in housing development.">
+    <title>Project HDB Awards Night</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .awards {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project HDB Awards Night</h1>
+    <p>Celebrating Excellence in Housing Development</p>
+</header>
+
+<div class="container">
+    <p>The Project HDB Awards Night recognizes outstanding achievements in housing development. Join us to celebrate innovation, sustainability, and community building!</p>
+    <button onclick="toggleAwards()">Show Award Categories</button>
+    
+    <div class="awards" id="awardsList">
+        <h3>Award Categories:</h3>
+        <ul>
+            <li>Best Sustainable Development</li>
+            <li>Innovative Design Award</li>
+            <li>Community Engagement Award</li>
+            <li>Outstanding Project Management</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleAwards() {
+        var awards = document.getElementById('awardsList');
+        if (awards.style.display === 'none' || awards.style.display === '') {
+            awards.style.display = 'block';
+        } else {
+            awards.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project EMAX Moe 360 Video Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .project-teaser {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .project-teaser img {
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        .project-description {
+            width: 55%;
+            text-align: justify;
+        }
+
+        .keywords {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .activity {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .activity:hover {
+            background-color: #f3f3f3;
+        }
+
+        .activity code {
+            font-family: monospace;
+        }
+    </style>
+    <script>
+        function animateDescription(whichActivity) {
+            const activities = document.getElementsByClassName('activity');
+            for (let i = 0; i < activities.length; i++) {
+                activities[i].classList.remove('active');
+            }
+            whichActivity.classList.add('active');
+            // Add your interactive explanation logic here (e.g., using AJAX to fetch content based on the selected activity)
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Project EMAX Moe 360 Video Showcase</h1>
+        <

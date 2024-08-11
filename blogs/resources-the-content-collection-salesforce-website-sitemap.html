@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Resources and Sitemap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #0070d2;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #0070d2;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+        .faq {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 3px solid #0070d2;
+            background: #eef5ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Explore Salesforce Resources</h1>
+        <p>Discover the comprehensive Salesforce resource collection, including guides, documentation, tutorials, and tools to enhance your experience in the Salesforce ecosystem.</p>
+        
+        <h2>Website Sitemap</h2>
+        <p>Our website sitemap provides a structured overview of all resources available for Salesforce users:</p>
+        <ul>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#tutorials">Tutorials</a></li>
+            <li><a href="#community">Community Forums</a></li>
+            <li><a href="#support">Support Resources</a></li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq" onclick="toggleAnswer(event)">What resources does Salesforce provide?
+            <div class="answer">Salesforce provides extensive documentation, tutorials, community forums, and 24/7 support resources.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(event)">How can I access the Salesforce website sitemap?
+            <div class="answer">You can find the sitemap at the bottom of any Salesforce webpage or by simply visiting our sitemap page.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(event) {
+            const answer = event.target.querySelector('.answer');
+            if (answer) {
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+    </script>
+</body>
+</html>

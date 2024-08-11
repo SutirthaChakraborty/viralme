@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>服务设计 | Graphic Design Services</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.services {
+			background-color: #f7f7f7;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.services h2 {
+			margin-top: 0;
+		}
+		
+		.services ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.services li {
+			margin-bottom: 20px;
+		}
+		
+		.services li img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin: 10px;
+			cursor: pointer;
+		}
+		
+		.services li img:hover {
+			transform: scale(1.2);
+		}
+		
+		.services li span {
+			font-size: 18px;
+			color: #666;
+		}
+		
+		.services li span:hover {
+			color: #333;
+		}
+		
+		/* JavaScript */
+		.services li img:hover+span {
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>服务设计 | Graphic Design Services</h1>
+		<div class="services">
+			<h2>我们的服务</h2>
+			<ul>
+				<li>
+					<img src="icon1.png" alt="Icon 1">
+					<span>Logo 设计</span>
+				</li>
+				<li>
+					<img src="icon2.png" alt="Icon 2">
+					<span>包装 设计</span>
+				</li>
+				<li>
+					<img src="icon3.png" alt="Icon 3">
+					<span>广告 设计</span>
+				</li>
+				<li>
+					<img src="icon4.png" alt="Icon 4">
+					<span>品牌识别设计</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<script>
+		// JavaScript 代码
+		var services = document.querySelectorAll('.services li');
+		services.forEach(function(service) {
+			service.addEventListener('mouseover', function() {
+				service.querySelector('span').style.color = '#333';
+			});
+			service.addEventListener('mouseout', function() {
+				service.querySelector('span').style.color = '#666';
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+Keywords: 服务设计, Graphic Design Services, Logo 设计, 包装 设计, 广告 设计, 品牌识别设计

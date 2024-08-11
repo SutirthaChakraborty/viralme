@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech Sectors Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .sector {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .sector:hover {
+            transform: scale(1.02);
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Fintech Sectors</h1>
+
+    <div class="sector">
+        <h2>Payments</h2>
+        <button onclick="toggleDetails('paymentsDetails')">Learn More</button>
+        <div id="paymentsDetails" class="details">
+            This sector focuses on digital payment solutions, including mobile wallets and online payment gateways.
+        </div>
+    </div>
+
+    <div class="sector">
+        <h2>Lending</h2>
+        <button onclick="toggleDetails('lendingDetails')">Learn More</button>
+        <div id="lendingDetails" class="details">
+            This area includes peer-to-peer lending platforms and online loan services that streamline the borrowing process.
+        </div>
+    </div>
+
+    <div class="sector">
+        <h2>Investment</h2>
+        <button onclick="toggleDetails('investmentDetails')">Learn More</button>
+        <div id="investmentDetails" class="details">
+            This sector encompasses robo-advisors and investment platforms that provide automated portfolio management.
+        </div>
+    </div>
+
+    <div class="sector">
+        <h2>Insurtech</h2>
+        <button onclick="toggleDetails('insurtechDetails')">Learn More</button>
+        <div id="insurtechDetails" class="details">
+            This sector focuses on technology innovations in the insurance industry, enhancing customer experience and efficiency.
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

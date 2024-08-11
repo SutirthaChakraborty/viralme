@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the innovative technologies and solutions provided by DenseAir. Discover how our portfolio enhances connectivity and provides smart city infrastructure.">
+    <title>DenseAir Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .toggle {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .toggle:hover {
+            background: #0056b3;
+        }
+        .details {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 4px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DenseAir Portfolio</h1>
+    </header>
+    <section>
+        <h2>About DenseAir</h2>
+        <p>DenseAir specializes in network infrastructure that optimizes connectivity and promotes smart city developments. Our solutions enhance mobile coverage and provide efficient data management.</p>
+        <button class="toggle">Learn More</button>
+        <div class="details">
+            <p>Our portfolio includes:</p>
+            <ul>
+                <li>Advanced Small Cell Technology</li>
+                <li>Smart City Infrastructure</li>
+                <li>IoT Connectivity Solutions</li>
+                <li>Cloud-Based Network Management</li>
+            </ul>
+            <p>With DenseAir, experience seamless integration and enhanced user experiences in urban environments.</p>
+        </div>
+    </section>
+    <script>
+        document.querySelector('.toggle').addEventListener('click', function() {
+            const details = document.querySelector('.details');
+            details.style.display = details.style.display === 'none' || details.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

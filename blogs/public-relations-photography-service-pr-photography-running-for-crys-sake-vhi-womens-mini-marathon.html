@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Photography for VHI Women's Mini Marathon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #6200EA;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .photo {
+            flex: 1 1 calc(33% - 15px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #6200EA;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PR Photography Services for VHI Women's Mini Marathon</h1>
+</header>
+
+<section>
+    <h2>Capture the Spirit of the VHI Women's Mini Marathon</h2>
+    <p>Join us in celebrating the vibrant energy and determination of women runners at the VHI Women's Mini Marathon. Our <strong>public relations photography services</strong> provide captivating imagery that showcases the event's excitement and camaraderie.</p>
+    
+    <div class="photo-gallery">
+        <img class="photo" src="runner1.jpg" alt="Woman Running" />
+        <img class="photo" src="runner2.jpg" alt="Group of Women Running" />
+        <img class="photo" src="runner3.jpg" alt="Celebrating Finish" />
+    </div>
+
+    <p>Our <strong>PR photography</strong> captures key moments, from intense running scenes to joyful celebrations, ensuring that you have powerful visual content to boost your outreach and engagement.</p>
+
+    <button onclick="showMoreInfo()">Learn More</button>
+    <div id="more-info" style="display:none; margin-top:10px;">
+        <p>Utilize our expertise in event photography to highlight your brand and connect with your audience through dynamic images that tell a story—perfect for social media, press releases, and promotional materials.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 PR Photography Services. All rights reserved.</p>
+</footer>
+
+<script>
+    function showMoreInfo() {
+        var moreInfo = document.getElementById('more-info');
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

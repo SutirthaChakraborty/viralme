@@ -1,0 +1,88 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Short Videos Explained</title>
+<style>
+.video-container {
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.play-button:hover {
+  background: #0056b3;
+}
+
+.video-container:hover .play-button {
+  background: #0056b3;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var playButtons = document.querySelectorAll('.play-button');
+  for (var i = 0; i < playButtons.length; i++) {
+    playButtons[i].addEventListener('click', function() {
+      var videoId = this.parentNode.getAttribute('data-video-id');
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
+      this.parentNode.appendChild(iframe);
+      this.parentNode.removeChild(this);
+    });
+  }
+});
+</script>
+</head>
+<body>
+
+<h2>Product Short Videos</h2>
+<p>Product short videos are a powerful tool for engaging with your audience, showcasing your product's features, and driving interest. Here's an example:</p>
+
+<div class="video-container" data-video-id="example_video_id">
+  <button class="play-button">Play</button>
+  <iframe width="300" height="150" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+</body>
+</html>

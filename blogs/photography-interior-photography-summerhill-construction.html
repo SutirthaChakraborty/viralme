@@ -1,0 +1,73 @@
+Here's a simple HTML code with CSS and JavaScript that focuses on photography, interior photography, and Summerhill Construction. I've included keywords to enhance searchability. Note that this code doesn't use markdown syntax, and it includes inline CSS and a basic JavaScript snippet for highlighting the keywords.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore interior photography from Summerhill Construction. Discover their stunning projects and inspiring style.">
+    <title>Summerhill Construction: Interior Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: #0066cc;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .element {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .keyword {
+            color: #ff0000;
+            /* CSS Highlighting: add a yellow background for matching keywords */
+            background-color: rgba(255, 255, 0, 0.5);
+        }
+
+        /* JavaScript for keyword highlighting */
+        function highlightKeywords(text) {
+            const keywords = {
+                'interior photography': true,
+                'Summerhill Construction': true
+            };
+
+            for (let keyword in keywords) {
+                text = text.replace(new RegExp(keyword, 'gi'), `<span class="keyword">${keyword}</span>`);
+            }
+
+            return text;
+        }
+
+        /* Apply the highlight function to the page on load */
+        document.addEventListener("DOMContentLoaded", function() {
+            document.body.innerHTML = highlightKeywords(document.body.innerHTML);
+        });
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Summerhill Construction: <span class="keyword">Interior Photography</span> Showcase</h1>
+        <

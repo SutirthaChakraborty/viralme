@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Video Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .video {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Insights Video Agency</h1>
+    </header>
+    <div class="container">
+        <h2>Transform Your Brand with Engaging Video Content</h2>
+        <p>At Insights Video Agency, we specialize in creating compelling video content that drives engagement and boosts brand visibility. Our team of experts utilizes the latest trends in video marketing to deliver high-quality productions tailored to your needs.</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <button class="button" onclick="showMoreInfo()">Learn More</button>
+        <div id="moreInfo" style="display:none; margin-top: 20px;">
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>**Expert Team**: Our professionals have years of experience in video production.</li>
+                <li>**Tailored Solutions**: We customize our services to meet your specific goals.</li>
+                <li>**Cutting-Edge Technology**: We use the latest tools and techniques for superior quality.</li>
+                <li>**Proven Results**: Our videos have helped clients increase their reach and engagement.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

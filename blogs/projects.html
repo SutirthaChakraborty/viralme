@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>项目管理系统</title>
+	<style>
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.project-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.project-list li {
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		.project-list li:last-child {
+			border-bottom: none;
+		}
+		
+		.project-name {
+			font-weight: bold;
+			color: #337ab7;
+		}
+		
+		.project-description {
+			color: #666;
+		}
+		
+		.project-status {
+			background-color: #5bc0de;
+			color: #fff;
+			padding: 5px 10px;
+			border-radius: 5px;
+			font-size: 14px;
+		}
+		
+		.project-status.pending {
+			background-color: #f0ad4e;
+		}
+		
+		.project-status.completed {
+			background-color: #5bc0de;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>项目管理系统</h2>
+		<ul class="project-list">
+			<li>
+				<span class="project-name">项目1</span>
+				<span class="project-description">这是项目1的描述</span>
+				<span class="project-status pending">待处理</span>
+			</li>
+			<li>
+				<span class="project-name">项目2</span>
+				<span class="project-description">这是项目2的描述</span>
+				<span class="project-status completed">已完成</span>
+			</li>
+			<li>
+				<span class="project-name">项目3</span>
+				<span class="project-description">这是项目3的描述</span>
+				<span class="project-status pending">待处理</span>
+			</li>
+		</ul>
+	</div>
+	
+	<script>
+		// 获取所有项目列表
+		const projectList = document.querySelectorAll('.project-list li');
+		
+		// 监听项目状态的变化
+		projectList.forEach((project) => {
+			project.addEventListener('click', () => {
+				// 获取当前项目的状态
+				const projectStatus = project.querySelector('.project-status');
+				// 更改项目状态
+				if (projectStatus.textContent === '待处理') {
+					projectStatus.textContent = '已完成';
+					projectStatus.classList.add('completed');
+					projectStatus.classList.remove('pending');
+				} else {
+					projectStatus.textContent = '待处理';
+					projectStatus.classList.add('pending');
+					projectStatus.classList.remove('completed');
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+相关关键词：项目管理系统，项目列表，项目状态，待处理，已完成，交互式CSS和JS。

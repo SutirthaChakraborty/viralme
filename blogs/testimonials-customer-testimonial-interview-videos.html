@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Customer Testimonials &amp; Interview Videos</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial {
+  width: 50%;
+  padding: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+ fName span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+}
+
+.read-more {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-box {
+    flex-direction: column;
+  }
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  // expand/collapse functionality (optional)
+  $('.testimonial [data-toggle]').click(function()

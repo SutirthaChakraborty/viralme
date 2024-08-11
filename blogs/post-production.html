@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the essentials of post production in film and video editing. Learn about editing, color grading, sound design, and visual effects.">
+    <title>Post Production Essentials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Post Production Essentials</h1>
+
+    <div class="section">
+        <h2>What is Post Production?</h2>
+        <p>Post production is the phase in film and video production that occurs after the shooting is completed. It involves editing, sound design, color correction, and visual effects.</p>
+    </div>
+
+    <div class="section">
+        <h2 class="toggle">Editing Techniques</h2>
+        <div class="content">
+            <p>Editing is crucial for storytelling. Techniques include cutting, transitions, and pacing to enhance narrative flow.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="toggle">Color Grading</h2>
+        <div class="content">
+            <p>Color grading adjusts the color and tone of the footage to create mood and consistency across scenes.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="toggle">Sound Design</h2>
+        <div class="content">
+            <p>Sound design involves creating the audio landscape of a film, including dialogue, sound effects, and music.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="toggle">Visual Effects (VFX)</h2>
+        <div class="content">
+            <p>VFX enhances or creates imagery that cannot be captured during live-action shooting, adding depth and excitement to the film.</p>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

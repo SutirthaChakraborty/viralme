@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Relations Photography Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .service {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+        .gallery {
+            display: none;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Public Relations Photography Service</h1>
+    </header>
+    <div class="container">
+        <div class="service">
+            <h2>Why Choose Us?</h2>
+            <p>Our public relations photography service specializes in capturing the essence of your brand through stunning visuals. We understand the importance of effective communication and storytelling in public relations.</p>
+            <button onclick="toggleGallery()">View Our Work</button>
+            <div class="gallery" id="gallery">
+                <img src="image1.jpg" alt="Public Relations Event 1">
+                <img src="image2.jpg" alt="Public Relations Event 2">
+                <img src="image3.jpg" alt="Public Relations Event 3">
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleGallery() {
+            var gallery = document.getElementById("gallery");
+            if (gallery.style.display === "none" || gallery.style.display === "") {
+                gallery.style.display = "block";
+            } else {
+                gallery.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Vertigo Logo Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project Vertigo Logo Design</h1>
+</header>
+
+<div class="content">
+    <h2>About the Logo</h2>
+    <p>The Project Vertigo logo symbolizes innovation and creativity in design. It reflects the dynamic nature of modern technology and the architectural elegance of skyscrapers.</p>
+    <img src="logo.png" alt="Project Vertigo Logo" class="logo">
+    <button onclick="showMoreInfo()">Learn More</button>
+    <div id="moreInfo" style="display:none;">
+        <h3>Design Elements</h3>
+        <p>The logo incorporates sharp angles and a sleek color palette, representing the cutting-edge approach of Project Vertigo.</p>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        var info = document.getElementById("moreInfo");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

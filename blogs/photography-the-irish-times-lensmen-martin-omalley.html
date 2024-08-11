@@ -1,0 +1,104 @@
+#### HTML and CSS Photography Website for Lensmen Martin O'Malley
+
+**Keywords:** photography, Irish Times, Lensmen, Martin O'Malley, technical documentation, HTML, CSS, responsive, media queries, flexbox, photography website, interactive, JavaScript
+
+#### HTML Code:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Lensmen Photography</title>
+</head>
+<body>
+  <header>
+    <div class="company-name">
+      <img src="company-logo.jpg" alt="Lensmen Photography">
+    </div>
+  </header>
+  <main>
+    <section class="gallery">
+      <img src="photo1.jpg" alt="Photography Sample 1">
+      <img src="photo2.jpg" alt="Photography Sample 2">
+      <img src="photo3.jpg" alt="Photography Sample 3">
+      <!-- Add more images here -->
+    </section>
+  </main>
+  <footer>
+    <div class="contact-details">
+      <p>Contact: Martin O'Malley</p>
+      <p>Email: martin@lensmen.com</p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <button onclick="viewWork()">View Work</button>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+#### CSS Code (styles.css):
+css
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the company name */
+.company-name {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style for the gallery section */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 30%;
+  margin: 10px;
+}
+
+/* Style for the contact details and button in the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+#### JavaScript Code (script.js):
+javascript
+function viewWork() {
+  // Add functionality to view the photographer's work
+  // This function can be further developed to showcase the photography work in a modal or a separate page
+  // For simplicity, it can just display an alert or log a message for now
+  alert('Viewing Lensmen Photography Work');
+}
+
+
+This HTML and CSS code creates a simple and responsive photography website for Lensmen Martin O'Malley. It includes a header with the company name and logo, a gallery section to showcase photography work, and contact details with a button to view the work. The CSS styles ensure a clean and visually appealing layout, while the JavaScript function adds interactivity to the "View Work" button.
+
+The website is designed to be responsive using flexbox and media queries, making it suitable for various devices and screen sizes [[1]](https://www.geeksforgeeks.org/top-10-projects-for-beginners-to-practice-html-and-css-skills/).

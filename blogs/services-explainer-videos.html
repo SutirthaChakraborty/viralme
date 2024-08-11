@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the power of services explainer videos to boost your brand, engage your audience, and simplify complex ideas.">
+    <title>Services Explainer Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        header {
+            background: #007BFF;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .info {
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #video {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Services Explainer Videos</h1>
+        </header>
+        <div class="info">
+            <p>Unlock the potential of <strong>services explainer videos</strong> to effectively convey your brand message. These videos are perfect for simplifying <strong>complex ideas</strong> and engaging your target audience.</p>
+            <p>Watch your conversion rates soar with clear, concise, and compelling video content that showcases your <strong>services</strong> while driving customer engagement.</p>
+            <button id="toggleVideo">Watch Our Explainer Video</button>
+            <div id="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggleVideo').onclick = function() {
+            var video = document.getElementById('video');
+            if (video.style.display === "none" || video.style.display === "") {
+                video.style.display = "block";
+                this.innerText = "Hide Video";
+            } else {
+                video.style.display = "none";
+                this.innerText = "Watch Our Explainer Video";
+            }
+        };
+    </script>
+
+</body>
+</html>

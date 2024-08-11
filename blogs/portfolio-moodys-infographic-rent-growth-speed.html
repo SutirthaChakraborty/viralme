@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moody's Rent Growth Infographic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .infographic {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Moody's Rent Growth Infographic</h1>
+    <p>Discover the rapid trends in rent growth across the U.S. housing market. This infographic provides key insights from Moody's Analytics on rental rates, market dynamics, and future projections.</p>
+
+    <div class="infographic">
+        <div class="card" id="growthCard">
+            <h2>Rent Growth Speed</h2>
+            <p>Understanding the pace of rent increases in urban centers.</p>
+            <button class="button" onclick="showDetails('growth')">View Details</button>
+        </div>
+        <div class="card" id="marketCard">
+            <h2>Market Trends</h2>
+            <p>Examine the factors driving rent adjustments in various markets.</p>
+            <button class="button" onclick="showDetails('market')">View Details</button>
+        </div>
+        <div class="card" id="forecastCard">
+            <h2>Future Projections</h2>
+            <p>Insights into expected rent growth and economic influences.</p>
+            <button class="button" onclick="showDetails('forecast')">View Details</button>
+        </div>
+    </div>
+
+    <div id="details" style="margin-top: 20px;"></div>
+
+    <script>
+        function showDetails(type) {
+            const details = {
+                growth: 'Recent data indicates a 5% average rent growth year-over-year in metropolitan areas.',
+                market: 'Factors influencing rent growth include job market strength, housing supply, and interest rates.',
+                forecast: 'Predictions suggest a sustained increase in rent due to ongoing economic recovery and demand.'
+            };
+            document.getElementById('details').innerHTML = '<h3>Details:</h3><p>' + details[type] + '</p>';
+        }
+    </script>
+</body>
+</html>

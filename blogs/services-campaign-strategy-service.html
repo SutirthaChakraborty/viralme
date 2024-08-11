@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert campaign strategy services to elevate your brand reach and effectiveness.">
+    <meta name="keywords" content="campaign strategy, marketing services, digital marketing, brand development, strategic planning">
+    <title>Campaign Strategy Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .services {
+            list-style: none;
+            padding: 0;
+        }
+        .services li {
+            background: #e7f3fe;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #2196F3;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .services li:hover {
+            background: #d1e7fd;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Campaign Strategy Services</h1>
+</header>
+
+<div class="container">
+    <h2>Our Services</h2>
+    <ul class="services">
+        <li onclick="displayDetails('Market Research')">Market Research</li>
+        <li onclick="displayDetails('Strategic Planning')">Strategic Planning</li>
+        <li onclick="displayDetails('Digital Marketing')">Digital Marketing</li>
+        <li onclick="displayDetails('Brand Development')">Brand Development</li>
+        <li onclick="displayDetails('Performance Analysis')">Performance Analysis</li>
+    </ul>
+    <div id="serviceDetails" style="margin-top: 20px;"></div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Campaign Strategy Experts</p>
+</footer>
+
+<script>
+    function displayDetails(service) {
+        const detailsMap = {
+            'Market Research': 'Comprehensive market research to understand your audience and competitors.',
+            'Strategic Planning': 'Creating tailored strategies that align with your business goals.',
+            'Digital Marketing': 'Leveraging online channels to maximize reach and engagement.',
+            'Brand Development': 'Building a strong brand identity to enhance market presence.',
+            'Performance Analysis': 'Analyzing campaign effectiveness for continuous improvement.'
+        };
+        document.getElementById('serviceDetails').innerText = detailsMap[service] || '';
+    }
+</script>
+
+</body>
+</html>

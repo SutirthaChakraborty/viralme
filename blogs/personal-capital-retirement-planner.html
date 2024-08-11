@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Capital Retirement Planner - Your Ultimate Tool for Retirement Savings and Financial Planning. Optimize your finances with detailed insights and projections.">
+    <title>Personal Capital Retirement Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #219150;
+        }
+        #summary {
+            margin-top: 20px;
+            display: none;
+            padding: 10px;
+            border: 1px solid #dcdcdc;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Capital Retirement Planner</h1>
+        <p>Start planning your retirement today with Personal Capital's Retirement Planner. Understand your savings, project future income, and assess your financial health.</p>
+        <a href="#" class="button" onclick="toggleSummary()">Learn More</a>
+        
+        <div id="summary">
+            <h2>Key Features:</h2>
+            <ul>
+                <li>Comprehensive Financial Overview</li>
+                <li>Retirement Projections</li>
+                <li>Investment Tracking</li>
+                <li>Personalized Action Plans</li>
+                <li>Free Financial Tools with Expert Insights</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function toggleSummary() {
+            var summary = document.getElementById('summary');
+            if (summary.style.display === 'none' || summary.style.display === '') {
+                summary.style.display = 'block';
+            } else {
+                summary.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

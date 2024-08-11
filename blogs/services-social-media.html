@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our expert social media services for businesses. Enhance your online presence with effective social media strategies.">
+    <title>Social Media Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077ff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .service {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #0077ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Services</h1>
+        <p>Boost your online presence with our tailored social media strategies!</p>
+    </header>
+    <div class="container">
+        <div class="service" onclick="showDetails('content1')">
+            <h2>Social Media Management</h2>
+            <p>Comprehensive management of your social media profiles to enhance engagement.</p>
+            <button>Learn More</button>
+            <div id="content1" class="details" style="display:none;">
+                <p>We provide daily posts, engagement strategies, and analytics reports to optimize your social presence.</p>
+            </div>
+        </div>
+        <div class="service" onclick="showDetails('content2')">
+            <h2>Content Creation</h2>
+            <p>Professional content tailored for your audience on all platforms.</p>
+            <button>Learn More</button>
+            <div id="content2" class="details" style="display:none;">
+                <p>Our team creates eye-catching graphics, videos, and posts that resonate with your target market.</p>
+            </div>
+        </div>
+        <div class="service" onclick="showDetails('content3')">
+            <h2>Social Media Advertising</h2>
+            <p>Targeted advertising campaigns to increase your reach and drive traffic.</p>
+            <button>Learn More</button>
+            <div id="content3" class="details" style="display:none;">
+                <p>We focus on precise audience targeting to maximize your ROI on social media platforms.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showDetails(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

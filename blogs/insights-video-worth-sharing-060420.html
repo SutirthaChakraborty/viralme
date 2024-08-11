@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Video Worth Sharing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .video {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights Video Worth Sharing</h1>
+        <p>Discover valuable insights and share them with your network!</p>
+    </header>
+    <div class="content">
+        <h2>Watch Our Latest Insights Video</h2>
+        <p>Click the button below to reveal the video that provides key insights on trending topics.</p>
+        <button id="showVideoBtn">Show Video</button>
+        <div class="video" id="videoContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        document.getElementById('showVideoBtn').onclick = function() {
+            var videoContainer = document.getElementById('videoContainer');
+            videoContainer.style.display = videoContainer.style.display === 'none' ? 'block' : 'none';
+        };
+    </script>
+</body>
+</html>

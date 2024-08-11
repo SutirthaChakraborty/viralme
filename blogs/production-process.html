@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Process Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .section {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            padding: 10px 15px; 
+            cursor: pointer; 
+            border-radius: 5px;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding the Production Process</h1>
+</header>
+
+<div class="section">
+    <h2>1. Planning</h2>
+    <button class="button" onclick="toggleInfo('info1')">Show Info</button>
+    <div id="info1" class="info">
+        The planning phase involves outlining the production goals, resource allocation, and timeline.
+    </div>
+</div>
+
+<div class="section">
+    <h2>2. Sourcing</h2>
+    <button class="button" onclick="toggleInfo('info2')">Show Info</button>
+    <div id="info2" class="info">
+        This step focuses on sourcing raw materials and components necessary for production.
+    </div>
+</div>
+
+<div class="section">
+    <h2>3. Production</h2>
+    <button class="button" onclick="toggleInfo('info3')">Show Info</button>
+    <div id="info3" class="info">
+        The actual manufacturing process, where raw materials are transformed into finished products.
+    </div>
+</div>
+
+<div class="section">
+    <h2>4. Quality Control</h2>
+    <button class="button" onclick="toggleInfo('info4')">Show Info</button>
+    <div id="info4" class="info">
+        Ensuring products meet industry standards and specifications before distribution.
+    </div>
+</div>
+
+<div class="section">
+    <h2>5. Delivery</h2>
+    <button class="button" onclick="toggleInfo('info5')">Show Info</button>
+    <div id="info5" class="info">
+        The final stage where products are shipped to customers or retailers.
+    </div>
+</div>
+
+<script>
+    function toggleInfo(infoId) {
+        var infoDiv = document.getElementById(infoId);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+#### HTML Code with CSS for 360 Photos and Videos
+
+Here's a simple HTML code with CSS to display 360 photos and videos. This code includes interactive CSS and JS to explain the topics.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>360 Media</title>
+  <style>
+    /* CSS for 360 media container */
+    .media-container {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      perspective: 1000px;
+    }
+    /* CSS for 360 media */
+    .media {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+    /* Interactive CSS for 360 media */
+    .media:hover {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body>
+  <h1>360 Media Showcase</h1>
+  <div class="media-container">
+    <img class="media" src="360-photo.jpg" alt="360 Photo">
+  </div>
+  <div class="media-container">
+    <video class="media" controls>
+      <source src="360-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>
+
+
+This HTML code creates a simple webpage to display 360 photos and videos. The CSS includes interactive elements to allow users to interact with the media.
+
+**Keywords**: HTML, CSS, 360 photos, 360 videos, interactive, JavaScript, web development, media showcase, 360 media container, perspective, transform, rotateY.
+

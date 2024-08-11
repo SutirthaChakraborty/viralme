@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore video project types such as documentaries, promotional videos, and tutorials. Enhance your video production skills with top tips and interactive examples.">
+    <title>Types of Video Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6347;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-type {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .video-type:hover {
+            background-color: #f9f9f9;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Types of Video Projects</h1>
+        <div class="video-type" onclick="toggleDescription('docu')">
+            Documentaries
+            <div id="docu" class="description">Engaging storytelling that focuses on real-life events and subjects.</div>
+        </div>
+        <div class="video-type" onclick="toggleDescription('promo')">
+            Promotional Videos
+            <div id="promo" class="description">Short videos to market products, services, or events effectively.</div>
+        </div>
+        <div class="video-type" onclick="toggleDescription('tutorial')">
+            Tutorials
+            <div id="tutorial" class="description">Instructional videos that provide step-by-step guidance on various skills.</div>
+        </div>
+        <div class="video-type" onclick="toggleDescription('vlog')">
+            Vlogs
+            <div id="vlog" class="description">Personal video blogs that share experiences and opinions.</div>
+        </div>
+    </div>
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

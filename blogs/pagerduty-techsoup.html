@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagerDuty & TechSoup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e6ea;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding PagerDuty and TechSoup</h1>
+</header>
+
+<section>
+    <h2>What is PagerDuty?</h2>
+    <p>PagerDuty is an incident management platform that helps organizations manage IT operations and response. It's essential for maintaining uptime and ensuring customer satisfaction through effective incident resolution.</p>
+    <button onclick="toggleInfo('pagerDutyInfo')">Learn More</button>
+    <div id="pagerDutyInfo" class="info">
+        <p>It integrates with various tools to send alerts, manage on-call schedules, and automate incident resolution to improve operational efficiency.</p>
+    </div>
+</section>
+
+<section>
+    <h2>What is TechSoup?</h2>
+    <p>TechSoup provides technology resources and tools to non-profits. It connects organizations with software, hardware, and knowledge to maximize their impact.</p>
+    <button onclick="toggleInfo('techSoupInfo')">Learn More</button>
+    <div id="techSoupInfo" class="info">
+        <p>Through partnerships with tech companies, TechSoup offers discounted or donated products that can help non-profits leverage technology for their missions.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Benefits of Integrating PagerDuty and TechSoup</h2>
+    <p>Integrating PagerDuty with TechSoup provides non-profits with tools to ensure operational resilience while maximizing their resources.</p>
+</section>
+
+<script>
+    function toggleInfo(infoId) {
+        var infoSection = document.getElementById(infoId);
+        if (infoSection.style.display === "none" || infoSection.style.display === "") {
+            infoSection.style.display = "block";
+        } else {
+            infoSection.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

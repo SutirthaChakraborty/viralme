@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viking Splash Tours Dublin 2017 Portfolio Item</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .interactive {
+            cursor: pointer;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <h1>Viking Splash Tours Dublin 2017</h1>
+    <div class="portfolio-item">
+        <h2>Overview</h2>
+        <p>Experience Dublin like never before with Viking Splash Tours, combining land and water exploration in one unforgettable adventure. Perfect for tourists and locals alike!</p>
+        <button class="interactive" onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="moreInfo">
+            <h3>Tour Highlights:</h3>
+            <ul>
+                <li>Unique amphibious vehicle experience.</li>
+                <li>Guided tour featuring Viking history.</li>
+                <li>Fun and interactive for all ages!</li>
+                <li>Stunning views of Dublin's landmarks.</li>
+            </ul>
+            <h3>Why Choose Viking Splash Tours?</h3>
+            <p>Engaging guides and a fun-filled atmosphere make this tour a must-do. Perfect for families, tourists, and those wanting to rediscover Dublin!</p>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

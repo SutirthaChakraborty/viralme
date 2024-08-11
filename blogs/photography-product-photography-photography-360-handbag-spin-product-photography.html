@@ -1,0 +1,78 @@
+Sure, here's a small HTML code with CSS to demonstrate the topic of "Product Photography 360 Handbag Spin":
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Photography 360 Handbag Spin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="product-photography">
+    <div class="product-images" id="productImages">
+      <img src="image1.jpg" alt="Image 1">
+      <img src="image2.jpg" alt="Image 2">
+      <img src="image3.jpg" alt="Image 3">
+      <!-- Add more images for 360 spin -->
+    </div>
+    <button onclick="spinProduct()">Spin</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+.product-photography {
+  text-align: center;
+}
+
+.product-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-images img {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+
+JavaScript (script.js):
+javascript
+let currentImageIndex = 0;
+const images = document.querySelectorAll('#productImages img');
+
+function spinProduct() {
+  if (currentImageIndex === images.length - 1) {
+    currentImageIndex = 0;
+  } else {
+    currentImageIndex++;
+  }
+  images.forEach((image, index) => {
+    if (index === currentImageIndex) {
+      image.style.display = 'block';
+    } else {
+      image.style.display = 'none';
+    }
+  });
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to Wear for a Portrait Headshot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .tips {
+            margin: 20px 0;
+        }
+        .tip {
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #1976D2;
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What to Wear for a Portrait Headshot</h1>
+        <div class="tips">
+            <div class="tip">**Choose Solid Colors**: Solid colors work best as they keep the focus on your face.</div>
+            <div class="tip">**Avoid Busy Patterns**: Patterns can be distracting and take attention away from your expression.</div>
+            <div class="tip">**Dress for Your Profession**: Wear something that reflects your professional image.</div>
+            <div class="tip">**Accessorize Wisely**: Simple accessories can enhance your look without overwhelming it.</div>
+        </div>
+        <button onclick="toggleInteractive()">Show More Tips</button>
+        <div class="interactive" id="moreTips">
+            <p>**Consider Your Skin Tone**: Choose colors that complement your skin tone for a more flattering look.</p>
+            <p>**Fit Matters**: Ensure your clothes fit well; avoid overly tight or loose garments.</p>
+            <p>**Grooming**: Pay attention to grooming; neat hair and makeup can enhance your overall appearance.</p>
+        </div>
+    </div>
+    <script>
+        function toggleInteractive() {
+            var tips = document.getElementById("moreTips");
+            if (tips.style.display === "none" || tips.style.display === "") {
+                tips.style.display = "block";
+            } else {
+                tips.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

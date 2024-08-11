@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the process of time-lapsing new premises development with engaging visuals and interactive elements.">
+    <title>Time Lapse New Premises Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Time Lapse of New Premises Development</h1>
+        <p>Experience the transformation of empty spaces into vibrant new premises through stunning time-lapse photography. This visual journey captures the essence of construction, renovation, and innovation.</p>
+        <h2>Watch the Time Lapse</h2>
+        <div class="video-container">
+            <video id="timeLapseVideo" width="100%" controls>
+                <source src="timelapse.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <button onclick="toggleVideo()">Play/Pause</button>
+        </div>
+        <h2>Importance of Time Lapses</h2>
+        <p>Time-lapse videos are essential for showcasing:</p>
+        <ul>
+            <li>Project Progress</li>
+            <li>Construction Techniques</li>
+            <li>Space Utilization</li>
+            <li>Creative Design Processes</li>
+        </ul>
+    </div>
+
+    <script>
+        const video = document.getElementById('timeLapseVideo');
+        function toggleVideo() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+</body>
+</html>

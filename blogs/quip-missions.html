@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Quip Missions, their objectives, and how they contribute to collaboration and productivity.">
+    <title>Quip Missions Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .mission {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        .mission:hover {
+            transform: scale(1.02);
+        }
+        .info {
+            display: none;
+            background: #e2e2e2;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Quip Missions</h1>
+    <div class="mission">
+        <h2>Mission 1: Enhance Collaboration</h2>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <div class="info">Quip Missions aim to break down silos and foster effective teamwork through seamless communication tools.</div>
+    </div>
+    <div class="mission">
+        <h2>Mission 2: Drive Productivity</h2>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <div class="info">By integrating documents and spreadsheets, Quip helps teams work smarter and faster, keeping everyone aligned.</div>
+    </div>
+    <div class="mission">
+        <h2>Mission 3: Simplify Workflows</h2>
+        <button onclick="toggleInfo(this)">Learn More</button>
+        <div class="info">Quip Missions focus on streamlining processes to reduce manual work and automate repetitive tasks.</div>
+    </div>
+
+    <script>
+        function toggleInfo(button) {
+            const info = button.nextElementSibling;
+            info.style.display = info.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

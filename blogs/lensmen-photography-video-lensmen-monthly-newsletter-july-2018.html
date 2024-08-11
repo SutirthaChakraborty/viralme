@@ -1,0 +1,120 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lensmen Photography</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav {
+    background-color: #222;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: #333;
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    margin-bottom: 20px;
+}
+.content p {
+    margin-bottom: 10px;
+}
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<script>
+function showImage(event) {
+    var imgSrc = event.target.src;
+    var modal = document.getElementById('myModal');
+    var modalImg = document.getElementById('img01');
+    var captionText = document.getElementById('caption');
+    modal.style.display = "block";
+    modalImg.src = imgSrc;
+    captionText.innerHTML = event.target.alt;
+}
+function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = "none";
+}
+</script>
+</head>
+<body>
+<header>
+    <a href="#">Lensmen Photography</a>
+</header>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">Photography</a></li>
+        <li><a href="#contact">Newsletter</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="content">
+        <h2>Lensmen Photography</h2>
+        <p>Welcome to Lensmen Photography, where we capture the essence of your moments in the most beautiful way possible. Our team of talented photographers is dedicated to providing you with high-quality images that tell a story.</p>
+        <img onclick="showImage(event)" src="photo1.jpg" alt="Photo 1">
+        <img onclick="showImage(event)" src="photo2.jpg" alt="Photo 2">
+        <img onclick="showImage(event)" src="photo3.jpg" alt="Photo 3">
+    </div>
+</div>
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="img01" src="" alt="The Image">
+    <div id="caption"></div>
+</div>
+<footer>
+    <p>&copy; 2023 Lensmen Photography. All rights reserved.</p>
+</footer>
+</body>
+</html>

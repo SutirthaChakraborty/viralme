@@ -1,0 +1,75 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Public Relations Photography Service by Lensmen - High-Quality Images for the Gazette">
+    <meta name="keywords" content="public relations, photography service, lensmen, gazette, featured photographs, visual storytelling">
+    <title>Lensmen - Photography for the Gazette</title>
+    <style>
+        /* Add some interactivity */
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-width: 1200px;
+            object-fit: cover;
+            transition: opacity 0.5s ease;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            color: #fff;
+            text-align: center;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            font-size: 1.2rem;
+        }
+
+        .hero-text:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005580;
+        }
+    </style>
+    <script>
+        // Lightbox for image details
+        function showDetails() {
+            document.getElementById('detailModal').style.display = "block";
+            var img = document.getElementById("heroImage");
+            img.addEventListener('click', function() {
+                document.getElementById('closeBtn').src = 'images/close.png';
+            });
+        }
+
+        function closeDetails()

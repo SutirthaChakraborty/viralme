@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcase of Knockrabo portfolio item featuring innovative design and functionality.">
+    <title>Knockrabo Portfolio Item</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .portfolio-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Knockrabo - Innovative Portfolio Item</h1>
+    <div class="portfolio-item">
+        <h2>Project Overview</h2>
+        <p>Knockrabo is an innovative project focused on enhancing user interaction through seamless design and technical execution. This portfolio item showcases a unique blend of creativity and functionality.</p>
+        <h3>Key Features</h3>
+        <ul>
+            <li>User-centric design</li>
+            <li>Responsive layout</li>
+            <li>High-performance backend</li>
+            <li>Interactive user experience</li>
+            <li>Cross-platform compatibility</li>
+        </ul>
+        <button class="button" onclick="showMore()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <h4>Detailed Insights</h4>
+            <p>This project involves collaborating with a team of designers and developers to ensure that each aspect meets the users' needs. Our focus on usability and aesthetics has garnered positive feedback and engagement.</p>
+        </div>
+    </div>
+
+    <script>
+        function showMore() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>

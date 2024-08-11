@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlocking the Power of Internet Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .info {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Unlocking the Power of Internet Video Production</h1>
+    <div class="video-container">
+        <video id="video" controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="info">
+            <h2>Best Practices & Strategies</h2>
+            <p>Learn how to create engaging video content that captivates your audience.</p>
+            <button onclick="toggleVideo()">Play/Pause</button>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('video');
+        function toggleVideo() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+</body>
+</html>

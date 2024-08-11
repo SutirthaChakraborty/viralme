@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Search Engine Optimization with Relevant Keywords for Enhanced Reach">
+    <meta name="keywords" content="search, optimization, keywords, SEO, interactive, CSS, JavaScript, user experience">
+    <title>Search &amp; Keyword Optimization</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-field {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search-button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .result-list {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        .result-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .result-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .result-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+    <script>
+        function searchContent() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var resultList = document.getElementById("resultList");
+            var items = resultList.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; i++) {
+                if (items[i].textContent.toLowerCase().includes(input)) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Search &amp

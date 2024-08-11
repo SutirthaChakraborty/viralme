@@ -1,0 +1,67 @@
+Here's a simple HTML structure with embedded CSS and JavaScript, showcasing a portfolio showcase for an office showroom. I've included some relevant keywords in the code for better search visibility:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Hunt: Office Showrooms</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f2f2f2;
+            transition: background-color 0.3s ease;
+            }
+        .project-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .project-description {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 500px;
+        }
+        .project:hover .project-container {
+            transform: scale(1.1);
+        }
+        .project:hover .project-overlay {
+            opacity: 1;
+        }
+    </style>
+    <script>
+        // JavaScript
+        const portfolioItems = document.querySelectorAll('.project');
+
+        portfolioItems.forEach((project) => {
+            project.addEventListener('mouseover', (event) => {
+                event.target.classList.add('active');
+            });

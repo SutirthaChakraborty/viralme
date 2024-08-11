@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our portfolio of dynamic events showcasing creativity and innovation. Discover how we make every occasion unforgettable.">
+    <title>Event Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .event-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .event-card:hover {
+            transform: scale(1.05);
+        }
+        .event-title {
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+        .event-description {
+            font-size: 1em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Event Portfolio</h1>
+    <div class="portfolio-container">
+        <div class="event-card" onclick="showDetails('Event 1', 'A remarkable charity gala that raised funds for local communities.')">
+            <h2 class="event-title">Charity Gala</h2>
+            <p class="event-description">An elegant evening of fundraising and entertainment.</p>
+        </div>
+        <div class="event-card" onclick="showDetails('Event 2', 'A unique art exhibition showcasing local artists.')">
+            <h2 class="event-title">Art Exhibition</h2>
+            <p class="event-description">Celebrating creativity through visual arts.</p>
+        </div>
+        <div class="event-card" onclick="showDetails('Event 3', 'Networking event connecting industry leaders and innovators.')">
+            <h2 class="event-title">Business Networking</h2>
+            <p class="event-description">Building relationships for future collaboration.</p>
+        </div>
+    </div>
+
+    <script>
+        function showDetails(title, description) {
+            alert(title + '\n' + description);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights: Video Marketing Mistakes</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 180px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .logo {
+            width: 150px;
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+        }
+        .mistakes-list {
+            width: 70%;
+            list-style: none;
+            padding: 0;
+        }
+        .mistake {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background-color: #FFFFCC;
+        }
+    </style>
+    <script>
+        function toggleExplanation(mistakeElement) {
+            const explanation = mistakeElement.nextElementSibling;
+            explanation.classList.toggle('hidden');
+            mistakeElement.classList.toggle('highlight');
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="logo">Video Marketing Best Practices</a>
+        <div class="mistakes-list">
+            <ul>
+                <li class="mistake" onclick="toggleExplanation(this)">
+                    <span>1. Inadequate Content Strategy</span>
+                    <p class="hidden highlight">Failing to align videos with your target audience and objectives</p>
+                </li>
+                <li class="mistake" onclick="toggleExplanation(this)">
+                    <span>2. Poor Production Quality</span>
+                    <p class="hidden highlight">Lack of professional editing or inappropriate background noise</p>
+                </li>
+                <li class="mistake" onclick="toggleExplanation(this)">
+                    <span>3. Ignoring Metrics</span>
+                    <p class="hidden highlight">Not tracking engagement and making data-driven decisions</p>
+                </li>
+                <li class="mistake" onclick="toggleExplanation(this)">
+                    <span>4. Over-promotion</span>
+                    <p class="hidden highlight">Unnatural product placements or excessive self-promotion</p>
+                </li>
+                <li class="mistake" onclick="toggle

@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Video Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-item {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .video-thumbnail {
+            width: 300px;
+            height: 195px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .video-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .video-description {
+            margin-top: 5px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .play-btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .play-btn:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 768px) {
+            .video-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        function showDescription(videoId) {
+            const videoDesc = document.getElementById(`video-desc-${videoId}`);
+            if (videoDesc.style.display === 'none') {
+                videoDesc.style.display = 'block';
+            } else {
+                videoDesc.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Charity Videos: Inspiring Stories for Non-Profit Causes</h1>
+        <div class="video-item">
+           

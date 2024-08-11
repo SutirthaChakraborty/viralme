@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Lensmen Eye Camera, its features, and innovations in photography.">
+    <title>Lensmen Eye Camera</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lensmen Eye Camera</h1>
+        <p>Explore the innovative features of the Lensmen Eye Camera designed for dedicated photographers.</p>
+        
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>High-Resolution Imaging</h3>
+            <p>Experience stunning clarity and detail with the camera's high-resolution sensor.</p>
+            <button onclick="showDetail('highRes')">Learn More</button>
+        </div>
+        <div class="feature">
+            <h3>Intuitive User Interface</h3>
+            <p>Seamless control with a user-friendly layout for capturing the perfect shot.</p>
+            <button onclick="showDetail('ui')">Learn More</button>
+        </div>
+        <div class="feature">
+            <h3>Versatile Lens Options</h3>
+            <p>Adapt your photography style with a range of compatible lenses.</p>
+            <button onclick="showDetail('lenses')">Learn More</button>
+        </div>
+        
+        <div id="detail" style="margin-top: 20px; display: none; border: 1px solid #ddd; padding: 10px; border-radius: 5px;">
+            <h3>Detail</h3>
+            <p id="detailText"></p>
+        </div>
+    </div>
+
+    <script>
+        function showDetail(feature) {
+            const detailText = {
+                highRes: "The Lensmen Eye Camera features a cutting-edge 50MP sensor for crystal-clear images, even in low light.",
+                ui: "With an innovative touch screen interface, you can quickly navigate settings and modes effortlessly.",
+                lenses: "Choose from a variety of lenses ranging from wide-angle to telephoto, perfect for any shooting scenario."
+            };
+            document.getElementById('detailText').innerText = detailText[feature];
+            document.getElementById('detail').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

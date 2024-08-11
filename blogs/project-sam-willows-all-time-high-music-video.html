@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Willows - All Time High Music Video</title>
+    <meta name="description" content="Discover the All Time High music video by The Sam Willows and explore its meaning, themes, and impact on fans.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 5px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .toggle-info {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .info {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sam Willows - All Time High</h1>
+    </header>
+    <div class="content">
+        <h2>About the Music Video</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/R0ALC8K5FO0" title="Sam Willows - All Time High" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p>The "All Time High" music video by The Sam Willows showcases stunning visuals and a captivating storyline that resonates with fans around the world.</p>
+        <button class="toggle-info">Show More Info</button>
+        <div class="info">
+            <p>The video reflects themes of love, aspiration, and emotional highs, perfectly complemented by the group's harmonious vocals and contemporary pop sound. Released in 2020, it quickly gained popularity, highlighting the band's evolution and artistic growth.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.toggle-info').addEventListener('click', function() {
+            const info = document.querySelector('.info');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+                this.textContent = 'Show Less Info';
+            } else {
+                info.style.display = 'none';
+                this.textContent = 'Show More Info';
+            }
+        });
+    </script>
+</body>
+</html>

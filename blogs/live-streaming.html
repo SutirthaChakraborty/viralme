@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of live streaming with our comprehensive guide. Learn about platforms, trends, and tips for successful live broadcasts.">
+    <title>Live Streaming Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #3498db;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #3498db;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Live Streaming: Your Complete Guide</h1>
+</header>
+
+<div class="container">
+    <h2>What is Live Streaming?</h2>
+    <p>Live streaming allows you to broadcast real-time video and audio over the internet, engaging audiences instantly.</p>
+
+    <h2>Popular Platforms</h2>
+    <ul>
+        <li>YouTube Live</li>
+        <li>Twitch</li>
+        <li>Facebook Live</li>
+        <li>Instagram Live</li>
+        <li>Zoom</li>
+    </ul>
+
+    <h2>Why Live Stream?</h2>
+    <p>Enhance engagement, reach wider audiences, and build communities through interactive content.</p>
+
+    <button id="moreInfoButton">Click for More Tips</button>
+    <div id="moreInfo" class="hidden">
+        <h2>Live Streaming Tips</h2>
+        <ol>
+            <li>Test your internet connection before going live.</li>
+            <li>Engage with your audience through comments and live chats.</li>
+            <li>Plan your content in advance to ensure a smooth flow.</li>
+            <li>Use high-quality equipment for better production value.</li>
+        </ol>
+    </div>
+</div>
+
+<script>
+    document.getElementById('moreInfoButton').onclick = function() {
+        const info = document.getElementById('moreInfo');
+        if (info.classList.contains('hidden')) {
+            info.classList.remove('hidden');
+            this.textContent = "Show Less";
+        } else {
+            info.classList.add('hidden');
+            this.textContent = "Click for More Tips";
+        }
+    };
+</script>
+
+</body>
+</html>

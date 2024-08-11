@@ -1,0 +1,58 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project SHF: AED Easy as 1 2 3</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .container { width: 80%; margin: auto; max-width: 1200px; }
+  .header { text-align: center; font-size: 24px; margin-bottom: 20px; }
+  .section { padding: 20px; border-bottom: 1px solid #ddd; margin-bottom: 20px; }
+  .section:last-child { border-bottom: none; }
+  .section h3 { margin: 10px 0; }
+  .section p { margin: 0; }
+  .btn { display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; cursor: pointer; border-radius: 5px; }
+  .btn:hover { background-color: #0056b3; }
+  .interactive { display: none; }
+  .interactive.active { display: block; }
+</style>
+<script>
+  function toggleInteractive(e) {
+    var section = e.target.closest('.section');
+    var interactive = section.querySelector('.interactive');
+    interactive.classList.toggle('active');
+  }
+</script>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Project SHF: AED Easy as 1 2 3</h1>
+  </header>
+  <section class="section">
+    <h3>Introduction</h3>
+    <p>Project SHF stands for <strong>Shockwave Hemorrhage Filtration</strong>, a groundbreaking technology designed to simplify and expedite the process of managing traumatic injuries. The AED (Automated External Defibrillator) plays a crucial role in this project, serving as a vital tool in the immediate response to cardiac arrest.</p>
+    <button onclick="toggleInteractive(event)">Learn More</button>
+  </section>
+  <section class="section interactive">
+    <h3>Cardiac Arrest Management</h3>
+    <p>Learn about the basics of AED operation and how it can save lives in the event of cardiac arrest.</p>
+  </section>
+  <section class="section">
+    <h3>AED Operation Simplified</h3>
+    <p>The AED in Project SHF is designed to be user-friendly, with intuitive prompts guiding the user through the process of analyzing the heart rhythm and delivering the necessary electrical shock if indicated.</p>
+    <button onclick="toggleInteractive(event)">Interactive Demo</button>
+  </section>
+  <section class="section interactive">
+    <h3>Interactive AED Demo</h3>
+    <p>A simple simulation of an AED's operation, demonstrating how to analyze a heart rhythm and deliver a shock if necessary.</p>
+  </section>
+  <section class="section">
+    <h3>Conclusion</h3>
+    <p>Project SHF represents a significant step forward in emergency medical response, making the use of AEDs more accessible and effective. By simplifying the process and ensuring widespread training, we can improve survival rates in the event of cardiac arrest.</p>
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Adobe CMO resources for marketing strategies and best practices.">
+    <meta name="keywords" content="Adobe CMO, marketing toolkit, campaign management, creative resources, interactive CSS, JS examples, online presence">
+    <title>Adobe CMO Resources</title>
+    <style>
+        /* Add some interactivity using vanilla JS */
+        .resource-box {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            transition: box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .resource-box:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .description {
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        // JavaScript for showing tooltips on hover
+        function showTooltip(target) {
+            var tooltip = document.getElementById(target + "-tooltip");
+            tooltip.style.display = (tooltip.style.display === "none") ? "block" : "none";
+        }
+
+        function hideTooltip(target) {
+            var tooltip = document.getElementById(target + "-tooltip");
+            tooltip.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="resource-box" onclick="showTooltip('resource1')">
+        <h3 class="title">Adobe Experience Manager</h3>
+        <p class="description">A powerful platform for managing content and campaigns.</p>
+        <div id="resource1-tooltip" class="tooltip">
+            <p>Overview: A CMO's go-to tool for designing user experiences across channels.</p>
+        </div>
+    </div>
+    <div class="resource-box" onclick="showTooltip('resource2')">
+        <h3 class="title">Marketing Cloud Platform</h3>
+        <p class="description">Analytics and automation for integrated marketing efforts.</p>
+        <div id="resource2-tooltip" class="tooltip">
+            <p>Features: Campaign management, campaign analytics, email marketing, and more.</p>
+        </div>

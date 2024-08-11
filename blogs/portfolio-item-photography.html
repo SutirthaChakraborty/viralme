@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore stunning portfolio item photography showcasing creative visuals, expert techniques, and artistry.">
+    <title>Portfolio Item Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .item {
+            background: white;
+            margin: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+        }
+        .description h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Creative Portfolio Item Photography</h1>
+    <p>Explore exceptional photography showcasing art and creativity.</p>
+</header>
+
+<div class="portfolio">
+    <div class="item" onclick="showDetails('Image 1 Description')">
+        <img src="https://via.placeholder.com/300" alt="Portfolio Image 1">
+        <div class="description">
+            <h2>Stunning Landscape</h2>
+            <p>A breathtaking view of nature's beauty.</p>
+            <button>See Details</button>
+        </div>
+    </div>
+    <div class="item" onclick="showDetails('Image 2 Description')">
+        <img src="https://via.placeholder.com/300" alt="Portfolio Image 2">
+        <div class="description">
+            <h2>Artistic Portrait</h2>
+            <p>Capturing emotions through portrait photography.</p>
+            <button>See Details</button>
+        </div>
+    </div>
+    <div class="item" onclick="showDetails('Image 3 Description')">
+        <img src="https://via.placeholder.com/300" alt="Portfolio Image 3">
+        <div class="description">
+            <h2>Urban Photography</h2>
+            <p>Exploring the beauty of city life.</p>
+            <button>See Details</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showDetails(description) {
+        alert(description);
+    }
+</script>
+
+</body>
+</html>

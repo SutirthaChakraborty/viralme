@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulCycle Learning Centre Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+        }
+        .topics {
+            width: 30%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .topics div {
+            margin: 10px 0;
+            cursor: pointer;
+            padding: 10px;
+            background: #eaeaea;
+            border-radius: 5px;
+        }
+        .topics div:hover {
+            background: #d4d4d4;
+        }
+        .details {
+            width: 70%;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SoulCycle Learning Centre Resources</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="topics">
+            <div onclick="showDetail('intro')">Introduction to SoulCycle</div>
+            <div onclick="showDetail('benefits')">Benefits of SoulCycle</div>
+            <div onclick="showDetail('classes')">Types of Classes</div>
+            <div onclick="showDetail('community')">Community Engagement</div>
+        </div>
+        <div class="details" id="intro">
+            <h2>Introduction to SoulCycle</h2>
+            <p>SoulCycle is a fitness phenomenon that combines indoor cycling with motivational coaching.</p>
+        </div>
+        <div class="details" id="benefits">
+            <h2>Benefits of SoulCycle</h2>
+            <p>Participating in SoulCycle classes can enhance physical fitness, mental well-being, and community connection.</p>
+        </div>
+        <div class="details" id="classes">
+            <h2>Types of Classes</h2>
+            <p>SoulCycle offers various classes including beginner, advanced, and themed rides to cater to all fitness levels.</p>
+        </div>
+        <div class="details" id="community">
+            <h2>Community Engagement</h2>
+            <p>SoulCycle fosters a strong community through events, challenges, and social media engagement.</p>
+        </div>
+    </div>
+    <script>
+        function showDetail(topic) {
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => {
+                detail.style.display = 'none';
+            });
+            document.getElementById(topic).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights on video marketing trends and strategies to flood your brand visibility.">
+    <title>Video Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-section {
+            text-align: center;
+        }
+        .video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights on Video Marketing Trends</h1>
+    </header>
+
+    <section>
+        <h2>Why Video Marketing?</h2>
+        <p>Video marketing is crucial for audience engagement and brand storytelling. Discover how to flood your strategy with impactful video content.</p>
+        <button onclick="toggleVideo()">Watch Insights Video</button>
+    </section>
+
+    <div class="video-section" id="videoContainer" style="display:none;">
+        <h2>Video Marketing Insights</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            if(videoContainer.style.display === "none") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

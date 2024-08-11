@@ -1,0 +1,105 @@
+#### HTML Code for Project ECDA Awards 2020
+
+Below is a small HTML code snippet that you can use as a starting point for your project on ECDA Awards 2020. This code includes interactive CSS and JavaScript to enhance the user experience:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ECDA Awards 2020</title>
+  <style>
+    /* CSS styles for the page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .menu a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      transition: background-color 0.3s ease;
+    }
+    
+    .menu a:hover {
+      background-color: #ddd;
+    }
+    
+    .content {
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#categories">Categories</a>
+      <a href="#nominees">Nominees</a>
+      <a href="#voting">Voting</a>
+      <a href="#winners">Winners</a>
+    </div>
+    <div class="content">
+      <h1 id="about">About ECDA Awards 2020</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl ac ultricies ultrices, nunc nunc ultricies nunc, id lacinia nunc nunc id nunc.</p>
+      
+      <h2 id="categories">Categories</h2>
+      <ul>
+        <li>Category 1</li>
+        <li>Category 2</li>
+        <li>Category 3</li>
+      </ul>
+      
+      <h2 id="nominees">Nominees</h2>
+      <ul>
+        <li>Nominee 1</li>
+        <li>Nominee 2</li>
+        <li>Nominee 3</li>
+      </ul>
+      
+      <h2 id="voting">Voting</h2>
+      <p>To vote for your favorite nominee, click on the respective nominee's name.</p>
+      
+      <h2 id="winners">Winners</h2>
+      <p>The winners of ECDA Awards 2020 will be announced on a later date.</p>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript code for handling click events
+    const menuLinks = document.querySelectorAll('.menu a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a simple page for the ECDA Awards 2020 project. It includes a menu on the left side where users can click on different topics to navigate to the corresponding content on the right side. The page has sections for "About," "Categories," "Nominees," "Voting," and "Winners." The CSS styles provide a clean and responsive layout, while the JavaScript code adds smooth scrolling functionality when clicking on the menu links.
+
+Feel free to customize the code further to meet your specific requirements and design preferences. Good luck with your project!
+
+**Keywords**: HTML, CSS, JavaScript, ECDA Awards 2020, interactive, menu, smooth scrolling

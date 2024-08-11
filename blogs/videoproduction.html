@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>视频生产介绍</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		#video-production {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#video-production h2 {
+			color: #337ab7;
+			margin-top: 0;
+		}
+		
+		#video-production p {
+			margin-bottom: 20px;
+		}
+		
+		#video-production .step {
+			margin-bottom: 20px;
+		}
+		
+		#video-production .step h3 {
+			color: #666;
+			margin-top: 0;
+		}
+		
+		#video-production .step p {
+			margin-bottom: 10px;
+		}
+		
+		#video-production .step .arrow {
+			font-size: 18px;
+			color: #337ab7;
+			margin-right: 10px;
+		}
+		
+		#video-production .step:hover .arrow {
+			cursor: pointer;
+		}
+		
+		#video-production .step-1 {
+			background-color: #f7f7f7;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#video-production .step-1:hover {
+			background-color: #e7e7e7;
+		}
+		
+		#video-production .step-2 {
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#video-production .step-2:hover {
+			background-color: #f7f7f7;
+		}
+		
+		#video-production .step-3 {
+			background-color: #f7f7f7;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#video-production .step-3:hover {
+			background-color: #e7e7e7;
+		}
+		
+		#video-production .arrow-up {
+			font-size: 24px;
+			color: #337ab7;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		
+		#video-production .arrow-down {
+			font-size: 24px;
+			color: #337ab7;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+		
+		#video-production .step-1:hover .arrow-up {
+			animation: arrow-up 0.5s ease-out;
+		}
+		
+		#video-production .step-2:hover .arrow-down {
+			animation: arrow-down 0.5s ease-out;
+		}
+		
+		@keyframes arrow-up {
+			from {
+				transform: translateY(0);
+			}
+			to {
+				transform: translateY(-10px);
+			}
+		}
+		
+		@keyframes arrow-down {
+			from {
+				transform: translateY(0);
+			}
+			to {
+				transform: translateY(10px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="video-production">
+		<h2>视频生产介绍</h2>
+		<p>视频生产是指拍摄和编辑视频的整个过程，从脚本的制定到最终的视频产品。这个过程需要考虑多方面的因素，包括拍摄环境、摄像机和光学设备、照明、音频记录、剪辑、颜色校正、音频混音等。</p>
+		<div class="step">
+			<h3>步骤1:脚本制定</h3>
+			<p>脚本制定是视频生产的开始。脚本需要详细地描述视频的内容、拍摄场景、人物和对话等。</p>
+			<span class="arrow">›</span>
+		</div>
+		<div class="step">
+			<h3>步骤2:拍摄</h3>
+			<p>拍摄是视频生产的核心部分。摄像机和照明设备需要根据脚本的要求进行设置和调整。</p>
+			<span class="arrow arrow-up"></span>
+			<span class="step-1"></span>
+		</div>
+		<div class="step">
+			<h3>步骤3:剪辑</h3>
+			<p>剪辑是视频生产的最后一步。编辑师需要根据脚本和拍摄 footage 进行剪辑和合成。</p>
+			<span class="arrow arrow-down"></span>
+			<span class="step-2"></span>
+		</div>
+		<script>
+			var arrows = document.querySelectorAll('.arrow');
+			arrows.forEach(function(item) {
+				item.addEventListener('click', function() {
+					if (item.classList.contains('arrow-up')) {
+						item.classList.add('animate');
+						setTimeout(function() {
+							item.classList.remove('animate');
+						}, 500);
+					} else if (item.classList.contains('arrow-down')) {
+						item.classList.add('animate');
+						setTimeout(function() {
+							item.classList.remove('animate');
+						}, 500);
+					}
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+
+Note: This code uses CSS animations to make the arrows move up and down when hovered. The JavaScript code adds a class "animate" to the arrow elements when they are clicked, which triggers the animation.

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallejo Explainer Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+        }
+        .description {
+            margin-top: 15px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+            display: none;
+        }
+        .video-container:hover .play-button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vallejo Explainer Video Production</h1>
+    <div class="video-container">
+        <video id="explainerVideo" controls>
+            <source src="vallejo-explainer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="play-button" onclick="playVideo()">▶</button>
+    </div>
+    <div class="description">
+        **Vallejo Explainer Video Production** specializes in creating engaging and informative videos that effectively communicate your message. Our team combines creativity with technical expertise to deliver high-quality content tailored to your needs.
+    </div>
+
+    <script>
+        function playVideo() {
+            var video = document.getElementById("explainerVideo");
+            video.play();
+        }
+    </script>
+
+</body>
+</html>

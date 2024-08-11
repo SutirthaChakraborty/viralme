@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Relations Photographer - Presidential Inaugurations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+        }
+        section {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #007bff;
+        }
+        button {
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 3px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Public Relations Photographer</h1>
+        <p>Specializing in Presidential Inaugurations and Event Photography</p>
+    </header>
+    <section>
+        <h2>What Does a PR Photographer Do?</h2>
+        <p>Public relations photographers capture images that showcase key moments in politics, particularly during presidential inaugurations. These images help convey trust, professionalism, and the spirit of democracy.</p>
+        <p class="keywords">Keywords: PR Photography, Presidential Events, Inauguration, Photography Services</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="moreInfo">
+            <p>PR photographers play a crucial role in shaping the narrative of significant events, presenting them in a favorable light to the public. Their work is pivotal in enhancing the image of political figures and events.</p>
+        </div>
+    </section>
+    
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('moreInfo');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

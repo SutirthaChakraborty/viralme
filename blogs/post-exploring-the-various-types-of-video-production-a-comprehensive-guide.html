@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore various types of video production in this comprehensive guide. Learn about promotional videos, corporate films, documentaries, and more.">
+    <title>Comprehensive Guide to Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-type {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exploring Various Types of Video Production: A Comprehensive Guide</h1>
+    
+    <div class="video-type">
+        <h2>1. Promotional Videos</h2>
+        <button onclick="toggleDescription('promoDesc')">Learn More</button>
+        <div id="promoDesc" class="description">
+            <p>Promotional videos are designed to promote a brand, product, or service. They are often short, engaging, and focused on capturing the audience's attention quickly.</p>
+        </div>
+    </div>
+    
+    <div class="video-type">
+        <h2>2. Corporate Films</h2>
+        <button onclick="toggleDescription('corpDesc')">Learn More</button>
+        <div id="corpDesc" class="description">
+            <p>Corporate films showcase a company's mission, culture, or services. They can be used for internal training or external branding.</p>
+        </div>
+    </div>
+    
+    <div class="video-type">
+        <h2>3. Documentaries</h2>
+        <button onclick="toggleDescription('docDesc')">Learn More</button>
+        <div id="docDesc" class="description">
+            <p>Documentaries provide an in-depth look at real-life events, stories, and issues. They aim to inform and educate the audience.</p>
+        </div>
+    </div>
+    
+    <div class="video-type">
+        <h2>4. Event Videos</h2>
+        <button onclick="toggleDescription('eventDesc')">Learn More</button>
+        <div id="eventDesc" class="description">
+            <p>Event videos capture important moments of an event such as weddings, conferences, or concerts. They help preserve memories and promote future events.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none" || desc.style.display === "") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

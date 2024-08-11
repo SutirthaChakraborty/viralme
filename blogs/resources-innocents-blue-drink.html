@@ -1,0 +1,82 @@
+#### HTML and CSS Code for Resources Innocents Blue Drink
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resources Innocents Blue Drink</title>
+  <style>
+    /* CSS for the layout */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar {
+      float: left;
+      width: 30%;
+    }
+    .content {
+      float: left;
+      width: 70%;
+      padding-left: 20px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    li:hover {
+      color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li onclick="loadContent('topic1')">Topic 1</li>
+        <li onclick="loadContent('topic2')">Topic 2</li>
+        <li onclick="loadContent('topic3')">Topic 3</li>
+      </ul>
+    </div>
+    <div class="content" id="content">
+      <p>Select a topic from the sidebar to view the content here.</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for loading content
+    function loadContent(topic) {
+      let content = document.getElementById('content');
+      if (topic === 'topic1') {
+        content.innerHTML = "<h2>Topic 1</h2><p>Description of topic 1 goes here.</p>";
+      } else if (topic === 'topic2') {
+        content.innerHTML = "<h2>Topic 2</h2><p>Description of topic 2 goes here.</p>";
+      } else if (topic === 'topic3') {
+        content.innerHTML = "<h2>Topic 3</h2><p>Description of topic 3 goes here.</p>";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+This HTML and CSS code creates a simple technical documentation page where users can click on any topic on the left side of the page and have the appropriate content load on the right. The page has a clean and straightforward layout, making it easy for users to navigate and access information about the resources innocents blue drink.
+
+The CSS styles the layout, creating a sidebar for topics and a content area for displaying the selected topic's information. The JavaScript function `loadContent` dynamically loads the content based on the selected topic, providing an interactive experience for users [[1]](https://www.knowledgehut.com/blog/web-development/html-projects).

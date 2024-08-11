@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="resources, synchrony, payment state, pay, explained, online transactions, real-time synchronization, interactive CSS, JavaScript, status tracking">
+  <title>Resources Synchrony - Interactive Payment State</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #333333;
+    }
+
+    p {
+      line-height: 1.5;
+      color: #666666;
+    }
+
+    .status-indicator {
+      margin-top: 20px;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .status-indicator span {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #333;
+      border-radius: 50%;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+
+    .status-indicator span[data-state="synced"] {
+      background-color: #00ba00;
+    }
+    .status-indicator span[data-state="pending"] {
+      background-color: #ffcc00;
+    }
+    .status-indicator span[data-state="failed"] {
+      background-color: #ff0000;
+    }
+
+    .status-description {
+      margin-top: 10px;
+    }
+
+    .learn-more {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #0066cc;
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function updateStatus(state) {
+      const indicators = document.querySelectorAll('.status-indicator span');
+      indicators.forEach((indicator, i) => {
+       

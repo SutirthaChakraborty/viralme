@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobileIron Explainer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007bff;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding MobileIron</h1>
+    </header>
+    <div class="content">
+        <h2>What is MobileIron?</h2>
+        <p>MobileIron is a leading <span class="keyword">mobile device management (MDM)</span> solution that helps organizations secure and manage their mobile devices and applications.</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="moreInfo">
+            <p>MobileIron provides features such as <span class="keyword">application management</span>, <span class="keyword">security compliance</span>, and <span class="keyword">data protection</span> to ensure that corporate data remains secure on mobile devices.</p>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

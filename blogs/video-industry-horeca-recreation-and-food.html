@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Industry in HORECA, Recreation, and Food</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .topic {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            flex: 1 1 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .topic h2 {
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        .gallery img {
+            height: 100px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Industry in HORECA, Recreation, and Food</h1>
+</header>
+
+<nav>
+    <a href="#video-marketing">Video Marketing</a>
+    <a href="#food-industry">Food Industry Trends</a>
+    <a href="#recreation">Recreation Insights</a>
+</nav>
+
+<div class="content">
+    <div class="topic" id="video-marketing">
+        <h2>Video Marketing</h2>
+        <p>Utilizing video content is essential for engaging customers in the HORECA sector. It enhances brand visibility and drives sales.</p>
+        <div class="gallery">
+            <img src="video1.jpg" alt="Video Marketing">
+            <img src="video2.jpg" alt="Video Marketing">
+            <img src="video3.jpg" alt="Video Marketing">
+        </div>
+    </div>
+    
+    <div class="topic" id="food-industry">
+        <h2>Food Industry Trends</h2>
+        <p>Innovative video campaigns showcase food preparation and dining experiences, attracting more customers to restaurants.</p>
+        <div class="gallery">
+            <img src="food1.jpg" alt="Food Trends">
+            <img src="food2.jpg" alt="Food Trends">
+            <img src="food3.jpg" alt="Food Trends">
+        </div>
+    </div>
+    
+    <div class="topic" id="recreation">
+        <h2>Recreation Insights</h2>
+        <p>Videos highlighting recreational activities can boost engagement and promote local attractions, enhancing visitor experiences.</p>
+        <div class="gallery">
+            <img src="recreation1.jpg" alt="Recreation Insights">
+            <img src="recreation2.jpg" alt="Recreation Insights">
+            <img src="recreation3.jpg" alt="Recreation Insights">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Video Industry Insights</p>
+</footer>
+
+<script>
+    document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

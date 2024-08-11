@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iWalks Projects</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.project-card {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ddd;
+			margin-bottom: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.project-card:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+		.project-card img {
+			width: 100%;
+			height: 150px;
+			object-fit: cover;
+			border-radius: 10px 10px 0 0;
+		}
+		.project-card h2 {
+			margin-top: 0;
+		}
+		.project-card p {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		.project-card button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.project-card button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>iWalks Projects</h1>
+		<div class="project-card">
+			<img src="https://picsum.photos/200/300" alt="Project 1">
+			<h2>Project 1: Smart Walking Stick</h2>
+			<p>iWalks' first project is a smart walking stick that helps visually impaired individuals navigate through their surroundings.</p>
+			<button>Learn More</button>
+		</div>
+		<div class="project-card">
+			<img src="https://picsum.photos/200/301" alt="Project 2">
+			<h2>Project 2: Virtual Walking Coach</h2>
+			<p>iWalks' second project is a virtual walking coach that provides personalized fitness guidance and tracking for individuals of all ages.</p>
+			<button>Get Started</button>
+		</div>
+		<script>
+			const projectCards = document.querySelectorAll('.project-card');
+			projectCards.forEach((card) => {
+				card.addEventListener('click', (e) => {
+					if (e.target.tagName === 'BUTTON') {
+						alert(`You clicked the button for ${card.querySelector('h2').textContent}`);
+					}
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+
+This code generates a simple HTML page with two project cards that showcase the iWalks projects. The projects are displayed with images, headings, and paragraphs of text. Each project card also has a button that, when clicked, triggers an alert box with a message related to the project. The code uses CSS to style the project cards and add interactive effects, such as hover effects and button clicks. The keywords used in the code include "iWalks", "projects", "smart walking stick", "virtual walking coach", and "fitness guidance".

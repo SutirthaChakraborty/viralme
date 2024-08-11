@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Yammer product tour for better team collaboration and communication. Learn how to enhance productivity with Microsoft Yammer.">
+    <meta name="keywords" content="Yammer, product tour, team collaboration, communication tool, Microsoft, social networking, employee engagement, cloud service">
+    <title>Yammer Product Tour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0078d4;
+            color: white;
+        }
+        .tour-section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005a9e;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #0078d4;
+            background-color: #e7f3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to the Yammer Product Tour</h1>
+        <p>Your guide to seamless team collaboration</p>
+    </div>
+    <div class="tour-section">
+        <h2>Feature Highlights</h2>
+        <p>Learn about key features of Yammer that enhance communication and collaboration.</p>
+        <button onclick="toggleInfo('feature1')">Real-time Discussions</button>
+        <div class="info" id="feature1">Engage in real-time discussions to keep everyone in the loop.</div>
+
+        <button onclick="toggleInfo('feature2')">File Sharing</button>
+        <div class="info" id="feature2">Easily share files and resources with your team.</div>
+
+        <button onclick="toggleInfo('feature3')">Integration with Microsoft 365</button>
+        <div class="info" id="feature3">Seamlessly integrate with Microsoft Teams, SharePoint, and more.</div>
+    </div>
+    <script>
+        function toggleInfo(featureId) {
+            var infoDiv = document.getElementById(featureId);
+            infoDiv.style.display = (infoDiv.style.display === "none" || infoDiv.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

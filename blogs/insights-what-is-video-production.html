@@ -1,0 +1,57 @@
+Here's a small HTML code snippet with CSS that provides information about video production:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Production Insights</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .video {
+      width: 80%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <video class="video" controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  
+  <script>
+    // JavaScript code
+    const video = document.querySelector('.video');
+    
+    video.addEventListener('play', () => {
+      console.log('Video is playing');
+    });
+    
+    video.addEventListener('pause', () => {
+      console.log('Video is paused');
+    });
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a simple webpage with a video player that allows users to play and pause the video. The CSS styles ensure that the video is centered on the page and responsive to different screen sizes. The JavaScript code adds event listeners to the video element to log messages when the video is played or paused.
+
+Please note that you will need to replace `"video.mp4"` with the actual path to your video file.
+
+**Keywords**: video production, HTML video, CSS, JavaScript, video player, responsive design, event listeners.

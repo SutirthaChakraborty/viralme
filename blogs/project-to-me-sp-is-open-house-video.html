@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open House Video - Project to Me SP</title>
+    <meta name="description" content="Explore the Project to Me SP's Open House Video showcasing innovative solutions and engaging community interactions.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Open House Video</h1>
+    <p>Project to Me SP - Showcasing Innovation & Community Engagement</p>
+</header>
+
+<section>
+    <h2>About the Open House Video</h2>
+    <p>Join us as we present our Project to Me SP Open House Video. Discover innovative solutions and community-driven conversations that empower our future.</p>
+    <button onclick="playVideo()">Watch Video</button>
+    <video id="openHouseVideo" controls style="display: none;">
+        <source src="open-house-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<footer>
+    <p>Connect with us on social media for more updates!</p>
+</footer>
+
+<script>
+    function playVideo() {
+        var video = document.getElementById('openHouseVideo');
+        video.style.display = 'block';
+        video.play();
+    }
+</script>
+
+</body>
+</html>

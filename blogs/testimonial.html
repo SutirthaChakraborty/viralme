@@ -1,0 +1,160 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonial Slider</title>
+<style>
+.testimonial-slider {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-slider .slides {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.testimonial-slider .slides li {
+  width: 20%;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial-slider .slides li .slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.testimonial-slider .slides li .slide-content .author {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.testimonial-slider .slides li .slide-content .quote {
+  font-size: 20px;
+  color: #333;
+}
+
+.testimonial-slider .navigation {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+.testimonial-slider .navigation button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.testimonial-slider .navigation button.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.testimonial-slider .navigation button:hover {
+  background: #0056b3;
+}
+
+@keyframes testimonial-slide {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.testimonial-slider.auto .slides li {
+  animation: testimonial-slide 20s linear infinite;
+}
+
+.testimonial-slider.auto .navigation button {
+  cursor: default;
+}
+</style>
+</head>
+<body>
+<div class="testimonial-slider auto">
+  <ul class="slides">
+    <li>
+      <div class="slide-content" style="background-image: url('https://via.placeholder.com/600x300?text=Slide+1');">
+        <div class="author">John Doe</div>
+        <div class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      </div>
+    </li>
+    <li>
+      <div class="slide-content" style="background-image: url('https://via.placeholder.com/600x300?text=Slide+2');">
+        <div class="author">Jane Doe</div>
+        <div class="quote">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</div>
+      </div>
+    </li>
+    <li>
+      <div class="slide-content" style="background-image: url('https://via.placeholder.com/600x300?text=Slide+3');">
+        <div class="author">Jimmy Joe</div>
+        <div class="quote">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</div>
+      </div>
+    </li>
+  </ul>
+  <div class="navigation">
+    <button data-slide="prev">Prev</button>
+    <button data-slide="next">Next</button>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.testimonial-slider .navigation button').forEach(function(button) {
+  button.addEventListener('click', function() {
+    var slider = button.closest('.testimonial-slider');
+    var slides = slider.querySelector('.slides');
+    var activeSlide = slides.querySelector('li.active');
+    var nextSlide;
+
+    if (button.dataset.slide === 'next') {
+      if (activeSlide.nextElementSibling) {
+        nextSlide = activeSlide.nextElementSibling;
+      } else {
+        nextSlide = slides.querySelector('li:first-child');
+      }
+    } else {
+      if (activeSlide.previousElementSibling) {
+        nextSlide = activeSlide.previousElementSibling;
+      } else {
+        nextSlide = slides.querySelector('li:last-child');
+      }
+    }
+
+    activeSlide.classList.remove('active');
+    nextSlide.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>

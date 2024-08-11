@@ -1,0 +1,75 @@
+Here's a simple HTML code with embedded CSS and a JavaScript snippet for a time lapse construction video gallery. The gallery will display images from a construction project in Ireland, and the CSS provides a sleek and interactive design.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Lapse Construction - Ireland</title>
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 50px;
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .img-container:hover .caption {
+            opacity: 1;
+        }
+        
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        a {
+            display: block;
+            width: 100%;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function showCaption(index) {
+            const captions = document.getElementsByClassName('caption');
+            captions.forEach(cap => cap.style.opacity = '0');
+            captions[index].style.opacity = '1';
+        }
+    </script>
+</head>
+<body>
+    <div class="gallery">
+        <div class="img-container" onclick="showCaption(0)">
+            <img src="image1.jpg" alt="Construction Progress 1">
+            <div class="caption">Phase 1 - Foundation</div>
+        </div>
+        <div class="img-container" onclick="showCaption(1)">
+            <img src="image2.jpg" alt="Construction Progress 2">
+            <div class="caption">Structure Elevating</div>
+        </div>
+        <div class="img-container" onclick="showCaption(2)">
+            <img src="image

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Livestream Portfolio category to showcase your live streaming projects and services effectively.">
+    <title>Portfolio - Livestream Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .portfolio-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #003d7a;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio - Livestream Projects</h1>
+    <p>Discover our innovative livestream projects that engage audiences and elevate your brand. Explore our services in live broadcasting, online events, and interactive streaming solutions.</p>
+    
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <h2>Event Livestreaming</h2>
+            <p>Professional streaming of corporate events with high-quality video and sound. Reach a global audience effortlessly!</p>
+            <a href="#" class="button">View Project</a>
+        </div>
+        <div class="portfolio-item">
+            <h2>Gaming Streams</h2>
+            <p>Interactive gaming livestreams that enhance viewer engagement with chats and live reactions.</p>
+            <a href="#" class="button">View Project</a>
+        </div>
+        <div class="portfolio-item">
+            <h2>Webinars & Online Workshops</h2>
+            <p>Seamless organization of webinars to educate and engage your audience in real time.</p>
+            <a href="#" class="button">View Project</a>
+        </div>
+    </div>
+
+    <script>
+        const buttons = document.querySelectorAll('.button');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Thank you for your interest! Check back soon for more livestreaming projects.');
+            });
+        });
+    </script>
+</body>
+</html>

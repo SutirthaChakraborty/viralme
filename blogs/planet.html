@@ -1,0 +1,69 @@
+#### HTML and CSS Code for Planet Information
+
+Below is a sample HTML and CSS code for displaying planet information with interactive CSS and JS.
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Planet Information</title>
+</head>
+<body>
+  <h1>Welcome to the Planetarium</h1>
+  <div class="planet">
+    <h2>Planet Name: <span id="planetName">Mars</span></h2>
+    <p>Planet Type: <span id="planetType">Terrestrial</span></p>
+    <p>Distance from Sun: <span id="distance">227.9 million km</span></p>
+  </div>
+  <button onclick="changeColor()">Change Color</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+h1 {
+  color: #333;
+}
+.planet {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 300px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #45a049;
+}
+
+
+JavaScript (script.js):
+javascript
+function changeColor() {
+  const planet = document.querySelector('.planet');
+  const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  planet.style.backgroundColor = randomColor;
+}
+
+
+This code creates a simple webpage displaying planet information with interactive CSS to change the color of the planet information box.

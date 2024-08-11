@@ -1,0 +1,99 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project Type Promotional Video</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  animation: slideInShadow 2s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  background-color: #2ecc71;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 28px;
+}
+
+.project-title {
+  color: #4e6db0;
+}
+
+.video-embed {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.video-embed iframe {
+  border: 0;
+  width: 100%;
+  height: 500px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+@keyframes slideInShadow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+<script>
+window.onload = function() {
+  document.querySelector('.button').addEventListener('click', function() {
+    // Add interactivity, for example, the video plays/pauses on button click
+    var video = document.getElementById('promo-video');
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+};
+</script>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1 class="

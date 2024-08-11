@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>服务白皮书设计</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.description {
+			margin-bottom: 20px;
+		}
+		.services {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.services li {
+			margin-bottom: 10px;
+		}
+		.services li::before {
+			content: '\e900';
+			font-family: 'icomoon';
+			font-size: 18px;
+			margin-right: 10px;
+			color: #666;
+		}
+		.interactive {
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.interactive:hover {
+			background-color: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">服务白皮书设计</h1>
+		<p class="description">本白皮书旨在介绍我们的服务范围，包括但不限于以下几点：</p>
+		<ul class="services">
+			<li>技术服务</li>
+			<li>解决方案</li>
+			<li>项目实施</li>
+			<li>技术支持</li>
+		</ul>
+		<button class="interactive" onclick="alert('技术服务')">技术服务</button>
+		<button class="interactive" onclick="alert('解决方案')">解决方案</button>
+		<button class="interactive" onclick="alert('项目实施')">项目实施</button>
+		<button class="interactive" onclick="alert('技术支持')">技术支持</button>
+	</div>
+	<script>
+		var services = document.querySelectorAll('.services li');
+		services.forEach(function(service) {
+			service.addEventListener('click', function() {
+				alert(service.textContent);
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+Keyword: 服务白皮书设计, 技术服务, 解决方案, 项目实施, 技术支持, white paper design, service design, technical service, solution, project implementation, technical support.

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploring the impact of humor in explainer videos. Should your videos be funny? Discover the benefits and techniques.">
+    <title>Should Explainer Videos be Funny?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Should Explainer Videos be Funny?</h1>
+        <p>Explainer videos are a vital tool for businesses, but should they incorporate humor? Let's explore the pros and cons!</p>
+        <button id="toggle">Show Benefits of Humor in Videos</button>
+        <div id="result" style="display: none;">
+            <h2>Benefits of Using Humor:</h2>
+            <ul>
+                <li>Increased Engagement: Humor captivates viewers and keeps them interested.</li>
+                <li>Memorable: Funny content is easier to remember and share.</li>
+                <li>Brand Connection: Humor can humanize a brand and create emotional bonds.</li>
+                <li>Boosted Retention: Viewers are more likely to retain information presented in a humorous format.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("toggle").onclick = function() {
+            var result = document.getElementById("result");
+            if (result.style.display === "none") {
+                result.style.display = "block";
+                this.innerHTML = "Hide Benefits";
+            } else {
+                result.style.display = "none";
+                this.innerHTML = "Show Benefits of Humor in Videos";
+            }
+        };
+    </script>
+</body>
+</html>

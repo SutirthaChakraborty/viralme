@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the beauty of time-lapse photography capturing the essence of Irish life.">
+    <meta name="keywords" content="time lapse, Irish life, Irish culture, photography, landscape, nature, time lapse photography">
+    <title>Time Lapse of Irish Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Time Lapse Irish Life</h1>
+        <p>Experience the dynamic flow of daily life in Ireland through stunning time-lapse videos.</p>
+    </header>
+    <div class="content">
+        <h2>What is Time Lapse Photography?</h2>
+        <p>Time lapse photography is a technique that captures a sequence of photos at set intervals to create a video that shows changes over time in a compressed format.</p>
+        <button onclick="showExample()">See an Example</button>
+        <div id="example" style="display:none; margin-top:20px;">
+            <h3>Example: Sunrise Over the Cliffs of Moher</h3>
+            <video width="320" height="240" controls>
+                <source src="sunrise_cliffs_moher.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <script>
+        function showExample() {
+            var example = document.getElementById("example");
+            if (example.style.display === "none") {
+                example.style.display = "block";
+            } else {
+                example.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

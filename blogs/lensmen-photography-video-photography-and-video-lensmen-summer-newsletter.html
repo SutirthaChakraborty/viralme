@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Summer Newsletter from Lensmen Photography - Your Guide to Photography and Video Techniques">
+    <title>Lensmen Photography Summer Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .topic {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 5px solid #0073e6;
+            transition: background 0.3s;
+        }
+        .topic:hover {
+            background: #e6f7ff;
+        }
+        button {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lensmen Photography Summer Newsletter</h1>
+</header>
+
+<div class="container">
+    <h2>Welcome to Our Summer Newsletter!</h2>
+    <p>Get ready to enhance your Photography and Video skills with our latest tips and updates!</p>
+
+    <div class="topic" id="photography">
+        <h3>Photography Tips</h3>
+        <p>Learn to capture stunning images with expert techniques. Explore composition, lighting, and focus.</p>
+        <button onclick="showDetails('photographyDetails')">Learn More</button>
+        <p id="photographyDetails" style="display:none;">Explore advanced techniques like long exposure, HDR, and macro photography!</p>
+    </div>
+
+    <div class="topic" id="video">
+        <h3>Video Photography Insights</h3>
+        <p>Master the art of storytelling through video. Understand framing, angles, and editing basics.</p>
+        <button onclick="showDetails('videoDetails')">Learn More</button>
+        <p id="videoDetails" style="display:none;">Discover tips on stabilization, sound recording, and post-production techniques!</p>
+    </div>
+
+    <div class="topic" id="lensmen">
+        <h3>About Our Lensmen</h3>
+        <p>Meet our passionate professionals ready to capture your moments with lenses that tell a story.</p>
+        <button onclick="showDetails('lensmenDetails')">Learn More</button>
+        <p id="lensmenDetails" style="display:none;">Our team specializes in various styles, from portrait to commercial photography!</p>
+    </div>
+</div>
+
+<script>
+    function showDetails(id) {
+        const details = document.getElementById(id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

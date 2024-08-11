@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Project SMU Symphonia Homebound: A musical initiative connecting communities through virtual engagement.">
+    <title>Project SMU Symphonia Homebound</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle-info {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .toggle-info:hover {
+            background-color: #0056b3;
+        }
+        .additional-info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project SMU Symphonia Homebound</h1>
+        <p>Project SMU Symphonia Homebound is a community-driven initiative focused on enhancing the emotional and social well-being of individuals through the power of music. This project provides virtual concerts and music-related activities, allowing people to engage with art from the comfort of their homes.</p>
+        <button class="toggle-info">Learn More</button>
+        <div class="additional-info">
+            <h2>Key Features:</h2>
+            <ul>
+                <li>Virtual Concerts: Enjoy live performances from talented musicians.</li>
+                <li>Interactive Workshops: Participate in music-making sessions and discussions.</li>
+                <li>Community Engagement: Connect with others who share a passion for music.</li>
+                <li>Accessibility: Designed for individuals of all ages and backgrounds.</li>
+            </ul>
+            <h2>Get Involved:</h2>
+            <p>Join us in making a difference through music! Visit our website for more information on upcoming events and how you can support the initiative.</p>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector('.toggle-info');
+        const info = document.querySelector('.additional-info');
+
+        button.addEventListener('click', () => {
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+            button.textContent = info.style.display === 'block' ? 'Show Less' : 'Learn More';
+        });
+    </script>
+</body>
+</html>

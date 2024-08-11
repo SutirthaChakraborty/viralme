@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploring the effectiveness, ethics, and impact of targeted advertising. Discover insights on consumer behavior, privacy concerns, and ad relevance.">
+    <title>Targeted Advertising: Ethics & Impact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #info {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Targeted Advertising: Ethics & Impact</h1>
+</header>
+
+<article>
+    <h2>Understanding Targeted Advertising</h2>
+    <p>Targeted advertising leverages data analytics to optimize ad relevance, improving user engagement. However, it raises ethical questions about privacy and data security.</p>
+    
+    <h2>Ethical Considerations</h2>
+    <p>Marketers must balance personalization with privacy. Ethical frameworks should guide data usage to protect consumer rights.</p>
+
+    <h2>Impact on Consumer Behavior</h2>
+    <p>Effective targeting can enhance conversion rates, but excessive targeting may lead to ad fatigue or resentment.</p>
+
+    <button id="toggleInfo">Learn More</button>
+    
+    <div id="info">
+        <h3>Further Insights</h3>
+        <ul>
+            <li>Data Privacy Regulations</li>
+            <li>Consumer Trust and Brand Loyalty</li>
+            <li>The Future of Advertising Technologies</li>
+        </ul>
+    </div>
+</article>
+
+<script>
+    document.getElementById('toggleInfo').addEventListener('click', function() {
+        var info = document.getElementById('info');
+        if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block';
+            this.textContent = 'Show Less';
+        } else {
+            info.style.display = 'none';
+            this.textContent = 'Learn More';
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Skip the Stress Promo Video</title>
+    <style>
+        /* Use important keywords for SEO */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        video#promo-video {
+            margin: auto;
+            display: block;
+            max-width: 100%;
+            height: 500px;
+            object-fit: cover;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+            cursor: pointer; /* Add interactivity */
+        }
+
+        .video-controls {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 1;
+        }
+
+        .play-button {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #333;
+            font-size: 24px;
+            padding: 6px 12px;
+            outline: none;
+            position: relative;
+            font-family: 'Iconic', Arial, sans-serif;
+        }
+
+        .play-button:before {
+            content: '\f004'; /* Play symbol */
+        }
+
+        .pause-button {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #333;
+            font-size: 24px;
+            padding: 6px 12px;
+            outline: none;
+            transform: rotate(180deg);
+            position: relative;
+            font-family: 'Iconic', Arial, sans-serif;
+        }
+
+       

@@ -1,0 +1,46 @@
+#### HTML Code with CSS for Motion Graphics 360 Image Hotspots
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>360 Image Hotspots</title>
+  <style>
+    /* Add CSS for hotspot styling */
+    .hotspot {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff0000;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="panorama">
+    <!-- 360 image viewer goes here -->
+    <img src="360-image.jpg" alt="360 Image">
+    <!-- Add hotspots -->
+    <div class="hotspot" style="top: 30%; left: 45%;"></div>
+    <div class="hotspot" style="top: 60%; left: 70%;"></div>
+  </div>
+
+  <script>
+    // Add JavaScript for hotspot interactivity
+    const hotspots = document.querySelectorAll('.hotspot');
+    hotspots.forEach((hotspot, index) => {
+      hotspot.addEventListener('click', () => {
+        // Handle hotspot click event
+        console.log('Clicked on hotspot ' + (index + 1));
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+This HTML code provides a basic structure for a 360 image viewer with interactive hotspots. The CSS defines the style for the hotspots, and the JavaScript adds interactivity to the hotspots, allowing for actions to be triggered when they are clicked. The hotspots are represented as red circles and can be customized further based on specific requirements [[1]](https://sirv.com/help/articles/hotspots-on-360-spin/).
+
+Feel free to integrate this code into your project and customize it according to your needs!

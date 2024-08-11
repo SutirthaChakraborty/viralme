@@ -1,0 +1,57 @@
+Sure! Here's a small HTML code snippet that includes CSS and JavaScript to create a portfolio item showcasing a time lapse:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Item: Time Lapse</title>
+    <style>
+        /* CSS for the portfolio item */
+        .portfolio-item {
+            width: 300px;
+            height: 200px;
+            background-image: url('time-lapse-image.jpg');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .play-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-item">
+        <div class="play-button">Play</div>
+    </div>
+
+    <script>
+        // JavaScript for the interactive play button
+        var playButton = document.querySelector('.play-button');
+        playButton.addEventListener('click', function() {
+            // Start the time lapse animation or video playback here
+            alert('Playing time lapse video!');
+        });
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a portfolio item with a time-lapse theme. The item has a fixed width and height, with a background image representing the time-lapse video. The play button is positioned in the center of the item and is clickable. When the play button is clicked, an alert is shown indicating that the time lapse video is being played.
+
+To make this code work, you will need to replace `'time-lapse-image.jpg'` with the URL or file path of your actual time lapse image.
+
+Feel free to modify the CSS styles and JavaScript code to suit your needs.

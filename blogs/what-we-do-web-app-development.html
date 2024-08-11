@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>What We Do: Web App Development</h1>
+    </header>
+    <section>
+        <h2>Our Services</h2>
+        <p>We specialize in **custom web application development**, leveraging the latest technologies to create robust solutions tailored to your business needs.</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div id="moreInfo" class="hidden">
+            <p>Our team provides services in:</p>
+            <ul>
+                <li>Responsive Web Design</li>
+                <li>API Integration</li>
+                <li>Cloud Solutions</li>
+                <li>E-commerce Development</li>
+                <li>Mobile-Friendly Applications</li>
+                <li>User Experience (UX) Optimization</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.classList.contains("hidden")) {
+                info.classList.remove("hidden");
+            } else {
+                info.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>

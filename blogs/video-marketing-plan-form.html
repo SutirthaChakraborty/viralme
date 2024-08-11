@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Marketing Plan Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #5cb85c;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+        .response {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #dff0d8;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Marketing Plan Form</h1>
+        <form id="videoMarketingForm">
+            <label for="businessName">Business Name:</label>
+            <input type="text" id="businessName" required>
+
+            <label for="videoType">Type of Video:</label>
+            <input type="text" id="videoType" required>
+
+            <label for="targetAudience">Target Audience:</label>
+            <input type="text" id="targetAudience" required>
+
+            <label for="goal">Marketing Goals:</label>
+            <textarea id="goal" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="response" id="responseMessage"></div>
+    </div>
+    <script>
+        document.getElementById('videoMarketingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const businessName = document.getElementById('businessName').value;
+            const videoType = document.getElementById('videoType').value;
+            const targetAudience = document.getElementById('targetAudience').value;
+            const goal = document.getElementById('goal').value;
+
+            const responseMessage = `
+                Your Video Marketing Plan:
+                Business Name: ${businessName}
+                Video Type: ${videoType}
+                Target Audience: ${targetAudience}
+                Marketing Goals: ${goal}
+            `;
+
+            document.getElementById('responseMessage').innerText = responseMessage;
+            document.getElementById('responseMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagerDuty ITv: Incident Management Simplified</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #description {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .toggle-button:hover {
+            background-color: #0056b3;
+        }
+        #details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PagerDuty ITv: Transforming Incident Response</h1>
+    <div id="description">
+        <p>PagerDuty ITv is a cutting-edge incident management platform that empowers IT teams to quickly respond to incidents, ensuring system reliability and uptime.</p>
+        <button class="toggle-button" onclick="toggleDetails()">Learn More</button>
+        <div id="details">
+            <p>With features like real-time alerts, on-call management, and integration with popular tools, PagerDuty ITv helps organizations streamline their operational workflows and minimize downtime.</p>
+            <p>Key benefits include:</p>
+            <ul>
+                <li>Rapid incident response</li>
+                <li>Automated escalation policies</li>
+                <li>Enhanced team collaboration</li>
+                <li>Detailed analytics and reporting</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById('details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                event.target.textContent = 'Show Less';
+            } else {
+                details.style.display = 'none';
+                event.target.textContent = 'Learn More';
+            }
+        }
+    </script>
+</body>
+</html>

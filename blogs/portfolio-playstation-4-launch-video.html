@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the launch video of PlayStation 4 showcasing gameplay, features, and exclusive titles.">
+    <meta name="keywords" content="PlayStation 4, PS4 launch video, gaming, exclusive titles, console launch, gameplay trailer">
+    <title>PlayStation 4 Launch Video Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0071dc;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0071dc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PlayStation 4 Launch Video</h1>
+        <p>Experience the excitement of the PlayStation 4 launch through this captivating video. Witness the thrilling gameplay, stunning graphics, and exclusive titles that set PS4 apart from the competition.</p>
+        
+        <video controls>
+            <source src="ps4-launch-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2>Highlights of the Launch</h2>
+        <ul>
+            <li>Unrivaled performance and graphics</li>
+            <li>Exclusive game titles like Killzone, Knack, and more</li>
+            <li>Advanced social features for gamers</li>
+            <li>Immersive new gaming experiences</li>
+        </ul>
+
+        <a href="#more" class="button" onclick="displayMore()">Discover More About PS4</a>
+        
+        <div id="more" style="display:none; margin-top: 20px;">
+            <h2>About PlayStation 4</h2>
+            <p>The PlayStation 4 is a gaming console developed by Sony Interactive Entertainment. It was launched on November 15, 2013, and has since become one of the best-selling consoles of all time.</p>
+            <p>Its powerful hardware enables stunning graphics and immersive gameplay experiences, making it a favorite among gamers worldwide.</p>
+        </div>
+    </div>
+
+    <script>
+        function displayMore() {
+            const moreInfo = document.getElementById('more');
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

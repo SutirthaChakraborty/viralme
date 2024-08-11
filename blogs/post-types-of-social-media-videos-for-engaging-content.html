@@ -1,0 +1,71 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        .post-types {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+        }
+        .post-type {
+            flex: 1;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .post-type:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .post-type h3 {
+            margin-top: 0;
+        }
+        .post-type p {
+            margin-bottom: 5px;
+        }
+        .example-video {
+            width: 50%;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: none;
+        }
+        .show-examples {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    </style>
+    <script>
+        function toggleExamples(postId) {
+            const exampleVideos = document.getElementsByClassName('example-video');
+            for (let i = 0; i < exampleVideos.length; i++) {
+                if (exampleVideos[i].id === postId) {
+                    exampleVideos[i].style.display = (exampleVideos[i].style.display === 'none' ? 'block' : 'none');
+                    document.getElementById(`toggle-${postId}`).innerText = (exampleVideos[i].style.display === 'block' ? 'Hide Video' : 'Show Video');
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h2>Engaging Social Media Video Post Types</h2>
+       

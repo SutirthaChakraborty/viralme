@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Wrapped 2023: Discover Your Year in Music</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1DB954;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #282828;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+            background-color: #1DB954;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #1ED760;
+        }
+        #stats {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #1DB954;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spotify Wrapped 2023</h1>
+    <div class="content">
+        <p>This year, Spotify Wrapped showcases your listening habits, favorite tracks, and top artists!</p>
+        <p>Discover <span class="keyword">personalized insights</span>, hear your <span class="keyword">top songs</span>, and connect with <span class="keyword">music lovers</span> worldwide!</p>
+        <div class="btn" onclick="toggleStats()">Show My Wrapped Stats</div>
+        <div id="stats">
+            <p>Your Top Artist: <span id="topArtist"></span></p>
+            <p>Your Most Played Song: <span id="topSong"></span></p>
+            <p>Total Minutes Listening: <span id="listeningTime"></span> min</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleStats() {
+            const stats = document.getElementById('stats');
+            if (stats.style.display === "none") {
+                stats.style.display = "block";
+                document.getElementById('topArtist').innerText = "The Weeknd"; // Example data
+                document.getElementById('topSong').innerText = "Blinding Lights"; // Example data
+                document.getElementById('listeningTime').innerText = "1200"; // Example data
+            } else {
+                stats.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

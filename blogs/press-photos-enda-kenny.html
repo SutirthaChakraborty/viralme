@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="This HTML page showcases press photos of Enda Kenny, the former Taoiseach of Ireland.">
+  <meta name="keywords" content="Enda Kenny, Irish politics, press photos, leader portrait, interactive CSS, responsive design">
+  <title>Enda Kenny Press Photos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .photo-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .photo {
+      width: 30%;
+      height: auto;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .photo:hover {
+      transform: scale(1.1);
+    }
+    
+    @media (max-width: 768px) {
+      .photo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Enda Kenny: A Look at His Press Photos</h1>
+    <div class="photo-container">
+      <!-- Add your image URLs or placeholders here, replace with actual photos -->
+      <img src="image1.jpg" alt="Enda Kenny, circa 2011" class="photo">
+      <img src="image2.jpg" alt="Enda Kenny with other politicians" class="photo">
+      <img src="image3.jpg" alt="Enda Kenny at a press conference" class="photo">
+    </div>
+    <!-- Add a lightbox for image interaction using JavaScript -->
+    <script>
+      function openLightbox(imgUrl) {
+        var lightbox = document.getElementById('lightbox');
+        lightbox.style.display = 'block';
+        lightbox.firstChild.src = imgUrl;
+      }
+
+      function closeLight

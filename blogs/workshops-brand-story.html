@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover engaging workshops that tell the brand story through interactive experiences. Join us to learn more about brand storytelling!">
+    <title>Workshops Brand Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .workshop {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .workshop:hover {
+            background: #d1d1d1;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Interactive Workshops on Brand Storytelling</h1>
+    <div class="workshop" onclick="toggleDetails('details1')">
+        <h2>Emotional Branding</h2>
+        <div id="details1" class="details">
+            Learn how to connect your brand with customers' emotions to create memorable experiences.
+        </div>
+    </div>
+    <div class="workshop" onclick="toggleDetails('details2')">
+        <h2>Visual Storytelling</h2>
+        <div id="details2" class="details">
+            Discover the power of visuals in conveying your brand’s story and enhancing engagement.
+        </div>
+    </div>
+    <div class="workshop" onclick="toggleDetails('details3')">
+        <h2>Brand Voice Development</h2>
+        <div id="details3" class="details">
+            Craft a unique brand voice that resonates with your audience and reflects your values.
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+    }
+</script>
+</body>
+</html>

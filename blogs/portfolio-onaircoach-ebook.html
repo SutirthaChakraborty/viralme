@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the OnAirCoach eBook portfolio for personal development, coaching strategies, and self-improvement techniques.">
+    <title>OnAirCoach eBook Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .book {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .book:hover {
+            transform: scale(1.05);
+            border-color: #333;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OnAirCoach eBook Portfolio</h1>
+        <p>Your journey to self-improvement starts here!</p>
+    </header>
+    <section>
+        <h2>Explore Our eBooks</h2>
+        <div class="book" onclick="alert('Discover Coaching Strategies!')">
+            <h3>Coaching Techniques for Success</h3>
+            <p>Learn effective coaching methods to enhance performance and achieve goals.</p>
+            <a class="button" href="#">View eBook</a>
+        </div>
+        <div class="book" onclick="alert('Unlock Your Potential!')">
+            <h3>Unlock Your True Potential</h3>
+            <p>Transform your life with proven self-improvement strategies.</p>
+            <a class="button" href="#">View eBook</a>
+        </div>
+        <div class="book" onclick="alert('Master Time Management!')">
+            <h3>Mastering Time Management</h3>
+            <p>Effective techniques to manage your time and boost productivity.</p>
+            <a class="button" href="#">View eBook</a>
+        </div>
+        <div class="book" onclick="alert('Enhance Your Mindset!')">
+            <h3>Mindset for Achievers</h3>
+            <p>Harness the power of a positive mindset to reach your aspirations.</p>
+            <a class="button" href="#">View eBook</a>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.book').forEach(item => {
+            item.addEventListener('click', event => {
+                console.log(item.querySelector('h3').innerText);
+            });
+        });
+    </script>
+</body>
+</html>

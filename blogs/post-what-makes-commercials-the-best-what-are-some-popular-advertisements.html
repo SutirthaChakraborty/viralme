@@ -1,0 +1,71 @@
+Here's a simple HTML code with CSS and JavaScript that highlights the topic of commercials and their popularity, along with related keywords in an interactive way:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercials: The Best Advertisements & Popular Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 50px;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .keyword-effect {
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .hover-effect {
+            cursor: pointer;
+        }
+        .popularity {
+            margin-top: 20px;
+        }
+        .pop-ad-examples {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .ad-item {
+            width: 45%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        .ad-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        // JavaScript to show/hide explanation based on keyword hover
+        function showExplanation(keyword) {
+            const explanations = document.querySelectorAll('.explanation');
+            explanations.forEach(exp => exp.style.display = 'none');
+            const foundExplanation = document.querySelector(`.keyword-explanation[data-keyword="${keyword}"]`);
+            if (foundExplanation) {
+                foundExplanation.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Exploring the Best Commercials & Popular Advertisements</h1>
+        <div class="keyword-effect" onclick="showExplanation('product placement');">Product

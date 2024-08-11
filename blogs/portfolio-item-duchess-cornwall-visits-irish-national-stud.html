@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Duchess Cornwall visits the Irish National Stud, showcasing her passion for equestrian culture and breeding excellence.">
+    <title>Duchess Cornwall Visits Irish National Stud</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .portfolio-item {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        .image {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-item">
+        <h1>Duchess Cornwall Visits Irish National Stud</h1>
+        <img src="duchess-cornwall-irish-stud.jpg" alt="Duchess Cornwall at Irish National Stud" class="image">
+        <p>The visit of the Duchess Cornwall to the Irish National Stud highlighted her dedication to equestrian culture and interest in horse breeding.</p>
+        <h2>About the Irish National Stud</h2>
+        <p>The Irish National Stud is renowned for its exceptional horse breeding programs, focusing on thoroughbred racehorses.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <p>The stud is a major tourist attraction, offering visitors insights into horse care, breeding, and the rich history of Irish equestrian traditions.</p>
+        </div>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            const info = document.getElementById('moreInfo');
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

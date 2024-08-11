@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Republic Polytechnic Early Admission Exercise</title>
+    <meta name="description" content="Get insights about the Republic Polytechnic Early Admission Exercise (EAE) for prospective students seeking a head start in their polytechnic journey.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .accordion {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: 0.4s;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #0077cc;
+            color: white;
+        }
+        .panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Republic Polytechnic Early Admission Exercise (EAE)</h1>
+        <p>Jumpstart your Polytechnic Journey!</p>
+    </header>
+    <section>
+        <h2>What is EAE?</h2>
+        <button class="accordion">Overview</button>
+        <div class="panel">
+            <p>The Early Admission Exercise (EAE) allows Secondary 4 students to secure a place in Republic Polytechnic before receiving their final exam results.</p>
+        </div>
+
+        <button class="accordion">Eligibility</button>
+        <div class="panel">
+            <p>Students who meet specific criteria such as academic performance and strong interest in their chosen field are eligible to apply for EAE.</p>
+        </div>
+        
+        <button class="accordion">Application Process</button>
+        <div class="panel">
+            <p>The application process typically includes submitting relevant documents, attending interviews, and showcasing your passion through a portfolio.</p>
+        </div>
+        
+        <button class="accordion">Benefits of EAE</button>
+        <div class="panel">
+            <p>Gain an early assurance of a place in a desired course, allowing for focused preparation and reduced stress during your final exams.</p>
+        </div>
+    </section>
+    <script>
+        const accordions = document.getElementsByClassName("accordion");
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

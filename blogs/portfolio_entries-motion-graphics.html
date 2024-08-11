@@ -1,0 +1,93 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Entries: Motion Graphics Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        header {
+            background-color: #3498db;
+            text-align: center;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .portfolio-item {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-content {
+            color: #fff;
+            font-size: 16px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        function revealDescription() {
+            var overlay = document.getElementsByClassName('portfolio-item')[event.target.dataset.index].getElementsByClassName('overlay')[0];
+            overlay.classList.toggle('show-description');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Entries: Motion Graphics</h1>
+        <p>Explore captivating design solutions in motion graphics</p>
+    </header>
+
+    <div class="container">
+        <div class="portfolio-item" data-index="0">
+           

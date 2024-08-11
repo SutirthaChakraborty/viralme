@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Photographers in Dublin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .photographer {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .photographer:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top Event Photographers in Dublin</h1>
+    </header>
+    <div class="container">
+        <div class="photographer">
+            <h2>John Doe Photography</h2>
+            <p>Specializing in corporate events and weddings. Capturing moments that matter.</p>
+        </div>
+        <div class="photographer">
+            <h2>Jane Smith Photography</h2>
+            <p>Expert in candid photography for events and parties. Making memories last forever.</p>
+        </div>
+        <div class="photographer">
+            <h2>Event Capture Dublin</h2>
+            <p>Professional photography services for all types of events. Your story, beautifully told.</p>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us for bookings and inquiries!</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.photographer').forEach(item => {
+            item.addEventListener('click', event => {
+                alert('You clicked on ' + item.querySelector('h2').innerText);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Press photos from the 2016 Dublin Saint Patrick's Day Parade, showcasing the vibrant celebrations, cultural heritage, and festive spirit of Ireland.">
+    <title>Dublin Saint Patrick's Day Parade 2016 - Press Photos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #005b5c;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo {
+            flex: 1 1 calc(33.33% - 10px);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay img {
+            width: 80%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dublin Saint Patrick's Day Parade 2016 Press Photos</h1>
+    <p>Explore stunning press photos capturing the essence of Dublin's vibrant Saint Patrick's Day Parade 2016. Celebrate Ireland's rich culture, traditions, and the joyous atmosphere of the festivities.</p>
+    
+    <div class="gallery">
+        <div class="photo" onclick="showImage('img1.jpg')">
+            <img src="img1_thumb.jpg" alt="Dublin Parade Float">
+        </div>
+        <div class="photo" onclick="showImage('img2.jpg')">
+            <img src="img2_thumb.jpg" alt="Marching Band at Dublin Parade">
+        </div>
+        <div class="photo" onclick="showImage('img3.jpg')">
+            <img src="img3_thumb.jpg" alt="Crowd Enjoying the Parade">
+        </div>
+        <div class="photo" onclick="showImage('img4.jpg')">
+            <img src="img4_thumb.jpg" alt="Traditional Irish Dancers">
+        </div>
+        <div class="photo" onclick="showImage('img5.jpg')">
+            <img src="img5_thumb.jpg" alt="St. Patrick's Day Costumes">
+        </div>
+        <div class="photo" onclick="showImage('img6.jpg')">
+            <img src="img6_thumb.jpg" alt="Dublin City Celebrations">
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <img id="fullImage" src="" alt="Full Image">
+    </div>
+
+    <script>
+        function showImage(src) {
+            document.getElementById('fullImage').src = src;
+            document.getElementById('overlay').style.display = 'flex';
+        }
+        function closeImage() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

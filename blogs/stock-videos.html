@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the world of stock videos for your creative projects. Find high-quality footage and learn how to use it effectively.">
+    <title>Stock Videos: Enhance Your Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .video {
+            display: none;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stock Videos</h1>
+        <p>Your source for high-quality video content!</p>
+    </header>
+    <div class="content">
+        <h2>Why Use Stock Videos?</h2>
+        <p>Stock videos save time and resources in your creative projects. They provide a plethora of high-resolution footage for marketing, social media, and film production.</p>
+        <button onclick="toggleVideo()">Watch Example</button>
+        <div class="video" id="videoContainer">
+            <video width="100%" controls>
+                <source src="example-stock-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

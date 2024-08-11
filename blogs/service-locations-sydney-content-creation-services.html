@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Sydney Content Creation Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .service h2 {
+            color: #007BFF;
+        }
+        .service p {
+            color: #555;
+        }
+        .contact-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Content Creation Services in Sydney</h1>
+    <div class="service-container">
+        <div class="service">
+            <h2>Social Media Management</h2>
+            <p>Boost your online presence with our expert social media strategies tailored for your brand.</p>
+            <button class="contact-button" onclick="contactUs('Social Media Management')">Contact Us</button>
+        </div>
+        <div class="service">
+            <h2>SEO Content Writing</h2>
+            <p>Enhance your website's visibility with high-quality, SEO-optimized content that attracts traffic.</p>
+            <button class="contact-button" onclick="contactUs('SEO Content Writing')">Contact Us</button>
+        </div>
+        <div class="service">
+            <h2>Video Production</h2>
+            <p>Create engaging video content that tells your story and captivates your audience.</p>
+            <button class="contact-button" onclick="contactUs('Video Production')">Contact Us</button>
+        </div>
+    </div>
+    <script>
+        function contactUs(service) {
+            alert("Thank you for your interest in " + service + "! We will get back to you shortly.");
+        }
+    </script>
+</body>
+</html>

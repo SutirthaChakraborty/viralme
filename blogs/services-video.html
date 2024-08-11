@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>服务视频</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.video-container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-container h2 {
+			margin-top: 0;
+		}
+		
+		.video-container .video-js {
+			width: 100%;
+			height: 300px;
+			border: 1px solid #ccc;
+		}
+		
+		.video-container .video-js .vjs-big-play-button {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 24px;
+			color: #fff;
+			background-color: #337ab7;
+			padding: 10px 20px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		
+		.video-container .video-js .vjs-big-play-button:hover {
+			background-color: #23527c;
+		}
+		
+		.video-container .video-js .vjs-progress-holder {
+			background-color: #337ab7;
+			height: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-container .video-js .vjs-progress-holder .vjs-play-progress {
+			background-color: #23527c;
+		}
+		
+		.video-container .video-js .vjs-control-bar {
+			background-color: #337ab7;
+			padding: 10px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-container .video-js .vjs-control-bar .vjs-control {
+			margin-right: 20px;
+		}
+		
+		.video-container .video-js .vjs-control-bar .vjs-control:hover {
+			background-color: #23527c;
+		}
+		
+		.video-container .video-js .vjs-volume-panel {
+			background-color: #337ab7;
+			padding: 10px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-container .video-js .vjs-volume-panel .vjs-volume-control {
+			margin-right: 20px;
+		}
+		
+		.video-container .video-js .vjs-volume-panel .vjs-volume-control:hover {
+			background-color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="video-container">
+		<h2>服务视频</h2>
+		<div class="video-js" id="video-player">
+			<video id="video" width="100%" height="100%" controls>
+				<source src="path/to/video.mp4" type="video/mp4">
+				<source src="path/to/video.webm" type="video/webm">
+			</video>
+			<div class="vjs-big-play-button" id="play-button">▶️</div>
+			<div class="vjs-progress-holder">
+				<div class="vjs-play-progress"></div>
+			</div>
+			<div class="vjs-control-bar">
+				<div class="vjs-control" id="play-pause-control">▶️</div>
+				<div class="vjs-control" id="volume-control">音量</div>
+			</div>
+			<div class="vjs-volume-panel" id="volume-panel">
+				<div class="vjs-volume-control" id="volume-slider"></div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		var player = videojs('video-player');
+		player.src('path/to/video.mp4');
+		player.play();
+		
+		document.getElementById('play-button').addEventListener('click', function() {
+			player.playPause();
+		});
+		
+		document.getElementById('play-pause-control').addEventListener('click', function() {
+			player.playPause();
+		});
+		
+		document.getElementById('volume-control').addEventListener('click', function() {
+			player.volumePanel.toggle();
+		});
+		
+		document.getElementById('volume-slider').addEventListener('input', function() {
+			player.volume(this.value);
+		});
+	</script>
+</body>
+</html>
+
+
+Keywords:服务视频,视频播放器,HTML5视频,视频交互,视频播放控制

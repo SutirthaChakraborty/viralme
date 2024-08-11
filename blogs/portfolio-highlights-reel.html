@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Highlights Reel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            margin-top: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portfolio Highlights Reel</h1>
+    <p>Showcasing My Best Work</p>
+</header>
+
+<div class="portfolio">
+    <div class="item">
+        <h2>Project 1: Web Design</h2>
+        <p>Responsive and interactive web design for a local business.</p>
+        <button class="button" onclick="alert('View Project 1')">View Project</button>
+    </div>
+    <div class="item">
+        <h2>Project 2: Mobile App</h2>
+        <p>Development of a mobile application for efficient task management.</p>
+        <button class="button" onclick="alert('View Project 2')">View Project</button>
+    </div>
+    <div class="item">
+        <h2>Project 3: Branding</h2>
+        <p>Creation of a unique brand identity for a startup.</p>
+        <button class="button" onclick="alert('View Project 3')">View Project</button>
+    </div>
+</div>
+
+<script>
+    function showAlert(project) {
+        alert("You clicked on " + project);
+    }
+</script>
+
+</body>
+</html>

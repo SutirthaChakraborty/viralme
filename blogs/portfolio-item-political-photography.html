@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Photography Portfolio Item</title>
+    <style>
+        /* Use useful keywords for SEO and better reach: portfolio, photography, political, responsive design, hover effects */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .portfolio-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 0;
+            position: relative;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+            filter: grayscale(80%);
+        }
+
+        .portfolio-item .caption {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .portfolio-item:hover .caption {
+            opacity: 1;
+        }
+
+        .caption-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .caption-title {
+            font-size: 1.2em;
+        }
+
+        .caption-excerpt {
+            font-size: 0.9em;
+        }
+    </style>
+    <script>
+        // Add interactivity with JavaScript
+        function highlightOnHover(element) {
+            element.addEventListener("mouseover", function () {
+                this.style.color = "red";
+            });
+            element.addEventListener("mouseout", function () {
+                this.style.color = "black";
+            });
+        }
+
+        // Call the function on all relevant elements
+        document.querySelectorAll('.portfolio-item h3').forEach(highlightOnHover);
+    </script>
+</head>
+<body>
+    <div class="portfolio-item">
+        <img src="path_to_your_image.jpg" alt="Political Scene Photography">
+        <div class="caption

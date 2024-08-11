@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Analytics Consultant Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .service {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .service:hover {
+            background-color: #e7f3ff;
+        }
+        button {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google Analytics Consultant Services</h1>
+    </header>
+    <div class="container">
+        <h2>Our Expertise</h2>
+        <div class="service">
+            <h3>Setup & Configuration</h3>
+            <p>We help you set up Google Analytics to track website performance and user behavior.</p>
+        </div>
+        <div class="service">
+            <h3>Data Analysis</h3>
+            <p>Our team analyzes your data to provide insights that drive business growth.</p>
+        </div>
+        <div class="service">
+            <h3>Custom Reporting</h3>
+            <p>We create tailored reports that highlight key performance indicators (KPIs) important to your business.</p>
+        </div>
+        <button onclick="alert('Contact us for a free consultation!')">Get a Free Consultation</button>
+    </div>
+    <script>
+        // Simple script to enhance user interaction
+        document.querySelectorAll('.service').forEach(service => {
+            service.addEventListener('click', function() {
+                alert('Learn more about ' + this.querySelector('h3').innerText);
+            });
+        });
+    </script>
+</body>
+</html>

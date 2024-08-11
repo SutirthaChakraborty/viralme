@@ -1,0 +1,76 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Item: Corporate Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .portfolio-item {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .project-title {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .project-explanation {
+            margin-top: 20px;
+            line-height: 1.5;
+            max-height: 200px;
+            overflow: auto;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: 90%;
+            }
+        }
+        
+        /* Add animation on hover for better engagement */
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+    </style>
+    <script>
+        // Simple interactive effect: fade project explanation on hover
+        document.querySelectorAll('.project-title').forEach(function(titleEl) {
+            titleEl.addEventListener('mouseover', function() {
+                var explanationEl = titleEl.nextElementSibling;
+                explanationEl.style.opacity = 0.8;
+            });
+
+            titleEl.addEventListener('mouseout', function() {
+                var explanationEl = titleEl.nextElementSibling;
+                explanationEl.style.opacity = 1;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="portfolio-item">
+        <h2 class="project-title" onclick="showExplanation()">Corporate Photography</h2>
+        <div class="project-explanation" id="

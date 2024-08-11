@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project MOE SYF 2021 - Art for a Cause</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            width: 65%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #333;
+            text-decoration: none;
+            margin: 5px 0;
+            transition: background 0.3s;
+        }
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project MOE SYF 2021 - Art for a Cause</h1>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Topics</h2>
+        <a href="#" onclick="showContent('overview')">Overview</a>
+        <a href="#" onclick="showContent('impact')">Impact</a>
+        <a href="#" onclick="showContent('participation')">Participation</a>
+        <a href="#" onclick="showContent('donations')">Donations</a>
+    </div>
+    <div class="content" id="content">
+        <h2>Welcome!</h2>
+        <p>Select a topic from the sidebar to learn more about Project MOE SYF 2021.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Project MOE SYF. All rights reserved.</p>
+</footer>
+
+<script>
+    function showContent(topic) {
+        const content = document.getElementById('content');
+        let text = '';
+
+        switch(topic) {
+            case 'overview':
+                text = '<h2>Overview</h2><p>Project MOE SYF 2021 is an initiative aimed at promoting art for social causes, engaging youth in creative expression while raising awareness for important issues.</p>';
+                break;
+            case 'impact':
+                text = '<h2>Impact</h2><p>This project has successfully raised funds for various charities, showcasing the power of art in making a difference in the community.</p>';
+                break;
+            case 'participation':
+                text = '<h2>Participation</h2><p>Students and artists from various backgrounds participated, contributing their talents to create impactful artworks.</p>';
+                break;
+            case 'donations':
+                text = '<h2>Donations</h2><p>All proceeds from the artworks sold during the event went directly to supporting local charities and initiatives.</p>';
+                break;
+            default:
+                text = '<h2>Welcome!</h2><p>Select a topic from the sidebar to learn more about Project MOE SYF 2021.</p>';
+        }
+
+        content.innerHTML = text;
+    }
+</script>
+
+</body>
+</html>

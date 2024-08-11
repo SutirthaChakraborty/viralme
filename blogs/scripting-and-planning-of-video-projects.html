@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the essentials of scripting and planning video projects, from storyboarding to production management.">
+    <title>Scripting and Planning Video Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            cursor: pointer;
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        .output {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #e2f0d5;
+            border: 1px solid #a8d18e;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scripting and Planning Video Projects</h1>
+    </header>
+    <div class="container">
+        <h2>Why Scripting is Important</h2>
+        <p>Scripting provides the foundation of your video project. It helps organize thoughts, structure content, and delivers clear messages.</p>
+        <span class="interactive" onclick="toggleOutput('scriptDesc')">Click to learn more about scripting!</span>
+        <div id="scriptDesc" class="output">Scripting helps streamline the production process, ensuring that key information is covered and saving time during filming.</div>
+
+        <h2>Planning Your Video Project</h2>
+        <p>Effective planning encompasses several stages, including pre-production, production, and post-production.</p>
+        <span class="interactive" onclick="toggleOutput('planDesc')">Click to learn more about planning!</span>
+        <div id="planDesc" class="output">Planning ensures that resources are allocated efficiently, timelines are met, and the final product matches your vision.</div>
+
+        <h2>Essential Keywords for Video Projects</h2>
+        <ul>
+            <li>Video Scripting</li>
+            <li>Project Planning</li>
+            <li>Storyboarding</li>
+            <li>Production Management</li>
+            <li>Filming Techniques</li>
+            <li>Post-Production Editing</li>
+        </ul>
+    </div>
+    <script>
+        function toggleOutput(id) {
+            var output = document.getElementById(id);
+            output.style.display = output.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

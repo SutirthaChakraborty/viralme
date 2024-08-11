@@ -1,0 +1,65 @@
+Sure! Here's a small HTML code snippet that includes CSS and interactive JavaScript to demonstrate a project type interview video:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Type Interview Video</title>
+    <style>
+        /* CSS Styling */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // JavaScript for play button functionality
+        window.onload = function() {
+            var playButton = document.getElementById('play-button');
+            var videoIframe = document.getElementById('video-iframe');
+            
+            playButton.addEventListener('click', function() {
+                videoIframe.src += '&autoplay=1';
+                playButton.style.display = 'none';
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="video-wrapper">
+        <iframe id="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <div id="play-button" class="play-button">&#9658;</div>
+    </div>
+</body>
+</html>
+
+
+In this code, I have created a responsive video wrapper using CSS to maintain a 16:9 aspect ratio. The play button is positioned at the center of the video and uses JavaScript to play the video when clicked. You can replace `VIDEO_ID` in the `src` attribute of the `iframe` tag with the actual YouTube video ID.
+
+Feel free to modify the code as per your requirements. Let me know if you need any further assistance!

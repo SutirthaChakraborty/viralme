@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CokeTV Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ef473a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .resource {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 15px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .resource:hover {
+            transform: scale(1.02);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ef473a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #d83a2a;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CokeTV Resources</h1>
+    <p>Your hub for everything related to CokeTV!</p>
+</header>
+
+<div class="resource">
+    <h2>Latest Shows</h2>
+    <p>Discover the trending shows and episodes on CokeTV. Stay updated with our weekly highlights.</p>
+    <button class="btn" onclick="showDetails('latestShows')">More Info</button>
+</div>
+
+<div class="resource">
+    <h2>Exclusive Interviews</h2>
+    <p>Get insights from your favorite stars! Exclusive interviews only on CokeTV.</p>
+    <button class="btn" onclick="showDetails('exclusiveInterviews')">More Info</button>
+</div>
+
+<div class="resource">
+    <h2>Behind the Scenes</h2>
+    <p>Explore the making of your favorite shows. Behind the scenes footage available now!</p>
+    <button class="btn" onclick="showDetails('behindScenes')">More Info</button>
+</div>
+
+<script>
+    function showDetails(type) {
+        let message;
+        switch(type) {
+            case 'latestShows':
+                message = "Check out the latest episodes of top-rated shows available on CokeTV now!";
+                break;
+            case 'exclusiveInterviews':
+                message = "Watch exclusive interviews with actors, directors, and show creators only on CokeTV!";
+                break;
+            case 'behindScenes':
+                message = "Get an inside look at how your favorite shows are produced with our behind-the-scenes segments!";
+                break;
+            default:
+                message = "No information available.";
+        }
+        alert(message);
+    }
+</script>
+
+</body>
+</html>

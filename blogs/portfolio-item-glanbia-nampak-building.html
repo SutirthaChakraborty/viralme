@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glanbia Nampak Building Portfolio</title>
+    <meta name="description" content="Explore the innovative architectural design of the Glanbia Nampak building, a prime example of modern industrial facilities, featuring sustainable construction practices and cutting-edge technology.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .portfolio-item {
+            margin-bottom: 20px;
+        }
+        .interactive {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #d1ecf1;
+            border-left: 5px solid #0c5460;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Glanbia Nampak Building Portfolio</h1>
+        <p>A modern landmark in industrial architecture</p>
+    </header>
+    <div class="container">
+        <div class="portfolio-item">
+            <h2>Project Overview</h2>
+            <p>The Glanbia Nampak building represents a fusion of functionality and sustainability, designed for optimal operational efficiency.</p>
+        </div>
+        <div class="portfolio-item interactive" onclick="toggleInfo('info1')">
+            <h2>Key Features</h2>
+            <div class="info" id="info1">
+                <p>Incorporates solar energy solutions, rainwater harvesting, and advanced material technology, setting a benchmark for eco-friendly industrial buildings.</p>
+            </div>
+        </div>
+        <div class="portfolio-item interactive" onclick="toggleInfo('info2')">
+            <h2>Architectural Design</h2>
+            <div class="info" id="info2">
+                <p>Designed with modern aesthetics in mind, the structure utilizes natural light and ventilation, promoting a comfortable work environment.</p>
+            </div>
+        </div>
+        <div class="portfolio-item interactive" onclick="toggleInfo('info3')">
+            <h2>Sustainability Initiatives</h2>
+            <div class="info" id="info3">
+                <p>Features sustainable construction methods and materials, aiming for LEED certification and reducing overall carbon footprint.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(id) {
+            const infoDiv = document.getElementById(id);
+            infoDiv.style.display = infoDiv.style.display === 'none' || infoDiv.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

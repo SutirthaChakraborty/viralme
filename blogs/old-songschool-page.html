@@ -1,0 +1,66 @@
+以下是老歌学校页面的简小HTML代码、CSS和JS：
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>老歌学校</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.songschool {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.songschool h2 {
+			margin-top: 0;
+		}
+		.songschool ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.songschool li {
+			margin-bottom: 10px;
+		}
+		.songschool a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		.songschool a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="songschool">
+		<h2>老歌学校</h2>
+		<p>收集和分享经典老歌，回忆过去的美好时刻。</p>
+		<ul>
+			<li><a href="#1950s">1950年代</a></li>
+			<li><a href="#1960s">1960年代</a></li>
+			<li><a href="#1970s">1970年代</a></li>
+			<li><a href="#1980s">1980年代</a></li>
+			<li><a href="#1990s">1990年代</a></li>
+		</ul>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+				document.querySelectorAll("a").forEach(function(anchor) {
+					anchor.addEventListener("click", function() {
+						var decade = this.text;
+						alert("Welcome to " + decade + "!");
+					});
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+关键词：老歌学校、经典老歌、音乐回忆、歌曲收集、歌曲分享。

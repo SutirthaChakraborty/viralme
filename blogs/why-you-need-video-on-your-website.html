@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why You Need Video on Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+        .video-container video {
+            width: 80%;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #43a047;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Why You Need Video on Your Website</h1>
+</header>
+
+<section>
+    <h2>Boost Engagement and Retention</h2>
+    <p>Videos on your website can increase visitor engagement by up to 80%. They keep users on your site longer, reducing bounce rates.</p>
+</section>
+
+<section>
+    <h2>Improve SEO Ranking</h2>
+    <p>Video content is favored by search engines, leading to better rankings. Utilize keywords effectively to enhance reach.</p>
+</section>
+
+<section>
+    <h2>Enhance User Experience</h2>
+    <p>Interactive videos create a more dynamic experience, improving the likelihood of conversions and repeat visits.</p>
+    <div class="video-container">
+        <video id="info-video" controls>
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <button onclick="changeVideoSource()">Watch Video</button>
+</section>
+
+<script>
+    function changeVideoSource() {
+        const video = document.getElementById('info-video');
+        video.src = 'your-alternate-video-file.mp4';
+        video.play();
+    }
+</script>
+
+</body>
+</html>

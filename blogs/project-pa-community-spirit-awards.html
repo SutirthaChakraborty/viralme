@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project PA Community Spirit Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+        .menu {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            flex: 3;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-left: 20px;
+        }
+        .menu button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project PA Community Spirit Awards</h1>
+</header>
+
+<div class="container">
+    <div class="menu">
+        <h2>Topics</h2>
+        <button onclick="showContent('overview')">Overview</button>
+        <button onclick="showContent('criteria')">Award Criteria</button>
+        <button onclick="showContent('nomination')">Nomination Process</button>
+        <button onclick="showContent('winners')">Past Winners</button>
+    </div>
+    <div class="content" id="content">
+        <h2>Welcome!</h2>
+        <p>Select a topic to learn more about the Project PA Community Spirit Awards.</p>
+    </div>
+</div>
+
+<script>
+    function showContent(topic) {
+        const content = document.getElementById('content');
+        switch(topic) {
+            case 'overview':
+                content.innerHTML = '<h2>Overview</h2><p>The Project PA Community Spirit Awards celebrate individuals and organizations that contribute positively to the community.</p>';
+                break;
+            case 'criteria':
+                content.innerHTML = '<h2>Award Criteria</h2><p>Awards are based on community involvement, leadership, and impact.</p>';
+                break;
+            case 'nomination':
+                content.innerHTML = '<h2>Nomination Process</h2><p>Anyone can nominate a candidate by filling out the online form available on our website.</p>';
+                break;
+            case 'winners':
+                content.innerHTML = '<h2>Past Winners</h2><p>Check out our website for a list of past winners and their contributions to the community.</p>';
+                break;
+            default:
+                content.innerHTML = '<h2>Welcome!</h2><p>Select a topic to learn more about the Project PA Community Spirit Awards.</p>';
+        }
+    }
+</script>
+
+</body>
+</html>

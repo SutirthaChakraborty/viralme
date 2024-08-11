@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Young Creative Awards 2016</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights Young Creative Awards 2016</h1>
+        <p>The Insights Young Creative Awards 2016 aimed to identify and celebrate emerging talent across various creative fields.</p>
+        <p>Key categories included:</p>
+        <ul>
+            <li>Graphic Design</li>
+            <li>Film and Animation</li>
+            <li>Photography</li>
+            <li>Advertising</li>
+        </ul>
+        <button id="toggleInfo">Click for More Insights</button>
+        <div class="info" id="info">
+            <p>The competition encouraged young creators to showcase their work and gain recognition. Winners received mentorship and opportunities to collaborate with industry professionals.</p>
+            <p>Keywords: Young Creatives, Awards 2016, Emerging Talent, Graphic Design, Film, Photography, Mentorship Opportunities.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleInfo').onclick = function() {
+            var info = document.getElementById('info');
+            if (info.style.display === 'block') {
+                info.style.display = 'none';
+            } else {
+                info.style.display = 'block';
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Item: Time Lapse & Hyperlapse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .portfolio-item h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Item: Time Lapse & Hyperlapse</h1>
+    </header>
+    <div class="portfolio-item">
+        <h2>Understanding Time Lapse and Hyperlapse</h2>
+        <p><strong>Time Lapse:</strong> A photography technique that captures a sequence of images at set intervals to record changes that take place slowly over time.</p>
+        <p><strong>Hyperlapse:</strong> A more advanced form of time lapse that involves camera movement over considerable distances, creating a dynamic visual effect.</p>
+    </div>
+    <div class="interactive">
+        <h3>Interactive Example</h3>
+        <p>Click the button below to see a simple demonstration of how time lapse and hyperlapse can transform a scene.</p>
+        <button onclick="showDemo()">Show Demo</button>
+        <div id="demo" style="display:none; margin-top: 10px;">
+            <p>Imagine a scene where clouds move rapidly across the sky, or a bustling city street where the flow of traffic is accelerated. This is the magic of time lapse and hyperlapse!</p>
+        </div>
+    </div>
+    <script>
+        function showDemo() {
+            const demo = document.getElementById('demo');
+            demo.style.display = demo.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

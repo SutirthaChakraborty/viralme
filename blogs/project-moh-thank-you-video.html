@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you video showcasing Project MoH, celebrating healthcare achievements and improvements.">
+    <title>Project MoH Thank You Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .play-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .play-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project MoH Thank You Video</h1>
+        <p>Celebrating Our Healthcare Achievements</p>
+    </header>
+    <div class="container">
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <button class="play-button" onclick="playVideo()">Play Video</button>
+    </div>
+    <footer>
+        <p>&copy; 2023 Project MoH. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function playVideo() {
+            const video = document.querySelector('iframe');
+            const videoSrc = video.src;
+            video.src = videoSrc + "?autoplay=1";
+        }
+    </script>
+</body>
+</html>

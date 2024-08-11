@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the retail sector, its types, trends, and impact on the economy.">
+    <title>Retail Sector Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .sector {
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding the Retail Sector</h1>
+    <div class="sector">
+        <h2>Types of Retail</h2>
+        <p class="toggle">Click to learn more about types of retail</p>
+        <div class="details">
+            <ul>
+                <li>Brick-and-Mortar Stores</li>
+                <li>Online Retail</li>
+                <li>Mobile Retail</li>
+                <li>Pop-Up Shops</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sector">
+        <h2>Current Trends</h2>
+        <p class="toggle">Click to learn more about current trends in retail</p>
+        <div class="details">
+            <ul>
+                <li>Omnichannel Shopping</li>
+                <li>Sustainability Practices</li>
+                <li>Personalization</li>
+                <li>Use of AI and Data Analytics</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sector">
+        <h2>Impact on Economy</h2>
+        <p class="toggle">Click to learn more about the retail sector's impact on the economy</p>
+        <div class="details">
+            <p>The retail sector is a major contributor to the economy, providing jobs and driving consumer spending.</p>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const details = toggle.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

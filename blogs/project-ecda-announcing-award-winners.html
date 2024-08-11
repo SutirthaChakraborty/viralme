@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project ECDA Award Winners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .title {
+            font-size: 32px;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .awards-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .award {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .award:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .award-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .award-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .award-description {
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+    </style>
+    <script>
+        // Add interactivity to the awards list, highlighting each winner on hover
+        window.addEventListener('DOMContentLoaded', function () {
+            const awards = document.querySelectorAll('.award');
+            awards.forEach(function (award) {

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCH Writing in the Key of</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .interactive {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>NCH Writing in the Key of</h1>
+    <p>NCH writing refers to the structured approach in music composition, focusing on the key of a piece to enhance its emotional impact.</p>
+    <div class="interactive">
+        <h2>Explore Key Signatures</h2>
+        <p>Click the button below to learn about different key signatures!</p>
+        <button onclick="showKeyInfo()">Show Key Information</button>
+        <p id="keyInfo" style="display:none;"></p>
+    </div>
+    <script>
+        function showKeyInfo() {
+            const keyInfo = document.getElementById('keyInfo');
+            keyInfo.style.display = 'block';
+            keyInfo.innerHTML = 'Key signatures define the key of a piece of music, indicating which notes are sharp or flat. Common keys include C major, G major, and F major.';
+        }
+    </script>
+</body>
+</html>

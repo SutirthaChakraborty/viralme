@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Photography Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-image {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+        }
+        .keywords {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .contact-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Interior Photography Portfolio</h1>
+
+    <div class="portfolio-item" onclick="alert('Contact me for inquiries!')">
+        <img src="interior-photo.jpg" alt="Stunning Interior Photography" class="portfolio-image">
+        <div class="description">
+            <h2>Elegant Living Space</h2>
+            <p>Experience the beauty of interior design through professional photography. Capturing light, space, and detail to showcase your property.</p>
+            <p class="keywords">Keywords: Interior Photography, Home Decor, Real Estate Photography, Design Showcase, Lifestyle Photography</p>
+            <button class="contact-button">Contact Me</button>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.contact-button').addEventListener('click', function() {
+            alert('Thank you for your interest! Let\'s connect.');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional On-Site Video Production Services for High-Quality Corporate Videos.">
+    <title>On-Site Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .video-info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>On-Site Video Production</h1>
+        <p>Enhance your brand's narrative with **professional on-site video production** services. Our team specializes in creating engaging corporate videos, promotional content, and event coverage directly at your location.</p>
+        <button id="toggleInfo">Learn More</button>
+        <div class="video-info" id="videoInfo">
+            <h2>Why Choose On-Site Video Production?</h2>
+            <ul>
+                <li>**High-Quality Footage**: Capture your events as they happen.</li>
+                <li>**Professional Equipment**: Utilize top-notch cameras and sound equipment.</li>
+                <li>**Expert Team**: Work with experienced videographers and editors.</li>
+                <li>**Customized Content**: Tailor your videos to suit your brand's needs.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleInfo').onclick = function() {
+            var info = document.getElementById('videoInfo');
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        };
+    </script>
+</body>
+</html>

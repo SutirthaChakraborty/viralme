@@ -1,0 +1,102 @@
+Sure, here's a small HTML code with CSS to display a portfolio image gallery:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <h1>My Portfolio</h1>
+  <div class="gallery">
+    <div class="image">
+      <img src="image1.jpg" alt="Project 1">
+      <div class="overlay">
+        <h3>Project 1</h3>
+      </div>
+    </div>
+    <div class="image">
+      <img src="image2.jpg" alt="Project 2">
+      <div class="overlay">
+        <h3>Project 2</h3>
+      </div>
+    </div>
+    <div class="image">
+      <img src="image3.jpg" alt="Project 3">
+      <div class="overlay">
+        <h3>Project 3</h3>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.image {
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+
+JavaScript (script.js):
+javascript
+// You can add interactive JavaScript functionality here if needed
+
+
+This code creates a simple portfolio gallery with images and overlays for project details. The CSS provides a responsive and interactive layout for the gallery.

@@ -1,0 +1,92 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Services Video Production Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin: 60px 0;
+        }
+
+        .service {
+            flex: 1;
+            margin-right: 40px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 40px;
+            transition: box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .service:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .service h2 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .service p {
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff5733;
+        }
+    </style>
+    <script>
+        // Add interactive CSS for service cards rollover effect
+        window.addEventListener('DOMContentLoaded', function() {
+            const serviceCards = document.querySelectorAll('.service');
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseover', function() {
+                    card.classList.add('hover');
+                });
+                card.addEventListener('mouseout', function() {
+                    card.classList.remove('hover');
+                });
+            });
+        });
+   

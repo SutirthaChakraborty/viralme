@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover our core values that drive our mission and vision. Learn about integrity, innovation, collaboration, and excellence.">
+    <title>Our Values</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .value {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            background: #e7f9e7;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .value:hover {
+            background: #d0e9d0;
+            transform: scale(1.02);
+        }
+        .description {
+            display: none;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Core Values</h1>
+        <div class="value" onclick="toggleDescription('integrity')">
+            <strong>Integrity</strong>
+            <div id="integrity" class="description">We uphold the highest standards of honesty and ethical conduct in all our actions.</div>
+        </div>
+        <div class="value" onclick="toggleDescription('innovation')">
+            <strong>Innovation</strong>
+            <div id="innovation" class="description">We embrace creativity and drive change to continuously improve and address challenges.</div>
+        </div>
+        <div class="value" onclick="toggleDescription('collaboration')">
+            <strong>Collaboration</strong>
+            <div id="collaboration" class="description">We believe in teamwork and achieving greater results through collective effort.</div>
+        </div>
+        <div class="value" onclick="toggleDescription('excellence')">
+            <strong>Excellence</strong>
+            <div id="excellence" class="description">We strive for the highest quality in everything we do to exceed our customers’ expectations.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            const desc = document.getElementById(id);
+            desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

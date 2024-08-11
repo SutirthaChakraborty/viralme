@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Services Promo Videos to Boost Your Business. Enhance Your Brand Visibility with Engaging Video Content.">
+    <title>Services Promo Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 0;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        .video {
+            display: none;
+        }
+        .video.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Services Promo Videos</h1>
+</header>
+
+<section>
+    <h2>Boost Your Business with Engaging Video Content</h2>
+    <p>Our professional promo videos effectively showcase your services, driving customer engagement and enhancing your brand visibility. Capture attention and convert leads with high-quality video marketing.</p>
+    <a href="#" class="btn" id="videoBtn">Watch Promo Video</a>
+    <div class="video" id="promoVideo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<script>
+    document.getElementById('videoBtn').addEventListener('click', function() {
+        var video = document.getElementById('promoVideo');
+        video.classList.toggle('active');
+        this.textContent = video.classList.contains('active') ? 'Hide Promo Video' : 'Watch Promo Video';
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Project Tsunami Logo Design: A modern and impactful visual representation for your brand.">
+  <meta name="keywords" content="project tsunami, logo design, creative agency, responsive, color scheme, interactivity, hover effect, svg, css, javascript">
+  <title>Project Tsunami Logo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+    }
+
+    .logo-container {
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      fill: #333;
+      transition: transform .3s;
+    }
+
+    .logo:hover {
+      transform: scale(1.1);
+    }
+
+    .logo-svg {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (hover: none) {
+      .logo:hover {
+        transform: none;
+      }
+    }
+
+    .hover-explanation {
+      display: none;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .hover-explanation:hover {
+      display: block;
+    }
+
+    .toggle-hover {
+      cursor: pointer;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+  <script>
+    function toggleHoverExplanation() {
+      const explanation = document.querySelector('.hover-explanation');
+      explanation.classList.toggle('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.querySelector('.toggle-hover');
+      toggleBtn.addEventListener('click', toggleHoverExplanation

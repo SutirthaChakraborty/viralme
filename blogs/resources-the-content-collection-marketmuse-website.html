@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketMuse Content Collection Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .resource {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .resource:hover {
+            transform: scale(1.02);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore MarketMuse Content Resources</h1>
+    <div class="resource">
+        <h2>Content Planning Guide</h2>
+        <p>Learn how to strategically plan your content using MarketMuse’s comprehensive framework for effective content creation.</p>
+        <button onclick="showInfo('contentPlanning')">Learn More</button>
+    </div>
+    <div class="resource">
+        <h2>Keyword Research Tool</h2>
+        <p>Utilize MarketMuse's powerful keyword research tool to enhance your SEO and optimize content reach.</p>
+        <button onclick="showInfo('keywordResearch')">Learn More</button>
+    </div>
+    <div class="resource">
+        <h2>Competitive Analysis</h2>
+        <p>Understand your competition with detailed insights and data-driven recommendations to improve your content strategy.</p>
+        <button onclick="showInfo('competitiveAnalysis')">Learn More</button>
+    </div>
+
+    <script>
+        function showInfo(topic) {
+            let info;
+            switch(topic) {
+                case 'contentPlanning':
+                    info = 'The Content Planning Guide helps you understand audience needs and align your content strategy effectively.';
+                    break;
+                case 'keywordResearch':
+                    info = 'The Keyword Research Tool offers insights into trending keywords, improving your SEO efforts significantly.';
+                    break;
+                case 'competitiveAnalysis':
+                    info = 'Competitive Analysis equips you with data on competitors, allowing you to identify gaps and opportunities in your content.';
+                    break;
+                default:
+                    info = 'No information available.';
+            }
+            alert(info);
+        }
+    </script>
+
+</body>
+</html>

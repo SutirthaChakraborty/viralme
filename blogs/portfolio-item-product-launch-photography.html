@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stunning product launch photography portfolio showcasing creativity and innovation.">
+    <title>Portfolio - Product Launch Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .portfolio-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .description {
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        .btn {
+            background: #2980b9;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Product Launch Photography Portfolio</h1>
+    <p>Capturing your brand's vision through exceptional photography.</p>
+</header>
+
+<section>
+    <div class="portfolio-item" onclick="showDetails('Launch Event A')">
+        <img src="launch-event-a.jpg" alt="Product Launch A">
+        <h2>Product Launch A</h2>
+        <p class="description">An innovative product launch capturing the excitement of the event and products.</p>
+        <button class="btn">View Details</button>
+    </div>
+
+    <div class="portfolio-item" onclick="showDetails('Launch Event B')">
+        <img src="launch-event-b.jpg" alt="Product Launch B">
+        <h2>Product Launch B</h2>
+        <p class="description">A stunning visual experience focusing on the key features and audience engagement.</p>
+        <button class="btn">View Details</button>
+    </div>
+</section>
+
+<script>
+    function showDetails(event) {
+        alert("More details about " + event + " will be provided here.");
+    }
+</script>
+
+</body>
+</html>

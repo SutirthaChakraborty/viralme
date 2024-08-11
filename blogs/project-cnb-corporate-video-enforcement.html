@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project CNB Corporate Video Enforcement</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #3498db;
+        }
+
+        .video-explanation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .video-preview {
+            max-width: 600px;
+            margin-right: 30px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .video-explanation p {
+            width: 40%;
+            font-size: 1.1rem;
+        }
+
+        .play-btn {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // Add an event listener to the play button for video explanation
+        document.addEventListener('DOMContentLoaded', function() {
+            const playBtn = document.querySelector('.play-btn');
+            playBtn.addEventListener('click', function() {
+                const video = document.getElementById('video-explanation');
+                video.play();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Project CNB Corporate Video Enforcement</h1>
+        <div class="video-explanation">
+            <video id="video-ex

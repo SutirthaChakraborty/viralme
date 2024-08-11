@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the four essential parts of video production: Pre-Production, Production, Post-Production, and Distribution. Learn about the video production process.">
+    <title>Video Production Process: 4 Essential Parts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .part {
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            transition: all 0.3s;
+        }
+        .part:hover {
+            background-color: #e9f5ff;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding the Video Production Process</h1>
+    <div class="container">
+        <div class="part" onclick="toggleDescription('preProductionDesc')">
+            <h2>1. Pre-Production</h2>
+            <p>Planning, scripting, and budgeting.</p>
+            <div id="preProductionDesc" class="description">
+                <p>In this phase, concepts are developed, scripts are written, and budgets are created. It's the foundation that sets the stage for successful video production.</p>
+            </div>
+        </div>
+        <div class="part" onclick="toggleDescription('productionDesc')">
+            <h2>2. Production</h2>
+            <p>Filming and recording the footage.</p>
+            <div id="productionDesc" class="description">
+                <p>This is where the actual shooting takes place. Crew members execute the plan laid out in pre-production and capture the video and audio content.</p>
+            </div>
+        </div>
+        <div class="part" onclick="toggleDescription('postProductionDesc')">
+            <h2>3. Post-Production</h2>
+            <p>Editing and finalizing the video.</p>
+            <div id="postProductionDesc" class="description">
+                <p>During this phase, raw footage is edited, music and effects are added, and the final product is polished for release. It’s where the story truly comes together.</p>
+            </div>
+        </div>
+        <div class="part" onclick="toggleDescription('distributionDesc')">
+            <h2>4. Distribution</h2>
+            <p>Sharing the completed video.</p>
+            <div id="distributionDesc" class="description">
+                <p>This is the final stage where the video is distributed to the target audience through various platforms, ensuring maximum reach and engagement.</p>
+            </div>
+        </div>
+        <button onclick="window.location.reload();">Reset</button>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none" || desc.style.display === "") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

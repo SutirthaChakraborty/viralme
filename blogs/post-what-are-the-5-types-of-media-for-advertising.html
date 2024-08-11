@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Types of Media for Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .media-type {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+        .media-type:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>5 Types of Media for Advertising</h1>
+
+    <div class="media-type" id="media1">
+        <h2>1. Social Media</h2>
+        <p>Utilizes platforms like Facebook, Instagram, and Twitter to reach targeted audiences.</p>
+        <button onclick="toggleDetails('details1')">Learn More</button>
+        <p id="details1" style="display:none;">Social media advertising allows brands to engage with users through sponsored posts and ads tailored to user interests.</p>
+    </div>
+
+    <div class="media-type" id="media2">
+        <h2>2. Print Media</h2>
+        <p>Includes newspapers, magazines, and brochures to reach local audiences.</p>
+        <button onclick="toggleDetails('details2')">Learn More</button>
+        <p id="details2" style="display:none;">Print media is effective for targeting specific demographics and can create a lasting impression.</p>
+    </div>
+
+    <div class="media-type" id="media3">
+        <h2>3. Television</h2>
+        <p>Reaches a broad audience through commercials during shows and events.</p>
+        <button onclick="toggleDetails('details3')">Learn More</button>
+        <p id="details3" style="display:none;">Television advertising is powerful for brand awareness and can evoke emotional responses.</p>
+    </div>
+
+    <div class="media-type" id="media4">
+        <h2>4. Radio</h2>
+        <p>Engages listeners through audio ads during music and talk shows.</p>
+        <button onclick="toggleDetails('details4')">Learn More</button>
+        <p id="details4" style="display:none;">Radio advertising is cost-effective and can reach audiences during their daily commutes.</p>
+    </div>
+
+    <div class="media-type" id="media5">
+        <h2>5. Digital Advertising</h2>
+        <p>Includes online ads, search engine marketing, and email campaigns.</p>
+        <button onclick="toggleDetails('details5')">Learn More</button>
+        <p id="details5" style="display:none;">Digital advertising allows for precise targeting and real-time analytics to measure effectiveness.</p>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

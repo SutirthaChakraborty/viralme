@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>我们做数字营销</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.title {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		.description {
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			font-size: 18px;
+		}
+		
+		.interactive {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.interactive:hover {
+			background-color: #e0e0e0;
+		}
+		
+		.js-tooltip {
+			position: absolute;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 10px;
+			border-radius: 10px;
+			display: none;
+		}
+		
+		.js-tooltip::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-style: solid;
+			border-width: 5px 5px 0 5px;
+			border-color: #fff transparent transparent transparent;
+		}
+		
+		.js-tooltip.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">我们做数字营销</h1>
+		<p class="description">我们是一家专门从事数字营销的公司，我们提供了一系列的数字营销服务，包括搜索引擎优化（SEO）、社交媒体营销、电子邮件营销、内容营销、广告营销等。</p>
+		
+		<ul>
+			<li><a href="#" class="interactive" data-tooltip="搜索引擎优化（SEO），提高网站排名和可见性">SEO</a></li>
+			<li><a href="#" class="interactive" data-tooltip="社交媒体营销，通过社交媒体平台推广品牌和产品">社交媒体营销</a></li>
+			<li><a href="#" class="interactive" data-tooltip="电子邮件营销，通过电子邮件发送营销信息和推广产品">电子邮件营销</a></li>
+			<li><a href="#" class="interactive" data-tooltip="内容营销，通过内容推广品牌和产品">内容营销</a></li>
+			<li><a href="#" class="interactive" data-tooltip="广告营销，通过广告平台推广品牌和产品">广告营销</a></li>
+		</ul>
+		
+		<script>
+			const tooltips = document.querySelectorAll('.interactive');
+			tooltips.forEach((tooltip) => {
+				tooltip.addEventListener('mouseover', () => {
+					const tooltipElement = document.createElement('div');
+					tooltipElement.className = 'js-tooltip';
+					tooltipElement.textContent = tooltip.dataset.tooltip;
+					tooltip.parentNode.appendChild(tooltipElement);
+					setTimeout(() => {
+						tooltipElement.classList.add('show');
+					}, 500);
+				});
+				tooltip.addEventListener('mouseout', () => {
+					const tooltipElement = tooltip.parentNode.querySelector('.js-tooltip');
+					if (tooltipElement) {
+						setTimeout(() => {
+							tooltipElement.parentNode.removeChild(tooltipElement);
+						}, 500);
+					}
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+
+Keywords: 数字营销, SEO, 社交媒体营销, 电子邮件营销, 内容营销, 广告营销

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Video Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #333;
+            display: none;
+        }
+        .video-container:hover .play-button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Our News Video Service</h1>
+    <p>Stay updated with the latest news through our engaging video content. Our platform offers a seamless video experience, allowing you to watch, share, and learn about current events.</p>
+
+    <div class="video-container">
+        <video id="newsVideo" controls>
+            <source src="news-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="play-button" onclick="playVideo()">▶</button>
+    </div>
+
+    <script>
+        const video = document.getElementById('newsVideo');
+        const playButton = document.querySelector('.play-button');
+
+        function playVideo() {
+            if (video.paused) {
+                video.play();
+                playButton.style.display = 'none';
+            } else {
+                video.pause();
+                playButton.style.display = 'block';
+            }
+        }
+
+        video.addEventListener('pause', () => {
+            playButton.style.display = 'block';
+        });
+
+        video.addEventListener('play', () => {
+            playButton.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

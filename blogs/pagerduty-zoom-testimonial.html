@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagerDuty & Zoom Testimonial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0070f3;
+        }
+        .testimonial {
+            font-style: italic;
+            margin: 20px 0;
+            border-left: 4px solid #0070f3;
+            padding-left: 10px;
+        }
+        .author {
+            text-align: right;
+            font-weight: bold;
+        }
+        button {
+            background-color: #0070f3;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PagerDuty & Zoom</h1>
+        <div class="testimonial">
+            "PagerDuty and Zoom transformed our incident management process. Collaboration has never been easier!"
+        </div>
+        <div class="author">- Jane Doe, IT Director</div>
+        <button onclick="showMore()">Show More Testimonials</button>
+        <div id="moreTestimonials" style="display:none;">
+            <div class="testimonial">
+                "The integration with PagerDuty made our remote meetings more effective and efficient."
+            </div>
+            <div class="author">- John Smith, Operations Manager</div>
+        </div>
+    </div>
+    <script>
+        function showMore() {
+            var more = document.getElementById("moreTestimonials");
+            if (more.style.display === "none") {
+                more.style.display = "block";
+            } else {
+                more.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNG Nationwide Conference 2017</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #004080;
+        }
+        .accordion {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+        }
+        .accordion-header {
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        button {
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DNG Nationwide Conference 2017</h1>
+    </header>
+    <div class="container">
+        <h2>Overview</h2>
+        <p>The DNG Nationwide Conference 2017 brought together industry leaders, innovators, and professionals to discuss emerging trends in the field.</p>
+        
+        <div class="accordion">
+            <div class="accordion-header">Keynote Speakers</div>
+            <div class="accordion-content">
+                <p>Featuring renowned speakers from various sectors discussing the future of digital networking and governance.</p>
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion-header">Workshops</div>
+            <div class="accordion-content">
+                <p>Hands-on workshops aimed at skill development and networking strategies for attendees.</p>
+            </div>
+        </div>
+        
+        <div class="accordion">
+            <div class="accordion-header">Networking Opportunities</div>
+            <div class="accordion-content">
+                <p>A chance to connect with like-minded professionals and explore collaboration possibilities.</p>
+            </div>
+        </div>
+
+        <button onclick="toggleAccordion(event)">Learn More</button>
+    </div>
+
+    <script>
+        function toggleAccordion(event) {
+            const header = event.target.previousElementSibling;
+            const content = header.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+        
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Nation: My Smart Ahma Episode 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart Nation: My Smart Ahma Episode 1</h1>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <p>This episode introduces the concept of Smart Nation, focusing on innovative solutions for urban living.</p>
+        <button onclick="toggleContent()">Learn More</button>
+        <div class="content" id="moreContent">
+            <p>Smart Nation aims to integrate technology into everyday life, enhancing efficiency and sustainability. Episode 1 explores key initiatives such as smart transportation, energy management, and community engagement.</p>
+        </div>
+    </section>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("moreContent");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

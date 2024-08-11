@@ -1,0 +1,63 @@
+#### HTML Code for Product Demo Videos
+
+Here's a small HTML code snippet that you can use to embed a product demo video on your website:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Demo Videos</title>
+    <style>
+        /* CSS styles for the video container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        /* CSS styles for the video iframe */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Demo Videos</h1>
+    
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <script>
+        // JavaScript code for responsive video resizing
+        function resizeVideo() {
+            var videoContainer = document.querySelector('.video-container');
+            var videoIframe = videoContainer.querySelector('iframe');
+            var containerWidth = videoContainer.offsetWidth;
+            var aspectRatio = 16 / 9; // Change this to match your video's aspect ratio
+            
+            videoIframe.style.height = containerWidth / aspectRatio + 'px';
+        }
+        
+        // Call the resizeVideo function when the window is resized
+        window.addEventListener('resize', resizeVideo);
+        
+        // Call the resizeVideo function initially
+        resizeVideo();
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a simple webpage with a responsive video container. You can replace `VIDEO_ID` in the `src` attribute of the `<iframe>` tag with the actual ID of your product demo video on YouTube or any other video hosting platform.
+
+The CSS styles in the `<style>` tag are used to create a responsive video container that maintains a 16:9 aspect ratio. The JavaScript code at the bottom of the page resizes the video container dynamically based on the width of the browser window.
+
+Feel free to customize the HTML, CSS, and JavaScript code to fit your specific needs. Remember to replace `VIDEO_ID` with the actual ID of your video.
+
+I hope this helps! Let me know if you have any further questions.

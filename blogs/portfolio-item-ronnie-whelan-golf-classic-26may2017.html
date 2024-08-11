@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronnie Whelan Golf Classic 2017</title>
+    <meta name="description" content="Join the Ronnie Whelan Golf Classic event held on May 26, 2017. A day of golf, camaraderie, and charity in honor of a football legend.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .event-details {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .toggle-info {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .more-info {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ronnie Whelan Golf Classic</h1>
+        <p>May 26, 2017</p>
+    </header>
+    <div class="event-details">
+        <h2>Event Overview</h2>
+        <p>The Ronnie Whelan Golf Classic brings together golf enthusiasts and fans of the legendary football player for a day of fun and fundraising.</p>
+        <p>Join us for a fantastic opportunity to meet fellow golfers, enjoy a day of sport, and contribute to a great cause.</p>
+        <button class="toggle-info">More Information</button>
+        <div class="more-info">
+            <h3>Location</h3>
+            <p>Tullamore Golf Club, Tullamore, Ireland</p>
+            <h3>Schedule</h3>
+            <p>Registration starts at 9:00 AM, followed by a shotgun start at 11:00 AM.</p>
+            <h3>Entry Fee</h3>
+            <p>€100 per player, including lunch and refreshments.</p>
+        </div>
+        <a href="#" class="btn">Register Now</a>
+    </div>
+
+    <script>
+        document.querySelector('.toggle-info').addEventListener('click', function() {
+            const moreInfo = document.querySelector('.more-info');
+            moreInfo.style.display = moreInfo.style.display === 'block' ? 'none' : 'block';
+            this.textContent = moreInfo.style.display === 'block' ? 'Less Information' : 'More Information';
+        });
+    </script>
+</body>
+</html>

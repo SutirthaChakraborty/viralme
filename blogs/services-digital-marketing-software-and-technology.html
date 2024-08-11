@@ -1,0 +1,108 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Marketing Software & Technology</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+    header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+    }
+    header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    nav {
+        background: #222;
+        padding: 5px 0;
+    }
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin-left: 20px;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    nav ul li a:hover {
+        color: #ddd;
+    }
+    .content {
+        padding: 20px;
+    }
+    .content h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    .content p {
+        margin-bottom: 20px;
+    }
+    .footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+</style>
+<script>
+    function toggleContent() {
+        var content = document.getElementById('techContent');
+        if (content.style.display === 'none') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+</script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <a href="#">Digital Marketing</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#software">Software</a></li>
+            <li><a href="#technology">Technology</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>Digital Marketing Services</h2>
+        <p>Explore our comprehensive suite of services designed to help businesses grow online.</p>
+        <h2>Digital Marketing Software</h2>
+        <p>Discover the tools and platforms we use to streamline our processes and deliver results.</p>
+        <h2>Digital Marketing Technology</h2>
+        <p>Learn about the latest technologies and trends shaping the digital marketing landscape.</p>
+        <button onclick="toggleContent()">Toggle Technology Content</button>
+        <div id="techContent" style="display: none;">
+            <p>Here's an interactive explanation of the technology behind digital marketing.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Digital Marketing Company. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUS Campus BTS Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            width: 75%;
+            padding: 15px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .topic {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background: #e7e7e7;
+            border-radius: 5px;
+        }
+        .topic:hover {
+            background: #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NUS Campus BTS Project</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Topics</h2>
+        <div class="topic" onclick="showContent('overview')">Project Overview</div>
+        <div class="topic" onclick="showContent('features')">Key Features</div>
+        <div class="topic" onclick="showContent('benefits')">Benefits</div>
+    </div>
+    <div class="content" id="content">
+        <h2>Welcome to the NUS Campus BTS Project</h2>
+        <p>Select a topic to learn more.</p>
+    </div>
+</div>
+
+<script>
+    function showContent(topic) {
+        const content = document.getElementById('content');
+        if (topic === 'overview') {
+            content.innerHTML = '<h2>Project Overview</h2><p>The NUS Campus BTS Project aims to enhance the campus experience through innovative transportation solutions.</p>';
+        } else if (topic === 'features') {
+            content.innerHTML = '<h2>Key Features</h2><ul><li>Real-time tracking of buses</li><li>Mobile app integration</li><li>Eco-friendly transport options</li></ul>';
+        } else if (topic === 'benefits') {
+            content.innerHTML = '<h2>Benefits</h2><p>This project will reduce wait times, improve accessibility, and promote sustainable transport methods.</p>';
+        }
+    }
+</script>
+
+</body>
+</html>

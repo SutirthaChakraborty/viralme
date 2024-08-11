@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Trade Show</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        button {
+            background: #28A745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Services Trade Show</h1>
+</header>
+
+<section>
+    <h2>Explore Our Services</h2>
+    <p>Discover industry-leading solutions and services at our upcoming trade show dedicated to innovation, collaboration, and growth.</p>
+    <button onclick="showDetails()">Learn More</button>
+    <p id="details" style="display:none;">Join us for workshops, expert talks, and networking opportunities that will enhance your business strategy. Connect with service providers, partners, and clients to elevate your market reach and effectiveness.</p>
+</section>
+
+<script>
+    function showDetails() {
+        var details = document.getElementById("details");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

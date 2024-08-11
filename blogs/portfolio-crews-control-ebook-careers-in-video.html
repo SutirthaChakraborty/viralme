@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Crews Control: eBook for Careers in Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .toggle-text {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portfolio Crews Control</h1>
+    <p>Your eBook guide for Careers in Video Production</p>
+</header>
+
+<div class="content">
+    <h2>Maximize Your Career Potential</h2>
+    <p>Discover how to manage video projects and lead your crew effectively. Our eBook offers insights into:</p>
+    <ul>
+        <li>Project Management Techniques</li>
+        <li>Team Leadership Skills</li>
+        <li>Video Production Strategies</li>
+        <li>Portfolio Development</li>
+        <li>Networking in the Industry</li>
+    </ul>
+    <button id="toggleButton">Learn More</button>
+    <div class="toggle-text" id="moreInfo">
+        <h3>Expand Your Knowledge</h3>
+        <p>This eBook will equip you with the essential tools to navigate your career in video production. From understanding the technical aspects to mastering the art of storytelling, you'll gain the confidence to take your projects from concept to completion.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleButton').onclick = function() {
+        var moreInfo = document.getElementById('moreInfo');
+        moreInfo.style.display = moreInfo.style.display === 'block' ? 'none' : 'block';
+        this.innerText = moreInfo.style.display === 'block' ? 'Show Less' : 'Learn More';
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTUC Income Snack Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Introducing Snack by NTUC Income</h1>
+        <p>Discover the benefits of NTUC Income's new Snack project aimed at enhancing wellness and productivity.</p>
+        <button class="btn" onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="info">
+            <h2>About Snack</h2>
+            <p>SNACK is an innovative initiative by NTUC Income that promotes healthy snacking options in the workplace. It aims to improve employee wellness and engagement through nutritious food choices.</p>
+            <p>Join us in revolutionizing how we think about snacks, focusing on health, productivity, and convenience.</p>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var infoDiv = document.getElementById('info');
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

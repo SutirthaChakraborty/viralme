@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Prince of Wales & Duchess of Cornwall at Glasnevin Cemetery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .wreath {
+            margin: 20px 0;
+        }
+        .interactive {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #e7f4ff;
+            border-left: 4px solid #0056b3;
+            cursor: pointer;
+        }
+        .interactive-content {
+            display: none;
+            margin-top: 10px;
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Wreath-Laying by the Prince of Wales & Duchess of Cornwall</h1>
+        <p>On their visit to Glasnevin Cemetery, the Prince of Wales and Duchess of Cornwall paid tribute by laying ceremonial wreaths at the final resting place of notable Irish figures.</p>
+        <div class="wreath">
+            <h2>Significance of Wreath-Laying</h2>
+            <p>Laying wreaths is a poignant tradition that honors deceased individuals, reflecting respect and remembrance.</p>
+        </div>
+        <div class="interactive" onclick="toggleContent()">
+            Click here to learn more about the significance of Glasnevin Cemetery
+        </div>
+        <div class="interactive-content" id="content">
+            <p>Glasnevin Cemetery is one of the most historically significant burial grounds in Ireland, holding the remains of prominent national figures and reflecting the country's rich heritage.</p>
+        </div>
+    </div>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById('content');
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

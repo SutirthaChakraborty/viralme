@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Video Editing Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .reason {
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+        .reason:hover {
+            background-color: #e2f0f9;
+        }
+        #toggleButton {
+            margin-top: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        #toggleButton:hover {
+            background-color: #0056b3;
+        }
+        .more-info {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Essential Reasons to Use a Corporate Video Editing Service</h1>
+        <div class="reason" onclick="toggleInfo(this)">
+            <strong>1. Professional Quality</strong>
+            <p>Ensure your content is polished and engaging.</p>
+            <div class="more-info">Professional editing enhances storytelling and audience retention.</div>
+        </div>
+        <div class="reason" onclick="toggleInfo(this)">
+            <strong>2. Effective Branding</strong>
+            <p>Consistent video style strengthens your brand identity.</p>
+            <div class="more-info">Customized edits align with your brand’s message and voice.</div>
+        </div>
+        <div class="reason" onclick="toggleInfo(this)">
+            <strong>3. Time Efficiency</strong>
+            <p>Focus on your core business while experts handle the editing.</p>
+            <div class="more-info">Outsourcing editing saves you hours, allowing you to concentrate on strategy.</div>
+        </div>
+        <div class="reason" onclick="toggleInfo(this)">
+            <strong>4. Access to Advanced Tools</strong>
+            <p>Utilize industry-standard software for superior results.</p>
+            <div class="more-info">Video editors have access to tools that amateurs might lack.</div>
+        </div>
+        <div class="reason" onclick="toggleInfo(this)">
+            <strong>5. Strategic Marketing</strong>
+            <p>Tailored videos cater to specific audience segments and platforms.</p>
+            <div class="more-info">Using analytics, editors create content that resonates with your target market.</div>
+        </div>
+        <button id="toggleButton" onclick="toggleAll()">Toggle All Info</button>
+    </div>
+
+    <script>
+        function toggleInfo(element) {
+            const info = element.querySelector('.more-info');
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleAll() {
+            const infos = document.querySelectorAll('.more-info');
+            infos.forEach(info => {
+                info.style.display = info.style.display === 'block' ? 'none' : 'block';
+            });
+        }
+    </script>
+</body>
+</html>

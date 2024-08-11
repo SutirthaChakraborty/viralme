@@ -1,0 +1,88 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Metrics Insights</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  .video-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .video-metric {
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  .video-metric h3 {
+    margin: 0;
+  }
+</style>
+<script>
+  // Example JavaScript to dynamically update video metrics
+  const videoMetrics = {
+    views: 1000,
+    likes: 300,
+    dislikes: 50,
+    comments: 200
+  };
+
+  setInterval(() => {
+    videoMetrics.views += Math.floor(Math.random() * 100);
+    videoMetrics.likes += Math.floor(Math.random() * 50);
+    videoMetrics.dislikes += Math.floor(Math.random() * 20);
+    videoMetrics.comments += Math.floor(Math.random() * 50);
+
+    updateMetrics();
+  }, 1000);
+
+  function updateMetrics() {
+    const viewsEl = document.querySelector('#views');
+    viewsEl.textContent = videoMetrics.views;
+    const likesEl = document.querySelector('#likes');
+    likesEl.textContent = videoMetrics.likes;
+    const dislikesEl = document.querySelector('#dislikes');
+    dislikesEl.textContent = videoMetrics.dislikes;
+    const commentsEl = document.querySelector('#comments');
+    commentsEl.textContent = videoMetrics.comments;
+  }
+</script>
+</head>
+<body onload="updateMetrics()">
+  <div class="container">
+    <h2>Video Metrics Insights</h2>
+    <div class="video-metrics">
+      <div class="video-metric">
+        <h3>Views</h3>
+        <span id="views">0</span>
+      </div>
+      <div class="video-metric">
+        <h3>Likes</h3>
+        <span id="likes">0</span>
+      </div>
+      <div class="video-metric">
+        <h3>Dislikes</h3>
+        <span id="dislikes">0</span>
+      </div>
+      <div class="video-metric">
+        <h3>Comments</h3>
+        <span id="comments">0</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

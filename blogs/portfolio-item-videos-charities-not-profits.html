@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Item: Charity Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.02);
+        }
+        video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .keywords {
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Item: Charity Videos</h1>
+    </header>
+    <div class="portfolio-item">
+        <h2>Empowering Change Through Video</h2>
+        <video controls>
+            <source src="charity-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>This video showcases our commitment to charity and non-profit work, highlighting impactful stories that inspire action.</p>
+        <p class="keywords">Keywords: Charity, Non-Profit, Social Impact, Community Engagement, Video Storytelling</p>
+    </div>
+    <script>
+        const video = document.querySelector('video');
+        video.addEventListener('ended', () => {
+            alert('Thank you for watching! Consider supporting our cause.');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+Here's a simple HTML code snippet with embedded CSS and JavaScript that creates a portfolio item for "Now TV Sam Bennett" with some relevant keywords to improve search visibility. The example uses a responsive design and an interactive hover effect.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Bennett's Now TV Portfolio</title>
+    <style>
+        /* CSS styles */
+        .portfolio-item {
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin: 10px;
+            display: inline-block;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .portfolio-item:hover {
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-title {
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .keyword-description {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+    <script>
+        // JavaScript for interactive effect (optional)
+        window.addEventListener('DOMContentLoaded', function() {
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            portfolioItems.forEach((item) => {
+                item.addEventListener('mouseover', function(e) {
+                    item.classList.add('active');
+                });
+                item.addEventListener('mouseout', function(e) {
+                    item.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="portfolio-item">
+        <h2 class="portfolio-title">Sam Bennett's Now TV Portfolio</h2>
+        <div class="keyword-description">
+            <strong>Keywords:</strong> television production, content creator, nowtv, broadcast, digital media, <br>
+            entertainment industry, interactive storytelling,
+            <br><a href="#" target="_blank" class="link">view projects</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+This HTML code creates a single portfolio item with a title and a brief description containing relevant keywords. The JavaScript

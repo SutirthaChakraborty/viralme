@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Project Rhapsody - HP event opener video showcasing innovative technology and creative solutions.">
+    <meta name="keywords" content="Project Rhapsody, HP event, opener video, technology innovation, creative solutions, digital storytelling">
+    <title>Project Rhapsody - HP Event Opener</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #005EB8;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .play-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #005EB8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .play-button:hover {
+            background: #00397C;
+        }
+        .video-container {
+            display: none;
+            margin-top: 20px;
+        }
+        .video {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Rhapsody: HP Event Opener Video</h1>
+        <p>Explore the captivating world of Project Rhapsody, the HP event opener video that highlights cutting-edge technology and innovative design.</p>
+        <button class="play-button" onclick="toggleVideo()">Play Video</button>
+        <div class="video-container" id="videoContainer">
+            <iframe class="video" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        function toggleVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

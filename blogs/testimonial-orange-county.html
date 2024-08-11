@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orange County Testimonials - Read real customer feedback on services in OC">
+    <title>Testimonials - Orange County Feedback</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff7f50;
+        }
+        .testimonial-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .testimonial-container:hover {
+            transform: scale(1.02);
+        }
+        .testimonial {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid #ff7f50;
+        }
+        .author {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff6347;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Customer Testimonials - Orange County</h1>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            "Absolutely amazing service in Orange County! The team was professional and attentive."
+            <div class="author">- Jessica T.</div>
+        </div>
+        <div class="testimonial">
+            "I had a fantastic experience with this business. Highly recommend them for their fantastic customer service."
+            <div class="author">- Mark R.</div>
+        </div>
+        <div class="testimonial">
+            "The best experience I've had in Orange County! Will definitely be coming back."
+            <div class="author">- Sarah W.</div>
+        </div>
+    </div>
+    <button onclick="alert('Thank you for your feedback!')">Submit Your Testimonial</button>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            const testimonial = prompt('Please enter your testimonial:');
+            if (testimonial) {
+                const testimonialDiv = document.createElement('div');
+                testimonialDiv.className = 'testimonial';
+                testimonialDiv.innerHTML = `"${testimonial}"<div class="author">- New User</div>`;
+                document.querySelector('.testimonial-container').appendChild(testimonialDiv);
+            }
+        });
+    </script>
+
+</body>
+</html>

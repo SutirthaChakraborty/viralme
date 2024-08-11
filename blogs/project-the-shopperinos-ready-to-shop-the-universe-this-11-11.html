@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopperinos: Unveiling the All-Encompassing Shopping Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .brand-logo {
+            width: 150px;
+            height: 50px;
+            display: block;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+
+        .header h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .description p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 2px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        // Simple interactive CSS change (mouseover effect)
+        function changeColorOnHover(element) {
+            element.addEventListener('mouseover', function() {
+                this.style.color = 'yellow';
+            });
+            element.addEventListener('mouseout', function() {
+                this.style.color = 'initial';
+            });
+        }
+
+        // Apply the hover function to specific elements
+        document.querySelectorAll('.description p').forEach(changeColorOnHover);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://example.com/shopperinos-logo.png" alt

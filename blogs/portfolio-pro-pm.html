@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Pro PM - A comprehensive guide for project management professionals, showcasing skills, projects, and experience.">
+    <title>Portfolio Pro PM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .intro {
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .skills, .projects {
+            margin-top: 20px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        #projectList {
+            display: none;
+            margin-top: 10px;
+            list-style-type: none;
+            padding: 0;
+        }
+        #projectList li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Pro PM</h1>
+        <p>Your gateway to project management excellence</p>
+    </header>
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a project manager with expertise in Agile methodologies, teamwork, and strategic planning.</p>
+        </div>
+        <div class="skills">
+            <h2>Key Skills</h2>
+            <ul>
+                <li>Agile Project Management</li>
+                <li>Team Leadership</li>
+                <li>Risk Management</li>
+                <li>Strategic Planning</li>
+                <li>Stakeholder Engagement</li>
+            </ul>
+        </div>
+        <div class="projects">
+            <h2>My Projects</h2>
+            <button onclick="toggleProjects()">View Projects</button>
+            <ul id="projectList">
+                <li>Project 1: Corporate Website Redesign</li>
+                <li>Project 2: Mobile App Development</li>
+                <li>Project 3: Marketing Strategy Implementation</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleProjects() {
+            const projectList = document.getElementById('projectList');
+            if (projectList.style.display === 'none' || projectList.style.display === '') {
+                projectList.style.display = 'block';
+            } else {
+                projectList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

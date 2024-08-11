@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional video production services in Oakland and the East Bay. Create captivating visual content for business and personal use.">
+    <title>Video Production Oakland East Bay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        .info {
+            cursor: pointer;
+            color: #007bff;
+        }
+        .info:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Production Services in Oakland East Bay</h1>
+    </header>
+    <section>
+        <h2>Why Choose Us?</h2>
+        <p>We specialize in high-quality video production, offering services ranging from corporate videos to promotional content. Our team in Oakland and the East Bay is dedicated to bringing your vision to life.</p>
+        <h3>Our Services</h3>
+        <ul>
+            <li>Corporate Videos</li>
+            <li>Event Coverage</li>
+            <li>Promotional Videos</li>
+            <li>Video Editing</li>
+            <li>Animation Services</li>
+        </ul>
+        <button class="button" onclick="showMore()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <p>With state-of-the-art equipment and a skilled team, we ensure that your story is told effectively through engaging visuals. We serve clients throughout Oakland and the entire East Bay area, catering to various industries.</p>
+        </div>
+        <p>Contact us today to discuss your video production needs!</p>
+        <p class="info" onclick="toggleContact()">Need more info? Click here!</p>
+        <div id="contactInfo" style="display:none;">
+            <p>Email: info@videoproductionoakland.com</p>
+            <p>Phone: (555) 123-4567</p>
+        </div>
+    </section>
+    <script>
+        function showMore() {
+            const moreInfo = document.getElementById('moreInfo');
+            moreInfo.style.display = moreInfo.style.display === 'none' ? 'block' : 'none';
+        }
+        function toggleContact() {
+            const contactInfo = document.getElementById('contactInfo');
+            contactInfo.style.display = contactInfo.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are TV Commercials Effective?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            display: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Are TV Commercials Effective?</h1>
+    </header>
+    <section>
+        <p>TV commercials have been a staple of advertising for decades. They are known for their ability to reach large audiences and create memorable brand impressions.</p>
+        <p>Key points to consider:</p>
+        <ul>
+            <li>Emotional engagement</li>
+            <li>Visual storytelling</li>
+            <li>Brand recall and recognition</li>
+        </ul>
+        <button id="showResult">Find Out</button>
+        <div class="result" id="result"></div>
+    </section>
+    <script>
+        document.getElementById('showResult').onclick = function() {
+            const effectivenessMessage = "TV commercials can be highly effective due to their wide reach, emotional connection, and ability to enhance brand recognition.";
+            document.getElementById('result').innerText = effectivenessMessage;
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

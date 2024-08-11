@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Advanced Génifique with Jeanette Aw</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #6c63ff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6c63ff;
+            font-weight: bold;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+        }
+        .show {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Advanced Génifique</h1>
+        <h2>With Jeanette Aw</h2>
+    </header>
+    <nav>
+        <a href="#" onclick="toggleInfo('info1')">About Advanced Génifique</a>
+        <a href="#" onclick="toggleInfo('info2')">Jeanette Aw's Role</a>
+        <a href="#" onclick="toggleInfo('info3')">Benefits of the Product</a>
+    </nav>
+    <section>
+        <div id="info1" class="interactive">
+            <h3>About Advanced Génifique</h3>
+            <p>Advanced Génifique is a revolutionary serum designed to enhance skin's radiance and texture.</p>
+        </div>
+        <div id="info2" class="interactive">
+            <h3>Jeanette Aw's Role</h3>
+            <p>Jeanette Aw is a brand ambassador, promoting the benefits of Advanced Génifique through her personal experiences.</p>
+        </div>
+        <div id="info3" class="interactive">
+            <h3>Benefits of the Product</h3>
+            <p>This serum helps in reducing fine lines, improving skin texture, and boosting overall radiance.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Project Advanced Génifique</p>
+    </footer>
+    <script>
+        function toggleInfo(infoId) {
+            const elements = document.querySelectorAll('.interactive');
+            elements.forEach(element => {
+                if (element.id === infoId) {
+                    element.classList.toggle('show');
+                } else {
+                    element.classList.remove('show');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Services in Manchester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .service {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .service:hover {
+            background-color: #e9ecef;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Content Marketing Services in Manchester</h1>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="service" onclick="toggleDetails('service1')">
+        <h3>SEO Optimization</h3>
+        <div id="service1" class="details">
+            <p>Enhance your online visibility with our expert SEO strategies tailored for Manchester businesses.</p>
+        </div>
+    </div>
+    <div class="service" onclick="toggleDetails('service2')">
+        <h3>Social Media Management</h3>
+        <div id="service2" class="details">
+            <p>Engage your audience effectively through targeted social media campaigns.</p>
+        </div>
+    </div>
+    <div class="service" onclick="toggleDetails('service3')">
+        <h3>Content Creation</h3>
+        <div id="service3" class="details">
+            <p>High-quality content tailored to your brand's voice and audience.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleDetails(serviceId) {
+        const details = document.getElementById(serviceId);
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

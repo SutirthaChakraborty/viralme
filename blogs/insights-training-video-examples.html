@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights Training Video Examples for Enhanced Learning">
+    <title>Insights Training Video Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video {
+            margin: 20px 0;
+        }
+        .video iframe {
+            width: 100%;
+            height: 315px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights Training Video Examples</h1>
+</header>
+
+<nav>
+    <a href="#" onclick="showVideo('video1')">Video 1: Introduction to Insights</a>
+    <a href="#" onclick="showVideo('video2')">Video 2: Advanced Techniques</a>
+    <a href="#" onclick="showVideo('video3')">Video 3: Best Practices</a>
+</nav>
+
+<div class="content" id="videoContent">
+    <h2>Select a video to view</h2>
+</div>
+
+<footer>
+    <p>&copy; 2024 Insights Training. All rights reserved.</p>
+</footer>
+
+<script>
+    function showVideo(video) {
+        let content = document.getElementById('videoContent');
+        let videoHTML = '';
+
+        switch(video) {
+            case 'video1':
+                videoHTML = '<h2>Video 1: Introduction to Insights</h2><div class="video"><iframe src="https://www.youtube.com/embed/your_video_id_1" frameborder="0" allowfullscreen></iframe></div>';
+                break;
+            case 'video2':
+                videoHTML = '<h2>Video 2: Advanced Techniques</h2><div class="video"><iframe src="https://www.youtube.com/embed/your_video_id_2" frameborder="0" allowfullscreen></iframe></div>';
+                break;
+            case 'video3':
+                videoHTML = '<h2>Video 3: Best Practices</h2><div class="video"><iframe src="https://www.youtube.com/embed/your_video_id_3" frameborder="0" allowfullscreen></iframe></div>';
+                break;
+            default:
+                videoHTML = '<h2>Select a video to view</h2>';
+        }
+
+        content.innerHTML = videoHTML;
+    }
+</script>
+
+</body>
+</html>

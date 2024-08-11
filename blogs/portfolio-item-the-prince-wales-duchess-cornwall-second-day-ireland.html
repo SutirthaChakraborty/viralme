@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince of Wales & Duchess of Cornwall in Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .portfolio-item {
+            margin: 20px 0;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .portfolio-item:hover {
+            background: #bdc3c7;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #dfe6e9;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prince of Wales & Duchess of Cornwall: Day 2 in Ireland</h1>
+        <div class="portfolio-item" onclick="toggleDetails('day2-details')">
+            <h2>Exploring Cultural Heritage</h2>
+            <p>Click to learn more about their visit to Ireland.</p>
+        </div>
+        <div id="day2-details" class="details">
+            <p>On their second day in Ireland, the Prince of Wales and Duchess of Cornwall engaged with local communities, emphasizing the significance of cultural heritage sites and promoting local arts and crafts. Their itinerary included visits to historic landmarks, attendance at exhibitions, and meetings with cultural ambassadors.</p>
+        </div>
+        <button onclick="toggleDetails('day2-details')">Show/Hide Details</button>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PictureLab Logo Bumpers Demo Reel</title>
+<style>
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.bumper-reel {
+  position: relative;
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bumper-captions {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.demo-thumbs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.demo-thumb {
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.demo-thumb img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.demo-thumb.active img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin: 10px 0;
+  }
+  .bumper-reel {
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="logo">
+    <img src="path_to_picturelab_logo.png" alt="PictureLab Logo">
+  </div>
+  <div class="bumper-reel">
+    <div class="bumpers">
+      <!-- Bumper images (replace with actual image URLs) -->
+      <div class="demo-thumb active" data-index="1" style="background-image: url('bumper1.jpg');">
+        <img src="path_to_thumbnail1.png" alt="Bumper 1" />
+      </div>
+      <div class="demo-thumb" data-index="2" style="background-image: url('bumper

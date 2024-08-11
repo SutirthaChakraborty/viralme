@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exclusive insights from Sir Patrick Stewart over a cuppa. Discover inspiration, wisdom, and motivation.">
+    <title>Insights with Sir Patrick Stewart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #6200ea;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #6200ea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #3700b3;
+        }
+        #insight {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #6200ea;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights Over a Cuppa</h1>
+    <p>With Sir Patrick Stewart</p>
+</header>
+
+<div class="container">
+    <h2>Get Inspired</h2>
+    <p>Join Sir Patrick Stewart as he shares his thoughts on life, creativity, and motivation over a warm cup. Dive into the wisdom that inspires generations.</p>
+    <button id="showInsightBtn">Reveal Insight</button>
+    <div id="insight">
+        <h3>A Thought from Sir Patrick Stewart</h3>
+        <p>"It's the connections we make and the stories we share that truly matter. Let's embrace every moment." - Sir Patrick Stewart</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('showInsightBtn').onclick = function() {
+        const insight = document.getElementById('insight');
+        if (insight.style.display === "none" || insight.style.display === "") {
+            insight.style.display = "block";
+        } else {
+            insight.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

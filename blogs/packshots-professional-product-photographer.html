@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packshots | Professional Product Photographer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .packshot {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .packshot img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .packshot:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Product Photography: Packshots</h1>
+    </header>
+    <div class="container">
+        <h2>What are Packshots?</h2>
+        <p>Packshots are high-quality images of products, used primarily in advertising and marketing to enhance brand visibility and attract customers.</p>
+
+        <div class="packshot">
+            <img src="packshot1.jpg" alt="Product 1">
+            <img src="packshot2.jpg" alt="Product 2">
+        </div>
+        
+        <button onclick="showDetails()">Learn More</button>
+        <p id="details" style="display:none;">Packshots help convey your product's quality and appeal, making them essential for e-commerce platforms, catalogs, and promotional materials. Effective product photography uses lighting, background, and composition to showcase the product effectively.</p>
+    </div>
+
+    <script>
+        function showDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint Color Theme - A Refreshing Experience</title>
+    <style>
+        /* Use keywords related to mint for better SEO */
+        body {
+            background-color: #F5F8FA; /* Soft mint background */
+            font-family: 'Open Sans', sans-serif; /* Clean and modern font */
+            color: #3F51B5; /* Light mint text color */
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        a:hover {
+            color: #1A237E; /* Darker mint hover color */
+            text-decoration: underline;
+        }
+
+        /* Interactive CSS + JS */
+        .keyword-trigger {
+            display: inline-block;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+
+        .keyword-trigger:hover {
+            border-bottom: 2px dotted #3F51B5;
+        }
+
+        @media (hover: none) {
+            .keyword-trigger {
+                border-bottom: 2px dotted #3F51B5;
+            }
+        }
+    </style>
+
+    <script>
+        function highlightMint() {
+            document.body.style.backgroundColor = "#BDD7EE"; /* Dark mint background on hover */
+        }
+
+        function restoreBackground() {
+            document.body.style.backgroundColor = "#F5F8FA";
+        }
+
+        document.querySelectorAll('.keyword-trigger').forEach(trigger => {
+            trigger.addEventListener('mouseover', highlightMint);
+            trigger.addEventListener('mouseout', restoreBackground);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Mint: A Color for Freshness and Invigoration</h1>
+        <p>Mint colors have a rejuvenating effect, making websites feel calming and energetic. Helps in creating an inviting atmosphere for users. In design, pastel shades of mint provide a harmonious look that's perfect for various applications, from branding to

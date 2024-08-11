@@ -1,0 +1,79 @@
+Here's a small HTML code snippet that includes CSS and JavaScript to create an interactive advertising example with display ads and videos:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Advertising Example</title>
+  <style>
+    /* CSS styles for the display ads */
+    .display-ad {
+      width: 300px;
+      height: 250px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* CSS styles for the videos */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Post Explore Interactive Advertising Examples</h1>
+
+  <div class="display-ad">
+    <h2>Display Ad Example</h2>
+    <p>This is a static display ad with images and text.</p>
+    <img src="display-ad-image.jpg" alt="Display Ad Image">
+    <p>Click <a href="#">here</a> to learn more.</p>
+  </div>
+
+  <div class="display-ad">
+    <h2>Animated Display Ad Example</h2>
+    <p>This is an animated display ad with basic animations.</p>
+    <img src="animated-ad-image.gif" alt="Animated Display Ad Image">
+    <p>Click <a href="#">here</a> to learn more.</p>
+  </div>
+
+  <div class="display-ad">
+    <h2>Video Ad Example</h2>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>Click <a href="#">here</a> to watch the video.</p>
+  </div>
+
+  <script>
+    // JavaScript code for interactive elements
+    var displayAds = document.querySelectorAll('.display-ad');
+    displayAds.forEach(function(ad) {
+      ad.addEventListener('click', function() {
+        alert('You clicked on the ad!');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+Please note that you will need to replace the image and video URLs with your own resources. Additionally, make sure to update the `video-id` in the YouTube embed code with the actual ID of the video you want to display.
+
+This code snippet includes CSS styles for the display ads and a video container. It also includes JavaScript code to add interactivity to the display ads by showing an alert when clicked.
+
+Feel free to modify the code and add more elements or styles as needed to suit your specific requirements.

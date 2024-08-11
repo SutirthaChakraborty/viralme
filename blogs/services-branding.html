@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Branding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .service {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0066cc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Branding Services</h1>
+    <div class="container">
+        <div class="service" onclick="showDetails('brand-development')">
+            <h2>Brand Development</h2>
+            <p>Creating a strong brand identity that resonates with your audience.</p>
+            <button class="btn">Learn More</button>
+        </div>
+        <div class="service" onclick="showDetails('visual-identity')">
+            <h2>Visual Identity</h2>
+            <p>Designing logos, color palettes, and typography that convey your brand's essence.</p>
+            <button class="btn">Learn More</button>
+        </div>
+        <div class="service" onclick="showDetails('brand-strategy')">
+            <h2>Brand Strategy</h2>
+            <p>Developing a roadmap for consistent brand messaging and positioning.</p>
+            <button class="btn">Learn More</button>
+        </div>
+    </div>
+    <script>
+        function showDetails(service) {
+            const messages = {
+                'brand-development': 'Brand Development involves defining your brand\'s mission, vision, and values to connect with your target audience effectively.',
+                'visual-identity': 'Visual Identity plays a crucial role in making a memorable first impression through visuals that embody your brand\'s personality.',
+                'brand-strategy': 'Brand Strategy focuses on understanding market trends, customer needs, and establishing a brand voice that differentiates you from competitors.'
+            };
+            alert(messages[service]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+#### HTML and CSS Code for Interactive Videos
+
+Below is a simple HTML code with CSS to create an interactive video section on a webpage. The code includes CSS for styling and JavaScript for interactivity.
+
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Videos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <video controls>
+            <source src="example_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <button id="play-button">Play</button>
+            <p id="video-description">Interactive Video Description</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+#play-button {
+    background: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#play-button:hover {
+    background: #cc0000;
+}
+
+
+JavaScript (script.js):
+
+document.getElementById('play-button').addEventListener('click', function() {
+    var video = document.querySelector('video');
+    if (video.paused) {
+        video.play();
+        document.getElementById('play-button').style.display = 'none';
+        document.getElementById('video-description').style.display = 'none';
+    } else {
+        video.pause();
+    }
+});
+
+
+This code creates a video container with a play button and a description overlay. When the play button is clicked, the video starts playing and the overlay disappears. The code includes relevant keywords such as "interactive videos," "CSS," and "JavaScript" to optimize reach.

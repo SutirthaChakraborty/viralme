@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Video Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            margin: 10px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Social Video Project</h1>
+    <p>Engaging videos for social media platforms</p>
+</header>
+
+<section>
+    <h2>About the Project</h2>
+    <p>This project focuses on creating engaging social videos that can be shared across various platforms. The aim is to enhance user interaction and promote content sharing.</p>
+</section>
+
+<section class="video-container">
+    <video controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>Work Samples</h2>
+    <p>Check out our latest social video projects:</p>
+    <ul>
+        <li>Video Marketing Strategies</li>
+        <li>Behind the Scenes of Our Production</li>
+        <li>Customer Testimonials</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Contact Us</p>
+    <div class="social-icons">
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2024 Social Video Project</p>
+</footer>
+
+<script>
+    document.querySelector('video').addEventListener('play', function() {
+        console.log('Video is playing');
+    });
+    document.querySelector('video').addEventListener('pause', function() {
+        console.log('Video is paused');
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners & Collaboration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .topic {
+            width: calc(33.33% - 20px);
+            margin-bottom: 30px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .topic h2 {
+            margin-top: 0;
+        }
+        .description {
+            line-height: 1.5;
+        }
+        .call-to-action {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function showExplanation() {
+            const explanations = document.getElementsByClassName("explanation");
+            explanations.forEachExplanation(explanation => {
+                explanation.style.maxHeight = "0px";
+                explanation.classList.add("hidden");
+            });
+            
+            const checkedPartner = document.querySelector('input[name="partners"]:checked');
+            if (checkedPartner) {
+                const explanationId = checkedPartner.dataset.description;
+                document.getElementById(explanationId).style.maxHeight = "200px";
+                document.getElementById(explanationId).classList.remove("hidden");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="

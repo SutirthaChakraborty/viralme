@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clemens Hatfield's portfolio showcasing web design, graphic design, and digital art.">
+    <title>Clemens Hatfield Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .item {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .description {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Clemens Hatfield's Portfolio</h1>
+    <p>Web Design | Graphic Design | Digital Art</p>
+</header>
+
+<section class="portfolio">
+    <div class="item">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="description">
+            <h2>Project Title One</h2>
+            <p>A brief description of Project One, highlighting key features and technologies used.</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="description">
+            <h2>Project Title Two</h2>
+            <p>A brief description of Project Two, showcasing creativity and design principles applied.</p>
+        </div>
+    </div>
+    <div class="item">
+        <img src="project3.jpg" alt="Project 3">
+        <div class="description">
+            <h2>Project Title Three</h2>
+            <p>A brief description of Project Three, emphasizing user experience and functionality.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.item').forEach(item => {
+        item.addEventListener('click', () => {
+            alert('Learn more about this project!');
+        });
+    });
+</script>
+
+</body>
+</html>

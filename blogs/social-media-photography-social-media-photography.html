@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #6200ea;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Photography Tips</h1>
+    </header>
+    <section>
+        <h2>Capture Engaging Content</h2>
+        <p>Social media photography is about sharing visual stories that resonate with your audience. Use high-quality images to attract attention.</p>
+    </section>
+    <section>
+        <h2>Utilize Natural Light</h2>
+        <p>Natural light enhances photos significantly. Find the best times to shoot outdoors or by windows to achieve stunning results.</p>
+    </section>
+    <section>
+        <h2>Understand Your Audience</h2>
+        <p>Tailor your photography style to your audience's preferences to increase engagement and shares on platforms like Instagram and Facebook.</p>
+    </section>
+    <section>
+        <h2>Interactive Photo Challenge</h2>
+        <p>Click the button below to see a fun photo challenge idea!</p>
+        <button onclick="showChallenge()">Show Challenge</button>
+        <p id="challenge" style="display:none;"></p>
+    </section>
+
+    <script>
+        function showChallenge() {
+            const challengeText = "Take a photo of something that represents your day and share it with a creative caption!";
+            document.getElementById('challenge').innerText = challengeText;
+            document.getElementById('challenge').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

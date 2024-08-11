@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mary Elmes Bridge: A landmark of architectural beauty and community significance in Cork, Ireland. Explore its history, design, and role in connecting communities.">
+    <title>Mary Elmes Bridge | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mary Elmes Bridge</h1>
+    <p>Explore the architectural marvel and community connector in Cork, Ireland</p>
+</header>
+
+<div class="container">
+    <img src="mary-elmes-bridge.jpg" alt="Mary Elmes Bridge" class="image">
+    <h2>About the Bridge</h2>
+    <p>Mary Elmes Bridge, originally known for its design by architect Sir William Atkins, stands as a tribute to the humanitarian efforts of Mary Elmes. This iconic bridge not only connects different parts of Cork but also symbolizes support and unity in the community.</p>
+    
+    <button class="button" onclick="toggleInfo()">Learn More</button>
+    <div id="moreInfo" class="hidden">
+        <h3>Historical Significance</h3>
+        <p>Mary Elmes was a courageous aid worker during World War II. The bridge named after her serves as a reminder of her commitment to bridging divides and fostering human connection.</p>
+        <h3>Architectural Features</h3>
+        <p>Designed with modern sustainability principles, the bridge features pedestrian walkways and scenic views of the River Lee, making it a popular spot for locals and tourists alike.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo() {
+        const info = document.getElementById('moreInfo');
+        info.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

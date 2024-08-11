@@ -1,0 +1,82 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Relations & Lensmen Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            background-size: contain;
+            margin-right: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        // JavaScript for interactive explanation
+        window.onload = function() {
+            var explanations = document.getElementsByClassName('explanation');
+
+            for (var i = 0; i < explanations.length; i++) {
+                explanations[i].addEventListener('mouseover', function() {
+                    this.style.color = 'blue';
+                    this.textContent += '<br><span class="italic">(Hover for a brief explanation of public relations photography and lensmen photography)</span>';
+                });
+
+                explanations[i].addEventListener('mouseout', function() {
+                    this.style.color = '';
+                    this.textContent

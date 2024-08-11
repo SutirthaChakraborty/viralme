@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Coveney's Thornwood Social Housing Initiative</title>
+    <meta name="description" content="Explore Simon Coveney's innovative social housing initiative in Thornwood, Dublin, focused on affordable housing solutions.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .info {
+            margin: 20px 0;
+        }
+        .show-more {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Thornwood Housing Initiative</h1>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h2>About the Initiative</h2>
+            <p>Simon Coveney, Minister for Housing, has officially launched a new social housing initiative in Thornwood, Dublin. This program aims to provide affordable housing solutions for families in need. With a focus on sustainability, community engagement, and modern amenities, Thornwood sets a new standard for social housing in Ireland.</p>
+            <span class="show-more" onclick="toggleDetails()">Show More</span>
+            <div class="details" id="details">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Affordable housing units for low-income families</li>
+                    <li>Focus on eco-friendly construction</li>
+                    <li>Community facilities and green spaces</li>
+                    <li>Partnership with local organizations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Thornwood Initiative. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById('details');
+            details.style.display = (details.style.display === 'none' || details.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

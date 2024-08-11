@@ -1,0 +1,104 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Creation: Our Focus</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  color: #4CAF50;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.content {
+  padding: 20px;
+}
+.content h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+.content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+<script>
+function toggleContent() {
+  var content = document.getElementById('content');
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+  } else {
+    content.style.display = 'none';
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <h1>Content Creation</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#clients">Our Clients</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+  <div id="content" class="content">
+    <h2>What We Do</h2>
+    <p>We specialize in creating compelling and engaging content across various platforms. Whether it's for your website, social media, or any other digital medium, our team of experts ensures that your content stands out. Our focus is on delivering content that not only meets but exceeds your expectations.</p>
+    <button onclick="toggleContent()">Learn More</button>
+  </div>
+</div>
+<footer>
+  <p>&copy; 2024 Content Creation. All rights reserved.</p>
+</footer>
+</body>
+</html>

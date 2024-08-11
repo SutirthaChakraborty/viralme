@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Event photography portfolio showcasing stunning party photos capturing memorable moments.">
+    <title>Event Photography Portfolio | Party Photos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .photo-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.2s;
+        }
+        .photo-item:hover {
+            transform: scale(1.05);
+        }
+        .photo-item img {
+            width: 100%;
+            height: auto;
+        }
+        .photo-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .photo-info h3 {
+            font-size: 1.2em;
+            margin: 0;
+        }
+        .photo-info p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .btn {
+            padding: 10px 15px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Event Photography Portfolio</h1>
+    <p>Capturing the excitement and joy of your memorable party moments.</p>
+</header>
+
+<div class="portfolio" id="portfolio">
+    <div class="photo-item">
+        <img src="party1.jpg" alt="Birthday Party Celebration">
+        <div class="photo-info">
+            <h3>Birthday Bash</h3>
+            <p>Exciting moments captured from a vibrant birthday party.</p>
+        </div>
+    </div>
+    <div class="photo-item">
+        <img src="party2.jpg" alt="Corporate Event">
+        <div class="photo-info">
+            <h3>Corporate Gathering</h3>
+            <p>Professional shots from a successful corporate event.</p>
+        </div>
+    </div>
+    <div class="photo-item">
+        <img src="party3.jpg" alt="Wedding Reception">
+        <div class="photo-info">
+            <h3>Wedding Reception</h3>
+            <p>Beautiful memories from a stunning wedding reception.</p>
+        </div>
+    </div>
+</div>
+
+<button class="btn" onclick="viewMore()">View More Photos</button>
+
+<script>
+    function viewMore() {
+        alert("Explore our complete collection of amazing event photos!");
+        // Here you can redirect to another page or load more photos dynamically.
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Locations.kml Interactive Map</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.map-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ kml {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   background-color: #ffffff;
+   cursor: pointer;
+ }
+
+ kml:hover {
+   background-color: #f0f0f0;
+ }
+
+ kml-icon {
+   width: 30px;
+   height: 30px;
+   margin-right: 10px;
+ }
+
+ kml-label {
+   color: #333333;
+   font-weight: bold;
+ }
+</style>
+<script src="https://unpkg.com/kml-script@latest/kml-script.min.js"></script>
+<script>
+window.onload = function() {
+  // Replace 'your-location-kml-url' with the actual KML file URL
+  fetch('your-location-kml-url')
+    .then(response => response.text())
+    .then(data => {
+      // Process the KML data and create markers
+      const parser = new KMLScript.Parser();
+      const placemarks = parser.parse(data);
+
+      placemarks.forEach(placemark => {
+        const markup = `
+          <kml>
+            <Placemark id="${placemark.id}">
+              <name>${placemark.name}</name>
+              <description>${placemark.description}</description>
+              <Point>
+                <coordinates>${placemark.geometry.coordinates.join(',')[0]}, ${placemark.geometry.coordinates.join(',')[1]}, 0</coordinates>
+              </Point>
+              <styleMap id="style">
+                <Pair key="IconStyle.color" value="blue" />
+              </styleMap>
+              <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                  <href>path/to/your-marker-icon.png</href>
+                </Icon>
+              </IconStyle>
+            </Placemark>
+          </kml>
+        `;
+        document.body.insertAdjacentHTML

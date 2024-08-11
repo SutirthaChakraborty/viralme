@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Craft captivating product videos with top production companies targeting the manufacturing industry.">
+    <title>Crafting Captivating Product Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        #video-list {
+            display: none;
+            margin-top: 10px;
+        }
+        .video {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Craft Captivating Product Videos</h1>
+</header>
+
+<section>
+    <h2>Top Production Companies for Manufacturing Industries</h2>
+    <p>Unlock the potential of your products with stunning videos that capture your manufacturing process. Here are some leading production companies specializing in captivating product videos:</p>
+    <ul>
+        <li>Company A - Specialists in animation and motion graphics.</li>
+        <li>Company B - Experts in cinematic product showcasing.</li>
+        <li>Company C - Focused on drone and aerial video production.</li>
+    </ul>
+    <button id="toggle-videos">View Sample Videos</button>
+    <div id="video-list">
+        <div class="video">[Video Link 1]</div>
+        <div class="video">[Video Link 2]</div>
+        <div class="video">[Video Link 3]</div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('toggle-videos').onclick = function() {
+        var videoList = document.getElementById('video-list');
+        if (videoList.style.display === 'none' || videoList.style.display === '') {
+            videoList.style.display = 'block';
+            this.textContent = 'Hide Sample Videos';
+        } else {
+            videoList.style.display = 'none';
+            this.textContent = 'View Sample Videos';
+        }
+    };
+</script>
+
+</body>
+</html>

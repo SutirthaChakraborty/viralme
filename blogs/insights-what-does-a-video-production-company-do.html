@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Company Insight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 24px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 16px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-content {
+            max-height: 200px;
+            overflow: auto;
+        }
+        .highlight {
+            background-color: #FFFFCC;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function highlightKeyword(keyword) {
+            var highlightedText = document.getElementById('text');
+            var regex = new RegExp(keyword, 'gi');
+            highlightedText.innerHTML = highlightedText.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+        }
+        document.querySelectorAll('.keyword').forEach(function (el) {
+            el.addEventListener('click', function (e) {
+                var keyword = e.target.innerText;
+                highlightKeyword(keyword);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights into a Video Production Company's Role & Services</h1>
+        <div class="card">
+            <h2 class="card-title

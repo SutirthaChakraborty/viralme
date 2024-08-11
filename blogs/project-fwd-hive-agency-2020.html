@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWD Hive Agency 2020</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 200px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+        }
+
+        .service-item {
+            width: 30%;
+            padding: 10px;
+        }
+
+        .service-item h3 {
+            color: #333333;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        // Add simple interactivity, lightbox effect for buttons
+        function showLightbox(content) {
+            document.getElementById('lightbox').innerHTML = content;
+            document.getElementById('lightbox').style.display = 'block';
+            document.getElementById('close-button').addEventListener('click', function() {
+                document.getElementById('lightbox').style.display = 'none';
+            });

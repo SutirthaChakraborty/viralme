@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional photography and video production services. Capture stunning visuals for events, commercials, and creative projects.">
+    <title>Photography & Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .k-button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .k-button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Professional Photo & Video Productions</h1>
+</header>
+
+<div class="container">
+    <h2>Our Services</h2>
+    <p>We specialize in various <strong>productions</strong> encompassing <strong>photo shoots</strong>, <strong>video productions</strong>, and <strong>commercials</strong>. Our team is dedicated to capturing stunning visuals that tell your brand's story.</p>
+    <button class="k-button" onclick="showMore()">Learn More</button>
+    <div id="moreInfo" style="display:none;">
+        <h3>Why Choose Us?</h3>
+        <p>Our experienced professionals utilize the latest technology to provide high-quality images and videos. We cater to events, social media content, promotional campaigns, and more! From concept to final production, we handle it all.</p>
+    </div>
+</div>
+
+<script>
+    function showMore() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

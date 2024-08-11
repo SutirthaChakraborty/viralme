@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Moe Sen Teachers Interview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+        .topics {
+            flex: 1;
+            margin-right: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            flex: 2;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .topic {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .topic:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project Moe Sen Teachers Interview</h1>
+</header>
+
+<div class="container">
+    <div class="topics">
+        <h2>Interview Topics</h2>
+        <div class="topic" onclick="loadContent('intro')">Introduction to Project Moe Sen</div>
+        <div class="topic" onclick="loadContent('methodology')">Interview Methodology</div>
+        <div class="topic" onclick="loadContent('outcomes')">Expected Outcomes</div>
+    </div>
+    <div class="content" id="content">
+        <h2>Select a topic to see details</h2>
+    </div>
+</div>
+
+<script>
+    function loadContent(topic) {
+        let content = document.getElementById('content');
+        if (topic === 'intro') {
+            content.innerHTML = '<h2>Introduction to Project Moe Sen</h2><p>This project focuses on enhancing teacher interviews to improve educational outcomes.</p>';
+        } else if (topic === 'methodology') {
+            content.innerHTML = '<h2>Interview Methodology</h2><p>We utilize structured interviews to gather qualitative data from educators.</p>';
+        } else if (topic === 'outcomes') {
+            content.innerHTML = '<h2>Expected Outcomes</h2><p>The project aims to identify best practices and improve teaching strategies.</p>';
+        }
+    }
+</script>
+
+</body>
+</html>

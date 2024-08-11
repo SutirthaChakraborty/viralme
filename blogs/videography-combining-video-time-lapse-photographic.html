@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Time Lapse Photography: A Visual Journey</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #555;
+}
+
+.video-box {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.video-play {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.explanation {
+  text-align: justify;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2a8fbc;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+</style>
+<script>
+function toggleVideoOverlay(video) {
+  const overlay = video.querySelector('.video-overlay');
+  overlay.classList.toggle('visible');
+}
+
+function addVideoPlayerToElement(element) {
+  const video

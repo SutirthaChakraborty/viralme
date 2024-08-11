@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmin Sit or Squat Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .toggle-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 20px;
+            border-top: 1px solid #dee2e6;
+            padding-top: 10px;
+        }
+        .active {
+            display: block;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Charmin Sit or Squat Resources</h1>
+        <p>Discover tips and insights on whether to <strong>sit or squat</> in public restrooms. Charmin provides valuable guidelines and resources to enhance your bathroom experience.</p>
+        
+        <button class="toggle-btn" onclick="toggleContent()">Learn More</button>
+        
+        <div id="toggleContent" class="toggle-content">
+            <h2>Why Sit?</h2>
+            <p>Sitting ensures comfort and stability, helping avoid strain. It’s ideal in clean, safe environments.</p>
+
+            <h2>Why Squat?</h2>
+            <p>Squatting may be beneficial in less hygienic conditions, offering a practical solution to avoid contact.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Charmin. Your bathroom experience matters!</p>
+    </footer>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("toggleContent");
+            content.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

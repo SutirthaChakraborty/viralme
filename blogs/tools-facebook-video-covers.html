@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Video Cover Tools</title>
+    <style>
+        /* CSS for the video cover showcase */
+        .cover-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        
+        .cover-box {
+            width: 50%;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .cover-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .cover-hover:hover .cover-image {
+            transform: scale(1.05);
+            filter: brightness(110%);
+        }
+        
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .cover-container {
+                height: 300px;
+            }
+        }
+    </style>
+    <script>
+        // JavaScript for video cover transitions
+        document.addEventListener('DOMContentLoaded', function() {
+            var covers = document.querySelectorAll('.cover-box');
+            covers.forEach(function(cover) {
+                cover.addEventListener('mouseover', function() {
+                    cover.style.backgroundColor = 'rgba(0, 180, 255, 0.1)';
+                });
+                cover.addEventListener('mouseout', function() {
+                    cover.style.backgroundColor = 'transparent';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Facebook Video Cover Creation Tools &amp; Design Tips</h1>
+    
+    <div class="cover-container">
+        <div class="cover-box

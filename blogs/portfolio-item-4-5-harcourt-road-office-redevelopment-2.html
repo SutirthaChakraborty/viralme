@@ -1,0 +1,68 @@
+Here's a simple HTML and CSS code snippet incorporating the keywords for a portfolio item about the Harcourt Road Office Redevelopment project. The design is minimal and interactive, using hover effects for better engagement:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="portfolio item, Harcourt Road, office redevelopment, architecture, renovation, commercial space">
+    <title>Harcourt Road Office Redevelopment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .portfolio-item {
+            width: 300px;
+            height: 400px;
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .portfolio-item:hover {
+            background-color: #e0e0e0;
+        }
+
+        .portfolio-item h3 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .portfolio-item p {
+            color: #555;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function toggleDetails(event) {
+            const details = event.target.nextElementSibling;
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="portfolio-item" onclick="toggleDetails(event)">
+        <h3>Project 4: Harcourt Road Office Redevelopment</h3>
+        <p>Transforming an old space into a modern commercial hub</p>
+        <div id="projectDetails" style="display: none;">
+            <p>Keywords: architectural design, renovation, commercial revitalization, sustainable features, urban renewal</p>
+        </div>
+    </div>
+</body>
+</html>
+
+This code creates a responsive portfolio item with a simple card-style layout that changes background color on hover. A click event triggers

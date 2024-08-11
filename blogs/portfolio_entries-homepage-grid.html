@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Entries Home Page Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            width: calc(33% - 40px);
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3,
+        .card p {
+            padding: 15px;
+        }
+        .card h3 {
+            margin: 0;
+        }
+        .card p {
+            color: #777;
+        }
+        .card button {
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .card button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Entries Home Page Grid</h1>
+    <div class="container" id="portfolioGrid"></div>
+    <script>
+        const portfolioData = [
+            { title: 'Project A', imageUrl: 'https://via.placeholder.com/300x200', description: 'This is a description for Project A', link: 'https://www.example.com/project-a', tags: ['tag1', 'tag2'] },
+            { title: 'Project B', imageUrl: 'https://via.placeholder.com/300x200', description: 'This is a description for Project B', link: 'https://www.example.com/project-b', tags: ['tag1', 'tag3'] },
+            { title: 'Project C', imageUrl: 'https://via.placeholder.com/300x200', description: 'This is a description for Project C', link: 'https://www.example.com/project-c', tags: ['tag2', 'tag3'] },
+            { title: 'Project D', imageUrl: 'https://via.placeholder.com/300x200', description: 'This is a description for Project D', link: 'https://www.example.com/project-d', tags: ['tag1', 'tag2'] },
+            { title: 'Project E', imageUrl: 'https://via.placeholder.com/300x200', description: 'This is a description for Project E', link: 'https://www.example.com/project-e', tags: ['tag1', 'tag3'] },
+        ];
+        const portfolioGrid = document.getElementById('portfolioGrid');
+        portfolioData.forEach(data => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="${data.imageUrl}" alt="${data.title}">
+                <h3>${data.title}</h3>
+                <p>${data.description}</p>
+                <button onclick="window.open('${data.link}')">View Project</button>`;
+            portfolioGrid.appendChild(card);
+        });
+    </script>
+</body>
+</html>

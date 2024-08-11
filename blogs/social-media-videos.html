@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4267B2;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #128C7E;
+        }
+        .video-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Social Media Videos</h1>
+        <p>Engage Your Audience with Dynamic Content</p>
+    </header>
+    <div class="content">
+        <h2>Why Social Media Videos?</h2>
+        <p>Social media videos are essential for brands to connect with users, enhance engagement, and promote products. Key platforms include Instagram, Facebook, TikTok, and YouTube.</p>
+        <button id="learnMore">Learn More</button>
+        <div class="video-container" id="videoContainer">
+            <h3>Watch How to Create Engaging Videos!</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            <p>Discover tips for crafting compelling video content that drives interaction and shares.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('learnMore').onclick = function() {
+            var videoContainer = document.getElementById('videoContainer');
+            videoContainer.style.display = videoContainer.style.display === 'none' ? 'block' : 'none';
+        };
+    </script>
+</body>
+</html>

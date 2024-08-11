@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureWorks Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .resource {
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .resource:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        .toggle-button {
+            background: #3498db;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SecureWorks Cybersecurity Resources</h1>
+</header>
+
+<div class="container">
+    <div class="resource">
+        <h2>Whitepapers</h2>
+        <button class="toggle-button" onclick="toggleDetails('whitepapers')">View Details</button>
+        <div class="details" id="whitepapers">
+            <p>Download informative whitepapers to understand cybersecurity trends and best practices.</p>
+        </div>
+    </div>
+    <div class="resource">
+        <h2>Webinars</h2>
+        <button class="toggle-button" onclick="toggleDetails('webinars')">View Details</button>
+        <div class="details" id="webinars">
+            <p>Join our expert-led webinars for insights into advanced threat detection and response strategies.</p>
+        </div>
+    </div>
+    <div class="resource">
+        <h2>Case Studies</h2>
+        <button class="toggle-button" onclick="toggleDetails('caseStudies')">View Details</button>
+        <div class="details" id="caseStudies">
+            <p>Explore case studies that highlight effective cybersecurity implementations across various industries.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        var details = document.getElementById(id);
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

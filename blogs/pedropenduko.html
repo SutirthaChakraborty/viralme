@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the world of Pedro Penduko, a popular character in Filipino folklore. Learn about his adventures and cultural significance.">
+    <title>Pedro Penduko</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            transition: background-color 0.5s;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .toggle {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+            display: block;
+            width: 200px;
+            border-radius: 5px;
+        }
+        .description {
+            display: none;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pedro Penduko</h1>
+    <button class="toggle">Learn More About Pedro Penduko</button>
+    <div class="description">
+        <p>Pedro Penduko is a beloved character from Filipino folklore, known for his adventures and heroic deeds. He represents bravery and wit, often finding himself in extraordinary situations.</p>
+        <p>The tales of Pedro Penduko serve to educate and entertain while also preserving Filipino culture and traditions.</p>
+    </div>
+    <script>
+        const button = document.querySelector('.toggle');
+        const description = document.querySelector('.description');
+
+        button.addEventListener('click', () => {
+            description.style.display = description.style.display === 'none' || description.style.display === '' ? 'block' : 'none';
+            button.textContent = description.style.display === 'block' ? 'Show Less' : 'Learn More About Pedro Penduko';
+        });
+    </script>
+</body>
+</html>

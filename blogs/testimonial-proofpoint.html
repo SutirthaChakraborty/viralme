@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="testimonials, proofpoint, customer reviews, social proof, credibility, client feedback, trustworthiness">
+    <title>Testimonial Proofpoint</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .testimonial {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            transition: transform 0.2s;
+        }
+        .testimonial:hover {
+            transform: scale(1.02);
+        }
+        .author {
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: right;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Customer Testimonials</h1>
+
+    <div class="testimonial">
+        <p>"Proofpoint has transformed our email security protocols. We've seen a significant decrease in phishing attempts!"</p>
+        <div class="author">- Sarah Johnson, CTO at Tech Innovations</div>
+    </div>
+
+    <div class="testimonial">
+        <p>"Thanks to Proofpoint, our data loss prevention strategy is robust and reliable. Highly recommended!"</p>
+        <div class="author">- Mark Davis, IT Manager at SecureFiles Co.</div>
+    </div>
+
+    <button id="expandBtn">Show More Testimonials</button>
+    <div id="moreTestimonials" style="display:none;">
+        <div class="testimonial">
+            <p>"With Proofpoint's threat intelligence, we feel secure and informed against emerging threats."</p>
+            <div class="author">- Emily White, Cybersecurity Analyst at SafeGuard</div>
+        </div>
+        <div class="testimonial">
+            <p>"Proofpoint's user training helped us to mitigate risks effectively. A critical asset for our team!"</p>
+            <div class="author">- John Lee, Compliance Officer at FinTech Solutions</div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('expandBtn').addEventListener('click', function() {
+            var testimonials = document.getElementById('moreTestimonials');
+            if (testimonials.style.display === "none") {
+                testimonials.style.display = "block";
+                this.textContent = "Show Less Testimonials";
+            } else {
+                testimonials.style.display = "none";
+                this.textContent = "Show More Testimonials";
+            }
+        });
+    </script>
+</body>
+</html>

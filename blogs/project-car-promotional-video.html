@@ -1,0 +1,66 @@
+#### HTML Code for Project Car Promotional Video
+
+Here's a small HTML code snippet that you can use to create a simple and descent-looking webpage for a project car promotional video:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Car Promotional Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .video {
+      width: 800px;
+      height: 450px;
+      background-color: #000;
+      position: relative;
+    }
+    
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 48px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="video">
+      <div class="play-button">&#9658;</div>
+    </div>
+  </div>
+
+  <script>
+    const playButton = document.querySelector('.play-button');
+    const video = document.querySelector('.video');
+
+    playButton.addEventListener('click', () => {
+      video.innerHTML = '<iframe width="800" height="450" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    });
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a webpage with a container that centers a video element. The video element initially displays a play button. When the play button is clicked, the video element is replaced with an embedded YouTube video player.
+
+To use this code, replace `VIDEO_ID` in the `src` attribute of the `iframe` tag with the actual YouTube video ID of your project car promotional video.
+
+Feel free to customize the CSS styles and add more content to the webpage as needed.

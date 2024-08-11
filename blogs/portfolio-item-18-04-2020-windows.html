@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Item showcasing a project related to Windows developed on April 18, 2020.">
+    <title>Portfolio Item - April 18, 2020 - Windows Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .info {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .details {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Windows Project Overview</h1>
+        <div class="info">
+            <p>Date: April 18, 2020</p>
+            <p>Type: Software Development</p>
+            <p>Description: This project focuses on enhancing the Windows user experience through optimized performance and innovative features.</p>
+        </div>
+        <button class="button" onclick="toggleDetails()">Learn More</button>
+        <div class="details" id="projectDetails">
+            <h2>Project Highlights:</h2>
+            <ul>
+                <li>Improved system speed and reliability.</li>
+                <li>Enhanced user interface design.</li>
+                <li>Integration of productivity tools for efficient workflows.</li>
+                <li>Beta testing feedback incorporated for final release.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById('projectDetails');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

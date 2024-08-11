@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pope Francis at Croke Park</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: 300px;
+    height: auto;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Pope Francis at Croke Park</h1>
+<div class="photo-gallery">
+    <img src="pope-francis-1.jpg" alt="Pope Francis at Croke Park">
+    <img src="pope-francis-2.jpg" alt="Pope Francis at Croke Park">
+    <img src="pope-francis-3.jpg" alt="Pope Francis at Croke Park">
+</div>
+<script>
+document.querySelectorAll('.photo-gallery img').forEach(img => {
+    img.addEventListener('click', event => {
+        const imgSrc = event.target.src;
+        const modal = document.getElementById('photo-modal');
+        const modalImg = document.getElementById('photo-modal-img');
+        const captionText = document.getElementById('photo-modal-caption');
+        modal.style.display = 'block';
+        modalImg.src = imgSrc;
+        captionText.innerText = imgSrc.substring(imgSrc.lastIndexOf('/') + 1);
+    });
+});
+
+document.getElementById('close-modal').addEventListener('click', () => {
+    const modal = document.getElementById('photo-modal');
+    modal.style.display = 'none';
+});
+</script>
+</div>
+<div id="photo-modal" class="modal">
+    <span id="close-modal" class="close-modal">&times;</span>
+    <img id="photo-modal-img" alt="Pope Francis at Croke Park">
+    <div id="photo-modal-caption"></div>
+</div>
+</body>
+</html>

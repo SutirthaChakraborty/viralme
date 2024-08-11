@@ -1,0 +1,79 @@
+Sure, I can help you with that. Here's a small HTML code with CSS to demonstrate the topic of "service areas" using interactive CSS and JS:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Areas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Service Areas</h1>
+    <p>Welcome to our service areas page. Please hover over the areas on the map to see more information.</p>
+    <div id="map">
+        <div class="area" id="area1">New York</div>
+        <div class="area" id="area2">Los Angeles</div>
+        <div class="area" id="area3">Chicago</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#map {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.area {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#area1 {
+    background-color: #FF5733;
+}
+
+#area2 {
+    background-color: #33FFA8;
+}
+
+#area3 {
+    background-color: #3366FF;
+}
+
+.area:hover {
+    transform: scale(1.1);
+}
+
+
+JavaScript (script.js):
+javascript
+document.getElementById('area1').addEventListener('mouseover', function() {
+    alert('Service area: New York. Population: 8.4 million');
+});
+
+document.getElementById('area2').addEventListener('mouseover', function() {
+    alert('Service area: Los Angeles. Population: 3.9 million');
+});
+
+document.getElementById('area3').addEventListener('mouseover', function() {
+    alert('Service area: Chicago. Population: 2.7 million');
+});
+
+
+This code creates a simple web page with a map and interactive CSS and JS to display information about different service areas.

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights We Dare Nottingham in Parliament Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights We Dare Nottingham in Parliament Day</h1>
+</header>
+
+<section>
+    <h2>What is Insights We Dare?</h2>
+    <button class="toggle-button" onclick="toggleContent('content1')">Toggle Details</button>
+    <div id="content1" class="content">
+        <p>Insights We Dare is an initiative aimed at empowering communities through engagement in parliamentary processes. It focuses on raising awareness about local issues and encouraging civic participation.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Importance of Parliament Day</h2>
+    <button class="toggle-button" onclick="toggleContent('content2')">Toggle Details</button>
+    <div id="content2" class="content">
+        <p>Parliament Day serves as a platform for citizens to voice their concerns and influence decision-making. It fosters transparency and accountability in governance.</p>
+    </div>
+</section>
+
+<section>
+    <h2>How to Get Involved</h2>
+    <button class="toggle-button" onclick="toggleContent('content3')">Toggle Details</button>
+    <div id="content3" class="content">
+        <p>Community members can participate by attending events, engaging with local representatives, and sharing their insights on pressing issues affecting Nottingham.</p>
+    </div>
+</section>
+
+<script>
+    function toggleContent(contentId) {
+        var content = document.getElementById(contentId);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

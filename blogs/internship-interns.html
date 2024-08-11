@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore internship opportunities, benefits of internships, and tips for interns.">
+    <title>Internship Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Internship Insights</h1>
+        <p>Discover the world of **internships** and how they can benefit your career path.</p>
+        <button class="btn" onclick="toggleInfo()">Learn More About Internships</button>
+        <div class="info" id="info">
+            <h2>Benefits of Internships</h2>
+            <ul>
+                <li>Gain **practical experience** in your field.</li>
+                <li>Enhance your **resume** with valuable skills.</li>
+                <li>Network with **industry professionals**.</li>
+                <li>Explore potential **job opportunities**.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('info');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

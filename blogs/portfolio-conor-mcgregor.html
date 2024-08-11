@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the portfolio of Conor McGregor, a renowned MMA fighter and entrepreneur. Discover his career highlights, achievements, and impact in the fighting world.">
+    <title>Conor McGregor Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background: #FF4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #FF6347;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+        .career-highlights {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Conor McGregor Portfolio</h1>
+    <p>The Notorious MMA Fighter & Entrepreneur</p>
+</header>
+
+<section>
+    <h2>About Conor McGregor</h2>
+    <p>Conor McGregor is a professional mixed martial artist and a prominent figure in UFC. Known for his knockout power and charismatic persona, he has become a global icon.</p>
+    <button id="toggleHighlights" class="btn">View Career Highlights</button>
+    <div class="career-highlights">
+        <ul>
+            <li>Two-division champion in UFC (Featherweight and Lightweight)</li>
+            <li>First fighter in UFC history to hold titles in two weight classes simultaneously</li>
+            <li>Famous for his fight against Floyd Mayweather Jr. in 2017</li>
+            <li>Entrepreneurial ventures including Proper No. Twelve Irish Whiskey</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Conor McGregor Portfolio. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('toggleHighlights').onclick = function() {
+        var highlights = document.querySelector('.career-highlights');
+        highlights.style.display = highlights.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

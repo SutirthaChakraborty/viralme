@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Photography Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .portfolio-item {
+            margin: 20px auto;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .description {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Press Photography Portfolio</h1>
+    </header>
+    <div class="portfolio-item" onclick="showDetails()">
+        <img src="press-photo.jpg" alt="Press Photography" class="image">
+        <h2>Breaking News Coverage</h2>
+        <p class="description">Capturing the essence of real-time events as they unfold. Experience the thrill of journalism through photography.</p>
+    </div>
+    <script>
+        function showDetails() {
+            alert('Press photography is crucial in documenting events and telling stories visually. It emphasizes immediacy and clarity, capturing the emotions of moments.');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A responsive portfolio website with a color-coding system showcasing current projects and interactives CSS/JS examples.">
+    <title>Portfolio: Colors and Current Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .project {
+            display: flex;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .project-color {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c; /* Example: use a keyword color like "vibrant-cyan" or "solarized-blue" */
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        .project-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        .project-desc {
+            margin-bottom: 10px;
+        }
+
+        .js-demo {
+            margin-top: 20px;
+            padding: 15px;
+        }
+
+        .js-toggle {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Include an interactive demo using JavaScript */
+        <script>
+            function toggleDemo(state) {
+                if (state) {
+                    document.getElementById("js-output").style.display = "block";
+                    document.getElementById("js-toggle").innerText = "Hide CSS/JS Explanation";
+                } else {
+                    document.getElementById("js-output").style.display = "none";
+                    document.getElementById("js-toggle").innerText = "Show CSS/JS Explanation";
+                }
+            }

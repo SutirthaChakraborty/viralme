@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about test videos, their importance in quality assurance, and how they enhance user experience.">
+    <title>Test Video Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .video-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        video {
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid #2c3e50;
+            border-radius: 10px;
+        }
+        .info {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Test Videos</h1>
+    <div class="video-container">
+        <video controls>
+            <source src="test-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="info">
+        <p>Test videos are essential for quality assurance in software development. They help in validating functionality, ensuring user experience, and identifying bugs before the final release.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <p id="more-info" style="display:none;">Test videos can also be used for training purposes, providing visual guidance on how to use a product effectively.</p>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("more-info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

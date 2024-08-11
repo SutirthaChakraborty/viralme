@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Event Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .service-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #007bff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .service-item:hover {
+            background: #e7f0ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transform Your Events with Virtual Solutions</h1>
+    </header>
+    <div class="container">
+        <h2>Our Virtual Event Services</h2>
+        <div class="service-item" onclick="showInfo('eventPlanning')">
+            <h3>Virtual Event Planning</h3>
+            <p>Comprehensive planning services for seamless online events.</p>
+        </div>
+        <div class="service-item" onclick="showInfo('videoProduction')">
+            <h3>Video Production</h3>
+            <p>High-quality video production to elevate your virtual experience.</p>
+        </div>
+        <div class="service-item" onclick="showInfo('liveStreaming')">
+            <h3>Live Streaming Services</h3>
+            <p>Engage your audience with interactive live streaming solutions.</p>
+        </div>
+        <div id="info" style="margin-top:20px; display:none; padding: 15px; border: 1px solid #ccc;"></div>
+    </div>
+    <script>
+        function showInfo(service) {
+            const info = document.getElementById('info');
+            if (service === 'eventPlanning') {
+                info.innerHTML = '<h4>Virtual Event Planning Details</h4><p>We manage every aspect of your online event from logistics to execution, ensuring successful engagement and seamless experiences.</p>';
+            } else if (service === 'videoProduction') {
+                info.innerHTML = '<h4>Video Production Details</h4><p>Our expert team produces high-quality videos that captivate your audience and enhance your event experience.</p>';
+            } else if (service === 'liveStreaming') {
+                info.innerHTML = '<h4>Live Streaming Details</h4><p>Utilize our advanced technology for live streaming, providing your audience with real-time interaction and engagement.</p>';
+            }
+            info.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

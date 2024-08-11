@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitLab Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #c86dd7;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .resource {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .resource:hover {
+            background: #f0f0f0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore GitLab Resources</h1>
+</header>
+
+<div class="container">
+    <div class="resource" onclick="openLink('https://about.gitlab.com/learn/')">
+        <h2>GitLab Learning Portal</h2>
+        <p>Your hub for GitLab tutorials, guides, and best practices.</p>
+    </div>
+    <div class="resource" onclick="openLink('https://docs.gitlab.com/')">
+        <h2>GitLab Documentation</h2>
+        <p>Comprehensive resources for all GitLab features.</p>
+    </div>
+    <div class="resource" onclick="openLink('https://gitlab.com/explore/projects')">
+        <h2>Explore GitLab Projects</h2>
+        <p>Discover open-source projects on GitLab and contribute.</p>
+    </div>
+    <div class="resource" onclick="openLink('https://about.gitlab.com/community/')">
+        <h2>GitLab Community</h2>
+        <p>Join the GitLab community and connect with other developers.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 GitLab Resources</p>
+</footer>
+
+<script>
+    function openLink(url) {
+        window.open(url, '_blank');
+    }
+</script>
+
+</body>
+</html>

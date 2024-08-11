@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions | Credit Terms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #007BFF;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        .toggle {
+            cursor: pointer;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+        .toggle:hover {
+            background: #0056b3;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms and Conditions</h1>
+        <h2>Understanding Credit Terms</h2>
+        <p>Credit terms define the conditions under which credit is extended. This includes payment timelines, interest rates, and penalties.</p>
+        
+        <button class="toggle" onclick="toggleContent('creditTerms')">What are Credit Terms?</button>
+        <div id="creditTerms" class="content">
+            <p>Credit terms may include important details such as:</p>
+            <ul>
+                <li>Payment due dates</li>
+                <li>Applicable interest rates</li>
+                <li>Fees for late payments</li>
+            </ul>
+        </div>
+
+        <button class="toggle" onclick="toggleContent('conditions')">Conditions of Credit</button>
+        <div id="conditions" class="content">
+            <p>Conditions of credit outline the requirements that must be met to maintain credit privileges. These may include:</p>
+            <ul>
+                <li>Maintaining a minimum balance</li>
+                <li>Timely repayments</li>
+                <li>Credit score considerations</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

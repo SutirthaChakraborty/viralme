@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore how focus groups can enhance video content effectiveness through targeted feedback and insights.">
+    <title>Focus Groups & Video Impact Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #35424a;
+        }
+        button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .insights {
+            display: none;
+            background: #dff0d8;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights from Focus Groups on Video Impact</h1>
+    </header>
+    <div class="container">
+        <p>Utilizing <strong>focus groups</strong> to assess the impact of video content allows creators to gather valuable feedback, refining messaging and improving audience engagement.</p>
+        <p><strong>Key Benefits:</strong></p>
+        <ul>
+            <li>Targeted feedback on emotional responses</li>
+            <li>Identifying the strengths and weaknesses of video content</li>
+            <li>Understanding audience preferences for storytelling</li>
+        </ul>
+        <button id="showInsightsBtn">Show Key Insights</button>
+        <div class="insights" id="insights">
+            <h2>Key Insights</h2>
+            <p>1. Emotional Engagement: Focus groups provide insight into the emotional connections created by videos, guiding future content creation.</p>
+            <p>2. Content Effectiveness: Testing different elements (e.g., visuals, audio) helps optimize overall impact.</p>
+            <p>3. Audience Segmentation: Understanding the diverse audience segments leads to tailored content that fosters stronger connections.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('showInsightsBtn').addEventListener('click', function() {
+            var insightsDiv = document.getElementById('insights');
+            if (insightsDiv.style.display === "none" || insightsDiv.style.display === "") {
+                insightsDiv.style.display = "block";
+                this.innerText = "Hide Key Insights";
+            } else {
+                insightsDiv.style.display = "none";
+                this.innerText = "Show Key Insights";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+#### HTML Code for Webinars with CSS and JS
+
+Below is a small HTML code snippet that includes CSS and JS to create an interactive webinar section on a webpage:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webinars</title>
+    <style>
+        /* CSS styles for the webinar section */
+        .webinar-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .webinar-card {
+            width: 300px;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .webinar-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .webinar-description {
+            margin-bottom: 10px;
+        }
+        
+        .webinar-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .webinar-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Webinars</h1>
+    <div class="webinar-container">
+        <div class="webinar-card">
+            <h2 class="webinar-title">Webinar 1</h2>
+            <p class="webinar-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+            <button class="webinar-button">Register</button>
+        </div>
+        <div class="webinar-card">
+            <h2 class="webinar-title">Webinar 2</h2>
+            <p class="webinar-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+            <button class="webinar-button">Register</button>
+        </div>
+        <div class="webinar-card">
+            <h2 class="webinar-title">Webinar 3</h2>
+            <p class="webinar-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
+            <button class="webinar-button">Register</button>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript code for handling webinar registration
+        var webinarButtons = document.getElementsByClassName("webinar-button");
+        
+        for (var i = 0; i < webinarButtons.length; i++) {
+            webinarButtons[i].addEventListener("click", function() {
+                alert("You have successfully registered for the webinar!");
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a section for upcoming webinars. Each webinar is represented by a card with a title, description, and a registration button. The CSS styles define the layout and appearance of the webinar cards, while the JavaScript code adds interactivity by displaying an alert message when the registration button is clicked.
+
+Feel free to modify the code to suit your specific needs and design preferences.

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PictureLab Live Action Creative Reel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        .content {
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PictureLab Live Action Creative Reel</h1>
+        <p>Explore the art of live action storytelling through our creative reel.</p>
+    </header>
+    <div class="content">
+        <h2>What is a Live Action Creative Reel?</h2>
+        <p>A live action creative reel showcases the dynamic and engaging aspects of video production, highlighting storytelling, cinematography, and editing techniques.</p>
+        
+        <div class="interactive">
+            <h3>Watch Our Interactive Demo</h3>
+            <button onclick="playDemo()">Play Demo</button>
+            <video id="demoVideo" width="100%" controls style="display:none;">
+                <source src="demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <h2>Why Choose PictureLab?</h2>
+        <p>At PictureLab, we blend creativity with technology to produce stunning visual narratives that resonate with audiences.</p>
+    </div>
+    <script>
+        function playDemo() {
+            var video = document.getElementById('demoVideo');
+            video.style.display = 'block';
+            video.play();
+        }
+    </script>
+</body>
+</html>

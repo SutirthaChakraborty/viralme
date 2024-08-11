@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Demo Videos - Showcase Your Services</title>
+    <meta name="description" content="Explore our engaging product demo videos to enhance customer understanding and boost sales. Perfect for showcasing your services and features.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .video {
+            margin: 20px 0;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .video iframe {
+            width: 100%;
+            height: 300px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Our Product Demo Videos</h1>
+    </header>
+    <div class="container">
+        <h2>Unlock the Potential of Your Services</h2>
+        <p>Our engaging product demo videos are designed to showcase your services effectively. Use them to explain features, enhance customer understanding, and drive sales.</p>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/your-demo-video" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <button class="button" onclick="showMoreVideos()">Explore More Videos</button>
+        <div id="moreVideos" style="display:none;">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/your-second-video" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/your-third-video" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showMoreVideos() {
+            const moreVideos = document.getElementById('moreVideos');
+            if (moreVideos.style.display === "none") {
+                moreVideos.style.display = "block";
+            } else {
+                moreVideos.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

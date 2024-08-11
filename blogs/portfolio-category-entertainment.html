@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Entertainment Portfolio Category - A curated collection of creative works in the arts and media.">
+    <meta name="keywords" content="entertainment portfolio, creative works, arts, media, interactive, design, illustration, animation">
+    <title>Entertainment Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .category-selector {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        .category-selector button {
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+
+        .slider {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .project-item {
+            width: 33.33%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: scale(1.05);
+        }
+
+        .project-image {
+            cursor: pointer;
+        }
+
+        .project-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .project-description {
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .project-item {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        // Add interactivity with a simple project slide effect
+        function slideProjects(category) {
+            const滑动项目 = document.querySelectorAll('.project-item');
+            滑动项目.forEach(project => {
+                project.classList.remove('active');
+            });
+            document.querySelector(`.category-selector button[value="${category}"]`).closest

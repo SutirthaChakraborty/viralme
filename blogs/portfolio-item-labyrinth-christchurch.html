@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Item - Labyrinth: Christchurch Experience</title>
+    <style>
+        .portfolio-item {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .labyrinth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background-image: url("labyrinth-background.jpg"); /* replace with your image URL */
+            background-size: cover;
+            position: relative;
+        }
+
+        .labyrinth .explanation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            padding: 10px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function toggleExplanation() {
+            var explanation = document.querySelector('.labyrinth .explanation');
+            if (explanation.style.display === 'none') {
+                explanation.style.display = 'block';
+            } else {
+                explanation.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="portfolio-item">
+        <div class="labyrinth" onclick="toggleExplanation()">
+            <img src

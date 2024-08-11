@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Essential Factors for Successful Corporate Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .factor {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            transition: background-color 0.3s;
+        }
+        .factor:hover {
+            background-color: #e9ecef;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>6 Essential Factors for Successful Corporate Video Production</h1>
+        <div class="factor" onclick="toggleDetail(1)">
+            <strong>1. Clear Objectives</strong>
+            <p id="detail1" style="display:none;">Defining your goals helps guide your production process, ensuring you create content that effectively communicates your message and resonates with your audience.</p>
+        </div>
+        <div class="factor" onclick="toggleDetail(2)">
+            <strong>2. Target Audience</strong>
+            <p id="detail2" style="display:none;">Understanding who your audience is allows for tailored content that speaks directly to their interests, needs, and preferences.</p>
+        </div>
+        <div class="factor" onclick="toggleDetail(3)">
+            <strong>3. Professional Production Quality</strong>
+            <p id="detail3" style="display:none;">Employing skilled videographers, editors, and using high-quality equipment enhances the overall visual experience, making your video more engaging.</p>
+        </div>
+        <div class="factor" onclick="toggleDetail(4)">
+            <strong>4. Compelling Storytelling</strong>
+            <p id="detail4" style="display:none;">A well-crafted narrative captures attention and keeps viewers engaged, making your message memorable.</p>
+        </div>
+        <div class="factor" onclick="toggleDetail(5)">
+            <strong>5. Effective Distribution Strategy</strong>
+            <p id="detail5" style="display:none;">Having a clear plan on how to distribute your video across platforms ensures it reaches your intended audience and maximizes impact.</p>
+        </div>
+        <div class="factor" onclick="toggleDetail(6)">
+            <strong>6. Call to Action</strong>
+            <p id="detail6" style="display:none;">Incorporating a strong call to action motivates viewers to take the next step, whether it's visiting your website, signing up, or making a purchase.</p>
+        </div>
+        <button onclick="resetDetails()">Reset</button>
+    </div>
+
+    <script>
+        function toggleDetail(num) {
+            const detail = document.getElementById('detail' + num);
+            detail.style.display = detail.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function resetDetails() {
+            for (let i = 1; i <= 6; i++) {
+                document.getElementById('detail' + i).style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

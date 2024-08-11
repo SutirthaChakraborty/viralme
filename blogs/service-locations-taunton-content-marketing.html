@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Locations in Taunton: Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .location-item {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .location-item h2 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .location-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .map-container {
+            width: 100%;
+            min-height: 300px;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .map {
+            display: none;
+            width: 100%;
+            height: 100%;
+            margin-top: auto;
+            background: url('api.mapbox.com/styles/v1/mapbox/streets-v11 điện/images/128/{zoom}/{x}/{y}.png?access_token={your.mapbox_token}') no-repeat;
+        }
+        .map img {
+            max-width: none;
+            object-fit: cover;
+        }
+        .show-map button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .show-map button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function

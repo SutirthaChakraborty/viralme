@@ -1,0 +1,81 @@
+#### HTML and CSS Project: "Do Something That Matters" Trailer
+
+Here's a small HTML code with CSS to create a simple, interactive webpage for the "Do Something That Matters" trailer project.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Do Something That Matters Trailer</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Topics</h3>
+      <ul>
+        <li onclick="loadContent('topic1')">Topic 1</li>
+        <li onclick="loadContent('topic2')">Topic 2</li>
+        <li onclick="loadContent('topic3')">Topic 3</li>
+      </ul>
+    </div>
+    <div class="content" id="content">
+      <h2>Welcome to "Do Something That Matters" Trailer</h2>
+      <p>Select a topic from the sidebar to view more information.</p>
+    </div>
+  </div>
+
+  <script>
+    function loadContent(topic) {
+      // Replace the content based on the selected topic
+      // Example:
+      document.getElementById('content').innerHTML = `<h2>${topic}</h2><p>This is the content for ${topic}.</p>`;
+    }
+  </script>
+</body>
+</html>
+
+
+#### CSS (style.css)
+
+css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  min-width: 200px;
+}
+
+.sidebar h3 {
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+This HTML and CSS code creates a simple webpage for the "Do Something That Matters" trailer project. The page consists of a sidebar with topics and a content area that dynamically loads information based on the selected topic. This interactive design allows users to click on a topic and view relevant content without the need for a full-fledged JavaScript implementation.
+
+Feel free to customize the topics and content based on the specifics of the "Do Something That Matters" trailer project!

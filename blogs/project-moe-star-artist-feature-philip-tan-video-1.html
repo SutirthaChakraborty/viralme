@@ -1,0 +1,55 @@
+To create a basic HTML code with CSS and JavaScript targeting the topic "Project Moe Star: Artist Feature on Philip Tan - Video," I'll include relevant keywords in the content and use inline and external CSS for styling. I'll also add a simple lightbox effect for the video using JavaScript.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Project Moe Star featuring artist Philip Tan's inspiring video experience.">
+    <meta name="keywords" content="project moe star, Philip Tan, artist feature, video, interactive design">
+    <title>Project Moe Star: Philip Tan Artistic Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Project Moe Star: Highlighting the Artistic Journey of <span class="highlight">Philip Tan</span></h1>
+    </header>
+
+    <main>
+        <section id="artist-profile">
+            <img src="philip_tan.jpg" alt="Philip Tan's Artwork">
+            <h2>About Philip Tan</h2>
+            <p>A visionary artist in the realm of Project Moe Star, Philip Tan's unique style captivates the audience with his innovative videos.</p>
+        </section>
+        <section>
+            <h2>Video Showcase</h2>
+            <a href="project_moe_star_video.mp4" class="video-link" onclick="openLightbox(event)">
+                <img src="video_thumbnail.jpg" alt="Video Preview">
+                <span class="video-title">Watch Philip's mesmerizing video</span>
+            </a>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox hidden">
+        <div class="lightbox-content">
+            <video controls>
+                <source src="project_moe_star_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button onclick="closeLightbox()">Close</button>
+    </div>
+
+    <script>
+        function openLightbox(event) {
+            event.stopPropagation();
+            document.getElementById("lightbox").classList.remove("hidden");
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").classList.add("hidden");
+        }
+    </script>
+</body>
+</html

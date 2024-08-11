@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a portfolio on Ireland, showcasing its stunning landscapes, rich culture, and history.">
+    <title>Portfolio: Discover Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .portfolio-container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .portfolio-item {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .portfolio-item:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #333;
+        }
+        .description {
+            color: #555;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portfolio: Discover Ireland</h1>
+</header>
+
+<div class="portfolio-container">
+    <div class="portfolio-item">
+        <h2>The Cliffs of Moher</h2>
+        <p class="description">Experience breathtaking views and dramatic cliffs along the Wild Atlantic Way.</p>
+        <button onclick="showDetails('The Cliffs of Moher')">More Info</button>
+    </div>
+    <div class="portfolio-item">
+        <h2>Giant's Causeway</h2>
+        <p class="description">A UNESCO World Heritage Site known for its unique hexagonal basalt columns.</p>
+        <button onclick="showDetails('Giant\'s Causeway')">More Info</button>
+    </div>
+    <div class="portfolio-item">
+        <h2>Dublin Castle</h2>
+        <p class="description">Explore the iconic castle that has served as a major Irish government complex for centuries.</p>
+        <button onclick="showDetails('Dublin Castle')">More Info</button>
+    </div>
+</div>
+
+<script>
+    function showDetails(place) {
+        alert("Learn more about " + place + " and its significance in Irish heritage.");
+    }
+</script>
+
+</body>
+</html>

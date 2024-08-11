@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUI Education in Photography</title>
+    <meta name="description" content="Explore uncategorized NUI education in photography. Discover techniques, tips, and resources for aspiring photographers.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #008cba;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .tip {
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            margin: 10px 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NUI Education: Unleashing Photography Potential</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>Understanding NUI Education</h2>
+            <p>NUI (National University of Ireland) education provides a robust framework for photography enthusiasts. Whether you are a beginner or looking to refine your skills, NUI offers resources that cater to every level in photographic education.</p>
+            <h3>Interactive Photography Techniques</h3>
+            <button id="showTips">Show Photography Tips</button>
+            <div id="tips" style="display:none;">
+                <div class="tip">1. Understand your camera settings: Learn about ISO, shutter speed, and aperture.</div>
+                <div class="tip">2. Composition matters: Explore the rule of thirds and leading lines.</div>
+                <div class="tip">3. Lighting is key: Experiment with natural and artificial light sources.</div>
+                <div class="tip">4. Post-processing skills: Utilize software like Adobe Lightroom.</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('showTips').onclick = function() {
+            const tips = document.getElementById('tips');
+            if (tips.style.display === 'none') {
+                tips.style.display = 'block';
+                this.innerText = 'Hide Photography Tips';
+            } else {
+                tips.style.display = 'none';
+                this.innerText = 'Show Photography Tips';
+            }
+        }
+    </script>
+</body>
+</html>

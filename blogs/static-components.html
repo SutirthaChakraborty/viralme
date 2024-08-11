@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Static Components: A Guide to Building Responsive and Reusable Web Elements">
+    <meta name="keywords" content="static components, web development, reusable, responsive design, HTML, CSS, JavaScript">
+    <title>Static Components</title>
+    <style>
+        /* CSS */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        
+        .component {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            transition: background 0.3s;
+        }
+        
+        .component:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .component-title {
+            margin-bottom: 0.5rem;
+        }
+
+        .component-description {
+            max-width: 600px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        @media (max-width: 768px) {
+            .component {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        // JavaScript (optional for interactivity)
+        window.addEventListener('DOMContentLoaded', function () {
+            let toggleButton = document.getElementById('toggle-button');
+            toggleButton.addEventListener('click', function () {
+                document.body.classList.toggle('viewport-limited');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Static Components: A Responsive Approach to Web Building</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="component">
+                <h3 class="component-title">Component 1</h3>
+                <p class="component-description">This is a static component demonstrating how reusable HTML elements can be styled with CSS for responsive design. To view a limited viewport experience, toggle with the button below.</p>
+            </div>
+            <div class="component">
+                <!-- Repeat this structure for additional components -->
+                <!-- ... -->
+            </div>
+        </section>
+        <button id="toggle-button" class="hidden">Toggle Limited Viewport</button>
+    </

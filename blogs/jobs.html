@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Job Opportunities</h1>
+    </header>
+    <div class="container">
+        <h2>Why Choose a Career?</h2>
+        <p>Finding the right job is crucial for professional growth. Explore various industries and roles to discover your passion.</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div id="moreInfo" class="hidden">
+            <h3>Key Benefits of Employment:</h3>
+            <ul>
+                <li>Financial Stability</li>
+                <li>Skill Development</li>
+                <li>Networking Opportunities</li>
+                <li>Career Advancement</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('moreInfo');
+            if (info.classList.contains('hidden')) {
+                info.classList.remove('hidden');
+            } else {
+                info.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

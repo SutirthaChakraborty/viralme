@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project WSG: Job Redesign & Cleaning Solutions">
+    <title>Project WSG: Job Redesign in Cleaning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007bff;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+            margin-top: 10px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            border-left: 3px solid #007bff;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project WSG: Job Redesign in Cleaning</h1>
+    </header>
+    <section>
+        <h2>Understanding Job Redesign</h2>
+        <p>Project WSG focuses on innovative <span class="keyword">job redesign</span> strategies to improve cleaning services. By redefining roles and responsibilities, we enhance efficiency and employee satisfaction.</p>
+        <span class="toggle" onclick="toggleDetails('details1')">Read More</span>
+        <div id="details1" class="details">
+            <p>This approach not only optimizes workflow but also integrates cutting-edge technologies for better <span class="keyword">cleaning solutions</span>.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Benefits of Job Redesign in Cleaning</h2>
+        <p>Implementing <span class="keyword">job redesign</span> leads to improved productivity, reduced turnover, and enhanced customer satisfaction. Our methodologies focus on:</p>
+        <ul>
+            <li>Streamlined processes for cleaning tasks</li>
+            <li>Use of technology for real-time monitoring</li>
+            <li>Employee training and development</li>
+        </ul>
+        <span class="toggle" onclick="toggleDetails('details2')">Read More</span>
+        <div id="details2" class="details">
+            <p>Through these efforts, organizations can achieve a cleaner environment while boosting morale within their teams.</p>
+        </div>
+    </section>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

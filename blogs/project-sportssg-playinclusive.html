@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Project SportSSG PlayInclusive to promote inclusive sports and physical activities for all abilities.">
+    <meta name="keywords" content="inclusive sports, Project SportSSG, PlayInclusive, physical activities, community engagement, adaptive sports, teamwork, health and wellness">
+    <title>Project SportSSG PlayInclusive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .interactive {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Project SportSSG PlayInclusive</h1>
+    </header>
+    <main>
+        <div class="interactive">
+            <button id="infoButton">Click to Learn More</button>
+            <p id="infoText" style="display:none;">Project SportSSG PlayInclusive focuses on offering inclusive sports programs that encourage participation from individuals of all abilities. Join us in promoting teamwork, health, and wellness through adaptive sports!</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Project SportSSG. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('infoButton').onclick = function() {
+            var infoText = document.getElementById('infoText');
+            if (infoText.style.display === "none") {
+                infoText.style.display = "block";
+            } else {
+                infoText.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

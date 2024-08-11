@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebook Marketing Services</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+  }
+  .services {
+    margin-top: 20px;
+  }
+  .services ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .services li {
+    margin-bottom: 10px;
+  }
+  .services h2 {
+    margin-bottom: 10px;
+  }
+  .interactive {
+    display: none;
+  }
+  .interactive.active {
+    display: block;
+  }
+</style>
+<script>
+  document.querySelectorAll('.service-button').forEach(button => {
+    button.addEventListener('click', function() {
+      const serviceId = this.getAttribute('data-service');
+      const interactiveElement = document.getElementById(serviceId);
+      interactiveElement.classList.toggle('active');
+    });
+  });
+</script>
+</head>
+<body>
+<div class="container">
+  <h1>Ebook Marketing Services</h1>
+  <div class="services">
+    <h2>Digital Marketing</h2>
+    <ul>
+      <li><button class="service-button" data-service="service1">SEO</button></li>
+      <li><button class="service-button" data-service="service2">SMM</button></li>
+      <li><button class="service-button" data-service="service3">PPC</button></li>
+    </ul>
+  </div>
+  <div class="interactive" id="service1">
+    <h2>SEO Explained</h2>
+    <p>Optimize your ebook's visibility on search engines.</p>
+  </div>
+  <div class="interactive" id="service2">
+    <h2>SMM Explained</h2>
+    <p>Promote your ebook on social media platforms.</p>
+  </div>
+  <div class="interactive" id="service3">
+    <h2>PPC Explained</h2>
+    <p>Drive targeted traffic to your ebook through paid ads.</p>
+  </div>
+</div>
+</body>
+</html>

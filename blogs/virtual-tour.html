@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world through immersive virtual tours, showcasing stunning 360-degree views and interactive experiences.">
+    <title>Virtual Tour Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .tour-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .tour {
+            position: relative;
+            height: 400px;
+            background-image: url('https://via.placeholder.com/800x400?text=Virtual+Tour+360');
+            background-size: cover;
+            transition: transform 0.5s ease;
+        }
+        .info {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Experience the Magic of Virtual Tours</h1>
+    <div class="tour-container">
+        <div class="tour" id="tour">
+            <div class="info">
+                <h2>Discover New Places</h2>
+                <p>Join us on a virtual adventure and explore breathtaking sites from the comfort of your home!</p>
+                <button onclick="rotateTour()">Rotate View</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let angle = 0;
+        function rotateTour() {
+            angle += 90;
+            document.getElementById('tour').style.transform = `rotateY(${angle}deg)`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our portfolio of stunning green-blue screen videos, showcasing the power of chroma key technology for creative projects.">
+    <title>Portfolio: Green Blue Screen Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        h2 {
+            color: #4682b4;
+            margin-top: 20px;
+        }
+        .portfolio-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5f9ea0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chroma Key Magic: Green Blue Screen Videos</h1>
+        <p>Your go-to portfolio for professional video production with green-blue screen technology.</p>
+    </header>
+    
+    <section id="portfolio">
+        <h2>Featured Videos</h2>
+        <div class="portfolio-item">
+            <h3>Video Title 1</h3>
+            <video class="video" controls>
+                <source src="video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Amazing visuals created with advanced chroma key techniques. <button onclick="showMore('info1')">More Info</button></p>
+            <p id="info1" style="display:none;">Details about Video Title 1, discussing concept, production, and creative vision.</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Video Title 2</h3>
+            <video class="video" controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Innovative storytelling with green-blue screen visuals. <button onclick="showMore('info2')">More Info</button></p>
+            <p id="info2" style="display:none;">Details about Video Title 2, discussing concept, production, and creative vision.</p>
+        </div>
+    </section>
+
+    <script>
+        function showMore(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

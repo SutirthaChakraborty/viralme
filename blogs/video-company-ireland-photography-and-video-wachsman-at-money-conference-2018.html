@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wachsman Photography and Video - Premier video company in Ireland covering events like the Money Conference 2018.">
+    <title>Wachsman Photography and Video - Money Conference 2018</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video {
+            width: 100%;
+            height: 400px;
+            background: #000;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 15px;
+            color: #fff;
+            background: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wachsman Photography and Video</h1>
+        <p>Capturing Moments from Money Conference 2018</p>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Wachsman is a leading video company in Ireland, specializing in photography and videography for conferences, events, and corporate gatherings.</p>
+        <h2>Our Work at Money Conference 2018</h2>
+        <p>We had the privilege to cover the Money Conference 2018, showcasing innovations in finance and technology.</p>
+        <div class="video" id="video"></div>
+        <button onclick="playVideo()">Watch Highlights</button>
+    </div>
+    <script>
+        function playVideo() {
+            const videoDiv = document.getElementById('video');
+            videoDiv.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
+</body>
+</html>

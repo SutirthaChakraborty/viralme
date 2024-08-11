@@ -1,0 +1,76 @@
+To create a simple HTML code with CSS for a post-holiday marketing video that's engaging and memorable, I'll use relevant keywords and lightweight interactive effects. Here's the code in plain text format:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Holiday Marketing Video</title>
+    <style>
+        /* Interactive CSS */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            max-width: 100%;
+            height: 0;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            display: none;
+        }
+
+        .play-button:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .active .play-button {
+            display: block;
+        }
+
+        @keyframes spinning {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .play-button i {
+            font-size: 40px;
+            color: #fff;
+            animation: spinning 1s ease infinite;
+        }
+    </style>
+    <script>
+        function showVideo() {
+            var playButton = document.getElementById("playPauseButton");
+            var video = document.getElementById("postHolidaysVideo");
+            if (video.paused) {
+                video.play();
+                playButton.classList.add("active");
+                playButton.getElementsByTagName("i")[0].innerText = "❚❚";
+            } else {
+                video.pause();
+                playButton.classList.remove("active");
+                playButton.getElementsByTagName("i")[0].innerText = " bardzo";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="video-container

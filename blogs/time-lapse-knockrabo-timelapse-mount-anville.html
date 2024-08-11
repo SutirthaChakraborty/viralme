@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knockrabo Time-Lapse at Mount Anville</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Knockrabo Time-Lapse at Mount Anville</h1>
+        <p>Experience the stunning transformation of the Knockrabo site located on Mount Anville Road, Dublin. This project features luxury accommodations and is set in a picturesque environment, making it a highly anticipated development.</p>
+        
+        <div class="interactive">
+            <h2>Interactive Time-Lapse</h2>
+            <p>Click the button below to see a simulated time-lapse of the construction process!</p>
+            <button onclick="startTimelapse()">Start Time-Lapse</button>
+            <div id="timelapse" style="display:none;">
+                <p>Time-lapse in progress... (This is a simulation)</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function startTimelapse() {
+            const timelapseDiv = document.getElementById('timelapse');
+            timelapseDiv.style.display = 'block';
+            setTimeout(() => {
+                timelapseDiv.innerHTML = '<p>Time-lapse completed! The Knockrabo project is now fully developed.</p>';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

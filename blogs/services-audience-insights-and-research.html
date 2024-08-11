@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive Audience Insights and Research Services for Optimizing Marketing Strategies. Enhance customer engagement and drive business growth.">
+    <title>Audience Insights and Research Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            background-color: #e7f1ff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            color: white;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #insight {
+            margin-top: 20px;
+            display: none;
+            padding: 10px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            background-color: #e7f1ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Audience Insights and Research Services</h1>
+        <p>Unlock the power of data-driven marketing with our <span class="keyword">Audience Insights</span> and <span class="keyword">Market Research</span> services. Gain a deeper understanding of your customers' behaviors, preferences, and trends.</p>
+        <button id="showInsightBtn">Discover Key Insights</button>
+        <div id="insight">Our services include <span class="keyword">demographic analysis</span>, <span class="keyword">customer segmentation</span>, <span class="keyword">competitor analysis</span>, and <span class="keyword">trend forecasting</span>. Use these insights to optimize your marketing strategy and enhance customer engagement.</div>
+    </div>
+    <script>
+        document.getElementById("showInsightBtn").addEventListener("click", function() {
+            var insightDiv = document.getElementById("insight");
+            if (insightDiv.style.display === "none" || insightDiv.style.display === "") {
+                insightDiv.style.display = "block";
+                this.innerText = "Hide Insights";
+            } else {
+                insightDiv.style.display = "none";
+                this.innerText = "Discover Key Insights";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Portfolio category of animations that showcase creativity and design skills. Enhance your visual storytelling with captivating animations.">
+    <title>Portfolio Category Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .portfolio-item {
+            position: relative;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-item h3 {
+            padding: 10px;
+            text-align: center;
+        }
+        .portfolio-item p {
+            padding: 0 10px 10px;
+            text-align: center;
+            color: #555;
+        }
+        .portfolio-item button {
+            display: none;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .portfolio-item:hover button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exclusive Portfolio Category Animation</h1>
+    <p>Showcase your Skills in Creative Animation</p>
+</header>
+
+<div class="portfolio">
+    <div class="portfolio-item">
+        <img src="animation1.jpg" alt="Animation Project 1">
+        <h3>Project 1: Dynamic Logo Animation</h3>
+        <p>Enhance brand identity with stunning logo animations.</p>
+        <button onclick="alert('Exploring Project 1')">View Details</button>
+    </div>
+    <div class="portfolio-item">
+        <img src="animation2.jpg" alt="Animation Project 2">
+        <h3>Project 2: Character Animation</h3>
+        <p>Bringing characters to life through innovative animations.</p>
+        <button onclick="alert('Exploring Project 2')">View Details</button>
+    </div>
+    <div class="portfolio-item">
+        <img src="animation3.jpg" alt="Animation Project 3">
+        <h3>Project 3: 3D Motion Graphics</h3>
+        <p>Captivating 3D animations for businesses and promotions.</p>
+        <button onclick="alert('Exploring Project 3')">View Details</button>
+    </div>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('.portfolio-item button');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Loading project details...');
+        });
+    });
+</script>
+
+</body>
+</html>

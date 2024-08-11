@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the video industry, SaaS, and applications transforming the digital landscape. Learn about video streaming solutions, editing software, and more.">
+    <title>Video Industry & SaaS Applications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .video-card {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .video-card:hover {
+            transform: scale(1.02);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Industry & SaaS Innovations</h1>
+        <div class="video-card">
+            <h2>SaaS Video Solutions</h2>
+            <p>Discover cloud-based video streaming platforms that enhance accessibility and scalability, such as Vimeo and Brightcove.</p>
+            <button onclick="toggleInfo('info1')">Learn More</button>
+            <p id="info1" style="display:none;">These platforms provide scalable options for businesses, allowing them to host and share content efficiently.</p>
+        </div>
+        <div class="video-card">
+            <h2>Video Editing Software</h2>
+            <p>Streamline your workflow with top editing tools like Adobe Premiere Pro and Final Cut Pro, vital in video production.</p>
+            <button onclick="toggleInfo('info2')">Learn More</button>
+            <p id="info2" style="display:none;">These applications offer advanced features for video editing, supporting high-resolution formats and collaborative projects.</p>
+        </div>
+        <div class="video-card">
+            <h2>Mobile Video Applications</h2>
+            <p>Leverage apps like TikTok and Instagram for creative video production and sharing, reshaping social media engagement.</p>
+            <button onclick="toggleInfo('info3')">Learn More</button>
+            <p id="info3" style="display:none;">These mobile applications democratize video creation, allowing users to produce and share content on-the-go.</p>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            var infoElement = document.getElementById(infoId);
+            if (infoElement.style.display === "none") {
+                infoElement.style.display = "block";
+            } else {
+                infoElement.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

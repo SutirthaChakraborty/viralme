@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lensmen Eye Camera Installation, Maintenance, and Support - Professional Services for Your Security Needs">
+    <title>Lensmen Eye Camera Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .service {
+            margin-bottom: 15px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lensmen Eye Camera Solutions</h1>
+    </header>
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Camera Installation</h3>
+            <p>Expert installation of state-of-the-art security cameras for homes and businesses.</p>
+            <button onclick="showDetails('install')">Learn More</button>
+        </div>
+        <div class="service">
+            <h3>Maintenance Services</h3>
+            <p>Regular maintenance checks to ensure optimal performance of your security system.</p>
+            <button onclick="showDetails('maintenance')">Learn More</button>
+        </div>
+        <div class="service">
+            <h3>Technical Support</h3>
+            <p>24/7 support for immediate troubleshooting and technical assistance.</p>
+            <button onclick="showDetails('support')">Learn More</button>
+        </div>
+    </div>
+    <script>
+        function showDetails(service) {
+            let details;
+            switch(service) {
+                case 'install':
+                    details = "Our professionals will assess your security needs and install high-quality cameras. We offer a wide range of options.";
+                    break;
+                case 'maintenance':
+                    details = "Regular maintenance includes cleaning, software updates, and system checks to prevent issues.";
+                    break;
+                case 'support':
+                    details = "Our support team is available 24/7 via phone or online chat for any immediate concerns.";
+                    break;
+                default:
+                    details = "No additional details available.";
+            }
+            alert(details);
+        }
+    </script>
+</body>
+</html>

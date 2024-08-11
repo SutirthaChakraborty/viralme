@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossier Resources & Content Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .resource {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid #ff6f61;
+            transition: background-color 0.3s;
+        }
+        .resource:hover {
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e65c50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Glossier Resources & Content Collection</h1>
+        <div class="resource">
+            <h3>Glossier Blog</h3>
+            <p>Dive into beauty tips, product launches, and customer stories.</p>
+        </div>
+        <div class="resource">
+            <h3>Social Media Insights</h3>
+            <p>Explore Glossier's engaging social media presence and customer interaction.</p>
+        </div>
+        <button onclick="toggleResources()">Show More Resources</button>
+        <div id="moreResources" style="display:none;">
+            <div class="resource">
+                <h3>Product Guides</h3>
+                <p>Comprehensive guides on how to use Glossier products effectively.</p>
+            </div>
+            <div class="resource">
+                <h3>Customer Testimonials</h3>
+                <p>Read glowing reviews from loyal Glossier users.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleResources() {
+            var resources = document.getElementById("moreResources");
+            if (resources.style.display === "none") {
+                resources.style.display = "block";
+            } else {
+                resources.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

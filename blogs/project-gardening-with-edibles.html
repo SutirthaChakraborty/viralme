@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the joy of gardening with edible plants. Learn how to grow your own fruits, vegetables, and herbs.">
+    <title>Project Gardening with Edibles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5e9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #76c7c0;
+            color: white;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .content {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Gardening with Edibles</h1>
+        <p>Grow Your Own Fresh Fruits, Vegetables, and Herbs!</p>
+    </header>
+    <div class="content">
+        <h2>Why Choose Edible Gardening?</h2>
+        <p>Edible gardening is a fulfilling way to enhance your meals, enjoy fresh produce, and reduce grocery costs. It also promotes sustainability and environmental awareness.</p>
+        <h2>Getting Started</h2>
+        <p>To start your journey, consider these essential steps:</p>
+        <ul>
+            <li>Choose the right location and soil.</li>
+            <li>Select suitable edible plants: fruits, vegetables, and herbs.</li>
+            <li>Learn about sunlight, watering, and pest management.</li>
+        </ul>
+        <button id="tipsButton">Click for Gardening Tips!</button>
+        <div id="tips" class="hidden">
+            <h3>Gardening Tips:</h3>
+            <ul>
+                <li>Start with easy-to-grow plants like tomatoes and basil.</li>
+                <li>Use organic fertilizers for healthier plants.</li>
+                <li>Companion planting can help maximize garden space.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('tipsButton').onclick = function() {
+            var tipsDiv = document.getElementById('tips');
+            if (tipsDiv.classList.contains('hidden')) {
+                tipsDiv.classList.remove('hidden');
+            } else {
+                tipsDiv.classList.add('hidden');
+            }
+        };
+    </script>
+</body>
+</html>

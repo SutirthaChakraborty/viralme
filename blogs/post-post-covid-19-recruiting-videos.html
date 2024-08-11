@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post COVID-19 Recruiting Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Post COVID-19 Recruiting Videos</h1>
+    </header>
+    <section>
+        <h2>Engaging Candidates in a Virtual World</h2>
+        <p>The pandemic has transformed the hiring landscape. Organizations are now leveraging recruiting videos to attract top talent. This approach enhances candidate experience and showcases company culture effectively.</p>
+        <button class="button" onclick="showVideo()">Watch Our Recruiting Video</button>
+        <div id="videoContainer" style="display:none;">
+            <video controls>
+                <source src="recruiting-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <script>
+        function showVideo() {
+            document.getElementById('videoContainer').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

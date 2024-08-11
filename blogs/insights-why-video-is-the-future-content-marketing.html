@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-insight {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Why Video is the Future of Content Marketing</h1>
+        <div class="video-insight">
+            <h2>1. Engaging Visual Storytelling</h2>
+            <p>Videos captivate audiences, making them more likely to remember your brand. They enhance storytelling by combining visuals, sound, and motion.</p>
+            <button onclick="toggleDetails('detail1')">Learn More</button>
+            <p id="detail1" class="hidden">Video content can increase conversion rates and engagement on social media platforms. It’s an effective way to explain complex concepts quickly.</p>
+        </div>
+        <div class="video-insight">
+            <h2>2. Higher SEO Ranking</h2>
+            <p>Including video on your website can significantly boost SEO. Search engines prioritize video content in their rankings, helping your content reach a broader audience.</p>
+            <button onclick="toggleDetails('detail2')">Learn More</button>
+            <p id="detail2" class="hidden">Video descriptions and tags help optimize searchability, leading to increased organic traffic and visibility for your brand.</p>
+        </div>
+        <div class="video-insight">
+            <h2>3. Mobile Compatibility</h2>
+            <p>With the rise of mobile devices, video content is easily accessible, making it a preferred option for users consuming content on-the-go.</p>
+            <button onclick="toggleDetails('detail3')">Learn More</button>
+            <p id="detail3" class="hidden">Mobile video consumption rises by 100% every year, demonstrating the demand for video content among mobile users.</p>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            const detail = document.getElementById(id);
+            if (detail.classList.contains('hidden')) {
+                detail.classList.remove('hidden');
+            } else {
+                detail.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

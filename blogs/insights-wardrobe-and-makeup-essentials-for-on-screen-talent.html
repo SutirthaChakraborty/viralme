@@ -1,0 +1,61 @@
+Here's a simple HTML code with CSS and JavaScript to create an interactive wardrobe and makeup essentials page for on-screen talent:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Wardrobe and Makeup Essentials for On-Screen Talent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights Wardrobe and Makeup Essentials for On-Screen Talent</h1>
+    <ul id="items">
+        <li>Wardrobe Item</li>
+        <li>Wardrobe Item</li>
+        <li>Wardrobe Item</li>
+        <li>Wardrobe Item</li>
+    </ul>
+    <button onclick="addItem()">Add Item</button>
+    <script>
+        function addItem() {
+            const items = document.getElementById('items');
+            const newItem = document.createElement('li');
+            newItem.textContent = 'New Wardrobe Item';
+            items.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>
+
+
+This code creates a simple webpage with a title and an unordered list of wardrobe and makeup essentials for on-screen talent. The CSS styles the page with a light gray background, centered text, and a white border around each list item. The JavaScript function `addItem()` adds a new item to the list when the "Add Item" button is clicked.

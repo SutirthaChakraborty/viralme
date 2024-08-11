@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest Work Showcase - Explore innovative projects, creative designs, and cutting-edge solutions. Stay updated with recent trends and insights.">
+    <title>Latest Work Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .project {
+            background: #fff;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.02);
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        .toggle-btn {
+            margin-top: 10px;
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Latest Work</h1>
+    <div class="project">
+        <h2>Innovative Web Design</h2>
+        <p>A modern and responsive website that enhances user experience.</p>
+        <span class="toggle-btn" onclick="toggleDetails(this)">Details</span>
+        <div class="details">
+            <p>Technologies Used: HTML, CSS, JavaScript, React.</p>
+            <p>Client: ABC Corporation</p>
+        </div>
+    </div>
+
+    <div class="project">
+        <h2>Mobile App Development</h2>
+        <p>Developed a feature-rich mobile application for e-commerce.</p>
+        <span class="toggle-btn" onclick="toggleDetails(this)">Details</span>
+        <div class="details">
+            <p>Technologies Used: Flutter, Dart, Firebase.</p>
+            <p>Client: XYZ Retail</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(element) {
+            const details = element.nextElementSibling;
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

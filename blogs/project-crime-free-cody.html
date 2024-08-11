@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Crime Free Cody - A community initiative for crime prevention and community safety in Cody. Join us to make a difference.">
+    <meta name="keywords" content="Crime Prevention, Community Safety, Project Crime Free Cody, Neighborhood Watch, Crime Statistics, Safe Community">
+    <title>Project Crime Free Cody</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .info-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #219653;
+        }
+        #statistics {
+            display: none;
+            margin-top: 10px;
+            background-color: #e7f9e7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Project Crime Free Cody</h1>
+    <div class="info-box">
+        <p>Join our community initiative aiming to reduce crime and enhance the safety of Cody. Get involved in local crime prevention strategies and community education.</p>
+        <button onclick="toggleStatistics()">Show Crime Statistics</button>
+        <div id="statistics">Crime rates have decreased by 25% over the past year due to community awareness programs and active neighborhood participation.</div>
+    </div>
+
+    <script>
+        function toggleStatistics() {
+            var stats = document.getElementById("statistics");
+            if (stats.style.display === "none") {
+                stats.style.display = "block";
+            } else {
+                stats.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+Here's a simple HTML structure with inline CSS and a basic JavaScript tooltip to provide an interactive introduction to the Samsung SRA overview video:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Samsung SRA Overview Video: A detailed look at Smart Remote Access technology for improved user experience.">
+    <meta name="keywords" content="Samsung, SRA, Smart Remote Access, video tutorial, device control, technology showcase">
+    <title>Samsung SRA Overview Video</title>
+    <style>
+        .video-cta {
+            display: inline-block;
+            position: relative;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+        
+        .video-cta:hover {
+            background-color: #eaeaea;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .tooltip-show {
+            display: block;
+        }
+
+        .tooltip-icon::before {
+            content: "疑问?";
+            font-size: 12px;
+            color: #ccc;
+        }
+    </style>
+    <script>
+        function showTooltip() {
+            document.querySelector('.tooltip').classList.add('tooltip-show');
+        }
+        function hideTooltip() {
+            document.querySelector('.tooltip').classList.remove('tooltip-show');
+        }
+    </script>
+</head>
+<body>
+    <h2>View the Samsung SRA Overview Video</h2>
+    <a href="#" class="video-cta" onclick="showTooltip(); return false;">
+        <img src="sra_logo.png" alt="Samsung SRA Logo">
+        <span class="tooltip tooltip-show">Hover for more info: <span class="tooltip-icon">?</span> Explains Smart Remote Access feature</span>
+    </a>
+    <div class="tooltip" id="tooltip" style="display: none;">
+        <p>Samsung Smart Remote Access (SRA

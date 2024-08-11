@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the most memorable startup explainer videos that captivated audiences and elevated brands.">
+    <title>Memorable Startup Explainer Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .video {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            width: calc(30% - 40px);
+            transition: transform 0.2s;
+        }
+        .video:hover {
+            transform: scale(1.05);
+        }
+        .video img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .video-title {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Memorable Startup Explainer Videos</h1>
+    <p>Engaging short clips that defined startups and their journeys</p>
+</header>
+
+<div class="video-container">
+    <div class="video" onclick="alert('Watch Now: Example video link')">
+        <img src="video-thumb1.jpg" alt="Startup Video 1">
+        <div class="video-title">Unicorn Launch: The Journey</div>
+    </div>
+    <div class="video" onclick="alert('Watch Now: Example video link')">
+        <img src="video-thumb2.jpg" alt="Startup Video 2">
+        <div class="video-title">Tech Revolution: Innovate Your Future</div>
+    </div>
+    <div class="video" onclick="alert('Watch Now: Example video link')">
+        <img src="video-thumb3.jpg" alt="Startup Video 3">
+        <div class="video-title">NextGen Solutions: Empowering Business</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.video').forEach(video => {
+        video.addEventListener('click', function() {
+            alert('Play the explainer video here!');
+        });
+    });
+</script>
+
+</body>
+</html>

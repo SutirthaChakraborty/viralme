@@ -1,0 +1,90 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Lapse Videos: Construction Building Exploration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .header {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .content > * {
+        margin-bottom: 20px;
+    }
+    .content > *:last-child {
+        margin-bottom: 0;
+    }
+    .box {
+        width: calc(33.33333% - 20px);
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .box img {
+        max-width: 100%;
+        height: auto;
+    }
+    .footer {
+        text-align: center;
+        color: #666;
+        margin-top: 20px;
+    }
+</style>
+<script>
+    // Example of interactive JS
+    document.addEventListener('DOMContentLoaded', function() {
+        var boxes = document.querySelectorAll('.box');
+        boxes.forEach(function(box) {
+            box.addEventListener('click', function() {
+                alert('You clicked on the box!');
+            });
+        });
+    });
+</script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Time Lapse Videos: Exploring Construction Buildings</h1>
+    </div>
+    <div class="content">
+        <div class="box">
+            <img src="construction-building-time-lapse.jpg" alt="Time Lapse Construction">
+            <p>Time Lapse Construction</p>
+        </div>
+        <div class="box">
+            <img src="360-degree-time-lapse.jpg" alt="360 Degree Time Lapse">
+            <p>360 Degree Time Lapse</p>
+        </div>
+        <div class="box">
+            <img src="360-degree-camera.jpg" alt="360 Degree Camera">
+            <p>360 Degree Cameras for Time Lapse</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Explore the magic of time lapse videos and the innovative use of 360-degree cameras in construction building projects.</p>
+    </div>
+</div>
+</body>
+</html>

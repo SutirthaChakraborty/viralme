@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore expert tips and insights on interior photography to enhance your skills and capture beautiful spaces.">
+    <title>Interior Photography Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .tip {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            background: #ecf0f1;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            background: #eafaf1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interior Photography Tips</h1>
+        <h2>Master the Art of Capturing Interiors</h2>
+        <div class="tip">
+            <h3>1. Lighting is Key</h3>
+            <p>Use natural light whenever possible. Avoid harsh shadows and opt for soft, diffused light.</p>
+        </div>
+        <div class="tip">
+            <h3>2. Composition Matters</h3>
+            <p>Apply the rule of thirds for a balanced frame. Experiment with angles and perspectives.</p>
+        </div>
+        <div class="tip">
+            <h3>3. Declutter the Space</h3>
+            <p>Before shooting, remove any unnecessary items to create a more inviting atmosphere.</p>
+        </div>
+        <button id="showMore">Show More Tips</button>
+        <div id="info">
+            <h3>4. Use a Tripod</h3>
+            <p>A tripod stabilizes your camera, allowing for longer exposures and sharper images.</p>
+            <h3>5. Edit Your Photos</h3>
+            <p>Edit to enhance colors and brightness. Use software like Lightroom or Photoshop.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showMore').onclick = function() {
+            const info = document.getElementById('info');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+                this.textContent = 'Show Less Tips';
+            } else {
+                info.style.display = 'none';
+                this.textContent = 'Show More Tips';
+            }
+        };
+    </script>
+</body>
+</html>

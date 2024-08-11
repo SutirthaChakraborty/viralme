@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copywriting Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .service {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .service:hover {
+            background: #e7f1ff;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Copywriting Services</h1>
+        <p>Boost Your Brand with Engaging Content</p>
+    </header>
+    <section>
+        <h2>Our Services</h2>
+        <div class="service" onclick="toggleDetails('web')">
+            <strong>Website Copywriting</strong>
+            <div id="web" class="details">Crafting compelling website content that converts visitors into customers.</div>
+        </div>
+        <div class="service" onclick="toggleDetails('blog')">
+            <strong>Blog Writing</strong>
+            <div id="blog" class="details">Creating informative and engaging blog posts to enhance your online presence.</div>
+        </div>
+        <div class="service" onclick="toggleDetails('seo')">
+            <strong>SEO Copywriting</strong>
+            <div id="seo" class="details">Optimizing content with relevant keywords to improve search engine rankings.</div>
+        </div>
+        <div class="service" onclick="toggleDetails('ad')">
+            <strong>Ad Copywriting</strong>
+            <div id="ad" class="details">Writing persuasive ad copy that drives clicks and conversions.</div>
+        </div>
+    </section>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the resources Buffer Marketing Library for effective social media strategies and content marketing techniques.">
+    <title>Buffer Marketing Library Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #0077cc;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        #resourcesList {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e6f7ff;
+            border-left: 3px solid #0077cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Buffer Marketing Library</h1>
+        <p>Your ultimate resource for social media marketing strategies.</p>
+    </header>
+    <section>
+        <h2>Explore Our Resources</h2>
+        <p>Get access to in-depth guides, articles, and templates to enhance your marketing efforts.</p>
+        <button onclick="toggleResources()">Show Resources</button>
+        <div id="resourcesList">
+            <ul>
+                <li>Social Media Strategy Guide</li>
+                <li>Content Marketing Techniques</li>
+                <li>Effective Scheduling Tools</li>
+                <li>Analytics and Reporting Templates</li>
+                <li>Engagement Best Practices</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function toggleResources() {
+            const resources = document.getElementById('resourcesList');
+            if (resources.style.display === 'none' || resources.style.display === '') {
+                resources.style.display = 'block';
+            } else {
+                resources.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

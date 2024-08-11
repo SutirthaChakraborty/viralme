@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Strategy Consultancy to enhance your online presence and optimize business performance through tailored digital solutions.">
+    <title>Digital Strategy Consultancy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #0077cc;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .keyword:hover {
+            color: #005fa3;
+        }
+        .explainer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e7f3ff;
+            border-left: 5px solid #0077cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>What We Do</h1>
+        <p>Your Digital Strategy Consultancy</p>
+    </header>
+    <section>
+        <h2>Our Services</h2>
+        <p>At our consultancy, we specialize in:</p>
+        <ul>
+            <li><span class="keyword" onclick="toggleExplainer('seoExplainer')">Search Engine Optimization (SEO)</span></li>
+            <li><span class="keyword" onclick="toggleExplainer('contentExplainer')">Content Marketing</span></li>
+            <li><span class="keyword" onclick="toggleExplainer('socialMediaExplainer')">Social Media Strategy</span></li>
+            <li><span class="keyword" onclick="toggleExplainer('analyticsExplainer')">Data Analytics</span></li>
+        </ul>
+        <div id="seoExplainer" class="explainer">SEO enhances your visibility on search engines, attracting more organic traffic.</div>
+        <div id="contentExplainer" class="explainer">Content Marketing focuses on creating valuable content to engage your audience.</div>
+        <div id="socialMediaExplainer" class="explainer">Social Media Strategy leverages platforms like Facebook, Instagram, and LinkedIn to connect with clients.</div>
+        <div id="analyticsExplainer" class="explainer">Data Analytics involves analyzing data to make informed business decisions, optimizing your strategy.</div>
+    </section>
+
+    <script>
+        function toggleExplainer(id) {
+            var explainer = document.getElementById(id);
+            explainer.style.display = (explainer.style.display === 'none' || explainer.style.display === '') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

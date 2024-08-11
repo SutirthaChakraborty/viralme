@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Eric Leung - Dentist Brand Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #009688;
+            color: #fff;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #009688;
+        }
+        button {
+            background-color: #009688;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #00796b;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0f2f1;
+            border-left: 4px solid #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dr. Eric Leung - Dentist Brand Development</h1>
+    <p>Your trusted partner in oral health and branding.</p>
+</header>
+
+<div class="content">
+    <h2>Our Mission</h2>
+    <p>To enhance dental care and create a recognized brand for Dr. Eric Leung by providing exceptional services and patient experiences.</p>
+    
+    <h2>Services Offered</h2>
+    <ul>
+        <li>General Dentistry</li>
+        <li>Cosmetic Dentistry</li>
+        <li>Teeth Whitening</li>
+        <li>Orthodontics</li>
+        <li>Patient Education</li>
+    </ul>
+
+    <h2>Learn More About Us</h2>
+    <button id="moreInfoBtn">Click for More Information</button>
+    <div id="moreInfo" class="info">
+        <p>We focus on innovative branding techniques, effective dental marketing strategies, and building a strong online presence to reach a wider audience.</p>
+        <p>Our goals include patient retention, community involvement, and aligning our services with patient needs.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('moreInfoBtn').addEventListener('click', function() {
+        const info = document.getElementById('moreInfo');
+        info.style.display = info.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
+</body>
+</html>

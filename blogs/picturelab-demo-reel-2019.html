@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PictureLab Demo Reel 2019</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            width: 80%;
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PictureLab Demo Reel 2019</h1>
+        <p>Explore the best of our work in creative CGI, animation, and visual storytelling.</p>
+    </header>
+    <div class="video-container">
+        <video id="demoReel" controls>
+            <source src="demoreel2019.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <button onclick="toggleMute()">Toggle Mute</button>
+    <script>
+        const video = document.getElementById('demoReel');
+        function toggleMute() {
+            video.muted = !video.muted;
+            alert(video.muted ? "Video is muted" : "Video is unmuted");
+        }
+    </script>
+</body>
+</html>

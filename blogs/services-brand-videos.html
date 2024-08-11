@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our professional brand video services that enhance your company's visibility and engagement.">
+    <title>Brand Video Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .video {
+            cursor: pointer;
+            display: block;
+            margin: 20px 0;
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .video.active {
+            background: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Brand Video Services</h1>
+    </header>
+    <div class="container">
+        <h2>Why Choose Brand Videos?</h2>
+        <p>Brand videos are essential for creating a lasting impression, increasing engagement, and enhancing brand visibility. They effectively communicate your brand story and values.</p>
+        
+        <h2>Our Services</h2>
+        <div class="video" data-url="https://www.example.com/video1">Corporate Brand Video</div>
+        <div class="video" data-url="https://www.example.com/video2">Product Launch Video</div>
+        <div class="video" data-url="https://www.example.com/video3">Customer Testimonial Video</div>
+    </div>
+
+    <script>
+        const videos = document.querySelectorAll('.video');
+        videos.forEach(video => {
+            video.addEventListener('click', function() {
+                videos.forEach(v => v.classList.remove('active'));
+                this.classList.add('active');
+                const url = this.getAttribute('data-url');
+                window.open(url, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>

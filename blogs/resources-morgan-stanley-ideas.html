@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan Stanley Resources & Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #004f87;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .resource {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 4px solid #004f87;
+            transition: background 0.3s;
+        }
+        .resource:hover {
+            background-color: #e5f6ff;
+        }
+        button {
+            background-color: #004f87;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Morgan Stanley Resources & Ideas</h1>
+    </header>
+    <div class="container">
+        <h2>Explore Key Financial Insights!</h2>
+        <div class="resource" onclick="displayIdea('Wealth Management Strategies')">
+            <h3>Wealth Management Strategies</h3>
+            <p>Discover innovative ways to optimize your investments.</p>
+        </div>
+        <div class="resource" onclick="displayIdea('Market Analysis Tools')">
+            <h3>Market Analysis Tools</h3>
+            <p>Utilize cutting-edge tools to analyze market trends.</p>
+        </div>
+        <div class="resource" onclick="displayIdea('Investment Research')">
+            <h3>Investment Research</h3>
+            <p>Access in-depth research papers from top analysts.</p>
+        </div>
+        <button onclick="showMore()">Show More Resources</button>
+    </div>
+    <script>
+        function displayIdea(idea) {
+            alert("You selected: " + idea);
+        }
+        function showMore() {
+            alert("More resources coming soon!");
+        }
+    </script>
+</body>
+</html>

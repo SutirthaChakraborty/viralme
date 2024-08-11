@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the essentials of a graphic designer portfolio. Curate your best work, showcase your skills, and attract potential clients.">
+    <title>Graphic Designer Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .portfolio-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Graphic Designer Portfolio Essentials</h1>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <h2>Showcase Your Work</h2>
+            <p>Present your best designs, logos, and branding projects effectively.</p>
+        </div>
+        <div class="portfolio-item">
+            <h2>Highlight Your Skills</h2>
+            <p>Display your expertise in Adobe Creative Suite, typography, and color theory.</p>
+        </div>
+        <div class="portfolio-item">
+            <h2>Client Testimonials</h2>
+            <p>Incorporate feedback to build trust with potential clients.</p>
+        </div>
+        <div class="portfolio-item">
+            <h2>Contact Information</h2>
+            <p>Make it easy for clients to reach you for collaborations.</p>
+        </div>
+    </div>
+    <button class="button" onclick="alert('Start building your graphic design portfolio today!')">Get Started</button>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', () => {
+                alert(`You clicked on: ${item.querySelector('h2').innerText}`);
+            });
+        });
+    </script>
+</body>
+</html>

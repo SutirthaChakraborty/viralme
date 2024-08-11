@@ -1,0 +1,55 @@
+Sure! Here's a small HTML code snippet with CSS and JavaScript to display information about time lapse videos:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Lapse Videos</title>
+    <style>
+        /* CSS styling */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .video {
+            width: 600px;
+            height: 400px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .video img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video">
+            <img src="time_lapse_video.gif" alt="Time Lapse Video">
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for interactivity
+        const videoElement = document.querySelector('.video');
+        videoElement.addEventListener('click', function() {
+            videoElement.classList.toggle('play');
+        });
+    </script>
+</body>
+</html>
+
+
+The above HTML code creates a simple webpage with a container div and a video div. The CSS styling is applied to center the video on the page and give it a border. The JavaScript code adds interactivity by toggling a 'play' class on the video div when it is clicked.
+
+Feel free to replace the `time_lapse_video.gif` with the actual path to your time lapse video file. Remember to include the necessary CSS and JavaScript files if you are using them externally.
+
+I hope this helps! Let me know if you have any further questions.

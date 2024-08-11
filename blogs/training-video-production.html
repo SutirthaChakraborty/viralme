@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .content {
+            line-height: 1.5;
+        }
+        .interactive-section {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .interactive-button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .interactive-output {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="section-header">Training Video Production</h1>
+        <div class="content">
+            <p>Training video production is a crucial aspect of modern education and corporate training. It involves creating instructional videos to educate, train, and inform audiences. Here are some key steps in the process:
+            </p>
+            <ul>
+                <li><strong>Scriptwriting:</strong> Crafting the narrative and dialogue for the video, ensuring it's engaging and informative.</li>
+                <li><strong>Casting:</strong> Selecting the right talent to bring the script to life, whether it's a professional actor, a subject matter expert, or the company's own staff.</li>
+                <li><strong>Pre-production:</strong> Planning the shoot, including location scouting, setting up the camera, and rehearsing the scenes.</li>
+                <li><strong>Shooting:</strong> Capturing the footage, ensuring clear audio and visual quality.</li>
+                <li><strong>Post-production:</strong> Editing the video, adding effects, and creating a cohesive final product.</li>
+                <li><strong>Distribution:</strong> Sharing the video with the intended audience, whether through internal company channels or external platforms like YouTube.</li>
+            </ul>
+        </div>
+        <div class="interactive-section">
+            <button class="interactive-button" onclick="showStep()">Next Step</button>
+            <div class="interactive-output" id="stepOutput"></div>
+        </div>
+        <script>
+            function showStep() {
+                var step = Math.floor(Math.random() * 6) + 1;
+                var steps = [
+                    "Scriptwriting",
+                    "Casting",
+                    "Pre-production",
+                    "Shooting",
+                    "Post-production",
+                    "Distribution"
+                ];
+                document.getElementById('stepOutput').innerHTML = `<h2>Next Step: ${steps[step - 1]}</h2>`;
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore 'Opera in the Open', a unique outdoor opera experience. Discover performances, artists, and cultural significance.">
+    <title>Opera in the Open - Portfolio Item</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0077cc;
+        }
+        .interactive {
+            width: 100%;
+            height: 300px;
+            background-color: #0077cc;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .interactive:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Opera in the Open</h1>
+    </header>
+    <div class="container">
+        <h2>Experience Outdoor Opera</h2>
+        <p>Join us for 'Opera in the Open', a groundbreaking outdoor performance series that brings classic and contemporary opera to stunning public spaces. Experience the magic of live music under the stars.</p>
+        <div class="interactive" onclick="showMoreInfo()">
+            <p>Click for more about our upcoming performances!</p>
+        </div>
+        <div id="moreInfo" style="display:none; padding-top: 15px;">
+            <h3>Upcoming Shows</h3>
+            <ul>
+                <li>June 5, 2024 - The Magic Flute</li>
+                <li>July 15, 2024 - La Traviata</li>
+                <li>August 20, 2024 - Carmen</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            const moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

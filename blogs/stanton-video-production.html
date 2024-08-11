@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stanton Video Production: Professional Videography, Creative Services, and High-Quality Video Content.">
+    <title>Stanton Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            margin: 0;
+        }
+        #videoSection {
+            display: none;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005a9e;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Stanton Video Production</h1>
+    <p>Your Source for High-Quality Video Content</p>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>Stanton Video Production specializes in professional videography and creative video solutions. We bring your stories to life through captivating visuals and engaging narratives.</p>
+    <button id="exploreButton">Explore Our Services</button>
+    <div id="videoSection">
+        <h3>Our Services</h3>
+        <ul>
+            <li>Corporate Videos</li>
+            <li>Promotional Films</li>
+            <li>Event Coverage</li>
+            <li>Social Media Content</li>
+            <li>Documentaries</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    document.getElementById('exploreButton').onclick = function() {
+        var videoSection = document.getElementById('videoSection');
+        if (videoSection.style.display === "none" || videoSection.style.display === "") {
+            videoSection.style.display = "block";
+            this.innerText = "Hide Our Services";
+        } else {
+            videoSection.style.display = "none";
+            this.innerText = "Explore Our Services";
+        }
+    }
+</script>
+
+</body>
+</html>

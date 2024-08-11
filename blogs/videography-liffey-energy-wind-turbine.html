@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videography Liffey Energy Wind Turbine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        video {
+            max-width: 100%;
+            border: 2px solid #2c3e50;
+            border-radius: 10px;
+        }
+        .info {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore Videography of Liffey Energy Wind Turbine</h1>
+    <div class="video-container">
+        <video id="windTurbineVideo" controls>
+            <source src="wind_turbine_tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="info">
+        <h2>What is Liffey Energy Wind Turbine?</h2>
+        <p>Liffey Energy Wind Turbine harnesses wind energy to produce renewable electricity.</p>
+        <p>This videography showcases the turbine's operational process, benefits, and impact on sustainability.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <p id="more-info" style="display:none;">Liffey Energy's initiatives support green technology and carbon footprint reduction.</p>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            const moreInfo = document.getElementById('more-info');
+            moreInfo.style.display = moreInfo.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

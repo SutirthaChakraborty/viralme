@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reebok Resources - 25,915 Days</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #d7002c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            font-size: 24px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #d7002c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b30027;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Reebok Resources</h1>
+    <p>Discover insights and tips over 25,915 days of Reebok's journey.</p>
+</header>
+
+<section>
+    <h2>What are Reebok Resources?</h2>
+    <p>Reebok resources include product information, brand history, athlete collaborations, and training tips to motivate your fitness journey.</p>
+</section>
+
+<section>
+    <h2>Interactive Feature</h2>
+    <button id="toggleInfo">Show More Info</button>
+    <div id="moreInfo" class="hidden">
+        <p>Reebok has evolved significantly over the past 25,915 days, focusing on innovation, sustainability, and inclusivity. Explore our comprehensive catalog of workout gear and learn from expert trainers to maximize your fitness potential.</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById('toggleInfo').onclick = function() {
+        var info = document.getElementById('moreInfo');
+        if (info.classList.contains('hidden')) {
+            info.classList.remove('hidden');
+            this.textContent = 'Show Less Info';
+        } else {
+            info.classList.add('hidden');
+            this.textContent = 'Show More Info';
+        }
+    };
+</script>
+
+</body>
+</html>

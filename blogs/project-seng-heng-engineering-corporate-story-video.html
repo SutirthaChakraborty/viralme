@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seng Heng Engineering - Corporate Story Video</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .video-container {
+        position: relative;
+        padding-top: 56.25%; /* 16:9 aspect ratio */
+    }
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .video-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    .video-overlay h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+    .video-overlay p {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-overlay">
+            <h2>Seng Heng Engineering</h2>
+            <p>Discover Our Corporate Story</p>
+        </div>
+    </div>
+</div>
+<script>
+    // Optional JavaScript to enhance the video player
+    // This example shows how to add a button to play/pause the video
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.querySelector('iframe');
+        var playButton = document.createElement('button');
+        playButton.textContent = 'Play';
+        playButton.addEventListener('click', function() {
+            if (video.currentTime > 0) {
+                video.pause();
+                playButton.textContent = 'Play';
+            } else {
+                video.play();
+                playButton.textContent = 'Pause';
+            }
+        });
+        document.querySelector('.video-container').appendChild(playButton);
+    });
+</script>
+</body>
+</html>

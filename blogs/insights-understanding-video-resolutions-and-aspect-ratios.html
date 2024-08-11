@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gain insights into video resolutions and aspect ratios. Learn how to choose the right settings for optimal viewing experiences.">
+    <title>Understanding Video Resolutions and Aspect Ratios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+        }
+        .content {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .definition {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e7f2ff;
+            border-left: 5px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Resolutions & Aspect Ratios</h1>
+</header>
+
+<div class="content">
+    <h2>What is Video Resolution?</h2>
+    <p>Video resolution refers to the amount of pixels displayed in each dimension on a screen. Common resolutions include 720p, 1080p, 4K, and 8K. Higher resolution means more detail and clarity.</p>
+    <button class="btn" onclick="toggleDefinition('resolution')">Learn More</button>
+    <div id="resolution" class="definition">
+        <p>Resolution affects video quality and is crucial for viewing on larger screens. Common aspect ratios include 16:9 for HD and 4:3 for standard definition.</p>
+    </div>
+
+    <h2>Understanding Aspect Ratios</h2>
+    <p>Aspect ratio is the ratio of a video's width to its height. Common aspect ratios include 16:9, 4:3, and 21:9, which significantly influence how content is perceived on various devices.</p>
+    <button class="btn" onclick="toggleDefinition('aspect-ratio')">Learn More</button>
+    <div id="aspect-ratio" class="definition">
+        <p>Choosing the appropriate aspect ratio is essential for creating an immersive viewing experience, particularly for films and games.</p>
+    </div>
+</div>
+
+<script>
+    function toggleDefinition(id) {
+        const definition = document.getElementById(id);
+        if (definition.style.display === "none" || definition.style.display === "") {
+            definition.style.display = "block";
+        } else {
+            definition.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

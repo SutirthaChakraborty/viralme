@@ -1,0 +1,50 @@
+#### HTML and CSS Code for Sample Motion Graphics
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Motion Graphics</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .motion-graphics {
+            width: 200px;
+            height: 200px;
+            background-color: #ff6f61;
+            border-radius: 50%;
+            position: relative;
+            animation: move 2s infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(200px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="motion-graphics"></div>
+</body>
+</html>
+
+
+#### Explanation
+**HTML Structure:**
+- The HTML structure includes a basic setup with a title and a single `div` element to represent the motion graphics.
+
+**CSS Styling:**
+- The CSS code sets the body to flex display to center the motion graphics vertically and horizontally.
+- The `.motion-graphics` class styles the motion graphics element with a specific size, color, and animation.
+
+**Motion Animation:**
+- The `@keyframes` rule defines the animation called "move" that moves the motion graphics element horizontally.
+
+This simple HTML and CSS code creates a basic representation of sample motion graphics with a moving element. For a more interactive experience, JavaScript can be added to control the animation or create more complex motion effects.

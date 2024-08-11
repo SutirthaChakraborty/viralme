@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Awareness Messaging</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .service {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .service:hover {
+            background: #e9ecef;
+            cursor: pointer;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Key Services in Brand Awareness Messaging</h1>
+    </header>
+    <div class="container">
+        <div class="service" onclick="toggleDescription('desc1')">
+            <h2>Social Media Marketing</h2>
+            <p>Enhancing visibility through strategic content.</p>
+            <div id="desc1" class="description">
+                Social media platforms help brands engage with their audience, building trust and recognition.
+            </div>
+        </div>
+        <div class="service" onclick="toggleDescription('desc2')">
+            <h2>Content Creation</h2>
+            <p>Crafting valuable and relevant content.</p>
+            <div id="desc2" class="description">
+                Quality content boosts SEO and promotes brand messaging effectively across various channels.
+            </div>
+        </div>
+        <div class="service" onclick="toggleDescription('desc3')">
+            <h2>Email Campaigns</h2>
+            <p>Targeted messaging to drive engagement.</p>
+            <div id="desc3" class="description">
+                Personalized email campaigns can significantly enhance brand awareness and customer loyalty.
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

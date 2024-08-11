@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Objectives Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .objective {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            transition: background 0.3s;
+        }
+        .objective:hover {
+            background: #e9f5ff;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Objectives Insights</h1>
+</header>
+
+<section>
+    <h2>Key Objectives for Your Video Content</h2>
+    <div class="objective" onclick="toggleDetails(this)">
+        <strong>1. Define Your Audience</strong>
+        <p class="details" style="display:none;">Understanding your target audience helps tailor your content effectively.</p>
+    </div>
+    <div class="objective" onclick="toggleDetails(this)">
+        <strong>2. Set Clear Goals</strong>
+        <p class="details" style="display:none;">Establish what you want to achieve with your video, such as engagement or education.</p>
+    </div>
+    <div class="objective" onclick="toggleDetails(this)">
+        <strong>3. Measure Success</strong>
+        <p class="details" style="display:none;">Use metrics to evaluate the performance of your video against your goals.</p>
+    </div>
+    <button onclick="alert('Download the Video Objectives Template!')">Download Template</button>
+</section>
+
+<script>
+    function toggleDetails(element) {
+        const details = element.querySelector('.details');
+        details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

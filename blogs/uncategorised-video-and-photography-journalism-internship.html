@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uncategorized Video and Photography Journalism Internship">
+    <title>Video and Photography Journalism Internship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .tabs {
+            margin: 20px 0;
+        }
+        .tab {
+            display: none;
+        }
+        .tab.active {
+            display: block;
+        }
+        .tablinks {
+            cursor: pointer;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 5px;
+            background-color: white;
+            transition: background 0.3s;
+        }
+        .tablinks:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Uncategorized Video and Photography Journalism Internship</h1>
+        <p>This internship offers hands-on experience in multimedia storytelling, focusing on video and photography journalism. Enhance your skills in visual content creation, editing, and reporting.</p>
+        
+        <div class="tabs">
+            <div>
+                <span class="tablinks active" onclick="openTab(event, 'Overview')">Overview</span>
+                <span class="tablinks" onclick="openTab(event, 'Requirements')">Requirements</span>
+                <span class="tablinks" onclick="openTab(event, 'Application')">Application Process</span>
+            </div>
+            <div id="Overview" class="tab active">
+                <h2>Internship Overview</h2>
+                <p>This internship is designed for aspiring journalists passionate about visual storytelling. Work alongside experienced professionals and gain knowledge in both video production and photography.</p>
+            </div>
+            <div id="Requirements" class="tab">
+                <h2>Requirements</h2>
+                <ul>
+                    <li>Strong interest in journalism and media</li>
+                    <li>Basic knowledge of photography and videography</li>
+                    <li>Ability to work independently and in a team</li>
+                </ul>
+            </div>
+            <div id="Application" class="tab">
+                <h2>Application Process</h2>
+                <p>To apply, please submit your resume, a cover letter, and a portfolio showcasing your photography and video work.</p>
+            </div>
+        </div>
+
+        <button class="btn" onclick="alert('Thank you for your interest!')">Apply Now</button>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";  
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";  
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

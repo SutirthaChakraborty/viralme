@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Infographics Services</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .service {
+            width: 30%;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .service h2 {
+            color: #333333;
+            margin-top: 0;
+        }
+
+        .service p {
+            color: #666666;
+        }
+
+        .service button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .service button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        // Add interactivity using JavaScript (optional)
+        document.addEventListener("DOMContentLoaded", function() {
+            const boxes = document.querySelectorAll('.service > button');
+            boxes.forEach(function(box) {
+                box.addEventListener('click', function(e) {
+                    // Example: Show more details on click
+                    this_MODIFIED_STATE = this_MODIFIED_STATE ? 'active' : 'inactive';
+                    e.preventDefault();
+                    let content = document.getElementById('service-content-' + this_MODIFIED_STATE);
+                    content.style.display = this_MODIFIED_STATE === 'active' ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="service">
+            <h2>Service 1: Data Visualization</h2>
+            <p>Create engaging visual stories using <span class="keyword">interactivity</span>

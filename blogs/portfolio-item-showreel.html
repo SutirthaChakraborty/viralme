@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showreel Portfolio - A stunning visual showcase of creative projects, highlighting skills in video production, graphic design, and digital storytelling.">
+    <title>Portfolio Showreel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+        }
+        .showreel {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .video-container {
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .video-container video {
+            width: 300px;
+            height: 200px;
+            transition: transform 0.3s;
+        }
+        .video-container:hover video {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Creative Showreel</h1>
+        <p>A curated selection of my best work in video production and design.</p>
+    </header>
+    <div class="showreel" id="showreel">
+        <div class="video-container" onclick="playVideo('video1')">
+            <video id="video1" src="showreel-video1.mp4" muted loop></video>
+        </div>
+        <div class="video-container" onclick="playVideo('video2')">
+            <video id="video2" src="showreel-video2.mp4" muted loop></video>
+        </div>
+        <div class="video-container" onclick="playVideo('video3')">
+            <video id="video3" src="showreel-video3.mp4" muted loop></video>
+        </div>
+    </div>
+    <footer>
+        <p>Contact me at: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    </footer>
+    <script>
+        function playVideo(videoId) {
+            const videos = document.querySelectorAll('.video-container video');
+            videos.forEach((video) => {
+                video.pause();
+                video.currentTime = 0;
+            });
+            const selectedVideo = document.getElementById(videoId);
+            selectedVideo.play();
+        }
+    </script>
+</body>
+</html>

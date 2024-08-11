@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="testimonial, imperial surveillance, surveillance system, privacy, trust, technology, digital footprint">
+<title>Empire of Surveillance Testimonials</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+  background-color: #f6f6f6;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.quotation {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.like-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.like-button:hover {
+  background-color: #45a049;
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const testimonials = document.querySelectorAll(".testimonial .like-button");
+  testimonials.forEach(function(button) {
+    button.addEventListener("click", function() {
+      this.classList.toggle("liked");
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+  <h2 class="title">Empire of Surveillance: Real Experiences</h2>
+  <div class="testimonial">
+    <p class="author">John Doe, Technology Enthusiast</p>
+    <div class="quotation">
+      "The surveillance system within the ancient Empire was both a safeguard and a reminder of its power. It improved public order but also shaped our understanding of trust in a digital age."
+    </div>
+    <button class="like-button">Like</button>
+  </div>
+  <div class="testimonial">
+    <p class="author">Jane Smith, Privacy Advocate</p>
+    "Every pixel captured represented a balance between surveillance and personal freedom. It was a delicate

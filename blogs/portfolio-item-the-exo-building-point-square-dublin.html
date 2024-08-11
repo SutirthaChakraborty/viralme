@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Exo Building at Point Square, Dublin. A hub of innovation and creativity.">
+    <title>Portfolio Item: Exo Building, Point Square Dublin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .portfolio-item {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+        }
+        img {
+            width: 48%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        .show-more {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exo Building - Point Square, Dublin</h1>
+</header>
+
+<div class="portfolio-item">
+    <div class="images">
+        <img src="exo-building-front.jpg" alt="Exo Building Front">
+        <img src="exo-building-internal.jpg" alt="Inside Exo Building">
+    </div>
+    <div class="description">
+        <p>The Exo Building, located at Point Square Dublin, is a landmark of architectural innovation, designed to foster creativity and collaboration among businesses. It stands as a beacon for modern design and sustainable practices at the heart of Dublin.</p>
+        <p class="show-more">This building is equipped with state-of-the-art facilities and smart technologies, making it a perfect choice for tech companies and startups. Facilities include flexible workspaces, meeting rooms, and recreational areas that enhance work-life balance.</p>
+        <button id="more-info-btn">Show More</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('more-info-btn').addEventListener('click', function() {
+        var moreInfo = document.querySelector('.show-more');
+        if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+            moreInfo.style.display = "block";
+            this.innerText = "Show Less";
+        } else {
+            moreInfo.style.display = "none";
+            this.innerText = "Show More";
+        }
+    });
+</script>
+
+</body>
+</html>

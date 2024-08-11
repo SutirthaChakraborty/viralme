@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Explainer Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 15px;
+        }
+        .post-header {
+            background-color: #007BFF;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .post-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            padding: 10px 0;
+        }
+        .video-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        .video-thumbnail {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .video-title {
+            font-size: 16px;
+            color: #333;
+            margin: 5px 0;
+        }
+        .video-meta {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        // Interaction - adding play button on hover
+        function togglePlay(video) {
+            if (video.dataset.playing) {
+                video.style.filter = "blur(5px)";
+                video.dataset.playing = false;
+            } else {
+                video.style.filter = "";
+                video.dataset.playing = true;
+            }
+        }
+        // Attach event to video cards
+        document.querySelectorAll('.video-card').forEach(function(card) {
+            card.addEventListener('mouseover', function() { togglePlay(this.querySelector

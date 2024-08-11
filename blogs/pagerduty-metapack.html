@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore PagerDuty Metapack for incident management and automation solutions">
+    <title>PagerDuty Metapack Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0072c6;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0072c6;
+        }
+        button {
+            background-color: #0072c6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PagerDuty Metapack</h1>
+    </header>
+    <div class="container">
+        <h2>What is PagerDuty Metapack?</h2>
+        <p>PagerDuty Metapack is a powerful suite for managing incidents and automating workflows. It integrates seamlessly with existing tools and enhances overall operational efficiency.</p>
+        
+        <h2>Key Features</h2>
+        <ul>
+            <li>Incident Response Automation</li>
+            <li>Real-time Alerting</li>
+            <li>Integration with DevOps Tools</li>
+            <li>Analytics and Reporting</li>
+        </ul>
+
+        <button id="moreInfoBtn">Click for More Information</button>
+        <div id="moreInfo" style="display:none;">
+            <h3>Enhanced Operational Insights</h3>
+            <p>PagerDuty Metapack offers advanced analytics capabilities, enabling teams to visualize incident trends and performance metrics, leading to improved response times and service reliability.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('moreInfoBtn').addEventListener('click', function() {
+            var infoDiv = document.getElementById('moreInfo');
+            infoDiv.style.display = infoDiv.style.display === 'none' ? 'block' : 'none';
+            this.textContent = infoDiv.style.display === 'none' ? 'Click for More Information' : 'Hide Information';
+        });
+    </script>
+</body>
+</html>

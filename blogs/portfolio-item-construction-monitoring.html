@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Monitoring Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .portfolio-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.03);
+        }
+        .portfolio-title {
+            font-size: 1.5em;
+            color: #2980b9;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        .toggle-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .toggle-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Construction Monitoring Portfolio</h1>
+
+    <div class="portfolio-item">
+        <div class="portfolio-title">Site Surveillance & Quality Control</div>
+        <button class="toggle-button" onclick="toggleDetails(this)">Show Details</button>
+        <div class="details">
+            <p>Implemented drone technology for real-time site surveillance, ensuring compliance with safety and quality standards.</p>
+            <p>Keyword Focus: Construction quality monitoring, site security, drone surveillance.</p>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <div class="portfolio-title">Progress Tracking System</div>
+        <button class="toggle-button" onclick="toggleDetails(this)">Show Details</button>
+        <div class="details">
+            <p>Developed an integrated project management tool to track construction progress and budget adherence.</p>
+            <p>Keyword Focus: Construction progress monitoring, project management software, budget tracking.</p>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <div class="portfolio-title">Environmental Compliance Monitoring</div>
+        <button class="toggle-button" onclick="toggleDetails(this)">Show Details</button>
+        <div class="details">
+            <p>Conducted environmental impact assessments and monitored compliance with local regulations during construction.</p>
+            <p>Keyword Focus: Environmental monitoring, construction compliance, impact assessments.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(button) {
+        const details = button.nextElementSibling;
+        if(details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+            button.textContent = "Hide Details";
+        } else {
+            details.style.display = "none";
+            button.textContent = "Show Details";
+        }
+    }
+</script>
+</body>
+</html>

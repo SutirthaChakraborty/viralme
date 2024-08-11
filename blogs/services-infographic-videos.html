@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Infographics & Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #39a0ee;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .cards-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 18px;
+        }
+        a {
+            color: #39a0ee;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showInfo(evt) {
+            var info = document.getElementById('info-' + evt.target.id);
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Exploring Services Infographics &amp; Videos</h1>
+    </header>
+    <div class="container">
+        <div class="cards-row">
+            <div class="card" id="service1">
+                <h3>Service 1</h3>
+                <p>Discover our uniquely creative infographics for enhanced communication</p>
+                <a href="#" onclick="showInfo(this.id)">More Info</a>
+                <div id="info-service1" style="display: none;">
+                    <p>Keyword-rich content, data visualization

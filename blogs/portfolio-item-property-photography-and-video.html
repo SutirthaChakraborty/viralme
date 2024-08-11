@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional property photography and video services to showcase real estate.">
+    <title>Property Photography & Video Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .item {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            width: calc(33% - 40px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .description {
+            padding: 15px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .item {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .item {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Property Photography and Video</h1>
+        <p>Your gateway to stunning real estate visuals</p>
+    </header>
+    <div class="portfolio">
+        <div class="item">
+            <img src="property1.jpg" alt="Beautiful Living Room">
+            <div class="description">
+                <h3>Stunning Interiors</h3>
+                <p>Capture the essence of your property with high-quality photography.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="property2.jpg" alt="Modern Kitchen">
+            <div class="description">
+                <h3>Modern Designs</h3>
+                <p>Showcase architectural beauty with professional video tours.</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="property3.jpg" alt="Cozy Backyard">
+            <div class="description">
+                <h3>Outdoor Spaces</h3>
+                <p>Highlight outdoor living areas with our dynamic visuals.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const items = document.querySelectorAll('.item');
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                alert('Interested in this property? Contact us for more details!');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rory Bresnihan's Showreel Portfolio showcasing creative video production, editing, and cinematography skills.">
+    <meta name="keywords" content="Rory Bresnihan, Showreel, Portfolio, Video Production, Cinematography, Editing, Filmmaking, Creative Projects">
+    <title>Rory Bresnihan Showreel Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item {
+            margin: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+        .item h3 {
+            text-align: center;
+            padding: 10px 0;
+        }
+        #showreelModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        #modalContent {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rory Bresnihan Showreel</h1>
+<h2>Creative Video Production & Cinematography</h2>
+
+<div class="portfolio">
+    <div class="item" onclick="openModal()">
+        <img src="showreel-thumbnail.jpg" alt="Rory Bresnihan Showreel">
+        <h3>Watch the Showreel</h3>
+    </div>
+    <div class="item">
+        <img src="project1.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+    </div>
+    <div class="item">
+        <img src="project2.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+    </div>
+</div>
+
+<div id="showreelModal">
+    <div id="modalContent">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Rory Bresnihan's Showreel</h2>
+        <video controls>
+            <source src="showreel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<script>
+    function openModal() {
+        document.getElementById("showreelModal").style.display = "block";
+    }
+    function closeModal() {
+        document.getElementById("showreelModal").style.display = "none";
+    }
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("showreelModal")) {
+            closeModal();
+        }
+    }
+</script>
+
+</body>
+</html>

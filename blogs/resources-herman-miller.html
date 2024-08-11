@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore resources on Herman Miller, renowned for innovative office furniture, ergonomic solutions, and modern design.">
+    <title>Herman Miller Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0072B8;
+        }
+        .resource {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .resource:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #0072B8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005f8c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Herman Miller Resources</h1>
+    <p>Discover a comprehensive collection of resources related to Herman Miller's innovative office solutions, ergonomic chairs, and modern design principles.</p>
+
+    <div class="resource">
+        <h2>Ergonomic Chairs</h2>
+        <p>Learn about the design and benefits of Herman Miller's ergonomic chairs, including the Aeron and Embody chairs.</p>
+        <button onclick="toggleInfo('ergonomicChairs')">More Info</button>
+        <div id="ergonomicChairs" style="display:none;">
+            <p>Herman Miller's ergonomic chairs are designed to support the natural shape of the human body, promoting comfort and productivity.</p>
+        </div>
+    </div>
+
+    <div class="resource">
+        <h2>Office Solutions</h2>
+        <p>Explore a range of office solutions tailored for modern workspaces, including collaborative furniture and storage options.</p>
+        <button onclick="toggleInfo('officeSolutions')">More Info</button>
+        <div id="officeSolutions" style="display:none;">
+            <p>Our office solutions facilitate collaboration and enhance workspace efficiency, catering to both remote and in-office teams.</p>
+        </div>
+    </div>
+
+    <div class="resource">
+        <h2>Modern Design</h2>
+        <p>Delve into the principles of modern design that guide Herman Miller's furniture creations and innovations.</p>
+        <button onclick="toggleInfo('modernDesign')">More Info</button>
+        <div id="modernDesign" style="display:none;">
+            <p>Modern design is about simplicity, functionality, and aesthetics, creating furniture that fits seamlessly into contemporary environments.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            const infoDiv = document.getElementById(id);
+            if (infoDiv.style.display === "none") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

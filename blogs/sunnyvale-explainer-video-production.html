@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunnyvale Explainer Video Production - Engaging and informative video content for your business.">
+    <title>Sunnyvale Explainer Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .play-button:hover {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sunnyvale Explainer Video Production</h1>
+    <p>Discover how our **Sunnyvale explainer video production** services can elevate your brand's message. We create engaging, informative videos that capture your audience's attention and explain complex ideas simply.</p>
+
+    <div class="video-container">
+        <video id="explainerVideo" controls>
+            <source src="sunnyvale-explainer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="play-button" onclick="togglePlay()">▶</button>
+    </div>
+
+    <script>
+        const video = document.getElementById('explainerVideo');
+        const playButton = document.querySelector('.play-button');
+
+        function togglePlay() {
+            if (video.paused) {
+                video.play();
+                playButton.style.display = 'none';
+            } else {
+                video.pause();
+                playButton.style.display = 'block';
+            }
+        }
+
+        video.addEventListener('pause', () => {
+            playButton.style.display = 'block';
+        });
+
+        video.addEventListener('play', () => {
+            playButton.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

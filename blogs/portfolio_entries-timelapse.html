@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Entries - Timelapse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #333;
+        }
+        .portfolio-entry {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .portfolio-entry:hover {
+            transform: scale(1.02);
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #timelapse-info {
+            margin-top: 20px;
+            display: none;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portfolio Entries on Timelapse</h1>
+        <p>Explore the fascinating world of timelapse photography and videography.</p>
+    </header>
+    <div class="portfolio-entry">
+        <h2>Entry 1: Urban Timelapse</h2>
+        <p>A stunning capture of a city transitioning from sunrise to sunset.</p>
+        <button onclick="toggleInfo('info1')">Learn More</button>
+        <div id="info1" class="timelapse-info">Timelapse enables us to witness the slow transformation of bustling cities, showcasing energy and movement through time.</div>
+    </div>
+    <div class="portfolio-entry">
+        <h2>Entry 2: Nature Timelapse</h2>
+        <p>Witness the beauty of nature changing over the seasons.</p>
+        <button onclick="toggleInfo('info2')">Learn More</button>
+        <div id="info2" class="timelapse-info">This entry highlights the elegance of seasonal shifts in nature using timelapse techniques that amplify the beauty of landscapes.</div>
+    </div>
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

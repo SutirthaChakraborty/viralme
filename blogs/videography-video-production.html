@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Videography and Video Production Services for High-Quality Video Content">
+    <title>Videography and Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .service {
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background-color: #2ecc71;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+        .video-container {
+            display: none;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Videography & Video Production</h1>
+    
+    <div class="service">
+        <h2>Our Services</h2>
+        <p>We offer comprehensive videography and video production services, including corporate videos, commercials, event coverage, and promotional content.</p>
+        <button onclick="toggleVideo()">Watch Example Video</button>
+        <div class="video-container" id="videoContainer">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="service">
+        <h2>Why Choose Us?</h2>
+        <p>Our team of experienced videographers use the latest technology to create high-quality visual content tailored to your needs. We focus on storytelling, creativity, and professionalism to bring your vision to life.</p>
+    </div>
+
+    <div class="service">
+        <h2>Keywords</h2>
+        <ul>
+            <li>Videography</li>
+            <li>Video Production</li>
+            <li>Corporate Video</li>
+            <li>Event Videography</li>
+            <li>Promotional Videos</li>
+            <li>High-Quality Video Content</li>
+            <li>Creative Storytelling</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            var videoContainer = document.getElementById('videoContainer');
+            if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

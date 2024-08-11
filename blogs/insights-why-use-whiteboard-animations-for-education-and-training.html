@@ -1,0 +1,86 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whiteboard Animations for Education</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.content {
+    padding: 20px;
+}
+.whiteboard {
+    background: url('whiteboard.jpg');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+.whiteboard::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.whiteboard-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.whiteboard-text {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+</style>
+<script>
+function animateText() {
+    var text = document.getElementById('whiteboard-text');
+    var textContent = text.textContent;
+    var i = 0;
+    var timer = setInterval(function() {
+        if (i < textContent.length) {
+            text.textContent = textContent.substring(0, i++);
+        } else {
+            clearInterval(timer);
+        }
+    }, 100);
+}
+</script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Why Use Whiteboard Animations for Education?</h1>
+    </div>
+    <div class="content">
+        <div class="whiteboard" onclick="animateText()">
+            <div class="whiteboard-content">
+                <div id="whiteboard-text" class="whiteboard-text">
+                    Whiteboard animations are an effective tool for enhancing learning in educational and training settings. They are engaging, allowing for a deeper understanding of complex concepts and making learning more interactive and fun. This approach combines the visual appeal of animation with the tactile feel of a whiteboard, creating a unique learning experience.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

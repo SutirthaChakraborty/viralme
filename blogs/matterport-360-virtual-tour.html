@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immerse Yourself in Matterport 360 Virtual Tours</title>
+    <meta name="description" content="Discover the power of Matterport 360 Virtual Tours. Explore real estate, travel and events like never before!">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .tour {
+            position: relative;
+            height: 400px;
+            background: #333;
+            margin: 20px 0;
+        }
+        .tour::after {
+            content: 'Click to Experience 360° Tour';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            pointer-events: none;
+        }
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .keyword {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Matterport 360 Virtual Tours</h1>
+    </header>
+    <div class="container">
+        <h2>Explore with Virtual Reality Technology</h2>
+        <div class="tour" id="tour"></div>
+        <div class="keywords">
+            <div class="keyword">Virtual Reality</div>
+            <div class="keyword">3D Tours</div>
+            <div class="keyword">Real Estate Marketing</div>
+            <div class="keyword">Immersive Experiences</div>
+            <div class="keyword">Interactive Walkthroughs</div>
+        </div>
+        <p>Matterport revolutionizes how we view spaces. Perfect for real estate, tourism, and events, engage your audience with interactive virtual tours that bring properties to life. </p>
+    </div>
+    <script>
+        document.getElementById('tour').addEventListener('click', function() {
+            window.open('https://www.matterport.com/', '_blank');
+        });
+    </script>
+</body>
+</html>

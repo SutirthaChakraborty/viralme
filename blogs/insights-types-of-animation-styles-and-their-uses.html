@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights on Animation Styles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .animation-style {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px 0;
+            background: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .animation-style:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .style-toggle {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types of Animation Styles and Their Uses</h1>
+    <div class="animation-style" onclick="toggleDescription(this)">
+        <h2>1. Fade Animation</h2>
+        <span class="style-toggle">Show Details</span>
+        <p class="description">Fade animations are used to smoothly transition objects in and out, creating a calm visual flow. Ideal for website modals and notifications.</p>
+    </div>
+    <div class="animation-style" onclick="toggleDescription(this)">
+        <h2>2. Slide Animation</h2>
+        <span class="style-toggle">Show Details</span>
+        <p class="description">Slide animations create movement from one direction, enhancing navigation. Commonly used in carousels or sidebar menus.</p>
+    </div>
+    <div class="animation-style" onclick="toggleDescription(this)">
+        <h2>3. Bounce Animation</h2>
+        <span class="style-toggle">Show Details</span>
+        <p class="description">Bounce animations add a playful touch, perfect for calls-to-action and stress the importance of elements. Great for buttons.</p>
+    </div>
+    <div class="animation-style" onclick="toggleDescription(this)">
+        <h2>4. Rotate Animation</h2>
+        <span class="style-toggle">Show Details</span>
+        <p class="description">Rotate animations convey movement and dynamism. Often used in icons and logos to grab attention.</p>
+    </div>
+    <script>
+        function toggleDescription(element) {
+            const description = element.querySelector('.description');
+            description.style.display = description.style.display === 'none' ? 'block' : 'none';
+            const toggleText = element.querySelector('.style-toggle');
+            toggleText.textContent = toggleText.textContent.includes('Show') ? 'Hide Details' : 'Show Details';
+        }
+    </script>
+</body>
+</html>

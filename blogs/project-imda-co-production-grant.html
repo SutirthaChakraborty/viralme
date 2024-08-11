@@ -1,0 +1,82 @@
+Here's a simple HTML code with embedded CSS and JavaScript that focuses on the "IMA (Institute for Music and Digital Arts) Co-Production Grant" topic. The code includes interactive elements to enhance user engagement:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Learn about IMA Co-Production Grant for music and digital arts projects">
+  <meta name="keywords" content="IMDA Co-Production Grant, music projects, digital arts, funding opportunity, collaborative program">
+  <title>IMDA Co-Production Grant</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #005ebd;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .input-field {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 3px;
+    }
+
+    .btn {
+      background-color: #005ebd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    .btn:hover {
+      background-color: #004035;
+    }
+  </style>
+  <script>
+    // Add interactive functionality - show information on hover
+    document.querySelectorAll('.section h2').forEach((heading) => {
+      heading.addEventListener('mouseover', () => {
+        heading.innerHTML += ' <span class="info">(Hover for details)</span>';
+      });
+      heading.addEventListener('mouseout', () => {
+        heading.innerHTML =

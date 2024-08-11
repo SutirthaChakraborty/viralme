@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Patrick's Day 2018 Portfolio Item</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e68c; /* Irish green */
+            margin: 0;
+            padding: 1rem;
+        }
+
+        .portfolio-item {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-image {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-image:hover img {
+            transform: scale(1.1);
+        }
+
+        .portfolio-title {
+            text-align: center;
+            font-size: 24px;
+            color: #1e4f84; /* rich dark green */
+            margin-bottom: 10px;
+        }
+
+        .portfolio-description {
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            background-color: #1e4f84;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #163b65;
+        }
+    </style>
+    <script>
+        function showDetail() {
+            var detailDiv = document.getElementById("portfolio-details");
+            detailDiv.classList.toggle("visible");
+        }
+    </script>
+</head>
+<body>
+    <div class="portfolio-item">
+        <a href="#" onclick="showDetail()">
+            <div class="portfolio-image">
+               

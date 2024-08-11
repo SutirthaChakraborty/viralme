@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project NLB Arts Donors Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .video-container {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .info {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Project NLB Arts Donors Video</h1>
+</header>
+
+<div class="content">
+    <div class="video-container">
+        <h2>Watch Our Video</h2>
+        <video width="100%" controls>
+            <source src="donors_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="info">
+        <h2>About the Project</h2>
+        <p>Project NLB Arts aims to connect artists with donors to foster creativity and support the arts community. Your contributions help us create impactful projects.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="more-info" style="display:none;">
+            <p>We focus on various art forms including visual arts, music, and performance. Join us in making a difference!</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        var moreInfo = document.getElementById("more-info");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

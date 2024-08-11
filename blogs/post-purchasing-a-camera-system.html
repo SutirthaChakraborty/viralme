@@ -1,0 +1,82 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Purchase Camera System Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+        .section {
+            margin-bottom: 1rem;
+        }
+        .keyword-list li {
+            list-style-type: none;
+            margin-bottom: 0.5rem;
+        }
+        .keyword-box input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+        }
+        .keyword-box button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .help-text {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .keyword-box input[type="text"], .keyword-box button {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function showKeywords() {
+            const keywordInput = document.getElementById('keyword-input');
+            const keywordList = document.getElementById('keyword-list');
+            
+            if (keywordInput.value && keywordInput.value.trim()) {
+                keywordList.innerHTML = `
+                    <ul>
+                        <!-- Keywords will be dynamically fetched here -->
+                    </ul>
+                `;
+                
+                fetch('https://api.example.com/keywords?q=${encodeURIComponent

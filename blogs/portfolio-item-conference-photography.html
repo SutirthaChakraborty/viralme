@@ -1,0 +1,71 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Conference Photography</title>
+    <style>
+        /* Add some interactivity with CSS and JS */
+        .portfolio-item {
+            width: 300px;
+            height: 400px;
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+
+        .portfolio-item:hover {
+            background-color: #dedede;
+        }
+
+        .item-title {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        .item-description {
+            color: #666;
+            margin-top: 5px;
+            line-height: 1.6;
+        }
+
+        .info-popover {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .portfolio-item:hover .info-popover {
+            display: block;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script>
+        function showPopover(item) {
+            let popover = document.getElementById('popover_' + item.dataset.id);
+            if (popover.style.display === 'none') {
+                popover.style.display = 'block';
+            } else {
+                popover.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="portfolio-item" data-id="1" onclick="showPopover(this)">
+            <div class="item-title">Conf19 - Keynote Talk</div>
+            <div class="item-description">Professional photography capturing the essence of keynote speakers at Conference19</div>
+            <div class="info-popover">
+                <span onclick="this.parentElement.style.display = 'none'" class="close">&times;</span>
+                <p>View photos & <a href="path/to/photo

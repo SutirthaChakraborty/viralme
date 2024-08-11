@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lost Smiles: A Promo Video Exploring Themes of Emotion and Connection">
+    <meta name="keywords" content="Lost Smiles, promo video, emotion, connection, project, heartwarming, storytelling">
+    <title>Lost Smiles Promo Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #3a3a3a;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Project Lost Smiles</h1>
+    <p>Explore the heartwarming journey of emotions and connections through our promo video for Project Lost Smiles. This project aims to highlight the significance of human relationships and the impacts of losing personal connections.</p>
+    
+    <div class="video-container">
+        <video id="promoVideo" controls>
+            <source src="lost_smiles_promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <button onclick="playVideo()">Play Video</button>
+        <button onclick="pauseVideo()">Pause Video</button>
+    </div>
+
+    <script>
+        function playVideo() {
+            var video = document.getElementById("promoVideo");
+            video.play();
+        }
+        function pauseVideo() {
+            var video = document.getElementById("promoVideo");
+            video.pause();
+        }
+    </script>
+
+</body>
+</html>

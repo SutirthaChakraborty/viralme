@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore the Rascals Portfolio showcasing creative works and latest projects.">
+    <meta name="keywords" content="portfolio, rascals, design, development, interactive, css, js, projects, creative, web design">
+    <title>Rascals Portfolio</title>
+    <style>
+        /* Add some minimalistic style */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f3f6;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            padding: 20px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .header {
+            background-color: #33698d;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .project:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project:hover img {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            color: #666666;
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore innovative home project ideas for comfortable living. Get inspired by modern designs, sustainable building materials, and efficient space utilization.">
+    <title>Home Project Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .project-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Innovative Home Project Ideas</h1>
+    <p>Transform your living space with creative designs!</p>
+</header>
+
+<div class="project-container">
+    <div class="project-card">
+        <h2>Eco-Friendly Homes</h2>
+        <p>Utilize sustainable materials and energy-efficient designs to create a green living environment.</p>
+        <button class="button" onclick="showMore('eco')">Learn More</button>
+    </div>
+    <div class="project-card">
+        <h2>Smart Home Technology</h2>
+        <p>Incorporate smart devices to automate your home for enhanced convenience and security.</p>
+        <button class="button" onclick="showMore('smart')">Learn More</button>
+    </div>
+    <div class="project-card">
+        <h2>Space Optimization</h2>
+        <p>Design multi-functional spaces to maximize usability in small home layouts.</p>
+        <button class="button" onclick="showMore('space')">Learn More</button>
+    </div>
+</div>
+
+<script>
+    function showMore(topic) {
+        const descriptions = {
+            eco: "Eco-friendly homes reduce carbon footprint through sustainable practices such as solar panels, rainwater harvesting, and natural insulation materials.",
+            smart: "Smart homes feature interconnected devices that allow you to control lighting, temperature, and security through your smartphone.",
+            space: "Space optimization involves creative furniture arrangements and built-in storage solutions to make the most of limited areas."
+        };
+        alert(descriptions[topic]);
+    }
+</script>
+
+</body>
+</html>

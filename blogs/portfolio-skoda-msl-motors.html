@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Skoda MSL Motors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #ffab00;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .portfolio {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 15px;
+            width: 30%;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005f99;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Skoda MSL Motors Portfolio</h1>
+    <p>Your trusted source for Skoda vehicles.</p>
+</header>
+
+<div class="portfolio">
+    <div class="card">
+        <h2>Skoda Octavia</h2>
+        <p>Elegant design meets advanced technology in the Skoda Octavia. Perfect for those who value quality and performance.</p>
+        <button onclick="learnMore('Octavia')">Learn More</button>
+    </div>
+    
+    <div class="card">
+        <h2>Skoda Kodiaq</h2>
+        <p>Experience the spacious and family-friendly Skoda Kodiaq, designed for modern lifestyles and adventures.</p>
+        <button onclick="learnMore('Kodiaq')">Learn More</button>
+    </div>
+    
+    <div class="card">
+        <h2>Skoda Superb</h2>
+        <p>The Skoda Superb combines luxury and practicality. Discover a driving experience that exceeds expectations.</p>
+        <button onclick="learnMore('Superb')">Learn More</button>
+    </div>
+</div>
+
+<script>
+    function learnMore(model) {
+        alert("Discover more about the " + model + " on our website!");
+    }
+</script>
+
+</body>
+</html>

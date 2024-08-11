@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the innovative Climote Hub portfolio, showcasing smart climate control solutions for modern living.">
+    <title>Climote Hub Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Climote Hub Portfolio</h1>
+        <p>Smart Climate Control Solutions for Modern Living</p>
+    </header>
+    <div class="portfolio">
+        <div class="item">
+            <h2>Smart Thermostat</h2>
+            <p>Optimize your energy usage with our intelligent thermostat that learns your habits.</p>
+            <button class="button" onclick="alert('Learn more about Smart Thermostat!')">Learn More</button>
+        </div>
+        <div class="item">
+            <h2>Climate Monitoring</h2>
+            <p>Real-time monitoring of indoor climate conditions for a healthier environment.</p>
+            <button class="button" onclick="alert('Discover Climate Monitoring features!')">Learn More</button>
+        </div>
+        <div class="item">
+            <h2>Automated Ventilation</h2>
+            <p>Enhance air quality with our automated ventilation systems that adjust based on air quality.</p>
+            <button class="button" onclick="alert('Explore Automated Ventilation options!')">Learn More</button>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('This feature is coming soon!');
+            });
+        });
+    </script>
+</body>
+</html>

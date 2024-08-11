@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Quarantine Worthy TV Shows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .show {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .show:hover {
+            transform: scale(1.02);
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Post-Quarantine Worthy TV Shows</h1>
+    <div class="show">
+        <h2>Stranger Things</h2>
+        <p>A thrilling mix of supernatural elements and 80s nostalgia.</p>
+        <button onclick="toggleDetails('details1')">Show Details</button>
+        <div id="details1" class="details">
+            <p>Follow a group of kids as they uncover dark secrets in their town.</p>
+        </div>
+    </div>
+
+    <div class="show">
+        <h2>The Queen's Gambit</h2>
+        <p>A captivating story about a chess prodigy navigating the male-dominated world of chess.</p>
+        <button onclick="toggleDetails('details2')">Show Details</button>
+        <div id="details2" class="details">
+            <p>Explore themes of addiction, genius, and the quest for identity.</p>
+        </div>
+    </div>
+
+    <div class="show">
+        <h2>Money Heist</h2>
+        <p>An intense Spanish heist crime drama that keeps you on the edge of your seat.</p>
+        <button onclick="toggleDetails('details3')">Show Details</button>
+        <div id="details3" class="details">
+            <p>Join the Professor and his team as they execute the biggest heist in history.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

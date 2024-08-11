@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the effectiveness, success, personalization, and ethics of targeted advertising.">
+    <title>Targeted Advertising Effectiveness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .topic {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Targeted Advertising</h1>
+        
+        <div class="topic">
+            <h2>Effectiveness</h2>
+            <button onclick="toggleInfo('effectivenessInfo')">Learn More</button>
+            <div id="effectivenessInfo" class="info">
+                Targeted advertising significantly increases engagement rates and conversion rates, as it delivers relevant ads based on user data, preferences, and behaviors.
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>Success Metrics</h2>
+            <button onclick="toggleInfo('successMetricsInfo')">Learn More</button>
+            <div id="successMetricsInfo" class="info">
+                Key success metrics include Click-Through Rates (CTR), Return on Investment (ROI), and customer retention rates, showcasing how effectively ads reach and impact the target audience.
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>Personalization</h2>
+            <button onclick="toggleInfo('personalizationInfo')">Learn More</button>
+            <div id="personalizationInfo" class="info">
+                Personalization enhances user experience and satisfaction, leading to improved ad relevance and fostering a greater emotional connection with the brand.
+            </div>
+        </div>
+        
+        <div class="topic">
+            <h2>Ethics</h2>
+            <button onclick="toggleInfo('ethicsInfo')">Learn More</button>
+            <div id="ethicsInfo" class="info">
+                Ethical considerations involve data privacy, transparency, and consumer consent, ensuring that targeted advertising respects individual rights and fosters trust.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleInfo(id) {
+            const infoDiv = document.getElementById(id);
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

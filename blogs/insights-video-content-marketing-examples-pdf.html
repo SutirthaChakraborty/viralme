@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights on Video Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .video-example {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .example-button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .example-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Effective Video Content Marketing Insights</h1>
+        <p>Discover how video content marketing can enhance online engagement and boost brand visibility. Explore real-world examples and download our comprehensive PDF guide.</p>
+        
+        <h2>Video Content Marketing Examples</h2>
+        <div class="video-example">
+            <video controls>
+                <source src="example-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <button class="example-button" onclick="downloadPDF()">Download PDF Guide</button>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'insights-video-content-marketing.pdf'; // Replace with your PDF file URL
+            link.download = 'Insights_Video_Content_Marketing.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>

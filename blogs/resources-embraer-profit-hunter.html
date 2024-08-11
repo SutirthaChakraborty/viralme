@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embraer Profit Hunter Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Embraer Profit Hunter Resources</h1>
+    </header>
+    <section>
+        <h2>What is the Embraer Profit Hunter?</h2>
+        <p>The <span class="keyword">Embraer Profit Hunter</span> is a cutting-edge aircraft designed for efficiency and profitability in the aviation sector. It focuses on maximizing operational performance while minimizing costs.</p>
+        <button onclick="toggleInfo('info1')">Learn More</button>
+        <div id="info1" class="info">
+            <p>This aircraft is equipped with advanced technology that enhances fuel efficiency and reduces maintenance costs, making it a preferred choice for airlines looking to improve their bottom line.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Key Features</h2>
+        <p>Some of the standout features include:</p>
+        <ul>
+            <li>High fuel efficiency</li>
+            <li>Advanced avionics</li>
+            <li>Spacious cabin design</li>
+        </ul>
+        <button onclick="toggleInfo('info2')">Discover Features</button>
+        <div id="info2" class="info">
+            <p>The Profit Hunter's design allows for greater passenger comfort and operational flexibility, making it ideal for regional and charter services.</p>
+        </div>
+    </section>
+    <script>
+        function toggleInfo(infoId) {
+            var info = document.getElementById(infoId);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

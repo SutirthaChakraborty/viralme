@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAV Flight Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>UAV Flight Documentation</h1>
+    </header>
+    <section>
+        <h2>Essential UAV Documents</h2>
+        <p>Understanding the necessary documentation for UAV flights is crucial for compliance and safety.</p>
+        <div class="toggle">Show/Hide Details</div>
+        <div class="content">
+            <ul>
+                <li><strong>Flight Plans:</strong> Required for all UAV operations.</li>
+                <li><strong>Maintenance Logs:</strong> Documenting UAV maintenance history.</li>
+                <li><strong>Insurance Certificates:</strong> Proof of liability coverage.</li>
+                <li><strong>Operator Licenses:</strong> Certification for UAV operators.</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        document.querySelector('.toggle').addEventListener('click', function() {
+            const content = document.querySelector('.content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

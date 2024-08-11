@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sectors B2B: A Comprehensive Guide</title>
+<style>
+/* CSS for better aesthetics and interactivity */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #333333;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+_sector-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+ sector-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #dddddd;
+  cursor: pointer;
+}
+
+ sector-item:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+.explanation {
+  display: none;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #bdc3c7;
+  color: #333333;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.show-expl {
+  position: relative;
+}
+
+button {
+  background-color: #007bba;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button:hover {
+  background-color: #006390;
+}
+
+</style>
+<script>
+// JavaScript for revealing explanations on hover
+document.addEventListener("DOMContentLoaded", function() {
+  var sectorItems = document.querySelectorAll('.sector-item');
+  for (var i = 0; i < sectorItems.length; i++) {
+    sectorItems[i].addEventListener('mouseover', function() {

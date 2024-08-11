@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resources Content Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f7f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AI Resources Content Collection</h1>
+    <div class="card">
+        <h2>What is AI?</h2>
+        <p>Artificial Intelligence (AI) refers to the simulation of human intelligence in machines designed to think and act like humans.</p>
+        <button onclick="toggleInfo('aiInfo')">Learn More</button>
+        <div id="aiInfo" style="display:none;">
+            <p>AI encompasses machine learning, deep learning, natural language processing, and robotics.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Key AI Technologies</h2>
+        <p>Explore various technologies driving AI innovation including Neural Networks, Computer Vision, and Natural Language Processing.</p>
+        <button onclick="toggleInfo('techInfo')">Learn More</button>
+        <div id="techInfo" style="display:none;">
+            <p>Neural Networks mimic the human brain, while Computer Vision enables machines to interpret visual data.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(infoId) {
+            var info = document.getElementById(infoId);
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

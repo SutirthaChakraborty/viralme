@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .account-info {
+            margin: 20px 0;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Account</h1>
+    </header>
+    <div class="container">
+        <h2>Account Overview</h2>
+        <div class="account-info">
+            <p>Welcome to your account! Here you can manage your personal information, view your order history, and update your preferences.</p>
+        </div>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="more-info" style="display:none;">
+            <h3>Manage Your Account</h3>
+            <p>Keep your account secure by updating your password regularly. You can also set up two-factor authentication for added security.</p>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("more-info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

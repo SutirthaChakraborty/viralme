@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Project Who Powers the OCBC SME Index - empowering small and medium enterprises.">
+    <title>Project Who Powers the OCBC SME Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0072e5;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #0072e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #005bb5;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OCBC SME Index</h1>
+        <p>The OCBC SME Index is a groundbreaking tool that reflects the health of Small and Medium Enterprises (SMEs) in Singapore. The project empowers businesses by providing critical insights into their performance and market trends.</p>
+        <p>Explore the latest data, trends, and insights to help your SME thrive in a competitive marketplace.</p>
+        <a href="#" class="button" id="toggleInfo">Learn More</a>
+        <div class="info" id="additionalInfo">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Data-driven insights into business health.</li>
+                <li>Benchmarking against industry standards.</li>
+                <li>Support for strategic decision-making.</li>
+                <li>Real-time updates and analytics.</li>
+            </ul>
+            <p>Stay ahead of the curve with the OCBC SME Index, designed to fuel growth and sustainability for SMEs.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleInfo').addEventListener('click', function(event) {
+            event.preventDefault();
+            const infoDiv = document.getElementById('additionalInfo');
+            if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+                infoDiv.style.display = 'block';
+                this.textContent = 'Read Less';
+            } else {
+                infoDiv.style.display = 'none';
+                this.textContent = 'Learn More';
+            }
+        });
+    </script>
+</body>
+</html>

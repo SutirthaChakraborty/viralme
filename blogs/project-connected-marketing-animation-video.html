@@ -1,0 +1,75 @@
+html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Connected Marketing Animation Video</title>
+    <style>
+        .project-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+            overflow: hidden;
+        }
+        
+        .video-box {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            height: auto;
+            margin-top: 100px;
+            background: #000; /* Add your desired video background (e.g., color or gradient) */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            transition: opacity 0.3s ease;
+            cursor: pointer; /* Make the box interactive on hover */
+        }
+        
+        .video-box:hover {
+            opacity: 0.8;
+        }
+        
+        .video-box iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Make sure the video plays beneath the overlay */
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .overlay p {
+            color: white;
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+        
+        .overlay:hover {
+            opacity: 1;
+        }
+
+        /* Keywords: project showcase, marketing animation, interactive explainer, connecting audiences, engaging video */
+    </style>
+    <script>
+        // JavaScript to reveal video description on hover
+        function revealDesc() {
+            document.querySelector('.overlay').classList.toggle('visible');
+        }
+
+        // Attach event listener to the video box

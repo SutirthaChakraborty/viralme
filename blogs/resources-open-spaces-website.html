@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore resources and open spaces for community engagement and collaboration.">
+    <title>Open Spaces Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056b3;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Open Spaces Resources</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Open Spaces</h2>
+            <p>Open spaces are vital for community engagement, providing areas for collaboration, creativity, and connection. They foster innovation and inclusivity.</p>
+        </section>
+        <section id="resources">
+            <h2>Available Resources</h2>
+            <ul>
+                <li>Community Workshops</li>
+                <li>Online Collaboration Tools</li>
+                <li>Resource Libraries</li>
+                <li>Event Spaces</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For more information, reach out to us at <a href="mailto:info@openspaces.com">info@openspaces.com</a>.</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Open Spaces Initiative</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

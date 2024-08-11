@@ -1,0 +1,64 @@
+#### HTML and CSS Code for Animation
+
+Below is a small HTML code with CSS to create an animated text effect related to the topic "Insights: Why Complicate When You Can Animate".
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Animation Insights</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated-text">Why Complicate When You Can Animate</h1>
+  </div>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+}
+
+.animated-text {
+  font-size: 2.5rem;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.animated-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #007bff;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.animated-text:hover::after {
+  transform: scaleX(1);
+}
+
+
+This HTML and CSS code creates a simple webpage with an animated text effect. When the user hovers over the text, a smooth animation is triggered, visually emphasizing the importance of simplifying through animation.
+
+Feel free to integrate this code into your project to enhance user engagement and convey the message effectively.

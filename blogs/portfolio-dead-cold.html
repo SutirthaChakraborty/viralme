@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Dead Cold</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            flex: 0 0 45%;
+            margin-bottom: 30px;
+            background-color: #f4f4f4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        .filter-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .filter-button:hover {
+            background-color: #555;
+        }
+
+        @media screen and (max-width: 768px) {
+            .portfolio-item {
+                flex: 0 0 90%;
+            }
+        }
+    </style>
+    <script>
+        // Add some JavaScript for portfolio filtering
+        (function() {
+            const filterButtons = document.querySelectorAll('.filter-button');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    portfolioItems.forEach(item => {
+                        item.classList.remove('active');
+                    });
+
+                    this.classList.add('active');
+                    const filters = this.dataset.filters.split(',');
+                    portfolioItems.forEach(item => {
+                        const className = item.getAttribute('data-filter');
+                        if (filters.includes(className)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }

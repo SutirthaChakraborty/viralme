@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Project Deepavali Game, a festive adventure filled with fun, creativity, and learning. Perfect for families and friends during Diwali!">
+    <meta name="keywords" content="Project Deepavali, Diwali game, festive celebration, family fun, interactive learning, cultural awareness, gaming experience, children’s education">
+    <title>Project Deepavali Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff9800;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .game-info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e9;
+            border-left: 5px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Project Deepavali Game!</h1>
+        <p>Join us in celebrating the spirit of Diwali through an interactive gaming experience! Project Deepavali game encourages creativity, cultural awareness, and family fun during the festival of lights.</p>
+        <button id="infoBtn">Learn More</button>
+        <div class="game-info" id="gameInfo">
+            <h2>What is Project Deepavali?</h2>
+            <p>This game immerses players in the vibrant traditions of Diwali. Engage in festive activities, solve puzzles, and discover the significance of the festival.</p>
+            <h3>Features:</h3>
+            <ul>
+                <li>Educational mini-games</li>
+                <li>Interactive storytelling</li>
+                <li>Fun puzzles and challenges</li>
+                <li>Colorful graphics and sound</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("infoBtn").onclick = function() {
+            var info = document.getElementById("gameInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

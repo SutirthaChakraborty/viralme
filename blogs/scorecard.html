@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorecard - Performance Tracking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .scorecard {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .score {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .value {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .average {
+            font-size: 1.2em;
+            color: #e67e22;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scorecard">
+        <h1>Scorecard Overview</h1>
+        <div class="score"><span>Player A:</span> <span class="value" id="scoreA">85</span></div>
+        <div class="score"><span>Player B:</span> <span class="value" id="scoreB">90</span></div>
+        <div class="score"><span>Player C:</span> <span class="value" id="scoreC">75</span></div>
+        <div class="average" id="averageScore">Average Score: 0</div>
+        <button onclick="calculateAverage()">Calculate Average</button>
+    </div>
+
+    <script>
+        function calculateAverage() {
+            const scoreA = parseInt(document.getElementById("scoreA").innerText);
+            const scoreB = parseInt(document.getElementById("scoreB").innerText);
+            const scoreC = parseInt(document.getElementById("scoreC").innerText);
+            const average = (scoreA + scoreB + scoreC) / 3;
+            document.getElementById("averageScore").innerText = "Average Score: " + average.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>

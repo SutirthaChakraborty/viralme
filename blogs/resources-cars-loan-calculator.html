@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Loan Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .calculator {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h1>Car Loan Calculator</h1>
+    <div class="calculator">
+        <label for="loanAmount">Loan Amount ($):</label>
+        <input type="number" id="loanAmount" placeholder="Enter loan amount">
+
+        <label for="interestRate">Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="Enter interest rate">
+
+        <label for="loanTerm">Loan Term (years):</label>
+        <input type="number" id="loanTerm" placeholder="Enter loan term">
+
+        <button onclick="calculateLoan()">Calculate Monthly Payment</button>
+        
+        <div class="result" id="monthlyPayment"></div>
+    </div>
+
+    <script>
+        function calculateLoan() {
+            var loanAmount = document.getElementById('loanAmount').value;
+            var interestRate = document.getElementById('interestRate').value / 100 / 12;
+            var loanTerm = document.getElementById('loanTerm').value * 12;
+
+            var x = Math.pow(1 + interestRate, loanTerm);
+            var monthlyPayment = (loanAmount * x * interestRate) / (x - 1);
+
+            if (!isNaN(monthlyPayment) && (monthlyPayment != Infinity) && (monthlyPayment > 0)) {
+                document.getElementById('monthlyPayment').innerText = 
+                "Monthly Payment: $" + monthlyPayment.toFixed(2);
+            } else {
+                document.getElementById('monthlyPayment').innerText = "Please check your inputs.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Cloudcasts Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0070d2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            background: #0070d2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+        .content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Salesforce Cloudcast Resources</h1>
+</header>
+
+<div class="container">
+    <h2>What is Salesforce Cloudcast?</h2>
+    <p>Salesforce Cloudcast is an innovative resource platform that offers insights, tutorials, and best practices for leveraging Salesforce solutions.</p>
+    
+    <h2>Key Resources</h2>
+    <ul>
+        <li><a href="#tutorials" onclick="toggleContent('tutorials')">Tutorials</a></li>
+        <li><a href="#best-practices" onclick="toggleContent('best-practices')">Best Practices</a></li>
+        <li><a href="#webinars" onclick="toggleContent('webinars')">Webinars</a></li>
+    </ul>
+    
+    <div id="tutorials" class="content">
+        <h3>Tutorials</h3>
+        <p>Explore our comprehensive tutorials covering various Salesforce functionalities, from Marketing Cloud to Service Cloud.</p>
+    </div>
+    <div id="best-practices" class="content">
+        <h3>Best Practices</h3>
+        <p>Learn best practices to optimize your Salesforce implementation for maximized productivity and performance.</p>
+    </div>
+    <div id="webinars" class="content">
+        <h3>Webinars</h3>
+        <p>Join our live webinars and on-demand recordings to stay updated with the latest Salesforce developments.</p>
+    </div>
+</div>
+
+<script>
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        const isVisible = content.style.display === "block";
+
+        // Hide all content sections
+        document.querySelectorAll('.content').forEach((element) => {
+            element.style.display = "none";
+        });
+
+        // Show the selected content section
+        content.style.display = isVisible ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>

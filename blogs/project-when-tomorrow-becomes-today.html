@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When Tomorrow Becomes Today</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main {
+            width: 65%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .sidebar button:hover {
+            background-color: #0056b3;
+        }
+        .topic {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>When Tomorrow Becomes Today</h1>
+        <p>Exploring the significance of time and change</p>
+    </header>
+    <div class="content">
+        <div class="sidebar">
+            <h2>Topics</h2>
+            <button onclick="showTopic('topic1')">The Concept of Time</button>
+            <button onclick="showTopic('topic2')">Change and Adaptation</button>
+            <button onclick="showTopic('topic3')">Future Predictions</button>
+        </div>
+        <div class="main">
+            <div id="topic1" class="topic">
+                <h2>The Concept of Time</h2>
+                <p>Time is a continuous progression of existence and events that occur in apparently irreversible succession.</p>
+            </div>
+            <div id="topic2" class="topic">
+                <h2>Change and Adaptation</h2>
+                <p>Change is an essential part of life, and adaptation is the process of adjusting to new conditions.</p>
+            </div>
+            <div id="topic3" class="topic">
+                <h2>Future Predictions</h2>
+                <p>Predicting the future involves analyzing current trends and making educated guesses about what may happen.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showTopic(topicId) {
+            const topics = document.querySelectorAll('.topic');
+            topics.forEach(topic => {
+                topic.style.display = 'none';
+            });
+            document.getElementById(topicId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

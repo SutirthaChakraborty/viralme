@@ -1,0 +1,86 @@
+#### HTML Code for Project Moe Heri E Centre Virtual Tour
+
+Here's a small HTML code snippet that you can use to create a simple and interactive virtual tour for Project Moe Heri E Centre:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Moe Heri E Centre Virtual Tour</title>
+  <style>
+    /* CSS styles for the virtual tour */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .sidebar {
+      width: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+    
+    .content {
+      width: 70%;
+      padding: 20px;
+    }
+    
+    .topic {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    .topic:hover {
+      color: blue;
+    }
+    
+    .active {
+      color: blue;
+    }
+  </style>
+  <script>
+    // JavaScript code for the virtual tour
+    function showContent(topic) {
+      var topics = document.getElementsByClassName('topic');
+      for (var i = 0; i < topics.length; i++) {
+        topics[i].classList.remove('active');
+      }
+      topic.classList.add('active');
+      
+      var content = document.getElementById('content');
+      content.innerHTML = 'Loading...'; // Replace with actual content loading logic
+      
+      // Simulate content loading delay
+      setTimeout(function() {
+        content.innerHTML = 'Content for ' + topic.innerHTML; // Replace with actual content
+      }, 1000);
+    }
+  </script>
+</head>
+<body>
+  <h1>Project Moe Heri E Centre Virtual Tour</h1>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Topics</h2>
+      <div class="topic" onclick="showContent(this)">Topic 1</div>
+      <div class="topic" onclick="showContent(this)">Topic 2</div>
+      <div class="topic" onclick="showContent(this)">Topic 3</div>
+      <div class="topic" onclick="showContent(this)">Topic 4</div>
+    </div>
+    <div class="content" id="content">
+      Select a topic from the sidebar to view the content.
+    </div>
+  </div>
+</body>
+</html>
+
+
+This HTML code creates a simple virtual tour for Project Moe Heri E Centre. It consists of a sidebar with topics and a content area. When a topic is clicked, the corresponding content is loaded in the content area. The content loading logic can be customized to fetch and display the actual content for each topic.
+
+Please note that this is a basic template and you will need to replace the placeholder content and add your own CSS styles and JavaScript logic to make it more interactive and visually appealing.
+
+I hope this helps you get started with your Project Moe Heri E Centre virtual tour!

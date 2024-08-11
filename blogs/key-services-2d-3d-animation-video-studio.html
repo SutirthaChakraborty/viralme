@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D & 3D Animation Video Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .service {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .service:hover {
+            background: #f0f8ff;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Key Services of Our 2D & 3D Animation Video Studio</h1>
+        <div class="service" onclick="toggleDetails('2dDetails')">
+            <h2>2D Animation</h2>
+            <p>Engaging 2D animated videos to captivate your audience.</p>
+            <div id="2dDetails" style="display:none;">
+                <p>Our 2D animation services include character design, explainer videos, and promotional content. Perfect for storytelling and brand messaging!</p>
+            </div>
+        </div>
+        <div class="service" onclick="toggleDetails('3dDetails')">
+            <h2>3D Animation</h2>
+            <p>High-quality 3D animations for immersive experiences.</p>
+            <div id="3dDetails" style="display:none;">
+                <p>We specialize in 3D modeling, rendering, and animation for products, architectural visualizations, and more.</p>
+            </div>
+        </div>
+        <div class="service" onclick="toggleDetails('motionDetails')">
+            <h2>Motion Graphics</h2>
+            <p>Dynamic motion graphics to enhance your videos.</p>
+            <div id="motionDetails" style="display:none;">
+                <p>Our motion graphics services include title sequences, infographics, and kinetic typography to make your content stand out!</p>
+            </div>
+        </div>
+        <button onclick="alert('Contact us for a consultation!')">Get Started</button>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

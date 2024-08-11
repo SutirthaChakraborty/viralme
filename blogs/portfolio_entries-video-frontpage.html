@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Entries Video Frontpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-container {
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 ratio */
+            position: relative;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .portfolio-entries {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .portfolio-entry {
+            display: inline-block;
+            width: 30%;
+            margin-left: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .portfolio-entry img {
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-entry:hover {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Portfolio Entries Video Frontpage</h1>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/exampleVideo" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="portfolio-entries">
+        <div class="portfolio-entry">
+            <img src="portfolio1.jpg" alt="Portfolio Entry 1">
+        </div>
+        <div class="portfolio-entry">
+            <img src="portfolio2.jpg" alt="Portfolio Entry 2">
+        </div>
+        <div class="portfolio-entry">
+            <img src="portfolio3.jpg" alt="Portfolio Entry 3">
+        </div>
+    </div>
+</body>
+</html>

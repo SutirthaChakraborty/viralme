@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clemens Food Service Portfolio</title>
+    <style>
+        /* Use meaningful keywords */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            overflow-x: hidden;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Interactive hover effect */
+        .portfolio-link {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+        
+        .portfolio-link:hover {
+            background-color: #007BFF;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive code */
+        @media (max-width: 768px) {
+            .portfolio-link {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+    <script>
+        // Simple highlight on click
+        function highlightTopic(e) {
+            const target = e.target;
+            if (target.classList.contains('topic')) {
+                document.querySelector('.topic').classList.remove('highlighted');
+                target.classList.add('highlighted');
+            }
+        }
+
+        document.addEventListener('click', highlightTopic, false);
+    </script>
+</head>
+<body>
+    <h1 id="topic">Clemens Food Service Portfolio</h1>
+    
+    <!-- Use # topic to be selected when click -->
+    <div class="portfolio-link topic" onclick="highlightTopic(event)">Food &amp; Catering</div>
+    <div class="portfolio-link">Gourmet Restaurants</div>
+    <div class="portfolio-link">Event Catering Services</div>
+    <div class="portfolio-link">Online Catering Platform</div>
+    
+    <

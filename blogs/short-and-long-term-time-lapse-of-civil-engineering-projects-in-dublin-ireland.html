@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore short and long term time lapses of civil engineering projects in Dublin, Ireland.">
+    <title>Civil Engineering Projects in Dublin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .time-lapse {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            background: #e9ecef;
+        }
+        .button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Civil Engineering in Dublin</h1>
+        <p>Time-lapse Analysis: Short and Long Term Projects</p>
+    </header>
+    <section>
+        <h2>Discover the Transformation</h2>
+        <p>Dublin is home to numerous civil engineering projects that showcase innovation and infrastructure development. Experience the progression of both short-term and long-term projects through captivating time lapses.</p>
+        <button class="button" onclick="toggleVisibility()">View Time-Lapse Examples</button>
+        <div class="time-lapse" id="timeLapseExamples">
+            <h3>Time-Lapse Insights</h3>
+            <p>Short-term projects such as <strong>road improvements</strong> and <strong>temporary structures</strong> provide immediate impact, while long-term projects like <strong>bridges</strong>, <strong>metro systems</strong>, and <strong>urban redevelopment</strong> reshape the city's landscape over time.</p>
+            <p>Explore how these projects influence urban mobility, economic growth, and community spaces in Dublin.</p>
+        </div>
+    </section>
+    <script>
+        function toggleVisibility() {
+            var timeLapseDiv = document.getElementById("timeLapseExamples");
+            if (timeLapseDiv.style.display === "none" || timeLapseDiv.style.display === "") {
+                timeLapseDiv.style.display = "block";
+            } else {
+                timeLapseDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

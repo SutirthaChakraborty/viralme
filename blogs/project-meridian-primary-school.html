@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Meridian Primary School</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Meridian Primary School</h1>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#events">Events</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Project Meridian Primary School is dedicated to providing quality education and fostering a love for learning in young minds.</p>
+    </section>
+    <section id="curriculum">
+        <h2>Curriculum</h2>
+        <p>Our curriculum is designed to engage students in a variety of subjects, promoting critical thinking and creativity.</p>
+    </section>
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Join us for our annual science fair and other exciting events throughout the year!</p>
+        <div class="interactive">
+            <button onclick="showEventDetails()">Click for Event Details</button>
+            <p id="eventDetails" style="display:none;">Our science fair will be held on March 15, 2024. Don't miss it!</p>
+        </div>
+    </section>
+    <script>
+        function showEventDetails() {
+            var details = document.getElementById("eventDetails");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

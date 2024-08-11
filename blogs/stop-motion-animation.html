@@ -1,0 +1,55 @@
+#### HTML Code for Stop Motion Animation
+
+Below is a small HTML code snippet that includes CSS and JavaScript to create a simple stop motion animation:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stop Motion Animation</title>
+    <style>
+        /* CSS for the animation */
+        .animation-frame {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: move 2s infinite;
+        }
+
+        /* Keyframes for the animation */
+        @keyframes move {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-frame"></div>
+
+    <script>
+        // JavaScript to control the animation
+        const animationFrame = document.querySelector('.animation-frame');
+        animationFrame.addEventListener('click', () => {
+            animationFrame.style.animationPlayState = 'paused';
+        });
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a simple stop motion animation using CSS and JavaScript. The animation consists of a red square that rotates continuously. When the square is clicked, the animation pauses.
+
+Feel free to modify the code and experiment with different styles and animations to create your own stop motion effects!
+
+Keywords: stop motion animation, HTML code, CSS animation, JavaScript animation, keyframes, animationPlayState

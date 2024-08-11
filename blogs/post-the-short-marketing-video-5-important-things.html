@@ -1,0 +1,81 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Video | 5 Important Things</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            height: 400px;
+            position: relative;
+        }
+
+        .video-poster {
+            width: 100%;
+            height: 100%;
+            background-color: #00bfff;
+            background-size: cover;
+            filter: blur(3px);
+            overflow: hidden;
+        }
+
+        .video-poster:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .play-button:hover {
+            background-color: #00bfff;
+        }
+
+        .title {
+            margin: 50px 0;
+            text-align: left;
+            font-size: 24px;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+    <script>
+        // JavaScript for play/p

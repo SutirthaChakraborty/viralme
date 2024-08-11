@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore resources to visit and settle in your new location. Find essential tips and guides for a smooth transition.">
+    <title>Resources to Visit & Settle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .resource {
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .resource:hover {
+            background: #ececec;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Essential Resources to Visit & Settle</h1>
+        <div class="resource" onclick="showInfo('local')">Local Attractions</div>
+        <div class="resource" onclick="showInfo('transport')">Transportation Guides</div>
+        <div class="resource" onclick="showInfo('community')">Community Resources</div>
+        <div class="resource" onclick="showInfo('housing')">Housing Information</div>
+        <div id="infoBox" style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; display:none;"></div>
+    </div>
+    <script>
+        function showInfo(type) {
+            const infoBox = document.getElementById('infoBox');
+            let content = '';
+            switch(type) {
+                case 'local':
+                    content = '<strong>Local Attractions:</strong> Museums, parks, and galleries to explore.';
+                    break;
+                case 'transport':
+                    content = '<strong>Transportation Guides:</strong> Tips on public transport and local transit options.';
+                    break;
+                case 'community':
+                    content = '<strong>Community Resources:</strong> Connect with local services and support networks.';
+                    break;
+                case 'housing':
+                    content = '<strong>Housing Information:</strong> Find available housing and rental options.';
+                    break;
+            }
+            infoBox.innerHTML = content;
+            infoBox.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

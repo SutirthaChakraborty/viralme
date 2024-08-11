@@ -1,0 +1,101 @@
+Here is the HTML and CSS code:
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whiteboard Video Production Services</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+		
+		#whiteboard {
+			width: 800px;
+			height: 600px;
+			border: 1px solid #ccc;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#whiteboard .drawing {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#whiteboard .drawing span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 24px;
+			font-weight: bold;
+			color: #333;
+		}
+		
+		#whiteboard .drawing span:hover {
+			cursor: pointer;
+		}
+		
+		#whiteboard .eraser {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 30px;
+			height: 30px;
+			background-color: #fff;
+			border-radius: 50%;
+			border: 1px solid #ccc;
+			cursor: pointer;
+		}
+		
+		#whiteboard .eraser:hover {
+			background-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div id="whiteboard">
+		<div class="drawing">
+			<span> Whiteboard Video Production Services</span>
+			<span> Engaging and Educational Videos</span>
+			<span> Custom Illustrations and Animations</span>
+			<span> Professional Voiceovers and Soundtracks</span>
+			<span> Fast Turnaround and Affordable Pricing</span>
+		</div>
+		<div class="eraser"></div>
+	</div>
+	
+	<script>
+		var drawing = document.querySelector('.drawing');
+		var eraser = document.querySelector('.eraser');
+		
+		drawing.addEventListener('click', function(event) {
+			var span = document.createElement('span');
+			span.textContent = 'New Text';
+			span.style.top = event.clientY + 'px';
+			span.style.left = event.clientX + 'px';
+			drawing.appendChild(span);
+		});
+		
+		eraser.addEventListener('click', function() {
+			var spans = drawing.querySelectorAll('span');
+			for (var i = 0; i < spans.length; i++) {
+				drawing.removeChild(spans[i]);
+			}
+		});
+	</script>
+</body>
+</html>
+
+
+This code creates a simple whiteboard video production services page with interactive CSS and JS. The page has a whiteboard area where you can draw text and shapes, and an eraser button that clears the drawing. The drawing area is created using a combination of absolute positioning and CSS shapes. The eraser button is created using a CSS circle and a hover effect. The JavaScript code adds event listeners to the drawing area and eraser button, allowing you to interact with the drawing and erase it.

@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Workers Appreciation Video</title>
+    <style>
+        body {
+            background-color: #f1f2f3;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        
+        .appreciation-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .video-container {
+            display: flex;
+            justify-content: center;
+            height: 400px;
+            margin-bottom: 40px;
+        }
+        
+        .video-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .cta-container {
+            text-align: center;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #2a7aaf;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.video-responsive').hover(
+                function() {
+                    $(this).addClass('video-play');
+                },
+                function() {
+                    $(this).removeClass('video-play');
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+    <div class="appreciation-section">
+        <h1>Project Workers Appreciation Video</h1>
+        <div class="video-container">
+            <video src="path/to/employees-appreciation.mp4" class="video-responsive" controls></video>
+            <button id="playPauseBtn" class="hidden">Play</button>
+        </div>
+        <div class

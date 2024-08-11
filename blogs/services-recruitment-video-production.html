@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional recruitment video production services to enhance your hiring process.">
+    <title>Recruitment Video Production Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #007BFF;
+        }
+        .service {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .service:hover {
+            background: #f1f1f1;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recruitment Video Production Services</h1>
+        <p>Optimizing Your Hiring Process</p>
+    </header>
+
+    <div class="container">
+        <h2>Why Choose Video Recruitment?</h2>
+        <p>Video recruitment allows you to showcase your company culture, engage candidates, and highlight job roles effectively.</p>
+
+        <div class="service">
+            <h3 class="toggle">Employee Testimonials</h3>
+            <div class="details">Gather authentic experiences from your team. These videos build trust and connect with potential candidates.</div>
+        </div>
+
+        <div class="service">
+            <h3 class="toggle">Company Overview</h3>
+            <div class="details">Create a compelling narrative about your company's mission, values, and work environment.</div>
+        </div>
+
+        <div class="service">
+            <h3 class="toggle">Job Role Previews</h3>
+            <div class="details">Provide insights into specific roles, responsibilities, and what a day in the life looks like.</div>
+        </div>
+
+        <div class="service">
+            <h3 class="toggle">Behind the Scenes</h3>
+            <div class="details">Showcase your office environment and team dynamics to attract cultural fit candidates.</div>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const details = toggle.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Synace Max Lubricants - Advanced lubrication solutions for automotive and industrial applications.">
+    <title>Synace Max Lubricants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .toggle-btn {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Synace Max Lubricants</h1>
+    <p>Enhance performance with advanced lubrication solutions</p>
+</header>
+
+<section>
+    <h2>Why Choose Synace Max?</h2>
+    <p>Synace Max Lubricants offer superior protection and efficiency, optimized for both automotive and industrial applications. Our specially formulated oils reduce friction, improve fuel economy, and extend the life of your engines and equipment.</p>
+    <button class="toggle-btn" onclick="toggleDetails()">Learn More</button>
+    <div id="moreDetails" class="hidden">
+        <h3>Key Benefits:</h3>
+        <ul>
+            <li>Outstanding thermal stability</li>
+            <li>Excellent wear protection</li>
+            <li>Enhanced fluidity at low temperatures</li>
+            <li>Reduced emissions</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Applications</h2>
+    <p>Synace Max is perfect for various applications:</p>
+    <ul>
+        <li>Automotive engines</li>
+        <li>Heavy machinery</li>
+        <li>Industrial equipment</li>
+        <li>Marine engines</li>
+    </ul>
+</section>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("moreDetails");
+        if (details.classList.contains("hidden")) {
+            details.classList.remove("hidden");
+            details.style.display = "block";
+        } else {
+            details.classList.add("hidden");
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

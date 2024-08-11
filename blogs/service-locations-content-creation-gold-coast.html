@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Locations: Content Creation on Gold Coast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        h1 {
+            margin-bottom: 1rem;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .location-list {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .location-item {
+            width: 30%;
+            padding: 1rem;
+            background-color: #efefef;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+        }
+        .info {
+            display: none;
+            position: relative;
+            background-color: #3498db;
+            color: white;
+            padding: 1rem;
+            width: 90%;
+            text-align: center;
+            bottom: 100%;
+            transition: all 0.5s ease;
+        }
+        .info p {
+            max-width: 80%;
+        }
+        .location-item:hover .info {
+            display: block;
+        }
+    </style>
+    <script>
+        function showContent(location) {
+            document.getElementById(location).classList.toggle("show");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Expert Content Creation Services in Gold Coast</h1>
+        <button onclick="showContent('location1')">Learn More about Location 1</button>
+        <button onclick="showContent('location2')">View Details for Location 2</button>
+        <button onclick="showContent('location3')">Discover Services in Location 3</button>
+    </header>
+    
+    <div class="container">
+        <ul class="location-list">
+            <li class="location-item location1">

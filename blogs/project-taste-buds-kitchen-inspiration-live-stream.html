@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Taste Buds Kitchen Inspiration Live Stream</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .interactive {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .interactive:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Taste Buds Kitchen Inspiration</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#live-stream">Live Stream</a>
+            <a href="#recipes">Recipes</a>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About the Project</h2>
+        <p>Project Taste Buds is a culinary initiative aimed at inspiring home cooks through live streaming sessions featuring diverse recipes and cooking techniques.</p>
+    </section>
+    <section id="live-stream">
+        <h2>Live Stream Schedule</h2>
+        <p>Join us every Saturday at 5 PM UTC for live cooking demonstrations. Click <span class="interactive" onclick="alert('Live stream starts soon!')">here</span> for notifications!</p>
+    </section>
+    <section id="recipes">
+        <h2>Featured Recipes</h2>
+        <ul>
+            <li>Spicy Thai Noodles</li>
+            <li>Classic Italian Risotto</li>
+            <li>Vegan Chocolate Cake</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Project Taste Buds. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.interactive').forEach(item => {
+            item.addEventListener('click', event => {
+                alert('Stay tuned for our exciting live streams!');
+            });
+        });
+    </script>
+</body>
+</html>

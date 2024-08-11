@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lensmen Photography at the Whiskey Museum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a4a4a;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery div {
+            margin: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery div:hover {
+            transform: scale(1.05);
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .description {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #5c8a4b;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4a6d3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lensmen Photography - Whiskey Museum Photoshoot</h1>
+        <p>Experience the art of capturing the essence of whiskey through Lensmen Photography.</p>
+    </header>
+    <div class="gallery">
+        <div onclick="showDetails('photo1')">
+            <img src="whiskey1.jpg" alt="Whiskey Bottle">
+        </div>
+        <div onclick="showDetails('photo2')">
+            <img src="whiskey2.jpg" alt="Whiskey Tasting">
+        </div>
+        <div onclick="showDetails('photo3')">
+            <img src="whiskey3.jpg" alt="Whiskey Aging Process">
+        </div>
+    </div>
+    <div class="description">
+        <h2>About Our Photoshoots</h2>
+        <p>Our professional photography services highlight the rich heritage and craftsmanship of whiskey-making.</p>
+        <button onclick="exploreMore()">Explore More</button>
+    </div>
+    <script>
+        function showDetails(photo) {
+            alert("Details about " + photo + " will be displayed here.");
+        }
+
+        function exploreMore() {
+            window.location.href = "https://www.lensmenphotography.com/whiskey-museum";
+        }
+    </script>
+</body>
+</html>

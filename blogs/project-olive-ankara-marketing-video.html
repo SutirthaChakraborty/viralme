@@ -1,0 +1,56 @@
+#### HTML Code for Project Olive Ankara Marketing Video
+
+Below is a small HTML code snippet that you can use as a starting point for your Project Olive Ankara marketing video website. This code includes interactive CSS and JS to explain the topics effectively:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Olive Ankara Marketing Video</title>
+    <style>
+        /* CSS styles for the video container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        /* CSS styles for the video iframe */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Olive Ankara Marketing Video</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        // JavaScript code for handling video playback
+        var videoContainer = document.querySelector('.video-container');
+        var videoIframe = videoContainer.querySelector('iframe');
+
+        videoContainer.addEventListener('click', function() {
+            if (videoIframe.paused) {
+                videoIframe.play();
+            } else {
+                videoIframe.pause();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+Please note that you need to replace `"your-video-id"` in the `src` attribute of the `<iframe>` tag with the actual ID of your marketing video on YouTube.
+
+This code creates a simple webpage with a heading and a video container. The video is embedded using an `<iframe>` tag, and the CSS styles ensure that the video maintains its aspect ratio. The JavaScript code adds interactivity by allowing users to click on the video to play or pause it.
+
+Feel free to modify and enhance this code to fit your specific requirements and design preferences. Good luck with your Project Olive Ankara marketing video!

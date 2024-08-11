@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how PagerDuty supports The Trevor Project in enhancing crisis intervention and LGBTQ+ youth support services.">
+    <title>PagerDuty & The Trevor Project | Support for LGBTQ+ Youth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4A90E2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            color: #4A90E2;
+            margin: 20px 0 10px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        button {
+            background: #4A90E2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #357ABD;
+        }
+        .testimonials {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PagerDuty & The Trevor Project</h1>
+        <p>Empowering LGBTQ+ Youth Crisis Support</p>
+    </header>
+    <div class="container">
+        <h2>About PagerDuty</h2>
+        <p>PagerDuty is a leading incident management platform that helps organizations respond to critical events, ensuring that help is available when needed the most.</p>
+        
+        <h2>About The Trevor Project</h2>
+        <p>The Trevor Project is a vital resource for LGBTQ+ youth crisis intervention, providing support and resources to prevent suicide and promote mental health.</p>
+        
+        <h2>Collaboration for Change</h2>
+        <p>PagerDuty collaborates with The Trevor Project to enhance their response capabilities, ensuring that help reaches individuals in crisis promptly.</p>
+        
+        <button id="showTestimonials">Read Testimonials</button>
+        <div id="testimonials" class="testimonials">
+            <p>"PagerDuty has transformed our operational support, allowing us to focus on saving lives." - The Trevor Project Team</p>
+            <p>"The partnership with PagerDuty enhances our ability to address crises in real-time." - Crisis Advisor</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showTestimonials').onclick = function() {
+            var testimonials = document.getElementById('testimonials');
+            testimonials.style.display = testimonials.style.display === 'none' || testimonials.style.display === '' ? 'block' : 'none';
+            this.innerHTML = testimonials.style.display === 'block' ? 'Hide Testimonials' : 'Read Testimonials';
+        };
+    </script>
+</body>
+</html>

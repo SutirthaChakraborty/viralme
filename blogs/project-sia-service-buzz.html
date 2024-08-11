@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project SIA Service Buzz - A platform for service management and optimization.">
+    <title>Project SIA Service Buzz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Project SIA Service Buzz</h1>
+</header>
+
+<section>
+    <h2>What is Project SIA?</h2>
+    <p>Project SIA is a revolutionary service management platform designed to enhance operational efficiency and customer satisfaction.</p>
+    <button onclick="toggleInfo()">Learn More</button>
+    <div class="info" id="infoSection">
+        <p>Our platform utilizes cutting-edge technology to optimize service delivery, streamline processes, and improve communication. Key features include real-time analytics, automated workflows, and integrated customer feedback systems.</p>
+    </div>
+</section>
+
+<script>
+    function toggleInfo() {
+        const infoSection = document.getElementById('infoSection');
+        if (infoSection.style.display === 'none' || infoSection.style.display === '') {
+            infoSection.style.display = 'block';
+        } else {
+            infoSection.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

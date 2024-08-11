@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the dark side of portfolios and learn how to avoid common pitfalls in portfolio management.">
+    <title>Portfolios: The Dark Side</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #e63946;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #333;
+            border-radius: 8px;
+        }
+        .topic {
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 5px solid #e63946;
+            transition: transform 0.3s;
+        }
+        .topic:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #e63946;
+            border: none;
+            color: #ffffff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #d62839;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolios: The Dark Side</h1>
+        <div class="topic" onclick="toggleDetails('risk')">
+            <h2>Risk Management</h2>
+            <p id="risk" style="display: none;">Understand the risks of over-diversification and market volatility.</p>
+        </div>
+        <div class="topic" onclick="toggleDetails('fees')">
+            <h2>High Fees</h2>
+            <p id="fees" style="display: none;">Learn about hidden fees that can erode your returns.</p>
+        </div>
+        <div class="topic" onclick="toggleDetails('emotional')">
+            <h2>Emotional Investing</h2>
+            <p id="emotional" style="display: none;">Discover the impact of emotions on investment decisions.</p>
+        </div>
+        <button onclick="alert('Stay informed to avoid the dark side of portfolio management!')">Learn More</button>
+    </div>
+    <script>
+        function toggleDetails(topic) {
+            const detail = document.getElementById(topic);
+            detail.style.display = detail.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
