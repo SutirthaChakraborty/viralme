@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coke Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #e60000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #e60000;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e6e6e6;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Coke Generates Social Buzz</h1>
+    <p>Empowering Users to Create Quality Content</p>
+</header>
+
+<article>
+    <h2>Engaging Users Through Creativity</h2>
+    <p>Coca-Cola has successfully engaged its audience by allowing users to create and share their own content. This initiative not only enhances brand loyalty but also fosters a vibrant community around the brand.</p>
+    <div class="interactive" onclick="showMoreInfo()">Click here to learn more!</div>
+    <p id="moreInfo" style="display:none;">By leveraging social media platforms, Coke encourages creativity and interaction, making users feel like a part of the brand's story. This strategy has proven effective in generating buzz and increasing visibility.</p>
+</article>
+
+<script>
+    function showMoreInfo() {
+        var info = document.getElementById("moreInfo");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

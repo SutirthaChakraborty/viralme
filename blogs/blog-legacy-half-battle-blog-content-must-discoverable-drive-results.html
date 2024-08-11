@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Half Battle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .keywords {
+            font-weight: bold;
+            color: #35424a;
+        }
+        button {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Legacy: Half Battle</h1>
+        <p>Discover content that drives results!</p>
+    </header>
+    <div class="container">
+        <article>
+            <h2>Understanding Blog Legacy</h2>
+            <p>In the digital age, a blog serves as a powerful tool for sharing knowledge and engaging with audiences. **Keywords** such as <span class="keywords">SEO, content marketing, audience engagement</span> are essential for driving traffic and enhancing discoverability.</p>
+            <button onclick="toggleContent()">Read More</button>
+            <div id="moreContent" style="display:none;">
+                <p>Effective blogging strategies include consistent posting, utilizing social media, and optimizing for search engines. By focusing on these areas, bloggers can create a lasting legacy that resonates with readers.</p>
+            </div>
+        </article>
+    </div>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("moreContent");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

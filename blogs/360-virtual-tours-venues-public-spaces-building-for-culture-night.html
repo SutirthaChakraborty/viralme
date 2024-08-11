@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore 360 virtual tours of cultural venues and public spaces for Culture Night. Discover art, history, and community events through immersive experiences.">
+    <title>360 Virtual Tours for Culture Night</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        .tour-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .tour {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            margin: 10px 0;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        #info {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>360 Virtual Tours of Cultural Venues</h1>
+        <p>Experience the beauty of public spaces and buildings for Culture Night!</p>
+    </header>
+    <div class="tour-container">
+        <div class="tour" id="tour1"></div>
+        <div class="tour" id="tour2"></div>
+        <button onclick="startTour('tour1')">Explore Art Gallery</button>
+        <button onclick="startTour('tour2')">Explore Historic Museum</button>
+    </div>
+    <div id="info"></div>
+
+    <script>
+        function startTour(tourId) {
+            let tourInfo;
+            if (tourId === 'tour1') {
+                tourInfo = 'Welcome to the Art Gallery! Explore stunning collections of contemporary art.';
+                document.getElementById('tour1').innerHTML = '<iframe src="https://example.com/360artgallery" width="100%" height="100%" frameborder="0"></iframe>';
+            } else {
+                tourInfo = 'Welcome to the Historic Museum! Discover artifacts and history in immersive 360 degrees.';
+                document.getElementById('tour2').innerHTML = '<iframe src="https://example.com/360historicmuseum" width="100%" height="100%" frameborder="0"></iframe>';
+            }
+            document.getElementById('info').innerHTML = tourInfo;
+        }
+    </script>
+</body>
+</html>

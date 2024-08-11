@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog News Semantics &amp; Action Steps: Information Cards in SERPs</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-content {
+    max-height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-action {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.card-action a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.card-action a:hover {
+    text-decoration: underline;
+}
+
+.interactive {
+    cursor: pointer;
+    color: dodgerblue;
+}
+
+.interactive:hover {
+    color: #007bff;
+}
+</style>
+<script>
+function expandInfoCard(e) {
+    var card = e.target.parentElement;
+    card.children[1].style.maxHeight = "none";
+    card.classList.remove("folded");
+    e.target.textContent = "Show Less";
+}
+
+function collapseInfoCard(e) {
+    var card = e.target.parentElement;
+    card.children[1].style.maxHeight = "200px";
+    card.classList.add("folded");
+    e.target.textContent = "Show More";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var cards = document.querySelectorAll('.card .interactive');
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].addEventListener

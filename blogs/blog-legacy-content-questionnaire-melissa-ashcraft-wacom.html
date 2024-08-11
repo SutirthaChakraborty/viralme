@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        #content {
+            padding: 20px;
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .question input[type="text"],
+        .question input[type="radio"],
+        .question input[type="checkbox"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .submit-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            width: 150px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Blog Legacy Content Questionnaire</h1>
+    </div>
+    <div id="content">
+        <form>
+            <div class="question">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Melissa Ashcraft">
+            </div>
+            <div class="question">
+                <label for="topic">Topic:</label>
+                <input type="text" id="topic" name="topic" placeholder="Blog, Legacy Content, Wacom">
+            </div>
+            <div class="question">
+                <label for="question">What is the purpose of the legacy content?:</label>
+                <input type="text" id="purpose" name="purpose" placeholder="Explain the purpose here...">
+            </div>
+            <div class="question">
+                <label for="how">How will the legacy content be accessed?:</label>
+                <input type="text" id="access" name="access" placeholder="Describe how here...">
+            </div>
+            <div class="submit-button">
+                Submit
+            </div>
+        </form>
+    </div>
+</body>
+</html>

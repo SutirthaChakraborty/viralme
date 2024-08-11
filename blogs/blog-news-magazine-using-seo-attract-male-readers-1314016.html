@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest news, trends, and insights for men. Explore articles on health, technology, fashion, and lifestyle.">
+    <meta name="keywords" content="men's magazines, health tips, technology news, fashion advice, lifestyle blog, men's interests">
+    <title>Men's Blog & Magazine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        article {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Men's Blog & Magazine</h1>
+    <p>Your go-to source for men's lifestyle, health, and technology news.</p>
+</header>
+
+<div class="container">
+    <article>
+        <h2>Latest Trends in Men's Fashion</h2>
+        <p>Explore the newest styles and essential wardrobe pieces every man should own.</p>
+        <button onclick="alert('Discover more about the latest fashion trends!')">Read More</button>
+    </article>
+
+    <article>
+        <h2>Health Tips for the Modern Man</h2>
+        <p>Stay fit and healthy with our expert advice on nutrition and exercise.</p>
+        <button onclick="alert('Explore our health tips!')">Read More</button>
+    </article>
+
+    <article>
+        <h2>Tech Gadgets Every Guy Needs</h2>
+        <p>Stay updated on the latest technology and must-have gadgets for men.</p>
+        <button onclick="alert('Find out about must-have tech gadgets!')">Read More</button>
+    </article>
+</div>
+
+<script>
+    document.querySelectorAll("button").forEach(button => {
+        button.addEventListener("click", function() {
+            alert(`You clicked on: ${this.parentElement.querySelector("h2").innerText}`);
+        });
+    });
+</script>
+
+</body>
+</html>

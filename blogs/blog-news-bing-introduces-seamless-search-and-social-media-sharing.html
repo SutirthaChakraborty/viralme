@@ -1,0 +1,118 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bing's Latest Innovation: Seamless Search and Social Media Sharing</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.news-item {
+  margin-bottom: 20px;
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.share-buttons {
+  text-align: center;
+}
+
+.share-buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.share-buttons a:hover {
+  background-color: #0056b3;
+}
+
+.social-media-sharing {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .social-media-sharing {
+    display: block;
+    margin-top: 20px;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Bing Introduces Seamless Search and Social Media Sharing</h1>
+<p>Bing, the popular web search engine, has recently introduced a groundbreaking feature that promises to revolutionize the way users search and share information across various social media platforms. This innovative update aims to provide a seamless experience, allowing users to effortlessly share search results directly from the Bing search bar.</p>
+
+<div class="news-item">
+  <img src="https://via.placeholder.com/300x150" alt="Bing Logo">
+  <h2>What's New</h2>
+  <p>The new feature leverages AI technology to intelligently suggest the most relevant social media platforms for sharing specific search results. Users can simply click on a share button next to the search result, and it will automatically post the link on their preferred social media platform or share it via email.</p>
+</div>
+
+<div class="share-buttons">
+  <a href="https://twitter.com/intent/tweet?text=Discover the latest Bing update that makes searching and sharing seamless!" target="_blank">Twitter</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bing.com" target="_blank">Facebook</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.bing.com" target="_blank">LinkedIn</a>
+</div>
+
+<div class="social-media-sharing">
+  <p>Want to see the seamless sharing in action? Try searching for "Bing updates" and see the share options next to the search results.</p>
+</div>
+
+</div>
+
+<script>
+function shareOnSocialMedia(searchTerm) {
+  var result = "Bing's new feature allows for seamless sharing of search results. Try searching for '" + searchTerm + "' and see the share options next to the search results.";
+  var url = encodeURIComponent("https://www.bing.com");
+  var text = encodeURIComponent(result);
+  var shareUrls = {
+    twitter: "https://twitter.com/intent/tweet?text=" + text + "&url=" + url,
+    facebook: "https://www.facebook.com/sharer/sharer.php?u=" + url,
+    linkedin: "https://www.linkedin.com/sharing/share-offsite/?url=" + url
+  };
+  var shareButtons = document.querySelectorAll('.share-buttons a');
+  shareButtons.forEach(function(button) {
+    var socialPlatform = button.textContent.toLowerCase().replace(' ', '');
+    button.href = shareUrls[socialPlatform];
+  });
+}
+
+shareOnSocialMedia("Bing updates");
+</script>
+</body>
+</html>

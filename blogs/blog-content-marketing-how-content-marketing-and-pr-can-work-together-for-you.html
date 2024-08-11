@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing & PR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-button {
+            padding: 10px;
+            background-color: #e7e7e7;
+            border: none;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Content Marketing & PR Synergy</h1>
+</header>
+
+<div class="content">
+    <h2>How Content Marketing & PR Work Together</h2>
+    <p>Content marketing and public relations (PR) are essential components of a successful marketing strategy. When integrated, they enhance brand visibility, drive engagement, and build trust with your audience.</p>
+    
+    <h3>Key Benefits:</h3>
+    <ul>
+        <li>Increased Online Visibility</li>
+        <li>Enhanced Brand Credibility</li>
+        <li>More Targeted Audience Reach</li>
+    </ul>
+
+    <button class="toggle-button" onclick="toggleDetail()">Learn More</button>
+    <div id="additional-info" class="hidden">
+        <h3>Content Distribution</h3>
+        <p>PR helps in distributing high-quality content through various media channels. This amplification increases audience reach and engagement, making your content more effective.</p>
+        
+        <h3>Building Relationships</h3>
+        <p>Creating valuable content fosters connections with journalists and influencers, enhancing your PR efforts and leading to more media coverage.</p>
+    </div>
+</div>
+
+<script>
+    function toggleDetail() {
+        var info = document.getElementById('additional-info');
+        if (info.classList.contains('hidden')) {
+            info.classList.remove('hidden');
+        } else {
+            info.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

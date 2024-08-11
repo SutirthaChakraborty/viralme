@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Life at Brafton - Christina Mowry</title>
+    <meta name="description" content="Explore the dynamic blog life at Brafton with Christina Mowry, where creativity meets strategy. Discover insights on digital marketing, content strategy, and blog management.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .toggle-info {
+            display: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Life at Brafton</h1>
+        <h2>Christina Mowry - The Eye of the Tiger</h2>
+    </header>
+    <article>
+        <p>Join Christina Mowry as she navigates the exciting blog life at Brafton. With a keen focus on digital marketing and content strategy, Christina brings the 'Eye of the Tiger' to every project.</p>
+        <p>Curious about her journey? Click below for insights on effective blog management and creative content creation!</p>
+        <button onclick="toggleInfo()">Show More Insights</button>
+        <div class="toggle-info" id="info">
+            <p>At Brafton, Christina emphasizes the importance of SEO in blog writing, using keywords to enhance visibility and engagement.</p>
+            <p>She also advocates for data-driven strategies to optimize content performance and drive traffic.</p>
+        </div>
+    </article>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('info');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

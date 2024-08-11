@@ -1,0 +1,62 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: T-Mobile G2 Teasers - The Art of Anticipation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin: 20px 0;
+        }
+        .teaser {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 30px 0;
+        }
+        .teaser img {
+            max-width: 100%;
+            height: auto;
+        }
+        .teaser p {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+        }
+        .teaser:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog News: T-Mobile G2 Teasers</h1>
+    <div class="teaser">
+        <img src="https://via.placeholder.com/300" alt="T-Mobile G2 Teaser Image">
+        <p>Unveil the future of mobile communication with T-Mobile G2. Coming soon.</p>
+    </div>
+    <script>
+        document.querySelectorAll('.teaser').forEach(teaser => {
+            teaser.addEventListener('mouseover', function() {
+                const img = this.querySelector('img');
+                img.src = 'https://via.placeholder.com/300?text=Hover+Over';
+            });
+            teaser.addEventListener('mouseout', function() {
+                const img = this.querySelector('img');
+                img.src = 'https://via.placeholder.com/300';
+            });
+        });
+    </script>
+</body>
+</html>

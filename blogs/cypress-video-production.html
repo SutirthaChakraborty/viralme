@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Cypress Video Production services, delivering high-quality visual storytelling, corporate videos, promotional content, and more.">
+    <title>Cypress Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cypress Video Production</h1>
+        <p>Your partner in high-quality visual storytelling</p>
+    </header>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Corporate Videos</li>
+            <li>Promotional Content</li>
+            <li>Event Coverage</li>
+            <li>Documentaries</li>
+            <li>Animation and Graphics</li>
+        </ul>
+        <button onclick="displayVideo()">Watch Our Showreel</button>
+        <div id="videoContainer" style="display:none; margin-top: 15px;">
+            <video width="600" controls>
+                <source src="showreel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <script>
+        function displayVideo() {
+            var videoContainer = document.getElementById('videoContainer');
+            if (videoContainer.style.display === "none") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

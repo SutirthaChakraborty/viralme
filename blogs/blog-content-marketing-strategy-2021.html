@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Marketing Strategy 2021</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            background-color: #35424a;
+            color: white;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .accordion:hover {
+            background-color: #2c3e50;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Content Marketing Strategy 2021</h1>
+</header>
+
+<section>
+    <p>Effective content marketing is essential for successful blogging. A solid strategy incorporates SEO, audience analysis, and conversion optimization.</p>
+    <button class="accordion">What is Content Marketing?</button>
+    <div class="panel">
+        <p>Content marketing focuses on creating valuable content to attract and engage your target audience, ultimately driving profitable customer action.</p>
+    </div>
+
+    <button class="accordion">Key Strategies for 2021</button>
+    <div class="panel">
+        <p>1. Focus on SEO Optimization<br>2. Leverage Social Media<br>3. Utilize Email Marketing<br>4. Create Diverse Content Types (blogs, videos, infographics)</p>
+    </div>
+    
+    <button class="accordion">Measuring Success</button>
+    <div class="panel">
+        <p>Track your blog's performance through metrics like traffic, engagement rates, and conversions to evaluate the effectiveness of your strategy.</p>
+    </div>
+</section>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google's Mobile-Only Website Strategy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007bff;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Should You Switch to a Mobile-Only Website?</h1>
+    </header>
+    <article>
+        <h2>Understanding Google's Mobile-First Indexing</h2>
+        <p>Google has shifted towards a <span class="keyword">mobile-first indexing</span>, meaning it predominantly uses the mobile version of the content for indexing and ranking. This change emphasizes the importance of having a <span class="keyword">mobile-friendly website</span>.</p>
+        <button onclick="toggleDetails()">Learn More</button>
+        <div id="details" style="display:none;">
+            <p>Switching to a <span class="keyword">mobile-only website</span> can enhance user experience and improve your SEO rankings. Google prioritizes sites that are optimized for mobile devices, which can lead to higher visibility in search results.</p>
+        </div>
+    </article>
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

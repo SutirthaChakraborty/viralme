@@ -1,0 +1,100 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspiring Videos Creation Guide</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 960px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    header {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+    }
+    header a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+    header ul {
+        list-style: none;
+        padding: 0;
+    }
+    header li {
+        display: inline;
+        margin-left: 20px;
+    }
+    header #searchbox {
+        background: #fff;
+        padding: 5px;
+        border: 1px solid #ddd;
+    }
+    main {
+        padding: 20px;
+    }
+    main h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    main p {
+        line-height: 1.6;
+    }
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        bottom: 0;
+    }
+    footer a {
+        color: #fff;
+    }
+</style>
+<script>
+    // JavaScript code to dynamically add content
+    function addContent() {
+        var article = document.getElementById('article');
+        var newArticle = document.createElement('article');
+        newArticle.innerHTML = '<h2>Title of the Article</h2><p>Content of the Article...</p>';
+        article.appendChild(newArticle);
+    }
+</script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <input type="search" id="searchbox" placeholder="Search...">
+        </nav>
+    </header>
+    <main>
+        <h2>Articles on Inspiring Videos Creation</h2>
+        <p>Discover how to create videos that inspire and motivate your audience. Explore articles from industry experts.</p>
+        <button onclick="addContent()">Add Article</button>
+        <article id="article"></article>
+    </main>
+    <footer>
+        <p>&copy; 2024 Inspiring Videos Creation Guide. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

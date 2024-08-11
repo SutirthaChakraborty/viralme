@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodbye Expanded Text Ads - What's Next?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .collapsible {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Goodbye Expanded Text Ads</h1>
+</header>
+
+<section>
+    <h2>What’s Next for Paid Search?</h2>
+    <p>Google has announced the phase-out of expanded text ads (ETAs), shifting focus to responsive search ads (RSAs).</p>
+    <button onclick="toggleContent()">Learn More</button>
+    <div class="collapsible" id="content">
+        <p>The transition to RSAs allows for greater flexibility and targeted advertising. This change is designed to improve ad performance and relevancy.</p>
+        <p>Utilizing AI in ad management, advertisers can expect smarter targeting and optimization, driving better ROI.</p>
+        <p>Embrace strategies like A/B testing and audience segmentation to maximize the potential of RSAs. Stay ahead in the competitive landscape of paid search.</p>
+    </div>
+</section>
+
+<script>
+    function toggleContent() {
+        const content = document.getElementById('content');
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

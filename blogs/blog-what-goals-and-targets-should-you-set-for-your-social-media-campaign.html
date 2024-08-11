@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Campaign Goals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #5a5a5a; 
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .goal {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            transition: background-color 0.3s;
+        }
+        .goal:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Setting Goals for Your Social Media Campaign</h1>
+        <p>Establishing clear goals and targets is crucial for the success of your social media marketing efforts. Here are some essential goals you should consider:</p>
+        
+        <div class="goal" onclick="displayInfo('Increase Brand Awareness')">1. Increase Brand Awareness</div>
+        <div class="goal" onclick="displayInfo('Boost Engagement')">2. Boost Engagement</div>
+        <div class="goal" onclick="displayInfo('Generate Leads')">3. Generate Leads</div>
+        <div class="goal" onclick="displayInfo('Drive Traffic to Website')">4. Drive Traffic to Website</div>
+        
+        <div id="info" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        function displayInfo(goal) {
+            const info = {
+                'Increase Brand Awareness': 'Aim to reach new audiences and increase visibility through targeted ads and engaging content.',
+                'Boost Engagement': 'Focus on creating interaction through comments, shares, and likes to enhance user connection.',
+                'Generate Leads': 'Utilize your campaigns to collect potential customer information for future follow-up.',
+                'Drive Traffic to Website': 'Direct followers to your website for more information, increasing conversions and brand loyalty.'
+            };
+            document.getElementById('info').innerText = info[goal];
+        }
+    </script>
+</body>
+</html>

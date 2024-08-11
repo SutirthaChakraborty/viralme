@@ -1,0 +1,82 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs: Costs of Producing Educational Videos in Singapore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .faq-item {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .category {
+            font-weight: bold;
+        }
+        .question {
+            margin-bottom: 5px;
+        }
+        .answer {
+            line-height: 1.5;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn-show-details {
+            display: none;
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden-answer {
+            display: none;
+            font-size: 0.9rem;
+        }
+    </style>
+    <script>
+        function toggleAnswer(contentId) {
+            var hiddenElement = document.getElementById(contentId);
+            var button = document.getElementById('btn-show-details-' + contentId);
+            if (hiddenElement.style.display === 'none') {
+                hiddenElement.style.display = 'block';
+                button.textContent = 'Hide Details';
+            } else {
+                hiddenElement.style.display = 'none';
+                button.textContent = 'Show Details';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <

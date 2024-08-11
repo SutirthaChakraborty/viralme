@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Companies Adopting Social Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .goal {
+            background-color: #e7f3fe;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #2196F3;
+            cursor: pointer;
+        }
+        .goal:not(:last-child) {
+            border-bottom: 1px solid #ccc;
+        }
+        .goal:hover {
+            background-color: #d0e9ff;
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog News: Small Companies Embracing Social Marketing</h1>
+        <p>Explore how smaller businesses leverage social marketing with diverse goals, driving their growth and engagement.</p>
+        
+        <div class="goal" onclick="toggleDescription(this)">
+            Increase Brand Awareness
+            <div class="description">Utilizing platforms like Instagram and Facebook to reach a broader audience.</div>
+        </div>
+        
+        <div class="goal" onclick="toggleDescription(this)">
+            Engage with Customers
+            <div class="description">Creating interactive content to foster community connections and feedback.</div>
+        </div>
+        
+        <div class="goal" onclick="toggleDescription(this)">
+            Drive Website Traffic
+            <div class="description">Using targeted ads to attract visitors and boost online sales.</div>
+        </div>
+
+        <div class="goal" onclick="toggleDescription(this)">
+            Improve Customer Loyalty
+            <div class="description">Building relationships through personalized marketing strategies and content.</div>
+        </div>
+
+        <footer>
+            &copy; 2023 Small Business Marketing Insights
+        </footer>
+    </div>
+    
+    <script>
+        function toggleDescription(goalElement) {
+            const description = goalElement.querySelector('.description');
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

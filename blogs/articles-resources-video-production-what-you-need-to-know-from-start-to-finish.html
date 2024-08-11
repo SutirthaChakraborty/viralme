@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Production: From Start to Finish</h1>
+</header>
+
+<section>
+    <h2>Essential Resources</h2>
+    <p>Learn about the key resources needed for video production, including equipment, software, and online platforms.</p>
+    <button onclick="toggleContent('resources')">Show More</button>
+    <div id="resources" class="interactive">
+        <p>Key resources include cameras, microphones, editing software (like Adobe Premiere Pro), and online platforms for distribution (like YouTube).</p>
+    </div>
+</section>
+
+<section>
+    <h2>Video Production Process</h2>
+    <p>Understand the stages of video production: pre-production, production, and post-production.</p>
+    <button onclick="toggleContent('process')">Show More</button>
+    <div id="process" class="interactive">
+        <p>The video production process involves planning (pre-production), shooting (production), and editing (post-production).</p>
+    </div>
+</section>
+
+<section>
+    <h2>Interactive Learning</h2>
+    <p>Engage with interactive content to enhance your understanding of video production.</p>
+    <button onclick="toggleContent('learning')">Show More</button>
+    <div id="learning" class="interactive">
+        <p>Explore tutorials and online courses that cover video editing techniques, storytelling, and cinematography.</p>
+    </div>
+</section>
+
+<script>
+    function toggleContent(id) {
+        const content = document.getElementById(id);
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

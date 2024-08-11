@@ -1,0 +1,75 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing News Update: localized SMB-friendly portal 800482015</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f6;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333333;
+            font-size: 34px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #555555;
+            font-size: 24px;
+        }
+        
+        .content p {
+            line-height: 1.5;
+            color: #666666;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        .button:active {
+            background-color: #0056b3;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.button').click(function() {
+                var keyword = prompt("Enter a related keyword:");
+                if (keyword) {
+                    $('#related-keywords').append(`
+                        <p class="related-keyword">Used keyword: ${

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest news videos, trending topics, breaking news coverage, and in-depth analysis. Stay informed with engaging video content.">
+    <title>News Video Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .video {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .video:hover {
+            transform: scale(1.05);
+        }
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .title {
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .desc {
+            padding: 10px;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Video Hub</h1>
+        <p>Your source for the latest news videos and breaking stories!</p>
+    </header>
+
+    <div class="video-container">
+        <div class="video" onclick="playVideo('video1')">
+            <iframe src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+            <div class="title">Breaking News: Major Event!</div>
+            <div class="desc">Stay updated with the latest developments and eyewitness accounts.</div>
+        </div>
+        <div class="video" onclick="playVideo('video2')">
+            <iframe src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+            <div class="title">Trending: Top Stories Today</div>
+            <div class="desc">Catch up on the most talked-about topics and trends.</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 News Video Hub - All rights reserved.</p>
+    </footer>
+
+    <script>
+        function playVideo(videoId) {
+            const videoIframe = document.querySelector(`iframe[src*="${videoId}"]`);
+            if (videoIframe) {
+                videoIframe.src += "?autoplay=1";
+            }
+        }
+    </script>
+</body>
+</html>

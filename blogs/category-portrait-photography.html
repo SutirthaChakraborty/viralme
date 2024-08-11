@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portrait Photography</h1>
+    <p>Capture the essence of personality through stunning visuals.</p>
+</header>
+
+<div class="content">
+    <h2>What is Portrait Photography?</h2>
+    <p>Portrait photography focuses on capturing the personality and mood of an individual or group. It often features a subject's face and may include other elements that express their personality.</p>
+
+    <h2>Types of Portrait Photography</h2>
+    <ul>
+        <li>Traditional Portraits</li>
+        <li>Environmental Portraits</li>
+        <li>Group Portraits</li>
+        <li>Fine Art Portraits</li>
+    </ul>
+
+    <button id="showTips">Click for Tips</button>
+    <div class="info" id="tips">
+        <h3>Portrait Photography Tips</h3>
+        <ul>
+            <li>Use natural light for softer images.</li>
+            <li>Choose the right background to suit your subject.</li>
+            <li>Engage with your subject to capture authentic emotions.</li>
+            <li>Experiment with poses and angles.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.getElementById("showTips").onclick = function() {
+        var info = document.getElementById("tips");
+        info.style.display = info.style.display === "none" || info.style.display === "" ? "block" : "none";
+    };
+</script>
+
+</body>
+</html>

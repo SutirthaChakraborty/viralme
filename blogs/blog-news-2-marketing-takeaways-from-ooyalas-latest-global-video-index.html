@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Marketing Takeaways from Ooyala's Global Video Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .takeaway {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 4px solid #0077cc;
+            background: #e6f0ff;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0077cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Marketing Insights from Ooyala's Video Index</h1>
+</header>
+
+<article>
+    <h2>Key Takeaways</h2>
+    <div class="takeaway" onclick="toggleDetail('detail1')">
+        <strong>1. Video Consumption is Rising Globally:</strong> The latest report highlights a significant increase in global video consumption across various platforms.
+        <div id="detail1" style="display:none;">
+            <p>This trend indicates that brands should invest more in video marketing strategies to engage their audience effectively.</p>
+        </div>
+    </div>
+
+    <div class="takeaway" onclick="toggleDetail('detail2')">
+        <strong>2. Personalized Video Content Drives Engagement:</strong> Personalized content has been shown to significantly boost viewer engagement rates.
+        <div id="detail2" style="display:none;">
+            <p>Marketers need to leverage data analytics to create targeted video content that resonates with their audience.</p>
+        </div>
+    </div>
+</article>
+
+<script>
+    function toggleDetail(detailId) {
+        var detail = document.getElementById(detailId);
+        if (detail.style.display === "none") {
+            detail.style.display = "block";
+        } else {
+            detail.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

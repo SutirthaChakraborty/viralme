@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Influence on eCommerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #E91E63;
+        }
+        button {
+            background-color: #E91E63;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+        .post-results {
+            display: none;
+            margin-top: 20px;
+            background: #e1f5fe;
+            padding: 10px;
+            border-left: 5px solid #00bcd4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Power of Social Media in eCommerce</h1>
+    </header>
+    <div class="content">
+        <h2>How Social Media Drives <span class="keyword">Purchases</span></h2>
+        <p>Research shows that <span class="keyword">71%</span> of shoppers are influenced by social media posts when making a purchase. This emphasizes the power of content marketing and social engagement in eCommerce.</p>
+        
+        <button id="showPosts">Show Influential Posts</button>
+        
+        <div class="post-results" id="postResults">
+            <p>1. User-Generated Content increases trust and authenticity.</p>
+            <p>2. Influencer Partnerships can amplify brand visibility.</p>
+            <p>3. Engaging visuals on platforms like Instagram enhance customer interaction.</p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('showPosts').onclick = function() {
+            var results = document.getElementById('postResults');
+            if (results.style.display === "none" || results.style.display === "") {
+                results.style.display = "block";
+            } else {
+                results.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

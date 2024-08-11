@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Promoted Tweets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #1DA1F2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #1DA1F2;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #FF4500;
+        }
+        button {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0d8bcf;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Twitter Rolls Out Promoted Tweets</h1>
+    </header>
+    <div class="content">
+        <h2>What Are Promoted Tweets?</h2>
+        <p>Promoted Tweets are a form of advertising on Twitter that allows brands to reach a wider audience. These tweets appear in users' timelines and can drive engagement and visibility for your brand.</p>
+        
+        <h2>Benefits of Promoted Tweets</h2>
+        <ul>
+            <li>Increased <span class="keyword">brand visibility</span></li>
+            <li>Targeted advertising based on <span class="keyword">user interests</span></li>
+            <li>Cost-effective campaigns with <span class="keyword">pay-per-click</span> options</li>
+        </ul>
+        
+        <h2>How to Create a Promoted Tweet</h2>
+        <p>To create a promoted tweet, simply set a daily budget and choose your target audience based on keywords, interests, and demographics.</p>
+        
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <h3>Interactive Insights</h3>
+            <p>Promoted Tweets can be tailored to reach specific audiences, ensuring that your message resonates with the right users. This targeted approach can significantly enhance your marketing efforts.</p>
+        </div>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

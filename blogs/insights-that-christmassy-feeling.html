@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Spirit Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #c0392b;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #219653;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Embrace the Christmas Spirit</h1>
+    <p>Discover the joy, warmth, and love that encapsulates the essence of the holiday season.</p>
+    <button onclick="displayInsights()">Get Christmas Insights!</button>
+    <div id="insights" style="margin-top: 20px;"></div>
+</div>
+
+<script>
+    function displayInsights() {
+        const insights = [
+            "The magic of giving reminds us of generosity and kindness.",
+            "Decorating homes fosters a sense of community and belonging.",
+            "Family gatherings strengthen bonds and create unforgettable memories.",
+            "Festive music enhances mood and evokes sweet nostalgia.",
+            "Traditions connect us to our past while inspiring new memories."
+        ];
+        const output = insights.map(insight => `<p>${insight}</p>`).join('');
+        document.getElementById('insights').innerHTML = output;
+    }
+</script>
+
+</body>
+</html>

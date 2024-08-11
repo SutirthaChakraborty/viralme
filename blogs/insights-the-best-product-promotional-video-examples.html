@@ -1,0 +1,83 @@
+Here's a simple HTML code with CSS and inline JavaScript that showcases a promotional video and highlights related keywords for better search visibility. The interactive CSS and JS are minimal to demonstrate the concepts.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.keyword-indicator {
+  color: orange;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+制品宣傳視頻範例见解最受欢迎 (keyword-indicator) {
+  text-decoration: underline;
+  transition: underline 0.3s;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #d3d3d3;
+  padding: 10px;
+  z-index: 1;
+}
+
+.popover:hover {
+  display: block;
+}
+
+.popover-content {
+  white-space: pre-wrap;
+}
+</style>
+<script>
+window.onload = function() {
+  var keywords = document.querySelectorAll('.keyword-indicator');
+  for (var i = 0; i < keywords.length; i++) {
+    keywords[i].addEventListener('mouseover', function() {
+      this.classList.add('active');
+    });
+
+    keywords[i].addEventListener('mouseout', function() {
+      this.classList.remove('active');
+    });
+
+    keywords[i].addEventListener('click', function() {
+      var popover = document.getElementById('popover_' + this.innerText);
+      if (popover.style.display === 'none') {
+        popover.style.display = 'block';
+        document.getElementById('keyword_hover').innerText = this.innerText;
+      } else {
+        popover.style.display = 'none';
+        document.getElementById('keyword_hover').innerText = '';
+      }
+    });
+  }
+};
+</script>
+</head>
+<body>
+<div class="video-container">
+  <iframe src="https://example.com/promotional-video.mp4" title="Best Product Promotional Video Example"></iframe>
+</div>
+
+<p>深入了解典范產品宣傳視頻的策略 ( обычный текст ), 這些例子不僅娛樂了觀眾,更能誘發購買行為 (keyword-indicator)。</p>
+<div id="popover_深入了解典范產品宣"><p

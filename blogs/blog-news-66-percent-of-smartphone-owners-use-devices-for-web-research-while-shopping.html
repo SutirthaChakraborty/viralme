@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Shopping Research</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #28A745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        #info {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Smartphone Usage in Shopping</h1>
+</header>
+
+<div class="content">
+    <h2>Did You Know?</h2>
+    <p>66% of smartphone owners utilize their devices for web research while shopping. This trend highlights the increasing reliance on mobile technology for informed purchasing decisions.</p>
+    <p>Smartphones have revolutionized the shopping experience, enabling quick access to product information, reviews, and prices.</p>
+    <button onclick="toggleInfo()">Learn More</button>
+    <div id="info">
+        <p>Mobile web research is essential for comparing products and finding the best deals. Integrating online reviews and ratings helps consumers make smarter choices.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo() {
+        var infoSection = document.getElementById('info');
+        if (infoSection.style.display === "none" || infoSection.style.display === "") {
+            infoSection.style.display = "block";
+        } else {
+            infoSection.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

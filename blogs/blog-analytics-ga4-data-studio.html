@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ga4 Data Studio Analytics</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.header {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #4CAF50;
+			border-radius: 10px 10px 0 0;
+		}
+		.header h2 {
+			margin-top: 0;
+		}
+		.content {
+			padding: 20px;
+		}
+		.content p {
+			margin-bottom: 20px;
+		}
+		.code {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+		.code pre {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		.interactive {
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+		.interactive input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+		}
+		.interactive button[type="button"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.interactive button[type="button"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>GA4 Data Studio Analytics</h2>
+		</div>
+		<div class="content">
+			<p>Google Analytics 4 (GA4) is a powerful analytics tool that allows you to track and measure your website's performance. Data Studio is a free tool that connects to your GA4 account and provides a customizable dashboard to visualize your data.</p>
+			<p>To get started with GA4 Data Studio Analytics, you'll need to set up your GA4 account and connect it to Data Studio. Here's a step-by-step guide:</p>
+			<pre>&lt;script&gt;
+  gtag('config', 'G-XXXXXXX'); // Replace with your GA4 tracking ID
+&lt;/script&gt;</pre>
+			<p>Once you've set up your GA4 account and connected it to Data Studio, you can start exploring your data and creating custom dashboards. Here's an example of a simple dashboard:</p>
+			<div class="interactive">
+				<input type="text" id="dateRange" placeholder="Select date range">
+				<button type="button" id="submit">Submit</button>
+				<div id="chart"></div>
+				<script>
+					const dateRangeInput = document.getElementById('dateRange');
+					const submitButton = document.getElementById('submit');
+					const chartDiv = document.getElementById('chart');
+
+					submitButton.addEventListener('click', () => {
+						const startDate = dateRangeInput.value.split('-')[0];
+						const endDate = dateRangeInput.value.split('-')[1];
+						fetch(`https://datastudio.google.com/reporting/your-report-id?dateRange=${startDate}-${endDate}`)
+							.then(response => response.json())
+							.then(data => {
+								const chartData = data.chartData;
+								const chart = new Chart(chartDiv, {
+									type: 'line',
+									data: chartData,
+									options: {
+										title: {
+											display: true,
+											text: 'GA4 Data Studio Analytics'
+										},
+										legend: {
+											display: false
+										}
+									}
+								});
+							});
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+Useful related keywords: GA4, Data Studio, Analytics, Tracking, Measurement, Google Analytics, Custom Dashboards, Interactive Charts, JavaScript, HTML, CSS.

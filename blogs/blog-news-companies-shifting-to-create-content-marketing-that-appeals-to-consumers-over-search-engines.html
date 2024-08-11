@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore how companies are shifting towards content marketing strategies that appeal to consumers rather than focusing solely on search engines.">
+    <title>Content Marketing Trends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .button {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #2980b9;
+        }
+        .hide {
+            display: none;
+        }
+        #moreContent {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Shifting to Content Marketing</h1>
+    <p>More companies are embracing <strong>content marketing</strong> strategies that resonate with consumers instead of focusing solely on <strong>SEO</strong>.</p>
+    <button class="button" id="toggleButton">Read More</button>
+    <div id="moreContent" class="hide">
+        <p>Businesses understand the importance of creating valuable, engaging, and consumer-centric content. This approach fosters stronger connections with the audience and encourages brand loyalty, moving beyond traditional search engine tactics.</p>
+        <ul>
+            <li>Building trust through storytelling</li>
+            <li>Utilizing social media for direct communication</li>
+            <li>Creating valuable content that answers consumer needs</li>
+        </ul>
+        <p>By prioritizing <strong>consumer engagement</strong>, companies can improve their <strong>brand image</strong> and foster a sustainable relationship with their audience.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleButton').onclick = function() {
+        var content = document.getElementById('moreContent');
+        if (content.classList.contains('hide')) {
+            content.classList.remove('hide');
+            this.textContent = 'Read Less';
+        } else {
+            content.classList.add('hide');
+            this.textContent = 'Read More';
+        }
+    };
+</script>
+
+</body>
+</html>

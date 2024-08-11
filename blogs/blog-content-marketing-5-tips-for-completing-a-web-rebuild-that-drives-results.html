@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Marketing: 5 Tips for a Successful Web Rebuild</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .tip {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            color: #fff;
+            background: #28a745;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .more-info {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>5 Tips for a Web Rebuild that Drives Results</h1>
+    </header>
+    <div class="container">
+        <div class="tip" onclick="toggleInfo(1)">
+            <h2>1. Define Your Goals</h2>
+            <p>Clearly outline what you want to achieve with your website rebuild.</p>
+            <button>More Info</button>
+            <div class="more-info" id="info1">
+                <p>Setting specific, measurable, achievable, relevant, and time-bound (SMART) goals helps guide your rebuilding process and ensures your site meets your marketing objectives.</p>
+            </div>
+        </div>
+        <div class="tip" onclick="toggleInfo(2)">
+            <h2>2. Focus on User Experience</h2>
+            <p>Create a seamless experience that keeps visitors engaged.</p>
+            <button>More Info</button>
+            <div class="more-info" id="info2">
+                <p>Prioritize intuitive navigation, mobile optimization, and fast loading times to enhance user experience and reduce bounce rates.</p>
+            </div>
+        </div>
+        <div class="tip" onclick="toggleInfo(3)">
+            <h2>3. Optimize for SEO</h2>
+            <p>Embed SEO strategies within your content right from the start.</p>
+            <button>More Info</button>
+            <div class="more-info" id="info3">
+                <p>Incorporate relevant keywords, meta descriptions, and alt tags to improve search engine visibility and attract organic traffic.</p>
+            </div>
+        </div>
+        <div class="tip" onclick="toggleInfo(4)">
+            <h2>4. Integrate Content Marketing</h2>
+            <p>Utilize valuable content to engage and convert visitors.</p>
+            <button>More Info</button>
+            <div class="more-info" id="info4">
+                <p>Plan a content marketing strategy that includes blogs, videos, and infographics tailored to your target audience’s interests and needs.</p>
+            </div>
+        </div>
+        <div class="tip" onclick="toggleInfo(5)">
+            <h2>5. Monitor and Adapt</h2>
+            <p>Use analytics to measure performance and make necessary changes.</p>
+            <button>More Info</button>
+            <div class="more-info" id="info5">
+                <p>Regularly review analytics to understand user behavior and optimize your site accordingly to improve user engagement and conversions.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(num) {
+            var infoDiv = document.getElementById('info' + num);
+            if (infoDiv.style.display === 'block') {
+                infoDiv.style.display = 'none';
+            } else {
+                infoDiv.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

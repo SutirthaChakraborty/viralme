@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights on Family Bonds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        section {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights on Family Bonds</h1>
+    <p>Strong family connections enhance well-being and support.</p>
+</header>
+
+<section>
+    <h2>Understanding Family Bonds</h2>
+    <p>Family bonds are critical to emotional support, personal growth, and relationships. They shape our values, influence our behaviors, and provide a foundation for happiness.</p>
+</section>
+
+<section>
+    <h2>Interactive Exploration</h2>
+    <button id="toggle-info">Show More Insights</button>
+    <div id="info" class="result">
+        <p>1. Family Time: Regular quality time strengthens connections.</p>
+        <p>2. Communication: Open dialogue nurtures trust and understanding.</p>
+        <p>3. Support Systems: Families act as primary support networks in challenging times.</p>
+        <p>4. Traditions: Shared practices create lasting memories and a sense of belonging.</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById('toggle-info').addEventListener('click', function() {
+        const infoDiv = document.getElementById('info');
+        infoDiv.style.display = infoDiv.style.display === 'none' || infoDiv.style.display === '' ? 'block' : 'none';
+        this.textContent = this.textContent === 'Show More Insights' ? 'Show Less Insights' : 'Show More Insights';
+    });
+</script>
+
+</body>
+</html>

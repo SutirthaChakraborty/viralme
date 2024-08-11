@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Lapse Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e7f1fa;
+            border-left: 3px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Time Lapse Video Production</h1>
+        <button class="btn" onclick="toggleInfo()">What is Time Lapse?</button>
+    </header>
+    <section id="info">
+        <h2>Definition</h2>
+        <p>Time lapse video production involves capturing a sequence of frames at set intervals to record changes that take place slowly over time. The resulting video plays back at a faster rate, revealing things that are often too slow to detect with the naked eye.</p>
+        
+        <h2>Applications</h2>
+        <ul>
+            <li>Nature Observation</li>
+            <li>Construction Progress</li>
+            <li>Event Documentation</li>
+            <li>Artistic Projects</li>
+        </ul>
+        
+        <h2>Equipment Needed</h2>
+        <p>To produce stunning time lapse videos, you need:</p>
+        <ul>
+            <li>Camera (DSLR or smartphone)</li>
+            <li>Tripod</li>
+            <li>Intervalometer or time-lapse app</li>
+            <li>Video editing software</li>
+        </ul>
+    </section>
+    
+    <script>
+        function toggleInfo() {
+            const infoSection = document.getElementById('info');
+            if (infoSection.style.display === 'none' || infoSection.style.display === '') {
+                infoSection.style.display = 'block';
+            } else {
+                infoSection.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

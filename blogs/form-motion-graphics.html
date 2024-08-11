@@ -1,0 +1,73 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Motion Graphics</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .form__input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+        }
+        .form__button {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #007bff;
+            color: #fff;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .form__button:hover {
+            background: #0056b3;
+        }
+        .motion-graphic {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, #007bff 0%, #757575 100%);
+            transform: translateX(-100%);
+            transition: transform 0.5s ease-in-out;
+        }
+        .form:hover .motion-graphic {
+            transform: translateX(0);
+        }
+    </style>
+    <script>
+        document.querySelector('.form__button').addEventListener('click', function() {
+            alert('Form submitted!');
+        });
+    </script>
+</head>
+<body>
+    <div class="form">
+        <input type="text" class="form__input" placeholder="Enter your name">
+        <input type="email" class="form__input" placeholder="Enter your email">
+        <button class="form__button">Submit</button>
+        <div class="motion-graphic"></div>
+    </div>
+</body>
+</html>

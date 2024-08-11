@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nokia Adopts Windows Phone and Bing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        article:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #0078D7;
+        }
+        button {
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005A9E;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nokia's New Era with Windows Phone and Bing</h1>
+    </header>
+    <article>
+        <h2>Overview</h2>
+        <p>Nokia has officially adopted Windows Phone as its primary operating system, combining quality hardware with Microsoft’s innovative software. This move enhances the user experience with Bing integration for efficient search and information retrieval.</p>
+        <button onclick="toggleDetails()">Read More</button>
+        <div id="details" style="display:none;">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Seamless integration with Microsoft services</li>
+                <li>Enhanced user interface with live tiles</li>
+                <li>Access to a wide range of applications</li>
+                <li>Improved search capabilities through Bing</li>
+            </ul>
+        </div>
+    </article>
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById('details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

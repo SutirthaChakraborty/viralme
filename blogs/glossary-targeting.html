@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Targeting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #3333cc;
+        }
+        .term {
+            background: #e1e1e1;
+            border-left: 5px solid #3333cc;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .definition {
+            display: none;
+            padding: 10px;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Glossary of Targeting</h1>
+
+<div class="term" onclick="toggleDefinition(this)">1. Target Audience</div>
+<div class="definition">A specific group of consumers identified as the intended recipient of a marketing message.</div>
+
+<div class="term" onclick="toggleDefinition(this)">2. Behavioral Targeting</div>
+<div class="definition">A method that uses web user behavior to customize advertisements and online content.</div>
+
+<div class="term" onclick="toggleDefinition(this)">3. Demographic Targeting</div>
+<div class="definition">The practice of targeting marketing efforts based on demographic factors such as age, gender, income, etc.</div>
+
+<div class="term" onclick="toggleDefinition(this)">4. Contextual Targeting</div>
+<div class="definition">A form of targeted advertising where ads are shown based on the content of the website being viewed.</div>
+
+<div class="term" onclick="toggleDefinition(this)">5. Geo-Targeting</div>
+<div class="definition">Delivering different content or advertisements to users based on their geographical location.</div>
+
+<script>
+    function toggleDefinition(element) {
+        const definition = element.nextElementSibling;
+        definition.style.display = definition.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle for Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .doodle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .doodle {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            position: relative;
+            overflow: hidden;
+        }
+        .doodle::before,
+        .doodle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #2196F3;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+        }
+        .doodle::after {
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: #FF9800;
+        }
+        .doodle-info {
+            color: #455A64;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            text-align: left;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            transform: translate(0, 100%);
+        }
+        .doodle-info h3 {
+            margin: 0;
+            padding: 0;
+        }
+        .doodle-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="doodle-container">
+        <div class="doodle"></div>
+        <div class="doodle-info">
+            <h3>Doodle for Google</h3>
+            <p>Explore the creativity behind Google's doodles.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary Webinars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-term {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .glossary-term:hover {
+            background-color: #e0e0e0;
+        }
+        .definition {
+            display: none;
+            margin-top: 5px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Glossary of Webinar Terms</h1>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        Webinar
+        <div class="definition">A seminar conducted over the internet.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        Webinar Platform
+        <div class="definition">Software that allows users to host webinars.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        Engagement
+        <div class="definition">The interaction between the presenter and the audience.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        Recording
+        <div class="definition">A saved version of a live webinar for later viewing.</div>
+    </div>
+
+    <script>
+        function toggleDefinition(term) {
+            const definition = term.querySelector('.definition');
+            definition.style.display = definition.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

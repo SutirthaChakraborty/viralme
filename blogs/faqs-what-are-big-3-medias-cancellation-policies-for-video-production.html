@@ -1,0 +1,80 @@
+#### HTML and CSS Code for Big 3 Media's Video Production Cancellation Policies
+
+Below is a small HTML code with CSS to display information about the cancellation policies for video production at Big 3 Media. The code includes interactive CSS and JS to explain the topics.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big 3 Media's Video Production Cancellation Policies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+    .faq {
+      margin-bottom: 20px;
+    }
+    .faq h3 {
+      cursor: pointer;
+      color: #007bff;
+    }
+    .faq p {
+      display: none;
+    }
+    .faq.active p {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Big 3 Media's Video Production Cancellation Policies</h1>
+    <div class="faq">
+      <h3>What is the cancellation policy for video production?</h3>
+      <p>
+        Big 3 Media's cancellation policy for video production allows for a full refund if the cancellation is made at least 30 days prior to the scheduled production date. For cancellations made within 30 days, a 50% refund will be provided. No refund will be issued for cancellations made within 7 days of the scheduled production date.
+      </p>
+    </div>
+    <div class="faq">
+      <h3>Are there any exceptions to the cancellation policy?</h3>
+      <p>
+        Exceptions to the cancellation policy may be considered on a case-by-case basis for unforeseen circumstances such as extreme weather conditions or sudden illness. Clients are encouraged to contact Big 3 Media directly to discuss any exceptional situations.
+      </p>
+    </div>
+  </div>
+  <script>
+    const faqs = document.querySelectorAll('.faq');
+
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a simple webpage that displays information about Big 3 Media's video production cancellation policies. It includes interactive CSS and JS to toggle the visibility of the FAQ answers when the question is clicked.
+
+**Keywords**: HTML, CSS, video production, cancellation policies, media queries, responsive web design, @media rule, web development, CSS interview questions, HTML video, accessibility.

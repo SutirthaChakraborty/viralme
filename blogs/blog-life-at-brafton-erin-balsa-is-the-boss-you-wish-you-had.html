@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life at Brafton: Erin Balsa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d0e7ff;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f0f8ff;
+            border: 1px solid #b3d7ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life at Brafton: Erin Balsa</h1>
+    </header>
+    <section>
+        <h2>Meet Erin Balsa</h2>
+        <p>Erin Balsa is the boss you wish you had. Leading a talented team at Brafton, she inspires creativity and collaboration, making work enjoyable and productive.</p>
+        <div class="interactive" onclick="toggleContent()">Click to learn more about Erin's leadership style!</div>
+        <div class="content" id="moreInfo">
+            <p>Erin emphasizes the importance of teamwork, encouraging her writers to excel in their roles. Her journey from teaching to content management showcases her versatility and dedication.</p>
+            <p>She believes in celebrating achievements and fostering a positive work environment, which has led to remarkable success in content creation and client satisfaction.</p>
+        </div>
+    </section>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("moreInfo");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

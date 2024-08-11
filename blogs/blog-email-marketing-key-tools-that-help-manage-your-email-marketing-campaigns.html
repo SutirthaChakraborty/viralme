@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover essential email marketing tools to manage your campaigns effectively. Enhance your email strategy with these key resources.">
+    <title>Email Marketing Tools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0073e6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top Email Marketing Tools</h1>
+        <p>Maximize your email marketing efforts with these essential tools:</p>
+        <ul>
+            <li>Mailchimp - A versatile platform for email automation and marketing analytics.</li>
+            <li>SendinBlue - Offers SMS marketing along with email campaigns.</li>
+            <li>Constant Contact - Provides easy-to-use templates and excellent customer support.</li>
+            <li>AWeber - Great for small businesses with robust autoresponder features.</li>
+            <li>HubSpot - Combines CRM capabilities with advanced email marketing tools.</li>
+        </ul>
+        <button id="showMore">Show More Tools</button>
+        <div id="moreTools" style="display: none;">
+            <ul>
+                <li>ConvertKit - Focuses on creators and provides powerful tagging features.</li>
+                <li>GetResponse - Includes webinar hosting along with email services.</li>
+                <li>ActiveCampaign - Features advanced automation and segmentation options.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('showMore').onclick = function() {
+            var moreTools = document.getElementById('moreTools');
+            if (moreTools.style.display === "none") {
+                moreTools.style.display = "block";
+                this.innerText = "Show Less Tools";
+            } else {
+                moreTools.style.display = "none";
+                this.innerText = "Show More Tools";
+            }
+        }
+    </script>
+</body>
+</html>

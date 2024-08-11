@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Ad Units - Simplified for Marketing Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px;
+        }
+        h1 {
+            margin: 0;
+            text-align: center;
+        }
+        .ad-unit-explanation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .ad-unit-image {
+            max-width: 40%;
+            margin-right: 30px;
+            border-radius: 5px;
+        }
+        .ad-unit-description {
+            width: 50%;
+            line-height: 1.6;
+        }
+        a {
+            color: #3b5998;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0062cc;
+        }
+    </style>
+    <script>
+        function highlightKeyword(keyword) {
+            document.body.addEventListener('DOMContentLoaded', function () {
+                const words = document.querySelectorAll('.keyword');
+                words.forEach(word => {
+                    word.classList.add('keyword-highlighted');
+                });
+                let found = false;
+                Array.from(words).forEach((word, index) => {
+                    if (word.textContent.toLowerCase() === keyword.toLowerCase()) {
+                        word.style.color = 'red';
+                        word.classList.add('keyword-found');
+                        found = true;
+                    }
+                });
+                if (!found) {
+                    document.getElementById('no-keyword').classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Boost Your Marketing Efforts with Facebook's Simpl

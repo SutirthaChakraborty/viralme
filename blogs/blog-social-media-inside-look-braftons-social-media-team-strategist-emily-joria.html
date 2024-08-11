@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inside look at Brafton's social media team, featuring strategist Emily Joria.">
+    <title>Brafton's Social Media Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .social-media-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .social-media-button:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+        .toggle-content {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Inside Look: Brafton's Social Media Team</h1>
+        <p>Meet Emily Joria, Brafton's strategic mastermind behind effective social media engagement and content creation. Her expertise drives brand awareness and audience connection.</p>
+        
+        <p>Join us for exclusive insights into our social media strategies:</p>
+        <button class="social-media-button" onclick="toggleContent()">Learn More</button>
+        
+        <div id="moreInfo" class="toggle-content hidden">
+            <h2>Emily's Approach to Social Media</h2>
+            <p>Emily emphasizes data-driven decisions, creativity, and audience understanding to craft compelling social media campaigns. She believes engagement is key to a successful strategy.</p>
+            <ul>
+                <li>Content Creation</li>
+                <li>Audience Engagement</li>
+                <li>Data Analytics</li>
+                <li>Brand Storytelling</li>
+                <li>Social Media Trends</li>
+            </ul>
+        </div>
+    </div>
+  
+    <script>
+        function toggleContent() {
+            var content = document.getElementById('moreInfo');
+            content.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

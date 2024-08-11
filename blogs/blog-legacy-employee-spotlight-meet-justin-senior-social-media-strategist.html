@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Spotlight: Meet Justin</title>
+    <meta name="description" content="Employee spotlight featuring Justin, our Senior Social Media Strategist. Learn about his role, achievements, and tips for success in social media marketing.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #16a085;
+        }
+        .toggle-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .additional-info {
+            display: none;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Spotlight: Meet Justin</h1>
+        <h2>Senior Social Media Strategist</h2>
+        <p>Justin plays a pivotal role in our marketing team as a Senior Social Media Strategist. With over 5 years of experience in social media marketing, he has successfully led various campaigns that increased brand visibility and engagement.</p>
+        <button class="toggle-btn" onclick="toggleInfo()">Learn More</button>
+        <div class="additional-info" id="info">
+            <h3>Justin's Achievements</h3>
+            <ul>
+                <li>Boosted follower count by over 200% in one year.</li>
+                <li>Developed innovative social media strategies that improved audience engagement.</li>
+                <li>Mentored junior staff in effectively leveraging social platforms.</li>
+            </ul>
+            <h3>Tips from Justin</h3>
+            <p>Stay consistent, engage genuinely, and always keep the audience in mind!</p>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            const info = document.getElementById('info');
+            info.style.display = (info.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

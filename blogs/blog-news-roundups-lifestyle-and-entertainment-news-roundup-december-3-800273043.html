@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>December 3 Lifestyle & Entertainment News Roundup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #282c34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keyword {
+            background-color: #e7f3fe;
+            padding: 5px;
+            border-radius: 3px;
+            margin: 5px 0;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News Roundup: Lifestyle & Entertainment</h1>
+    <p>Date: December 3, 2023</p>
+</header>
+
+<article>
+    <h2>Top Lifestyle Trends You Shouldn't Miss</h2>
+    <p>Discover the latest in healthy living with tips like:</p>
+    <div class="keyword">Mindfulness Practices</div>
+    <div class="keyword">Sustainable Fashion</div>
+    <div class="keyword">Home Décor Trends</div>
+    <button onclick="showTips()">Learn More!</button>
+    <p id="tips" style="display:none;">Explore the benefits of mindfulness, shop ethically, and revamp your home with eco-friendly designs!</p>
+</article>
+
+<article>
+    <h2>Entertainment Buzz: Movies and Music</h2>
+    <p>Catch up on the hottest entertainment news:</p>
+    <div class="keyword">Box Office Hits</div>
+    <div class="keyword">New Music Releases</div>
+    <div class="keyword">Celebrity Gossip</div>
+    <button onclick="showEntertainment()">Show Highlights</button>
+    <p id="entertainment" style="display:none;">Don’t miss the latest blockbuster and chart-topping singles that everyone is talking about!</p>
+</article>
+
+<script>
+    function showTips() {
+        const tips = document.getElementById('tips');
+        tips.style.display = tips.style.display === 'none' ? 'block' : 'none';
+    }
+    
+    function showEntertainment() {
+        const entertainment = document.getElementById('entertainment');
+        entertainment.style.display = entertainment.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

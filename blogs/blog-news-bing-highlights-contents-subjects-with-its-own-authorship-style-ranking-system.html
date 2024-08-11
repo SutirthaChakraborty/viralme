@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog News: Bing Highlights & Rankings</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+color: #333;
+margin: 0;
+padding: 0;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.header {
+background-color: #f1f1f1;
+padding: 16px;
+text-align: center;
+}
+
+.blog-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.blog-title {
+font-size: 24px;
+font-weight: bold;
+}
+
+.authors {
+font-style: italic;
+font-size: 18px;
+}
+
+.post-list {
+list-style-type: none;
+}
+
+.post-item {
+border: 1px solid #ccc;
+margin-bottom: 22px;
+padding: 14px;
+}
+
+.post-title {
+color: #007BFF;
+cursor: pointer;
+}
+
+.post-title:hover {
+text-decoration: underline;
+}
+
+.post-author {
+font-size: 16px;
+color: #666;
+}
+
+.rating {
+display: inline-block;
+width: 50px;
+font-size: 16px;
+margin-right: 10px;
+}
+
+.rating-content {
+float: right;
+}
+
+</style>
+<script>
+// JavaScript to highlight author's name on hover
+window.addEventListener('DOMContentLoaded', function() {
+document.querySelectorAll('.post-title').forEach(function(postTitle) {
+postTitle.addEventListener('mouseover', function() {
+const author = this.previousElementSibling.textContent;
+const authorElements = document.getElementsByClassName('post-author');
+for (let i = 0; i < authorElements.length; i++) {
+authorElements[i].textContent = author + ': ';
+}
+});
+});
+});
+</script>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="blog-header">
+<h1 class="blog-title">Blog News: Bing Highlights & Rankings</h1>
+<span class="authors">Authored by: Your Name Here</span>
+</div>
+</header>
+<main>
+<ul class="post-list">
+<li class="post-item">
+<h2 class="post-title" onclick="highlightAuthor()">News Update: Top Stories</h2>
+<p class="post-author">By Your Name Here</p>
+<div class="rating">
+<span class="rating-content">4.5</span> out of

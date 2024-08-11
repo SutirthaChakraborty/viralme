@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our eBook 'The Mostly Serious Guide to 21 Marketing Buzzwords' and learn essential strategies to enhance your marketing vocabulary.">
+    <title>Ebook: The Mostly Serious Guide to 21 Marketing Buzzwords</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .buzzword {
+            background-color: #e7f3fe;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 5px solid #3b5998;
+            cursor: pointer;
+        }
+        .description {
+            display: none;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Mostly Serious Guide to 21 Marketing Buzzwords</h1>
+    <p>Unlock the power of marketing with our insightful eBook. Master these vital buzzwords to elevate your marketing strategy and boost your brand.</p>
+    
+    <div class="buzzword" onclick="toggleDescription('buzzword1')">
+        <strong>1. Synergy</strong>
+        <div id="buzzword1" class="description">The interaction of multiple elements working together to produce a combined effect greater than the sum of their separate effects.</div>
+    </div>
+    
+    <div class="buzzword" onclick="toggleDescription('buzzword2')">
+        <strong>2. Disruption</strong>
+        <div id="buzzword2" class="description">Innovating in a way that fundamentally changes the way an industry operates, often leading to the creation of new markets.</div>
+    </div>
+    
+    <!-- Add more buzzwords here in same format -->
+    
+    <script>
+        function toggleDescription(id) {
+            var desc = document.getElementById(id);
+            if (desc.style.display === "none" || desc.style.display === "") {
+                desc.style.display = "block";
+            } else {
+                desc.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

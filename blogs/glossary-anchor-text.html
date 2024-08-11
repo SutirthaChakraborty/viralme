@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glossary: Anchor Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .glossary h2 {
+            color: #333;
+        }
+        .glossary p {
+            margin-bottom: 10px;
+        }
+        .definition {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary: Anchor Text</h1>
+    <div class=\"glossary\">
+        <h2>Definitions</h2>
+        <p class=\"definition\" onclick=\"showDefinition(this)\">Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.</p>
+        <p class=\"definition\" onclick=\"showDefinition(this)\">A anchor text is a clickable link that directs users to another location on the same page or to a different location on a different page.</p>
+        <p class=\"definition\" onclick=\"showDefinition(this)\">CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the look and formatting of a document written in HTML.</p>
+    </div>
+    <script>
+        function showDefinition(element) {
+            var definition = element.nextSibling.innerText;
+            alert('Definition: ' + definition);
+        }
+    </script>
+</body>
+</html>

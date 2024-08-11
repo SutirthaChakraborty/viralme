@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Affiliate Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .glossary-term {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .glossary-term:hover {
+            background: #e1e1e1;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Affiliate Marketing Glossary</h1>
+    <div class="glossary-term">
+        <span class="toggle-btn">Affiliate</span>
+        <div class="definition">An affiliate is an individual or business that promotes products or services for another company in exchange for a commission on sales generated through their marketing efforts.</div>
+    </div>
+    <div class="glossary-term">
+        <span class="toggle-btn">Commission</span>
+        <div class="definition">Commission is the monetary compensation that an affiliate earns for driving traffic or sales to the merchant's website.</div>
+    </div>
+    <div class="glossary-term">
+        <span class="toggle-btn">Merchant</span>
+        <div class="definition">A merchant is a company or individual that sells products or services and partners with affiliates to promote them in exchange for a share of the revenue.</div>
+    </div>
+    <div class="glossary-term">
+        <span class="toggle-btn">Conversion Rate</span>
+        <div class="definition">Conversion rate is the percentage of visitors who take a desired action, such as making a purchase or signing up for a newsletter, in relation to total visitors.</div>
+    </div>
+    <div class="glossary-term">
+        <span class="toggle-btn">Landing Page</span>
+        <div class="definition">A landing page is a standalone web page created specifically for a marketing or advertising campaign, focused on a single objective to drive conversions.</div>
+    </div>
+
+    <script>
+        const toggleButtons = document.querySelectorAll('.toggle-btn');
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const definition = button.nextElementSibling;
+                definition.style.display = definition.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

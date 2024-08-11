@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Email Sign-Offs for Blog & Email Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .sign-off {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .sign-off:hover {
+            background: #f0f0f0;
+            cursor: pointer;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Funny Email Sign-Offs</h1>
+        <p>Email marketing can be a serious business, but that doesn’t mean your correspondence has to be dull! Spice up your emails with these funny sign-offs:</p>
+        <div class="sign-off" onclick="copyText(this)">Best wishes and taco dreams!</div>
+        <div class="sign-off" onclick="copyText(this)">Keep smiling and stay caffeinated!</div>
+        <div class="sign-off" onclick="copyText(this)">Sending you high fives from afar!</div>
+        <div class="sign-off" onclick="copyText(this)">Yours in awkwardness!</div>
+        <button onclick="showInfo()">Why Use Funny Sign-Offs?</button>
+        <p id="info" style="display:none; margin-top: 10px;">
+            Using funny email sign-offs can enhance your brand’s personality, foster engagement, and make your emails memorable. Keep them light-hearted and appropriate for your audience!
+        </p>
+    </div>
+    <script>
+        function copyText(element) {
+            const textToCopy = element.innerText;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Copied: " + textToCopy);
+            });
+        }
+
+        function showInfo() {
+            const info = document.getElementById('info');
+            info.style.display = info.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

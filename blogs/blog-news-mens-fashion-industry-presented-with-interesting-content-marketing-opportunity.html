@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .interactive-button {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive-button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest Trends in Men's Fashion</h1>
+</header>
+
+<article>
+    <h2>Exploring the Future of Men's Fashion</h2>
+    <p>The men's fashion industry is evolving rapidly, presenting unique content marketing opportunities for brands.</p>
+    <button class="interactive-button" onclick="showTrend()">Click to Reveal a Hot Trend!</button>
+    <p id="trend" style="display:none;">Sustainable materials are becoming a major focus in men's clothing, appealing to eco-conscious consumers.</p>
+</article>
+
+<script>
+    function showTrend() {
+        var trendElement = document.getElementById('trend');
+        if (trendElement.style.display === 'none') {
+            trendElement.style.display = 'block';
+        } else {
+            trendElement.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Week Sales Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .sales-report {
+            font-size: 1.2em;
+            color: #555;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cyber Week Sales Report</h1>
+</header>
+
+<article>
+    <h2>Retailers Report $6 Billion in Sales</h2>
+    <p class="sales-report">This Cyber Week, online retailers have reported an impressive $6 billion in sales, showcasing the growing trend of e-commerce during the holiday season.</p>
+    <button onclick="showDetails()">View More Details</button>
+    <div id="details" style="display:none;">
+        <p>Key categories driving sales include electronics, fashion, and home goods. Retailers optimized their websites for mobile shopping, enhancing user experience and boosting sales.</p>
+    </div>
+</article>
+
+<script>
+    function showDetails() {
+        var details = document.getElementById("details");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

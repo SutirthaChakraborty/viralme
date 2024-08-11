@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Questionnaire - Uyen Nguyen | Sprinklr</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077cc;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy Content Questionnaire</h1>
+    <p>Insights by Uyen Nguyen | Sprinklr</p>
+</header>
+
+<section>
+    <h2>Understanding Legacy Content</h2>
+    <p>Learn about how to effectively manage and repurpose legacy content for your blog or website. This questionnaire is designed to identify the strengths and weaknesses of your existing content.</p>
+    <button onclick="toggleContent()">Expand for More Info</button>
+    <div class="content" id="moreInfo">
+        <h3>Key Topics Covered:</h3>
+        <ul>
+            <li>Content Audit Techniques</li>
+            <li>Engagement Metrics</li>
+            <li>SEO Strategies for Legacy Content</li>
+            <li>Repurposing Older Posts</li>
+            <li>Improving User Experience</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function toggleContent() {
+        var content = document.getElementById('moreInfo');
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

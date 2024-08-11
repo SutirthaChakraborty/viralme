@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Graphics, Brand Style Guide Templates</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .section-header {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .image-box {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-box img {
+            width: auto;
+            height: 250px;
+            border: 1px solid #ddd;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .image-description {
+            padding: 5px 0;
+        }
+
+        .example-content {
+            border-left: 3px solid #333;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/animation@0.4.0/dist/tailwind-animation.min.js"></script>
+    <script>
+        function toggleExampleDisplay(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle("hidden");
+            var siblings = element.previousElementSibling;
+            if (siblings) {
+                siblings.classList.toggle("rotate-in");
+            }
+        }
+   

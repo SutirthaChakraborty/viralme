@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore case studies on the creative redesign of old parchment. Discover innovative techniques and visual appeal.">
+    <title>Creative Redesign of Old Parchment | Case Studies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #5d4026;
+        }
+        .case-study {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 15px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        .case-study:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        button {
+            background-color: #5d4026;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #7a5630;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Creative Redesign of Old Parchment</h1>
+
+    <div class="case-study">
+        <h2>Case Study 1: The Renaissance Touch</h2>
+        <p>This project reimagines ancient texts with a modern twist, using vibrant colors and stylized fonts while preserving historical authenticity.</p>
+        <button onclick="showDetails(1)">Show Details</button>
+        <div id="details1" style="display:none;">
+            <p>Incorporated gold leaf accents and hand-drawn illustrations that breathe life into the old parchment.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2>Case Study 2: Eco-Friendly Revival</h2>
+        <p>Reviving old parchment by utilizing sustainable inks and papers, offering a green alternative to traditional methods.</p>
+        <button onclick="showDetails(2)">Show Details</button>
+        <div id="details2" style="display:none;">
+            <p>This approach emphasizes minimal environmental impact while creating visually stunning pieces.</p>
+        </div>
+    </div>
+
+    <script>
+    function showDetails(caseNumber) {
+        var details = document.getElementById('details' + caseNumber);
+        details.style.display = (details.style.display === 'none') ? 'block' : 'none';
+    }
+    </script>
+
+</body>
+</html>

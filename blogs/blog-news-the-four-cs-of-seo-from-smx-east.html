@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Four Cs of SEO - SMX East</title>
+    <meta name="description" content="Explore the Four Cs of SEO from SMX East - Content, Context, Connections, and Conversion. Enhance your SEO strategy with expert insights.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            cursor: pointer;
+            color: #0073e6;
+        }
+        p {
+            display: none;
+            margin: 10px 0;
+        }
+        p.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Four Cs of SEO - SMX East Insights</h1>
+    </header>
+    <section>
+        <h2 onclick="toggleContent('content1')">Content</h2>
+        <p id="content1">Quality content is the foundation of SEO. Create engaging and informative articles that resonate with your audience.</p>
+
+        <h2 onclick="toggleContent('content2')">Context</h2>
+        <p id="content2">Understanding the context of your audience's search intent is crucial. Tailor your content to meet their needs.</p>
+
+        <h2 onclick="toggleContent('content3')">Connections</h2>
+        <p id="content3">Build connections through backlinks and social media. Foster relationships with influencers in your niche.</p>
+
+        <h2 onclick="toggleContent('content4')">Conversion</h2>
+        <p id="content4">Optimize your website for conversions. Use clear calls-to-action and user-friendly design to enhance user experience.</p>
+    </section>
+
+    <script>
+        function toggleContent(contentId) {
+            const content = document.getElementById(contentId);
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

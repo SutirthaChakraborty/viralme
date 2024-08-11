@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Marketing Goals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .interactive {
+            cursor: pointer;
+            color: #0073e6;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9f5ff;
+            border-left: 4px solid #0073e6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>B2B Marketing Goals</h1>
+</header>
+
+<section>
+    <h2>Lead Generation</h2>
+    <p>Effective lead generation strategies are crucial for B2B success. Utilize content marketing, SEO, and social media to attract potential clients.</p>
+    <span class="interactive" onclick="toggleDetails('leadGenDetails')">Learn More</span>
+    <div id="leadGenDetails" class="details">
+        <p>90% of B2B marketers find email marketing effective for lead generation. Engaging blog posts and webinars can also drive interest and capture leads.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Brand Awareness</h2>
+    <p>Increasing brand awareness is a primary goal for many B2B marketers. It helps in establishing credibility and attracting new customers.</p>
+    <span class="interactive" onclick="toggleDetails('brandAwarenessDetails')">Learn More</span>
+    <div id="brandAwarenessDetails" class="details">
+        <p>Half of B2B marketers prioritize brand awareness. Strategies include social media engagement and content sharing by employee advocates.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Web Marketing Goals</h2>
+    <p>Top web marketing goals include increasing revenue, improving customer experience, and enhancing online presence.</p>
+    <span class="interactive" onclick="toggleDetails('webMarketingDetails')">Learn More</span>
+    <div id="webMarketingDetails" class="details">
+        <p>Focus on SEO strategies and targeted content to meet these goals. Topic clusters can help in organizing content effectively.</p>
+    </div>
+</section>
+
+<script>
+    function toggleDetails(id) {
+        var details = document.getElementById(id);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

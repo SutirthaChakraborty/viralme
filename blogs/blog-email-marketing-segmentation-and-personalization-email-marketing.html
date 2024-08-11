@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing Segmentation & Personalization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        button {
+            background-color: #28A745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Email Marketing Insights</h1>
+    </header>
+    <div class="container">
+        <h2>Segmentation & Personalization</h2>
+        <p>Email marketing segmentation allows you to categorize your audience into specific groups based on their behavior, preferences, and demographics. Personalization enhances this by tailoring content to individual subscribers, improving engagement and conversions.</p>
+        
+        <h3>Learn More</h3>
+        <button id="learnMoreButton">How Segmentation Works</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('learnMoreButton').addEventListener('click', function() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = '<p>Segmentation is essential for effective email marketing. By segmenting your list based on criteria like past purchases, location, and engagement levels, you can send more relevant messages. Personalization takes this a step further, allowing you to address subscribers by name and recommend products based on their behavior.</p>';
+        });
+    </script>
+</body>
+</html>

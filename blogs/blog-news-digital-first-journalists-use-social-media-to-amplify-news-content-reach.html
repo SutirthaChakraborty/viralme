@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital First Journalists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Amplifying News Content Reach</h1>
+</header>
+
+<article>
+    <h2>Digital First Journalists</h2>
+    <p>In today's fast-paced digital landscape, **journalists** are leveraging **social media** to enhance the **reach** of their news content. By utilizing platforms like **Twitter**, **Facebook**, and **Instagram**, they can share breaking news and engage with a broader audience.</p>
+    <p>Effective use of **hashtags**, **trending topics**, and **interactive content** allows journalists to connect with readers in real-time, making news more accessible and engaging.</p>
+    <p class="toggle" onclick="toggleKeywords()">Show Keywords</p>
+    <div id="keywords" style="display:none;">
+        <p class="keywords">Keywords: Digital Journalism, Social Media, News Amplification, Audience Engagement, Real-time Updates</p>
+    </div>
+</article>
+
+<footer>
+    <p>&copy; 2024 News Amplification Blog</p>
+</footer>
+
+<script>
+    function toggleKeywords() {
+        var keywordsDiv = document.getElementById("keywords");
+        if (keywordsDiv.style.display === "none") {
+            keywordsDiv.style.display = "block";
+        } else {
+            keywordsDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

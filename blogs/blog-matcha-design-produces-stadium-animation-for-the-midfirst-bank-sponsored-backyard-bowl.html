@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backyard Bowl Animation by Matcha Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .animation-container {
+            width: 100%;
+            height: 300px;
+            background-color: #fff;
+            border: 2px solid #007bff;
+            position: relative;
+            overflow: hidden;
+        }
+        .stadium {
+            width: 100%;
+            height: 100%;
+            background-image: url('stadium.jpg');
+            background-size: cover;
+            position: absolute;
+            animation: zoom 10s infinite alternate;
+        }
+        @keyframes zoom {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+        .info {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Matcha Design's Backyard Bowl Animation</h1>
+    <div class="animation-container">
+        <div class="stadium"></div>
+    </div>
+    <div class="info">
+        <p>Matcha Design has created a stunning Full HD animation for the MidFirst Bank sponsored Backyard Bowl, showcasing the rivalry between Jenks and Union high schools. This animation will be featured during commercial breaks at Chapman Stadium.</p>
+        <p>Utilizing advanced techniques like masking and easing, the animation captures the excitement of this annual event.</p>
+    </div>
+    <button onclick="alert('Stay tuned for the Backyard Bowl!')">Learn More</button>
+
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            alert('The Backyard Bowl is an exciting tradition! Don\'t miss it!');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Advertising Campaign Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 2rem;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video {
+            width: 80%;
+            max-width: 600px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 600px;
+            margin-top: 1rem;
+        }
+        .controls button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .controls button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights on Running a Video Advertising Campaign</h1>
+    <div class="container">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="controls">
+            <button onclick="playVideo()">Play Video</button>
+            <button onclick="pauseVideo()">Pause Video</button>
+        </div>
+    </div>
+    <script>
+        const video = document.querySelector('.video');
+        const playButton = document.querySelector('.controls button[data-action="play"]');
+        const pauseButton = document.querySelector('.controls button[data-action="pause"]');
+        let isPlaying = false;
+
+        function playVideo() {
+            if (!isPlaying) {
+                video.src = "https://www.youtube.com/embed/dQw4w9WgXcQ"; // Replace with your video URL
+                video.play();
+                isPlaying = true;
+            } else if (isPlaying) {
+                video.pause();
+                isPlaying = false;
+            } else if (!isPlaying && video.paused) { // Check if video is paused and not playing before resuming playback to avoid multiple plays in some browsers (e.g., Safari)
+                video.play();
+            } else if (!isPlaying && video.paused && video.currentTime === video.duration) { // Check if video has finished playing before attempting to play again to avoid infinite loops (e.g., Chrome)
+                video.play(); // This line is unnecessary as the video will automatically play when it reaches its end due to the previous condition being met, but it's included here for clarity and to prevent potential issues in some browsers (e.g., Firefox) with calling `play()` on an already playing video element in certain circumstances (e.g., when the page loads or when other scripts are running that modify the DOM)

@@ -1,0 +1,57 @@
+ HTML and CSS code for an infographic showcasing the best times to post on top 8 social platforms:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Times to Post on Social Platforms</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some interactivity with JavaScript (optional) */
+        @keyframes loading-bar {
+            0% { width: 0% }
+            100% { width: 80% }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var bars = document.getElementsByClassName("post-bar");
+            setInterval(function() {
+                Array.prototype.forEach.call(bars, function(bar) {
+                    bar.style.width = "calc(80% + 10px)"; // Animate loading bar
+                    bar.offsetWidth; // Trigger repaint (滞后期)
+                    bar.style.width = ""; // Reset
+                });
+            }, 3000);
+        });
+    </script>
+</head>
+<body>
+    <div class="infographic">
+        <h1>Optimal Posting Times for Top 8 Social Platforms</h1>
+        <div class="platforms">
+            <div class="platform">
+                <img src="facebook-logo.png" alt="Facebook">
+                <div class="post-bar" id="fb-post-bar"></div>
+                <p>Facebook</p>
+                <p><span data-time="10am-1pm">9am - 12pm</span> & <span data-time="4pm-6pm">4pm - 6pm</span></p>
+            </div>
+            <!-- Repeat for other platforms like Twitter, Instagram, etc. -->
+        </div>
+        <div class="loading-indicator" id="loading-indicator" style="display: none">
+            <div class="loading-bar" id="loading-bar" style="--progress: 0;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+CSS code (styles.css):
+
+.infographic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 50px auto

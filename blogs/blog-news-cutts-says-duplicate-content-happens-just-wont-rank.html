@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>duplicate content &amp; ranking</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.header {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		.content {
+			padding: 20px;
+		}
+		
+		.alert {
+			background-color: #ffe6e6;
+			border: 1px solid #ff9999;
+			padding: 10px;
+			margin: 20px 0;
+		}
+		
+		.js-enabled {
+			color: #009688;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>duplicate content &amp; ranking</h1>
+		</div>
+		<div class="content">
+			<p>According to Cutts, duplicate content can cause a website to not rank well in search engine results. But why is that?</p>
+			<div class="alert">
+				<span class="js-enabled">JavaScript Alert:</span> Duplicate content can lead to a penalty from search engines, causing your website to drop in rankings or even be completely removed from search results.
+			</div>
+			<p>So, how can you avoid duplicate content and ensure your website ranks well?</p>
+			<ul>
+				<li>Use canonical URLs to specify the preferred version of a webpage.</li>
+				<li>Use 301 redirects to redirect users and search engines to the original URL.</li>
+				<li>Use meta tags to specify the title and description of a webpage.</li>
+				<li>Avoid copying content from other websites without permission.</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var alert = document.querySelector(".alert");
+			alert.addEventListener("click", function() {
+				alert.classList.toggle("show");
+			});
+		});
+	</script>
+</body>
+</html>
+
+Note: This code uses JavaScript to toggle the display of the alert message. If you want to disable JavaScript, you can remove the script tag or modify the code to use a different method.

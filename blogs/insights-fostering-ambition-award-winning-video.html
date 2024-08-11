@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Fostering Ambition Award-Winning Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Insights Fostering Ambition Award-Winning Video</h1>
+        <p>Discover how inspirational storytelling and visual creativity lead to impactful messages. This award-winning video demonstrates the power of ambition and innovation.</p>
+        
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Award-Winning Video" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <button id="moreInfoBtn">Show More Insights</button>
+        <div id="moreInfo" style="display: none;">
+            <p>This video highlights the importance of setting high goals, fostering a culture of success, and utilizing innovative strategies to drive positive change. Join us in celebrating creativity and ambition!</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("moreInfoBtn").onclick = function() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+                this.innerText = "Show Less Insights";
+            } else {
+                info.style.display = "none";
+                this.innerText = "Show More Insights";
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Your Valentine's Day with Google</title>
+    <meta name="description" content="Discover how Google lets users map their Valentine's Day, making it more special and memorable.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #d5006d;
+        }
+        .content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #d5006d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #b40057;
+        }
+        .map-container {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Map Your Valentine's Day with Google</h1>
+    <div class="content">
+        <p>With Valentine's Day approaching, Google introduces exciting features that allow users to map unique and romantic locations, enhancing the love experience. User-friendly and interactive, the mapping tool helps connect partners through shared locations and planned surprises.</p>
+        <p>Explore how to make the most of this innovative tool to create memorable dates. Whether it’s finding the best restaurants, parks, or hidden gems, Google's map function is designed to make Valentine's Day planning a breeze!</p>
+        <button class="button" onclick="toggleMap()">Show Me How It Works!</button>
+    </div>
+    
+    <div class="map-container" id="mapContainer">
+        <p>Interactive Map Feature is coming soon!</p>
+        <iframe width="600" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093203!2d144.9556513155562!3d-37.81720997975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11d81d%3A0x5045675218ceed30!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1614740496591!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <script>
+        function toggleMap() {
+            const mapContainer = document.getElementById('mapContainer');
+            if (mapContainer.style.display === 'none' || mapContainer.style.display === '') {
+                mapContainer.style.display = 'block';
+            } else {
+                mapContainer.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

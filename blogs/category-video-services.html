@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore various video services including streaming, editing, and production.">
+    <title>Video Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .service {
+            margin: 15px 0;
+        }
+        .service:hover {
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Services Overview</h1>
+</header>
+
+<article>
+    <h2>Explore Different Video Services</h2>
+    <div class="service" onclick="showDetails('streaming')">
+        <h3>Video Streaming Services</h3>
+        <p>Discover platforms like YouTube and Netflix that offer vast libraries of video content for streaming on-demand.</p>
+    </div>
+    <div class="service" onclick="showDetails('editing')">
+        <h3>Video Editing Services</h3>
+        <p>Learn about tools such as Adobe Premiere Pro and Final Cut Pro that empower creators to edit their videos professionally.</p>
+    </div>
+    <div class="service" onclick="showDetails('production')">
+        <h3>Video Production Services</h3>
+        <p>Explore companies that provide comprehensive video production services, from scripting to final release.</p>
+    </div>
+</article>
+
+<script>
+    function showDetails(service) {
+        let message = '';
+        switch (service) {
+            case 'streaming':
+                message = 'Video streaming offers immediate access to content online, enabling users to watch their favorite shows and movies anywhere, anytime.';
+                break;
+            case 'editing':
+                message = 'Video editing services allow users to create polished videos, incorporating cuts, transitions, and effects for professional-grade results.';
+                break;
+            case 'production':
+                message = 'Video production encompasses the full process of creating a video, providing services like scriptwriting, filming, and post-production.';
+                break;
+            default:
+                message = 'Select a service to learn more!';
+        }
+        alert(message);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Mobile Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .statistics {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile Blog News Insights</h1>
+    </header>
+    <div class="container">
+        <h2>Understanding Mobile Search Impressions</h2>
+        <p>Mobile devices account for a significant portion of search impressions, representing over 10% of total activity. In our latest analysis, we explored the 800,414,743 clicks that stemmed from mobile interactions.</p>
+        <div class="statistics">
+            <div>
+                <h3>Impressions Breakdown</h3>
+                <p>Mobile Search: 10%</p>
+            </div>
+            <div>
+                <h3>Total Clicks</h3>
+                <p>800,414,743 clicks</p>
+            </div>
+        </div>
+        <button id="showModal">Learn More</button>
+    </div>
+
+    <div id="modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
+        <div style="background:white; padding:20px; border-radius:8px; width:300px; text-align:center;">
+            <h3>Mobile Optimization Tips</h3>
+            <p>To leverage mobile search for your blog, ensure quick loading times, mobile-friendly layouts, and optimize content for mobile readers.</p>
+            <button onclick="document.getElementById('modal').style.display='none'">Close</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showModal').onclick = function() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

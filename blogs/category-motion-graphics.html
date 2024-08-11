@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="motion graphics, animation, visual effects, digital art, graphic design, video production">
+    <title>Motion Graphics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #2980b9;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Introduction to Motion Graphics</h1>
+        <p>Motion graphics combine graphic design and animation to create visually captivating content. They are widely used in various sectors, including advertising, film, and digital media.</p>
+        <button class="button" onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="moreInfo">
+            <h2>Why Motion Graphics?</h2>
+            <p>Motion graphics help convey complex information in an engaging way, making them perfect for explainer videos, promotional content, and social media.</p>
+            <h2>Key Elements</h2>
+            <ul>
+                <li>Animation Techniques</li>
+                <li>Visual Effects</li>
+                <li>Typography in Motion</li>
+                <li>Color Theory</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

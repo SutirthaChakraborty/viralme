@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCrunch Daily Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            background: #0077cc;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            border: 1px solid #0077cc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .toggle-info {
+            margin-top: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TechCrunch Daily Insights</h1>
+</header>
+
+<div class="content">
+    <h2>Understanding the 1 Billion Hours Phenomenon</h2>
+    <p>According to TechCrunch, the digital landscape has achieved a staggering milestone of 1 billion hours of content consumed daily. This figure highlights the intense shift towards digital media and the engagement levels of users.</p>
+    
+    <div>
+        <span class="keyword" onclick="toggleInfo('market')">Market Trends</span>
+        <div id="market" class="info">The market is rapidly evolving with constant innovations and startups arising daily, leading to increased viewer engagement and content creation.</div>
+    </div>
+    
+    <div>
+        <span class="keyword" onclick="toggleInfo('digital')">Digital Consumption</span>
+        <div id="digital" class="info">With the rise of streaming platforms, e-learning, and blogs, more time is spent online driving demand for tech-related content.</div>
+    </div>
+    
+    <div>
+        <span class="keyword" onclick="toggleInfo('innovation')">Innovation</span>
+        <div id="innovation" class="info">Technology is at the forefront with AI, IoT, and blockchain shaping the future of consumption and content delivery.</div>
+    </div>
+    
+    <button class="toggle-info" onclick="showAllInfo()">Show All Insights</button>
+</div>
+
+<script>
+    function toggleInfo(id) {
+        const infoDiv = document.getElementById(id);
+        infoDiv.style.display = infoDiv.style.display === 'none' || !infoDiv.style.display ? 'block' : 'none';
+    }
+
+    function showAllInfo() {
+        const infoDivs = document.querySelectorAll('.info');
+        infoDivs.forEach(div => div.style.display = 'block');
+    }
+</script>
+
+</body>
+</html>

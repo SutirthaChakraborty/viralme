@@ -1,0 +1,80 @@
+#### HTML and CSS Code for Old Faces of Football Case Studies
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Old Faces of Football Case Studies</title>
+  <style>
+    /* CSS for the layout */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .topics {
+      width: 30%;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .content {
+      width: 60%;
+      background-color: #e6e6e6;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="topics">
+    <h2>Old Faces of Football</h2>
+    <ul>
+      <li onclick="loadContent('pele')">Pele</li>
+      <li onclick="loadContent('maradona')">Maradona</li>
+      <li onclick="loadContent('cruyff')">Cruyff</li>
+      <li onclick="loadContent('zidane')">Zidane</li>
+    </ul>
+  </div>
+  <div class="content" id="content">
+    <p>Select a topic to view the information.</p>
+  </div>
+
+  <script>
+    // JavaScript for loading content
+    function loadContent(player) {
+      let content = document.getElementById('content');
+      switch (player) {
+        case 'pele':
+          content.innerHTML = "<h3>Pele</h3><p>Information about Pele...</p>";
+          break;
+        case 'maradona':
+          content.innerHTML = "<h3>Maradona</h3><p>Information about Maradona...</p>";
+          break;
+        case 'cruyff':
+          content.innerHTML = "<h3>Cruyff</h3><p>Information about Cruyff...</p>";
+          break;
+        case 'zidane':
+          content.innerHTML = "<h3>Zidane</h3><p>Information about Zidane...</p>";
+          break;
+        default:
+          content.innerHTML = "<p>Select a topic to view the information.</p>";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+#### Explanation
+The provided HTML and CSS code creates a simple web page for exploring case studies of old faces in football. The page is divided into two sections: the left section contains a list of topics, and the right section displays the content related to the selected topic.
+
+**Keywords**: HTML, CSS, interactive controls, web development, technical documentation, JavaScript, old football players, Pele, Maradona, Cruyff, Zidane.
+
+This code utilizes HTML for structuring the content and CSS for styling the layout. It also includes JavaScript to enable the interactive functionality of loading content based on the selected topic. The layout is designed to be simple and user-friendly, providing an easy way to explore information about old football players.
+
+Feel free to customize the content and styling based on your specific requirements.

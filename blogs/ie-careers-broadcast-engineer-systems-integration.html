@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the career opportunities in Broadcast Engineering and Systems Integration. Learn about the role, skills required, and career pathways.">
+    <title>Broadcast Engineer Careers in Systems Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .accordion {
+            background: #eee;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .accordion-title {
+            padding: 10px;
+            cursor: pointer;
+            outline: none;
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .accordion-title:hover {
+            background: #ddd;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            padding: 0 10px;
+            border-top: 1px solid #ddd;
+        }
+        .active {
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Broadcast Engineer Careers in Systems Integration</h1>
+        <div class="accordion">
+            <div class="accordion-title">What is a Broadcast Engineer?</div>
+            <div class="accordion-content">
+                <p>Broadcast Engineers are responsible for designing and maintaining equipment used to transmit radio and television programs. They work on the integration of systems, ensuring seamless communication and high-quality broadcast.</p>
+            </div>
+            <div class="accordion-title">Skills Needed for Systems Integration</div>
+            <div class="accordion-content">
+                <p>Key skills include knowledge of audio/video technology, signal processing, technical troubleshooting, and familiarity with software systems used in broadcasting. Communication skills are also essential.</p>
+            </div>
+            <div class="accordion-title">Career Pathways</div>
+            <div class="accordion-content">
+                <p>Career paths include positions in broadcast networks, studios, and post-production houses. Opportunities for advancement are available in management, technical support, and freelance consulting roles.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const titles = document.querySelectorAll('.accordion-title');
+        titles.forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+                content.classList.toggle('active');
+                if (content.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                } else {
+                    content.style.maxHeight = 0;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

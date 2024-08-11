@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Creation - Blog Post Outline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .outline {
+            padding: 10px;
+            border-left: 5px solid #007bff;
+            margin: 10px 0;
+        }
+
+        .toggle {
+            cursor: pointer;
+            color: #007bff;
+            margin-top: 10px;
+        }
+
+        .content {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Guide to Blog Creation</h1>
+    <h2>Understanding the Blog Post Outline</h2>
+    <div class="outline">
+        <h3 onclick="toggleContent('intro')">1. Introduction <span class="toggle">+</span></h3>
+        <div id="intro" class="content">
+            <p>Introduce the topic, its importance, and what readers can expect.</p>
+        </div>
+    </div>
+    <div class="outline">
+        <h3 onclick="toggleContent('mainPoints')">2. Main Points <span class="toggle">+</span></h3>
+        <div id="mainPoints" class="content">
+            <p>Outline key arguments, insights, or stories you want to share.</p>
+        </div>
+    </div>
+    <div class="outline">
+        <h3 onclick="toggleContent('conclusion')">3. Conclusion <span class="toggle">+</span></h3>
+        <div id="conclusion" class="content">
+            <p>Summarize the key takeaway and encourage reader engagement.</p>
+        </div>
+    </div>
+    <button class="btn" onclick="alert('Start creating your blog!')">Start Your Blog Journey</button>
+</div>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        var toggleIcon = content.previousElementSibling.querySelector('.toggle');
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            toggleIcon.textContent = "-";
+        } else {
+            content.style.display = "none";
+            toggleIcon.textContent = "+";
+        }
+    }
+</script>
+
+</body>
+</html>

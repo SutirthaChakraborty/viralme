@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how frustrated teens are shifting from Facebook to Google for social media marketing insights.">
+    <title>Teens Shift from Facebook to Google: A Social Media Marketing Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        #moreInfo {
+            display: none;
+            margin-top: 20px;
+            background: #e0f7fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog News: Teens Turn to Google Over Facebook</h1>
+        <h2>Frustration with Social Media Platforms</h2>
+        <p>Recent trends indicate that teenagers are increasingly frustrated with Facebook's platform, leading them to seek information and engagement on Google instead. This shift presents significant implications for social media marketing strategies aimed at younger audiences.</p>
+        <p>Key reasons include privacy concerns, content relevance, and the desire for authentic engagement.</p>
+        <button id="toggleInfo">Learn More</button>
+        <div id="moreInfo">
+            <h3>Why are Teens Choosing Google?</h3>
+            <ul>
+                <li>Concerns about privacy and data security.</li>
+                <li>Desire for diverse and authentic content.</li>
+                <li>Preference for search engines for specific information.</li>
+            </ul>
+            <p>Marketers need to adjust their strategies to connect with this demographic effectively, focusing on transparency and authentic engagement.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleInfo').addEventListener('click', function() {
+            const info = document.getElementById('moreInfo');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+                this.textContent = 'Show Less';
+            } else {
+                info.style.display = 'none';
+                this.textContent = 'Learn More';
+            }
+        });
+    </script>
+</body>
+</html>

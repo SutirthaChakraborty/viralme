@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+}
+
+.title-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+ hdf { color: blue; text-decoration: underline; cursor: pointer; }
+
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const takeawayButtons = document.querySelectorAll('.takeaway-button');
+  takeawayButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      let parentElement = button.parentElement;
+      parentElement.classList.toggle('active');
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+  <h1>Your Blog: Legacy Team Takeaways | <a href="#" onclick="return false;" class="hdf">TechWeek Chicago</a></h1>
+  <div class="title-info">
+    <img src="team_logo.png" alt="Team Logo" width="100" />
+    <span>Delivering Insights | <button class="takeaway-button">Key Lessons</button> | <button class="takeaway-button">Tech Innovations</button></span>
+  </div>
+  <article>
+    <p>Unleash the power of modern tech with our <u>TechWeek Chicago highlights</u>. Learn from the <b>legacy team's</b> transformative experiences, <i>tech trends</i> and <span class="active">best practices</span> in this engaging content.</p>
+  </article>
+</div>
+</body>
+</html>

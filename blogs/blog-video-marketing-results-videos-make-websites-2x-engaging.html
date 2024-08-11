@@ -1,0 +1,58 @@
+\n\n\n\n\n\t
+
+# Blog Video Marketing Results
+
+## Videos Make Websites 2x Engaging
+
+\n\t
+
+- **Keywords:** blog, video marketing, results, websites, engagement
+
+\n\t
+
+This is a simple HTML code with CSS that demonstrates the benefits of using videos in your blog to increase engagement. The interactive JavaScript code will show how much more engaging your website becomes when you add videos. \n\n\t
+
+html\n\t
+
+<!DOCTYPE html>\n\n<html lang=\"en\">\n\n<head>\n\t
+
+  <meta charset=\"UTF-8\">\n\t
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t
+  <title>Blog Video Marketing Results</title>\n\t
+  <style>\n\t
+    .container {\n\t
+      display: flex;\n\t
+      justify-content: center;\n\t
+      align-items: center;\n\t
+      height: 100vh;\n\t
+      font-family: Arial, sans-serif;\n\t
+    }\n\t
+    .box {\n\t
+      width: 300px;\n\t
+      padding: 20px;\n\t
+      border: 1px solid #ccc;\n\t
+      border-radius: 5px;\n\t
+      background-color: #f9f9f9;\n\t
+      text-align: center;\n\t
+    }\n\t
+    .box h2 {\n\t
+      font-size: 24px;\n\t
+      font-weight: bold;\n\t
+    }\n\t
+    .box p {\n\t
+      font-size: 16px;\n\t
+      text-align: left;\n\t
+    }\n\t
+    .box button {\n\t
+      margin-top: 20px;\n\t
+      font-size: 16px;\n\t
+      padding: 10px 20px;\n\t
+      border: none;\n\t
+      border-radius: 5px;\n\t
+      background-color: #007bff;\n\t
+      color: #fff;\n\t
+      cursor: pointer;\n\t
+    }\n\t
+    .box button:hover {\n\t
+      background-color: #0056b3;\n\t
+    }\n  </style>\n  \n</head>\n<body>\n \n  <div class=\"container\" id=\"container\" onclick=\"increase()\" onmouseover=\"changeColor(true)\" onmouseout=\"changeColor(false)\"> \n    <div class=\"box\" id=\"box\" onclick=\"toggleVideo()\" onmouseover=\"changeColor(true)\" onmouseout=\"changeColor(false)\"> \n      <h2>Blog Video Marketing Results</h2> \n      <p>Videos make websites <strong>2x</strong> more engaging!</p> \n      <video id=\"myVideo\" width=\"320\" height=\"240\" controls>\n        <source src=\"movie.mp4\" type=\"video/mp4>\n        Your browser does not support the video tag. \n      </video> \n    </div> \n  </div> \n  \n<script>\nfunction increase() {\n  var box = document.getElementById('box');\n  box.style.transform = 'translateY(-50%)';\n}\nfunction toggleVideo() {\n  var myVideo = document.getElementById('myVideo');\n  if (myVideo.paused) {\n    myVideo.play();\n  } else {\n    myVideo.pause();\n  }\n}\nfunction changeColor(isHover) {\n  var container = document.getElementById('container');\n  var box = document.getElementById('box');\n  if (isHover) {\n    container.style.backgroundColor = '#f9f9f9';\n  } else {\n    container.style.backgroundColor = '';\n  }\n}\n</script>\n \n</body>\n \n</html>\n \n

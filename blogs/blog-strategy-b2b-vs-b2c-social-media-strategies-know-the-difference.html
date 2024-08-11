@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B vs B2C Blog Strategy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>B2B vs B2C Social Media Strategies</h1>
+        <button class="toggle-btn" onclick="toggleContent()">View Strategy Differences</button>
+        <div class="content" id="content">
+            <h2>B2B Social Media Strategy</h2>
+            <p>Focus on building relationships, sharing industry insights and providing valuable content. Use LinkedIn and Twitter for networking.</p>
+            <h2>B2C Social Media Strategy</h2>
+            <p>Engage with consumers through storytelling, visuals, and entertainment. Use platforms like Instagram and Facebook for brand awareness.</p>
+            <h2>Key Differences</h2>
+            <ul>
+                <li><strong>Audience:</strong> B2B targets businesses; B2C targets individual consumers.</li>
+                <li><strong>Content:</strong> B2B is informative; B2C focuses on emotionally-driven content.</li>
+                <li><strong>Goals:</strong> B2B aims for lead generation; B2C aims for brand loyalty and customer engagement.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("content");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explainer Videos: Humor vs. Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .info {
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .humor-section {
+            display: none;
+            background-color: #e7ffe7;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: 1px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights on Balance of Humor and Information in Explainer Videos</h1>
+        <div class="info">
+            <p>Explainer videos serve as powerful tools for communication. Integrating humor can enhance viewer engagement, making complex information more relatable and enjoyable. Striking the right balance between entertainment and education is essential for effective storytelling.</p>
+        </div>
+        <button id="toggleHumor">Show Humor Insights</button>
+        <div class="humor-section" id="humorSection">
+            <p>Utilizing humorous elements can create emotional connections, increase retention rates, and create a memorable impact. However, overusing humor can distract from the core message. It's crucial to align humor with the subject matter to maintain credibility while keeping the audience entertained.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleHumor').onclick = function() {
+            var humorSection = document.getElementById('humorSection');
+            if (humorSection.style.display === "none" || humorSection.style.display === "") {
+                humorSection.style.display = "block";
+                this.innerText = "Hide Humor Insights";
+            } else {
+                humorSection.style.display = "none";
+                this.innerText = "Show Humor Insights";
+            }
+        }
+    </script>
+</body>
+</html>

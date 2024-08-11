@@ -1,0 +1,93 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog News | Twitter's New Layout & Web Design Inspirations</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-item {
+  background-color: #f0f2f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.news-item:hover {
+  background-color: #e6e9ec;
+}
+
+.footer {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .news-list {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+<script>
+window.onload = function() {
+  // Add interactivity with CSS animations
+  var newsItems = document.querySelectorAll('.news-item');
+  newsItems.forEach(function(item) {
+    item.addEventListener('mouseover', function(e) {
+      this.style.transform = 'scale(1.1)';
+    });
+
+    item.addEventListener('mouseout', function(e) {
+      this.style.transform = 'scale(1)';
+    });
+  });
+};
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1 class="

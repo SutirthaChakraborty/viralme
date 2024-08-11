@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>视频分享增长：2009 vs 2013</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.graph {
+			width: 500px;
+			height: 300px;
+			border: 1px solid #ccc;
+			margin: 20px auto;
+			padding: 20px;
+		}
+		.graph span {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.graph .bar {
+			width: 0;
+			height: 100%;
+			background-color: #4CAF50;
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.graph .label {
+			color: #666;
+			font-size: 14px;
+			margin-left: 10px;
+		}
+		.interactive {
+			cursor: pointer;
+		}
+		.interactive:hover {
+			background-color: #3e8e41;
+		}
+		.interactive:active {
+			background-color: #2c6d3f;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">视频分享增长：2009 vs 2013</h1>
+		<p>根据最新的研究，2013年视频分享者共分享了两倍于2009年的视频。</p>
+		<div class="graph">
+			<span>2009</span>
+			<span class="bar" style="width: 200px;"></span>
+			<span class="label">200,000</span>
+			<span>2013</span>
+			<span class="bar" style="width: 400px;"></span>
+			<span class="label">400,000</span>
+		</div>
+		<p>点击图表以了解更多关于视频分享增长的信息：</p>
+		<button class="interactive">查看更多</button>
+		<script>
+			var bars = document.querySelectorAll('.bar');
+			bars.forEach(function(bar) {
+				bar.addEventListener('click', function() {
+					alert('点击了"' + bar.previousElementSibling.textContent + '"');
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+相关关键词：视频分享、2009、2013、增长、研究、数据分析。

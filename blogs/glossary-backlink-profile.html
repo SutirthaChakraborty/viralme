@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore glossary terms related to backlink profiles, an essential aspect of SEO and digital marketing.">
+    <title>Glossary: Backlink Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .glossary-term {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .glossary-term:hover {
+            background: #eef;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Backlink Profile Glossary</h1>
+</header>
+
+<div class="glossary-term" onclick="toggleDefinition('def1')">
+    <strong>Backlink</strong>
+    <div id="def1" class="definition">
+        A backlink is a hyperlink from one website to another, helping to increase authority and visibility in search engines.
+    </div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('def2')">
+    <strong>Domain Authority</strong>
+    <div id="def2" class="definition">
+        A metric that measures the strength of a domain in its ability to rank on search engines, often influenced by its backlink profile.
+    </div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('def3')">
+    <strong>Link Building</strong>
+    <div id="def3" class="definition">
+        The process of acquiring hyperlinks from other websites to your own, enhancing your backlink profile and search ranking potential.
+    </div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('def4')">
+    <strong>Anchor Text</strong>
+    <div id="def4" class="definition">
+        The clickable text in a hyperlink, which plays a vital role in SEO and provides context about the content of the linked page.
+    </div>
+</div>
+
+<script>
+    function toggleDefinition(id) {
+        const definition = document.getElementById(id);
+        definition.style.display = definition.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

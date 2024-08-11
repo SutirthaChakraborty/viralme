@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Passion into Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007f5c;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #f9c74f;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #f9844a;
+        }
+        #toggleContent {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy: Writing with Passion</h1>
+    <p>At Brafton, we put passion into practice</p>
+</header>
+
+<section>
+    <h2>Transforming Ideas into Engaging Content</h2>
+    <p>Explore how passionate writing can enhance your blog's legacy and engage your audience effectively. Harness the power of storytelling and creative expression to connect.</p>
+    <button onclick="toggleContent()">Learn More</button>
+    <div id="toggleContent">
+        <p>Writing isn't just about putting words on a page; it's about sharing your vision, ideas, and values. By harnessing your passion, you can create compelling narratives that resonate with your audience and establish a lasting blog legacy.</p>
+    </div>
+</section>
+
+<script>
+    function toggleContent() {
+        var content = document.getElementById("toggleContent");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

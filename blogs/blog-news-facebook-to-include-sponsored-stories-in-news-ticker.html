@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog News - Facebook Sponsored Stories Integration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .header {
+        background-color: #3B5998;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .content {
+        padding: 20px;
+    }
+    .news-ticker {
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: ticker 10s linear infinite;
+    }
+    @keyframes ticker {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .news-item {
+        display: inline;
+        padding: 5px 10px;
+        margin-right: 10px;
+        transition: transform .5s;
+    }
+    .news-item:hover {
+        transform: scale(1.1);
+    }
+    .sponsored-story {
+        color: #ff6600;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Blog News</h1>
+    </header>
+    <div class="content">
+        <h2>Facebook Sponsored Stories Integration</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec neque eu urna malesuada malesuada non sed felis. Sed quis justo nec quam volutpat posuere. Donec euismod turpis eget neque varius, ac bibendum justo gravida.</p>
+        <div class="news-ticker">
+            <div class="news-item">
+                <span class="sponsored-story">Sponsored</span> News Item 1
+            </div>
+            <div class="news-item">
+                Regular News Item 2
+            </div>
+            <div class="news-item">
+                Sponsored News Item 3
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

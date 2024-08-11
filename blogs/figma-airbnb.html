@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Figma, Airbnb, UI Design, Prototyping, User Experience, Web Design, Interaction Design">
+    <title>Figma for Airbnb: UI/UX Design Prototype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff5a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .interactive {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ff5a5f;
+            background-color: #fff;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .interactive:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Figma's Impact on Airbnb Design</h1>
+    </header>
+    <div class="content">
+        <h2>What is Figma?</h2>
+        <p>Figma is a cloud-based design tool that enhances collaboration among designers and stakeholders. It offers robust features for creating user interfaces and prototypes.</p>
+
+        <h2>Figma and Airbnb</h2>
+        <p>Airbnb utilizes Figma for its dynamic design needs, streamlining the process of creating a seamless user experience across its platform.</p>
+
+        <div class="interactive" onclick="showMoreInfo()">
+            Click to learn more about Figma's usability in Airbnb's design process
+        </div>
+        <div id="moreInfo" style="display: none;">
+            <h3>Interactive Prototyping</h3>
+            <p>Figma's prototyping tools allow Airbnb to quickly iterate and test user flows, ensuring an optimal user experience.</p>
+        </div>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

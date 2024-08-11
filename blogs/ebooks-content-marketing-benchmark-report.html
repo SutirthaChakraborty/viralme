@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooks Content Marketing Benchmark Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>eBooks Content Marketing Benchmark Report</h1>
+</header>
+
+<div class="content">
+    <h2>Unlock the Power of eBooks in Content Marketing</h2>
+    <p>The <strong>eBooks Content Marketing Benchmark Report</strong> provides valuable insights into the effectiveness of eBooks as a marketing tool. This report covers key metrics, industry standards, and emerging trends that can enhance your content strategy.</p>
+    <p>Key areas explored include conversion rates, audience engagement, and distribution channels. Learn how to optimize your eBook strategy with data-driven decisions and actionable insights.</p>
+</div>
+
+<div class="interactive">
+    <h3>Discover Your Content Marketing Score</h3>
+    <p>Click the button below to see how your current eBook marketing efforts measure up!</p>
+    <button id="scoreButton">Get Score</button>
+    <p id="scoreResult" style="margin-top: 10px;"></p>
+</div>
+
+<script>
+    document.getElementById('scoreButton').addEventListener('click', function() {
+        const score = Math.floor(Math.random() * 100) + 1;
+        document.getElementById('scoreResult').innerText = 'Your Content Marketing Score: ' + score + '/100';
+    });
+</script>
+
+</body>
+</html>

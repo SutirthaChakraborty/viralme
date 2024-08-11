@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News for Marketers in Downtime</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        article {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        .keywords {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Marketing Strategies in Downtime</h1>
+</header>
+
+<article>
+    <h2>Adapting to Web 2.0: Essential Tips for Marketers</h2>
+    <p>As the economy faces downturns, marketers must pivot strategies. Understanding the shifts in consumer behavior is crucial.</p>
+    <p>Email marketing remains a powerful tool. Optimizing email campaigns with targeted content can increase engagement and sales.</p>
+    <button onclick="showKeywords()">Show Related Keywords</button>
+    <div id="keywords" class="keywords" style="display:none;">
+        <p>Keywords: Digital Marketing, Email Campaigns, Web 2.0 Trends, Consumer Behavior, Market Analysis, Engagement Strategies</p>
+    </div>
+</article>
+
+<script>
+    function showKeywords() {
+        const keywordsDiv = document.getElementById('keywords');
+        if (keywordsDiv.style.display === 'none') {
+            keywordsDiv.style.display = 'block';
+        } else {
+            keywordsDiv.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

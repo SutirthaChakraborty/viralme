@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>实时研究：社交营销的关键</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.title {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		.info {
+			font-size: 18px;
+			color: #666;
+			margin-bottom: 40px;
+		}
+		
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color: #3e8e41;
+		}
+		
+		.js-notification {
+			position: fixed;
+			top: 0;
+			right: 0;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			display: none;
+		}
+		
+		.js-notification.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">实时研究：社交营销的关键</h1>
+		<p class="info">社交营销是指使用社交媒体平台来推广产品或服务的活动。实时研究是社交营销中的一种关键策略，用于了解目标受众的行为和需求，并快速回应和调整营销策略。</p>
+		<button class="button" onclick="showNotification()">了解更多</button>
+		<script>
+			function showNotification() {
+				var notification = document.createElement('div');
+				notification.className = 'js-notification';
+				notification.innerHTML = '实时研究可以帮助您了解目标受众的行为和需求，提高营销效果。';
+				document.body.appendChild(notification);
+				setTimeout(function() {
+				 notification.classList.remove('show');
+				 notification.remove();
+				}, 3000);
+			}
+		</script>
+		<div class="js-notification show">实时研究可以帮助您了解目标受众的行为和需求，提高营销效果。</div>
+	</div>
+</body>
+</html>
+
+Keywords: 实时研究, 社交营销,  marketing, social media, real-time study, social marketing, customer behavior, campaign optimization.

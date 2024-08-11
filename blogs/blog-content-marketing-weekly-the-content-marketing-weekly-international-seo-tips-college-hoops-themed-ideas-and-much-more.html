@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Content Marketing Weekly - Tips &amp; Ideas</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+color: #333;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.blog-container {
+display: flex;
+flex-wrap: wrap;
+column-gap: 20px;
+}
+
+.blog-post {
+width:calc(33.33% - 20px);
+padding: 10px;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+header {
+background: #f5f5f5;
+padding: 5px;
+}
+
+h2 {
+color: #003f7a;
+text-align: center;
+}
+
+.date-and-author {
+color: #666;
+font-size: 0.8em;
+font-style: italic;
+}
+
+.topic {
+color: #28b463;
+font-weight: bold;
+}
+
+.excerpt {
+margin-bottom: 10px;
+}
+
+a {
+color: #333;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+.grey-link {
+color: #999;
+}
+
+.btn-read-more {
+display: inline-block;
+padding: 5px 10px;
+background: #e7e7e7;
+text-decoration: none;
+border: 1px solid #ccc;
+border-radius: 3px;
+ font-weight: bold;
+}
+
+.btn-read-more:hover {
+background: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+.blog-post {
+width: 100%;
+}
+}
+</style>
+<script>
+window.onload = function() {
+// Interactive explanations for SEO and college hoops topics
+const seotips = document.getElementsByClassName("seo-tip");
+const collegehoops = document.getElementsByClassName("college-hoops");
+
+seotips.forEach tip => tip.onmouseover = function() {
+tip.style.color = "orange";
+tip.title = "mouseover for SEO tips";
+};
+seotips.forEach tip => tip.onmouseout = function() {
+tip.style.color = "#28b463";
+tip.title = "";
+};
+
+collegehoops.forEach hoop => hoop.onmouseover = function() {
+hoop.style.color = "blue";
+hoop.title = "mouseover for college hoops ideas";
+};
+collegehoops.forEach hoop => hoop.on

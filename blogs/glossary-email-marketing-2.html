@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .glossary-term {
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .glossary-term:hover {
+            background: #e2e2e2;
+        }
+        .definition {
+            display: none;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px dashed #bbb;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Email Marketing Glossary</h1>
+        <p>Understand essential terminology in email marketing.</p>
+    </header>
+    <div class="glossary-term" onclick="toggleDefinition('optIn')">
+        <strong>Opt-In</strong>
+        <div class="definition" id="optIn">The process of giving consent to receive marketing emails.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('CTR')">
+        <strong>Click-Through Rate (CTR)</strong>
+        <div class="definition" id="CTR">The percentage of email recipients who click on a link within the email.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('A/B Testing')">
+        <strong>A/B Testing</strong>
+        <div class="definition" id="A/B Testing">A method of comparing two versions of an email to see which performs better.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('Bounce Rate')">
+        <strong>Bounce Rate</strong>
+        <div class="definition" id="Bounce Rate">The percentage of emails that cannot be delivered to the recipient’s inbox.</div>
+    </div>
+    <script>
+        function toggleDefinition(id) {
+            var definition = document.getElementById(id);
+            if (definition.style.display === "block") {
+                definition.style.display = "none";
+            } else {
+                definition.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

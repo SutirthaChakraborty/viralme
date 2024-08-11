@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Keyword Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #searchResults {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SEO Keyword Strategy</h1>
+</header>
+
+<section>
+    <h2>Understanding SEO Keywords</h2>
+    <p>The <span class="keywords">search terms</span> used in SEO can significantly differ from actual care words. It's crucial to research and implement the right terms for better visibility.</p>
+    <p>Useful related keywords include: <span class="keywords">digital marketing, content optimization, user intent, organic traffic, keyword research</span>.</p>
+    <button onclick="showKeywords()">Show Related Keywords</button>
+    <div id="searchResults"></div>
+</section>
+
+<script>
+    function showKeywords() {
+        const keywords = [
+            'SEO strategies',
+            'long-tail keywords',
+            'competitive analysis',
+            'content marketing',
+            'search engine optimization'
+        ];
+        document.getElementById('searchResults').innerHTML = 'Related Keywords: ' + keywords.join(', ');
+    }
+</script>
+
+</body>
+</html>

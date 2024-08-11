@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: What is Video Animation?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .faq:hover {
+            transform: scale(1.02);
+        }
+        .question {
+            cursor: pointer;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FAQ: What is Video Animation?</h1>
+    <div class="faq">
+        <div class="question">What is video animation?</div>
+        <div class="answer">Video animation is the process of creating moving images using computer-generated graphics. It combines art and technology to produce engaging visual content.</div>
+    </div>
+    <div class="faq">
+        <div class="question">Why is video animation important?</div>
+        <div class="answer">Video animation enhances storytelling, captures attention, and improves user engagement, making it a powerful tool for marketing and education.</div>
+    </div>
+    <div class="faq">
+        <div class="question">What are the types of video animation?</div>
+        <div class="answer">Common types include 2D animation, 3D animation, stop-motion, and motion graphics, each serving different creative purposes.</div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

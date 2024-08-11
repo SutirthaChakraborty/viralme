@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 12 Marketing Conferences to Attend in 2017</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .conference {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .conference:hover {
+            transform: scale(1.02);
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>12 Must-Attend Marketing Conferences in 2017</h1>
+</header>
+
+<div class="conference" onclick="toggleDetails(1)">
+    <h2>Content Marketing World</h2>
+    <p>Date: September 5-8, 2017</p>
+    <p>Location: Cleveland, OH</p>
+    <button>More Info</button>
+    <div class="details" id="details1">This conference focuses on content strategy and marketing tactics for businesses of all sizes.</div>
+</div>
+
+<div class="conference" onclick="toggleDetails(2)">
+    <h2>INBOUND 2017</h2>
+    <p>Date: November 6-9, 2017</p>
+    <p>Location: Boston, MA</p>
+    <button>More Info</button>
+    <div class="details" id="details2">A premier growth marketing conference with industry leaders sharing insights on marketing and sales.</div>
+</div>
+
+<div class="conference" onclick="toggleDetails(3)">
+    <h2>Social Media Marketing World</h2>
+    <p>Date: March 22-24, 2017</p>
+    <p>Location: San Diego, CA</p>
+    <button>More Info</button>
+    <div class="details" id="details3">Connect with top social media influencers to learn the latest tactics and strategies.</div>
+</div>
+
+<!-- Add more conferences as needed -->
+
+<script>
+    function toggleDetails(num) {
+        var details = document.getElementById('details' + num);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

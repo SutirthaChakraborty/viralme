@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the top 5 free CSS tools to enhance your web design process.">
+    <title>5 Free CSS Tools | Improve Your Web Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .tool {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+        .tool:hover {
+            transform: scale(1.02);
+        }
+        .tool h2 {
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+        .tool p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top 5 Free CSS Tools for Web Designers</h1>
+        <p>Enhance your web design workflow with these essential CSS tools.</p>
+    </header>
+    <div class="tool" onclick="toggleDescription(1)">
+        <h2>1. CSS Grid Generator</h2>
+        <p class="desc" id="desc1">A user-friendly tool for creating complex CSS Grid layouts.</p>
+    </div>
+    <div class="tool" onclick="toggleDescription(2)">
+        <h2>2. CSS Flexbox Generator</h2>
+        <p class="desc" id="desc2">Easily create responsive layouts using CSS Flexbox.</p>
+    </div>
+    <div class="tool" onclick="toggleDescription(3)">
+        <h2>3. CodePen</h2>
+        <p class="desc" id="desc3">An online editor to experiment with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="tool" onclick="toggleDescription(4)">
+        <h2>4. CSS3 Maker</h2>
+        <p class="desc" id="desc4">Generate CSS3 styles including gradients, shadows, and more.</p>
+    </div>
+    <div class="tool" onclick="toggleDescription(5)">
+        <h2>5. Autoprefixer</h2>
+        <p class="desc" id="desc5">Automatically add vendor prefixes to your CSS rules.</p>
+    </div>
+
+    <script>
+        function toggleDescription(toolNumber) {
+            const desc = document.getElementById('desc'+toolNumber);
+            desc.style.display = (desc.style.display === 'none' || desc.style.display === '') ? 'block' : 'none';
+            desc.textContent += ' Click again to hide this information.';
+        }
+
+        // Initialize descriptions as hidden
+        document.querySelectorAll('.desc').forEach(desc => desc.style.display = 'none');
+    </script>
+</body>
+</html>

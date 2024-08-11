@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore life at Brafton with project management insights from Eric Rubino. Discover how the game evolves as you play and impacts your workflow.">
+    <title>Blog: Life at Brafton - Project Management Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        .keyword {
+            color: #0073e6;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .keyword:hover {
+            color: #005bb5;
+        }
+        .interactive {
+            display: none;
+            margin-top: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Life at Brafton: The Game That Changes as You Play</h1>
+</header>
+
+<div class="content">
+    <h2>Project Management Insights with Eric Rubino</h2>
+    <p>Welcome to our blog where we explore the innovative strategies in <span class="keyword" onclick="toggleInteractive('projectManagement')">project management</span> as discussed by Eric Rubino.</p>
+    
+    <div id="projectManagement" class="interactive">
+        <p>Project management at Brafton is an evolving journey. With our unique approach, as you engage with tasks, the system adapts to your workflow, ensuring maximum efficiency.</p>
+    </div>
+
+    <p>Life at Brafton is dynamic and engaging, reflecting the essence of our work environment. Every day presents new opportunities and challenges.</p>
+    
+    <p>Learn more about how <span class="keyword" onclick="toggleInteractive('blogging')">blogging</span> can enhance your project management skills.</p>
+    
+    <div id="blogging" class="interactive">
+        <p>Blogging not only showcases your skills but also helps you document your journey, making it easier to reflect and improve on your <span class="keyword" onclick="toggleInteractive('lifeAtBrafton')">life at Brafton</span>.</p>
+    </div>
+
+    <div id="lifeAtBrafton" class="interactive">
+        <p>At Brafton, collaboration and creativity come together. Our team members embrace the culture of continuous learning, which directly influences our project outcomes.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInteractive(id) {
+        const element = document.getElementById(id);
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Graphics - 7½ Challenges for Enhanced Design Skills</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+        h2 {
+            color: #555;
+            margin-top: 40px;
+        }
+        .challenge {
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+        }
+        .challenge p {
+            margin-bottom: 10px;
+        }
+        .challenge:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            transition: color .3s;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Add interactivity with JavaScript (optional)
+        function toggleExplanation(challengeNum) {
+            const explanations = document.querySelectorAll('.explanation');
+            explanations.forEach(el => el.style.display = 'none');
+            explanations[challengeNum - 1].style.display = 'block';
+        }
+        document.querySelectorAll('.challenge').forEach((challenge, index) => {
+            challenge.addEventListener('click', () => toggleExplanation(index + 1));
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Graphics: 7½ Challenges to Level Up Your Design Skills</h1>
+        <div class="row">
+            <div class="challenge">
+                <h2>Challenge 1:

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Blog: Social Media Madness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .content {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .keywords {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Legacy Blog: Embracing Social Media Madness</h1>
+    </header>
+    <div class="content">
+        <p>In today's digital age, social media platforms have transformed brand awareness strategies significantly. The madness of constant updates and engagement drives brands to innovate continuously.</p>
+        <button onclick="expandContent()">Read More</button>
+        <div id="extraContent" style="display:none;">
+            <p>Utilizing effective strategies like engaging content marketing and targeted advertisements can boost your brand's visibility. Moreover, understanding trends and audience preferences is crucial in crafting content that resonates.</p>
+            <p class="keywords">Keywords: Brand Awareness, Social Media Strategy, Digital Marketing, Content Marketing, Audience Engagement, Social Media Trends</p>
+        </div>
+    </div>
+    
+    <script>
+        function expandContent() {
+            var extraContent = document.getElementById("extraContent");
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "block";
+            } else {
+                extraContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

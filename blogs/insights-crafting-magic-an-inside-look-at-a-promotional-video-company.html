@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights Crafting Magic - Discover the art of storytelling through promotional videos.">
+    <title>Insights Crafting Magic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        #videoContainer {
+            display: none;
+            margin-top: 20px;
+        }
+        #video {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights Crafting Magic</h1>
+        <p>Explore the World of Promotional Video Production</p>
+    </header>
+    <div class="container">
+        <h2>The Art of Storytelling</h2>
+        <p>At Insights Crafting Magic, we believe that every brand has a unique story. Our promotional video company specializes in transforming that narrative into captivating visuals.</p>
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>Expertise in Video Production</li>
+            <li>Creative Script Writing</li>
+            <li>High-Quality Visual Effects</li>
+            <li>Engaging Content Marketing Strategies</li>
+        </ul>
+        <a href="#" class="btn" onclick="toggleVideo()">Watch Our Showreel</a>
+        <div id="videoContainer">
+            <iframe id="video" src="https://www.youtube.com/embed/yourvideo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            if (videoContainer.style.display === 'none' || videoContainer.style.display === '') {
+                videoContainer.style.display = 'block';
+            } else {
+                videoContainer.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

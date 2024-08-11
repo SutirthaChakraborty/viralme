@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs: Typical Lead Time for a Walkthrough Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq-container {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .faq-container:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        .answer {
+            display: none;
+            padding: 10px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FAQs on Walkthrough Video Production</h1>
+
+    <div class="faq-container">
+        <div class="question">What is the typical lead time for a walkthrough video?</div>
+        <div class="answer">The typical lead time for producing a walkthrough video ranges from 2 to 4 weeks, depending on the complexity and length of the video.</div>
+    </div>
+
+    <div class="faq-container">
+        <div class="question">What factors influence the lead time?</div>
+        <div class="answer">Factors include script writing, video editing, animation, and approval processes from the client.</div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

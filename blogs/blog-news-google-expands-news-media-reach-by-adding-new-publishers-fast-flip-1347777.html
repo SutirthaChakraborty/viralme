@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Expands News Media Reach</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4285f4;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            color: #4285f4;
+        }
+        #toggle {
+            margin: 10px 0;
+            padding: 10px;
+            background: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #moreInfo {
+            display: none;
+            margin-top: 15px;
+            background: #e7f3fe;
+            padding: 15px;
+            border-left: 5px solid #4285f4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google Expands News Media Reach</h1>
+    </header>
+    <article>
+        <h2>Fast Flip & New Publishers Initiative</h2>
+        <p>Google is enhancing its news media outreach by introducing more publishers into its platform with the innovative Fast Flip feature. This development allows users to swiftly browse through diverse news articles, thus expanding access to credible news sources.</p>
+        <p>With the integration of new publishers, Google aims to enrich the news landscape, creating a more engaging experience for users.</p>
+        <button id="toggle">Read More</button>
+        <div id="moreInfo">
+            <p>This initiative promises to elevate user engagement and promote diversified viewpoints in news consumption. The Fast Flip feature enables seamless navigation across articles, making staying informed easier than ever.</p>
+            <p>By adding fresh content from various publishers, Google is committed to supporting a vibrant media ecosystem while ensuring quality journalism is accessible to all.</p>
+        </div>
+    </article>
+    <script>
+        document.getElementById('toggle').onclick = function() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block";
+                this.innerText = "Read Less";
+            } else {
+                moreInfo.style.display = "none";
+                this.innerText = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>

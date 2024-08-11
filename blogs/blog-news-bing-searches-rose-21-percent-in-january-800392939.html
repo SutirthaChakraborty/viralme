@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Searches Surge: January Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0078d4;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #0078d4;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005a9e;
+        }
+        .counts {
+            display: none;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>January Bing Searches Soar by 21%</h1>
+</header>
+
+<section>
+    <p>In January, Bing searches experienced a remarkable <strong>21% increase</strong>, highlighting a surge in user engagement and interest. This increase signifies a growing trend of online information-seeking behavior.</p>
+    <button id="toggleInfo">Show Search Insights</button>
+    <div class="counts" id="searchInsights">
+        <p>Over 800 million searches were recorded, reflecting higher user engagement and the effectiveness of SEO strategies. Popular topics included technology, health, and current events.</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById('toggleInfo').onclick = function() {
+        var insights = document.getElementById('searchInsights');
+        if (insights.style.display === "none" || insights.style.display === "") {
+            insights.style.display = "block";
+            this.innerText = "Hide Search Insights";
+        } else {
+            insights.style.display = "none";
+            this.innerText = "Show Search Insights";
+        }
+    }
+</script>
+
+</body>
+</html>

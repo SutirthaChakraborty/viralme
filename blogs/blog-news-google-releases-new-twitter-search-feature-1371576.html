@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Releases New Twitter Search Feature</title>
+    <meta name="description" content="Discover Google's latest Twitter search feature that enhances user experience and search capabilities.">
+    <meta name="keywords" content="Google, Twitter, search feature, news, technology, updates, SEO, social media">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4285f4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e8f0fe;
+            border: 1px solid #c6dafc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google's New Twitter Search Feature</h1>
+    </header>
+    <article>
+        <h2>Overview</h2>
+        <p>Google has recently launched an innovative search feature that integrates Twitter content directly into its search results. This enhancement allows users to access real-time updates and trending topics from Twitter, improving the overall search experience.</p>
+    </article>
+    <article>
+        <h2>Benefits of the New Feature</h2>
+        <ul>
+            <li>Access to real-time information from Twitter.</li>
+            <li>Enhanced visibility for trending topics.</li>
+            <li>Improved user engagement with social media content.</li>
+        </ul>
+    </article>
+    <div class="interactive">
+        <h2>Try It Out!</h2>
+        <p>Click the button below to simulate a search for trending Twitter topics:</p>
+        <button onclick="simulateSearch()">Search Twitter Trends</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        function simulateSearch() {
+            const trends = [
+                "Google's AI advancements",
+                "New Twitter features",
+                "Tech news updates",
+                "Social media trends",
+                "SEO strategies for 2024"
+            ];
+            const randomTrend = trends[Math.floor(Math.random() * trends.length)];
+            document.getElementById('result').innerText = `Trending Topic: ${randomTrend}`;
+        }
+    </script>
+</body>
+</html>

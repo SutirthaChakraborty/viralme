@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the cultural, historical, and economic ties between Ireland and the UK.">
+    <title>Ireland and the UK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Ireland and the UK</h1>
+    </header>
+    <section>
+        <h2>Cultural Connections</h2>
+        <p>Ireland and the UK share a rich cultural heritage, with influences in music, literature, and art.</p>
+        <button onclick="toggleInfo('culturalInfo')">Learn More</button>
+        <div id="culturalInfo" style="display:none;">
+            <p>Both regions celebrate festivals like St. Patrick's Day, showcasing their intertwined histories.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Historical Ties</h2>
+        <p>The history between Ireland and the UK is complex, marked by both cooperation and conflict.</p>
+        <button onclick="toggleInfo('historicalInfo')">Learn More</button>
+        <div id="historicalInfo" style="display:none;">
+            <p>Key events include the Anglo-Irish Treaty and the Troubles, which shaped modern relations.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Economic Relations</h2>
+        <p>Trade and investment between Ireland and the UK are vital for both economies.</p>
+        <button onclick="toggleInfo('economicInfo')">Learn More</button>
+        <div id="economicInfo" style="display:none;">
+            <p>Both countries benefit from strong trade links, particularly in technology and agriculture.</p>
+        </div>
+    </section>
+    <script>
+        function toggleInfo(infoId) {
+            var infoDiv = document.getElementById(infoId);
+            if (infoDiv.style.display === "none") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

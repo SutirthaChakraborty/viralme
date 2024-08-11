@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Video Production Locations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4285F4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .video-production-tips {
+            list-style-type: none;
+            padding: 0;
+        }
+        .video-production-tips li {
+            background: #e1e1e1;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Google Maps Video Production Locations</h1>
+    </header>
+    <section>
+        <h2>Top Google Maps Video Production Tips</h2>
+        <ul class="video-production-tips">
+            <li>Use Google Maps to find unique filming locations.</li>
+            <li>Check Street View for pre-visualization of your shoots.</li>
+            <li>Plan your route for multiple sites using Google Maps.</li>
+            <li>Leverage local insights and reviews for tips on the best spots.</li>
+        </ul>
+        <div id="map" class="map-container"></div>
+    </section>
+
+    <script>
+        function initMap() {
+            const location = { lat: -34.397, lng: 150.644 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

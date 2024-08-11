@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn at Academy Andy Jarvis - Your gateway to knowledge, skill development, and career advancement.">
+    <title>Academy Andy Jarvis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            margin-top: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e2e6ea;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Academy Andy Jarvis</h1>
+        <p>Your path to knowledge and skill enhancement.</p>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Academy Andy Jarvis offers a wide range of courses aimed at personal and professional development. Join us to enhance your skills, learn from industry experts, and advance your career.</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="info">
+            <h3>Why Choose Academy Andy Jarvis?</h3>
+            <ul>
+                <li>Expert Instructors</li>
+                <li>Flexible Learning Options</li>
+                <li>Real-World Applications</li>
+                <li>Networking Opportunities</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+        function toggleInfo() {
+            var infoDiv = document.getElementById('info');
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

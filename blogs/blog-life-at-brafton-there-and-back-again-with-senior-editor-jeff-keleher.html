@@ -1,0 +1,73 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore the blog life at Brafton with Senior Editor Jeff Keleher. Dive into insights, experiences, and industry news.">
+    <title>Brafton Blog: Life at Brafton with Jeff Keleher</title>
+    <style>
+        /* CSS for the blog page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            background-color: #285470;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header-title {
+            margin: 0;
+        }
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .author-info {
+            margin-top: 20px;
+            color: #555;
+        }
+        a {
+            color: #285470;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .timestamp {
+            font-size: 0.8rem;
+            color: #999;
+        }
+        .share-icons {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+        .share-icon {
+            margin-right: 10px;
+        }
+    </style>
+    <script>
+    // Simple page interaction - highlight on hover
+    function highlightElement(element) {
+        document.querySelectorAll(element).forEach((el) => {
+            el.classList.add("hover-state");
+        });
+        return false;
+    }
+    window.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".post-title a").forEach(highlightElement);
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Brafton Blog: <span class="author">Life at Brafton</span> with Senior Editor <span>Jeff Keleher</span></h1>
+        <nav class="share-icons">
+            <

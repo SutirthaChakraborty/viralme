@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Social Logins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.3s ease;
+        }
+
+        .glossary {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .glossary h1 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .definition {
+            margin-bottom: 20px;
+        }
+
+        .definition p {
+            max-width: 80%;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .glossary {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function toggleExplanation(event) {
+            const explanation = event.target.nextElementSibling;
+            explanation.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body>
+    <div class="glossary" onclick="toggleExplanation(event)">
+        <h1>Glossary of Social Logins</h1>
+        <div class="definition">
+            <p>Glossary entries for various types of social login services used in web applications

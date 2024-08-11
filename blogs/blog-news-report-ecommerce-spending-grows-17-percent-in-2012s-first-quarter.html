@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Spending Growth Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ecommerce Spending Grows 17% in Q1 2012</h1>
+    </header>
+    <article>
+        <h2>Overview</h2>
+        <p>In the first quarter of 2012, ecommerce spending saw a remarkable growth of **17%**, indicating a strong consumer shift towards online shopping. This trend highlights the increasing importance of digital platforms in retail.</p>
+        
+        <h2>Key Factors Driving Growth</h2>
+        <ul>
+            <li>Increased internet penetration and smartphone usage.</li>
+            <li>Enhanced user experience on ecommerce platforms.</li>
+            <li>Greater variety of products available online.</li>
+            <li>Flexible payment options encouraging higher spending.</li>
+        </ul>
+        
+        <div class="interactive">
+            <h2>Explore More</h2>
+            <p>Click the button below to see how ecommerce spending has evolved over the years:</p>
+            <button onclick="showGrowth()">Show Growth Data</button>
+            <p id="growthData" style="display:none;">Ecommerce spending has consistently increased, with significant spikes during holiday seasons and major sales events.</p>
+        </div>
+    </article>
+    
+    <script>
+        function showGrowth() {
+            var data = document.getElementById("growthData");
+            if (data.style.display === "none") {
+                data.style.display = "block";
+            } else {
+                data.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

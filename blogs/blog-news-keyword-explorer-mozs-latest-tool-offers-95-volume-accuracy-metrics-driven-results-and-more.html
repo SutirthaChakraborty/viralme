@@ -1,0 +1,81 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+       .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .topics {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .topic {
+            flex-basis: 45%;
+            margin-bottom: 10px;
+        }
+        
+        a {
+            display: block;
+            color: #007BFF;
+            text-decoration: none;
+            padding: 8px 0;
+            font-weight: bold;
+            background-color: #f3f3f3;
+            border-bottom: 1px solid #ccc;
+            transition: background-color 0.3s ease;
+        }
+        
+        a:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .description {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #ffffff;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add interaction when a topic is clicked
+            $('.topic a').click(function(e) {
+                e

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Know Your Content Marketing Strategist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .gif {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy: Know Your Content Marketing Strategist</h1>
+</header>
+
+<section>
+    <h2>Understanding Content Marketing</h2>
+    <p>Content marketing is a strategic approach focused on creating and distributing valuable, relevant content to attract and engage a clearly defined audience.</p>
+    <div class="gif-container">
+        <img src="https://media.giphy.com/media/3o7aD2sa7z8g5g3g0I/giphy.gif" alt="Content Marketing GIF" class="gif">
+    </div>
+    <button onclick="showMoreInfo()">Learn More</button>
+    <p id="more-info" style="display:none;">Effective content marketing can lead to increased brand awareness, customer loyalty, and ultimately, sales. A content marketing strategist plays a crucial role in this process.</p>
+</section>
+
+<script>
+    function showMoreInfo() {
+        var info = document.getElementById("more-info");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of photography awards and ceremony highlights. Discover tips for photographers, award-winning techniques, and the importance of recognition in photography.">
+    <title>Photography Awards Ceremony</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Annual Photography Awards</h1>
+    <p>Celebrating Excellence in Photography</p>
+</header>
+
+<section>
+    <h2>Understanding Photography Awards</h2>
+    <p>Photography awards play a crucial role in recognizing creative talent and innovative techniques in the world of photography. From local competitions to international accolades, these awards highlight the skills and artistry of photographers.</p>
+</section>
+
+<section>
+    <h2>Award Ceremony Highlights</h2>
+    <p>Join us at the annual photography award ceremony where stunning visuals and inspiring stories come to life. Celebrate the achievements of talented photographers and discover groundbreaking works that elevate the art form.</p>
+    <button id="toggleHighlights">Show/Hide Highlights</button>
+    <div id="highlights" class="hidden">
+        <ul>
+            <li>Best Landscape Photographer</li>
+            <li>Innovative Use of Light</li>
+            <li>People's Choice Award</li>
+            <li>Emerging Talent Award</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    document.getElementById('toggleHighlights').addEventListener('click', function() {
+        var highlights = document.getElementById('highlights');
+        if (highlights.classList.contains('hidden')) {
+            highlights.classList.remove('hidden');
+        } else {
+            highlights.classList.add('hidden');
+        }
+    });
+</script>
+
+</body>
+</html>

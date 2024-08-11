@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft's Bing Expansion</title>
+    <meta name="description" content="Discover the latest news about Microsoft's Bing becoming a major player in the search engine market.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0078d4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0078d4;
+        }
+        .expandable {
+            cursor: pointer;
+            color: #0078d4;
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Microsoft's Bing to Become a Major Player</h1>
+</header>
+
+<article>
+    <h2>Introduction to Bing's Expansion</h2>
+    <p>Microsoft is planning significant enhancements to its search engine, Bing, aiming to compete more aggressively against Google and other major search platforms.</p>
+</article>
+
+<article>
+    <h2>Key Features of the New Bing</h2>
+    <p class="expandable" onclick="toggleVisibility('features')">Click here to explore key features that will make Bing a serious competitor.</p>
+    <div id="features" class="hidden">
+        <ul>
+            <li>Enhanced AI Capabilities</li>
+            <li>Improved Search Algorithm</li>
+            <li>Integration with Microsoft 365</li>
+            <li>User-Centric Design Updates</li>
+            <li>Innovative Advertising Solutions</li>
+        </ul>
+    </div>
+</article>
+
+<article>
+    <h2>Implications for the Search Engine Market</h2>
+    <p>As Microsoft invests heavily in Bing, we can expect a shake-up in the search engine market, offering users more choices and better search results.</p>
+</article>
+
+<script>
+    function toggleVisibility(id) {
+        var element = document.getElementById(id);
+        if (element.classList.contains('hidden')) {
+            element.classList.remove('hidden');
+        } else {
+            element.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

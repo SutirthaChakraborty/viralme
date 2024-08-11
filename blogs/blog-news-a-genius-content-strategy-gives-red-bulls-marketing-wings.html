@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Bull's Genius Content Strategy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #c8102e;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #c8102e;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Red Bull's Marketing Wings</h1>
+</header>
+
+<article>
+    <h2>A Genius Content Strategy</h2>
+    <p>Red Bull's marketing strategy focuses on creating engaging content that resonates with its audience. By prioritizing extreme sports and high-energy activities, they effectively embody their tagline, <strong>"Red Bull gives you wings."</strong> This approach not only promotes their energy drink but also builds a strong brand identity.</p>
+    <p>Through innovative content marketing, Red Bull has positioned itself as a leader in the energy drink market, achieving remarkable brand awareness and customer loyalty.</p>
+    
+    <div class="interactive" onclick="toggleContent()">Click to learn more about Red Bull's strategy!</div>
+    <div id="moreInfo" class="hidden">
+        <p>Red Bull's content strategy includes:</p>
+        <ul>
+            <li>High-quality video content featuring extreme sports.</li>
+            <li>Engagement in music festivals and cultural events.</li>
+            <li>Utilization of social media for direct audience interaction.</li>
+        </ul>
+    </div>
+</article>
+
+<script>
+    function toggleContent() {
+        var content = document.getElementById("moreInfo");
+        if (content.classList.contains("hidden")) {
+            content.classList.remove("hidden");
+        } else {
+            content.classList.add("hidden");
+        }
+    }
+</script>
+
+</body>
+</html>

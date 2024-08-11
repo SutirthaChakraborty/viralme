@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover and explore local businesses with Google Places. Find reviews, ratings, and directions.">
+    <title>Explore Google Places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #4285F4;
+        }
+        .place-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .place-card:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Discover Local Businesses with Google Places</h1>
+    
+    <div class="place-card">
+        <h2>Cafes</h2>
+        <p>Find the best cafes in your area with Google Places. Check reviews and ratings to choose the perfect spot for your next coffee break.</p>
+        <button onclick="showDetails('Cafes')">Explore Cafes</button>
+    </div>
+    
+    <div class="place-card">
+        <h2>Restaurants</h2>
+        <p>Search and discover local restaurants with Google Places. View menus, reviews, and make reservations effortlessly.</p>
+        <button onclick="showDetails('Restaurants')">Explore Restaurants</button>
+    </div>
+    
+    <div class="place-card">
+        <h2>Shopping</h2>
+        <p>From boutique shops to large malls, find all shopping locations nearby using Google Places and enjoy great deals!</p>
+        <button onclick="showDetails('Shopping')">Explore Shopping</button>
+    </div>
+
+    <script>
+        function showDetails(category) {
+            alert("You are exploring: " + category + ". Use Google Places for directions, reviews, and more!");
+        }
+    </script>
+
+</body>
+</html>

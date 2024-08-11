@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights on Viral Trends & Short Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .video {
+            width: 100%;
+            border: 1px solid #ccc;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .trend-info {
+            display: none;
+            margin: 15px 0;
+            padding: 10px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights Behind Social Media Short Videos and Viral Trends</h1>
+        <p>Short videos on platforms like TikTok, Instagram Reels, and YouTube Shorts have transformed how content is consumed. Understanding the mechanics of viral trends can help creators leverage these insights for better reach.</p>
+
+        <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+
+        <a href="#" class="btn" onclick="toggleTrendInfo()">Learn About Viral Trends</a>
+        <div class="trend-info" id="trendInfo">
+            <p>Key Insights:</p>
+            <ul>
+                <li>Emotion triggers: Evoking strong emotions leads to sharing.</li>
+                <li>Relatable content: Users engage more with content they relate to.</li>
+                <li>Hashtags: Effective use of trending hashtags increases visibility.</li>
+                <li>Short and snappy: Keeping videos concise captures audience attention.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleTrendInfo() {
+            var info = document.getElementById("trendInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

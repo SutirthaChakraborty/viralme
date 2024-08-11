@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This blog focuses on AI, exploring the latest advancements and their applications in the tech world.">
+    <meta name="keywords" content="blog, AI, artificial intelligence, machine learning, deep learning, technology news, future trends">
+    <title>AI Blog: Exploring the Intelligent World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        blog-post {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .date {
+            color: #999;
+            font-size: smaller;
+        }
+        .content p {
+            margin-bottom: 10px;
+        }
+        .btn-read-more {
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-read-more:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function highlightKeyword(keyword) {
+            var text = document.getElementsByTagName('p')[0].innerText;
+            var regex = new RegExp(keyword, 'gi');
+            text = text.replace(regex, '<span class="keyword">$&</span>');
+            document.getElementsByTagName('p')[0].innerText = text;
+        }
+    </script>
+    <style>
+        .keyword {
+            background-color: #d4d0c8;
+            color: black;
+            padding: 1px 5px;
+            border-radius: 3px;
+           

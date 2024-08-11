@@ -1,0 +1,111 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insights Exclusive: An Interview with Casey Neistat</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+  }
+  nav a:hover {
+    background-color: #000;
+    color: #fff;
+  }
+  main {
+    padding: 20px;
+  }
+  article {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+<script>
+  // Example interactive script
+  document.addEventListener('DOMContentLoaded', function() {
+    var img = document.querySelector('article img');
+    img.addEventListener('click', function() {
+      var modal = document.getElementById('myModal');
+      var img = document.getElementById('myImage');
+      var captionText = document.getElementById('caption');
+      modal.style.display = "block";
+      img.src = this.src;
+      captionText.innerHTML = this.alt;
+    });
+  });
+</script>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Insights Exclusive</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a> |
+    <a href="#">Articles</a> |
+    <a href="#">Insights</a> |
+    <a href="#">Exclusive</a>
+  </nav>
+  <main>
+    <article>
+      <h2>An Interview with Casey Neistat</h2>
+      <p>In this exclusive interview, we delve into the mind of Casey Neistat, a name synonymous with creativity and innovation in the digital world. Casey, a filmmaker, YouTube sensation, and entrepreneur, has left an indelible mark on the internet with his unique storytelling and unparalleled talent.</p>
+      <img src="casey-neistat.jpg" alt="Casey Neistat">
+      <p>Casey's journey began on YouTube, where he quickly rose to fame with his cinematic vlogs, showcasing his life and adventures. His videos, characterized by their high production values and engaging content, have garnered millions of views and followers.</p>
+      <p>Beyond YouTube, Casey has ventured into various projects, including launching his own camera company, Beme. This venture, designed to democratize video creation, reflects his commitment to innovation and his belief in the power of storytelling.</p>
+      <p>As we sit down with Casey, we explore his thoughts on the future of content creation, his approach to storytelling, and the impact of technology on our lives.</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2024 Insights Exclusive. All rights reserved.</p>
+  </footer>
+</div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img id="myImage" />
+  <div id="caption"></div>
+</div>
+</body>
+</html>

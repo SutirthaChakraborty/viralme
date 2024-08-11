@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .news-item:hover {
+            transform: scale(1.02);
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News on Mobile Content</h1>
+</header>
+
+<div class="container">
+    <div class="news-item" id="newsItem1">
+        <h2>Mobile Content & Sales</h2>
+        <p>Explore the inspirational force of mobile content driving online and offline sales.</p>
+        <button onclick="toggleDetails('details1')">Read More</button>
+        <p id="details1" style="display:none;">The integration of mobile content not only enhances user engagement but also significantly boosts conversion rates. Engaging visuals and targeted messaging inspire customer interactions across all platforms.</p>
+    </div>
+    <div class="news-item" id="newsItem2">
+        <h2>Importance of Mobile Optimization</h2>
+        <p>Why mobile responsiveness is crucial for your marketing strategy.</p>
+        <button onclick="toggleDetails('details2')">Read More</button>
+        <p id="details2" style="display:none;">Studies show that over 50% of users access websites via mobile devices. Ensuring your content is mobile-optimized leads to higher traffic and increased sales.</p>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(detailId) {
+        const details = document.getElementById(detailId);
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+        } else {
+            details.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

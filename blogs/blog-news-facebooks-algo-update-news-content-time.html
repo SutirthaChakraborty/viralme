@@ -1,0 +1,96 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog News & Facebook Algo Update</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .news-container {
+    margin-bottom: 30px;
+  }
+  .news-item {
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .news-item:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  .news-date {
+    color: #999;
+  }
+  .content-time {
+    font-size: 16px;
+    color: #333;
+  }
+</style>
+<script>
+  // Simple function to simulate content time
+  function simulateContentTime() {
+    const contentTime = new Date();
+    const hours = contentTime.getHours();
+    const minutes = contentTime.getMinutes();
+    const seconds = contentTime.getSeconds();
+    document.querySelector('.content-time').textContent = hours + ':' + minutes + ':' + seconds;
+  }
+  setInterval(simulateContentTime, 1000);
+</script>
+</head>
+<body>
+  <div class="container">
+    <h1>Blog News & Facebook Algo Update</h1>
+    <div class="news-container">
+      <h2>Blog News</h2>
+      <div class="news-item">
+        <h3>Blog Post Title</h3>
+        <p>Blog post content goes here. This is a great time to talk about the latest in technology, social media, and everything in between.</p>
+        <span class="news-date">Date: 07/04/2024</span>
+      </div>
+      <div class="news-item">
+        <h3>Another Blog Post</h3>
+        <p>More content here. Discuss the importance of timely and engaging content for your blog.</p>
+        <span class="news-date">Date: 06/04/2024</span>
+      </div>
+    </div>
+    <div class="news-container">
+      <h2>Facebook Algo Update</h2>
+      <div class="news-item">
+        <h3>Facebook Algorithm Change</h3>
+        <p>Discuss the recent update to the Facebook algorithm and how it affects content distribution.</p>
+        <span class="news-date">Date: 05/04/2024</span>
+      </div>
+      <div class="news-item">
+        <h3>Impact on Engagement</h3>
+        <p>Explore the impact of the update on user engagement and what this means for content creators.</p>
+        <span class="news-date">Date: 04/04/2024</span>
+      </div>
+    </div>
+    <div class="content-time">Content Time: </div>
+  </div>
+</body>
+</html>

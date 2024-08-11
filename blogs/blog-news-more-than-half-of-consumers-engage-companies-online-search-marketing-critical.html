@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Online Marketing Boost</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+
+        .content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .keyword-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+        }
+
+        .keyword-item {
+            background-color: #f4f4f4;
+            padding: 0.5rem;
+            margin: 0.5rem;
+            border-radius: 4px;
+            width: 30%;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes backgroundColorChange {
+            0% { background-color: #f9f9f9; }
+            50% { background-color: #e5e5e5; }
+            100% { background-color: #f9f9f9; }
+        }
+
+        .slide-effect {
+            animation: backgroundColorChange 3s ease-in-out infinite;
+        }
+    </style>
+    <script>
+        function toggleKeywordSection(event) {
+            const section = event.target.dataset.target;
+            const keywords = document.querySelector('.keyword-list');
+            const button = event.target;
+
+            if (button.classList.contains('open')) {
+                button.classList.remove('open');
+                keywords.style

@@ -1,0 +1,74 @@
+Here's a simple HTML code snippet with relevant CSS and JavaScript to showcase a short video case study about Experian B2B insights. You can replace the `video-source-url.mp4` with the actual video URL for the Experian video.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experian B2B Insights Case Study</title>
+    <style>
+        /* CSS styles */
+        .case-study-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .case-study-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-pause-btn {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .play-pause-btn:hover {
+            background-color: #e0e0e0;
+        }
+
+        .play-btn {
+            display: none;
+        }
+
+        .pause-btn {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="case-study-container">
+        <video id="experian-video" src="video-source-url.mp4" controls></video>
+    </div>
+
+    <button class="play-pause-btn" onclick="togglePlayPause('experian-video')">
+        <span id="play-btn">Play</span>
+        <span id="pause-btn">Pause</span>
+    </button>
+
+    <script>
+        // JavaScript to handle play/pause functionality
+        function togglePlayPause(videoId) {
+            const videoElement = document.getElementById(videoId);
+            const playBtn = document.getElementById('play-btn');
+            const pauseBtn = document.getElementById('pause-btn');
+
+            if (videoElement.paused) {
+                videoElement.play();
+                playBtn.textContent

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension Parity in Old Irish Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .case-study {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .toggle-button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Case Studies on Pension Parity in Old Irish Life</h1>
+
+    <div class="case-study">
+        <h2>Understanding Pension Parity</h2>
+        <p>Pension parity is crucial for ensuring fair retirement benefits for all individuals, regardless of their background. In the context of Old Irish life, it reflects on how historical practices influenced current policies.</p>
+        <button class="toggle-button" onclick="toggleDetails('parity-details')">Read More</button>
+        <div id="parity-details" class="details">
+            <p>Historically, various communities in Ireland faced disparities in their pension structures, leading to unequal treatment. Recent reforms aim to address these historical injustices ensuring everyone receives equal benefits.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2>The Role of Ice Cream in Old Irish Culture</h2>
+        <p>Ice cream has been a beloved treat in Irish life, symbolizing joy and community. It also serves as a metaphor for the sweet rewards of fair pension practices.</p>
+        <button class="toggle-button" onclick="toggleDetails('icecream-details')">Read More</button>
+        <div id="icecream-details" class="details">
+            <p>In communities, sharing ice cream became an act of sharing joy, akin to the sharing of resources such as pensions. Equality in access to such simple pleasures reflects broader societal values.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

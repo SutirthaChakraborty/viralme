@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Marketing News Roundup - June 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            background: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Internet Marketing News Roundup - June 1</h1>
+</header>
+
+<article>
+    <h2>Latest Trends in SEO</h2>
+    <p>Discover the latest strategies in SEO that can help boost your website's visibility and traffic.</p>
+    <button onclick="toggleContent('seo-content')">Read More</button>
+    <div id="seo-content" class="toggle-content">
+        <p>In June, experts are focusing on optimizing for voice search and mobile-first indexing. Implementing structured data can also enhance your search presence.</p>
+    </div>
+</article>
+
+<article>
+    <h2>Email Marketing Innovations</h2>
+    <p>Explore new tools and techniques in email marketing that can enhance engagement and conversion rates.</p>
+    <button onclick="toggleContent('email-content')">Read More</button>
+    <div id="email-content" class="toggle-content">
+        <p>Utilizing AI for personalized email campaigns is on the rise. Marketers are also leveraging automation to streamline their outreach efforts.</p>
+    </div>
+</article>
+
+<article>
+    <h2>Social Media Strategies</h2>
+    <p>Learn about the evolving landscape of social media marketing and how to stay ahead.</p>
+    <button onclick="toggleContent('social-content')">Read More</button>
+    <div id="social-content" class="toggle-content">
+        <p>Video content continues to dominate social media. Brands are encouraged to create engaging short-form videos to capture audience attention.</p>
+    </div>
+</article>
+
+<script>
+    function toggleContent(contentId) {
+        const content = document.getElementById(contentId);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

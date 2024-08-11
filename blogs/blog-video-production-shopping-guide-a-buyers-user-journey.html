@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog: Video Production Shopping Guide - A Buyer's Journey</title>
+  <style>
+    /* CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+    .card {
+      width: 45%;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .card-header {
+      background-color: #333;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #ff5e36;
+    }
+  </style>
+  <script>
+    // JavaScript (interactivity)
+    function toggleDetails(card) {
+      if (card.classList.contains("show-details")) {
+        card.classList.remove("show-details");
+        card.querySelector(".details").style.maxHeight = "0";
+      } else {
+        card.classList.add("show-details");
+        var contentHeight = card.querySelector(".details > p").offsetHeight;
+        card.querySelector(".details").style.maxHeight = `${contentHeight}px`;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Blog: <span class="keyword">Video Production</span> Shopping Guide - A <span class="keyword">Buyer's Journey</span></h1>
+  </header>
+  <div class

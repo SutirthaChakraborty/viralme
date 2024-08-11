@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive guide to repurposing blog content into various formats. Learn how to maximize your content's reach and engagement.">
+    <title>Guide to Repurposing Content | Blog Content Writing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content-type {
+            border: 2px solid #007BFF;
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .content-type:hover {
+            transform: scale(1.05);
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Content Writing: A Guide to Repurposing 5 Different Content Types</h1>
+        <p>Maximize your content's potential by effectively repurposing it! Here’s a quick guide on transforming five different types of content.</p>
+        
+        <div class="content-type" onclick="toggleDetails('blogPost')">
+            <h2>1. Blog Posts</h2>
+            <p>Transform your informative blog posts into engaging videos or podcasts.</p>
+        </div>
+        <div id="blogPost" style="display:none;">
+            <p>Summarize key points and create visually appealing video presentations.</p>
+        </div>
+
+        <div class="content-type" onclick="toggleDetails('socialMedia')">
+            <h2>2. Social Media Posts</h2>
+            <p>Compile your social media content into a comprehensive eBook or whitepaper.</p>
+        </div>
+        <div id="socialMedia" style="display:none;">
+            <p>Use hashtags and insights from your posts to create a richer narrative.</p>
+        </div>
+
+        <div class="content-type" onclick="toggleDetails('infographics')">
+            <h2>3. Infographics</h2>
+            <p>Convert data-heavy infographics into informative blog articles or slideshows.</p>
+        </div>
+        <div id="infographics" style="display:none;">
+            <p>Expand on visual data with detailed explanations to reach a broader audience.</p>
+        </div>
+
+        <div class="content-type" onclick="toggleDetails('videos')">
+            <h2>4. Videos</h2>
+            <p>Break down video content into written guides or step-by-step tutorials.</p>
+        </div>
+        <div id="videos" style="display:none;">
+            <p>Embed shorter clips into your blog for enhanced viewer engagement.</p>
+        </div>
+
+        <div class="content-type" onclick="toggleDetails('podcasts')">
+            <h2>5. Podcasts</h2>
+            <p>Transcribe podcast episodes into articles or create highlight reels.</p>
+        </div>
+        <div id="podcasts" style="display:none;">
+            <p>Offer value through written summaries and links to full episodes.</p>
+        </div>
+        
+        <button onclick="alert('Start repurposing your content now!')">Get Started!</button>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

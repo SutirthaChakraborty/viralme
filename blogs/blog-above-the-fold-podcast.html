@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog Above the Fold Podcast</title>
+<style>
+/* Use useful keywords for better SEO */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+header {
+  background-color: #ebedf2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.blog-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subscribe {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  text-align: right;
+  cursor: pointer;
+}
+
+.modal-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .blog-title {
+    font-size: 24px;
+  }
+}
+</style>
+<script>
+// Interactive CSS and JS for modal
+
+window.addEventListener('DOMContentLoaded', () => {
+  const subscribeLink = document.querySelector('.subscribe');
+  const modal = document.querySelector('.modal');
+  const modalContent = document.querySelector

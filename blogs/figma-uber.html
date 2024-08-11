@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma & Uber: Revolutionizing Design and Mobility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle-details {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Figma & Uber: A Design Perspective</h1>
+    </header>
+    <section>
+        <h2>About Figma</h2>
+        <p>Figma is a cloud-based design tool that brings designers together to create user interfaces and prototypes.</p>
+        <button class="toggle-details">Learn More</button>
+        <div class="details">
+            <p>With real-time collaboration features, Figma enables teams to design with efficiency, enhancing workflow in product development.</p>
+        </div>
+    </section>
+    <section>
+        <h2>About Uber</h2>
+        <p>Uber is a ride-hailing service that has transformed urban transportation through its innovative app.</p>
+        <button class="toggle-details">Learn More</button>
+        <div class="details">
+            <p>Uber's user-centric design focuses on seamless user experience, setting standards in mobility solutions worldwide.</p>
+        </div>
+    </section>
+    <script>
+        const buttons = document.querySelectorAll('.toggle-details');
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                details.style.display = details.style.display === 'none' || details.style.display === '' ? 'block' : 'none';
+                this.textContent = details.style.display === 'block' ? 'Show Less' : 'Learn More';
+            });
+        });
+    </script>
+</body>
+</html>

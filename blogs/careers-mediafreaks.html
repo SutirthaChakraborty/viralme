@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MediaFreaks Careers</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.header h1 {
+			margin: 0;
+		}
+		
+		.content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+		}
+		
+		.topic {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ddd;
+			margin-bottom: 20px;
+		}
+		
+		.topic h2 {
+			margin-top: 0;
+		}
+		
+		.topic p {
+			margin-bottom: 10px;
+		}
+		
+		.topic ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.topic li {
+			margin-bottom: 10px;
+		}
+		
+		.topic li::before {
+			content: "\25A0";
+			margin-right: 10px;
+		}
+		
+		.interactive {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ddd;
+			margin-bottom: 20px;
+		}
+		
+		.interactive input[type="checkbox"] {
+			margin-right: 10px;
+		}
+		
+		.interactive label {
+			cursor: pointer;
+		}
+		
+		.interactive label:hover {
+			color: #666;
+		}
+		
+		.interactive select {
+			margin-right: 10px;
+			width: 150px;
+		}
+		
+		.interactive button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.interactive button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>MediaFreaks Careers</h1>
+	</div>
+	<div class="content">
+		<div class="topic">
+			<h2>What is MediaFreaks?</h2>
+			<p>MediaFreaks is a leading digital media company that offers a range of careers in media production, advertising, and marketing.</p>
+			<ul>
+				<li>Media Production: We produce high-quality video and audio content for clients across various industries.</li>
+				<li>Advertising: Our team of experts creates effective ad campaigns that drive results for our clients.</li>
+				<li>Marketing: We help businesses develop and implement successful marketing strategies.</li>
+			</ul>
+		</div>
+		<div class="topic">
+			<h2>Available Careers at MediaFreaks</h2>
+			<p>We offer a range of exciting careers across our media production, advertising, and marketing divisions.</p>
+			<ul>
+				<li>Producer: Oversee the production of media content, from concept to delivery.</li>
+				<li>Copywriter: Write compelling copy for ads and marketing materials.</li>
+				<li>Designer: Create visually stunning designs for our clients' marketing campaigns.</li>
+				<li>Account Manager: Manage client relationships and develop marketing strategies.</li>
+			</ul>
+		</div>
+		<div class="interactive">
+			<h2>Interactive Career Quiz</h2>
+			<p>Take our interactive quiz to discover which MediaFreaks career is best suited for you!</p>
+			<form>
+				<label>
+					<input type="checkbox" name="media_production" value="media_production">
+					I'm interested in media production
+				</label>
+				<label>
+					<input type="checkbox" name="advertising" value="advertising">
+					I'm interested in advertising
+				</label>
+				<label>
+					<input type="checkbox" name="marketing" value="marketing">
+					I'm interested in marketing
+				</label>
+				<select>
+					<option value="beginner">Beginner</option>
+					<option value="intermediate">Intermediate</option>
+					<option value="advanced">Advanced</option>
+				</select>
+				<button>Take the Quiz!</button>
+			</form>
+			<script>
+				const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+				const select = document.querySelector('select');
+				const button = document.querySelector('button');
+				button.addEventListener('click', () => {
+					const selectedOptions = [];
+					checkboxes.forEach((checkbox) => {
+						if (checkbox.checked) {
+							selectedOptions.push(checkbox.value);
+						}
+					});
+					const level = select.value;
+					alert(`You're interested in ${selectedOptions.join(', ')} and your level of experience is ${level}!`);
+				});
+			</script>
+		</div>
+	</div>
+</body>
+</html>
+
+
+Keywords: MediaFreaks, careers, media production, advertising, marketing, interactive quiz, digital media company, job opportunities.

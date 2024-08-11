@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Which Drone Do You Use?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f8;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .faq-section {
+            max-width: 600px;
+            margin: auto;
+        }
+        .faq {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .faq:hover {
+            background: #eef;
+        }
+        .answer {
+            display: none;
+            padding-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-section">
+    <h1>Frequently Asked Questions (FAQ)</h1>
+    <div class="faq">
+        <h2>What drone do you use for aerial photography?</h2>
+        <div class="answer">
+            <p>We use the DJI Phantom 4 for aerial photography due to its excellent camera quality and stability. It's perfect for capturing high-resolution images and videos from the sky.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <h2>Which drone is best for surveying?</h2>
+        <div class="answer">
+            <p>The senseFly eBee X is our go-to drone for surveying tasks. It offers precision and a variety of camera options tailored for geospatial mapping and analysis.</p>
+        </div>
+    </div>
+    <div class="faq">
+        <h2>How do you choose the right drone for your project?</h2>
+        <div class="answer">
+            <p>We consider factors like required camera quality, flight time, range, and specific project needs. Each drone serves unique purposes based on the client's objectives.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq').forEach(faq => {
+        faq.addEventListener('click', () => {
+            const answer = faq.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Alex: Analyst Turned Creative Marketing Writer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keywords {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meet Alex</h1>
+    <p>From Analyst to Creative Marketing Writer</p>
+</header>
+
+<section>
+    <h2>About Alex</h2>
+    <p>Alex is a passionate <span class="keywords">content marketer</span> who transitioned from a data-driven analyst role to a creative marketing writer. With a strong foundation in analytics, Alex leverages data to craft compelling narratives that resonate with audiences.</p>
+</section>
+
+<section>
+    <h2>Career Journey</h2>
+    <p>Starting as an analyst, Alex honed skills in <span class="keywords">data analysis</span> and <span class="keywords">digital marketing</span>. This unique blend of skills allows Alex to create content that is not only engaging but also optimized for search engines.</p>
+</section>
+
+<section>
+    <h2>Interactive Insights</h2>
+    <button onclick="showInsight()">Click for a Marketing Insight</button>
+    <p id="insight" style="display:none;">Effective content marketing combines storytelling with data analysis to drive engagement and conversions.</p>
+</section>
+
+<script>
+    function showInsight() {
+        var insight = document.getElementById("insight");
+        if (insight.style.display === "none") {
+            insight.style.display = "block";
+        } else {
+            insight.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

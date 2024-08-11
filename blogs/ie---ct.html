@@ -1,0 +1,82 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IE (Inspiration and Exploration) in Web Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #e2e2e2;
+            border-radius: 5px;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .keyword-list {
+            list-style-type: circle;
+            line-height: 1.5;
+        }
+
+        .keyword-description {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #32cd32;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2abb7a;
+        }
+
+        .popup {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #e2e2e2;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .popup:after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -6px;
+            border: 6px solid transparent;
+            border-bottom-color: #ffffff;
+            width: 0;
+            height: 0;
+            z-index: 1;
+        }
+
+        .popup-open & {

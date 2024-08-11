@@ -1,0 +1,75 @@
+To generate the desired HTML code with CSS and a simple JavaScript example for an interactive search functionality, please see the code below. I'll include the relevant keywords and inline CSS for a clean look.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News - Retail Search Trend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .search-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .search-results {
+            border-top: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .search-result {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function searchContent keyword {
+            const input = document.getElementById('search-input');
+            const searchResults = document.getElementById('search-results');
+            
+            const filter = input.value.toLowerCase();
+            const elements = searchResults.querySelectorAll('.search-result');
+
+            elements.forEach(element => {
+                const txt = element.textContent.toLowerCase();
+                if (txt.includes(filter)) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blog News: 49% of Consumers Use Search to Find Retailers</h1>
+    </header>
+
+    <section class="search-container">
+        <input type="text" id="search-input" placeholder="Search for retail trends using relevant keywords" onkeyup="searchContent(event)">
+        <button onclick="searchContent('keyword')">Search</button>
+    </section>
+
+    <section id="search-results" class="search-results">
+        <div class="search-result">
+            <a href="#">Optimize your online store with SEO

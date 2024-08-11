@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #0073e6;
+            color: white;
+        }
+        .glossary {
+            margin: 20px 0;
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .term {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px 0;
+            background: #e2e2e2;
+            border-radius: 5px;
+        }
+        .definition {
+            display: none;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 5px solid #0073e6;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Email Marketing Glossary</h1>
+</header>
+
+<div class="glossary">
+    <div class="term" onclick="toggleDefinition('def1')">
+        <strong>Open Rate</strong>
+    </div>
+    <div id="def1" class="definition">
+        The percentage of email recipients who open a particular email. A key metric in email marketing.
+    </div>
+
+    <div class="term" onclick="toggleDefinition('def2')">
+        <strong>Click-Through Rate (CTR)</strong>
+    </div>
+    <div id="def2" class="definition">
+        The percentage of email recipients who click on one or more links in the email. Vital for measuring engagement.
+    </div>
+
+    <div class="term" onclick="toggleDefinition('def3')">
+        <strong>Bounce Rate</strong>
+    </div>
+    <div id="def3" class="definition">
+        The percentage of emails that cannot be delivered to the recipient's inbox. Important for maintaining list quality.
+    </div>
+
+    <div class="term" onclick="toggleDefinition('def4')">
+        <strong>Segmentation</strong>
+    </div>
+    <div id="def4" class="definition">
+        The process of dividing an email list into smaller segments based on certain criteria to enhance targeting.
+    </div>
+
+    <div class="term" onclick="toggleDefinition('def5')">
+        <strong>A/B Testing</strong>
+    </div>
+    <div id="def5" class="definition">
+        A method of comparing two versions of an email to see which performs better in terms of opens or clicks.
+    </div>
+</div>
+
+<script>
+    function toggleDefinition(id) {
+        var definition = document.getElementById(id);
+        if (definition.style.display === "none" || definition.style.display === "") {
+            definition.style.display = "block";
+        } else {
+            definition.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

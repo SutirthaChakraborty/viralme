@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Construction Photography | LUAS Cross City</title>
+    <meta name="description" content="Explore civil construction photography showcasing the LUAS Cross City project in Dublin. Discover stunning images and insights on urban infrastructure development.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .image-container {
+            position: relative;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        .caption {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 3px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Civil Construction Photography: LUAS Cross City</h1>
+    <p>Discover the extensive civil construction works within the LUAS Cross City project, a transformative urban rail system in Dublin.</p>
+    
+    <div class="gallery">
+        <div class="image-container">
+            <img src="image1.jpg" alt="Construction work at LUAS Cross City">
+            <div class="caption">Excavation Site</div>
+        </div>
+        <div class="image-container">
+            <img src="image2.jpg" alt="Bridge installation for LUAS">
+            <div class="caption">Bridge Installation</div>
+        </div>
+        <div class="image-container">
+            <img src="image3.jpg" alt="Workers at LUAS Cross City">
+            <div class="caption">Dedicated Workforce</div>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <button onclick="alert('Explore more about LUAS Cross City and its impact on urban mobility!')">Learn More</button>
+
+    <script>
+        // Example interactive JS
+        document.querySelectorAll('.image-container').forEach(function(container) {
+            container.addEventListener('click', function() {
+                alert('You clicked on an image related to LUAS Cross City construction!');
+            });
+        });
+    </script>
+</body>
+</html>

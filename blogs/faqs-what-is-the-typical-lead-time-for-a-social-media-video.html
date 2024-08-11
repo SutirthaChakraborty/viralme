@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Video Lead Time FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .question {
+            background-color: #e0e0e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 45%;
+        }
+        .question h3 {
+            margin-top: 0;
+        }
+        .answer {
+            background-color: #ffffff;
+            padding: 15px;
+            width: 45%;
+        }
+        .answer p {
+            margin-top: 5px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function showAnswer(questionIndex) {
+            var questions = document.getElementsByClassName("question");
+            var answers = document.getElementsByClassName("answer");
+            questions[questionIndex].style.display = "none";
+            answers[questionIndex].style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="question" onclick="showAnswer(0)">
+            <h3>Question 1</h3>
+            <p>What is a typical lead time for creating and publishing a social media video?</p>
+            <a href="#answer1" onclick="return false;">Show Answer</a>
+        </div>
+        <div class="answer" id="answer1" style="display: none;">
+            <p>The lead time can range from a few hours to several days, depending on factors like content creation, editing, review, and platform approval processes.</p>
+        </div>
+
+        <div class="question" onclick="showAnswer(1)">
+            <h3>Question 2</h3>
+            <p>How to optimize video content for better

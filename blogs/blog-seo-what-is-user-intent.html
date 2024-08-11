@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog SEO: Understanding User Intent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 5px solid #0073e6;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog SEO: What is User Intent?</h1>
+    </header>
+    <article>
+        <h2>Understanding User Intent</h2>
+        <p>User intent refers to the purpose behind a user's search query. It is crucial for effective <span class="keyword">SEO</span> and content strategy.</p>
+        <h3>Types of User Intent</h3>
+        <ul>
+            <li><span class="keyword">Informational</span>: Seeking information or answers.</li>
+            <li><span class="keyword">Navigational</span>: Looking for a specific website or page.</li>
+            <li><span class="keyword">Transactional</span>: Ready to make a purchase or complete a transaction.</li>
+        </ul>
+        <div class="interactive">
+            <h4>Discover Your Intent!</h4>
+            <button onclick="showIntent()">Click to Reveal User Intent!</button>
+            <p id="intentResult"></p>
+        </div>
+    </article>
+    <script>
+        function showIntent() {
+            const intents = [
+                "Informational: You want to learn something new.",
+                "Navigational: You are looking for a particular website.",
+                "Transactional: You are ready to buy a product."
+            ];
+            const randomIntent = intents[Math.floor(Math.random() * intents.length)];
+            document.getElementById("intentResult").innerText = randomIntent;
+        }
+    </script>
+</body>
+</html>

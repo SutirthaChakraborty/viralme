@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of External Linking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .glossary-term {
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            border-left: 5px solid #0056b3;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .glossary-term:hover {
+            background-color: #e9ecef;
+        }
+        .description {
+            display: none;
+            padding: 10px;
+            background: #e9ecef;
+            margin-top: 5px;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Glossary of External Linking</h1>
+    <p>Understanding external linking is crucial for effective SEO, website navigation, and user experience. Below are key terms related to external linking:</p>
+    
+    <div class="glossary-term" onclick="toggleDescription('term1')">1. External Link</div>
+    <div class="description" id="term1">An external link is a hyperlink that points to a domain other than the one hosting the webpage.</div>
+    
+    <div class="glossary-term" onclick="toggleDescription('term2')">2. Backlink</div>
+    <div class="description" id="term2">A backlink is a link from another site to your site, often regarded as a vote of confidence that can improve your site's SEO.</div>
+
+    <div class="glossary-term" onclick="toggleDescription('term3')">3. Anchor Text</div>
+    <div class="description" id="term3">Anchor text is the clickable text in a hyperlink, which tells users and search engines what the link is about.</div>
+
+    <div class="glossary-term" onclick="toggleDescription('term4')">4. NoFollow Link</div>
+    <div class="description" id="term4">A nofollow link is an HTML attribute that indicates to search engines not to pass authority or ranking credit to the linked site.</div>
+
+    <div class="glossary-term" onclick="toggleDescription('term5')">5. Outbound Link</div>
+    <div class="description" id="term5">Outbound links direct users from your site to another site, often used to provide additional resources or references.</div>
+
+    <script>
+        function toggleDescription(termId) {
+            const description = document.getElementById(termId);
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

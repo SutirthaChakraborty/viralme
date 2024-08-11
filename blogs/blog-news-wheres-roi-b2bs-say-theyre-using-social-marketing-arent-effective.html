@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: ROI of B2B Social Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0066cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            color: #0066cc;
+        }
+        button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0057a3;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9f5ff;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>B2B Social Marketing: Are You Getting the ROI?</h1>
+    </header>
+    <article>
+        <h2>Understanding the Challenge</h2>
+        <p>Many B2B enterprises claim to leverage social marketing, yet a significant number report that their efforts are ineffective. This raises questions about strategy, engagement, and measurement.</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="additionalInfo">
+            <p>Research indicates that without clear objectives and proper tracking systems, B2B companies struggle to quantify their ROI in social marketing. Key components for effectiveness include targeted campaigns, audience engagement, and analytics tools.</p>
+        </div>
+    </article>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('additionalInfo');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

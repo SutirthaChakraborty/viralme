@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Marketing Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .post:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mobile Marketing Insights</h1>
+        <nav>
+            <a href="#latest">Latest News</a>
+            <a href="#trends">Trends</a>
+            <a href="#tips">Tips</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="latest">
+            <h2>Latest News in Mobile Marketing</h2>
+            <div class="post">
+                <h3>Understanding Mobile User Behavior</h3>
+                <p>Recent studies show that mobile users prefer personalized content. Tailoring your marketing strategies can significantly enhance engagement.</p>
+            </div>
+            <div class="post">
+                <h3>Top Mobile Marketing Trends for 2024</h3>
+                <p>With the rise of AI and machine learning, marketers are leveraging data analytics to optimize campaigns and improve ROI.</p>
+            </div>
+        </section>
+        <section id="trends">
+            <h2>Current Trends</h2>
+            <div class="post">
+                <h3>Video Content Dominance</h3>
+                <p>Video marketing continues to dominate mobile platforms, with short-form videos gaining immense popularity among users.</p>
+            </div>
+        </section>
+        <section id="tips">
+            <h2>Marketing Tips</h2>
+            <div class="post">
+                <h3>Optimize for Mobile SEO</h3>
+                <p>Ensure your website is mobile-friendly to improve search rankings and user experience. Focus on fast loading times and responsive design.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Mobile Marketing Blog. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

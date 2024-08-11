@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: What is an Overlay in Video Editing?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .video-container:hover .overlay {
+            opacity: 1;
+        }
+        .faq {
+            margin-top: 20px;
+        }
+        .faq p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FAQ: What is an Overlay in Video Editing?</h1>
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="your-video-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+                <h2>Overlay Explanation</h2>
+            </div>
+        </div>
+        <div class="faq">
+            <p><strong>What is an overlay?</strong></p>
+            <p>An overlay in video editing is a visual element that is placed over the main video content. It can be used for various purposes, such as adding text, graphics, or effects to enhance the viewer's experience.</p>
+            <p><strong>Why use overlays?</strong></p>
+            <p>Overlays improve readability, provide context, and can help to hide minor artifacts in the video. They are essential for creating engaging and informative video content.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.overlay').addEventListener('mouseover', function() {
+            this.style.opacity = '1';
+        });
+        document.querySelector('.overlay').addEventListener('mouseout', function() {
+            this.style.opacity = '0';
+        });
+    </script>
+</body>
+</html>

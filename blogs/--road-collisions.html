@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Collisions Awareness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle-info {
+            cursor: pointer;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Road Collisions Awareness</h1>
+</header>
+
+<section>
+    <h2>Understanding Road Collisions</h2>
+    <p>Road collisions are unexpected incidents involving vehicles that can lead to injuries, fatalities, and property damage.</p>
+    <span class="toggle-info" onclick="toggleInfo('info1')">Read More</span>
+    <div id="info1" class="info">
+        <p>Common causes include distracted driving, speeding, and driving under the influence. Awareness and education can help reduce the occurrence of such incidents.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Statistics & Impact</h2>
+    <p>Every year, millions of people are involved in road collisions. Understanding these statistics helps in promoting safer driving habits.</p>
+    <span class="toggle-info" onclick="toggleInfo('info2')">Read More</span>
+    <div id="info2" class="info">
+        <p>According to the World Health Organization, approximately 1.35 million people die each year as a result of road traffic crashes.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Safety Tips</h2>
+    <p>Implementing safety measures can significantly reduce the risk of road collisions. Follow these tips to stay safe on the road.</p>
+    <span class="toggle-info" onclick="toggleInfo('info3')">Read More</span>
+    <div id="info3" class="info">
+        <p>Always wear a seatbelt, avoid using your phone while driving, and obey speed limits. Regular vehicle maintenance also plays a crucial role in road safety.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Road Safety Awareness. Stay safe on the roads!</p>
+</footer>
+
+<script>
+    function toggleInfo(infoId) {
+        const infoElement = document.getElementById(infoId);
+        if (infoElement.style.display === "none" || infoElement.style.display === "") {
+            infoElement.style.display = "block";
+        } else {
+            infoElement.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

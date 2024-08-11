@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #005bb5;
+        }
+        .questionnaire {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Legacy Content Questionnaire</h1>
+    <p>Inspired by Joe Pulizzi and the Content Marketing Institute, this questionnaire is designed to help you evaluate your blog's legacy content for optimization and repurposing.</p>
+    <button class="btn" onclick="toggleQuestionnaire()">Start Your Questionnaire</button>
+    
+    <div class="questionnaire" id="questionnaire">
+        <h2>Questions</h2>
+        <ol>
+            <li>What are your top-performing posts from the last year?</li>
+            <li>Which posts align with your current business objectives?</li>
+            <li>How can you update or expand these posts?</li>
+            <li>Are there opportunities for creating multimedia content from written posts?</li>
+            <li>Which legacy content can still drive traffic and leads?</li>
+        </ol>
+        <p>Review these questions to identify valuable legacy content for future marketing efforts!</p>
+    </div>
+</div>
+
+<script>
+    function toggleQuestionnaire() {
+        const questionnaire = document.getElementById('questionnaire');
+        questionnaire.style.display = (questionnaire.style.display === 'none' || questionnaire.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

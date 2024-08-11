@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Brands Fail Without Video Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .reason {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background-color: #d5dbdb;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>3 Reasons Why Brands Fail Without Video Content</h1>
+        <div class="reason" onclick="toggleDetails(1)">
+            1. Poor Engagement
+            <div class="details" id="details1">Video content increases engagement rates by up to 1200%. Brands that skip video miss out on captivating their audience.</div>
+        </div>
+        <div class="reason" onclick="toggleDetails(2)">
+            2. Low Conversion Rates
+            <div class="details" id="details2">Websites with video content can expect conversion rates to improve by 80%. Without video, brands struggle to convert visitors into customers.</div>
+        </div>
+        <div class="reason" onclick="toggleDetails(3)">
+            3. Limited Brand Storytelling
+            <div class="details" id="details3">Video allows brands to tell stories visually, connecting emotionally with their audience. Brands lacking video miss the chance to build a strong narrative.</div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById("details" + id);
+            details.style.display = (details.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

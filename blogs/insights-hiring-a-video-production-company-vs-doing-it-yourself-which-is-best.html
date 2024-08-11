@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiring a Video Production Company vs DIY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Production: Hire vs DIY</h1>
+        <button class="toggle-button" onclick="toggleContent('hire')">Hiring a Video Production Company</button>
+        <div id="hire" class="content">
+            <p>Benefits of hiring a professional video production company include:</p>
+            <ul>
+                <li>High-quality production value</li>
+                <li>Expertise in storytelling and editing</li>
+                <li>Access to professional equipment</li>
+                <li>Time-saving for businesses</li>
+                <li>Creative insights and marketing strategies</li>
+            </ul>
+        </div>
+
+        <button class="toggle-button" onclick="toggleContent('diy')">Doing It Yourself (DIY)</button>
+        <div id="diy" class="content">
+            <p>Advantages of the DIY approach include:</p>
+            <ul>
+                <li>More control over the content</li>
+                <li>Cost-effective for small projects</li>
+                <li>Flexibility in production scheduling</li>
+                <li>Opportunity to learn new skills</li>
+                <li>Personal touch in storytelling</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('visible');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebooks Content Goals & Engagement</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #008080;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.content p {
+    margin-bottom: 10px;
+}
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.content ul li {
+    margin-bottom: 10px;
+}
+.btn {
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.btn:hover {
+    background-color: #333;
+}
+</style>
+<script>
+function toggleContent() {
+    var content = document.getElementById('content');
+    if (content.style.display == 'block') {
+        content.style.display = 'none';
+    } else {
+        content.style.display = 'block';
+    }
+}
+</script>
+</head>
+<body>
+<header>
+    <h1>Ebooks Content Goals & Engagement</h1>
+</header>
+<nav>
+    <a href="#" onclick="toggleContent(); return false;">Toggle Content</a>
+</nav>
+<div class="container">
+    <div class="content" id="content" style="display: none;">
+        <h2>Ebooks Content Goals</h2>
+        <p>Ebooks content goals involve crafting engaging and informative content that not only captures the reader's attention but also encourages them to read the entire book. This includes:</p>
+        <ul>
+            <li>Providing clear and concise summaries of chapters to give readers a preview of what's to come.</li>
+            <li>Incorporating interactive elements such as quizzes or interactive maps to enhance reader engagement.</li>
+            <li>Using visuals such as diagrams or charts to illustrate complex concepts.</li>
+            <li>Offering a seamless reading experience across different devices.</li>
+        </ul>
+        <h2>Engagement</h2>
+        <p>Engagement strategies for ebooks can include:</p>
+        <ul>
+            <li>Encouraging readers to leave reviews or share their thoughts on social media.</li>
+            <li>Offering exclusive content or behind-the-scenes insights to reward readers who engage with the ebook.</li>
+            <li>Hosting virtual book clubs or Q&A sessions with the author.</li>
+        </ul>
+        <a href="#" class="btn" onclick="toggleContent(); return false;">Hide Content</a>
+    </div>
+</div>
+</body>
+</html>

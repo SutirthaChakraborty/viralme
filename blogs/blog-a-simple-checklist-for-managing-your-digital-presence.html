@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Your Digital Presence - Checklist</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        color: #333;
+    }
+    ul {
+        list-style-type: none;
+    }
+    li {
+        background: #fff;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    .checked {
+        text-decoration: line-through;
+        color: #888;
+    }
+</style>
+</head>
+<body>
+
+<h1>Simple Checklist for Managing Your Digital Presence</h1>
+<p>Stay on top of your online identity with this interactive checklist!</p>
+<ul id="checklist">
+    <li><input type="checkbox" onchange="toggleCheck(this)">Optimize your website for SEO</li>
+    <li><input type="checkbox" onchange="toggleCheck(this)">Engage with your audience on social media</li>
+    <li><input type="checkbox" onchange="toggleCheck(this)">Update your online portfolio regularly</li>
+    <li><input type="checkbox" onchange="toggleCheck(this)">Monitor your online reputation</li>
+    <li><input type="checkbox" onchange="toggleCheck(this)">Create quality content consistently</li>
+</ul>
+
+<script>
+    function toggleCheck(checkbox) {
+        if (checkbox.checked) {
+            checkbox.parentElement.classList.add('checked');
+        } else {
+            checkbox.parentElement.classList.remove('checked');
+        }
+    }
+</script>
+
+</body>
+</html>

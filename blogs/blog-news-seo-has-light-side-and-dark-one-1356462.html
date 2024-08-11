@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray; /* Light side */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white; /* Dark side */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode {
+  background-color: darkgray; /* Dark side activated */
+}
+
+.post-title {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.post-excerpt {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Light side */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-mode .read-more {
+  background-color: #34495e; /* Dark side activated */
+}
+
+.active {
+  background-color: #333; /* Dark side activated */
+}
+
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var toggleButton = document.getElementById('toggle-theme');
+
+  toggleButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+    toggleButton.innerText = document.body.classList.contains('dark-mode') ? 'Light Side' : 'Dark Side';
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+  <h1 class="post-title">SEO Blog News: Exploring the Light and Dark Sides of Search Optimization</h1>
+  <p class="post-excerpt">In this article, we will delve into the interplay between blog news and SEO, emphasizing the importance of both light and dark aspects for better reach and visibility. Keywords: <span id="keywords">blog optimization, on-page SEO, content strategy, technical SEO, user experience, light-side SEO, dark-side SEO</span>.</p>
+  <a href="#" class="read-more active">Read More</a>
+</div>
+
+<button id="toggle-theme">Dark Side</button>
+</body>
+</html>
+</plaintext>
+</椴>

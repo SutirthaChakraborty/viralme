@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the 5 most glorious marketing screw-ups of all time and learn valuable lessons for blog creation.">
+    <title>5 Most Glorious Marketing Screw-Ups</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .screw-up {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .screw-up:hover {
+            background: #eaeaea;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 3px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>5 Most Glorious Marketing Screw-Ups</h1>
+    </header>
+    <section>
+        <h2>Learn from the Mistakes</h2>
+        <div class="screw-up" onclick="toggleDetails('detail1')">
+            <strong>1. New Coke</strong>
+            <div id="detail1" class="details">In 1985, Coca-Cola introduced a new formula that was met with public outrage, leading to its quick withdrawal.</div>
+        </div>
+        <div class="screw-up" onclick="toggleDetails('detail2')">
+            <strong>2. Pepsi's Kendall Jenner Ad</strong>
+            <div id="detail2" class="details">This ad was criticized for trivializing social justice movements, leading to a public backlash.</div>
+        </div>
+        <div class="screw-up" onclick="toggleDetails('detail3')">
+            <strong>3. McDonald's "I'm Lovin' It" Campaign in China</strong>
+            <div id="detail3" class="details">The campaign was poorly received due to cultural misunderstandings, resulting in negative publicity.</div>
+        </div>
+        <div class="screw-up" onclick="toggleDetails('detail4')">
+            <strong>4. Gap's Logo Redesign</strong>
+            <div id="detail4" class="details">In 2010, Gap's new logo was met with such backlash that they reverted to the old design within a week.</div>
+        </div>
+        <div class="screw-up" onclick="toggleDetails('detail5')">
+            <strong>5. Ford Edsel</strong>
+            <div id="detail5" class="details">The Edsel was a commercial failure due to its poor marketing and design, becoming a symbol of failure in the auto industry.</div>
+        </div>
+    </section>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

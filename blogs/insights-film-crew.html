@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Film Crew</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d1d1d1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights Film Crew</h1>
+        <p>Exploring the Art of Filmmaking</p>
+    </header>
+    <section>
+        <h2>About the Film Crew</h2>
+        <p>The Insights Film Crew specializes in capturing compelling stories through innovative cinematography and storytelling techniques. Our team consists of talented directors, cinematographers, and editors dedicated to producing high-quality films.</p>
+    </section>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Documentary Filmmaking</li>
+            <li>Corporate Videos</li>
+            <li>Event Coverage</li>
+            <li>Creative Storytelling</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Interactive Insights</h2>
+        <div class="interactive" onclick="showInsight()">Click here to learn about our filmmaking process!</div>
+        <p id="insight" style="display:none;">Our filmmaking process involves pre-production planning, shooting, and post-production editing. We focus on collaboration and creativity to bring each project to life.</p>
+    </section>
+    <script>
+        function showInsight() {
+            var insight = document.getElementById("insight");
+            if (insight.style.display === "none") {
+                insight.style.display = "block";
+            } else {
+                insight.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

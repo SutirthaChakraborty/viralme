@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Bing and Yahoo on New iPhone 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            margin: 15px 0;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f0ff;
+            border-left: 4px solid #004080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bing and Yahoo Promote on New iPhone 4</h1>
+    </header>
+    <div class="container">
+        <p>The release of the <span class="keywords">iPhone 4</span> has sparked significant interest from major players like <span class="keywords">Bing</span> and <span class="keywords">Yahoo</span>. Both tech giants are leveraging the new smartphone to enhance their visibility and user engagement.</p>
+        <p><span class="keywords">Bing</span> is promoting its powerful search capabilities, while <span class="keywords">Yahoo</span> is focusing on its news and entertainment features, both aiming for a seamless mobile experience.</p>
+        <button id="infoBtn">Learn More</button>
+        <div id="info" class="info">
+            <p>Bing's promotion emphasizes <span class="keywords">image search</span> and <span class="keywords">local services</span>, aiming to cater to on-the-go users. Conversely, Yahoo's strategy highlights <span class="keywords">personalized news feeds</span> and comprehensive web services to enhance user engagement.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('infoBtn').onclick = function() {
+            var infoDiv = document.getElementById('info');
+            if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+                infoDiv.style.display = "block";
+            } else {
+                infoDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

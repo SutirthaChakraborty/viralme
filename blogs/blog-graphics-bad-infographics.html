@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Graphics: The Pitfalls of Bad Infographics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .infographic {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .infographic:hover {
+            transform: scale(1.02);
+        }
+        .bad-infographic {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .good-infographic {
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Bad Infographics</h1>
+    <div class="infographic bad-infographic">
+        <h2>Common Mistakes</h2>
+        <ul>
+            <li>Overloading with information</li>
+            <li>Poor color choices</li>
+            <li>Inconsistent fonts</li>
+            <li>Lack of clear hierarchy</li>
+        </ul>
+    </div>
+
+    <div class="infographic good-infographic">
+        <h2>Characteristics of Good Infographics</h2>
+        <ul>
+            <li>Clear and concise information</li>
+            <li>Effective use of visuals</li>
+            <li>Consistent design elements</li>
+            <li>Logical flow of information</li>
+        </ul>
+    </div>
+
+    <button onclick="toggleInfo()">Show More Info</button>
+    <div id="moreInfo" style="display:none;">
+        <h3>Why Infographics Matter</h3>
+        <p>Infographics enhance understanding by simplifying complex data into visual formats. They can engage readers and improve retention of information.</p>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

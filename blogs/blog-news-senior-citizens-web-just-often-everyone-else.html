@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Citizens Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .toggle {
+            cursor: pointer;
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Senior Citizens Blog News</h1>
+    <p>Stay Updated on Topics Relevant to Seniors</p>
+</header>
+
+<div class="content">
+    <h2>Latest News for Senior Citizens</h2>
+    <p id="news">Discover information on healthcare, technology, lifestyle, and community events catered to senior citizens.</p>
+    <button class="toggle" onclick="toggleMoreInfo()">Show More Info</button>
+    <div id="moreInfo" class="hidden">
+        <p>Explore tips on staying active, financial advice, and ways to connect with friends and family online.</p>
+    </div>
+</div>
+
+<script>
+    function toggleMoreInfo() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.classList.contains("hidden")) {
+            moreInfo.classList.remove("hidden");
+        } else {
+            moreInfo.classList.add("hidden");
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+#### HTML Code for Booking a Consultation
+
+Below is a simple HTML code snippet for booking a consultation. The code includes interactive CSS and JavaScript to enhance user experience.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation</title>
+    <style>
+        /* CSS for styling the form */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 300px;
+            background-color: #fff;
+        }
+        input[type="text"], input[type="email"], input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Book a Consultation</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="datetime-local" required><br>
+        <input type="submit" value="Book Now">
+    </form>
+    <script>
+        // JavaScript for handling form submission and validation
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add your form submission logic here
+        });
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a simple form for booking a consultation, with interactive CSS for styling and JavaScript for form submission and validation.

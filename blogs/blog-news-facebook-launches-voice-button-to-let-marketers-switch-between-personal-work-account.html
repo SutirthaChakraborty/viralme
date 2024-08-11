@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Facebook Launches Voice Button for Marketers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5b7fbd;
+        }
+        .voice-button {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            color: #333;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Facebook Marketing News</h1>
+    </header>
+    <article>
+        <h2>Facebook Launches Innovative Voice Button</h2>
+        <p>Facebook has introduced a groundbreaking voice button feature allowing marketers to seamlessly switch between personal and work accounts. This new tool aims to enhance user experience and streamline communications.</p>
+        <button id="toggleVoice">Click here to learn more!</button>
+        <div id="voiceInfo" class="voice-button">
+            <p>This feature empowers marketers to effortlessly manage multiple accounts, improving productivity and focus in campaigns.</p>
+        </div>
+    </article>
+    <script>
+        document.getElementById('toggleVoice').onclick = function() {
+            var voiceInfo = document.getElementById('voiceInfo');
+            if (voiceInfo.style.display === "none" || voiceInfo.style.display === "") {
+                voiceInfo.style.display = "block";
+            } else {
+                voiceInfo.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

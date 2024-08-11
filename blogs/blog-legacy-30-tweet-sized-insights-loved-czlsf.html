@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: 30 Tweet-Sized Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .insight {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .insight:hover {
+            transform: scale(1.05);
+        }
+        .tweet-btn {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tweet-btn:hover {
+            background-color: #0d95e8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog Legacy: 30 Tweet-Sized Insights</h1>
+    
+    <div class="insight">
+        <p>1. "Embrace change; it leads to growth. #BlogLegacy #Insights"</p>
+        <button class="tweet-btn" onclick="tweet('Embrace change; it leads to growth. #BlogLegacy #Insights')">Tweet</button>
+    </div>
+
+    <div class="insight">
+        <p>2. "Consistency is key in blogging. Stay dedicated! #BloggingTips #Insights"</p>
+        <button class="tweet-btn" onclick="tweet('Consistency is key in blogging. Stay dedicated! #BloggingTips #Insights')">Tweet</button>
+    </div>
+
+    <div class="insight">
+        <p>3. "Engagement builds community. Respond to your readers! #CommunityBuilding #Insights"</p>
+        <button class="tweet-btn" onclick="tweet('Engagement builds community. Respond to your readers! #CommunityBuilding #Insights')">Tweet</button>
+    </div>
+
+    <!-- Add more insights as needed -->
+
+    <script>
+        function tweet(phrase) {
+            const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(phrase);
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>

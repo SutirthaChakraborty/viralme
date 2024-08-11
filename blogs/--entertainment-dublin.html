@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment in Dublin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .entertainment-item {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .entertainment-item:hover {
+            transform: scale(1.05);
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #35424a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4b5965;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Entertainment in Dublin</h1>
+    </header>
+    <div class="container">
+        <div class="entertainment-item">
+            <h2>Theatres</h2>
+            <p>Discover Dublin's vibrant theatre scene, including the Abbey Theatre and the Gate Theatre showcasing local and international productions.</p>
+        </div>
+        <div class="entertainment-item">
+            <h2>Live Music</h2>
+            <p>Experience the music culture in places like Whelan's and The Cobblestone, featuring genres from traditional Irish music to modern bands.</p>
+        </div>
+        <div class="entertainment-item">
+            <h2>Cultural Festivals</h2>
+            <p>Join the fun at annual events like the Dublin Fringe Festival and St. Patrick's Festival, celebrating art, culture, and community.</p>
+        </div>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="more-info" style="display:none; margin-top:20px;">
+            <p>Dublin offers a rich array of entertainment options. From historic theatres to lively pubs and diverse festivals, there’s something for everyone.</p>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            const info = document.getElementById('more-info');
+            info.style.display = info.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men and Social Media: The Tweeting Dilemma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .tweet-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1DA1F2;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .tweet-button:hover {
+            background: #0c85d0;
+        }
+        #response {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Social Media Landscape for Men</h1>
+</header>
+
+<article>
+    <h2>Men Get Social Online</h2>
+    <p>Social media is a powerful platform that brings people together. It allows men to connect, share insights, and engage with their peers. However, many men are not keen on tweeting, despite their active presence on platforms like Facebook and Instagram.</p>
+    
+    <h2>The Tweeting Dilemma</h2>
+    <p>Tweeting requires a certain level of engagement and brevity that not all men find appealing. While they enjoy consuming content, creating tweets often feels like an extra effort.</p>
+
+    <button class="tweet-button" onclick="shareTweet()">Share Your Thoughts</button>
+    <div id="response"></div>
+</article>
+
+<script>
+    function shareTweet() {
+        const responseDiv = document.getElementById('response');
+        responseDiv.style.display = 'block';
+        responseDiv.innerHTML = '<p>What do you think about tweeting? Let\'s discuss!</p>';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how Yahoo Mail uses idle time to prioritize inbox messages. Stay updated with the latest blog news.">
+    <title>Yahoo Mail: Using Idle Time to Prioritize Inbox Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #3572b0;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .toggle-details {
+            background-color: #3572b0;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background: #e9f4fe;
+            padding: 10px;
+            border-left: 5px solid #3572b0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yahoo Mail: Optimize Your Inbox</h1>
+    </header>
+    <article>
+        <h2>Use of Idle Time for Prioritization</h2>
+        <p>Yahoo Mail effectively manages your inbox using idle time to prioritize important messages. This innovative approach enhances user experience by ensuring that critical communications are brought to the forefront.</p>
+        <button class="toggle-details">Read More</button>
+        <div class="details">
+            <p>By analyzing your usage patterns, Yahoo Mail shifts your focus onto messages that matter most, ensuring you never miss an important update. This feature not only saves time but also increases productivity, making email management effortless.</p>
+        </div>
+    </article>
+    <footer>
+        <p>&copy; 2023 Blog News - Stay Informed</p>
+    </footer>
+    <script>
+        document.querySelector('.toggle-details').addEventListener('click', function() {
+            const details = document.querySelector('.details');
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            this.textContent = details.style.display === 'block' ? 'Read Less' : 'Read More';
+        });
+    </script>
+</body>
+</html>

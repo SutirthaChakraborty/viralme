@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest in blog content marketing with The Content Marketer Weekly. Enhance your SEO strategies and boost your online presence.">
+    <title>The Content Marketer Weekly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4CAF50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin: 20px 0;
+            padding: 15px;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            display: none;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Content Marketer Weekly</h1>
+</header>
+
+<div class="container">
+    <h2>Your SEO as Busted as Your Bracket?</h2>
+    <p>In the world of content marketing, staying on top of your SEO game is crucial. With The Content Marketer Weekly, you'll get insights on how to optimize your blog, create engaging content, and enhance your online visibility.</p>
+    <p>Join us every week for tips on:</p>
+    <ul>
+        <li>Content Optimization</li>
+        <li>SEO Techniques</li>
+        <li>Engagement Strategies</li>
+        <li>Social Media Marketing</li>
+        <li>Analytics and Insights</li>
+    </ul>
+    
+    <button id="toggleBtn">Show Interactive Tips</button>
+    <div class="interactive" id="interactiveTips">
+        <h3>Interactive Content Marketing Tips</h3>
+        <ul>
+            <li><strong>Utilize Long-Tail Keywords:</strong> These keywords can drive more targeted traffic.</li>
+            <li><strong>Create Original, High-Quality Content:</strong> Valuable information keeps readers returning.</li>
+            <li><strong>Engage on Social Media:</strong> Share your blog posts and interact with followers.</li>
+            <li><strong>Monitor Your Analytics:</strong> Understanding your audience helps tailor your content.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleBtn').onclick = function() {
+        var tips = document.getElementById('interactiveTips');
+        if (tips.style.display === "none" || tips.style.display === "") {
+            tips.style.display = "block";
+            this.innerText = "Hide Interactive Tips";
+        } else {
+            tips.style.display = "none";
+            this.innerText = "Show Interactive Tips";
+        }
+    };
+</script>
+
+</body>
+</html>

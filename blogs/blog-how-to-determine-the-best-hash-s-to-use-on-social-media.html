@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Determine the Best Hashtags for Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .hashtag {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .hashtag:hover {
+            background: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+            color: #0056b3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Determine the Best Hashtags for Social Media</h1>
+        <p>Using effective hashtags is essential for improving your reach and engagement on platforms like Instagram, Twitter, and Facebook. Here are some tips for choosing the best hashtags:</p>
+        <ul>
+            <li>Research trending hashtags in your niche.</li>
+            <li>Check competitor hashtags for inspiration.</li>
+            <li>Use a mix of popular and niche hashtags.</li>
+            <li>Analyze your post performance to refine your strategy.</li>
+        </ul>
+        <h2>Select Hashtags</h2>
+        <div id="hashtagContainer">
+            <span class="hashtag" onclick="displayHashtag('#SocialMedia')">#SocialMedia</span>
+            <span class="hashtag" onclick="displayHashtag('#DigitalMarketing')">#DigitalMarketing</span>
+            <span class="hashtag" onclick="displayHashtag('#ContentCreation')">#ContentCreation</span>
+            <span class="hashtag" onclick="displayHashtag('#InfluencerMarketing')">#InfluencerMarketing</span>
+            <span class="hashtag" onclick="displayHashtag('#GrowthHacking')">#GrowthHacking</span>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+        function displayHashtag(hashtag) {
+            document.getElementById('result').innerText = 'You selected: ' + hashtag;
+        }
+    </script>
+</body>
+</html>

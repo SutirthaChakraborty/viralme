@@ -1,0 +1,69 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Hotchkiss Google Barometer & User Intentions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        header {
+            background-color: #34a04a;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        .keyword-list {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #34a04a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .button:hover {
+            background-color: #2fa04a;
+        }
+    </style>
+    <script>
+        function highlightKeywords() {
+            var text = document.getElementById('content').textContent;
+            var keywords = ['Hotchkiss', 'Google', 'Barometer', 'User Intentions', '1352615'];
+            keywords.forEach(function(keyword) {
+                var regex = new RegExp(keyword, 'gi');
+                text = text.replace(regex, '<span class="keyword">' + keyword + '</span>');
+            });
+            document.getElementById('content').innerHTML = text;
+        }
+    </script>
+</head>
+<body onload="highlightKeywords()">
+    <header>
+        <h1>Blog News on Hotchkiss Google Barometer Insights and User Intentions</h1>
+    </header>
+    <article

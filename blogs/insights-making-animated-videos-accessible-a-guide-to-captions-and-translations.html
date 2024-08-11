@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive guide on making animated videos accessible with captions and translations. Enhance viewer engagement and inclusivity.">
+    <title>Making Animated Videos Accessible</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights on Making Animated Videos Accessible</h1>
+    <p>A Guide to Captions and Translations</p>
+</header>
+
+<section>
+    <div class="card" onclick="toggleDetails('details1')">
+        <h2>Importance of Captions</h2>
+        <p>Learn why captions are vital for inclusivity.</p>
+        <div id="details1" class="hidden">
+            <p>Captions help viewers who are deaf or hard of hearing, and they also benefit those in noisy environments.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails('details2')">
+        <h2>Translating Your Content</h2>
+        <p>Understand the key aspects of video translations.</p>
+        <div id="details2" class="hidden">
+            <p>Translations ensure your videos reach a wider audience by breaking language barriers, enhancing global engagement.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails('details3')">
+        <h2>Best Practices for Captions</h2>
+        <p>Discover effective strategies for adding captions.</p>
+        <div id="details3" class="hidden">
+            <p>Use clear fonts, ensure proper timing, and choose contrasting colors for readability.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails('details4')">
+        <h2>Tools for Accessibility</h2>
+        <p>A list of useful tools for creating captions and translations.</p>
+        <div id="details4" class="hidden">
+            <p>Explore tools like Amara, Kapwing, and VEED for seamless captioning and translation processes.</p>
+        </div>
+    </div>
+</section>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

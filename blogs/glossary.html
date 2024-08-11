@@ -1,0 +1,74 @@
+#### HTML Code with CSS for Glossary
+
+Sure! Here's a small HTML code snippet with CSS that you can use to create a glossary on your website:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glossary</title>
+    <style>
+        /* CSS for Glossary */
+        .glossary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .term {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        
+        .term h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .term p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary</h1>
+    
+    <div class="glossary">
+        <div class="term">
+            <h3>Term 1</h3>
+            <p>Definition of Term 1.</p>
+        </div>
+        
+        <div class="term">
+            <h3>Term 2</h3>
+            <p>Definition of Term 2.</p>
+        </div>
+        
+        <div class="term">
+            <h3>Term 3</h3>
+            <p>Definition of Term 3.</p>
+        </div>
+        
+        <!-- Add more terms as needed -->
+    </div>
+    
+    <script>
+        // JavaScript for interactive glossary
+        const terms = document.querySelectorAll('.term');
+        
+        terms.forEach(term => {
+            term.addEventListener('click', () => {
+                term.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+This HTML code creates a simple glossary with three terms (Term 1, Term 2, and Term 3). Each term is displayed in a separate box with a heading and a definition. The CSS styles the glossary to have a responsive layout with flexbox, and the JavaScript adds interactivity by toggling a class when a term is clicked, allowing you to add additional styling or functionality.
+
+Feel free to modify the code and add more terms as needed. Remember to include the necessary CSS and JavaScript files in your project for the code to work properly.
+
+I hope this helps! Let me know if you have any further questions.

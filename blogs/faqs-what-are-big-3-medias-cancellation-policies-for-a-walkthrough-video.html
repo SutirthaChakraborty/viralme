@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs: Big 3 Media Cancellation Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .faq:hover {
+            transform: scale(1.02);
+        }
+        .question {
+            cursor: pointer;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FAQs on Big 3 Media Cancellation Policies</h1>
+
+<div class="faq">
+    <div class="question">What is Big 3 Media's general cancellation policy?</div>
+    <div class="answer">Big 3 Media typically allows cancellations within 24 hours of booking for a full refund. After that, a fee may apply based on the timing of the cancellation.</div>
+</div>
+
+<div class="faq">
+    <div class="question">Are there any fees for late cancellations?</div>
+    <div class="answer">Yes, cancellations made less than 24 hours before the scheduled video walkthrough may incur a cancellation fee, which varies by service type.</div>
+</div>
+
+<div class="faq">
+    <div class="question">How can I initiate a cancellation?</div>
+    <div class="answer">You can cancel your booking by contacting customer service through email or the official website's chat function.</div>
+</div>
+
+<div class="faq">
+    <div class="question">Will I receive a confirmation of my cancellation?</div>
+    <div class="answer">Yes, you will receive an email confirmation of your cancellation once it has been processed.</div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

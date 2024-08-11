@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover leading video production companies in Ireland specializing in high-quality content creation, corporate videos, marketing films, and more.">
+    <title>Video Production Companies in Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .video-example {
+            width: 100%;
+            height: 400px;
+            background: #ccc;
+            position: relative;
+            margin: 15px 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-example video {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        button {
+            background-color: #5a67d8;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #434190;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top Video Production Companies in Ireland</h1>
+        <p>Explore the vibrant landscape of video production in Ireland. From corporate videos to creative marketing films, discover the best companies specializing in the art of storytelling through video. Elevate your brand's presence with engaging video content tailored for audience impact.</p>
+        
+        <div class="video-example" id="video-example">
+            <video id="sample-video" controls>
+                <source src="sample-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <button onclick="toggleVideo()">Play / Pause</button>
+    </div>
+
+    <script>
+        const video = document.getElementById('sample-video');
+        
+        function toggleVideo() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    </script>
+</body>
+</html>

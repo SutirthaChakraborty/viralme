@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B SaaS Buyer Behavior Insights 2022</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .insight {
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Insights on B2B SaaS Buyer Behavior in 2022</h1>
+
+    <div class="insight">
+        <h2>Content Consumption Shift</h2>
+        <p>Almost **70% of B2B buyers** prefer to find and digest content directly from a vendor's website, indicating a shift towards self-service and digital engagement.</p>
+        <button onclick="toggleDetails('detail1')">Learn More</button>
+        <div id="detail1" class="details">
+            <p>This trend emphasizes the importance of having comprehensive and engaging content on your website to attract potential buyers.</p>
+        </div>
+    </div>
+
+    <div class="insight">
+        <h2>Importance of AI and Automation</h2>
+        <p>**47% of business decision-makers** consider AI, ML, and automation crucial for their future, reflecting a growing reliance on technology in decision-making processes.</p>
+        <button onclick="toggleDetails('detail2')">Learn More</button>
+        <div id="detail2" class="details">
+            <p>Organizations are increasingly integrating AI tools to enhance efficiency and drive better outcomes in their operations.</p>
+        </div>
+    </div>
+
+    <div class="insight">
+        <h2>Preference for Rep-Free Sales</h2>
+        <p>**75% of B2B buyers** prefer a rep-free sales experience, highlighting the demand for seamless digital purchasing options.</p>
+        <button onclick="toggleDetails('detail3')">Learn More</button>
+        <div id="detail3" class="details">
+            <p>This shift suggests that buyers are looking for more autonomy in their purchasing journey, favoring self-service options over traditional sales interactions.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(detailId) {
+            var detail = document.getElementById(detailId);
+            if (detail.style.display === "none" || detail.style.display === "") {
+                detail.style.display = "block";
+            } else {
+                detail.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

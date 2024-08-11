@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Video Production Showcase</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  background: whitesmoke;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.video-hover {
+  cursor: pointer;
+}
+
+.video-hover:hover .video-overlay {
+  opacity: 1;
+}
+
+.video-title {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.video-description {
+  color: gray;
+  font-size: 14px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const videoThumbnails = document.querySelectorAll('.video-hover');
+  videoThumbnails.forEach(function(thumbnail) {
+    thumbnail.addEventListener('mouseover', function() {
+      thumbnail.querySelector('.video-overlay').classList.add('active');
+    });
+
+    thumbnail.addEventListener('mouseout', function() {
+      thumbnail.querySelector('.video-overlay').classList.remove('active');
+    });
+  });

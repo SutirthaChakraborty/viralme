@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional conference photography services to capture memorable moments and enhance your event's brand.">
+    <title>Conference Photography Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .grid-item {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Conference Photography</h1>
+        <p>Capturing Moments That Matter</p>
+    </header>
+
+    <section>
+        <h2>Why Choose Conference Photography?</h2>
+        <div class="grid-container">
+            <div class="grid-item">Memorable Highlights</div>
+            <div class="grid-item">Engaging Keynote Sessions</div>
+            <div class="grid-item">Networking Opportunities</div>
+            <div class="grid-item">Brand Promotion</div>
+            <div class="grid-item">Event Recaps</div>
+            <div class="grid-item">Quality Visuals for Marketing</div>
+        </div>
+        <p>Our professional photographers specialize in capturing the essence of your conference, from keynote speakers to networking moments. Enhance your event's impact with stunning visuals that tell your story.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="more-info" style="display:none; margin-top: 20px;">
+            <h3>Key Benefits of Hiring a Conference Photographer</h3>
+            <ul>
+                <li>Expert In-Depth Coverage</li>
+                <li>High-Quality Images for Press Releases</li>
+                <li>Easy Sharing on Social Media</li>
+                <li>Post-Event Engagement</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact Us for Your Next Event!</p>
+    </footer>
+
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById('more-info');
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Design - 2009 Davey Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .awards {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matcha Design Receives 2 Davey Awards</h1>
+</header>
+
+<div class="content">
+    <p>In 2009, <span class="awards">Matcha Design</span> was honored with two prestigious Davey Awards for excellence in web design. This recognition highlights their commitment to innovative and user-friendly design solutions.</p>
+    <p>These awards are a testament to Matcha Design's creativity and dedication to delivering high-quality digital experiences.</p>
+    <button onclick="showMoreInfo()">Learn More</button>
+    <div id="moreInfo" style="display:none;">
+        <p>Matcha Design's award-winning projects focused on enhancing user engagement and aesthetic appeal, setting a benchmark in the industry.</p>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        var info = document.getElementById("moreInfo");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

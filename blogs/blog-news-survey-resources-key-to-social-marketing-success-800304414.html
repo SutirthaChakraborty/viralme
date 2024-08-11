@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Marketing Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .resources, .survey {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Keys to Social Marketing Success</h1>
+    </header>
+    <div class="content">
+        <h2>Understanding Social Marketing</h2>
+        <p>Social marketing involves influencing behaviors for social good. It's essential to draw insights from data and consistently engage with your audience to boost your brand's visibility.</p>
+        
+        <div class="resources">
+            <h3>Key Resources</h3>
+            <ul>
+                <li><strong>Blogs:</strong> Discover the latest trends in social marketing.</li>
+                <li><strong>News:</strong> Stay updated with industry news to capture audience interests.</li>
+                <li><strong>Surveys:</strong> Conduct surveys to assess audience preferences and enhance strategies.</li>
+            </ul>
+        </div>
+        
+        <div class="survey">
+            <h3>Interactive Survey</h3>
+            <p>What do you consider most important in social marketing?</p>
+            <button onclick="showResult('Engagement')">Engagement</button>
+            <button onclick="showResult('Content Quality')">Content Quality</button>
+            <button onclick="showResult('Analytics')">Analytics</button>
+            <button onclick="showResult('Target Audience')">Target Audience</button>
+        </div>
+        <p id="result" style="margin-top: 20px;"></p>
+    </div>
+
+    <script>
+        function showResult(choice) {
+            document.getElementById('result').innerText = "You selected: " + choice + " as a key to social marketing success!";
+        }
+    </script>
+</body>
+</html>

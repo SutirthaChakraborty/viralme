@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog about storytelling with data, visualizations, and insightful analysis. Learn how to create impactful stories using data.">
+    <title>Stories with Data - Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border: 2px dashed #50b3a2;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #50b3a2;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #489b84;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Telling Stories with Data</h1>
+    </header>
+    <section>
+        <h2>Welcome to Our Blog</h2>
+        <p>Discover how data storytelling combines analytics with narrative. Explore techniques to visualize data creatively and enhance your presentations.</p>
+    </section>
+    <section class="interactive">
+        <h2>Interactive Storytelling Example</h2>
+        <button onclick="toggleExample()">Show/Hide Data Example</button>
+        <div id="dataExample" style="display:none;">
+            <p>Let’s visualize how a pie chart can help tell a story:</p>
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        function toggleExample() {
+            const example = document.getElementById('dataExample');
+            example.style.display = example.style.display === 'none' ? 'block' : 'none';
+            if (example.style.display === 'block') {
+                createChart();
+            }
+        }
+        function createChart() {
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const chart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green'],
+                    datasets: [{
+                        label: 'Data Visualization',
+                        data: [12, 19, 3, 5],
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
+                        borderColor: '#fff',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: 'Pie Chart Example'
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Creation: Write Like a Journalist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Creation: Write Like a Journalist</h1>
+    </header>
+    <section>
+        <h2>Key Principles</h2>
+        <p>To create an engaging blog, follow these <span class="keywords">journalistic principles</span>:</p>
+        <ul>
+            <li><span class="keywords">Research</span> your topic thoroughly.</li>
+            <li>Craft snappy <span class="keywords">headlines</span> that attract attention.</li>
+            <li>Use the <span class="keywords">inverted pyramid structure</span> for clarity.</li>
+            <li>Fact-check all <span class="keywords">information</span> presented.</li>
+            <li>Write with <span class="keywords">clarity and conciseness</span>.</li>
+        </ul>
+        <button onclick="showMoreTips()">Show More Tips</button>
+        <div id="moreTips" style="display:none;" >
+            <h3>Additional Writing Tips</h3>
+            <p>Utilize <span class="keywords">active voice</span> and keep paragraphs short.</p>
+            <p>Incorporate <span class="keywords">visual elements</span> to enhance engagement.</p>
+            <p>Link to <span class="keywords">reliable sources</span> to build authority.</p>
+        </div>
+    </section>
+    <script>
+        function showMoreTips() {
+            var moreTips = document.getElementById("moreTips");
+            if (moreTips.style.display === "none") {
+                moreTips.style.display = "block";
+            } else {
+                moreTips.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

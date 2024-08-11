@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights on Budgeting for Quality Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            margin: auto;
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .budget-area {
+            cursor: pointer;
+            margin: 20px 0;
+            padding: 15px;
+            background: #e7f3fe;
+            border-left: 5px solid #2196F3;
+        }
+        .budget-area:hover {
+            background: #d1ecf1;
+        }
+        #details {
+            display: none;
+            padding: 10px;
+            background: #f1f1f1;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights on Budgeting for Quality Video Production</h1>
+    <p>Understanding where to allocate your budget can significantly enhance the quality of your video production. Learn the key areas to invest in and where you can save without sacrificing quality.</p>
+    
+    <div class="budget-area" onclick="toggleDetails('preProduction')">
+        <strong>Pre-Production</strong>
+        <span>(Click for more info)</span>
+    </div>
+    <div id="preProduction" class="details">
+        <p>Invest in a solid script and storyboard. Save on scouting locations by using accessible public spaces.</p>
+    </div>
+
+    <div class="budget-area" onclick="toggleDetails('production')">
+        <strong>Production</strong>
+        <span>(Click for more info)</span>
+    </div>
+    <div id="production" class="details">
+        <p>Allocate funds for quality equipment and experienced crew. Save on set design by using minimal props and natural light.</p>
+    </div>
+
+    <div class="budget-area" onclick="toggleDetails('postProduction')">
+        <strong>Post-Production</strong>
+        <span>(Click for more info)</span>
+    </div>
+    <div id="postProduction" class="details">
+        <p>Invest in professional editing software and sound design. Consider using templates to save on graphics and animation costs.</p>
+    </div>
+    
+</div>
+
+<script>
+    function toggleDetails(section) {
+        var details = document.getElementById(section);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

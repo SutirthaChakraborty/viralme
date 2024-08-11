@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding 101</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .btn {
+            padding: 10px 15px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Branding</h1>
+    </header>
+    <div class="container">
+        <h2>What is Branding?</h2>
+        <p>Branding is the process of creating a unique identity for a product or service. It encompasses a name, logo, messaging, and overall customer experience.</p>
+        
+        <button class="btn" onclick="toggleInfo('definition')">Learn More</button>
+        <div id="definition" class="info">
+            <p>Branding helps in differentiating products from competitors and gives a sense of trust to consumers.</p>
+        </div>
+        
+        <h2>Why is Branding Important?</h2>
+        <p>Strong branding can lead to increased customer loyalty, higher perceived value, and better market recognition.</p>
+        
+        <button class="btn" onclick="toggleInfo('importance')">Learn More</button>
+        <div id="importance" class="info">
+            <p>Brands influence consumer purchasing decisions and can command premium pricing.</p>
+        </div>
+
+        <h2>Key Components of Branding</h2>
+        <ul>
+            <li>Brand Name</li>
+            <li>Logo Design</li>
+            <li>Brand Messaging</li>
+            <li>Customer Experience</li>
+            <li>Visual Identity</li>
+        </ul>
+        
+        <button class="btn" onclick="toggleInfo('components')">Learn More</button>
+        <div id="components" class="info">
+            <p>Each component plays a vital role in how a brand is perceived by its audience.</p>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(id) {
+            const infoDiv = document.getElementById(id);
+            infoDiv.style.display = infoDiv.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

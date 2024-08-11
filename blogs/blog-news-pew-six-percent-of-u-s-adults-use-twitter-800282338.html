@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Twitter Usage Among U.S. Adults</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Twitter Usage Among U.S. Adults</h1>
+    </header>
+    <article>
+        <h2>Only 6% of U.S. Adults Use Twitter</h2>
+        <p>Recent studies indicate that only **6% of U.S. adults** actively use Twitter for news and social interaction. This statistic highlights the platform's niche role in the broader social media landscape, where **55% of adults** rely on various social media for news consumption.</p>
+        <div class="interactive">
+            <h3>Learn More About Twitter Usage</h3>
+            <button onclick="showMoreInfo()">Click Here</button>
+            <p id="moreInfo" style="display:none;">Twitter, while popular among certain demographics, has seen a decline in general usage compared to other platforms. Understanding these trends can help marketers and content creators tailor their strategies effectively.</p>
+        </div>
+    </article>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

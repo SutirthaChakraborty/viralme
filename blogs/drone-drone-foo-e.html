@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Food Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f1ff;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Drone Food Delivery</h1>
+    </header>
+    <div class="content">
+        <h2>What is Drone Food Delivery?</h2>
+        <p>Drone food delivery is a revolutionary service that uses unmanned aerial vehicles (UAVs) to efficiently transport food from restaurants to customers. This innovative solution reduces delivery times and can significantly lower operational costs for food businesses.</p>
+        
+        <h3>Benefits:</h3>
+        <ul>
+            <li>Faster Delivery Times</li>
+            <li>Reduced Traffic Emissions</li>
+            <li>Cost-Effective Logistics</li>
+            <li>Access to Remote Areas</li>
+        </ul>
+
+        <div class="interactive">
+            <h3>Learn More!</h3>
+            <button id="infoButton">Click for Drone Facts</button>
+            <p id="droneFacts" style="display:none;">Drones can travel up to 15 miles and deliver food in under 30 minutes, enhancing convenience for customers and efficiency for restaurants.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('infoButton').addEventListener('click', function() {
+            var facts = document.getElementById('droneFacts');
+            if (facts.style.display === "none") {
+                facts.style.display = "block";
+            } else {
+                facts.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

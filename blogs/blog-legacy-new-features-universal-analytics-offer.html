@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy New Features - Universal Analytics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .feature:hover {
+            background: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover New Features in Blog Legacy - Universal Analytics</h1>
+    </header>
+    <section>
+        <h2>Key Features Overview</h2>
+        <div class="feature" onclick="showDetails('feature1')">
+            Feature 1: Enhanced Reporting
+        </div>
+        <div class="feature" onclick="showDetails('feature2')">
+            Feature 2: Event Tracking
+        </div>
+        <div class="feature" onclick="showDetails('feature3')">
+            Feature 3: User-Centric Metrics
+        </div>
+        <div id="details" style="margin-top: 20px; display: none;"></div>
+    </section>
+    <script>
+        function showDetails(feature) {
+            const details = {
+                feature1: "Enhanced Reporting allows you to visualize data with customizable dashboards for better insights.",
+                feature2: "Event Tracking helps monitor user interactions with customizable events for precise analytics.",
+                feature3: "User-Centric Metrics provide a holistic view of user behavior across platforms and devices."
+            };
+            document.getElementById('details').innerText = details[feature];
+            document.getElementById('details').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+
+html
+<!DOCTYPE html>
+<html lang=\"en">
+<head>
+  <meta charset=\"UTF-8\">
+  <title>Case Studies Tourism Tone of Voice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    #case-studies {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .case-study {
+      width: 45%;
+      padding: 20px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+    .case-study img {
+      max-width: 100%;
+    }
+    .case-study h3 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .case-study p {
+      font-size: 16px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class=\"container\">
+    <h1>Case Studies Tourism Tone of Voice</h1>
+    <div id=\"case-studies\">
+    </div>
+  </div>
+
+  <script>
+    const caseStudies = [
+      {
+        title: 'TravelBuddy',
+        description: 'TravelBuddy is a social media platform for travelers to connect with each other and share their travel experiences. The tone of voice is friendly, approachable, and informative.',
+        imageUrl: 'https://via.placeholder.com/300x200',
+      },
+      {
+        title: 'TouristAid',
+        description: 'TouristAid is an organization that helps tourists navigate unfamiliar cities by providing them with helpful tips and recommendations. The tone of voice is professional, informative, and supportive.',
+        imageUrl: 'https://via.placeholder.com/300x200',
+      },
+      {
+        title: 'TravelGuideHQ',
+        description: 'TravelGuideHQ is a website that provides travelers with detailed information about popular tourist destinations. The tone of voice is knowledgeable, engaging, and helpful.',
+        imageUrl: 'https://via.placeholder.com/300x200',
+      },
+    ];
+
+    function createCaseStudyCard(caseStudy) {
+      const card = document.createElement('div');
+      card.classList.add('case-study');
+      const image = document.createElement('img');
+      image.src = caseStudy.imageUrl;
+      const title = document.createElement('h3');
+      title.textContent = caseStudy.title;
+      const description = document.createElement('p');
+      description.innerHTML = caseStudy.description;
+      const content = document.createElement('div');
+      content.appendChild(image);
+      content.appendChild(title);
+      content.appendChild(description);
+      card.appendChild(content);
+      return card;
+    }
+
+    function renderCaseStudies() {
+      const caseStudiesContainer = document.getElementById('case-studies');
+      const caseStudiesHtml = caseStudies.map(createCaseStudyCard).join('');
+      caseStudiesContainer.innerHTML = `<div>${caseStudiesHtml}</div>`;
+    }
+
+    renderCaseStudies();
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Briefing an Animated Video Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            background: #ecf6fd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights on Briefing an Animated Video Agency</h1>
+    <p>Learn how to effectively brief an animated video agency to enhance your next marketing campaign. Clear communication and well-defined objectives are key to maximizing the impact of your animated video content.</p>
+    
+    <h2>Key Steps for a Successful Video Brief:</h2>
+    <ul>
+        <li>Define Your Goals: Identify the purpose of the video - brand awareness, engagement, or conversion.</li>
+        <li>Know Your Audience: Detail demographics and preferences of your target audience.</li>
+        <li>Specify the Message: Clearly outline the core message you want the video to convey.</li>
+        <li>Choose the Style: Discuss preferences such as 2D animation, 3D animation, or motion graphics.</li>
+        <li>Set a Budget: Be transparent about your budget to align expectations.</li>
+        <li>Establish a Timeline: Provide a realistic deadline for project completion.</li>
+    </ul>
+    
+    <button id="toggleInfo">Show More Insights</button>
+    <div class="info" id="additionalInfo">
+        <h3>Additional Tips:</h3>
+        <ul>
+            <li>Provide Examples: Share references of videos you admire to guide the agency's creative direction.</li>
+            <li>Encourage Collaboration: Be open to feedback and suggestions from the agency.</li>
+            <li>Measure Success: Determine how you will evaluate the video's effectiveness post-launch.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleInfo').addEventListener('click', function () {
+        const infoDiv = document.getElementById('additionalInfo');
+        infoDiv.style.display = infoDiv.style.display === 'none' || infoDiv.style.display === '' ? 'block' : 'none';
+        this.innerText = infoDiv.style.display === 'block' ? 'Show Less Insights' : 'Show More Insights';
+    });
+</script>
+
+</body>
+</html>

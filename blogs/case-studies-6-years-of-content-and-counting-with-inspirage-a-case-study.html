@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirage Case Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .case-study {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Inspirage: 6 Years of Content and Counting</h1>
+    <div class="case-study">
+        <h2>Case Study Overview</h2>
+        <p>Inspirage has been a leader in providing innovative solutions for over six years, showcasing numerous successful case studies that highlight their expertise in various industries.</p>
+        <button onclick="toggleContent()">Learn More</button>
+        <div class="toggle-content" id="additionalContent">
+            <p>Through strategic planning and execution, Inspirage has helped businesses achieve their goals by leveraging technology and data-driven insights. Their case studies demonstrate the impact of tailored solutions in enhancing operational efficiency and driving growth.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("additionalContent");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

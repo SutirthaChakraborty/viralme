@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Design Bags - 2015 Davey Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .awards {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matcha Design Bags</h1>
+    <p>Celebrating Four Awards at the 2015 International Davey Awards</p>
+</header>
+
+<div class="content">
+    <h2>About the Awards</h2>
+    <p>In 2015, Matcha Design Bags received four prestigious awards at the International Davey Awards, recognizing excellence in design and creativity.</p>
+    <button onclick="toggleAwards()">Show Awards Details</button>
+    <div class="awards" id="awardsDetails">
+        <h3>Awards Won:</h3>
+        <ul>
+            <li>Gold Award for Best Product Design</li>
+            <li>Silver Award for Innovative Use of Materials</li>
+            <li>Bronze Award for Eco-Friendly Design</li>
+            <li>People's Choice Award</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleAwards() {
+        var awards = document.getElementById("awardsDetails");
+        if (awards.style.display === "none" || awards.style.display === "") {
+            awards.style.display = "block";
+        } else {
+            awards.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

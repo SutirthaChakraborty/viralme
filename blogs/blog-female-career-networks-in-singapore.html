@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empowering women in Singapore through career networks and professional growth. Join our vibrant community!">
+    <title>Female Career Networks in Singapore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .network {
+            border: 1px solid #007BFF;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .network:hover {
+            background: #e7f0ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Empowering Women: Career Networks in Singapore</h1>
+    </header>
+    <div class="container">
+        <h2>Connect, Grow, Succeed</h2>
+        <p>Explore various female career networks in Singapore aimed at professional development and empowerment for women.</p>
+        
+        <div class="network" onclick="toggleInfo(this)">
+            <h3>WOMEN IN BUSINESS NETWORK</h3>
+            <p>Supporting women entrepreneurs and professionals to connect and innovate.</p>
+            <div class="info" style="display:none;">
+                <p>Get access to workshops, mentoring programs, and networking events.</p>
+            </div>
+        </div>
+        
+        <div class="network" onclick="toggleInfo(this)">
+            <h3>SINGAPORE WOMEN'S NETWORK</h3>
+            <p>A community for women leaders to share experiences and insights.</p>
+            <div class="info" style="display:none;">
+                <p>Engage in leadership training and personal development sessions.</p>
+            </div>
+        </div>
+
+        <div class="network" onclick="toggleInfo(this)">
+            <h3>TECH WOMEN SINGAPORE</h3>
+            <p>Empowering women in tech through skill-sharing and mentorship.</p>
+            <div class="info" style="display:none;">
+                <p>Join hackathons, tech talks, and coding boot camps designed for women.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(element) {
+            const info = element.querySelector('.info');
+            info.style.display = info.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Legacy: 14 Ways Social Media Marketing Improved in 2014</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 300px;
+      margin: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      border-radius: 5px;
+      background-color: white;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .card p {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cta {
+      background-color: #3399ff;
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .cta:hover {
+      background-color: #2685ff;
+    }
+  </style>
+  <script>
+    // JavaScript to highlight key points when hovering over the card
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('mouseover', () => {
+        card.querySelectorAll('.keypoint').classList.add('active');
+      });
+      card.addEventListener('mouseout', () => {
+        card.querySelectorAll('.keypoint').classList.remove('active');
+      });
+    });
+  </script>
+</head

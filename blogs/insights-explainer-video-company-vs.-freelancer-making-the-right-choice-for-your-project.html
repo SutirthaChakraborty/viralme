@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choosing between an explainer video company and a freelancer? Discover insights to make the right choice for your project.">
+    <title>Insights: Company vs. Freelancer for Explainer Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 20px;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Explainer Video: Company vs. Freelancer</h1>
+    <button class="toggle-btn" onclick="toggleContent('company')">Why Choose a Company?</button>
+    <button class="toggle-btn" onclick="toggleContent('freelancer')">Why Choose a Freelancer?</button>
+
+    <div id="company" class="content">
+        <h2>Benefits of Working with an Explainer Video Company</h2>
+        <ul>
+            <li>Access to a full team of experts in various roles.</li>
+            <li>Streamlined processes for project management.</li>
+            <li>Higher quality control and established workflow.</li>
+            <li>Comprehensive services from script to animation.</li>
+        </ul>
+    </div>
+
+    <div id="freelancer" class="content">
+        <h2>Benefits of Hiring a Freelancer</h2>
+        <ul>
+            <li>Cost-effective solutions tailored to your budget.</li>
+            <li>Direct communication with your creative professional.</li>
+            <li>Flexibility and a personalized touch to your project.</li>
+            <li>Opportunity to develop a long-term relationship.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleContent(type) {
+        const companyContent = document.getElementById('company');
+        const freelancerContent = document.getElementById('freelancer');
+
+        if (type === 'company') {
+            companyContent.classList.toggle('active');
+            freelancerContent.classList.remove('active');
+        } else {
+            freelancerContent.classList.toggle('active');
+            companyContent.classList.remove('active');
+        }
+    }
+</script>
+
+</body>
+</html>

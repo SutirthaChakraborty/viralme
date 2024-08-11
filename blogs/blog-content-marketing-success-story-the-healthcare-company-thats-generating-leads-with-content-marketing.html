@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Content Marketing Success Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Content Marketing Success in Healthcare</h1>
+    </header>
+    <div class="content">
+        <h2>Case Study: Healthcare Company Leads Generation</h2>
+        <p>
+            Discover how a leading healthcare provider leveraged <strong>content marketing</strong> to boost <strong>lead generation</strong> and enhance patient engagement.
+        </p>
+        <h3>Key Strategies:</h3>
+        <ul>
+            <li>Utilizing <strong>SEO</strong> targeted blogs</li>
+            <li>Creating <strong>valuable resources</strong> for patients</li>
+            <li>Engaging through <strong>social media</strong> channels</li>
+            <li>Implementing <strong>email campaigns</strong> for follow-ups</li>
+        </ul>
+        <button id="toggleMore">Learn More</button>
+        <div id="moreContent" class="hidden">
+            <h3>Results:</h3>
+            <p>
+                The company saw a <strong>150% increase</strong> in organic traffic within the first six months and converted <strong>over 20%</strong> of leads into new patients. This success not only boosted their online presence but also established their authority in the healthcare sector.
+            </p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleMore').onclick = function() {
+            var moreContent = document.getElementById('moreContent');
+            moreContent.classList.toggle('hidden');
+            this.innerText = moreContent.classList.contains('hidden') ? 'Learn More' : 'Show Less';
+        };
+    </script>
+</body>
+</html>

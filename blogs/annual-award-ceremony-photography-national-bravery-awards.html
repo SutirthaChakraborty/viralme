@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Annual National Bravery Awards Ceremony Photography">
+    <title>National Bravery Awards Ceremony</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .image-gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Annual National Bravery Awards Ceremony</h1>
+    <p>Celebrating Heroism and Courage</p>
+</header>
+
+<section>
+    <h2>About the Awards</h2>
+    <p>The National Bravery Awards honors individuals who have shown exceptional courage and bravery. Each year, the ceremony showcases inspiring stories and achievements of these brave souls.</p>
+</section>
+
+<section>
+    <h2>Photography Gallery</h2>
+    <div class="image-gallery">
+        <img src="photo1.jpg" alt="Award Ceremony 1">
+        <img src="photo2.jpg" alt="Award Ceremony 2">
+        <img src="photo3.jpg" alt="Award Ceremony 3">
+    </div>
+</section>
+
+<section>
+    <h2>Interact with Us</h2>
+    <button class="btn" onclick="displayMessage()">Learn More</button>
+    <p id="message"></p>
+</section>
+
+<script>
+    function displayMessage() {
+        document.getElementById("message").innerText = "Thank you for your interest! Stay tuned for more updates on our brave awardees.";
+    }
+</script>
+
+</body>
+</html>

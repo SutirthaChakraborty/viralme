@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Social Marketing Alert</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #3b5998;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #3b5998;
+        }
+        .keywords {
+            font-size: 0.9em;
+            color: #555;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3b5998;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Marketing Alert</h1>
+    </header>
+    <article>
+        <h2>Facebook Traffic Slows, Yet Marketing Potential Persists</h2>
+        <p>Recent analytics indicate a slowdown in Facebook traffic, prompting social media marketers to re-evaluate strategies. Despite this decline, businesses are discovering that the platform still holds substantial marketing power through targeted advertising and community engagement.</p>
+        <p class="keywords">Keywords: Facebook marketing, social media strategy, audience engagement, digital marketing trends, traffic analysis.</p>
+        <button id="moreInfoBtn">Show More Insights</button>
+        <div id="insights" style="display:none;">
+            <p>Facebook's vast user base presents unique opportunities for niche marketing and paid ad campaigns. Leveraging Facebook Groups and targeted stories can significantly enhance brand visibility.</p>
+        </div>
+    </article>
+    <script>
+        document.getElementById("moreInfoBtn").onclick = function() {
+            var insights = document.getElementById("insights");
+            if (insights.style.display === "none") {
+                insights.style.display = "block";
+            } else {
+                insights.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

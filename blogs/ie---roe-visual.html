@@ -1,0 +1,66 @@
+For a simple HTML page with CSS and JavaScript to explain the concept of Return on Equity (ROE) visually, I've created a basic layout. The interactive element will be a dynamic pie chart that demonstrates how ROE is calculated. Here's the HTML and CSS code:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple explanation of Return on Equity (ROE) with an interactive pie chart.">
+    <title>Return on Equity (ROE) Visual Explanation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .content {
+            width: 60%;
+        }
+        .pie-chart {
+            width: 35%;
+            height: 200px;
+            margin-top: 20px;
+        }
+        .pie-legend {
+            margin-top: 25px;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+    <script>
+        function initChart() {
+            var option = {
+                title: {
+                    text: 'Return on Equity (ROE) Pie Chart',
+                    subtext: 'Ratio of Net Profit to Average Owner Equity',
+                    posLeft: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{a} <br> {ratios:.2%}'
+                },
+                series: [{
+                    type: 'pie',
+                    radius: '55%',
+                    center: ['50%', '60%'],
+                    data: [
+                        { value: 60, name: 'Net Profit' },
+                        { value: 40, name: 'Average Owner Equity' }
+                    ],
+                    itemStyle: {
+                        normal: {
+                            shadowBlur: 10,
+                            shadowColor:

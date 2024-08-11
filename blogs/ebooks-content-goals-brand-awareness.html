@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooks for Brand Awareness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .goal {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            padding: 5px;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+        .toggle:hover {
+            background: #e7f3ff;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Using eBooks for Brand Awareness</h1>
+        <p>eBooks are powerful tools for enhancing brand visibility and authority. They enable you to share valuable insights while promoting your business effectively.</p>
+
+        <div class="goal">
+            <span class="toggle">Goal 1: Educating Your Audience</span>
+            <div class="details">Creating informative eBooks helps engage your target audience, establishing your brand as an industry leader.</div>
+        </div>
+
+        <div class="goal">
+            <span class="toggle">Goal 2: Lead Generation</span>
+            <div class="details">Offering eBooks as downloadable content can significantly boost your lead generation strategies, drawing in potential customers.</div>
+        </div>
+
+        <div class="goal">
+            <span class="toggle">Goal 3: Building Trust</span>
+            <div class="details">Providing valuable content encourages trust in your brand, making customers more likely to choose your products or services.</div>
+        </div>
+
+        <div class="goal">
+            <span class="toggle">Goal 4: Enhancing SEO</span>
+            <div class="details">Well-optimized eBooks can improve your website’s SEO ranking, increasing visibility and driving traffic to your site.</div>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const details = toggle.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering the Art of Explainer Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .best-practices {
+            margin-top: 20px;
+        }
+        .practice-item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .practice-item:hover {
+            background-color: #e7f1ff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights: Mastering the Art of Explainer Videos</h1>
+    <p>Explainer videos are a powerful tool for conveying complex information in an engaging way. Here are some best practices you should follow to create effective explainer videos.</p>
+
+    <div class="best-practices">
+        <div class="practice-item" onclick="toggleDetails('detail1')">
+            <strong>1. Keep it Short and Sweet</strong>
+        </div>
+        <div id="detail1" class="details" style="display:none;">
+            Aim for a duration of 60-90 seconds to maintain viewer engagement.
+        </div>
+
+        <div class="practice-item" onclick="toggleDetails('detail2')">
+            <strong>2. Start with a Hook</strong>
+        </div>
+        <div id="detail2" class="details" style="display:none;">
+            Begin with a compelling question or statement that captures attention instantly.
+        </div>
+
+        <div class="practice-item" onclick="toggleDetails('detail3')">
+            <strong>3. Define Your Target Audience</strong>
+        </div>
+        <div id="detail3" class="details" style="display:none;">
+            Tailor your content to the specific needs and interests of your audience for better relevance.
+        </div>
+
+        <div class="practice-item" onclick="toggleDetails('detail4')">
+            <strong>4. Use Clear and Concise Language</strong>
+        </div>
+        <div id="detail4" class="details" style="display:none;">
+            Avoid jargon and overly complex words to ensure your message is accessible.
+        </div>
+
+        <div class="practice-item" onclick="toggleDetails('detail5')">
+            <strong>5. Include a Call to Action</strong>
+        </div>
+        <div id="detail5" class="details" style="display:none;">
+            End with a clear call to action that guides viewers on what to do next.
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        var detail = document.getElementById(id);
+        if (detail.style.display === "none") {
+            detail.style.display = "block";
+        } else {
+            detail.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

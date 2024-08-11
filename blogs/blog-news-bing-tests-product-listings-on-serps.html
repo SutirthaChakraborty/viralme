@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Tests Product Listings on SERPs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bing's New Product Listings on SERPs</h1>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <p>Bing is currently testing new product listings directly on its search engine results pages (SERPs). This feature aims to enhance user experience by providing more relevant product information at a glance.</p>
+    </section>
+    <section>
+        <h2>Benefits of Product Listings</h2>
+        <ul>
+            <li>Improved visibility for products</li>
+            <li>Enhanced user engagement</li>
+            <li>Streamlined shopping experience</li>
+        </ul>
+    </section>
+    <section class="interactive">
+        <h2>Interactive Feature</h2>
+        <p>Click the button below to see how product listings can enhance your search experience:</p>
+        <button onclick="showProductInfo()">Show Product Info</button>
+        <div id="productInfo" style="display:none;">
+            <h3>Featured Product</h3>
+            <p><strong>Product Name:</strong> Smart Widget</p>
+            <p><strong>Price:</strong> $29.99</p>
+            <p><strong>Description:</strong> A versatile widget that simplifies your tasks.</p>
+        </div>
+    </section>
+    <script>
+        function showProductInfo() {
+            var info = document.getElementById('productInfo');
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

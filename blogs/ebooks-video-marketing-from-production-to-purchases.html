@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooks & Video Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #6200ea;
+        }
+        .button {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .video-container {
+            text-align: center;
+        }
+        .video {
+            width: 100%;
+            max-width: 640px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>eBooks & Video Marketing success</h1>
+</header>
+
+<section>
+    <h2>Understanding eBooks in Marketing</h2>
+    <p>eBooks are powerful tools to attract leads and educate your target audience. Using well-researched keywords can enhance visibility and ensure your product reaches the right audience.</p>
+</section>
+
+<section>
+    <h2>Video Marketing Essentials</h2>
+    <p>Video content can significantly boost engagement. It allows for storytelling and delivering complex information in a digestible format.</p>
+    <div class="video-container">
+        <video class="video" controls>
+            <source src="video-marketing.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</section>
+
+<section>
+    <h2>Interactive eBook Production</h2>
+    <p>Engage your audience with interactive elements in your eBook. Utilize quizzes, polls, and links to increase retention and conversion rates.</p>
+    <button class="button" onclick="toggleTip()">Click for eBook Tips</button>
+    <p id="tip" style="display:none;">Use eye-catching visuals and a clear call to action to encourage purchases!</p>
+</section>
+
+<script>
+    function toggleTip() {
+        var tip = document.getElementById('tip');
+        if (tip.style.display === 'none') {
+            tip.style.display = 'block';
+        } else {
+            tip.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

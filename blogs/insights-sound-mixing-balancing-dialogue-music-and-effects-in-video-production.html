@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Mixing Insights in Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0073e6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .section {
+            margin: 20px 0;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights Into Sound Mixing in Video Production</h1>
+    <div class="section">
+        <h2>Balancing Dialogue, Music, and Effects</h2>
+        <p>Proper sound mixing is essential for creating engaging videos. Balancing dialogue, music, and sound effects ensures a polished outcome.</p>
+        <button onclick="toggleInfo('dialogueInfo')">Learn more about Balancing Dialogue</button>
+        <div id="dialogueInfo" class="hidden">
+            <p>Dialogue should be clear and easy to understand. Use equalization to enhance clarity and adjust levels to prevent overpowering background music.</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <button onclick="toggleInfo('musicInfo')">Learn more about Balancing Music</button>
+        <div id="musicInfo" class="hidden">
+            <p>Music sets the tone of your video. Use side-chaining techniques to ensure the music complements rather than overwhelms the dialogue.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <button onclick="toggleInfo('effectsInfo')">Learn more about Sound Effects</button>
+        <div id="effectsInfo" class="hidden">
+            <p>Sound effects add depth and realism. Make sure they are integrated smoothly with the overall sound mix, especially in action scenes.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(id) {
+        var element = document.getElementById(id);
+        if (element.classList.contains('hidden')) {
+            element.classList.remove('hidden');
+        } else {
+            element.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

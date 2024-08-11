@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google News Reaches 100 Million Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #4285f4;
+            color: white;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .btn {
+            padding: 10px 15px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Google News Surpasses 100 Million Users!</h1>
+</header>
+
+<article>
+    <h2>Breaking News</h2>
+    <p>Google News has officially surpassed 100 million active users, signifying its growing influence in the world of online news. With personalized updates and a host of new features, Google News continues to be a reliable source for news enthusiasts.</p>
+    <p>This milestone highlights the demand for real-time information and the effectiveness of Google’s algorithm in curating relevant content. As more users turn to digital platforms for news, services like Google News are leading the charge in how information is consumed.</p>
+    <button class="btn" onclick="showUserGrowth()">Show User Growth</button>
+    <div id="growth-info" style="display:none;">
+        <p>Google News's user growth has increased steadily, with innovative features such as topic personalization, trending news alerts, and an enhanced user interface.</p>
+    </div>
+</article>
+
+<script>
+    function showUserGrowth() {
+        const growthInfo = document.getElementById("growth-info");
+        if (growthInfo.style.display === "none") {
+            growthInfo.style.display = "block";
+        } else {
+            growthInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

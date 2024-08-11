@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FWIX launches a local search engine offering fresh news updates and community insights.">
+    <title>FWIX Local Search Engine Launch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #0077cc;
+            color: white;
+            padding: 10px 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        #search-box {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+        }
+        button {
+            padding: 10px;
+            background: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FWIX Local Search Engine Launch</h1>
+</header>
+
+<article>
+    <h2>Discover Your Community Like Never Before!</h2>
+    <p>FWIX has officially launched its new local search engine, aimed at providing users with the latest news and updates from their community. With a focus on freshness and relevance, this innovative tool allows you to navigate local events, trends, and issues that matter most to you.</p>
+    <div id="search-box">
+        <input type="text" id="search-input" placeholder="Search your local news...">
+        <button onclick="searchNews()">Search</button>
+    </div>
+    <div id="results"></div>
+</article>
+
+<script>
+    function searchNews() {
+        const query = document.getElementById('search-input').value;
+        document.getElementById('results').innerHTML = `<p>You searched for: <strong>${query}</strong></p>`;
+    }
+</script>
+
+</body>
+</html>

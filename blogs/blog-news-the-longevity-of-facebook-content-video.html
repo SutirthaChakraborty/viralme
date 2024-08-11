@@ -1,0 +1,61 @@
+
+
+html
+<!DOCTYPE html>
+<html lang=\"en">
+<head>
+  <meta charset=\"UTF-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+  <title>Blog News | Facebook Content Video | Longevity of Facebook Content</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    p {
+      font-size: 1rem;
+      text-align: justify;
+    }
+    .interactive {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .interactive div {
+      margin: 0 2rem;
+    }
+    .interactive p {
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blog News | Facebook Content Video | Longevity of Facebook Content</h1>
+  <p>
+    In the world of social media, Facebook is one of the most popular platforms for sharing news and updates with friends and family. However, with so much content being shared on the platform every day, it can be difficult to stand out from the crowd. This is where video content comes in, as it has been shown to have a higher engagement rate than other types of content. But how long can this type of content last on Facebook? Let's take a closer look.
+  </p>
+  <div class=\"interactive">
+    <div>
+      <p>How many videos are posted on Facebook per day?</p>
+    </div>
+    <div>
+      <p id=\"videoCount\"></p>
+    </div>
+  </div>
+  <script>
+    fetch('https://www.facebook.com/api/graphql')
+      .then(response => response.json())
+      .then(data => {
+        const videoCount = data.data.user
+          .posts
+          .edges
+          .reduce((acc, post) => acc + (post.node && post.node.video_count), 0);
+        document.getElementById('videoCount').innerText = videoCount;
+      });
+  </script>
+</body>
+</html>

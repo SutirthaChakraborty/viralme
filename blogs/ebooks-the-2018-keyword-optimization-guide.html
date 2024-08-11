@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebooks: The 2018 Keyword Optimization Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .keywords {
+            margin-top: 15px;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ebooks: The 2018 Keyword Optimization Guide</h1>
+</header>
+
+<section>
+    <h2>Introduction</h2>
+    <p>Maximize your online presence with effective keyword optimization strategies designed specifically for ebooks.</p>
+    <button onclick="showKeywords()">Show Related Keywords</button>
+    <div id="keywordList" style="display:none;" class="keywords"></div>
+</section>
+
+<section>
+    <h2>Importance of Keyword Optimization</h2>
+    <p>Keyword optimization enhances visibility, improves search engine ranking, and increases reader engagement.</p>
+</section>
+
+<section>
+    <h2>Strategies for Optimization</h2>
+    <ul>
+        <li>Research high-traffic keywords using tools like Google Keyword Planner.</li>
+        <li>Incorporate long-tail keywords for niche targeting.</li>
+        <li>Optimize title, headings, and metadata.</li>
+    </ul>
+</section>
+
+<script>
+    function showKeywords() {
+        const keywords = [
+            "Keyword Research",
+            "SEO for Ebooks",
+            "Digital Marketing Strategies",
+            "Long-Tail Keywords",
+            "Content Optimization",
+            "Search Engine Visibility",
+            "Online Publishing"
+        ];
+        
+        const keywordList = document.getElementById("keywordList");
+        keywordList.style.display = "block";
+        keywordList.innerHTML = "<h3>Related Keywords:</h3>" + keywords.join(", ");
+    }
+</script>
+
+</body>
+</html>

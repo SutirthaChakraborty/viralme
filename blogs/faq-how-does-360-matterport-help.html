@@ -1,0 +1,63 @@
+#### HTML Code with CSS and JS for Matterport 360 Tours
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matterport 360 Tour</title>
+  <style>
+    /* Add custom CSS styles for the 360 tour container */
+    .matterport-container {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Our Matterport 360 Tour</h1>
+  <p>Explore our virtual spaces and experience immersive 3D tours!</p>
+
+  <!-- Add the Matterport 360 tour using an iFrame -->
+  <div class="matterport-container">
+    <iframe
+      src="https://www.example.com/matterport-360-tour"
+      width="100%"
+      height="100%"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <script>
+    // Add interactive JS functionality for the 360 tour
+    // You can add interactive features such as hotspots, navigation, and more using JavaScript
+    // Example: Add a hotspot that provides information when clicked
+    const hotspot = document.createElement('div');
+    hotspot.classList.add('hotspot');
+    hotspot.style.position = 'absolute';
+    hotspot.style.top = '50%';
+    hotspot.style.left = '50%';
+    hotspot.style.transform = 'translate(-50%, -50%)';
+    hotspot.style.width = '20px';
+    hotspot.style.height = '20px';
+    hotspot.style.background = 'red';
+    hotspot.style.borderRadius = '50%';
+    hotspot.style.cursor = 'pointer';
+    hotspot.title = 'Click to learn more';
+    hotspot.addEventListener('click', () => {
+      alert('Welcome to this amazing space! Feel free to explore.');
+    });
+    document.querySelector('.matterport-container').appendChild(hotspot);
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a webpage for showcasing Matterport 360 tours. It includes a custom CSS style for the tour container and an iFrame to embed the 360 tour. Additionally, it demonstrates interactive JavaScript functionality by adding a clickable hotspot within the tour for an engaging user experience.
+
+The code leverages the keywords "Matterport 360 tour," "interactive 3D tours," "virtual spaces," and "immersive experience" to enhance search engine optimization and user reach [[1]](https://www.360-int.com/blog/marketing/step-by-step-guide-to-integrating-a-matterport-virtual-tour/).

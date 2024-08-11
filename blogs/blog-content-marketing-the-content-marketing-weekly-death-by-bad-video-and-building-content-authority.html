@@ -1,0 +1,67 @@
+
+
+html
+<!DOCTYPE html>
+<html lang=\"en">
+<head>
+  <meta charset=\"UTF-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+  <title>Blog Content Marketing</title>
+  <style>
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      font-size: 2em;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .main {
+      font-size: 1.2em;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #fff;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.8em;
+      padding: 10px;
+      background-color: #f5f5f5;
+    }
+    .interactive {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class=\"container\">
+    <div class=\"header\">
+      <h1>Blog Content Marketing</h1>
+    </div>
+    <div class=\"main\">
+      <h2>Building Content Authority</h2>
+      <p>Content marketing is the process of creating and distributing valuable, relevant, and consistent<br> and useful content to attract and retain a clearly defined audience — and,<br> ultimately, to drive profitable customer action.</p>
+      <button class=\"interactive\" onclick=\"showContent()\">Show More</button>
+    </div>
+    <div id=\"content\" style=\"display: none;\">
+      <h2>The Weekly Death by Bad Video</h2>
+      <p>Video is a powerful tool in content marketing, but not all videos are created equal. Every week, there<br> are bad videos that fail to engage their audience or deliver on their promise. It's important<br> to identify these videos and learn from them to improve your own video content.</p>
+    </div>
+    <div class=\"footer\">
+      <p>&copy; 2024 Blog Content Marketing</p>
+    </div>
+  </div>
+  <script>
+    function showContent() {
+      var content = document.getElementById('content');
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+      } else {
+        content.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

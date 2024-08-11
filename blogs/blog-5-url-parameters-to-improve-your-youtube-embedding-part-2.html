@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Embedding Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .parameter {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e2e2e2;
+            border-left: 5px solid #007bff;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>5 URL Parameters to Improve Your YouTube Embedding</h1>
+    </header>
+    <section>
+        <h2>Enhance Your Video Embeds</h2>
+        <div class="parameter" onclick="toggleDetails('param1')">
+            <strong>1. Autoplay</strong> - Add `?autoplay=1` to start the video automatically.
+            <div id="param1" style="display:none;">This can increase viewer engagement but may annoy some users.</div>
+        </div>
+        <div class="parameter" onclick="toggleDetails('param2')">
+            <strong>2. Controls</strong> - Use `?controls=0` to hide video controls.
+            <div id="param2" style="display:none;">This can create a cleaner look but limits user interaction.</div>
+        </div>
+        <div class="parameter" onclick="toggleDetails('param3')">
+            <strong>3. Loop</strong> - Add `?loop=1` to replay the video automatically.
+            <div id="param3" style="display:none;">Great for promotional videos or music tracks.</div>
+        </div>
+        <div class="parameter" onclick="toggleDetails('param4')">
+            <strong>4. Start Time</strong> - Use `?start=30` to begin the video at 30 seconds.
+            <div id="param4" style="display:none;">Useful for highlighting specific content.</div>
+        </div>
+        <div class="parameter" onclick="toggleDetails('param5')">
+            <strong>5. Modest Branding</strong> - Add `?modestbranding=1` to reduce YouTube branding.
+            <div id="param5" style="display:none;">This can make your content feel more integrated.</div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 YouTube Embedding Tips</p>
+    </footer>
+    <script>
+        function toggleDetails(paramId) {
+            var details = document.getElementById(paramId);
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

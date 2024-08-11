@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Audit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>How to Conduct a Content Marketing Audit</h1>
+        <h2>Understanding Your Content</h2>
+        <p>Conducting a content marketing audit helps you identify what content is working and what needs improvement. Start by gathering all your content and analyzing it based on <span class="keyword">keywords</span>, <span class="keyword">audience engagement</span>, and <span class="keyword">performance metrics</span>.</p>
+        
+        <h2>Steps to Conduct an Audit</h2>
+        <ol>
+            <li>Gather all existing content.</li>
+            <li>Analyze content performance using metrics like <span class="keyword">traffic</span> and <span class="keyword">engagement rates</span>.</li>
+            <li>Identify gaps in your content strategy.</li>
+            <li>Optimize content based on findings.</li>
+        </ol>
+        
+        <button onclick="showTips()">Show Tips</button>
+        <div class="result" id="tips" style="display:none;">
+            <h3>Audit Tips:</h3>
+            <ul>
+                <li>Use a spreadsheet to organize your content.</li>
+                <li>Focus on high-performing topics and formats.</li>
+                <li>Regularly update your content to keep it relevant.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showTips() {
+            var tips = document.getElementById("tips");
+            if (tips.style.display === "none") {
+                tips.style.display = "block";
+            } else {
+                tips.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

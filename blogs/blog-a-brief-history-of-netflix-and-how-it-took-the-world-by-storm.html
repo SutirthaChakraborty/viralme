@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief history of Netflix and how it took the world by storm. Discover its evolution from DVD rentals to a global streaming giant.">
+    <title>A Brief History of Netflix</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #e50914;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+        }
+        .interactive {
+            background-color: #1c1c1c;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive:hover {
+            background-color: #e50914;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>A Brief History of Netflix</h1>
+        <p>Netflix started in 1997 as a DVD rental service, allowing users to rent movies online without late fees. This innovative model quickly gained popularity, leading to its transformation into a streaming service in 2007.</p>
+        <p>By 2013, Netflix began producing original content, such as <strong>House of Cards</strong>, which marked its entry into the competitive world of television production. This strategic move not only attracted new subscribers but also changed how audiences consumed media.</p>
+        <p>Today, Netflix is a global leader in streaming, boasting millions of subscribers worldwide and a vast library of films and series, including award-winning originals.</p>
+        
+        <div class="interactive" onclick="toggleInfo()">Click here to learn more about Netflix's impact!</div>
+        <div id="moreInfo" class="hidden">
+            <p>Netflix's success has influenced the entertainment industry significantly, leading to the rise of binge-watching culture and changing how content is distributed and consumed. Its algorithm-driven recommendations have also set a new standard for personalized viewing experiences.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.classList.contains("hidden")) {
+                info.classList.remove("hidden");
+            } else {
+                info.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>

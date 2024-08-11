@@ -1,0 +1,73 @@
+#### HTML and CSS Code for FAQs and Travel Video Cancellation Policies
+
+**HTML Code:**
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQs and Travel Video Cancellation Policies</title>
+  <style>
+    /* CSS for FAQs */
+    .faq {
+      margin-bottom: 20px;
+    }
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .answer {
+      display: none;
+    }
+    /* CSS for Travel Video Cancellation Policies */
+    .cancellation-policy {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .policy-title {
+      font-weight: bold;
+    }
+    .policy-details {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>FAQs</h1>
+  <div class="faq">
+    <div class="question">What is the booking process?</div>
+    <div class="answer">The booking process involves...</div>
+  </div>
+  <div class="faq">
+    <div class="question">How can I cancel my booking?</div>
+    <div class="answer">You can cancel your booking by...</div>
+  </div>
+
+  <h1>Travel Video Cancellation Policies</h1>
+  <div class="cancellation-policy">
+    <div class="policy-title">Cancellation Policy 1</div>
+    <div class="policy-details">Details of the first cancellation policy...</div>
+  </div>
+  <div class="cancellation-policy">
+    <div class="policy-title">Cancellation Policy 2</div>
+    <div class="policy-details">Details of the second cancellation policy...</div>
+  </div>
+
+  <script>
+    // JavaScript for FAQs
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+      question.addEventListener('click', () => {
+        question.nextElementSibling.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+In the provided HTML code, I have included sections for both FAQs and Travel Video Cancellation Policies. The FAQs section contains questions and answers, each wrapped in a div with appropriate classes for styling. The Travel Video Cancellation Policies section includes different policies with their respective details, also wrapped in divs with specific classes for styling.
+
+The CSS includes styles for the FAQs and the Travel Video Cancellation Policies, ensuring a visually appealing and user-friendly presentation of the information. Additionally, I've included JavaScript to enable an interactive feature for the FAQs, allowing users to click on a question to reveal its answer.
+
+This code provides a basic structure for displaying FAQs and Travel Video Cancellation Policies on a web page, with interactive CSS and JavaScript to enhance the user experience.

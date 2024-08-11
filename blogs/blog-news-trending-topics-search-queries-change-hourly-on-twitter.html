@@ -1,0 +1,73 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Topics on Twitter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .trending-list {
+            list-style: none;
+            padding: 0;
+        }
+        .trending-list li {
+            margin-bottom: 10px;
+        }
+        .trending-list li:last-child {
+            margin-bottom: 0;
+        }
+        .trending-list li::before {
+            content: '➡️ ';
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Trending Topics on Twitter</h1>
+        <ul class="trending-list" id="trendingList">
+            <!-- Trending topics will be dynamically added here -->
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('https://api.twitter.com/1.1/trends/place.json?id=23424977')
+                .then(response => response.json())
+                .then(data => {
+                    const trendingList = document.getElementById('trendingList');
+                    data[0].trends.forEach(trend => {
+                        const li = document.createElement('li');
+                        li.textContent = trend.name;
+                        trendingList.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>

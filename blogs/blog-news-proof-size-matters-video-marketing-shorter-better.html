@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the impact of video marketing and why shorter content is often more effective.">
+    <title>Blog: Why Size Matters in Video Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .video {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .video iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 315px;
+        }
+        .toggle-info {
+            margin: 20px 0;
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .extra-info {
+            display: none;
+            margin-top: 10px;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Blog: Why Size Matters in Video Marketing</h1>
+    <p>Video marketing has rapidly become one of the most effective strategies for brands. But did you know that the size of your content matters? Recent studies show that shorter videos often result in higher engagement and retention rates.</p>
+  
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  
+    <p class="toggle-info">Click here for more insights about video length effectiveness</p>
+    <div class="extra-info">
+        <ul>
+            <li>Shorter videos (< 2 minutes) retain 70% of viewers until the end.</li>
+            <li>Longer videos can lead to viewer drop-off rates of 50% or more!</li>
+            <li>Consider incorporating strong hooks and captivating visuals to keep audiences engaged.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.toggle-info').addEventListener('click', function () {
+        const extraInfo = document.querySelector('.extra-info');
+        extraInfo.style.display = extraInfo.style.display === 'none' || extraInfo.style.display === '' ? 'block' : 'none';
+        this.textContent = extraInfo.style.display === 'block' ? "Click here to hide insights" : "Click here for more insights about video length effectiveness";
+    });
+</script>
+
+</body>
+</html>

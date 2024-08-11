@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topsy Launches Twitter Video Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #0077cc;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #0077cc;
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Topsy Launches Twitter Video Search</h1>
+</header>
+
+<article>
+    <h2>Overview</h2>
+    <p>Topsy has introduced a groundbreaking feature that allows users to search for videos on Twitter, enhancing the way we discover and engage with content. This innovative tool leverages advanced algorithms to filter and display relevant video content, making it easier for users to find what they are looking for.</p>
+    
+    <h2>Key Features</h2>
+    <ul>
+        <li>Real-time video search capabilities</li>
+        <li>Advanced filtering options for better results</li>
+        <li>User-friendly interface for seamless navigation</li>
+    </ul>
+
+    <h2>Interactive Demo</h2>
+    <p class="toggle" onclick="toggleDemo()">Click here to see a demo of the video search feature!</p>
+    <div id="demo" class="hidden">
+        <p>Imagine searching for trending videos on Twitter with just a few clicks. Topsy's new feature allows you to:</p>
+        <ul>
+            <li>Search by keywords</li>
+            <li>Filter by date and popularity</li>
+            <li>View video previews directly in the search results</li>
+        </ul>
+    </div>
+</article>
+
+<footer>
+    <p>Stay updated with the latest in tech and social media trends!</p>
+</footer>
+
+<script>
+    function toggleDemo() {
+        var demo = document.getElementById("demo");
+        if (demo.classList.contains("hidden")) {
+            demo.classList.remove("hidden");
+        } else {
+            demo.classList.add("hidden");
+        }
+    }
+</script>
+
+</body>
+</html>

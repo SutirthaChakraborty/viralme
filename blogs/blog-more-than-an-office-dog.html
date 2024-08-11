@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Than an Office Dog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #6c757d;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        button {
+            background: #008cba;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005f7f;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>More Than an Office Dog</h1>
+</header>
+
+<article>
+    <h2>The Benefits of Having Office Dogs</h2>
+    <p>Office dogs can boost morale, enhance productivity, and reduce stress.</p>
+    <button id="infoButton">Click for More Info</button>
+    <p id="extraInfo" style="display: none;">Studies show that interaction with dogs can lower blood pressure and increase levels of serotonin and dopamine, promoting happiness in the workplace.</p>
+</article>
+
+<script>
+    document.getElementById("infoButton").onclick = function() {
+        var info = document.getElementById("extraInfo");
+        info.style.display = info.style.display === "none" ? "block" : "none";
+    };
+</script>
+
+</body>
+</html>

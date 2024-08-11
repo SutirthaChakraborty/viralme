@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Brain Resources: Articles, Videos, and More</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#brain-resources {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.resource {
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			background-color: #fff;
+			width: 300px;
+		}
+		
+		.resource h2 {
+			margin-top: 0;
+		}
+		
+		.resource p {
+			margin-bottom: 10px;
+		}
+		
+		.resource a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		
+		.resource a:hover {
+			color: #23527c;
+		}
+		
+		#interactive-brain {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.brain-part {
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			background-color: #fff;
+			width: 300px;
+		}
+		
+		.brain-part h2 {
+			margin-top: 0;
+		}
+		
+		.brain-part p {
+			margin-bottom: 10px;
+		}
+		
+		.brain-part button {
+			background-color: #337ab7;
+			color: #fff;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.brain-part button:hover {
+			background-color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<h1>Brain Resources: Articles, Videos, and More</h1>
+	<div id="brain-resources">
+		<div class="resource">
+			<h2>Articles</h2>
+			<p>Learn about the latest research and findings in the field of neuroscience and brain development.</p>
+			<a href="#">Read More</a>
+		</div>
+		<div class="resource">
+			<h2>Videos</h2>
+			<p>Watch educational videos on brain function, cognitive psychology, and more.</p>
+			<a href="#">Watch Now</a>
+		</div>
+		<div class="resource">
+			<h2>Interactive Brain</h2>
+			<p>Explore the brain's structure and function through interactive simulations.</p>
+			<button>Start Exploring</button>
+		</div>
+	</div>
+	<div id="interactive-brain">
+		<div class="brain-part">
+			<h2>Brain Regions</h2>
+			<p>The brain is divided into different regions, each responsible for specific functions.</p>
+			<button>Learn More</button>
+		</div>
+		<div class="brain-part">
+			<h2>Neurotransmitters</h2>
+			<p>Neurotransmitters are chemical messengers that transmit signals between neurons.</p>
+			<button>Discover More</button>
+		</div>
+		<div class="brain-part">
+			<h2>Brain Development</h2>
+			<p>The brain develops and changes throughout life, influenced by genetics and environment.</p>
+			<button>Learn More</button>
+		</div>
+	</div>
+	<script>
+		// Interactive brain script
+		const brainParts = document.querySelectorAll('.brain-part');
+		brainParts.forEach((part) => {
+			part.addEventListener('click', () => {
+				part.classList.toggle('active');
+				if (part.classList.contains('active')) {
+					part.querySelector('button').textContent = 'Close';
+				} else {
+					part.querySelector('button').textContent = 'Learn More';
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+Keywords: brain resources, articles, videos, neuroscience, cognitive psychology, brain development, interactive brain, neurotransmitters, brain regions.

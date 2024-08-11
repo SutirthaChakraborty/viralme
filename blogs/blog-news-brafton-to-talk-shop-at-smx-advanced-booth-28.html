@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brafton at SMX Advanced</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .keywords {
+            font-style: italic;
+            color: #555;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 4px solid #0073e6;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brafton at SMX Advanced Booth 28</h1>
+    </header>
+    <div class="content">
+        <p>Join Brafton at <strong>SMX Advanced</strong> as we dive into <strong>content marketing</strong>, <strong>SEO strategies</strong>, and the latest trends in <strong>digital marketing</strong>. Our experts are here to discuss how you can enhance your brand's online presence.</p>
+        <p class="keywords">Keywords: Brafton, SMX Advanced, Digital Marketing, SEO, Content Strategy, Online Presence</p>
+        <button id="toggleDetails">Learn More</button>
+        <div class="details" id="details">
+            <p>Discover innovative solutions tailored for your business needs! Explore the impact of <strong>data-driven content</strong> and <strong>effective SEO practices</strong> that can help boost your website's ranking and engagement. Let’s <strong>talk shop</strong> and explore how we can work together to maximize your digital strategy!</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleDetails').addEventListener('click', function() {
+            var details = document.getElementById('details');
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8\">
+  <title>Blog News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    .graphics {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>75% of Tech Companies Outsource Writing</h1>
+  <p>According to recent statistics, a staggering 75 percent of technology companies outsource their writing needs. This is likely due to the high demand for skilled content writers and the fact that many companies simply do not have the resources to hire in-house writers. However, outsourcing can also lead to quality issues if the right criteria are not met.</p>
+  
+  <h1>51% of Tech Companies Outsource Graphics</h1>
+  <p>Another interesting statistic from this report is that 51 percent of technology companies outsource their graphics needs. This is often because graphic design is not considered a core competency for many companies, and they may not have the necessary skills or resources to create effective visuals. By outsourcing this task, companies can ensure that their graphics are of high quality and on-brand, without having to invest in expensive equipment or hire additional staff.</p>
+  
+  <script>
+    function showInfo() {
+      var graphics = document.getElementById('graphics');
+      var text = document.getElementById('text');
+      var info = document.getElementById('info');
+      var checkBox = document.getElementById('checkbox');
+      var checked = checkBox.checked;
+
+      if (checked) {
+        graphics.classList.add('graphics');
+        text.classList.remove('graphics');
+        info.innerHTML = '51% of tech companies outsource their graphics';
+      } else {
+        graphics.classList.remove('graphics');
+        text.classList.add('graphics');
+        info.innerHTML = '0% of tech companies outsource their graphics';
+      }
+    }
+  </script>
+  
+  <label for=\"checkbox\">Show Information:</label>
+  <input type=\"checkbox\" id=\"checkbox\" onchange=\"showInfo()\">
+  <div id=\"info\" style=\"display: none;\">This information is only shown when the box above is checked.</div>
+  
+</body>
+</html>

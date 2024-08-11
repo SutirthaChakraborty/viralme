@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Primer for Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077b5;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0077b5;
+        }
+        button {
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005582;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LinkedIn Content Marketing Primer</h1>
+    </header>
+    <div class="content">
+        <h2>Why Use LinkedIn for Content Marketing?</h2>
+        <p>LinkedIn is a powerful platform for **B2B marketing**, allowing brands to connect with professionals and **engage with their audience** effectively.</p>
+        
+        <h2>Effective Content Strategies</h2>
+        <ul>
+            <li>Share **industry insights**</li>
+            <li>Post **case studies**</li>
+            <li>Create **how-to articles**</li>
+        </ul>
+
+        <h2>Interactive Element</h2>
+        <button onclick="showTip()">Click for a Marketing Tip!</button>
+        <p id="tip" style="margin-top: 10px;"></p>
+    </div>
+
+    <script>
+        function showTip() {
+            const tips = [
+                "Post regularly to stay relevant in your audience's feed.",
+                "Use rich media like images and videos to increase engagement.",
+                "Engage with comments to build a community around your brand."
+            ];
+            const randomTip = tips[Math.floor(Math.random() * tips.length)];
+            document.getElementById("tip").innerText = randomTip;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest feature added to Google Image Search that enhances user experience.">
+    <title>Google Image Search Feature Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d0e7ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>New Feature in Google Image Search</h1>
+    </header>
+    <article>
+        <h2>What's New?</h2>
+        <p>Google has recently added a new feature to its Image Search that allows users to find images more efficiently. This enhancement focuses on improving the relevance of search results and user engagement.</p>
+        <div class="interactive" onclick="showDetails()">Click here to learn more about the feature!</div>
+        <p id="details" style="display:none;">This feature utilizes advanced algorithms to better understand user queries, providing more accurate image results based on context and intent.</p>
+    </article>
+    <script>
+        function showDetails() {
+            var details = document.getElementById("details");
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

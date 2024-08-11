@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academy Karen Hesse - A premier institution for holistic education and personal development. Explore our programs, workshops, and success stories.">
+    <title>Academy Karen Hesse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        .programs, .workshops {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Academy Karen Hesse</h1>
+        <p>Your journey to holistic education starts here.</p>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>At Academy Karen Hesse, we focus on nurturing potential through interactive programs that encourage personal growth and development.</p>
+        
+        <button onclick="toggleVisibility('programs')">Our Programs</button>
+        <div id="programs" class="programs">
+            <p>We offer a range of programs including:</p>
+            <ul>
+                <li>Leadership Development</li>
+                <li>Creative Arts</li>
+                <li>Digital Skills Training</li>
+            </ul>
+        </div>
+
+        <button onclick="toggleVisibility('workshops')">Workshops & Events</button>
+        <div id="workshops" class="workshops">
+            <p>Join our workshops to enhance your skills:</p>
+            <ul>
+                <li>Mindfulness & Meditation</li>
+                <li>Effective Communication</li>
+                <li>Innovation & Creativity</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleVisibility(id) {
+            var element = document.getElementById(id);
+            element.style.display = (element.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

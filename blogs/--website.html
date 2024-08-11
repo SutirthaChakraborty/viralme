@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about website development, design trends, and digital marketing strategies.">
+    <meta name="keywords" content="website, web design, development, SEO, digital marketing, user experience, UX, UI">
+    <title>Website Development & Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 4px;
+        }
+        button {
+            cursor: pointer;
+            padding: 10px 15px;
+            background: #35424a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Development & Design</h1>
+    </header>
+    <section>
+        <h2>What is Web Development?</h2>
+        <p>Web development is the process of building and maintaining websites. It encompasses various aspects like web design, web content development, and client-side/server-side scripting.</p>
+        <button onclick="toggleContent('devContent')">Learn More</button>
+        <div id="devContent" class="toggle-content">
+            <p>Web developers use various programming languages and tools to create dynamic and interactive websites that enhance user experience and accessibility.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Importance of Web Design</h2>
+        <p>Web design is crucial for creating user-friendly interfaces that attract and retain visitors. A well-designed website ensures seamless navigation and promotes engagement.</p>
+        <button onclick="toggleContent('designContent')">Learn More</button>
+        <div id="designContent" class="toggle-content">
+            <p>Effective web design incorporates responsive layouts, appealing visuals, and clear calls to action, ultimately driving conversions and improving brand credibility.</p>
+        </div>
+    </section>
+    <section>
+        <h2>SEO and Digital Marketing</h2>
+        <p>Search Engine Optimization (SEO) is vital for improving your website's visibility on search engines, attracting organic traffic, and enhancing online presence.</p>
+        <button onclick="toggleContent('seoContent')">Learn More</button>
+        <div id="seoContent" class="toggle-content">
+            <p>Implementing effective SEO strategies alongside digital marketing tactics can significantly enhance your website's reach and success in a competitive market.</p>
+        </div>
+    </section>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            content.style.display = (content.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

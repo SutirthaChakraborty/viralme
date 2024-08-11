@@ -1,0 +1,62 @@
+Here's a small HTML code with CSS on the topic of insights from my week as a skeleton intern marketing spaceships and the Lion King. The code includes interactive CSS and JS to explain the topics.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights My Week</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights My Week</h1>
+    <ul>
+        <li><strong>Skeleton Intern Marketing Spaceships</strong></li>
+        <p>During my week as a skeleton intern, I had the opportunity to work on marketing spaceships for a fictional company. This experience helped me understand the importance of creating engaging content and how to use social media platforms effectively to reach a target audience.</p>
+        <button onclick="showContent('skeleton_intern')">Show Content</button>
+        <div id="skeleton_intern" style="display:none;">
+            <!-- Add your content here -->
+        </div>
+        <br>
+        <li><strong>The Lion King</strong></li>
+        <p>As a fan of The Lion King, I watched it again this week and was amazed by the timeless story and memorable characters. It reminded me of the power of storytelling and how it can inspire and entertain people of all ages.</p>
+        <button onclick="showContent('the_lion_king')">Show Content</button>
+        <div id="the_lion_king" style="display:none;">
+            <!-- Add your content here -->
+        </div>
+    </ul>
+    <script>
+        function showContent(topic) {
+            var contents = document.getElementsByClassName("content");
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+            }
+            document.getElementById(topic).style.display = "block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafting a Great Slogan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .slogan {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .suggestion {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .suggestion:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Come Up With a Great Slogan</h1>
+    <p>Crafting a great slogan can be a fun and rewarding process. It's not just about creating a catchy phrase; it's about encapsulating your brand's essence in a few words. Here are some tips to help you come up with a slogan that resonates with your audience.</p>
+    <div class="slogan">
+        <h2>Your Slogan</h2>
+        <input type="text" id="sloganInput" placeholder="Enter your slogan here">
+        <button onclick="generateSuggestions()">Get Suggestions</button>
+    </div>
+    <div id="suggestionContainer"></div>
+    <script>
+        function generateSuggestions() {
+            var slogan = document.getElementById('sloganInput').value;
+            var suggestionsContainer = document.getElementById('suggestionContainer');
+            var suggestions = [
+                "Stay Humble, Stay Human",
+                "Think Big, Start Small",
+                "Empower, Educate, Excel",
+                "Dare to Dream, Lead by Example",
+                "Innovate, Integrity, Influence"
+            ];
+            for (var i = 0; i < suggestions.length; i++) {
+                if (suggestions[i].indexOf(slogan) !== -1) {
+                    var suggestion = document.createElement('div');
+                    suggestion.className = 'suggestion';
+                    suggestion.innerHTML = suggestions[i];
+                    suggestionsContainer.appendChild(suggestion);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

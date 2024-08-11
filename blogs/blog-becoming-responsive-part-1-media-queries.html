@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Becoming Responsive with Media Queries - Part 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            background: #fff;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+            }
+            section {
+                padding: 10px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Becoming Responsive: Media Queries Part 1</h1>
+</header>
+
+<section>
+    <h2>Understanding Media Queries</h2>
+    <p>Media queries are a powerful tool in CSS that helps you create responsive web designs.</p>
+    <p>They allow you to apply specific styles based on the device’s characteristics, such as width, height, and orientation.</p>
+    <button onclick="displayInfo()">Learn More</button>
+    <div id="moreInfo" style="display:none;">
+        <h2>Key Benefits:</h2>
+        <ul>
+            <li>Improves user experience across different devices.</li>
+            <li>Enhances SEO rankings.</li>
+            <li>Simplifies design adjustments for various screen sizes.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function displayInfo() {
+        var info = document.getElementById("moreInfo");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

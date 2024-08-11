@@ -1,0 +1,116 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog News: Mobile Inception Marketing Channels</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.news-section {
+    margin-top: 30px;
+}
+.news-item {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.news-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.news-title {
+    font-size: 18px;
+    color: #333;
+}
+.news-excerpt {
+    font-size: 14px;
+    line-height: 20px;
+}
+.mobile-section {
+    margin-top: 30px;
+}
+.mobile-img {
+    width: 100%;
+    height: auto;
+}
+.inception-section {
+    margin-top: 30px;
+}
+.channel-item {
+    background: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.channel-title {
+    font-size: 18px;
+    color: #333;
+}
+.channel-excerpt {
+    font-size: 14px;
+    line-height: 20px;
+}
+</style>
+<script>
+// Simple script to highlight the current section
+document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('.section');
+    var activeClass = 'active';
+    
+    function highlightSection(section) {
+        sections.forEach(function(s) {
+            s.classList.remove(activeClass);
+        });
+        section.classList.add(activeClass);
+    }
+    
+    document.addEventListener('click', function(e) {
+        if(e.target.classList.contains('section-link')) {
+            var sectionId = e.target.getAttribute('href');
+            var section = document.querySelector(sectionId);
+            highlightSection(section);
+        }
+    });
+});
+</script>
+</head>
+<body>
+<div class="container">
+    <h1>Blog News: Mobile Inception Marketing Channels</h1>
+    <div class="news-section">
+        <div class="news-item">
+            <h2 class="news-title">Latest News</h2>
+            <p class="news-excerpt">Discover the latest trends and insights on how mobile marketing is evolving into a more immersive experience.</p>
+        </div>
+        <div class="news-item">
+            <h2 class="news-title">Mobile Inception Explained</h2>
+            <p class="news-excerpt">Learn how mobile marketing channels are becoming more integrated into consumers' daily lives, creating an 'inception' effect.</p>
+        </div>
+    </div>
+    <div class="mobile-section">
+        <h2>Mobile Marketing</h2>
+        <img class="mobile-img" src="https://via.placeholder.com/350x150" alt="Mobile Marketing">
+    </div>
+    <div class="inception-section">
+        <h2>Inception Marketing Channels</h2>
+        <div class="channel-item">
+            <h3 class="channel-title">Social Media</h3>
+            <p class="channel-excerpt">Explore how social media platforms are evolving to offer more immersive experiences.</p>
+        </div>
+        <div class="channel-item">
+            <h3 class="channel-title">Augmented Reality</h3>
+            <p class="channel-excerpt">Discuss the integration of AR into marketing strategies for a more interactive user experience.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

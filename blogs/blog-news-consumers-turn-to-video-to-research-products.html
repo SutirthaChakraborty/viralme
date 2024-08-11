@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Consumers Turn to Video for Product Research</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .video {
+            display: none;
+            margin: 20px 0;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Consumers Turn to Video for Product Research</h1>
+</header>
+
+<article>
+    <h2>The Rise of Video Content</h2>
+    <p>In today's digital landscape, **video content** has become a crucial tool for consumers researching products. With the increasing availability of high-speed internet and mobile devices, more consumers are turning to **video reviews** and **tutorials** to inform their purchasing decisions.</p>
+    <button onclick="toggleVideo()">Watch Video</button>
+    <div class="video" id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</article>
+
+<script>
+    function toggleVideo() {
+        var video = document.getElementById("video");
+        if (video.style.display === "none" || video.style.display === "") {
+            video.style.display = "block";
+        } else {
+            video.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Analytics: Return on Ad Spend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #666;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Understanding Blog Analytics and Return on Ad Spend</h1>
+    <h2>What is Return on Ad Spend (ROAS)?</h2>
+    <p>ROAS is a key performance metric that measures the effectiveness of an advertising campaign. It is calculated by dividing the total revenue generated from ads by the total ad spend.</p>
+    
+    <h2>Why is Blog Analytics Important?</h2>
+    <p>Tracking your blog's analytics helps you understand your audience, optimize content, and maximize the return on your advertising investments.</p>
+
+    <input type="number" id="revenue" placeholder="Enter Revenue" />
+    <input type="number" id="adSpend" placeholder="Enter Ad Spend" />
+    <button onclick="calculateROAS()">Calculate ROAS</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateROAS() {
+        const revenue = parseFloat(document.getElementById('revenue').value);
+        const adSpend = parseFloat(document.getElementById('adSpend').value);
+        if (adSpend <= 0) {
+            document.getElementById('result').innerText = 'Ad spend must be greater than zero.';
+            return;
+        }
+        const roas = (revenue / adSpend).toFixed(2);
+        document.getElementById('result').innerText = 'Return on Ad Spend (ROAS): ' + roas;
+    }
+</script>
+
+</body>
+</html>

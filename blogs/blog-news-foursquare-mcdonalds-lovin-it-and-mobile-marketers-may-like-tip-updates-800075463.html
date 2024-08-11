@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Foursquare Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            color: #c60c30;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .tip {
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        button {
+            background-color: #c60c30;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #a50c20;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>McDonald's Foursquare Campaign: Lovin' It!</h1>
+</header>
+
+<div class="content">
+    <h2>Overview</h2>
+    <p>McDonald's has successfully leveraged Foursquare to enhance its marketing strategy, generating significant buzz among mobile consumers. The campaign, costing less than $1,000, resulted in a 33% increase in check-ins at various locations.</p>
+    
+    <div class="tip">
+        <h3>Tip for Mobile Marketers</h3>
+        <p>Utilize Foursquare's Nearby Tips feature to help consumers discover local brands and increase engagement.</p>
+    </div>
+
+    <button onclick="showMoreInfo()">Learn More</button>
+    <div id="moreInfo" style="display:none;">
+        <p>Foursquare's new features are designed to broaden its reach, making it an essential tool for marketers looking to connect with local audiences.</p>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        var info = document.getElementById("moreInfo");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

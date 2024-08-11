@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the rise of Virtual Reality (VR) and 360-degree videos, their impact on entertainment, education, and more.">
+    <title>Insights on the Rise of VR and 360-Degree Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+        .keyword {
+            background: #d9edf7;
+            padding: 5px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .button {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #004494;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Rise of VR and 360-Degree Videos</h1>
+    </header>
+    <div class="container">
+        <p>Virtual Reality (VR) and 360-degree videos are transforming the ways we interact with digital content. These technologies provide immersive experiences that engage audiences like never before.</p>
+        <div class="keyword">Immersive Experience</div>
+        <div class="keyword">Digital Transformation</div>
+        <div class="keyword">Entertainment</div>
+        <div class="keyword">Education</div>
+        <div class="keyword">Gaming</div>
+        <button class="button" onclick="toggleOverlay()">Learn More</button>
+    </div>
+    <div class="overlay" id="overlay">
+        <p>VR is increasingly used in various sectors including <strong>healthcare</strong>, <strong>real estate</strong>, and <strong>travel</strong>. 360-degree videos provide enhanced storytelling, capturing events from all angles, making it more engaging for viewers. Discover the impact and future of these technologies!</p>
+        <button class="button" onclick="toggleOverlay()">Close</button>
+    </div>
+    <script>
+        function toggleOverlay() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = overlay.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
+</body>
+</html>

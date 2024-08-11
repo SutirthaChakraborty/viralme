@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Analitics</title>
+<style>
+body {font-family: Arial, sans-serif;}
+.news {background-color: #f8f8f8; padding: 10px; margin-bottom: 20px;}
+.visitors {background-color: #cce5ff; padding: 10px; margin-bottom: 20px;}
+.click {background-color: #bada55; padding: 10px; margin-bottom: 20px;}
+.promoted {background-color: #ffb347; padding: 10px; margin-bottom: 20px;}
+.leave {background-color: #ff4500; padding: 10px; margin-bottom: 20px;}
+</style>
+<script>
+function toggleDetails(event) {
+  var target = event.target || event.srcElement;
+  if (target.tagName.toLowerCase() == 'button') {
+    var details = target.nextElementSibling;
+    if (details.style.display == 'block') {
+      details.style.display = 'none';
+    } else {
+      details.style.display = 'block';
+    }
+  }
+}
+document.body.addEventListener('click', toggleDetails);
+</script>
+</head>
+<body>
+<h1>Blog News</h1>
+<div class="news">
+<h2>Visitors</h2>
+<button>Show Details</button>
+<details style="display: none;">
+  <summary>View Details</summary>
+  <p>The number of visitors to the blog today was <strong>100</strong>.</p>
+</details>
+</div>
+
+<div class="visitors">
+<h2>Clicks</h2>
+<button>Show Details</button>
+<details style="display: none;">
+  <summary>View Details</summary>
+  <p>The number of clicks on promoted content was <strong>20</strong>.</p>
+</details>
+</div>
+
+<div class="click">
+<h2>Promoted Content</h2>
+<button>Show Details</button>
+<details style="display: none;">
+  <summary>View Details</summary>
+  <p>The promoted content was about <strong>New Features</strong> and it was clicked <strong>5 times</strong>.</p>
+</details>
+</div>
+
+<div class="promoted">
+<h2>Leave Within 15 Seconds</h2>
+<button>Show Details</button>
+<details style="display: none;">
+  <summary>View Details</summary>
+  <p>The number of visitors who left the blog within 15 seconds was <strong>15</strong>.</p>
+</details>
+</div>
+
+</body>
+</html>

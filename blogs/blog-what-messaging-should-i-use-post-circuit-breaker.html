@@ -1,0 +1,73 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Post Circuit Breaker Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+        }
+        .post-date {
+            margin-left: auto;
+            color: #777;
+            font-size: 0.8em;
+        }
+        .post-content {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .btn-readmore {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-readmore:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        function toggleReadMore(post) {
+            const content = post.querySelector('.read-more-info');
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                post.querySelector('.btn-readmore').innerText = 'Read Less';
+            } else {
+                content.style.display = 'none';
+                post.querySelector('.btn-readmore').innerText = 'Read More';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Post Circuit Breaker: Understanding its Importance in Software Engineering</h1>

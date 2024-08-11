@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief history of TikTok and its rise to popularity. Explore the evolution of TikTok from musical.ly to a global sensation.">
+    <title>A Brief History of TikTok</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #ff0050;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #ff0050;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #e60045;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Rise of TikTok</h1>
+        <p>TikTok, launched in September 2016 by Chinese tech company ByteDance, quickly evolved from a simple video-sharing app to a cultural phenomenon. Originally merging with Musical.ly in 2018, TikTok began its journey to global recognition, leveraging trends, challenges, and viral content.</p>
+        <p>The app's popularity surged thanks to its algorithm, which curates personalized feeds, fostering user engagement like never before. With over a billion downloads, TikTok became a leading platform for short-form videos, attracting influencers and brands alike.</p>
+        <button onclick="toggleHistory()">Show/Hide Timeline</button>
+        <div id="timeline" style="display: none;">
+            <h2>Timeline of TikTok's Evolution</h2>
+            <ul>
+                <li>2016: Launch of Douyin in China.</li>
+                <li>2017: TikTok is introduced to international markets.</li>
+                <li>2018: Merger with Musical.ly boosts user base.</li>
+                <li>2019: Became the most downloaded app globally.</li>
+                <li>2020: TikTok emerges as a primary platform for creativity during the pandemic.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleHistory() {
+            const timeline = document.getElementById('timeline');
+            if (timeline.style.display === 'none') {
+                timeline.style.display = 'block';
+            } else {
+                timeline.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

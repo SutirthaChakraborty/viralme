@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore insights into legacy content marketing through a specialized questionnaire designed by Melanie Graham at Dana-Farber Cancer Institute.">
+    <title>Legacy Content Marketing Questionnaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #007bff;
+            cursor: pointer;
+        }
+        .keyword-info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Legacy Content Marketing Questionnaire</h1>
+        <p>Insights by Melanie Graham, Dana-Farber Cancer Institute</p>
+    </header>
+    <div class="content">
+        <h2>Understanding Legacy Content Marketing</h2>
+        <p>Legacy content marketing focuses on creating valuable, long-lasting content that builds brand trust and loyalty. It is crucial for organizations such as Dana-Farber Cancer Institute to effectively communicate their mission and engage with their audience.</p>
+        <h3>Interactive Keywords:</h3>
+        <span class="keyword" onclick="toggleInfo('legacy')">Legacy Content</span>
+        <div id="legacy" class="keyword-info">Legacy content is material that remains relevant and valuable over time, emphasizing the importance of sustained engagement.</div>
+        
+        <span class="keyword" onclick="toggleInfo('questionnaire')">Marketing Questionnaire</span>
+        <div id="questionnaire" class="keyword-info">A tailored questionnaire can reveal key insights into audience preferences and improve marketing strategies effectively.</div>
+        
+        <span class="keyword" onclick="toggleInfo('melanie')">Melanie Graham</span>
+        <div id="melanie" class="keyword-info">Melanie Graham is a content strategist who specializes in aligning marketing efforts with healthcare objectives at Dana-Farber.</div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Dana-Farber Cancer Institute. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

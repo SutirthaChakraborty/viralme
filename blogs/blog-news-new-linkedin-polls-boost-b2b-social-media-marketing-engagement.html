@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost B2B Social Media Marketing with LinkedIn Polls</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077B5;
+            color: white;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            cursor: pointer;
+            background: #0077B5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #005582;
+        }
+        #pollResults {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhance B2B Engagement with LinkedIn Polls</h1>
+</header>
+
+<div class="content">
+    <h2>Why Use LinkedIn Polls?</h2>
+    <p>Engage your audience and gather valuable insights with <strong>LinkedIn polls</strong>. They are a powerful tool for <strong>B2B marketing</strong>, transforming passive followers into active participants.</p>
+    
+    <h2>Interactive Poll</h2>
+    <p>What's your biggest challenge in B2B marketing?</p>
+    <button onclick="vote('Content Creation')">Content Creation</button>
+    <button onclick="vote('Lead Generation')">Lead Generation</button>
+    <button onclick="vote('Analytics')">Analytics</button>
+    <button onclick="vote('ROI Measurement')">ROI Measurement</button>
+
+    <div id="pollResults"></div>
+</div>
+
+<script>
+    const results = { 'Content Creation': 0, 'Lead Generation': 0, 'Analytics': 0, 'ROI Measurement': 0 };
+
+    function vote(option) {
+        results[option]++;
+        displayResults();
+    }
+
+    function displayResults() {
+        const resultsDiv = document.getElementById('pollResults');
+        resultsDiv.innerHTML = '<h3>Poll Results:</h3>';
+        for (const [key, value] of Object.entries(results)) {
+            resultsDiv.innerHTML += `<p>${key}: ${value} votes</p>`;
+        }
+    }
+</script>
+
+</body>
+</html>

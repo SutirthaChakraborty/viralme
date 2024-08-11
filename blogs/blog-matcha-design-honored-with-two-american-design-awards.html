@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Matcha Design honored with two American Design Awards for innovative and aesthetic design solutions.">
+    <title>Matcha Design Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .awards {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matcha Design Honored with Awards</h1>
+</header>
+
+<section>
+    <h2>Overview</h2>
+    <p>Matcha Design has been recognized for its exceptional creativity and innovative approaches, earning two prestigious American Design Awards. These accolades highlight our commitment to design excellence and our passion for pushing boundaries.</p>
+    <button id="toggleAwardsBtn">Learn More About the Awards</button>
+    <div class="awards" id="awardsInfo">
+        <h3>Award Details</h3>
+        <ul>
+            <li>1. American Graphic Design Award - Recognizing outstanding graphic design work.</li>
+            <li>2. American Web Design Award - Celebrating innovative digital design solutions.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    document.getElementById('toggleAwardsBtn').onclick = function() {
+        var awardsInfo = document.getElementById('awardsInfo');
+        if (awardsInfo.style.display === "none" || awardsInfo.style.display === "") {
+            awardsInfo.style.display = "block";
+            this.innerText = "Show Less";
+        } else {
+            awardsInfo.style.display = "none";
+            this.innerText = "Learn More About the Awards";
+        }
+    };
+</script>
+
+</body>
+</html>

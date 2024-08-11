@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Analytics & Google Tag Manager</title>
+    <meta name="description" content="An introduction to Blog Analytics and Google Tag Manager, enhancing your tracking and data analysis for better insights into your audience.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .toggle-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #35424a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Analytics & Google Tag Manager</h1>
+</header>
+
+<section>
+    <h2>What is Blog Analytics?</h2>
+    <p>Blog analytics involve tracking and analyzing blog performance to understand audience behavior, enhance engagement, and improve content strategy.</p>
+
+    <button class="toggle-button" id="toggleDetails">Learn More</button>
+    <div id="details">
+        <p>With tools like Google Analytics, you can measure traffic, user demographics, and content performance. Understanding these metrics helps optimize your blog for better reach and impact.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Introduction to Google Tag Manager</h2>
+    <p>Google Tag Manager (GTM) is a free tool that allows you to manage JavaScript and HTML tags used for tracking and analytics.</p>
+
+    <button class="toggle-button" id="toggleGTMDetails">Learn More</button>
+    <div id="gtmDetails">
+        <p>GTM simplifies the process of adding and managing analytics tags without extensive coding. It helps you deploy tags faster and with less risk of errors, enhancing your ability to track metrics effectively.</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById("toggleDetails").addEventListener("click", function() {
+        const details = document.getElementById("details");
+        details.style.display = details.style.display === "none" ? "block" : "none";
+        this.textContent = details.style.display === "none" ? "Learn More" : "Show Less";
+    });
+
+    document.getElementById("toggleGTMDetails").addEventListener("click", function() {
+        const gtmDetails = document.getElementById("gtmDetails");
+        gtmDetails.style.display = gtmDetails.style.display === "none" ? "block" : "none";
+        this.textContent = gtmDetails.style.display === "none" ? "Learn More" : "Show Less";
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big 3 Media Cancellation Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p, ul, ol {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .accordion {
+            background-color: #eee;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h2>FAQs on Big 3 Media Cancellation Policies</h2>
+    <p><strong>What are the Big 3 Media's cancellation policies for a testimonial video?</strong></p>
+    <div class="accordion">
+        <h2>General Policies</h2>
+        <div class="panel">
+            <p>If you need to cancel your testimonial video project with Big 3 Media, you must notify us at least 7 days prior to the scheduled shoot date. This gives us enough time to reschedule the shoot with another client, if possible. If you cancel within 7 days of the scheduled shoot date, you will be charged a 50% cancellation fee. If you do not show up for the shoot without prior notice, you will be charged the full cost of the project.</p>
+        </div>
+    </div>
+    <div class="accordion">
+        <h2>Special Considerations</h2>
+        <div class="panel">
+            <p>For special projects or events, Big 3 Media may have additional cancellation policies. These policies are determined on a case-by-case basis and will be discussed and agreed upon at the time of booking.</p>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

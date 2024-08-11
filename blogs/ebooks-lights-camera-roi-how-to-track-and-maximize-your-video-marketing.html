@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooks: Lights, Camera, ROI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle {
+            cursor: pointer;
+            color: #2980b9;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Maximize Your Video Marketing ROI</h1>
+
+    <div class="section">
+        <h2 class="toggle">Understanding Video Marketing Strategies</h2>
+        <div class="content">
+            <p>Video marketing is crucial for businesses striving to enhance their online presence. Effective strategies include storytelling, content targeting, and leveraging analytics for optimization.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="toggle">How to Track Video Performance</h2>
+        <div class="content">
+            <p>Utilize tools like Google Analytics, social media insights, and video hosting platforms to track metrics such as view count, engagement rate, and conversion rates.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="toggle">Maximizing ROI from Video Campaigns</h2>
+        <div class="content">
+            <p>To maximize ROI, focus on creating high-quality content, optimizing for SEO, and leveraging targeted ads. A/B testing can also refine your approach.</p>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                content.style.display = content.style.display === 'none' || content.style.display === '' ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>

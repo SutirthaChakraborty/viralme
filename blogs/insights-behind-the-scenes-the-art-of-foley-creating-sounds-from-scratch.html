@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the art of Foley sound effects, creating sounds from scratch for film and video.">
+    <title>The Art of Foley: Creating Sounds from Scratch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        #content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .sound-button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sound-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <h1>Insights Behind the Scenes: The Art of Foley</h1>
+        <p>Foley is the art of creating sound effects from scratch for film and video content. It adds depth and realism to the audience's experience.</p>
+        <button class="sound-button" onclick="playSound('footsteps')">Play Footsteps Sound</button>
+        <button class="sound-button" onclick="playSound('door')">Play Door Opening Sound</button>
+        <button class="sound-button" onclick="playSound('glass')">Play Glass Breaking Sound</button>
+        <audio id="footsteps" src="footsteps.mp3"></audio>
+        <audio id="door" src="door.mp3"></audio>
+        <audio id="glass" src="glass.mp3"></audio>
+    </div>
+
+    <script>
+        function playSound(sound) {
+            var audio = document.getElementById(sound);
+            audio.currentTime = 0;  // Reset audio to start
+            audio.play();
+        }
+    </script>
+</body>
+</html>

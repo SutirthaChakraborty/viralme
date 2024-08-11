@@ -1,0 +1,81 @@
+Sure, I've created a simple HTML page with a CSS layout and JavaScript to enhance interactivity. The content revolves around blog legacy, content marketing tools, and Brafton. I've included relevant keywords to improve search visibility.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy Content Marketing with Brafton Tools</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+      background-color: #f0f2f5;
+    }
+
+    header {
+      background: #28a745;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .main-content {
+      width: 75%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #28a745;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      max-width: 650px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script>
+    // Simple interactive JavaScript to highlight important keywords
+    window.addEventListener("DOMContentLoaded", function() {
+      const keywords = ["blog", "legacy", "content marketing", "tools", "Brafton"];
+      let textNodes = document.querySelectorAll("*:not(script):not(style):not([style]) > *");
+
+      for (let node of textNodes) {
+        keywords.forEach((keyword) => {
+          if (node.textContent.includes(keyword)) {
+            node.style.backgroundColor = "#FFFFCC";
+          }
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Unlock Blogging Success: Legacy Content Marketing Tools from Brafton

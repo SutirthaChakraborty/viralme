@@ -1,0 +1,74 @@
+Sure, here's a simple HTML and CSS code with embedded JavaScript for a blog news page about Google testing a new feature without a black navigation bar, targeting integration of Google services. The page will be made interactive using JavaScript to provide a basic example. Keep in mind that this is a very basic code structure and might not be fully responsive, but it should give you an idea.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Services News: Testing a New Feature</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #e6e6e6;
+            padding: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .header:hover {
+            background-color: #dce0e6;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .news-entry {
+            margin-bottom: 2rem;
+        }
+        
+        .news-entry h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        
+        .date {
+            color: #999;
+            font-size: 0.8rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        function showDetails(id) {
+            var element = document.getElementById(id);
+            var details = document.getElementById('details_' + id);
+            if (element.style.display === 'block') {
+                element.style.display = 'none';
+                details.style.display = 'none';
+            } else {
+                element.style.display = 'block';
+                details

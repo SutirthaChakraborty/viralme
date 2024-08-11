@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploring the intersection of content marketing and journalism. How blog news aligns with both fields.">
+    <title>Blog News: Content Marketing vs. Journalism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .toggle-button {
+            cursor: pointer;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Content Marketing vs. Journalism</h1>
+    <p>A Deep Dive into Blog News</p>
+</header>
+
+<article>
+    <h2>Are Content Marketing and Journalism Alike?</h2>
+    <p>Content marketing focuses on delivering valuable information to attract and engage the audience, whereas journalism emphasizes gathering facts to report news.</p>
+    <p class="toggle-button" onclick="toggleDetails()">Learn More</p>
+    <div id="moreDetails" class="hidden">
+        <p>While both disciplines share storytelling techniques, they serve different purposes. Content marketing is more promotional, whereas journalism aims to inform.</p>
+    </div>
+</article>
+
+<article>
+    <h2>The Role of Blogs in Content Strategy</h2>
+    <p>Blogs serve as a powerful tool in content marketing strategies, enhancing SEO and driving traffic.</p>
+    <p class="toggle-button" onclick="toggleDetails2()">Discover More</p>
+    <div id="moreDetails2" class="hidden">
+        <p>Through consistent blogging, brands can establish thought leadership and build trust with their audience while providing newsworthy content.</p>
+    </div>
+</article>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("moreDetails");
+        if (details.classList.contains("hidden")) {
+            details.classList.remove("hidden");
+        } else {
+            details.classList.add("hidden");
+        }
+    }
+    
+    function toggleDetails2() {
+        var details2 = document.getElementById("moreDetails2");
+        if (details2.classList.contains("hidden")) {
+            details2.classList.remove("hidden");
+        } else {
+            details2.classList.add("hidden");
+        }
+    }
+</script>
+
+</body>
+</html>

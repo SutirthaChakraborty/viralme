@@ -1,0 +1,74 @@
+Here's a simple HTML code with CSS and JavaScript to showcase insights on social media metrics. I added some relevant keywords for better search visibility. The content is wrapped in a lightbox effect for interactivity.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Insights</title>
+    <style>
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .lightbox-content {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-icon {
+            cursor: pointer;
+            background-color: #0099cc;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .content-icon:hover {
+            background-color: #006699;
+        }
+
+        .fa-eye {
+            margin-right: 5px;
+        }
+    </style>
+    <script>
+        function showLightbox() {
+            document.querySelector('.lightbox').style.display = "block";
+        }
+
+        function hideLightbox() {
+            document.querySelector('.lightbox').style.display = "none";
+        }
+
+        document.querySelectorAll('.content-icon').forEach(icon => {
+            icon.addEventListener('click', function() {
+                showLightbox();
+            });
+            icon.addEventListener('mouseleave', function() {
+                hideLightbox();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="content-icon" title="Social Media Metrics: Click to View Insights"><i class="fa fa-eye"></i> Understand Key Metrics</button>
+    <div class="lightbox">
+        <p style="text-align: center;">
+            <h2>Key Social Media Metrics:</h2>
+            <ul>
+               

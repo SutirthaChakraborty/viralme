@@ -1,0 +1,70 @@
+Here's a simple HTML code with inline CSS and a search bar using relevant keywords to focus on blog news, customers, local businesses, and the 4Ps (product, price, place, promotion). I have used JavaScript for the interactive search functionality.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Business Directory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #333;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .search-form {
+            margin-bottom: 20px;
+        }
+        .search-field {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+        }
+        .search-results {
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .result-item {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .result-item a {
+            color: #333;
+        }
+    </style>
+    <script>
+        function searchItems(e) {
+            var searchQuery = document.getElementById("search-input").value.toLowerCase();
+            var resultItems = document.getElementsByClassName("result-item");
+
+            for (var i = 0; i < resultItems.length; i++) {
+                var=itemTitle = resultItems[i].innerText.toLowerCase();
+                if (itemTitle.includes(searchQuery)) {
+                    resultItems[i].style.display = "block";
+                } else {
+                    resultItems[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>

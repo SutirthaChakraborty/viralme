@@ -1,0 +1,167 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Producer: Behind the Scenes</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.video-producer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video-producer .producer-info {
+  width: 50%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.video-producer .producer-info h2 {
+  margin-bottom: 10px;
+}
+
+.video-producer .producer-info p {
+  margin-bottom: 20px;
+}
+
+.video-producer .producer-info .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+.video-producer .producer-info .btn:hover {
+  background-color: #444;
+}
+
+.video-producer .production-process {
+  width: 50%;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.video-producer .production-process h2 {
+  margin-bottom: 20px;
+}
+
+.video-producer .production-process .step {
+  margin-bottom: 20px;
+}
+
+.video-producer .production-process .step img {
+  width: 100%;
+}
+
+.video-producer .production-process .step p {
+  margin-bottom: 10px;
+}
+
+.video-producer .production-process .step .btn {
+  margin-top: 10px;
+}
+</style>
+<script>
+// Simple JavaScript to add interactivity (e.g., expand/collapse sections)
+// Note: This is a simplified example for demonstration purposes
+document.addEventListener('DOMContentLoaded', function() {
+  var expandBtns = document.querySelectorAll('.expand-btn');
+  expandBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var content = btn.nextElementSibling;
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+        btn.textContent = 'Collapse';
+      } else {
+        content.style.display = 'none';
+        btn.textContent = 'Expand';
+      }
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="video-producer">
+    <div class="producer-info">
+      <h1>What is a Video Producer?</h1>
+      <h2>The Role</h2>
+      <p>A video producer is the orchestrator of a video project, responsible for planning, organizing, and executing a video production. They work closely with directors, writers, and cinematographers to bring a concept to life.</p>
+      <button class="btn">Learn More</button>
+    </div>
+    <div class="production-process">
+      <h2>The Production Process</h2>
+      <div class="step">
+        <h2>Conceptualization</h2>
+        <img src="conceptualization.jpg" alt="Conceptualization">
+        <p>The initial phase where the idea is conceived and a brief is written.</p>
+        <button class="btn">Expand</button>
+      </div>
+      <div class="step">
+        <h2>Scriptwriting</h2>
+        <img src="scriptwriting.jpg" alt="Scriptwriting">
+        <p>Creating the dialogue and story structure.</p>
+        <button class="btn">Expand</button>
+      </div>
+      <div class="step">
+        <h2>Pre-production</h2>
+        <img src="preproduction.jpg" alt="Pre-production">
+        <p>Planning the logistics, casting, and securing permissions.</p>
+        <button class="btn">Expand</button>
+      </div>
+      <div class="step">
+        <h2>Casting and Crew</h2>
+        <img src="casting.jpg" alt="Casting and Crew">
+        <p>Hiring talent and setting up the production team.</p>
+        <button class="btn">Expand</button>
+      </div>
+      <div class="step">
+        <h2>Filming</h2>
+        <img src="filming.jpg" alt="Filming">
+        <p>The actual shooting of the video.</p>
+        <button class="btn">Expand</button>
+      </div>
+      <div class="step">
+        <h2>Post-production</h2>
+        <img src="postproduction.jpg" alt="Post-production">
+        <p>Editing, sound design, and color grading.</p>
+        <button class="btn">Expand</button>
+      </div>
+      <div class="step">
+        <h2>Distribution</h2>
+        <img src="distribution.jpg" alt="Distribution">
+        <p>Sharing the video with the intended audience.</p>
+        <button class="btn">Expand</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

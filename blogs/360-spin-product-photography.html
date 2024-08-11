@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Spin Product Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .viewer {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .spin-images {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .spin-images img {
+            width: 300px;
+            height: 300px;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>360 Spin Product Photography</h1>
+    <p>Experience products like never before with interactive 360-degree views!</p>
+
+    <div class="viewer">
+        <div class="spin-images" id="spinImages">
+            <img src="image1.jpg" alt="Product Image 1">
+            <img src="image2.jpg" alt="Product Image 2">
+            <img src="image3.jpg" alt="Product Image 3">
+            <img src="image4.jpg" alt="Product Image 4">
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="prevImage()">Previous</button>
+        <button onclick="nextImage()">Next</button>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.spin-images img');
+        
+        function updateViewer() {
+            const spinImages = document.getElementById('spinImages');
+            spinImages.style.transform = `translateX(-${currentIndex * 300}px)`;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateViewer();
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateViewer();
+        }
+    </script>
+
+</body>
+</html>

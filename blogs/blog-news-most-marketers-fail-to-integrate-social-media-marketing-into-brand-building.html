@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrating Social Media in Brand Building</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        .accordion {
+            background: #f1f1f1;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #0073e6;
+            color: white;
+        }
+        .panel {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Why Marketers Fail in Social Media Integration</h1>
+    </header>
+    <div class="container">
+        <p>Many businesses struggle to effectively <span class="keyword">integrate social media marketing</span> into their brand strategy. Here are some key reasons:</p>
+        <button class="accordion">Lack of Strategy</button>
+        <div class="panel">
+            <p>Without a clear plan, marketers often miss opportunities to engage their audience effectively.</p>
+        </div>
+        
+        <button class="accordion">Inconsistent Messaging</button>
+        <div class="panel">
+            <p>Inconsistent branding across platforms can confuse customers and damage brand identity.</p>
+        </div>
+        
+        <button class="accordion">Ignoring Analytics</button>
+        <div class="panel">
+            <p>Failing to analyze data can lead to ineffective campaigns and missed insights into consumer behavior.</p>
+        </div>
+        
+        <button class="accordion">Not Engaging with Customers</button>
+        <div class="panel">
+            <p>Social media is about connection; businesses need to engage and respond to their audience.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

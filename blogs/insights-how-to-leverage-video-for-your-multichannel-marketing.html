@@ -1,0 +1,78 @@
+Below is a simple HTML and CSS code snippet that demonstrates the use of video for multi-channel marketing. The code includes an interactive element using JavaScript to enhance the user experience. Please note that this is a plain text version, without Markdown syntax:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-description {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+
+        .keyword-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 18px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .keyword-overlay:hover {
+            opacity: 1;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        function showKeyword(keyword) {
+            const keywordElement = document.getElementById(`keyword-${keyword}`);
+            const overlayElement = document.getElementById(`overlay-${keyword}`);
+            if (keywordElement.style.display === 'none') {
+                keywordElement.style.display = 'block';
+                overlayElement.style.opacity = 1;
+            } else {
+               

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our Blog Keyword Research Masterclass to unlock the secrets of effective SEO strategies. Learn to optimize your content with powerful keyword tools.">
+    <title>Blog Keyword Research Masterclass</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        #keywordInput {
+            width: 70%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Keyword Research Masterclass</h1>
+    <p>Unlock SEO Success with Effective Keyword Strategies</p>
+</header>
+
+<section>
+    <h2>Why Keywords Matter</h2>
+    <p>Keywords are the foundation of effective SEO. By understanding and utilizing keywords, you can attract more traffic and engage your audience effectively.</p>
+</section>
+
+<section>
+    <h2>Interactive Keyword Tool</h2>
+    <p>Type a keyword to see related keyword suggestions:</p>
+    <input type="text" id="keywordInput" placeholder="Enter a keyword..." />
+    <button onclick="suggestKeywords()">Get Suggestions</button>
+    <div id="results"></div>
+</section>
+
+<script>
+    function suggestKeywords() {
+        const input = document.getElementById('keywordInput').value.toLowerCase();
+        const suggestions = {
+            'seo': ['seo tips', 'seo techniques', 'seo strategies', 'search engine optimization'],
+            'blogging': ['blogging tips', 'blogging tools', 'blog writing', 'blog SEO'],
+            'keyword research': ['keyword analysis', 'long-tail keywords', 'keyword planner', 'keyword optimization'],
+            'content marketing': ['content strategy', 'content creation', 'content distribution', 'content planning']
+        };
+        
+        const resultDiv = document.getElementById('results');
+        resultDiv.innerHTML = '';
+        
+        if (suggestions[input]) {
+            resultDiv.innerHTML = '<h3>Related Keywords:</h3><ul>' + 
+                suggestions[input].map(keyword => `<li>${keyword}</li>`).join('') + 
+                '</ul>';
+        } else {
+            resultDiv.innerHTML = '<h3>No suggestions found. Try another keyword!</h3>';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Analytics Report - Blog Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background-color: #3b5998;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            color: #3b5998;
+            font-weight: bold;
+        }
+        .toggle-button {
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .toggle-button:hover {
+            background-color: #2d4373;
+        }
+        .analytics {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #3b5998;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Facebook Analytics Report</h1>
+    <p>Understanding Your Blog's Social Media Impact</p>
+</header>
+
+<section>
+    <h2>What is Facebook Analytics?</h2>
+    <p>Facebook Analytics allows bloggers to track engagement, understand audience behavior, and analyze <span class="keyword">social media interactions</span>.</p>
+    <button class="toggle-button" onclick="toggleAnalytics()">Show Analytics Insights</button>
+    <div class="analytics" id="analytics-info">
+        <h3>Key Metrics</h3>
+        <ul>
+            <li>Reach: Total number of unique users who saw your posts.</li>
+            <li>Engagement Rate: Likes, comments, shares, and overall interaction.</li>
+            <li>Audience Demographics: Age, gender, location of your followers.</li>
+            <li>Page Views: Total visits to your blog via Facebook.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function toggleAnalytics() {
+        const analyticsDiv = document.getElementById('analytics-info');
+        analyticsDiv.style.display = (analyticsDiv.style.display === 'none' || analyticsDiv.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create a Marketing eBook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .interactive {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creating a Marketing eBook</h1>
+    </header>
+    <section>
+        <h2>Step 1: Conduct Keyword Research</h2>
+        <p>Identify relevant keywords to enhance your eBook's visibility. Use tools like Google Keyword Planner to find trending topics.</p>
+        <button onclick="toggleInteractive('step1')">Learn More</button>
+        <div id="step1" class="interactive">
+            <p>Utilizing keywords effectively can significantly improve your eBook's reach and engagement.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Step 2: Choose the Right Platform</h2>
+        <p>Select a distribution platform that aligns with your target audience, such as Amazon Kindle or your own website.</p>
+        <button onclick="toggleInteractive('step2')">Learn More</button>
+        <div id="step2" class="interactive">
+            <p>Consider factors like royalty rates and ease of use when choosing a platform.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Step 3: Design Your eBook</h2>
+        <p>Use tools like Canva or Adobe InDesign to create visually appealing layouts that attract readers.</p>
+        <button onclick="toggleInteractive('step3')">Learn More</button>
+        <div id="step3" class="interactive">
+            <p>Good design enhances readability and keeps your audience engaged.</p>
+        </div>
+    </section>
+    <script>
+        function toggleInteractive(step) {
+            const element = document.getElementById(step);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

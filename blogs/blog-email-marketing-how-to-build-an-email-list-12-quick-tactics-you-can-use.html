@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to build an email list with 12 quick tactics for effective blog email marketing.">
+    <title>Email Marketing: Build Your Email List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #007BFF;
+            color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        li:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Email Marketing: Build Your Email List</h1>
+    </header>
+    <section>
+        <h2>12 Quick Tactics to Grow Your Email List</h2>
+        <ul id="tacticList">
+            <li onclick="displayInfo('Offer a lead magnet')">1. Offer a Lead Magnet</li>
+            <li onclick="displayInfo('Utilize social media')">2. Utilize Social Media</li>
+            <li onclick="displayInfo('Host a webinar')">3. Host a Webinar</li>
+            <li onclick="displayInfo('Create a blog post series')">4. Create a Blog Post Series</li>
+            <li onclick="displayInfo('Use exit-intent popups')">5. Use Exit-Intent Popups</li>
+            <li onclick="displayInfo('Run a contest or giveaway')">6. Run a Contest or Giveaway</li>
+            <li onclick="displayInfo('Segment your audience')">7. Segment Your Audience</li>
+            <li onclick="displayInfo('Collaborate with other bloggers')">8. Collaborate with Other Bloggers</li>
+            <li onclick="displayInfo('Optimize for mobile')">9. Optimize for Mobile</li>
+            <li onclick="displayInfo('Create visually appealing forms')">10. Create Visually Appealing Forms</li>
+            <li onclick="displayInfo('Share testimonials')">11. Share Testimonials</li>
+            <li onclick="displayInfo('Regular email newsletters')">12. Regular Email Newsletters</li>
+        </ul>
+        <div id="infoBox" style="margin-top: 20px;"></div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Email Marketing Blog. All rights reserved.</p>
+    </footer>
+    <script>
+        function displayInfo(tactic) {
+            const infoBox = document.getElementById('infoBox');
+            const descriptions = {
+                'Offer a lead magnet': 'Provide value upfront with something like an eBook or free course in exchange for email sign-ups.',
+                'Utilize social media': 'Promote your email list on your social media channels.',
+                'Host a webinar': 'Capture emails by hosting informative webinars that require registration.',
+                'Create a blog post series': 'Encourage readers to subscribe for updates on your series.',
+                'Use exit-intent popups': 'Capture abandoning visitors with a targeted subscribe popup.',
+                'Run a contest or giveaway': 'Collect emails for entries into contests.',
+                'Segment your audience': 'Personalize your approach by grouping subscribers based on interest.',
+                'Collaborate with other bloggers': 'Leverage cross-promotions to grow your reach.',
+                'Optimize for mobile': 'Ensure easy sign-up on mobile devices.',
+                'Create visually appealing forms': 'Use eye-catching forms to draw attention.',
+                'Share testimonials': 'Show how others have benefitted from subscribing.',
+                'Regular email newsletters': 'Stay connected with quality content that keeps subscribers coming back.'
+            };
+            infoBox.innerHTML = `<p><strong>${tactic}:</strong> ${descriptions[tactic]}</p>`;
+        }
+    </script>
+</body>
+</html>

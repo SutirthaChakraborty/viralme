@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog Graphics: Graphic Design Rules</title>
+<style>
+body {
+background-color: #f9f9f9;
+font-family: Arial, sans-serif;
+color: #333;
+margin: 0;
+padding: 20px;
+}
+
+.container {
+max-width: 900px;
+margin: 0 auto;
+padding: 15px;
+background-color: #ffffff;
+border: 1px solid #e3e3e3;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+text-align: center;
+padding-bottom: 10px;
+}
+
+h1 {
+font-size: 28px;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+
+ Rule1 {
+color: #ff5f5f;
+font-weight: bold;
+}
+ Rule2 {
+color: #00bfff;
+font-weight: bold;
+}
+ Rule3 {
+color: #8bc34a;
+font-weight: bold;
+}
+
+.rules-list {
+list-style-type: disc;
+margin-left: 20px;
+}
+
+.rule-description {
+margin-bottom: 10px;
+}
+
+.button {
+display: inline-block;
+padding: 10px 16px;
+background-color: #3498db;
+color: #ffffff;
+border: none;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: #3071a9;
+}
+
+@keyframes rule-explanation {
+from {
+transform: rotate(0deg);
+}
+to {
+transform: rotate(360deg);
+}
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const ruleItems = document.querySelectorAll('.rule-explanation');
+let rotateIndex = 0;
+
+ruleItems.forEach(item => {
+item.addEventListener('mouseover', function() {
+this.style.animationPlayState = 'running';
+});
+item.addEventListener('mouseout', function() {
+this.style.animationPlayState = 'paused';
+});
+});
+});
+</script>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Blog Graphics: Mastering Graphic Design Rules</h1>
+</div>
+<ul class="rules-list">
+<li class="rule1 Rule-explanation" id="rule1">
+<h2 class="Rule1">1. <span id="

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Update: Music Event Searches</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0073e6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .event-list {
+            display: none;
+            margin-top: 20px;
+        }
+        .event {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog News: Google Prioritizes Music Events in Search Results</h1>
+        <p>In a recent update, Google announced significant changes to its search algorithm focusing on music and live events. Discover what this means for artists, venues, and fans.</p>
+        <button id="toggleEvents">Show Upcoming Music Events</button>
+        <div class="event-list" id="eventList">
+            <div class="event">
+                <h3>Summer Music Festival 2023</h3>
+                <p>Date: July 20, 2023</p>
+                <p>Location: Central Park, NYC</p>
+            </div>
+            <div class="event">
+                <h3>Rock the Night Concert</h3>
+                <p>Date: August 15, 2023</p>
+                <p>Location: Madison Square Garden, NYC</p>
+            </div>
+            <div class="event">
+                <h3>Jazz Nights in the City</h3>
+                <p>Date: September 10, 2023</p>
+                <p>Location: Blue Note Jazz Club, NYC</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("toggleEvents").addEventListener("click", function() {
+            const eventList = document.getElementById("eventList");
+            if (eventList.style.display === "none" || eventList.style.display === "") {
+                eventList.style.display = "block";
+                this.textContent = "Hide Upcoming Music Events";
+            } else {
+                eventList.style.display = "none";
+                this.textContent = "Show Upcoming Music Events";
+            }
+        });
+    </script>
+</body>
+</html>

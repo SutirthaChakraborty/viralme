@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boost Sales with Explainer Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+        }
+        section {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+        .video {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Unlock Sales Potential with Explainer Videos</h1>
+</header>
+
+<section>
+    <h2>Why Use Explainer Videos?</h2>
+    <p>Professional explainer videos can simplify complex ideas, engage customers, and drive higher conversion rates. Enhance your marketing strategy with:</p>
+    <ul>
+        <li>Quality storytelling to convey your brand's message</li>
+        <li>Increased engagement on social media platforms</li>
+        <li>Higher retention rates and customer understanding</li>
+    </ul>
+    <button class="btn" onclick="toggleVideo()">Watch Our Explainer Video</button>
+    <div class="video" id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+<script>
+    function toggleVideo() {
+        var video = document.getElementById("video");
+        if (video.style.display === "none" || video.style.display === "") {
+            video.style.display = "block";
+        } else {
+            video.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

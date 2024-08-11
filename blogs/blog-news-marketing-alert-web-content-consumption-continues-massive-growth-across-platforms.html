@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Marketing Alert: Web Content Consumption Boom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .headline {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            line-height: 1.5;
+            ol {
+                list-style-type: disc;
+                margin-left: 20px;
+            }
+        }
+
+        .cta {
+            background-color: #3498db;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        function highlightKeywords() {
+            var regex = /blog|news|marketing|alert|web content|consumption|massive growth|platforms/gi;
+            var elements = document.querySelectorAll('*[data-keyword]');
+            elements.forEach(function (element) {
+                if (regex.test(element.textContent || element.innerText)) {
+                    element.style.backgroundColor = '#ffffcc';
+                }
+            });
+        }
+        document.addEventListener('DOMContentLoaded', highlightKeywords);
+    </script>
+</head>
+<body>
+    <header>
+        <div

@@ -1,0 +1,83 @@
+#### HTML Code with CSS and JS for Future of Cinema
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Future of Cinema</h1>
+        <input type="text" class="search" placeholder="Search...">
+    </header>
+    <div class="movie-banner" onmouseover="showOverview()">
+        <img src="movie-banner.jpg" alt="Movie Banner">
+    </div>
+    <div id="overview" class="overview">
+        <p>This is the overview of the movie.</p>
+    </div>
+
+    <script>
+        function showOverview() {
+            document.getElementById('overview').style.transform = 'translateY(0)';
+        }
+    </script>
+</body>
+</html>
+
+
+#### CSS (styles.css)
+
+css
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #030303;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+header {
+    background-color: #363636;
+    display: flex;
+}
+h1 {
+    color: whitesmoke;
+    align-self: center;
+    margin-left: 28rem;
+}
+.search {
+    margin: 3rem;
+    margin-left: 12rem;
+    background-color: transparent;
+    border: 2px solid #e9e9ec;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+.search::placeholder {
+    color: #7378c5;
+}
+.search:focus {
+    background-color: #050505;
+    outline: none;
+}
+.movie-banner {
+    /* Add styles for the movie banner here */
+}
+.overview {
+    /* Add styles for the overview here */
+}
+
+
+#### Explanation
+The HTML code sets up a basic webpage for exploring the future of cinema. It includes a header, a movie banner, and an overview section. The CSS file provides styles for the webpage, including the layout, fonts, and the appearance of the search input and movie banner. Additionally, the JavaScript function `showOverview()` is used to display the movie overview when hovering over the movie banner.
+
+This code incorporates insights from various sources, such as the potential for immersive experiences through virtual and augmented reality in cinema, the impact of streaming on the movie industry, and the importance of creating visually appealing web content using HTML and CSS [[1]](https://medium.com/@divyamcm/movie-app-using-html-css-and-javascript-e85f24b1d084) [[2]](https://www.venturevideos.com/insights/the-future-of-cinema-merging-technology-art-and-experience) [[3]](https://medium.com/@thirumalg98/movie-website-cec282f7282f).

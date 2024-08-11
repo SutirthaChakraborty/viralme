@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .error {
+            background-color: #ffdddd;
+            border-left: 6px solid #f44336;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        .success {
+            background-color: #ddffdd;
+            border-left: 6px solid #4CAF50;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #004494;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights: Common Mistakes to Avoid in Video Marketing</h1>
+        <h2>1. Ignoring Audience Research</h2>
+        <div class="error">Mistake: Not understanding your target audience can lead to irrelevant content.</div>
+        <h2>2. Poor Video Quality</h2>
+        <div class="error">Mistake: Low production quality can diminish credibility and engagement.</div>
+        <h2>3. Lengthy Videos</h2>
+        <div class="error">Mistake: Longer videos may lose viewer interest; keep them concise!</div>
+        <h2>4. Not Promoting Videos</h2>
+        <div class="error">Mistake: Failing to share your content on multiple platforms limits reach.</div>
+        <h2>5. Neglecting SEO</h2>
+        <div class="error">Mistake: Without video SEO, your content may not get discovered.</div>
+        
+        <button id="tipsButton">Get Video Marketing Tips</button>
+        <div id="tips" style="display:none;" class="success">
+            <h2>Video Marketing Tips:</h2>
+            <ul>
+                <li>Research your audience's preferences and pain points.</li>
+                <li>Invest in quality equipment or hiring professionals.</li>
+                <li>Keep videos under 2 minutes for better retention.</li>
+                <li>Share on social media and collaborate with influencers.</li>
+                <li>Use relevant keywords in titles, descriptions, and tags.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('tipsButton').addEventListener('click', function() {
+            var tips = document.getElementById('tips');
+            if (tips.style.display === 'none') {
+                tips.style.display = 'block';
+            } else {
+                tips.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overcome the seven marketing sins with insights from Adobe at SES Chicago. Learn effective strategies to enhance your digital marketing efforts.">
+    <title>Blog: Overcoming the Seven Marketing Sins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        .sin {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .sin:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overcoming the Seven Marketing Sins</h1>
+    <p>Insights from Adobe at SES Chicago on enhancing your marketing strategies.</p>
+    
+    <div class="sin" id="sin1">
+        <h2>1. Ignoring Data</h2>
+        <p>Leverage analytics to inform your marketing decisions.</p>
+        <button onclick="toggleInfo('info1')">Learn More</button>
+        <div id="info1" style="display:none;">Implement robust data analysis to shape your campaigns effectively.</div>
+    </div>
+    
+    <div class="sin" id="sin2">
+        <h2>2. Lack of Personalization</h2>
+        <p>Create tailored experiences for your audience.</p>
+        <button onclick="toggleInfo('info2')">Learn More</button>
+        <div id="info2" style="display:none;">Use customer insights to craft unique messages that resonate.</div>
+    </div>
+    
+    <div class="sin" id="sin3">
+        <h2>3. Content Overload</h2>
+        <p>Focus on quality over quantity.</p>
+        <button onclick="toggleInfo('info3')">Learn More</button>
+        <div id="info3" style="display:none;">Curate content that adds value to your audience's experience.</div>
+    </div>
+
+    <script>
+        function toggleInfo(infoId) {
+            const info = document.getElementById(infoId);
+            info.style.display = info.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how Blog Matcha Design won at the 2021 Communicator Awards. Oklahoma's top marketing agency competes with industry giants.">
+    <title>Blog Matcha Design at 2021 Communicator Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #6a9c2f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #6a9c2f;
+        }
+        button {
+            background: #6a9c2f;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #5e8b2f;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #6a9c2f;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Matcha Design Celebrates Success</h1>
+    </header>
+    <section>
+        <h2>Oklahoma Marketing Agency Competes with Industry Giants</h2>
+        <p>In 2021, <span class="keywords">Blog Matcha Design</span> emerged victorious at the <span class="keywords">Communicator Awards</span>, showcasing their innovative approach in the competitive landscape of marketing. This remarkable achievement highlights the agency's expertise in digital marketing, SEO, and brand strategy, proving that small agencies can excel alongside established industry giants.</p>
+        <button id="toggleButton">Learn More</button>
+        <div class="info" id="extraInfo">
+            <p>Blog Matcha Design's commitment to creativity and client satisfaction has paved the way for their recognition. As they continue to push boundaries in <span class="keywords">content marketing</span> and <span class="keywords">web design</span>, their strategies resonate with diverse audiences, making them a formidable competitor in the marketing arena.</p>
+        </div>
+    </section>
+    <script>
+        document.getElementById("toggleButton").onclick = function() {
+            var info = document.getElementById("extraInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+                this.innerHTML = "Show Less";
+            } else {
+                info.style.display = "none";
+                this.innerHTML = "Learn More";
+            }
+        };
+    </script>
+</body>
+</html>

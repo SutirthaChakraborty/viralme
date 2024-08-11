@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>De-Stressing Holidays with One Gift at a Time</title>
+	<style>
+			body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.title {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		
+		.pinterest {
+			background-color: #3b5998;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.pinterest:hover {
+			background-color: #2c4c8a;
+		}
+		
+		.js-tooltip {
+			position: absolute;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 5px;
+			border-radius: 5px;
+			display: none;
+		}
+		
+		.js-tooltip::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: #fff transparent transparent transparent;
+		}
+		
+		.js-tooltip.show {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title">De-Stressing Holidays with One Gift at a Time</h1>
+		<p>With the holiday season fast approaching, it's easy to get overwhelmed by the pressure to buy the perfect gifts for loved ones. But what if we told you that the key to a stress-free holiday season is to focus on just one gift at a time?</p>
+		<p>That's right, by dedicating your attention to just one gift at a time, you can make the process much more enjoyable and less overwhelming. And to help you get started, we've put together some tips and tricks for finding the perfect gift, one at a time.</p>
+		<button class="pinterest">Pin It!</button>
+		<script>
+			const pinButton = document.querySelector('.pinterest');
+			const tooltip = document.querySelector('.js-tooltip');
+			pinButton.addEventListener('mouseover', () => {
+				tooltip.classList.add('show');
+			});
+			pinButton.addEventListener('mouseout', () => {
+				tooltip.classList.remove('show');
+			});
+			tooltip.addEventListener('click', () => {
+				alert('Pin it!');
+			});
+		</script>
+		<div class="js-tooltip">Pin this post to Pinterest!</div>
+	</div>
+</body>
+</html>
+
+This code includes a simple HTML structure, CSS styles, and JavaScript functionality to create a interactive Pinterest button. The CSS styles define the layout and design of the page, while the JavaScript code adds interactivity to the Pinterest button, displaying a tooltip when the user hovers over it.

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Matcha Design has received 13 national awards, including two gold and four silver for outstanding client work in design and digital marketing.">
+    <title>Matcha Design Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .awards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .award {
+            margin: 5px 0;
+            padding: 10px;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            width: 80%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matcha Design Awards</h1>
+</header>
+
+<section>
+    <h2>Celebrating Excellence in Design</h2>
+    <p>Matcha Design has proudly received a total of 13 national awards for its exceptional client work, demonstrating our commitment to innovation and quality in the design industry.</p>
+
+    <div class="awards">
+        <div class="award">🏆 2 Gold Awards</div>
+        <div class="award">🥈 4 Silver Awards</div>
+        <div class="award">🏅 7 Additional Awards</div>
+    </div>
+
+    <button id="learnMoreBtn">Learn More</button>
+    <p id="extraInfo" style="display:none;">Our awards reflect our skills in graphic design, branding, web design, and marketing strategies that help our clients achieve great results.</p>
+</section>
+
+<script>
+    document.getElementById("learnMoreBtn").onclick = function() {
+        var extraInfo = document.getElementById("extraInfo");
+        if (extraInfo.style.display === "none") {
+            extraInfo.style.display = "block";
+            this.textContent = "Show Less";
+        } else {
+            extraInfo.style.display = "none";
+            this.textContent = "Learn More";
+        }
+    };
+</script>
+
+</body>
+</html>

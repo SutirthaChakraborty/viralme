@@ -1,0 +1,111 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos for Product Launches and Announcements</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.header-content {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.video-container {
+    position: relative;
+    padding-top: 56.25%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    padding: 20px;
+    text-align: justify;
+}
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Insights on Leveraging Videos</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#stellar-product-launches">Stellar Product Launches</a></li>
+        <li><a href="#announcements">Announcements</a></li>
+    </ul>
+</nav>
+<div class="container">
+    <div class="header-content">
+        <h2>Stellar Product Launches</h2>
+        <p>Videos are a powerful tool for launching new products. They can captivate audiences, showcase features, and build excitement.</p>
+        <button class="btn" id="launch-btn">Learn More</button>
+    </div>
+    <div class="content" id="stellar-product-launches">
+        <h3>The Power of Visuals</h3>
+        <p>Videos can make product launches more engaging, allowing viewers to visualize how the product works and its features.</p>
+    </div>
+    <div class="header-content">
+        <h2>Announcements</h2>
+        <p>Videos are also effective for announcing new products or services. They can reach a wide audience instantly.</p>
+        <button class="btn" id="announce-btn">Explore</button>
+    </div>
+    <div class="content" id="announcements">
+        <h3>Reaching a Global Audience</h3>
+        <p>Videos can be shared across various platforms, reaching a global audience quickly.</p>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/exampleVideo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+<script>
+document.getElementById('launch-btn').addEventListener('click', function() {
+    document.getElementById('stellar-product-launches').style.display = 'block';
+    this.style.display = 'none';
+});
+document.getElementById('announce-btn').addEventListener('click', function() {
+    document.getElementById('announcements').style.display = 'block';
+    this.style.display = 'none';
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Camera Movements: Jib Shots & Dolly Zooms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; 
+            left: 50%; 
+            margin-left: -100px; 
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights into Advanced Camera Movements</h1>
+        <h2>Jib Shots</h2>
+        <p>
+            Jib shots elevate the camera on a movable arm to create dramatic high or low angles, giving a dynamic perspective to your scenes. 
+            <span class="tooltip">Learn More
+                <span class="tooltiptext">Jib shots are often used in action sequences and large set pieces.</span>
+            </span>
+        </p>
+        
+        <h2>Dolly Zoom</h2>
+        <p>
+            The dolly zoom technique involves moving the camera closer or further away from the subject while simultaneously adjusting the zoom to keep it the same size, creating a surreal effect. 
+            <span class="tooltip">Discover More
+                <span class="tooltiptext">Famous for its use in "Vertigo" by Alfred Hitchcock.</span>
+            </span>
+        </p>
+        
+        <h2>How to Implement Them</h2>
+        <p>
+            Understanding these techniques can enhance storytelling and visual appeal. Click the button below to see a demonstration:
+        </p>
+        <button onclick="showDemo()">Show Demo</button>
+        <div id="demo" style="display:none; margin-top: 20px;">
+            <h3>Visual Effects of Jib Shots & Dolly Zooms</h3>
+            <p>This is where the visual demo will appear, showcasing the impact of these advanced techniques.</p>
+        </div>
+    </div>
+
+    <script>
+        function showDemo() {
+            var demo = document.getElementById("demo");
+            demo.style.display = demo.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

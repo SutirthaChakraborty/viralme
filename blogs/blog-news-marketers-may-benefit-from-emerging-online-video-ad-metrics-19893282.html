@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerging Online Video Ad Metrics for Marketers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        .video-metrics {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #0073e6;
+            border-radius: 5px;
+            background: #e6f7ff;
+            display: none;
+        }
+        #toggleMetrics {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Ad Metrics for Marketers</h1>
+    </header>
+    <article>
+        <h2>Unlocking the Power of Emerging Metrics</h2>
+        <p>As video marketing continues to evolve, new online video ad metrics are emerging that can significantly benefit marketers. Understanding these metrics helps optimize ad campaigns, improve ROI, and enhance viewer engagement.</p>
+        <button id="toggleMetrics">Show Metrics</button>
+        <div class="video-metrics" id="metrics">
+            <ul>
+                <li>View-Through Rate (VTR)</li>
+                <li>Cost Per Completed View (CPCV)</li>
+                <li>Engagement Rate</li>
+                <li>Click-Through Rate (CTR)</li>
+                <li>Audience Retention</li>
+            </ul>
+        </div>
+    </article>
+    <script>
+        document.getElementById('toggleMetrics').onclick = function() {
+            var metricsDiv = document.getElementById('metrics');
+            if (metricsDiv.style.display === 'none' || metricsDiv.style.display === '') {
+                metricsDiv.style.display = 'block';
+                this.textContent = 'Hide Metrics';
+            } else {
+                metricsDiv.style.display = 'none';
+                this.textContent = 'Show Metrics';
+            }
+        }
+    </script>
+</body>
+</html>

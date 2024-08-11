@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Above the Fold - Marketing & Health Care Podcast</title>
+    <meta name="description" content="Discover insights where marketing and healthcare converge in our Above the Fold podcast. Join us for in-depth discussions, expert interviews, and actionable strategies.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+        }
+        .button {
+            background-color: #28A745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Above the Fold Podcast</h1>
+        <p>Where Marketing & Healthcare Converge</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Explore Our Latest Episodes</h2>
+            <p>Join us as we dive deep into the intersection of marketing strategies and healthcare innovations. Learn how to engage patients better, implement effective marketing tactics, and boost healthcare outcomes.</p>
+            <button class="button" onclick="showTopics()">Discover Topics</button>
+            <div id="topics" style="display:none;">
+                <ul>
+                    <li>Patient Engagement Strategies</li>
+                    <li>Healthcare SEO Techniques</li>
+                    <li>Digital Marketing in Healthcare</li>
+                    <li>Branding for Medical Practices</li>
+                    <li>Analytics and Data-Driven Decisions</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script>
+        function showTopics() {
+            var topics = document.getElementById("topics");
+            if (topics.style.display === "none") {
+                topics.style.display = "block";
+            } else {
+                topics.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Analytics 410 Error</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.error-container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+		}
+		.error-header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #333;
+			border-radius: 10px 10px 0px 0px;
+		}
+		.error-message {
+			padding: 20px;
+		}
+		.error-message h2 {
+			margin-top: 0;
+		}
+		.error-message p {
+			margin-bottom: 20px;
+		}
+		#analytics-chart {
+			width: 100%;
+			height: 300px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="error-container">
+		<div class="error-header">
+			<h2>HTTP 410 Error: Gone</h2>
+		</div>
+		<div class="error-message">
+			<p>Sorry, the requested resource is no longer available. This error is commonly returned when a website or webpage has been removed or is no longer accessible.</p>
+			<p>In blog analytics, this error can occur when:</p>
+			<ul>
+				<li>A webpage has been removed or redirected.</li>
+				<li>A website has been taken down or is no longer active.</li>
+				<li>A link or URL has been updated or changed.</li>
+			</ul>
+			<p>To troubleshoot this error, check the URL or link for any errors, or try searching for the content on a different platform or website.</p>
+		</div>
+		<div id="analytics-chart"></div>
+		<script>
+			// Create a sample chart using Google Charts
+			google.charts.load('current', {'packages':['bar']});
+			google.charts.setOnLoadCallback(drawChart);
+
+			function drawChart() {
+				var data = google.visualization.arrayToDataTable([
+					['Month', 'Page Views', 'Unique Visitors'],
+					['Jan', 1000, 200],
+					['Feb', 1200, 250],
+					['Mar', 1500, 300],
+					['Apr', 1800, 350],
+					['May', 2000, 400]
+				]);
+
+				var options = {
+					title: 'Blog Analytics',
+				chart: {title: 'Page Views and Unique Visitors'},
+				 bars: 'grouped'
+				};
+
+				var chart = new google.charts.Bar(document.getElementById('analytics-chart'));
+				chart.draw(data, google.charts.Bar.convertOptions(options));
+			}
+		</script>
+	</div>
+</body>
+</html>
+
+
+Keywords: blog analytics, HTTP error 410, gone, error message, webpage removed, website taken down, link updated, URL changed, troubleshooting, Google Charts, analytics chart.

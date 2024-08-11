@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Content Discovery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .keyword {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #results {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Universal Search for Social Content Discovery</h1>
+</header>
+
+<article>
+    <h2>Understanding Social Media News</h2>
+    <p>The <span class="keyword">universal search function</span> has revolutionized how we discover <span class="keyword">social content</span>. With platforms like <span class="keyword">Twitter</span>, users can access a wealth of <span class="keyword">blog news</span> and <span class="keyword">trending topics</span> in real-time.</p>
+    <button onclick="displayContent()">Click for Related Content</button>
+    <div id="results">
+        <ul>
+            <li>Real-time updates on trending news.</li>
+            <li>Efficient content discovery across platforms.</li>
+            <li>Enhanced engagement with social media users.</li>
+            <li>Influence of hashtags in content reach.</li>
+        </ul>
+    </div>
+</article>
+
+<script>
+    function displayContent() {
+        var results = document.getElementById('results');
+        if (results.style.display === "none") {
+            results.style.display = "block";
+        } else {
+            results.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparing LinkedIn and Facebook for social media advertising. Explore the effectiveness, targeting options, and cost of advertising on these platforms.">
+    <title>LinkedIn vs Facebook: Social Media Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073b1;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #333;
+        }
+        .toggle-button {
+            background: #0073b1;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .statistics {
+            display: none;
+            margin-top: 10px;
+        }
+        .statistics p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>LinkedIn vs Facebook for Social Media Advertising</h1>
+</header>
+
+<section>
+    <h2>Overview</h2>
+    <p>When it comes to social media advertising, <strong>LinkedIn</strong> and <strong>Facebook</strong> offer unique advantages for businesses. While Facebook is known for its vast user base, LinkedIn specializes in professional networking.</p>
+    
+    <button class="toggle-button" onclick="toggleStatistics('linkedinStats')">Show LinkedIn Stats</button>
+    <div id="linkedinStats" class="statistics">
+        <p><strong>Target Audience:</strong> Professionals and decision-makers.</p>
+        <p><strong>Ad Formats:</strong> Sponsored content, InMail, and display ads.</p>
+        <p><strong>Average CPC:</strong> Higher than Facebook but with a more targeted reach.</p>
+    </div>
+    
+    <button class="toggle-button" onclick="toggleStatistics('facebookStats')">Show Facebook Stats</button>
+    <div id="facebookStats" class="statistics">
+        <p><strong>Target Audience:</strong> General consumers across diverse demographics.</p>
+        <p><strong>Ad Formats:</strong> News feed, stories, and video ads.</p>
+        <p><strong>Average CPC:</strong> Generally lower than LinkedIn.</p>
+    </div>
+</section>
+
+<script>
+    function toggleStatistics(id) {
+        var stats = document.getElementById(id);
+        if (stats.style.display === "none" || stats.style.display === "") {
+            stats.style.display = "block";
+        } else {
+            stats.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

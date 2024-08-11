@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leadership Team - Inspiring Vision, Guiding Success">
+    <title>Leadership Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #333;
+        }
+        .role {
+            font-style: italic;
+            color: #555;
+        }
+        .bio {
+            display: none;
+            margin-top: 10px;
+            color: #666;
+        }
+        .show-bio {
+            cursor: pointer;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Leadership Team</h1>
+    <p>Driving Vision and Strategy for Success</p>
+</header>
+
+<div class="container">
+    <div class="team-member">
+        <h2>Jane Doe</h2>
+        <p class="role">CEO</p>
+        <p class="show-bio" onclick="toggleBio(this)">Show Bio</p>
+        <p class="bio">Jane has over 20 years of experience in leadership roles, driving innovation and growth.</p>
+    </div>
+    
+    <div class="team-member">
+        <h2>John Smith</h2>
+        <p class="role">CTO</p>
+        <p class="show-bio" onclick="toggleBio(this)">Show Bio</p>
+        <p class="bio">John leads our technology strategy, focusing on cutting-edge solutions and product development.</p>
+    </div>
+
+    <div class="team-member">
+        <h2>Alice Johnson</h2>
+        <p class="role">CFO</p>
+        <p class="show-bio" onclick="toggleBio(this)">Show Bio</p>
+        <p class="bio">Alice manages the company's finances, ensuring growth and sustainability.</p>
+    </div>
+</div>
+
+<script>
+    function toggleBio(element) {
+        var bio = element.nextElementSibling;
+        if (bio.style.display === "none" || bio.style.display === "") {
+            bio.style.display = "block";
+            element.innerText = "Hide Bio";
+        } else {
+            bio.style.display = "none";
+            element.innerText = "Show Bio";
+        }
+    }
+</script>
+</body>
+</html>

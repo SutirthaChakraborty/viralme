@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Video Marketing & Corporate Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .video-container {
+            margin: 20px 0;
+            display: none;
+            justify-content: center;
+        }
+        .video {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Video Marketing & Corporate Video Production</h1>
+    </header>
+    <section>
+        <h2>Maximize Your Reach with Effective Video Marketing</h2>
+        <p>Video content is essential for engaging audiences and driving conversions. Utilizing corporate video production can enhance your brand's story and increase visibility.</p>
+        <button onclick="toggleVideo()">Watch Introduction Video</button>
+        <div class="video-container" id="videoContainer">
+            <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section>
+        <h2>Why Corporate Video Production Matters</h2>
+        <p>Corporate videos boost your brand identity and convey your message effectively. From promotional videos to training materials, they cater to various business needs.</p>
+        <button onclick="toggleVideo()">Watch Benefits of Corporate Videos</button>
+        <div class="video-container" id="videoContainer2">
+            <iframe class="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <script>
+        function toggleVideo() {
+            const container = document.getElementById('videoContainer');
+            const container2 = document.getElementById('videoContainer2');
+            if (container.style.display === "none") {
+                container.style.display = "flex";
+                container2.style.display = "none";
+            } else {
+                container.style.display = "none";
+                container2.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the 6 Types of Twitter Topic Networks identified by Pew Research, enhancing your social media strategies.">
+    <title>6 Types of Twitter Topic Networks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #0073e6;
+        }
+        .topic {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .topic:hover {
+            transform: scale(1.02);
+        }
+        .more-info {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        button {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pew Research: 6 Types of Twitter Topic Networks</h1>
+    <div class="topic">
+        <h2>1. News Junkies</h2>
+        <p>Individuals who are passionate about current events and breaking news. <button onclick="toggleInfo(this)">More Info</button></p>
+        <div class="more-info">This network prioritizes real-time updates and engages actively with media personalities.</div>
+    </div>
+    
+    <div class="topic">
+        <h2>2. Political Junkies</h2>
+        <p>People deeply involved in political discourse, advocating for various causes. <button onclick="toggleInfo(this)">More Info</button></p>
+        <div class="more-info">This group often shares and debates political opinions, news, and events.</div>
+    </div>
+    
+    <div class="topic">
+        <h2>3. Influencers</h2>
+        <p>Key individuals who shape opinions through their social reach and content. <button onclick="toggleInfo(this)">More Info</button></p>
+        <div class="more-info">They often leverage their platform for brand partnerships and audience engagement.</div>
+    </div>
+    
+    <div class="topic">
+        <h2>4. Conversationalists</h2>
+        <p>Users who thrive on interaction and discussions about various topics. <button onclick="toggleInfo(this)">More Info</button></p>
+        <div class="more-info">They encourage dialogue and engage in multiple Twitter threads.</div>
+    </div>
+    
+    <div class="topic">
+        <h2>5. Social Butterflies</h2>
+        <p>Individuals focused on social experiences and trends. <button onclick="toggleInfo(this)">More Info</button></p>
+        <div class="more-info">This audience is integral to shaping online communities and social initiatives.</div>
+    </div>
+    
+    <div class="topic">
+        <h2>6. Entertainment Enthusiasts</h2>
+        <p>People who follow pop culture, movies, and music trends. <button onclick="toggleInfo(this)">More Info</button></p>
+        <div class="more-info">They drive engagement through memes, celebrity news, and trending topics.</div>
+    </div>
+
+    <script>
+        function toggleInfo(button) {
+            const info = button.parentElement.nextElementSibling;
+            info.style.display = info.style.display === "none" || info.style.display === "" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>

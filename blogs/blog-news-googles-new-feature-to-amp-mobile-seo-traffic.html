@@ -1,0 +1,42 @@
+
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog News: Google's New Feature to Amp Mobile SEO Traffic</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+  <script>
+    function highlightText() {
+      var searchText = document.getElementById('search').value;
+      var allText = document.getElementsByTagName('p');
+      for (var i = 0; i < allText.length; i++) {
+        var currentText = allText[i].innerHTML;
+        if (currentText.indexOf(searchText) > -1) {
+          var newText = currentText.replace(searchText, '<span class=\"highlight\">' + searchText + '</span>');
+          allText[i].innerHTML = newText;
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Blog News: Google's New Feature to Amp Mobile SEO Traffic</h1>
+  <p>Google has recently released a new feature that aims to improve mobile SEO traffic by ampifying web pages. This means that when users search for something on their mobile device, Google will show them websites that are optimized for mobile viewing, resulting in faster load times and better user experience.</p>
+  <input type=\"text\" id=\"search\" placeholder=\"Search for keywords...\">
+  <button onclick=\"highlightText()\">Search</button>
+</body>
+</html>

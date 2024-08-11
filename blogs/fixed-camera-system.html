@@ -1,0 +1,52 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Camera System</title>
+<style>
+.fixed-camera {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  border: 2px solid #000;
+  background-color: #fff;
+  z-index: 1000;
+}
+</style>
+</head>
+<body>
+
+<div class="fixed-camera" id="camera">
+  <h1>Fixed Camera</h1>
+  <p>This camera is positioned in the center of the screen, using the fixed positioning method.</p>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var camera = document.getElementById('camera');
+  window.addEventListener('resize', function() {
+    setPosition(camera);
+  });
+  window.addEventListener('scroll', function() {
+    setPosition(camera);
+  });
+  setPosition(camera);
+
+  function setPosition(el) {
+    var width = el.offsetWidth,
+        height = el.offsetHeight,
+        left = (window.innerWidth - width) / 2,
+        top = (window.innerHeight - height) / 2;
+    el.style.left = left + 'px';
+    el.style.top = top + 'px';
+  }
+});
+</script>
+
+</body>
+</html>

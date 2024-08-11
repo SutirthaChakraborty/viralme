@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating Nottingham: Insights and GIFs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        .gif-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .gif {
+            margin: 10px;
+            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .gif:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights and GIFs Celebrating Nottingham</h1>
+    <p>Explore Nottingham's vibrant culture, history, and events through engaging insights and fun GIFs!</p>
+    
+    <div class="gif-container">
+        <div class="gif"><img src="https://media.giphy.com/media/l0MYKjLTZ6NeWflOQ/giphy.gif" alt="Nottingham Castle"></div>
+        <div class="gif"><img src="https://media.giphy.com/media/3o751WBI2cW1kqUULE/giphy.gif" alt="Robin Hood"></div>
+        <div class="gif"><img src="https://media.giphy.com/media/l0H0Pj8w0MOPau3hW/giphy.gif" alt="Nottingham Markets"></div>
+        <div class="gif"><img src="https://media.giphy.com/media/xT9IgLw5nDGZI2Wr6E/giphy.gif" alt="Nottingham Festivals"></div>
+    </div>
+    
+    <script>
+        const gifs = document.querySelectorAll('.gif img');
+        gifs.forEach(gif => {
+            gif.addEventListener('click', () => {
+                alert('Enjoy more about Nottingham!');
+            });
+        });
+    </script>
+    
+    <div class="footer">
+        <p>&copy; 2023 Celebrate Nottingham. All rights reserved.</p>
+        <p>Keywords: Nottingham, GIFs, culture, history, festivals, Robin Hood, insights.</p>
+    </div>
+</body>
+</html>

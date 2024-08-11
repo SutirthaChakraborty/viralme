@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frameless Design</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s ease;
+      }
+      
+      .frameless-layout {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+        background-color: #f2f2f2;
+        border: none;
+      }
+      
+      .header {
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        /* Add interactions here */
+        cursor: pointer;
+      }
+      
+      .header:hover {
+        background-color: #555;
+      }
+      
+      .content {
+        width: 80%;
+        max-width: 600px;
+        background: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 1.5rem;
+      }
+
+      button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        /* Add hover effect */
+      }
+      
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+    <script>
+      // Add interactivity with JavaScript (e.g., toggle content on button click)
+      function toggleContent() {
+        document.getElementById("content Explanation").classList.toggle("hidden");
+        document.getElementById("button").innerText = (document.getElementById("button").innerText === "Show Explanation") ? "Hide Explanation" : "Show Explanation";
+      }
+    </script>
+</head>
+<body>
+    <div class="frameless-layout">
+      <div class="header">Frameless Experience</div>
+      <div class="content" id="content Explanation" hidden>
+        Use this space for an explanation of frameless design, its benefits, and examples. Rails below demonstrate its interactive nature using CSS and JavaScript.
+      </div>
+      <button id="button" onclick="

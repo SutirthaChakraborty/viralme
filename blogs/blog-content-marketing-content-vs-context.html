@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing: Content vs Context</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 15px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .content, .context {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .content:hover, .context:hover {
+            background: #007BFF;
+            color: #fff;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Content Marketing: Content vs Context</h1>
+</header>
+
+<section>
+    <div class="content" onclick="showContentInfo()">Content</div>
+    <div class="context" onclick="showContextInfo()">Context</div>
+</section>
+
+<section id="info" style="display:none;">
+    <h2>Information</h2>
+    <p id="details"></p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Content Marketing Insights</p>
+</footer>
+
+<script>
+    function showContentInfo() {
+        document.getElementById('details').innerText = 
+            "Content refers to the actual material presented in blogs, such as articles, videos, and infographics. " +
+            "It's essential for attracting and engaging an audience. Key elements include quality, relevance, and consistency.";
+        document.getElementById('info').style.display = 'block';
+    }
+
+    function showContextInfo() {
+        document.getElementById('details').innerText = 
+            "Context is about the relevance of the content to the audience’s current situation and needs. " +
+            "Effective marketing takes context into account to provide value and resonate with potential customers.";
+        document.getElementById('info').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Silence: When to Stay Quiet</title>
+    <meta name="description" content="Understanding when your brand should maintain silence on social media. Key strategies for brand management.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007bff;
+            padding: 5px;
+            border: none;
+            background: none;
+            font-size: 16px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Silence: When Should Your Brand Stay Quiet?</h1>
+    </header>
+    <div class="content">
+        <h2>Understanding Brand Silence</h2>
+        <p>In today’s fast-paced digital world, knowing when to engage and when to stay silent is crucial for effective brand management.</p>
+        <button class="toggle">What are the Situations for Silence?</button>
+        <div id="situations" class="hidden">
+            <ul>
+                <li>During a crisis - avoid adding noise.</li>
+                <li>When misinformation is rampant - false info needs to be addressed, but not in haste.</li>
+                <li>In times of tragedy - sensitivity is key.</li>
+                <li>When you have nothing valuable to add - silence can be more powerful than empty chatter.</li>
+            </ul>
+        </div>
+        <button class="toggle">Tips for Strategic Communication</button>
+        <div id="tips" class="hidden">
+            <ul>
+                <li>Assess the situation before posting.</li>
+                <li>Monitor audience sentiment actively.</li>
+                <li>Maintain a consistent brand voice, even in silence.</li>
+                <li>Be transparent about your silence, if necessary.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const targetId = toggle.innerText.includes('Situations') ? 'situations' : 'tips';
+                const targetDiv = document.getElementById(targetId);
+                targetDiv.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximizing Blog Legacy Content ROI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .calculate-btn {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            color: white;
+            background: #28A745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Boost Your Blog Legacy Content ROI</h1>
+</header>
+
+<section>
+    <h2>Understanding Content ROI</h2>
+    <p>Return on Investment (ROI) for blog content determines the effectiveness of your legacy articles. By optimizing and repurposing these posts, you can see a 50% increase in returns!</p>
+    
+    <h2>Formula for Calculating Content ROI</h2>
+    <p>The formula to calculate the ROI of your content is:</p>
+    <p><strong>ROI = (Net Profit / Content Cost) x 100</strong></p>
+    
+    <h2>Calculate Your Content ROI</h2>
+    <input type="number" id="netProfit" placeholder="Enter Net Profit">
+    <input type="number" id="contentCost" placeholder="Enter Content Cost">
+    <button class="calculate-btn" onclick="calculateROI()">Calculate ROI</button>
+    <p class="result" id="roiResult"></p>
+</section>
+
+<script>
+    function calculateROI() {
+        const netProfit = document.getElementById('netProfit').value;
+        const contentCost = document.getElementById('contentCost').value;
+        if (netProfit && contentCost) {
+            const roi = (netProfit / contentCost) * 100;
+            document.getElementById('roiResult').textContent = `Your Content ROI is: ${roi.toFixed(2)}%`;
+            document.getElementById('roiResult').style.display = 'block';
+        } else {
+            alert('Please enter both values!');
+        }
+    }
+</script>
+
+</body>
+</html>

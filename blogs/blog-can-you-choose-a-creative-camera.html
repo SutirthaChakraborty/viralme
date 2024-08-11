@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how to choose a creative camera for stunning photography. Explore different types, key features, and tips to capture the perfect shot!">
+    <title>Choosing the Right Camera for Creative Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #35424a;
+        }
+        .camera-option {
+            border: 1px solid #cccccc;
+            margin: 10px 0;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .camera-option:hover {
+            background-color: #e9ecef;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2f0d9;
+            border: 1px solid #c8e6c9;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Choose Your Creative Camera</h1>
+        <p>Unlock Your Photography Potential</p>
+    </header>
+    <article>
+        <h2>Types of Cameras</h2>
+        <div class="camera-option">
+            <h3>DSLR Cameras</h3>
+            <span class="toggle-btn">Learn More</span>
+            <div class="info">DSLR cameras are perfect for versatility and image quality. Ideal for both beginners and professionals.</div>
+        </div>
+        <div class="camera-option">
+            <h3>Mirrorless Cameras</h3>
+            <span class="toggle-btn">Learn More</span>
+            <div class="info">Mirrorless cameras offer compact designs without sacrificing quality. Great for travel photographers.</div>
+        </div>
+        <div class="camera-option">
+            <h3>Point-and-Shoot Cameras</h3>
+            <span class="toggle-btn">Learn More</span>
+            <div class="info">Point-and-shoot cameras are user-friendly and perfect for casual photography. Easy to carry around.</div>
+        </div>
+    </article>
+    
+    <script>
+        const toggles = document.querySelectorAll('.toggle-btn');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const info = this.nextElementSibling;
+                info.style.display = info.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Articles Insights AI Marketing Prompts Chain of Thought</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		.chain-of-thought {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.chain-of-thought .step {
+			background-color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 10px;
+		}
+		.chain-of-thought .step:last-child {
+			border-bottom: none;
+			margin-bottom: 0;
+		}
+		.chain-of-thought .step::before {
+			content: attr(data-step);
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		.chain-of-thought .step p {
+			margin-bottom: 20px;
+		}
+		.chain-of-thought .step button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.chain-of-thought .step button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Articles Insights AI Marketing Prompts Chain of Thought</h1>
+		<div class="chain-of-thought">
+			<div class="step" data-step="1">
+				<p>Articles Insights</p>
+				<p>AI-powered article analysis reveals key insights and trends in the marketing industry.</p>
+				<button>Next</button>
+			</div>
+			<div class="step" data-step="2">
+				<p>AI Marketing Prompts</p>
+				<p>AI-generated marketing prompts help marketers create engaging content and campaigns.</p>
+				<button>Previous</button>
+				<button>Next</button>
+			</div>
+			<div class="step" data-step="3">
+				<p>Chain of Thought</p>
+				<p>Understanding the chain of thought between articles and marketing prompts helps marketers create a cohesive content strategy.</p>
+				<button>Previous</button>
+			</div>
+		</div>
+	</div>
+	<script>
+		const steps = document.querySelectorAll('.chain-of-thought .step');
+		steps.forEach((step, index) => {
+			step.addEventListener('click', () => {
+				if (index === 0) {
+					document.querySelector('.chain-of-thought .step button').innerHTML = 'Next';
+				} else if (index === steps.length - 1) {
+					document.querySelector('.chain-of-thought .step button').innerHTML = 'Previous';
+				} else {
+					document.querySelector('.chain-of-thought .step button').innerHTML = 'Previous';
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+This HTML code creates a interactive chain of thought experience, where users can navigate through different steps to explore the topics of articles insights, AI marketing prompts, and chain of thought. The code uses CSS to style the layout and interactions, and JavaScript to update the button text based on the current step. Relevant keywords used include "articles insights", "AI marketing prompts", and "chain of thought".

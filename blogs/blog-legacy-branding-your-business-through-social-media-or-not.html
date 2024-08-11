@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the impact of legacy branding and the role of social media in enhancing your business's presence.">
+    <title>Blog - Legacy Branding & Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #cccccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #35424a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #3e4c57;
+        }
+        .impact {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e2f0d9;
+            border-left: 5px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Legacy Branding: Is Social Media for You?</h1>
+    </header>
+    <div class="container">
+        <h2>Understanding Legacy Branding</h2>
+        <p>Legacy branding refers to the traditional approach of establishing a brand's identity over years, typically through consistent messaging and quality service. In today's digital age, can this strategy coexist with social media marketing?</p>
+        
+        <button id="toggleImpactBtn">Discover the Impact</button>
+        <div class="impact" id="impactMessage">
+            <p>Integrating social media can significantly enhance your legacy brand's outreach, allowing for direct engagement with your audience, increased visibility, and real-time feedback.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggleImpactBtn').onclick = function() {
+            var impactMessage = document.getElementById('impactMessage');
+            if (impactMessage.style.display === "none" || impactMessage.style.display === "") {
+                impactMessage.style.display = "block";
+            } else {
+                impactMessage.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

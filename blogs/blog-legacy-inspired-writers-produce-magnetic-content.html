@@ -1,0 +1,76 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A blog dedicated to inspiring writers who create magnetic content, enhancing online presence with keywords for better search visibility.">
+    <title>Legacy Writers' Magnetic Content Blog</title>
+    <style>
+    /* Use CSS to create an interactive layout */
+    .content {
+        background-color: #f0f2f2;
+        padding: 20px;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    .title {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .keyword {
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .description {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+    }
+    
+    .btn {
+        display: inline-block;
+        background-color: #00bfff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+        background-color: #0099cc;
+    }
+    </style>
+    <script>
+    // Add JavaScript for hover effect on keywords (apply animation)
+    function hoverEffect(keyword) {
+        if (keyword.classList.contains('hovered')) {
+            keyword.classList.remove('hovered');
+        } else {
+            keyword.classList.add('hovered');
+        }
+    }
+    
+    window.onload = function() {
+        var keywords = document.querySelectorAll('.keyword');
+        for (var i = 0; i < keywords.length; i++) {
+            keywords[i].addEventListener('mouseover', function() {
+                hoverEffect(this);
+            });
+        }
+    };
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1 class="title">The Legacy of Inspiring Writers: Crafting Magnetic Content</h1>
+        <p class="description">Our blog delves

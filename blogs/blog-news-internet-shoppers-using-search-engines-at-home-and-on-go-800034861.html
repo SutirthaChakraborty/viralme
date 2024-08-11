@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News for Internet Shoppers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog: News for Internet Shoppers</h1>
+</header>
+
+<article>
+    <h2>Maximize Your Shopping Experience</h2>
+    <p>In today's fast-paced world, internet shoppers rely heavily on search engines to find the best deals from the comfort of their homes or on the go. Whether you're searching for electronics, clothing, or travel deals, utilizing search engines effectively can save you money and time.</p>
+    <p>Key strategies include using specific keywords, reading product reviews, and comparing prices across multiple platforms. With online shopping on the rise, staying informed about the latest trends and tips is essential.</p>
+    <button class="btn" onclick="showMoreInfo()">Learn More</button>
+    <div id="moreInfo" style="display:none;">
+        <p>Utilizing advanced search techniques, such as using quotes for exact phrases and filters for categories, can greatly enhance your shopping experience. Mobile shopping apps are also changing the way consumers shop while on the go.</p>
+    </div>
+</article>
+
+<footer>
+    <p>Contact Us: 800034861</p>
+</footer>
+
+<script>
+    function showMoreInfo() {
+        const moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

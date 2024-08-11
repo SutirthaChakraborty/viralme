@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bord Gáis Energy Theatre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .theatre-info {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .btn {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bord Gáis Energy Theatre</h1>
+</header>
+
+<div class="content">
+    <div class="theatre-info">
+        <h2>About the Theatre</h2>
+        <p>The Bord Gáis Energy Theatre, located in Dublin, Ireland, is renowned for hosting world-class productions including musicals, operas, and theatrical performances. It enhances Dublin's cultural landscape and attracts both local and international audiences.</p>
+        <button class="btn" onclick="showMore()">Learn More</button>
+        <div id="moreInfo" style="display: none;">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Seating capacity of over 2,000.</li>
+                <li>State-of-the-art acoustics and stage technology.</li>
+                <li>Architectural brilliance and great visibility from all seats.</li>
+                <li>Home to various arts events and festivals.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showMore() {
+        const moreInfo = document.getElementById('moreInfo');
+        if (moreInfo.style.display === 'none') {
+            moreInfo.style.display = 'block';
+        } else {
+            moreInfo.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

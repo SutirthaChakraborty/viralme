@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Fiona Spiteris's journey at Brafton, where creativity meets digital marketing. Learn about her insights, experiences, and growth.">
+    <title>Life at Brafton: Fiona Spiteris's Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0077cc;
+        }
+        button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        .learn-more {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Life at Brafton: Fiona Spiteris's Journey</h1>
+</header>
+
+<section>
+    <h2>About Fiona</h2>
+    <p>Fiona Spiteris is a digital marketing specialist at Brafton, where she explores the vibrant world of <span class="highlight">content marketing</span> and <span class="highlight">SEO strategies</span>. Her journey is a testament to creativity, growth, and success.</p>
+    <button id="toggleInfo">Learn More About Fiona</button>
+    <div class="learn-more" id="moreInfo">
+        <p>Fiona's time at Brafton highlights the importance of <span class="highlight">collaboration</span> and <span class="highlight">innovation</span> in driving successful marketing campaigns. She shares valuable insights on adapting to trends and maximizing <span class="highlight">client engagement</span>.</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById('toggleInfo').addEventListener('click', function() {
+        var moreInfo = document.getElementById('moreInfo');
+        if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+            moreInfo.style.display = 'block';
+            this.textContent = 'Show Less About Fiona';
+        } else {
+            moreInfo.style.display = 'none';
+            this.textContent = 'Learn More About Fiona';
+        }
+    });
+</script>
+
+</body>
+</html>

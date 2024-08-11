@@ -1,0 +1,95 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Flow Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #222;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .news-flow {
+            width: 100%;
+            height: 300px;
+            background: #007bff;
+            position: relative;
+        }
+        .news-flow::before,
+        .news-flow::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: #007bff;
+            transform: skewX(45deg);
+            transform-origin: 0 0;
+            transition: transform 0.5s ease-in-out;
+        }
+        .news-flow::after {
+            transform: skewX(-45deg);
+        }
+        .news-flow:hover::before,
+        .news-flow:hover::after {
+            transform: skewX(0);
+            transform-origin: 100% 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog News Flow Visualization</h1>
+        </header>
+        <nav>
+            <h2>Latest News</h2>
+        </nav>
+        <article>
+            <h3>Google's Latest Analytics Addition Shows Content Pages Value</h3>
+            <p>Google has recently introduced a new feature in its analytics tool that provides a clearer insight into the value of content pages. This innovative addition allows bloggers and website owners to see which pages are driving the most traffic and engagement.</p>
+            <p>By visualizing the flow of news and updates on your blog, you can gain insights into what content resonates with your audience and what needs improvement. The interactive visualization tool helps in identifying trends, understanding user behavior, and making data-driven decisions to optimize your content strategy.</p>
+        </article>
+        <footer>
+            <p>&copy; 2023 Blog News Flow Visualization</p>
+        </footer>
+        <div class="news-flow"></div>
+    </div>
+</body>
+</html>

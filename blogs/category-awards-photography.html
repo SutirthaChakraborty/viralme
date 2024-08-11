@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of photography awards, highlighting top photographers and their stunning works. Join us to celebrate creativity and innovation in the field of photography.">
+    <title>Photography Awards Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .category {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .category:hover {
+            background: #d1d1d1;
+            transform: translateY(-2px);
+            transition: all 0.2s ease;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 5px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Photography Awards Categories</h1>
+        <div class="category" onclick="toggleDetails('nature')">Nature Photography</div>
+        <div id="nature" class="details">
+            Celebrating the beauty of the natural world, showcasing wildlife, landscapes, and environmental photography.
+        </div>
+        <div class="category" onclick="toggleDetails('portrait')">Portrait Photography</div>
+        <div id="portrait" class="details">
+            Focused on capturing the essence of individuals and groups, highlighting their emotions and personalities.
+        </div>
+        <div class="category" onclick="toggleDetails('photojournalism')">Photojournalism</div>
+        <div id="photojournalism" class="details">
+            Aims to tell compelling stories through images, often covering significant events and societal issues.
+        </div>
+        <div class="category" onclick="toggleDetails('fine-art')">Fine Art Photography</div>
+        <div id="fine-art" class="details">
+            Merging visual art with photography, emphasizing artistic expression and concepts beyond mere documentation.
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(category) {
+            const details = document.getElementById(category);
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

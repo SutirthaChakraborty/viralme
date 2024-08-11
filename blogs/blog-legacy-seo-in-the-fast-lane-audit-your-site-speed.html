@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Legacy SEO: Audit your site speed for better performance.">
+    <title>Blog Legacy SEO: Site Speed Audit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        button {
+            padding: 10px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy SEO: Site Speed Audit</h1>
+</header>
+
+<section>
+    <h2>Why Site Speed Matters</h2>
+    <p>In the world of <span class="keyword">SEO</span>, site speed is crucial for enhancing user experience and improving <span class="keyword">search engine rankings</span>. A faster site leads to lower bounce rates and higher engagement.</p>
+</section>
+
+<section>
+    <h2>How to Audit Your Site Speed</h2>
+    <button onclick="auditSpeed()">Click to Audit Speed</button>
+    <p id="speedResult"></p>
+</section>
+
+<script>
+    function auditSpeed() {
+        const start = performance.now();
+        fetch(window.location.href)
+            .then(response => {
+                const end = performance.now();
+                const duration = (end - start).toFixed(2);
+                document.getElementById('speedResult').innerText = `Your site loaded in ${duration} milliseconds.`;
+            })
+            .catch(error => {
+                document.getElementById('speedResult').innerText = 'Error auditing site speed.';
+            });
+    }
+</script>
+
+</body>
+</html>

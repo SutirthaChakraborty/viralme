@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Erica Redmond, her achievements, and contributions to various fields.">
+    <title>Erica Redmond - Overview and Contributions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .toggle-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Erica Redmond</h1>
+    </header>
+    <div class="content">
+        <h2>About Erica Redmond</h2>
+        <p>Erica Redmond is a renowned figure in her field, known for her innovative work and dedication to her community. She has made significant contributions in areas such as technology, education, and public service.</p>
+        
+        <button class="toggle-btn" onclick="toggleMoreInfo()">Toggle More Info</button>
+        <div id="more-info" class="hidden">
+            <h3>Achievements</h3>
+            <ul>
+                <li>Leader in community-driven tech initiatives</li>
+                <li>Advocate for educational reforms</li>
+                <li>Recipient of multiple awards in her field</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleMoreInfo() {
+            const info = document.getElementById('more-info');
+            info.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

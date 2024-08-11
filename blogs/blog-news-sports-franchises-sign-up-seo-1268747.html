@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our blog for news updates on sports franchises, with insights on SEO and digital marketing strategies. Sign up for exclusive content!">
+    <title>Sports Franchise Blog - SEO Insights & Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .signup {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="email"] {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sports Franchises Blog</h1>
+        <p>Your source for the latest news, SEO tips, and digital marketing strategies</p>
+    </header>
+    <div class="container">
+        <h2>Latest News on Sports Franchises</h2>
+        <p>Stay updated with the latest happenings in the world of sports franchises. From trade rumors to game highlights, we cover it all. Subscribe to get our SEO strategies and blog updates directly in your inbox!</p>
+
+        <h2>Sign Up for Exclusive Content</h2>
+        <div class="signup">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button onclick="subscribe()">Sign Up</button>
+        </div>
+    </div>
+    <script>
+        function subscribe() {
+            const emailInput = document.getElementById('email');
+            if (emailInput.value) {
+                alert('Thank you for signing up with ' + emailInput.value + '!');
+                emailInput.value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        }
+    </script>
+</body>
+</html>

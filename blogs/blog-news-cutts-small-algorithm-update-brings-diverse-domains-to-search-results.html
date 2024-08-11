@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Small Algorithm Update</title>
+    <meta name="description" content="Discover the latest algorithm update from Google, which enhances search results with diverse domains.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .keyword-hover {
+            color: #007bff;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Recent Algorithm Update</h1>
+    </header>
+    <section>
+        <h2>Important Updates in Search Algorithms</h2>
+        <p>Google has recently rolled out a small algorithm update that significantly impacts search results. This update aims to bring <span class="keyword-hover" onclick="toggleInfo('diverse')">diverse domains</span> into focus, enhancing the overall user experience.</p>
+        <div id="diverse" class="info">Diverse domains refer to a wider variety of websites appearing in search results, enriching content options and perspectives.</div>
+        
+        <h2>How Does This Affect SEO?</h2>
+        <p>This change encourages websites to focus on <span class="keyword-hover" onclick="toggleInfo('quality')">quality content</span> rather than merely relying on SEO tricks. It's essential to prioritize information that provides value to users.</p>
+        <div id="quality" class="info">Quality content is original, relevant, and insightful, attracting user engagement and boosting credibility.</div>
+        
+        <h2>Conclusion</h2>
+        <p>Stay updated on SEO practices and adapt to these changes to ensure your website remains competitive in the search landscape.</p>
+    </section>
+    <footer>
+        <p>&copy; 2023 My Blog. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

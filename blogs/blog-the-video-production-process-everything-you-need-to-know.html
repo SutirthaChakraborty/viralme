@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the complete video production process with our comprehensive guide. Learn about pre-production, production, and post-production.">
+    <title>Video Production Process - Everything You Need to Know</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #e8491d;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #c73619;
+        }
+        .info {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background: #e8f1f2;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding the Video Production Process</h1>
+    </header>
+    <section>
+        <h2>1. Pre-Production</h2>
+        <p>Planning your video project including scripting, storyboarding, and budgeting.</p>
+        <button onclick="toggleInfo('preProduction')">Learn More</button>
+        <div id="preProduction" class="info">
+            <p>In this phase, you outline your objectives, target audience, and key messages.</p>
+        </div>
+    </section>
+    <section>
+        <h2>2. Production</h2>
+        <p>The actual filming of your video, including direction, cinematography, and sound.</p>
+        <button onclick="toggleInfo('production')">Learn More</button>
+        <div id="production" class="info">
+            <p>Production involves capturing all the necessary footage, following the script and storyboard.</p>
+        </div>
+    </section>
+    <section>
+        <h2>3. Post-Production</h2>
+        <p>Editing, sound design, and adding special effects to create the final product.</p>
+        <button onclick="toggleInfo('postProduction')">Learn More</button>
+        <div id="postProduction" class="info">
+            <p>This phase includes editing the footage, color correction, and finalizing the video for distribution.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleInfo(section) {
+            var infoDiv = document.getElementById(section);
+            if (infoDiv.style.display === "block") {
+                infoDiv.style.display = "none";
+            } else {
+                infoDiv.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

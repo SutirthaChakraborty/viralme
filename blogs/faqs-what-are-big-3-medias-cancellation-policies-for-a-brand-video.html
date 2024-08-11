@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs – Big 3 Media Cancellation Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .faq {
+            background: white;
+            border-radius: 5px;
+            margin: 10px auto;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .faq:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Big 3 Media Cancellation Policies FAQ</h1>
+    
+    <div class="faq">
+        <h2>1. What is the cancellation policy for a brand video project?</h2>
+        <div class="answer">
+            <p>Brands must notify Big 3 Media at least 14 days before the scheduled shoot date for a full refund. Cancellations made within 14 days may incur a fee.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <h2>2. Are there any fees for rescheduling a brand video?</h2>
+        <div class="answer">
+            <p>Rescheduling a brand video project is allowed with a notification of at least 7 days prior to the project date. A rescheduling fee may apply.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <h2>3. Can payments be refunded after the project starts?</h2>
+        <div class="answer">
+            <p>Once the production has begun, payments are non-refundable. We recommend reviewing the project details thoroughly before the start date.</p>
+        </div>
+    </div>
+
+    <script>
+        const faqs = document.querySelectorAll('.faq');
+
+        faqs.forEach(faq => {
+            faq.addEventListener('click', () => {
+                const answer = faq.querySelector('.answer');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

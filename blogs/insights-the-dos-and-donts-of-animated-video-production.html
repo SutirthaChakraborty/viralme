@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Video Production Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .do, .dont {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .do {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+        .dont {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e2e3e5;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights: The Do's and Don'ts of Animated Video Production</h1>
+        <div class="do">
+            <h2>Do's</h2>
+            <p>**Plan your content**: Have a clear objective and script your video to keep it concise.</p>
+            <button onclick="toggleInfo('doInfo')">More Info</button>
+            <div id="doInfo" class="info">Planning helps in creating engaging content that resonates with your audience.</div>
+        </div>
+        <div class="dont">
+            <h2>Don'ts</h2>
+            <p>**Avoid overcomplicating animations**: Keep animations meaningful and relevant to the content.</p>
+            <button onclick="toggleInfo('dontInfo')">More Info</button>
+            <div id="dontInfo" class="info">Excessive animations can distract viewers and dilute your message.</div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            const info = document.getElementById(infoId);
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

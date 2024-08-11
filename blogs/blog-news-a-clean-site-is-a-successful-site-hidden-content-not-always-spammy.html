@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .site {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .news {
+      color: #333;
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .hidden-content {
+      display: none;
+    }
+
+    .spam-message {
+      color: red;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .success {
+      color: green;
+      font-weight: bold;
+    }
+
+    .keywords {
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="site">
+  <div class="news">Blog News: A Clean Site is a Successful Site</div>
+  
+  <p>Hidden content is not always spammy. Use <span class="keywords">useful related keywords</span> for better reach.</p>
+  
+  <div class="hidden-content">
+    This content is hidden but can be revealed.
+  </div>
+  
+  <div class="spam-message">Spammy content can harm your site reputation. Be careful!</div>
+  
+  <p class="success">Remember, a clean site leads to success!</p>
+</div>
+
+<script>
+  document.querySelector(".hidden-content").addEventListener("click", function() {
+    this.style.display = "none";
+  });
+</script>
+
+</body>
+</html>

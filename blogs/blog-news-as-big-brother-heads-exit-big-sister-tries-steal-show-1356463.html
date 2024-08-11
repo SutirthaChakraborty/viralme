@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Brother News: Big Sister Tries to Steal the Show</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.5;
+            color: #555;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #toggleNews {
+            display: none;
+            margin-top: 20px;
+            transition: max-height 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Big Brother Heads Exit: Big Sister Tries to Steal the Show</h1>
+        <p>As the latest season of Big Brother comes to an end, rumors swirl about Big Sister's attempts to captivate the audience. With captivating twists and dramatic exits, viewers are on the edge of their seats.</p>
+        <p>Stay updated on the latest news and insights related to reality TV as dramas unfold and alliances shift.</p>
+        <button onclick="toggleNews()">Read More</button>
+        <div id="toggleNews">
+            <p>In a shocking turn of events, the house dynamics change drastically as major players exit. Big Sister strategically attempts to outshine the iconic format of Big Brother with her unique style and gameplay approaches.</p>
+            <p>Fans are speculating how this will impact future seasons. Join the conversation on social media using #BigBrother #BigSisterDrama.</p>
+        </div>
+    </div>
+    <script>
+        function toggleNews() {
+            var newsSection = document.getElementById("toggleNews");
+            if (newsSection.style.display === "none" || newsSection.style.display === "") {
+                newsSection.style.display = "block";
+            } else {
+                newsSection.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

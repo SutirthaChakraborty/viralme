@@ -1,0 +1,65 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple webpage showcasing the Gong: an ancient percussion instrument with an interactive CSS and JS explanation">
+    <title>Gong: The Ancient Percussion Instrument</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .gong-container {
+            width: 400px;
+            height: 400px;
+            background-color: #999;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .gong-mirror {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+            height: 75%;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .info {
+            margin-top: 20px;
+        }
+
+        .keyword {
+            font-weight: bold;
+        }
+
+        @keyframes gong-animation {
+            0% {background-color: #999;}
+            50% {background-color: #ccc;}
+            100% {background-color: #999;}
+        }
+    </style>
+    <script>
+        function changeGongColor() {
+            var gong = document.getElementById("gong-container");
+            gong.style.animation = "gong-animation 2s ease-in-out infinite";
+        }
+    </script>
+</head>
+<body>
+    <h1>Gong: The Ancient Percussion Instrument</h1>
+    
+    <div class="gong-container" id="gong-container">
+        <div class="gong-mirror" style="background-color: #fff;"></div>
+    </div>
+
+    <div class="info">
+        <p>A <span class="keyword">gong</span> is a traditional <span class="keyword">percussion instrument</span> with a large, shallow bowl shape. Originating in ancient China, it's known for its deep and resonant sound. This page highlights the Gong's cultural significance and the intriguing way it captivates listeners.</p>
+        <button onclick="changeGongColor()">Animate Gong Color</button>
+        <p>Click the button to see the <

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn's New Mobile App for B2B Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0077b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0077b5;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+            border-top: 1px solid #eef;
+            padding-top: 10px;
+        }
+        button {
+            background: #0077b5;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #005582;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore LinkedIn's New Mobile App for B2B Content Marketing</h1>
+    </header>
+    <div class="container">
+        <h2>Latest Blog News</h2>
+        <p>LinkedIn has launched its new mobile app aimed at enhancing B2B content marketing strategies. This innovative tool helps businesses connect with their audience more effectively.</p>
+        <button onclick="toggleContent()">Learn More</button>
+        <div class="toggle-content" id="extraContent">
+            <p>This app provides advanced analytics, personalized content recommendations, and seamless sharing features that empower marketers to optimize their campaigns. By leveraging insights from user engagement, businesses can craft targeted content that resonates with their audience.</p>
+        </div>
+    </div>
+    <script>
+        function toggleContent() {
+            const content = document.getElementById('extraContent');
+            if (content.style.display === "none" || !content.style.display) {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

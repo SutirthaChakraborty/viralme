@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Keywords Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            background: #28a745;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .keyword:hover {
+            background: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: Finding Top Keywords Challenge #1191668</h1>
+</header>
+
+<section>
+    <h2>Understanding the Importance of Keywords</h2>
+    <p>Top keywords drive traffic and engagement to your content. With challenge #1191668, we explore how to uncover high-impact keywords that resonate with your audience.</p>
+    <h3>Interactive Keywords</h3>
+    <div id="keywords">
+        <span class="keyword" onclick="showInfo('SEO')">SEO</span>
+        <span class="keyword" onclick="showInfo('Content Marketing')">Content Marketing</span>
+        <span class="keyword" onclick="showInfo('Social Media')">Social Media</span>
+        <span class="keyword" onclick="showInfo('Digital Marketing')">Digital Marketing</span>
+        <span class="keyword" onclick="showInfo('Keyword Research')">Keyword Research</span>
+    </div>
+    <p id="info" style="margin-top: 20px;"></p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Top Keywords Challenge. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function showInfo(keyword) {
+        const infoText = {
+            SEO: 'SEO (Search Engine Optimization) is crucial for increasing your website visibility.',
+            'Content Marketing': 'It involves creating valuable content to attract and retain a target audience.',
+            'Social Media': 'Utilizing platforms like Facebook, Twitter, and LinkedIn to reach wider audiences.',
+            'Digital Marketing': 'Encompasses all marketing efforts using the internet and electronic devices.',
+            'Keyword Research': 'The process of finding and analyzing search terms people enter into search engines.'
+        };
+        document.getElementById('info').innerText = infoText[keyword];
+    }
+</script>
+
+</body>
+</html>

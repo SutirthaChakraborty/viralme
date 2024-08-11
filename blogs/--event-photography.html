@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+        .keyword:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Event Photography</h1>
+        <p>Capture moments in life with <span class="keyword" onclick="toggleInfo('importance')">event photography</span>. Whether it's a wedding, concert, or corporate function, professional photography plays a vital role.</p>
+        <p>Key elements include <span class="keyword" onclick="toggleInfo('technique')">technique</span>, <span class="keyword" onclick="toggleInfo('lighting')">lighting</span>, and <span class="keyword" onclick="toggleInfo('composition')">composition</span> to produce stunning images that bring your events to life.</p>
+        
+        <div id="importance" class="info">Event photography helps capture emotional and candid moments, making them memorable for years to come.</div>
+        <div id="technique" class="info">Utilizing different techniques such as candid shots, posed portraits, and detail shots ensures that your event is captured from every angle.</div>
+        <div id="lighting" class="info">Proper lighting is essential in photography. Understanding natural and artificial light can enhance the quality of event photographs.</div>
+        <div id="composition" class="info">Good composition directs the viewer's eye and emphasizes important elements in the photograph, ensuring that the story of the event is told effectively.</div>
+    </div>
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actor Showreel Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .video-container {
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            margin-top: 10px;
+            text-align: center;
+            color: #666;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            outline: none;
+            display: none;
+        }
+        .video-container:hover .play-button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Actor Showreel Video Production</h1>
+    <div class="video-container">
+        <video id="showreel" controls>
+            <source src="showreel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button class="play-button" onclick="playVideo()">▶</button>
+        <div class="description">Showcase your talent with a stunning showreel!</div>
+    </div>
+
+    <script>
+        const video = document.getElementById('showreel');
+
+        function playVideo() {
+            video.play();
+        }
+
+        video.addEventListener('ended', function() {
+            alert('Thank you for watching the showreel!');
+        });
+    </script>
+</body>
+</html>

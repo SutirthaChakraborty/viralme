@@ -1,0 +1,76 @@
+#### HTML Code for US Presidential Campaign Information
+
+Here is a small HTML code snippet that includes CSS and JavaScript to provide information about the US presidential campaign:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>US Presidential Campaign</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        p {
+            line-height: 1.5;
+        }
+        
+        .candidate {
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .highlight {
+            background-color: #ffffcc;
+        }
+    </style>
+    <script>
+        // JavaScript code
+        function highlightText() {
+            var searchText = document.getElementById("searchText").value;
+            var paragraphs = document.getElementsByTagName("p");
+            
+            for (var i = 0; i < paragraphs.length; i++) {
+                var paragraph = paragraphs[i];
+                var text = paragraph.innerHTML;
+                var highlightedText = "<span class='highlight'>" + searchText + "</span>";
+                var newText = text.replace(new RegExp(searchText, "gi"), highlightedText);
+                paragraph.innerHTML = newText;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>US Presidential Campaign</h1>
+    
+    <p>The US presidential campaign is a process through which candidates compete for the office of the President of the United States. It typically involves a series of events, including primary elections, caucuses, debates, and rallies.</p>
+    
+    <p>During a campaign, candidates from different political parties present their platforms and policies to the public. They often travel across the country, giving speeches and meeting with voters to gain support for their candidacy.</p>
+    
+    <p>One of the key aspects of a presidential campaign is fundraising. Candidates rely on donations from individuals, organizations, and political action committees to finance their campaigns.</p>
+    
+    <p>Throughout the campaign, candidates engage in various strategies to attract voters. They may focus on specific issues, target key demographics, or participate in televised debates to showcase their knowledge and leadership abilities.</p>
+    
+    <p>Ultimately, the US presidential campaign culminates in the general election, where voters cast their ballots to determine the next President of the United States.</p>
+    
+    <h2>Search Highlight</h2>
+    
+    <p>Enter a keyword to highlight in the text:</p>
+    
+    <input type="text" id="searchText" placeholder="Enter keyword">
+    <button onclick="highlightText()">Highlight</button>
+</body>
+</html>
+
+
+This HTML code provides a basic structure for displaying information about the US presidential campaign. It includes CSS styles to format the text and JavaScript code to allow users to highlight specific keywords in the text.
+
+Feel free to modify the code to suit your needs and add more content as necessary.

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Marketing Channels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News Marketing Channels</h1>
+    </header>
+    <div class="container">
+        <div class="section" id="discovery">
+            <h2>Social Discovery</h2>
+            <p>Discovering content through social networks enhances user engagement and increases brand visibility.</p>
+            <button onclick="toggleDetails('discoveryDetails')">Learn More</button>
+            <div id="discoveryDetails" style="display:none;">
+                <p>Implementing strategies such as viral content, shares, and influencer partnerships can drive traffic.</p>
+            </div>
+        </div>
+        <div class="section" id="search">
+            <h2>Search Marketing</h2>
+            <p>Utilizing SEO and paid ads enhances visibility on search engines, driving more traffic to blogs.</p>
+            <button onclick="toggleDetails('searchDetails')">Learn More</button>
+            <div id="searchDetails" style="display:none;">
+                <p>Keyword optimization and quality content are essential for effective search marketing.</p>
+            </div>
+        </div>
+        <div class="section" id="transactions">
+            <h2>Transaction Optimization</h2>
+            <p>Ensuring a smooth customer journey increases conversion rates and drives successful transactions.</p>
+            <button onclick="toggleDetails('transactionDetails')">Learn More</button>
+            <div id="transactionDetails" style="display:none;">
+                <p>Utilizing effective call-to-action elements can lead to higher engagement and customer acquisition.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.style.display = (details.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

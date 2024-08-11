@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Bob, a marketing research executive turned social media associate. Discover insights on content marketing and career transitions.">
+    <title>Meet Bob - Marketing Research Exec Turned Social Media Associate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meet Bob</h1>
+        <p>A Marketing Research Exec Turned Social Media Associate</p>
+    </header>
+    <div class="content">
+        <h2>Bob's Journey in Content Marketing</h2>
+        <p>Bob transitioned from a marketing research executive to a social media associate, leveraging his insights in consumer behavior to enhance engagement.</p>
+        <button id="toggleInfo">Learn More About Bob's Career</button>
+        <div id="additionalInfo" class="hidden">
+            <h3>Key Skills for Success:</h3>
+            <ul>
+                <li>Data Analysis</li>
+                <li>Content Creation</li>
+                <li>Social Media Strategy</li>
+                <li>Brand Management</li>
+            </ul>
+            <h3>Bob's Impact:</h3>
+            <p>Since joining the social media team, Bob has significantly improved content strategy, resulting in increased audience engagement by over 40%.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleInfo').onclick = function() {
+            var info = document.getElementById('additionalInfo');
+            info.classList.toggle('hidden');
+            this.textContent = info.classList.contains('hidden') ? 'Learn More About Bob's Career' : 'Hide Bob's Career Insights';
+        };
+    </script>
+</body>
+</html>

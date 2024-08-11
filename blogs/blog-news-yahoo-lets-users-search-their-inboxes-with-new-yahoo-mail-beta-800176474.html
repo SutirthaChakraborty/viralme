@@ -1,0 +1,66 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover the latest news: Yahoo Mail now offers a new beta version (800176474) that enables users to search their inboxes more efficiently. Enhanced with interactive elements for better user experience.">
+    <title>Yahoo Mail Beta 800176474: Inbox Search Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F2F2F2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #FFFFFF;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+        .content {
+            line-height: 1.6;
+            color: #666666;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #FFFFFF;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        function highlightKeyword(keyword) {
+            var content = document.querySelector('.content');
+            var keywords = ['Yahoo Mail', 'beta 800176474', 'inbox search'];
+            
+            keywords.forEach(function(kw) {
+                content.innerHTML = content.innerHTML.replace(new RegExp(keyword, 'gi'), '<span class="keyword">' + kw + '</span>');
+            });
+            
+            content.querySelectorAll('.keyword').forEach(function(element) {
+                element.style.color = 'blue';
+                element.style.textDecoration = 'underline';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="

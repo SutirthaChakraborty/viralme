@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: QR Codes in Mobile Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        img {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Codes Picking Up Steam in Mobile Marketing</h1>
+        <p>QR codes are revolutionizing mobile marketing by providing a seamless way to connect consumers with digital content. With the rise of smartphones, scanning QR codes has never been easier, making them a powerful tool for businesses.</p>
+        <input id="text" type="text" placeholder="Enter text to generate QR Code" onblur="generateQRCode()">
+        <button onclick="generateQRCode()">Generate QR Code</button>
+        <img id="qrcode" src="" alt="QR Code will appear here" width="200">
+    </div>
+
+    <script>
+        function generateQRCode() {
+            const textInput = document.getElementById('text').value;
+            const qrCodeImage = document.getElementById('qrcode');
+            if (textInput) {
+                qrCodeImage.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(textInput)}&size=200x200`;
+            } else {
+                qrCodeImage.src = '';
+            }
+        }
+    </script>
+</body>
+</html>

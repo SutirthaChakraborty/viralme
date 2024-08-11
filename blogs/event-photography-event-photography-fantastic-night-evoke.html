@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Capture the essence of events through stunning photography. Learn how to evoke emotions and memories with professional event photography.">
+    <title>Event Photography - Capture the Moment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .thumbnail {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .keywords {
+            margin: 20px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #219150;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Photography: Capture the Magic of Every Moment</h1>
+    </header>
+    <div class="container">
+        <img src="event_photo.jpg" alt="Event Photography" class="thumbnail">
+        <p>Experience the thrill of fantastic nights captured through the lens of professional event photography. Each snapshot tells a story, evoking emotions that last a lifetime. Be it weddings, parties, or corporate events, the right photography brings your cherished moments to life.</p>
+        <div class="keywords">Keywords: Event Photography, Capture Moments, Fantastic Nights, Evoke Emotions, Professional Photography</div>
+        <button onclick="displayTip()">Click for Photography Tips</button>
+        <p id="tip" style="display:none; margin-top:15px;"></p>
+    </div>
+    <script>
+        function displayTip() {
+            const tips = [
+                "Use natural light to create stunning images.",
+                "Capture candid moments for genuine emotions.",
+                "Experiment with different angles and perspectives.",
+                "Edit your photos to enhance colors and clarity.",
+                "Always communicate with your subjects for the best results."
+            ];
+            const randomTip = tips[Math.floor(Math.random() * tips.length)];
+            document.getElementById('tip').style.display = 'block';
+            document.getElementById('tip').innerText = randomTip;
+        }
+    </script>
+</body>
+</html>

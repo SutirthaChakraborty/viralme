@@ -1,0 +1,53 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary with Alt Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .glossary-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .glossary-item {
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .glossary-term {
+            font-weight: bold;
+        }
+        .glossary-definition {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary with Alt Text</h1>
+    <p>In this example, we'll create a simple glossary with HTML and CSS code. The glossary will have a list of terms with their definitions, and each term will have an associated alt text for accessibility purposes.</p>
+    <h2>Interactive CSS and JS</h2>
+    <p>To see the interactive CSS and JS in action, please copy and paste the following code into your browser's developer tools (right click on the page, select "inspect" or "open with developer tools"):</p>
+    <pre><code>&lt;script&gt;
+document.addEventListener("DOMContentLoaded", function() {
+    var glossaryItems = document.querySelectorAll(".glossary-item");
+    Array.from(glossaryItems).forEach(function(item) {
+        item.addEventListener("mouseover", function() {
+            this.querySelector(".glossary-term").style.color = "blue";
+        });
+        item.addEventListener("mouseout", function() {
+            this.querySelector(".glossary-term").style.color = "black";
+        });
+        item.addEventListener("click", function() {
+            alert("Term: " + this.querySelector(".glossary-term").textContent + "
+Definition: " + this.querySelector(".glossary-definition").textContent);
+        });
+    });
+});
+&lt;/script&gt;</code></pre>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europe - Interactive Information Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .header h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .info-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .info-card__item {
+            width: 30%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .info-card__title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .info-card__desc {
+            line-height: 1.5;
+        }
+        .btn-group {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function showInfo(topic) {
+            var blocks = document.getElementsByClassName('info-content');
+            for (var i = 0; i < blocks.length; i++) {
+                blocks[i].style.display = 'none';
+            }
+            var block = document.getElementById(topic);
+            if (block) {
+                block.style

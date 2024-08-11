@@ -1,0 +1,78 @@
+Here's a small HTML code snippet with embedded CSS and JavaScript to create a basic layout for a blog post about companies moving to the cloud for branded content and marketing strategies. The use of relevant keywords has been emphasized for better search visibility:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Migration and Branded Content for Marketers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .hero {
+            background-image: url("cloud-icon.jpg"); /* Replace with your image path */
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+        }
+        
+        .hero-text {
+            font-size: 36px;
+            text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h2, h3 {
+            color: #333;
+        }
+        
+        .topic {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Add an interactive hover effect for the keywords
+        function highlightKeyword(keyword) {
+            const keywords = document.querySelectorAll('.keyword');
+            for (let el of keywords) {
+                if (el.textContent.trim().includes(keyword)) {
+                    el.classList.add('highlighted');
+                } else {
+                    el.classList.remove('highlighted');
+                }
+            }
+        }
+        
+        document.querySelectorAll('.keyword').forEach(keyword => {
+            keyword.addEventListener('mouseover', event => {
+                highlightKeyword(event.target.textContent);
+            });
+        });
+   

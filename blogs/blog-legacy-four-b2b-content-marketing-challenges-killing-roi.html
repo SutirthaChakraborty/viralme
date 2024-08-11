@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Content Marketing Challenges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .challenge {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>B2B Content Marketing Challenges Killing ROI</h1>
+    <div class="challenge">
+        <h2>1. Lack of Strategy</h2>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="details">
+            <p>Without a clear content strategy, businesses struggle to engage their target audience effectively.</p>
+        </div>
+    </div>
+    <div class="challenge">
+        <h2>2. Poor Content Quality</h2>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="details">
+            <p>Content that lacks value and relevance does not resonate with potential clients, reducing engagement.</p>
+        </div>
+    </div>
+    <div class="challenge">
+        <h2>3. Inconsistent Publishing</h2>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="details">
+            <p>Infrequent or irregular content updates can undermine audience trust and interest.</p>
+        </div>
+    </div>
+    <div class="challenge">
+        <h2>4. Ignoring Data Analytics</h2>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="details">
+            <p>Failing to analyze content performance hinders the ability to optimize future campaigns effectively.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(button) {
+            const details = button.nextElementSibling;
+            details.style.display = (details.style.display === "none" || details.style.display === "") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

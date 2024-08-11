@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to handle negative social feedback with care to build trust in your brand. Explore effective strategies and tips from experts in our interview.">
+    <title>Handle Negative Social Feedback with Care - Build Trust</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+        #feedbackOutput {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Building Trust Through Feedback</h1>
+    <p>Strategies for Handling Negative Feedback Responsively</p>
+</header>
+
+<section>
+    <h2>Interview Insights</h2>
+    <p>In our recent interview with social media experts, we discussed effective ways to handle negative feedback. Here are key takeaways:</p>
+    <ul>
+        <li>Respond promptly and professionally.</li>
+        <li>Empathize with the user's concerns.</li>
+        <li>Provide solutions and follow up.</li>
+        <li>Use feedback to improve your services.</li>
+        <li>Maintain transparency to build credibility.</li>
+    </ul>
+    <button id="showFeedbackBtn">Show Feedback Example</button>
+    <div id="feedbackOutput" style="display:none;">
+        <p><strong>Example Response:</strong> "Thank you for your feedback. We apologize for your experience and would love to resolve this issue. Please contact us at support@example.com."</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById("showFeedbackBtn").addEventListener("click", function() {
+        const feedbackOutput = document.getElementById("feedbackOutput");
+        feedbackOutput.style.display = feedbackOutput.style.display === "none" ? "block" : "none";
+        this.innerText = feedbackOutput.style.display === "block" ? "Hide Feedback Example" : "Show Feedback Example";
+    });
+</script>
+
+</body>
+</html>

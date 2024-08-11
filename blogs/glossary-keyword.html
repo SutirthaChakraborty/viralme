@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="glossary, keyword, definition, term, terminology, interactive解释, CSS, JavaScript">
+    <meta name="description" content="A simple glossary page with interactive elements to showcase the meaning of a keyword using CSS and JavaScript.">
+    <title>Glossary Keyword</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            max-width: 960px;
+            background: #ffffff;
+            padding: 1rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        .glossary-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .entry {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .entry:hover {
+            background-color: #f7f7f7;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .entry-definition {
+            color: #666;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .toggle-btn {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .toggle-btn.collapsed {
+            background-color: #707070;
+        }
+
+        .arrow {
+            display: none;
+            float: right;
+            margin-left: 10px;
+            font-size: 10px;
+        }
+
+        .content-block.collapsed {
+            display: none;
+        }
+
+        .content-block.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function toggleContent(entry) {
+           

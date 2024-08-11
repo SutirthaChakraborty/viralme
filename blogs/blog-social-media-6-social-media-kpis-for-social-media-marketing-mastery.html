@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media KPIs for Marketing Mastery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .kpi-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .kpi-item {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .kpi-item:hover {
+            transform: scale(1.02);
+        }
+        .toggle-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .toggle-btn:hover {
+            background-color: #0056b3;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>6 Essential Social Media KPIs for Marketing Mastery</h1>
+    <p>Discover the key performance indicators (KPIs) that can transform your social media strategy.</p>
+
+    <ul class="kpi-list">
+        <li class="kpi-item">
+            <strong>1. Engagement Rate</strong>
+            <button class="toggle-btn" onclick="toggleContent('engagement')">More Info</button>
+            <div id="engagement" class="hidden">Measures how actively your audience interacts with your content.</div>
+        </li>
+        <li class="kpi-item">
+            <strong>2. Reach</strong>
+            <button class="toggle-btn" onclick="toggleContent('reach')">More Info</button>
+            <div id="reach" class="hidden">Indicates the number of unique users who see your content.</div>
+        </li>
+        <li class="kpi-item">
+            <strong>3. Conversion Rate</strong>
+            <button class="toggle-btn" onclick="toggleContent('conversion')">More Info</button>
+            <div id="conversion" class="hidden">Measures the percentage of users who take a desired action.</div>
+        </li>
+        <li class="kpi-item">
+            <strong>4. Impressions</strong>
+            <button class="toggle-btn" onclick="toggleContent('impressions')">More Info</button>
+            <div id="impressions" class="hidden">Total number of times your content is displayed, regardless of clicks.</div>
+        </li>
+        <li class="kpi-item">
+            <strong>5. Follower Growth Rate</strong>
+            <button class="toggle-btn" onclick="toggleContent('growth')">More Info</button>
+            <div id="growth" class="hidden">Tracks the speed at which your social media following increases.</div>
+        </li>
+        <li class="kpi-item">
+            <strong>6. Click-Through Rate (CTR)</strong>
+            <button class="toggle-btn" onclick="toggleContent('ctr')">More Info</button>
+            <div id="ctr" class="hidden">Measures the percentage of users who click on a link in your post.</div>
+        </li>
+    </ul>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+            } else {
+                content.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body>
+</html>

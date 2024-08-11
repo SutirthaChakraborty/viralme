@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Video Marketing Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4a5d67;
+        }
+        .video-section {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>B2B Video Marketing Insight</h1>
+</header>
+
+<div class="content">
+    <h2>What is B2B Video Marketing?</h2>
+    <p>B2B video marketing refers to using videos as a medium to promote products or services between businesses. It is an effective strategy for customer engagement, lead generation, and brand awareness.</p>
+    
+    <h3>Benefits of B2B Video Marketing:</h3>
+    <ul>
+        <li>Improved Engagement: Videos capture attention better than text.</li>
+        <li>Enhanced Brand Awareness: Videos build a strong brand identity.</li>
+        <li>Better ROI: Increased conversions lead to higher return on investment.</li>
+    </ul>
+
+    <button id="toggleVideo">Watch an Example Video</button>
+    
+    <div class="video-section" id="videoSection">
+        <h3>Example B2B Marketing Video</h3>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleVideo').addEventListener('click', function() {
+        var videoSection = document.getElementById('videoSection');
+        if (videoSection.style.display === 'none' || videoSection.style.display === '') {
+            videoSection.style.display = 'block';
+            this.innerHTML = 'Hide Video';
+        } else {
+            videoSection.style.display = 'none';
+            this.innerHTML = 'Watch an Example Video';
+        }
+    });
+</script>
+
+</body>
+</html>

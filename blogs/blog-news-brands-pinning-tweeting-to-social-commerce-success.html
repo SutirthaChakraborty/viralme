@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Brands Pinning, Tweeting, & Social Commerce Success</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        .news-box {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .topic-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .brand-logos {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .icon {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .success-stats {
+            background-color: #e3f2fd;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-box">
+        <h2 class="topic-title">Boost Your Social Commerce with These Key Insights</h2>
+        <div class="brand-logos">
+            <img src="brand1-logo.png" alt="Brand 1 Logo">
+            <img src="brand2-logo.png" alt="Brand 2 Logo">
+        </div>
+        <div class="social-icons">
+            <div class="icon" onclick="showTweet(this.textContent)">Pin</div>
+            <div class="icon" onclick="showTweet(this.textContent)">Tweet</div>
+        </div>
+        <section class="success-stats">
+            <h3>Recent Success:</h3>
+            <p>50% Growth in Sales</p>
+            <p>2.5M+ Engagements on Social Media</p>
+        </section>
+    </div>
+
+    <script>
+        function showTweet(action) {
+            alert("You've clicked on '" + action + "' for social commerce updates!");
+        }
+    </script>
+</body>
+</html>
+

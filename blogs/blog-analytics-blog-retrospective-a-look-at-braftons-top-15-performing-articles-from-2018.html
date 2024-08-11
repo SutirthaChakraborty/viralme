@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Blog Analytics and dive into Brafton's top 15 performing articles from 2018. Learn insights and trends in content marketing.">
+    <title>Blog Analytics: Brafton's Top 15 Articles of 2018</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .article {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .article:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        .analytics {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e3f2fd;
+            border-left: 5px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog Analytics: A Look at Brafton's Top 15 Performing Articles from 2018</h1>
+    <p>Discover the gems of content marketing with Brafton's top articles from 2018. Analyze their success and trends - a retrospective look into the world of blog analytics.</p>
+
+    <div class="article" onclick="toggleAnalytics(this)">
+        <h2>1. Title of Article One</h2>
+        <p>Short description of the article focusing on key points.</p>
+        <button class="btn">View Analytics</button>
+        <div class="analytics">
+            <p>Views: 15,000 | Shares: 1,200 | Engagement Rate: 5%</p>
+        </div>
+    </div>
+
+    <div class="article" onclick="toggleAnalytics(this)">
+        <h2>2. Title of Article Two</h2>
+        <p>Short description of the article focusing on key points.</p>
+        <button class="btn">View Analytics</button>
+        <div class="analytics">
+            <p>Views: 10,000 | Shares: 800 | Engagement Rate: 4%</p>
+        </div>
+    </div>
+
+    <!-- More article sections can be added here -->
+
+    <script>
+        function toggleAnalytics(element) {
+            const analyticsDiv = element.querySelector('.analytics');
+            analyticsDiv.style.display = analyticsDiv.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

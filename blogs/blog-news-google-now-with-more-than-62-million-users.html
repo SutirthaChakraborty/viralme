@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google News Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4285f4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #34A853;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #28A745;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest Updates from Google News</h1>
+    <p>Join over 62 million users staying informed!</p>
+</header>
+
+<article>
+    <h2>Why Google News is Essential for Today's Readers</h2>
+    <p>Google News aggregates the latest news from various sources, providing users with a comprehensive view of current events. With over 62 million active users, it offers personalized content tailored to individual interests.</p>
+    <button onclick="showMore()">Read More</button>
+    <p id="additionalContent" style="display:none;">Google News also supports local news, international headlines, and includes diverse viewpoints, making it a go-to source for anyone looking to stay updated.</p>
+</article>
+
+<script>
+    function showMore() {
+        var content = document.getElementById("additionalContent");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

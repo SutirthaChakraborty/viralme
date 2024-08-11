@@ -1,0 +1,117 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Score & Customers: Insights from RAM Story</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav a:hover {
+    color: #007bff;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.content {
+    padding: 20px;
+}
+.content h2 {
+    margin-bottom: 20px;
+}
+.content p {
+    margin-bottom: 10px;
+}
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+.content ul li {
+    margin-bottom: 10px;
+}
+.content .btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.content .btn:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<script>
+function showTips() {
+    var tips = [
+        "1. Regularly update your blog with engaging content to keep your customers informed and interested.",
+        "2. Use customer feedback to improve your products and services.",
+        "3. Leverage social media to promote your blog and engage with your audience.",
+        "4. Offer exclusive content to your blog subscribers to encourage engagement.",
+        "5. Monitor your blog's performance to identify what content resonates with your audience."
+    ];
+    var tipBox = document.getElementById('tipBox');
+    tipBox.innerHTML = '';
+    for (var i = 0; i < tips.length; i++) {
+        var tip = document.createElement('li');
+        tip.innerHTML = tips[i];
+        tipBox.appendChild(tip);
+    }
+}
+</script>
+</head>
+<body>
+<header>
+    <h1>Blog Score & Customers</h1>
+</header>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+<div class="container">
+    <div class="content">
+        <h2>5 Tips for Businesses</h2>
+        <p>Discover insights from RAM Story on how to score high with your blog and customers.</p>
+        <button onclick="showTips()" class="btn">Explore Tips</button>
+        <ul id="tipBox"></ul>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Blog Score & Customers. All rights reserved.</p>
+</footer>
+</body>
+</html>

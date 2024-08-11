@@ -1,0 +1,81 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech News & Trends</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .header h1 {
+    margin: 0;
+  }
+  .content {
+    padding: 20px;
+  }
+  .content h2 {
+    margin-bottom: 20px;
+  }
+  .content p {
+    margin-bottom: 10px;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+<script>
+  function showTweets() {
+    // Simulate fetching tweets from Twitter
+    setTimeout(function() {
+      var tweets = [
+        "Twitter turns firehose back on Google to show tweets in SERPs! #TechNews",
+        "New blog post: Understanding the Importance of SEO for Your Business! #SEO #BlogPost",
+        "Breaking: AI-powered chatbots now available 24/7 for customer support! #AI #Chatbots"
+      ];
+      var html = '';
+      tweets.forEach(function(tweet) {
+        html += '<p>' + tweet + '</p>';
+      });
+      document.getElementById('tweets').innerHTML = html;
+    }, 1000);
+  }
+</script>
+</head>
+<body onload="showTweets();">
+<div class="container">
+  <header class="header">
+    <h1>Tech News & Trends</h1>
+  </header>
+  <section class="content">
+    <h2>Latest Tech News</h2>
+    <p>Discover the latest advancements and trends in technology, business, and beyond. Stay informed and ahead of the curve.</p>
+    <div id="tweets"></div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2024 Tech News & Trends</p>
+  </footer>
+</div>
+</body>
+</html>

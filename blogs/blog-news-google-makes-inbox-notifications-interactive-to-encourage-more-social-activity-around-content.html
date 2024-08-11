@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google's Interactive Inbox Notifications</title>
+    <meta name="description" content="Discover how Google's new interactive inbox notifications enhance social engagement around content. Learn more about features and benefits." />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4285f4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .notification {
+            background: #e8f0fe;
+            border-left: 5px solid #4285f4;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .notification:hover {
+            background: #d6e4ff;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f1f8ff;
+            border: 1px solid #b0bec5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Inbox Notifications</h1>
+    </header>
+    <div class="container">
+        <h2>Google's New Feature Boosts Social Engagement</h2>
+        <div class="notification" onclick="toggleDetails('details1')">
+            <strong>Engage with Content!</strong>
+            <p>Google introduces interactive notifications to enhance user engagement.</p>
+        </div>
+        <div id="details1" class="details">
+            <p>These notifications allow users to respond directly, encouraging social conversations around shared content.</p>
+        </div>
+
+        <div class="notification" onclick="toggleDetails('details2')">
+            <strong>Quick Actions!</strong>
+            <p>Take action directly from your inbox notifications.</p>
+        </div>
+        <div id="details2" class="details">
+            <p>Users can now like, share, or comment without leaving their inbox, making communication seamless.</p>
+        </div>
+
+        <div class="notification" onclick="toggleDetails('details3')">
+            <strong>Benefits of Interaction!</strong>
+            <p>Learn how these updates foster a greater sense of community.</p>
+        </div>
+        <div id="details3" class="details">
+            <p>This feature not only enhances user experience but also increases content visibility and interaction frequency.</p>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === "none" || !details.style.display) {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

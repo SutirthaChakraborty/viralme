@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google Analytics Content Grouping</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.container {
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.headline {
+			font-weight: bold;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		
+		.description {
+			font-size: 14px;
+			color: #666;
+		}
+		
+		.code {
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 12px;
+			font-family: monospace;
+			overflow-x: auto;
+		}
+		
+		.code::-webkit-scrollbar {
+			width: 10px;
+			background-color: #f0f0f0;
+		}
+		
+		.code::-webkit-scrollbar-thumb {
+			background-color: #ccc;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2 class="headline">Google Analytics Content Grouping</h2>
+		<p class="description">Google Analytics Content Grouping 是一种将网站上的内容分组的方法，旨在提供更加详细和有意义的分析结果。这种技术可以让您更好地了解网站上的内容是什么、哪些内容最受欢迎、哪些内容需要改进等。</p>
+		<pre class="code">
+&lt;script&gt;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('require', 'contentGrouping');
+  
+  ga('set', 'contentGroup', 'blog');
+  ga('set', 'contentGroup', 'news');
+  
+  ga('send', 'pageview');
+&lt;/script&gt;
+</pre>
+		<p class="description">在上面的代码中，我们使用 Google Analytics 的 JavaScript 代码来创建一个跟踪器，然后使用 `require` 方法来启用 Content Grouping 功能。然后，我们使用 `set` 方法来设置内容分组的名称，然后使用 `send` 方法来发送页面浏览记录。</p>
+	</div>
+</body>
+</html>
+
+
+Note: The code above is just an example, please replace `UA-XXXXX-X` with your actual Google Analytics tracking ID.

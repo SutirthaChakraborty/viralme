@@ -1,0 +1,85 @@
+#### HTML Code with CSS and JS for Blog News Mobile Knowledge Graph Results
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog News Mobile Knowledge Graph Results</title>
+  <style>
+    /* CSS for the layout */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    .topics {
+      width: 30%;
+      float: left;
+      padding: 10px;
+      border-right: 1px solid #ccc;
+      height: 300px;
+      overflow-y: scroll;
+    }
+    .content {
+      width: 70%;
+      float: left;
+      padding: 10px;
+      height: 300px;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topics">
+      <ul>
+        <li><a href="#" onclick="loadContent('topic1')">Topic 1</a></li>
+        <li><a href="#" onclick="loadContent('topic2')">Topic 2</a></li>
+        <li><a href="#" onclick="loadContent('topic3')">Topic 3</a></li>
+        <!-- Add more topics as needed -->
+      </ul>
+    </div>
+    <div class="content" id="content">
+      <!-- Content will be loaded here -->
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for loading content
+    function loadContent(topic) {
+      // Replace with actual content based on the topic
+      let content = '';
+      if (topic === 'topic1') {
+        content = 'Content for Topic 1';
+      } else if (topic === 'topic2') {
+        content = 'Content for Topic 2';
+      } else if (topic === 'topic3') {
+        content = 'Content for Topic 3';
+      }
+      document.getElementById('content').innerHTML = content;
+    }
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a simple webpage for blog news with a layout that includes a list of topics on the left side and the corresponding content on the right side. The CSS provides a clean and responsive design for the layout. The JavaScript function `loadContent` is used to dynamically load content based on the selected topic.
+
+The topics and content can be dynamically generated and updated based on the specific needs of the blog or news website. This interactive design allows users to click on topics and view the related content without navigating to a different page.
+
+The code incorporates the use of HTML, CSS, and JavaScript to create an interactive and informative webpage, aligning with the requirements for a blog news mobile knowledge graph results appearing on desktop SERPs.

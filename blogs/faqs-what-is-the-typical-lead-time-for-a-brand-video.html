@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Typical Lead Time for a Brand Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-section {
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 80%;
+        }
+        .faq {
+            margin: 10px 0;
+        }
+        .question {
+            cursor: pointer;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .answer.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQs on Brand Videos</h1>
+    <div class="faq-section">
+        <div class="faq">
+            <div class="question">What is the typical lead time for a brand video?</div>
+            <div class="answer">The typical lead time for a brand video varies between 4 to 8 weeks. Factors influencing this timeline include pre-production planning, filming schedules, and post-production editing.</div>
+        </div>
+        <div class="faq">
+            <div class="question">Why is lead time important for video production?</div>
+            <div class="answer">Lead time is crucial for ensuring quality, allowing for creative brainstorming, script development, and a structured filming process, which all contribute to a high-quality final product.</div>
+        </div>
+        <div class="faq">
+            <div class="question">Can the lead time be shortened?</div>
+            <div class="answer">Yes, lead time can be shortened in certain scenarios, such as having a well-prepared script and streamlined production team. However, rushing can compromise the quality of the video.</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Electronics Purchases Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px;
+            color: white;
+            background-color: #28A745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .summary {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News Report</h1>
+        <p>Rise in Online Electronics Purchases</p>
+    </header>
+    <article>
+        <h2>Trend Analysis: Consumers Shifting to Online Electronics Shopping</h2>
+        <p>The rise of e-commerce has significantly transformed consumer behavior. More individuals are now preferring to purchase electronic devices online due to convenience, competitive pricing, and a wide selection of products.</p>
+        <button onclick="toggleSummary()">Read More</button>
+        <div class="summary" id="summary">
+            <p>According to recent reports, over 70% of consumers now prefer shopping for electronics online compared to traditional retail stores. Factors such as user-friendly interfaces, detailed product reviews, and doorstep delivery are driving this trend.</p>
+            <p>Brands are responding by enhancing their online presence, optimizing user experience, and offering attractive deals. This pivot towards digital shopping will likely continue as technology advances and consumer preferences evolve.</p>
+        </div>
+    </article>
+
+    <script>
+        function toggleSummary() {
+            const summary = document.getElementById('summary');
+            summary.style.display = summary.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

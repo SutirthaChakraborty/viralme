@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Uses of Drone Thermal Imaging</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-left: 5px solid #2196F3;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FAQ: Uses of Drone Thermal Imaging</h1>
+        <div class="faq">
+            <div class="question">What is Drone Thermal Imaging?</div>
+            <div class="answer">Drone thermal imaging uses advanced thermal cameras attached to drones to detect temperature variations, providing valuable insights in various fields.</div>
+        </div>
+        <div class="faq">
+            <div class="question">What are the uses of Drone Thermal Imaging?</div>
+            <div class="answer">
+                <ul>
+                    <li>Building Inspections: Identifying heat loss or insulation issues.</li>
+                    <li>Agriculture: Monitoring crop health by detecting water stress.</li>
+                    <li>Search and Rescue: Locating missing persons through body heat detection.</li>
+                    <li>Energy Audits: Detecting faults in power lines and solar panels.</li>
+                    <li>Wildlife Monitoring: Tracking animal movements and habitats.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question">Why choose Drone Thermal Imaging?</div>
+            <div class="answer">Drones provide a safe, efficient, and accurate way to gather thermal data over large areas without disrupting operations or requiring extensive manpower.</div>
+        </div>
+    </div>
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

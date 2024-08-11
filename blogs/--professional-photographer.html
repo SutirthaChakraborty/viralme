@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Photographer Services - Capture Moments, Fine Art Photography, Portraits, Events, and Nature Photography.">
+    <title>Professional Photographer Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #5b8c5a;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4a743b;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professional Photographer</h1>
+        <p>Capture Your Precious Moments</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Portrait Photography</h2>
+            <p>Highlighting personality and expressions through stunning portraits.</p>
+            <button onclick="toggleInfo('portrait-info')">Learn More</button>
+            <div id="portrait-info" class="hidden">
+                <p>Portrait photography is about capturing the essence of the subject. Every smile, frown, and candid moment matters.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Event Photography</h2>
+            <p>Documenting life’s special events, big or small, with creativity.</p>
+            <button onclick="toggleInfo('event-info')">Learn More</button>
+            <div id="event-info" class="hidden">
+                <p>From weddings to corporate events, I capture all the details and emotions that make your events unforgettable.</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Nature Photography</h2>
+            <p>Bringing the beauty of nature to life through the lens.</p>
+            <button onclick="toggleInfo('nature-info')">Learn More</button>
+            <div id="nature-info" class="hidden">
+                <p>Explore landscapes, wildlife, and the fascinating natural world with my vivid nature photography.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            const info = document.getElementById(infoId);
+            if (info.classList.contains('hidden')) {
+                info.classList.remove('hidden');
+            } else {
+                info.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore 360-degree product photography to enhance online shopping experiences, boost engagement, and improve conversion rates.">
+    <title>360 Degree Product Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .image-gallery img {
+            width: 100%;
+            transition: transform 0.5s;
+        }
+        #imgIndex {
+            display: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>360 Degree Product Photography</h1>
+    <p>Enhance your online store with <strong>360-degree product photography</strong>. This innovative approach allows customers to view products from all angles, improving engagement and boosting <strong>conversion rates</strong>.</p>
+    <div class="image-gallery">
+        <img id="productImage" src="image1.jpg" alt="360 Degree View of Product">
+    </div>
+    <input type="hidden" id="imgIndex" value="0">
+    <button onclick="nextImage()">Next Image</button>
+</div>
+
+<script>
+    const images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg'];
+    let currentIndex = 0;
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById('productImage').src = images[currentIndex];
+        document.getElementById('imgIndex').value = currentIndex;
+    }
+</script>
+
+</body>
+</html>

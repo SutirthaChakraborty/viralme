@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn to create engaging marketing videos for your blog while maintaining social distance. Discover tips, tools, and techniques to succeed.">
+    <title>Blog Creation: Socially Distant Marketing Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .video {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Creating Socially Distant Marketing Videos for Your Blog</h1>
+        <p>In today's digital age, creating engaging marketing videos is crucial for your blog's success. Learn how to produce high-quality content while practicing social distancing.</p>
+        <ul>
+            <li>Use creative storytelling to connect with your audience.</li>
+            <li>Leverage social media platforms for video promotion.</li>
+            <li>Utilize video editing tools for compelling visuals.</li>
+            <li>Engage with viewers through interactive content.</li>
+        </ul>
+        <button id="toggleVideo">Watch Video Tips</button>
+        <div class="video" id="videoTips">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <p>Explore essential tips for shooting and editing videos from home!</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleVideo').onclick = function() {
+            var video = document.getElementById('videoTips');
+            if (video.style.display === "none" || video.style.display === "") {
+                video.style.display = "block";
+                this.textContent = "Hide Video Tips";
+            } else {
+                video.style.display = "none";
+                this.textContent = "Watch Video Tips";
+            }
+        };
+    </script>
+</body>
+</html>

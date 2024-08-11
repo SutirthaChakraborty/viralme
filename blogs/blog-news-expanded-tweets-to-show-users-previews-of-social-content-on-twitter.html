@@ -1,0 +1,66 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Social Content Previews</title>
+    <style>
+        .tweet-preview {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            width: 70%;
+        }
+        .tweet-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+        }
+        .tweet-content {
+            flex: 1;
+        }
+        .tweet-content h2 {
+            font-weight: bold;
+            margin-top: 0;
+        }
+        .tweet-excerpt {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .view-more {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #007BFF;
+        }
+        @media (max-width: 768px) {
+            .tweet-preview {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function togglePreview(content) {
+            if (content.classList.contains('collapsed')) {
+                content.classList.remove('collapsed');
+            } else {
+                content.classList.add('collapsed');
+            }
+        }
+    </script>
+</head>
+<body>
+    <section class="blog-news">
+        <h2>Latest Social Content Previews</h2>
+        <div class="tweet-preview" onclick="togglePreview(this)">
+            <img class="tweet-avatar" src="https://example.com/user1_profile_pic.jpg" alt="User 1 Profile Picture">
+            <div class="tweet-content collapsed">
+                <h2>User1</h2>
+                <p class="tweet-excerpt">"Expanding tweets now show <b>engaging content updates</b> - read more ... <a class="view-more" onclick="togglePreview(this)">...</a></p>
+                <div id="tweet详情" style="display: none;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis augue libero, id placerat turpis vestibulum in

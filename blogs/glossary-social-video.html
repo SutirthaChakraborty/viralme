@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Glossary of Social Video and Interactive CSS/JS Explanation">
+    <title>Social Video Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .glossary-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            max-width: 80%;
+            box-sizing: border-box;
+        }
+
+        .definition {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .example {
+            background-color: #f0f0f0;
+            padding: 5px 0;
+            border-radius: 3px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleExplanation(id) {
+            var block = document.getElementById(id);
+            block.classList.toggle("active");
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            var exampleButtons = document.querySelectorAll(".example > a");
+            for (var i = 0; i < exampleButtons.length; i++) {
+                exampleButtons[i].addEventListener("click", function(e) {
+                    e.preventDefault();
+                    toggleExplanation(this.dataset.target);
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Glossary of Social Video and Interactive CSS/JS Concepts</h1>
+    
+    <div class="glossary-item">
+        <h2 class="definition">Social Video</h2>
+        <div class="example">
+            <a href="#" data-target="socialVideoExplanation" onclick="event.preventDefault()">See Example</a>
+            <div id="socialVideoExplanation" class="active">
+                <p>A video that engages users on social media platforms, often incorporating features like sharing, commenting, and likes, or Storytelling through short

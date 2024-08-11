@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academy Shannon McGuirk - Premier Training for Aspiring Professionals">
+    <meta name="keywords" content="Shannon McGuirk Academy, professional training, skills development, career advancement, online courses, workshops">
+    <title>Academy Shannon McGuirk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .toggle-button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Academy Shannon McGuirk</h1>
+</header>
+
+<div class="container">
+    <h2>Empowering Your Career</h2>
+    <p>At Academy Shannon McGuirk, we provide top-notch professional training and development programs aimed at helping individuals excel in their chosen careers. Our courses are designed to equip you with valuable skills and knowledge.</p>
+    <button class="toggle-button" onclick="toggleDetails()">Learn More</button>
+    <div id="more-info" class="hidden">
+        <h3>Our Programs</h3>
+        <ul>
+            <li>Online Courses</li>
+            <li>Workshops and Seminars</li>
+            <li>One-on-One Coaching</li>
+            <li>Skill Development Retreats</li>
+        </ul>
+        <h3>Why Choose Us?</h3>
+        <p>We focus on hands-on learning, and our instructors are industry experts. Join us to advance your career!</p>
+    </div>
+</div>
+
+<script>
+    function toggleDetails() {
+        var info = document.getElementById('more-info');
+        if (info.classList.contains('hidden')) {
+            info.classList.remove('hidden');
+        } else {
+            info.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

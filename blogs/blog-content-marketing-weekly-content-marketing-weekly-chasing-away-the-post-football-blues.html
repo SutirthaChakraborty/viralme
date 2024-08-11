@@ -1,0 +1,75 @@
+Here's a simple HTML code with inline CSS and a JavaScript effect that highlights keywords related to your topic. I've included the requested keywords for better search visibility. Note that I've kept the code clean and not used markdown syntax for better readability.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog content marketing tips for weekly planning and overcoming post-football blues">
+    <title>Weekly Content Marketing: Chasing Away the Post-Football Blues</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .keywords {
+            color: #006699;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a:hover .tooltip {
+            display: block;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+    <script>
+        function highlightKeyword(keyword) {
+            document.querySelectorAll(`.${keyword}`).forEach((element) => {
+                element.classList.add('highlight');
+            });
+
+            let tooltip = document.querySelector(`div.tooltip[data-tooltip="${keyword}"]`);
+            if (tooltip) {
+                tooltip.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const keywords = ['blog', 'content marketing', 'weekly', 'chasing away', 'post-football blues'];
+            keywords.forEach(keyword => {
+                document.querySelectorAll(`a:contains("${keyword}")`).forEach(a => {
+                    a.addEventListener('mouseover', () => {
+                        highlightKeyword(keyword);
+                    });
+                    a.addEventListener('mouseout', () => {
+                        highlightKeyword(keyword, false);
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1> weekly content marketing: <span class="keywords">chasing away the post-football blues</span></h1>
+    </header>
+    <main>
+        <p>Every week, stay on top of your <span class="keywords">content marketing strategy</span>

@@ -1,0 +1,86 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google Launches New iPad App for Enhanced Search Experience</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  color: #4a90e2;
+}
+
+article {
+  margin-bottom: 20px;
+}
+
+.highlight {
+  background-color: #e6f1ff;
+}
+
+.sidebar {
+  float: right;
+  width: 30%;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #3f84cd;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+<script>
+// JavaScript to toggle keyword highlighting
+function highlightKeyword(keyword) {
+  var text = document.getElementById("keyword-explanation").textContent;
+  var regex = new RegExp("\\b" + keyword + "\\b", "gi");
+  var highlightedText = text.replace(regex, '<span class="highlight">$&</span>');
+
+  document.getElementById("keyword-explanation").innerText = highlightedText;
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <h1>Google Announces New iPad App for Enhanced Search Experience</h1>
+  
+  <article>
+    <p>The tech giant Google has recently introduced a new and advanced iPad app, designed specifically to streamline search processes for users, making it easier to find relevant information across the web. Key highlights of the app include

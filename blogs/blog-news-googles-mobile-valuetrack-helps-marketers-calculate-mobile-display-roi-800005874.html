@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google's Mobile ValueTrack: Calculate Mobile Display ROI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Google's Mobile ValueTrack</h1>
+    </header>
+    <article>
+        <h2>What is ValueTrack?</h2>
+        <p>ValueTrack is a powerful tool that helps marketers track the performance of their mobile display ads. By using ValueTrack parameters, you can calculate the ROI of your campaigns effectively.</p>
+        
+        <h2>Why is Mobile ROI Important?</h2>
+        <p>With mobile ad spending projected to grow significantly, understanding your return on investment (ROI) is crucial for optimizing your marketing strategies.</p>
+        
+        <div class="interactive">
+            <h2>Calculate Your ROI</h2>
+            <p>Click the button below to see how ValueTrack can help you calculate your mobile display ROI:</p>
+            <button onclick="calculateROI()">Calculate ROI</button>
+            <p id="roiResult"></p>
+        </div>
+    </article>
+
+    <script>
+        function calculateROI() {
+            const adSpend = prompt("Enter your total ad spend:");
+            const revenue = prompt("Enter your total revenue generated:");
+            if (adSpend && revenue) {
+                const roi = ((revenue - adSpend) / adSpend) * 100;
+                document.getElementById("roiResult").innerText = `Your ROI is ${roi.toFixed(2)}%.`;
+            } else {
+                alert("Please enter valid numbers.");
+            }
+        }
+    </script>
+</body>
+</html>

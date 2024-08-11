@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog News Report on Social Media Usage - Nearly 2 Billion Users by 2014">
+    <title>Social Media Surge: Nearly 2 Billion Users by 2014</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            color: #0073e6;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+        #stats {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Surge</h1>
+        <p>Nearly 2 Billion Users by 2014</p>
+    </header>
+    <div class="content">
+        <h2>The Growth of Social Media</h2>
+        <p>By 2014, it was reported that nearly 2 billion people were using social media platforms worldwide. This rapid growth represented a significant shift in how individuals connected, communicated, and shared information.</p>
+        <h2>Impact on Society</h2>
+        <p>Social media has transformed relationships, marketing, and the way news is consumed, becoming an essential tool for businesses and individuals alike.</p>
+        <button id="showStatsBtn">Show Statistics</button>
+        <div id="stats">
+            <p><strong>Statistics:</strong></p>
+            <ul>
+                <li>Facebook: 1.2 billion users</li>
+                <li>Twitter: 271 million users</li>
+                <li>Instagram: 300 million users</li>
+                <li>LinkedIn: 347 million users</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showStatsBtn').addEventListener('click', function() {
+            var statsDiv = document.getElementById('stats');
+            if (statsDiv.style.display === "none" || statsDiv.style.display === "") {
+                statsDiv.style.display = "block";
+            } else {
+                statsDiv.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

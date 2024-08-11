@@ -1,0 +1,64 @@
+Here's a simple HTML code snippet with CSS and a JavaScript tooltip to explain the topic of civil construction photography. The keywords are included in the content for better search visibility:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exploring civil construction photography techniques and projects.">
+    <meta name="keywords" content="civil construction, photography, construction sites, architecture, building images, interactive CSS, JS tooltips">
+    <title>Civil Construction Photography | Educational Page</title>
+    <style>
+        .topic {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .topic img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .topic h3 {
+            font-size: 18px;
+            color: #333;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .topic img:hover .tooltip {
+            display: block;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+    <script>
+        function toggleTooltip(element) {
+            const tooltip = element.querySelector('.tooltip');
+            tooltip.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body>
+    <div class="topic">
+        <img src="construction_photo.jpg" alt="Civil Construction Photography Icon" onclick="toggleTooltip(this)">
+        <h3>Civil Construction Photography</h3>
+        <p>Discover the art and science behind capturing stunning images of construction sites, focusing on architectural details and the dynamic processes of building.</p>
+        <div class="tooltip hidden">Hover for photography tips and popular techniques</div>
+    </div>
+</body>
+</html>
+
+
+Replace "construction_photo.jpg" with a relevant image URL or provide a dummy image if needed. This code creates a simple box with an image and text about civil construction photography, and a tooltip

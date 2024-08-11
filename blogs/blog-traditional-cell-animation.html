@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the art of traditional cell animation, its techniques, history, and importance in modern filmmaking.">
+    <title>Traditional Cell Animation Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #35424a;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #4D6A7F;
+        }
+        .animation-container {
+            width: 100%;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+        .frame {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s;
+            opacity: 0;
+        }
+        .frame.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Traditional Cell Animation</h1>
+    <p>The timeless art of frame-by-frame animation</p>
+</header>
+
+<div class="content">
+    <h2>What is Traditional Cell Animation?</h2>
+    <p>Traditional cell animation, also known as hand-drawn animation, is a technique where each frame is drawn by hand on transparent celluloid sheets. This method has historical significance in the animation industry, paving the way for today's digital techniques.</p>
+
+    <h2>Why is Traditional Animation Important?</h2>
+    <p>Despite the rise of digital animation, traditional cell animation holds an important place in storytelling through art. It offers a unique charm and artistic quality that resonates with audiences around the world.</p>
+
+    <div class="animation-container" id="animation">
+        <div class="frame" id="frame1" style="background: url('frame1.png') no-repeat center; background-size: contain;"></div>
+        <div class="frame" id="frame2" style="background: url('frame2.png') no-repeat center; background-size: contain;"></div>
+    </div>
+
+    <button class="button" onclick="playAnimation()">Play Animation</button>
+</div>
+
+<script>
+    let currentFrame = 0;
+    const frames = document.querySelectorAll('.frame');
+
+    function playAnimation() {
+        frames.forEach((frame, index) => {
+            frame.classList.remove('active');
+        });
+        frames[currentFrame].classList.add('active');
+        currentFrame = (currentFrame + 1) % frames.length;
+
+        setTimeout(playAnimation, 500);
+    }
+</script>
+
+</body>
+</html>

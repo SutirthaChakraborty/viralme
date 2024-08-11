@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the dictionary of Twitter terms like 'blog', 'legacy', 'novice', and 'tweep'. Enhance your social media vocabulary!">
+    <title>Twitter Dictionary: Blog, Legacy, Novice, Tweep</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #1DA1F2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #1DA1F2;
+        }
+        button {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #1987C4;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Twitter Dictionary</h1>
+</header>
+
+<section>
+    <h2>Key Terms</h2>
+    <p><strong>Blog:</strong> A website or web page that is regularly updated with content, often presented in a conversational style.</p>
+    <p><strong>Legacy:</strong> Refers to the lasting impact or history of a Twitter account, especially regarding its followers and tweets.</p>
+    <p><strong>Novice:</strong> A newcomer to Twitter, still learning the ropes of tweeting and engaging with others.</p>
+    <p><strong>Tweep:</strong> A Twitter user, especially a follower or someone you follow.</p>
+    <button onclick="showTips()">Click for Twitter Tips!</button>
+    <div id="tips" style="display:none; margin-top: 10px;">
+        <p><strong>Twitter Tips:</strong></p>
+        <ul>
+            <li>Engage with your audience through tweets and retweets.</li>
+            <li>Use hashtags to increase visibility of your posts.</li>
+            <li>Follow relevant accounts to grow your feed and network.</li>
+            <li>Remember to tweet consistently for audience retention.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function showTips() {
+        const tipsDiv = document.getElementById("tips");
+        if (tipsDiv.style.display === "none") {
+            tipsDiv.style.display = "block";
+        } else {
+            tipsDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

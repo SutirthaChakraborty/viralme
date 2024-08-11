@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the best marketing books of all time to enhance your content marketing strategy.">
+    <title>Best Marketing Books for Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .book {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .book h2 {
+            color: #007BFF;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Top Marketing Books for Content Marketing</h1>
+    <div class="book">
+        <h2>The Content Code by Mark W. Schaefer</h2>
+        <p>Learn how to create content that gets shared and drives traffic.</p>
+        <span class="toggle">Show Details</span>
+        <div class="details">
+            <p>This book emphasizes the importance of creating content that resonates with your audience and encourages sharing.</p>
+        </div>
+    </div>
+
+    <div class="book">
+        <h2>Jab, Jab, Jab, Right Hook by Gary Vaynerchuk</h2>
+        <p>A guide to effective social media marketing strategies.</p>
+        <span class="toggle">Show Details</span>
+        <div class="details">
+            <p>Gary Vaynerchuk explains how to deliver value to your audience before asking for their business.</p>
+        </div>
+    </div>
+
+    <div class="book">
+        <h2>Building a StoryBrand by Donald Miller</h2>
+        <p>Discover how to clarify your message to connect with customers.</p>
+        <span class="toggle">Show Details</span>
+        <div class="details">
+            <p>This book provides a framework for telling your brand's story in a way that engages customers.</p>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const details = toggle.nextElementSibling;
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

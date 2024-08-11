@@ -1,0 +1,71 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Audience Personas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 2px solid #e5e5e5;
+        }
+        h1 {
+            color: #333333;
+            font-size: 28px;
+        }
+        .section {
+            margin-bottom: 30px;
+            counter-reset: step;
+        }
+        .step {
+            position: relative;
+            list-style-type: none;
+            counter-increment: step;
+        }
+        .step::before {
+            content: counter(step) ". ";
+            color: #6395cf;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .content p {
+            line-height: 1.6;
+            color: #555555;
+        }
+        .cta {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #e5e5e5;
+            border-top: 2px solid #d3d3d3;
+        }
+        .cta a {
+            display: inline-block;
+            color: #333333;
+            text-decoration: none;
+            background-color: #6395cf;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        // Simple JavaScript to toggle explanation on step hover
+        function toggleExplanation(target) {
+            const explanations = document.getElementsByClassName('explain');
+            for (let i = 0; i < explanations.length; i++) {
+                explanations[i].classList.remove('active');
+            }
+            target.parentNode.getElementsByClassName('explain')[target.id

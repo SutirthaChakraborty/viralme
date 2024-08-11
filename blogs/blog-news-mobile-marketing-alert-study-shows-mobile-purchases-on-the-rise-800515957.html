@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Marketing Trends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .interactive {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .stats {
+            display: none;
+            background: #e9ecef;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Mobile Marketing Trends</h1>
+    </header>
+    <article>
+        <h2>Study Shows Mobile Purchases on the Rise</h2>
+        <p>Recent research indicates a significant increase in mobile shopping, confirming the trend that consumers increasingly prefer making purchases through their smartphones.</p>
+        <p>With mobile commerce becoming a pivotal aspect of retail marketing strategies, businesses must adapt to maximize their reach and enhance user engagement.</p>
+        <button class="interactive">Show Mobile Purchase Stats</button>
+        <div class="stats">
+            <p>Mobile purchases have risen by over 30% in the last year!</p>
+            <p>55% of all online purchases are now made via mobile devices.</p>
+        </div>
+    </article>
+    <script>
+        document.querySelector('.interactive').addEventListener('click', function() {
+            const stats = document.querySelector('.stats');
+            stats.style.display = stats.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

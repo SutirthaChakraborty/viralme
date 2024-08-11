@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Video Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .video-type {
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exploring Different Types of Corporate Video</h1>
+    <div class="video-type">
+        <h2>1. Promotional Videos</h2>
+        <p>Promotional videos are designed to showcase a product or service, highlighting its benefits and features.</p>
+        <button onclick="playVideo('promoVideo')">Watch Promotional Video</button>
+        <video id="promoVideo" controls style="display:none;">
+            <source src="promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-type">
+        <h2>2. Training Videos</h2>
+        <p>Training videos are used to educate employees on new processes or systems, enhancing their skills and knowledge.</p>
+        <button onclick="playVideo('trainingVideo')">Watch Training Video</button>
+        <video id="trainingVideo" controls style="display:none;">
+            <source src="training.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="video-type">
+        <h2>3. Testimonial Videos</h2>
+        <p>Testimonial videos feature satisfied customers sharing their positive experiences with a brand or product.</p>
+        <button onclick="playVideo('testimonialVideo')">Watch Testimonial Video</button>
+        <video id="testimonialVideo" controls style="display:none;">
+            <source src="testimonial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        function playVideo(videoId) {
+            const videos = document.querySelectorAll('video');
+            videos.forEach(video => {
+                if (video.id === videoId) {
+                    video.style.display = 'block';
+                    video.play();
+                } else {
+                    video.pause();
+                    video.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

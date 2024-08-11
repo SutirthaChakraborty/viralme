@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Martin Luther King Jr. Day & Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #d44f00;
+        }
+        .trending {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boost Your Content Marketing with Martin Luther King Jr. Day Trends</h1>
+    <div class="trending">
+        <h2>Why Focus on Martin Luther King Jr. Day?</h2>
+        <p>Every January, the legacy of Martin Luther King Jr. resonates through social media and search trends. Leveraging this can enhance your content marketing strategies, drawing attention to your brand.</p>
+    </div>
+    
+    <button id="showTrendsBtn">Show Search Trends</button>
+    <div id="trends" style="display:none;">
+        <h2>Related Search Trends</h2>
+        <ul>
+            <li>Martin Luther King Jr. quotes</li>
+            <li>MLK Day events</li>
+            <li>Social justice campaigns</li>
+            <li>Volunteering on Martin Luther King Jr. Day</li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('showTrendsBtn').addEventListener('click', function() {
+            var trendsDiv = document.getElementById('trends');
+            if (trendsDiv.style.display === "none") {
+                trendsDiv.style.display = "block";
+                this.textContent = "Hide Search Trends";
+            } else {
+                trendsDiv.style.display = "none";
+                this.textContent = "Show Search Trends";
+            }
+        });
+    </script>
+</body>
+</html>

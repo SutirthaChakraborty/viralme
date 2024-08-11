@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Targeted Content Marketing Grows in 2012</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .main-content {
+            line-height: 1.6;
+        }
+
+        .keyword-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .keyword {
+            font-weight: bold;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .keyword:hover {
+            text-decoration: underline;
+        }
+
+        .explaination {
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+        .js-explain {
+            display: none;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showExplanation(keyword) {
+            const explanations = document.getElementsByClassName("js-explain");
+            for (let i = 0; i < explanations.length; i++) {
+                explanations[i].classList.remove("active");
+            }
+            const explanation = document.querySelector(`.js-explain[data-keyword="${keyword}"]`);
+            if (explanation) explanation.classList.add("active");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Targeted Content Marketing Grows in 2012</h

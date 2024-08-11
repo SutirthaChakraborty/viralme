@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights: Stories Beyond Words</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            animation: fadeIn 2s;
+        }
+        p {
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        p:hover {
+            transform: scale(1.05);
+        }
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .benefit {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .benefit:hover {
+            transform: translateY(-5px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights: Stories Beyond Words</h1>
+    <p>Discover the **benefits of animation without voiceover** in storytelling.</p>
+    <div class="benefits">
+        <div class="benefit">
+            <h2>Engagement</h2>
+            <p>Animations capture attention and enhance user engagement, making content more memorable.</p>
+        </div>
+        <div class="benefit">
+            <h2>Universal Understanding</h2>
+            <p>Visual storytelling transcends language barriers, allowing for a broader audience reach.</p>
+        </div>
+        <div class="benefit">
+            <h2>Emotional Impact</h2>
+            <p>Animations evoke emotions and create a deeper connection with the audience.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.benefit').forEach(item => {
+            item.addEventListener('click', () => {
+                alert('Learn more about this benefit!');
+            });
+        });
+    </script>
+</body>
+</html>

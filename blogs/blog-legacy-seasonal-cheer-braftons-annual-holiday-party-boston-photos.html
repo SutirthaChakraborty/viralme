@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brafton's Annual Holiday Party - Boston Photos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .photo {
+            margin: 10px;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brafton's Annual Holiday Party</h1>
+        <p>Celebrating Seasonal Cheer in Boston</p>
+    </header>
+    <section class="gallery">
+        <div class="photo">
+            <img src="photo1.jpg" alt="Holiday Party Photo 1">
+        </div>
+        <div class="photo">
+            <img src="photo2.jpg" alt="Holiday Party Photo 2">
+        </div>
+        <div class="photo">
+            <img src="photo3.jpg" alt="Holiday Party Photo 3">
+        </div>
+        <div class="photo">
+            <img src="photo4.jpg" alt="Holiday Party Photo 4">
+        </div>
+    </section>
+    <footer>
+        <p>Join us for more festive celebrations and memories!</p>
+    </footer>
+    <script>
+        const photos = document.querySelectorAll('.photo');
+        photos.forEach(photo => {
+            photo.addEventListener('click', () => {
+                alert('Enjoy the festive spirit captured in this moment!');
+            });
+        });
+    </script>
+</body>
+</html>

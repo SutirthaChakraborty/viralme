@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore essential questions for improving social media engagement on your blog.">
+    <title>Boost Your Blog: Social Media Engagement Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .question {
+            margin: 10px 0;
+            background: #e2e2e2;
+            padding: 10px;
+            border-left: 5px solid #35424a;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Engagement Questions</h1>
+        <p>Enhance Your Blog's Reach and Interaction</p>
+    </header>
+    <section>
+        <h2>Key Questions for Enhancing Engagement</h2>
+        <div class="question">1. What content resonates most with my audience?</div>
+        <div class="answer">Analyze your post analytics to identify top-performing content types.</div>
+        <div class="question">2. How often should I engage with followers?</div>
+        <div class="answer">Engage regularly, responding to comments and messages promptly to build community.</div>
+        <div class="question">3. Which platforms should I prioritize for engagement?</div>
+        <div class="answer">Focus on platforms where your target audience is most active.</div>
+        <div class="question">4. How can I encourage user-generated content?</div>
+        <div class="answer">Create campaigns or challenges to motivate followers to create and share their content.</div>
+        <div class="question">5. What questions can I ask to facilitate discussion?</div>
+        <div class="answer">Ask open-ended questions related to your blog topics to spark conversation.</div>
+    </section>
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

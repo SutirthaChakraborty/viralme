@@ -1,0 +1,96 @@
+
+
+HTML: 
+
+html
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"UTF-8">
+  <title>Articles & Videos</title>
+  <link rel=\"stylesheet\" href=\"style.css\">
+  <script src=\"script.js\"></script>
+</head>
+<body>
+  <header>
+    <h1>Articles & Videos</h1>
+  </header>
+  <main>
+    <section class=\"articles-videos\">
+      <article>
+        <h2>Article Title 1</h2>
+        <img src=\"article1.jpg\" alt=\"Article Image 1\">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </article>
+      <article>
+        <h2>Article Title 2</h2>
+        <img src=\"article2.jpg\" alt=\"Article Image 2\">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+      </article>
+    </section>
+    <section class=\"videos\">
+      <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/VIDEO_ID\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>
+    </section>
+  </main>
+</body>
+</html>
+
+
+CSS: 
+
+css
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+av {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+h1 {
+  margin: 0;
+}
+av a {
+  color: #007bff;
+  text-decoration: none;
+}
+av a:hover {
+  color: #0056b3;
+}\section.articles-videos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}\section.articles-videos article {
+  width: calc(33% - 20px);
+}\section.articles-videos article img {
+  width: 100%;
+}\section.articles-videos article h2, 
+p {
+  margin-top: 0;
+}\section.articles-videos article p {
+  margin-bottom: 0;
+}\section.videos {
+  display: flex;
+  justify-content: center;
+}\iframe {
+  width: calc(50% - 40px);
+}\
+
+JavaScript: 
+
+javascript
+a = document.querySelectorAll('article p');
+a[0].addEventListener('mouseenter', function() {
+a[1].style.opacity = '1';
+a[1].style.transition = 'opacity 1s ease-in-out';
+a[1].style.transform = 'translateY(0)';});
+a[1].addEventListener('mouseleave', function() {
+a[1].style.opacity = '0';
+a[1].style.transition = 'opacity 1s ease-in-out';
+a[1].style.transform = 'translateY(-100%)';});

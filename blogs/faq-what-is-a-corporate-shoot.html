@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: What is a Corporate Shoot?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .faq-container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .faq {
+            border-bottom: 1px solid #dddddd;
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .faq-header {
+            padding: 15px;
+            cursor: pointer;
+            background: #f7f7f7;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+        }
+        .faq-content {
+            padding: 0 15px;
+            display: none;
+            background: #f9f9f9;
+        }
+        .active {
+            display: block;
+        }
+        @media (max-width: 600px) {
+            .faq-header {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FAQ: What is a Corporate Shoot?</h1>
+    </header>
+    <div class="faq-container">
+        <div class="faq">
+            <button class="faq-header">What is a Corporate Shoot?</button>
+            <div class="faq-content"><p>A corporate shoot refers to a professional photography session that captures images for business purposes, such as corporate events, team headshots, and marketing materials. It's essential for branding and image promotion.</p></div>
+        </div>
+        <div class="faq">
+            <button class="faq-header">Why is a Corporate Shoot Important?</button>
+            <div class="faq-content"><p>Cinematic corporate photography enhances professionalism, showcases your brand's identity, and helps build trust with clients. It is vital in creating a strong online presence and marketing strategies.</p></div>
+        </div>
+        <div class="faq">
+            <button class="faq-header">What Should You Expect During a Corporate Shoot?</button>
+            <div class="faq-content"><p>Expect detailed planning, collaboration with the photographer, and a focus on natural interactions that reflect your company's culture. The resulting photos should align with your brand's aesthetic and marketing goals.</p></div>
+        </div>
+    </div>
+    <script>
+        const faqHeaders = document.querySelectorAll('.faq-header');
+        faqHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+                header.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

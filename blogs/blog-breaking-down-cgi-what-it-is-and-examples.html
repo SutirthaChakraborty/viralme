@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Understanding CGI: A Blog Exploring Concepts and Examples</title>
+<style>
+body {
+ background-color: #f9f9f9;
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 20px;
+}
+
+.container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 15px;
+ background-color: #fff;
+ border-radius: 5px;
+ box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+ color: #333;
+ text-align: center;
+ font-size: 30px;
+ margin-bottom: 20px;
+}
+
+h2 {
+ color: #555;
+ font-weight: bold;
+}
+
+.example-box {
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 20px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ padding: 10px;
+ margin-top: 15px;
+}
+
+.example-box h3 {
+ margin-bottom: 5px;
+}
+
+.code-snippet {
+ background-color: #f0f0f0;
+ padding: 10px;
+ white-space: nowrap;
+ overflow-x: auto;
+ border-radius: 5px;
+}
+
+.code-language {
+ font-style: italic;
+ color: #999;
+ margin-bottom: 5px;
+}
+
+.interactive-example {
+ cursor: pointer;
+}
+
+.interactive-example .content {
+ display: none;
+}
+
+.interactive-example:hover .content {
+ display: block;
+ position: relative;
+ background-color: #fff;
+ padding: 10px;
+ width: 100%;
+ box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ z-index: 1;
+ max-height: 200px;
+ overflow-y: auto;
+ border-radius: 5px;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>Exploring CGI: Fundamentals and Practical Examples</h1>
+</header>
+<section>
+<h2>What is CGI?</h2>
+<p>CGI, or Common Gateway Interface, is a protocol that allows server-side execution of scripts, typically written in programming languages like Perl, Python, or Ruby. These scripts interact with web servers to generate dynamic content in response to client

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Facebook Users & Headlines Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+        .headline {
+            font-weight: bold;
+            color: #3b5998;
+            cursor: pointer;
+        }
+        .headline:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Latest Blog News</h1>
+    </header>
+    <article>
+        <h2>Facebook Users Read Headlines: A Comprehensive Study</h2>
+        <p>The study reveals that over 70% of Facebook users only skim headlines before deciding to read articles. This highlights the importance of effective content creation.</p>
+        <p class="headline" onclick="showDetail()">Read More Insights</p>
+        <div id="details" style="display:none;">
+            <p>Headlines that evoke curiosity or urgency significantly increase click-through rates. Engaging content is key to capturing audience attention in a saturated media landscape.</p>
+        </div>
+    </article>
+    <footer>
+        <p>&copy; 2023 Blog News</p>
+    </footer>
+    <script>
+        function showDetail() {
+            const details = document.getElementById("details");
+            details.style.display = (details.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

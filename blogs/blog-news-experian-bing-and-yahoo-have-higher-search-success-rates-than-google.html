@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Success Rates: Experian, Bing, Yahoo vs Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .highlight {
+            color: #0073e6;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Search Success Rates</h1>
+    </header>
+    <section>
+        <h2>Experian, Bing, and Yahoo Outperform Google</h2>
+        <p>Recent studies indicate that **Experian**, **Bing**, and **Yahoo** have higher search success rates than **Google**. This trend highlights the importance of exploring multiple search engines for better results.</p>
+        <button class="button" onclick="showStats()">Click for Statistics</button>
+        <div id="stats" style="display:none;">
+            <p>In a recent report, Bing showed a success rate of <span class="highlight">75%</span>, Yahoo at <span class="highlight">70%</span>, and Experian at <span class="highlight">68%</span>, compared to Google's <span class="highlight">65%</span>.</p>
+        </div>
+    </section>
+    <script>
+        function showStats() {
+            var statsDiv = document.getElementById("stats");
+            if (statsDiv.style.display === "none") {
+                statsDiv.style.display = "block";
+            } else {
+                statsDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News & Facebook Comments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        article:hover {
+            transform: scale(1.02);
+        }
+        .comment-section {
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .comment-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .comment-form input, .comment-form textarea {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .comment-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .comment-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest Blog News & Community Interaction</h1>
+    <p>Engage with us by sharing your thoughts!</p>
+</header>
+
+<article>
+    <h2>The Future of Blogging: Trends to Watch</h2>
+    <p>As technology evolves, so does the blogging landscape. Stay updated on the latest trends in content creation and digital marketing strategies.</p>
+    <p>What are your thoughts on these changes? Join the conversation below!</p>
+    
+    <div class="comment-section">
+        <h3>Join the Discussion</h3>
+        <div id="fb-comments"></div>
+        <form class="comment-form" id="commentForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="comment" rows="4" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+    </div>
+</article>
+
+<script>
+    document.getElementById('commentForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const comment = document.getElementById('comment').value;
+
+        const commentDisplay = document.createElement('div');
+        commentDisplay.innerHTML = `<strong>${name}</strong>: ${comment}`;
+        document.getElementById('fb-comments').appendChild(commentDisplay);
+
+        document.getElementById('name').value = '';
+        document.getElementById('comment').value = '';
+    });
+</script>
+
+</body>
+</html>

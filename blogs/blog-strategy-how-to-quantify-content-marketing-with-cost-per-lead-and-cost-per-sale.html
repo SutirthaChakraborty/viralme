@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Strategy: Quantifying Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .keywords {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .toggle {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .content-details {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Strategy: Quantifying Content Marketing</h1>
+    </header>
+    <div class="container">
+        <h2>Understanding Cost per Lead (CPL) and Cost per Sale (CPS)</h2>
+        <p>Effective <span class="keywords">content marketing strategies</span> are essential for maximizing ROI. To quantify these efforts, it’s crucial to analyze metrics like <span class="keywords">Cost per Lead</span> and <span class="keywords">Cost per Sale</span>.</p>
+        <button class="toggle">Show/Hide Detailed Metrics</button>
+        <div class="content-details">
+            <h3>Cost per Lead (CPL)</h3>
+            <p>CPL is the total cost of generating a lead. It includes expenses related to creating content, promoting it, and any other associated costs.</p>
+            <h3>Cost per Sale (CPS)</h3>
+            <p>CPS measures the cost incurred to secure a sale. It reflects the total expenditure on marketing efforts divided by the number of conversions.</p>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.toggle').addEventListener('click', function() {
+            const details = document.querySelector('.content-details');
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            this.textContent = details.style.display === 'block' ? 'Hide Detailed Metrics' : 'Show Detailed Metrics';
+        });
+    </script>
+</body>
+</html>

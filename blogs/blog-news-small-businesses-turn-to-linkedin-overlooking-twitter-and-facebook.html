@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover why small businesses are shifting from Twitter and Facebook to LinkedIn for effective networking and growth.">
+    <title>Small Businesses Turn to LinkedIn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #0077B5;
+            color: white;
+            padding: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #0077B5;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .keyword:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Small Businesses Embrace LinkedIn</h1>
+    </header>
+    <div class="content">
+        <p>In today's digital landscape, <span class="keyword" onclick="showMoreInfo('networking')">networking</span> has taken on a new meaning. More and more small businesses are choosing <span class="keyword" onclick="showMoreInfo('LinkedIn')">LinkedIn</span> as their primary platform for growth, overlooking traditional social media giants like <span class="keyword" onclick="showMoreInfo('Twitter')">Twitter</span> and <span class="keyword" onclick="showMoreInfo('Facebook')">Facebook</span>.</p>
+        <p>Key reasons include enhanced <span class="keyword" onclick="showMoreInfo('visibility')">visibility</span>, targeted professional connections, and access to a large pool of potential clients and talent.</p>
+    </div>
+    <footer>
+        &copy; 2023 Small Business News
+    </footer>
+    <script>
+        function showMoreInfo(topic) {
+            let message = '';
+            switch (topic) {
+                case 'networking':
+                    message = "Networking on LinkedIn provides valuable connections with industry leaders and potential clients.";
+                    break;
+                case 'LinkedIn':
+                    message = "LinkedIn is tailored for professionals, making it ideal for B2B marketing.";
+                    break;
+                case 'Twitter':
+                    message = "Twitter is great for trends but lacks the professional focus LinkedIn provides.";
+                    break;
+                case 'Facebook':
+                    message = "Facebook is more personal and less effective for business networking compared to LinkedIn.";
+                    break;
+                case 'visibility':
+                    message = "LinkedIn enhances visibility among your target audience and industry peers.";
+                    break;
+            }
+            alert(message);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Social Media as a Top News Source</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 30px;
+            border-left: 5px solid #d1d8e9;
+            padding-left: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            border-radius: 3px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .share-icons {
+            text-align: right;
+        }
+
+        .share-icons a {
+            display: inline-block;
+            color: #3498db;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #34495e;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function highlightKeywords() {
+            var text = document.getElementById('main-content').textContent;
+            var keywords = ['blog', 'news', 'social media', 'news content'];
+            keywords.forEach((keyword) => {
+                text = text.replace(new RegExp(keyword, 'gi'), `<span class="keyword">${keyword}</span>`);
+            });
+            document.getElementById('main-content').innerHTML = text

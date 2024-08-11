@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Employee Spotlight: Meet Dylan, Senior Content Writer at our blog content marketing agency. Discover his contributions and creative process.">
+    <title>Employee Spotlight: Meet Dylan, Senior Content Writer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .employee-info {
+            margin: 20px 0;
+        }
+        .employee-info img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .keywords {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e7f1ff;
+            border-left: 5px solid #007BFF;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #moreInfo {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Spotlight: Meet Dylan</h1>
+        <div class="employee-info">
+            <img src="dylan.jpg" alt="Dylan, Senior Content Writer">
+            <h2>Dylan - Senior Content Writer</h2>
+            <p>Dylan has been an influential part of our content marketing team for over 5 years, specializing in creating engaging blog content that resonates with our audience.</p>
+        </div>
+        <div class="keywords">
+            <strong>Related Keywords:</strong> Content Marketing, Employee Spotlight, Blog Content Creation, Digital Marketing Strategies, Engaging Content.
+        </div>
+        <button id="toggleInfo">Learn More About Dylan</button>
+        <div id="moreInfo">
+            <p>Dylan believes in the power of storytelling and effectively uses SEO strategies to enhance our blog's visibility. His meticulous research and creativity spark innovative ideas that boost audience engagement.</p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleInfo').addEventListener('click', function() {
+            const moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                moreInfo.style.display = 'block';
+                this.textContent = 'Show Less About Dylan';
+            } else {
+                moreInfo.style.display = 'none';
+                this.textContent = 'Learn More About Dylan';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights into the future of filmmaking with a focus on technology, storytelling, and creativity.">
+    <title>Filmmakers of Tomorrow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .insight {
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 4px solid #2980b9;
+            cursor: pointer;
+        }
+        .insight:hover {
+            background-color: #eaf6fd;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #2980b9;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Insights: Filmmakers of Tomorrow</h1>
+        <div class="insight" onclick="toggleDetails('tech')">
+            <strong>Emerging Technologies</strong>
+        </div>
+        <div id="tech" class="details">
+            Virtual Reality, Augmented Reality, and AI are reshaping traditional filmmaking, enabling immersive experiences and new storytelling forms.
+        </div>
+        
+        <div class="insight" onclick="toggleDetails('story')">
+            <strong>Innovative Storytelling</strong>
+        </div>
+        <div id="story" class="details">
+            Filmmakers are exploring interactive narratives and episodic formats, reshaping how audiences engage with stories.
+        </div>
+
+        <div class="insight" onclick="toggleDetails('diversity')">
+            <strong>Diversity in Filmmaking</strong>
+        </div>
+        <div id="diversity" class="details">
+            The future of cinema emphasizes inclusivity, representing diverse voices and perspectives, enriching the industry's narrative landscape.
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === 'none' || details.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Glossary - Learn Key Terms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .glossary-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .term {
+            background: white;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            width: 80%;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+        .term:hover {
+            background: #e0e7ff;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background: #fafafa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Glossary of Key Terms</h1>
+        <p>Understand the essential terminology used in various fields.</p>
+    </header>
+    <div class="glossary-container">
+        <div class="term">
+            <strong>HTML</strong>
+            <div class="definition">HyperText Markup Language, the standard language for creating web pages.</div>
+        </div>
+        <div class="term">
+            <strong>CSS</strong>
+            <div class="definition">Cascading Style Sheets, used for styling and layout of web pages.</div>
+        </div>
+        <div class="term">
+            <strong>JavaScript</strong>
+            <div class="definition">A programming language that enables interactive web content.</div>
+        </div>
+        <div class="term">
+            <strong>SEO</strong>
+            <div class="definition">Search Engine Optimization, strategies to improve website visibility on search engines.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.term').forEach(term => {
+            term.addEventListener('click', () => {
+                const definition = term.querySelector('.definition');
+                definition.style.display = definition.style.display === 'none' || definition.style.display === '' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

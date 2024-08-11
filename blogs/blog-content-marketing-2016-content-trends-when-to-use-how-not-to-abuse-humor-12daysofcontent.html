@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore blog content marketing trends of 2016, including content strategies, humor usage, and effective blogging tips.">
+    <title>Blog Content Marketing Trends 2016</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.2s ease;
+            width: 100%;
+            background: #f1f1f1;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .active, .accordion:hover {
+            background-color: #d1d1d1;
+        }
+        .panel {
+            padding: 0 10px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Content Marketing 2016 Trends</h1>
+    </header>
+    <main>
+        <h2>Content Trends</h2>
+        <button class="accordion">What is Content Marketing?</button>
+        <div class="panel">
+            <p>Content marketing involves creating valuable content to attract and engage a target audience.</p>
+        </div>
+
+        <button class="accordion">When to Use Humor in Blogging</button>
+        <div class="panel">
+            <p>Use humor when it aligns with your brand voice and enhances the content's engagement levels.</p>
+        </div>
+
+        <button class="accordion">How Not to Abuse Humor</button>
+        <div class="panel">
+            <p>Avoid inappropriate jokes or humor that detracts from your brand's message and leads to misunderstandings.</p>
+        </div>
+
+        <button class="accordion">The '12 Days of Content' Approach</button>
+        <div class="panel">
+            <p>This strategy focuses on delivering consistent, themed content over a specified period to boost engagement.</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 Blog Content Insights</p>
+    </footer>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

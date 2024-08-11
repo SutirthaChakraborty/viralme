@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday Sales Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d9534f;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .survey-button {
+            background: #5bc0de;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .survey-result {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Black Friday Sales & Email Marketing Insights</h1>
+</header>
+
+<article>
+    <h2>Survey Results: CMOs Expect Sales to Skyrocket</h2>
+    <p>This year, <span class="keyword">CMOs</span> are predicting that <span class="keyword">Black Friday</span> sales will surge like never before, spurred by effective <span class="keyword">email marketing</span> strategies. With expected sales hitting new records, businesses must optimize their outreach.</p>
+    <button class="survey-button" onclick="displaySurveyResult()">View Survey Insights</button>
+    <div class="survey-result" id="result">
+        <p>83% of marketers believe that personalized email campaigns will significantly drive conversions this Black Friday.</p>
+        <p>90% expect a rise in sales due to targeted promotions and clear calls-to-action.</p>
+        <p>Don't miss out on the chance to maximize your cash flow this holiday season!</p>
+    </div>
+</article>
+
+<script>
+    function displaySurveyResult() {
+        const resultDiv = document.getElementById('result');
+        if (resultDiv.style.display === "none" || resultDiv.style.display === "") {
+            resultDiv.style.display = "block";
+        } else {
+            resultDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore editorial photography focused on industrial construction, showcasing the essence of building and architecture.">
+    <title>Editorial Photography: Industrial Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            color: white;
+            padding: 10px 0;
+        }
+        .container {
+            padding: 20px;
+            margin: auto;
+            max-width: 800px;
+        }
+        .photo {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        .info {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Editorial Photography: Industrial Construction</h1>
+    </header>
+    <div class="container">
+        <img src="industrial-construction.jpg" alt="Industrial Construction" class="photo">
+        <div class="info">
+            <h2>What is Editorial Industrial Photography?</h2>
+            <p>Editorial photography showcases the industrial construction process, highlighting the architecture and engineering behind large projects.</p>
+            <button onclick="toggleMoreInfo()">Learn More</button>
+            <div id="moreInfo" style="display:none;">
+                <p>This genre focuses on storytelling through images, revealing the intricacies of construction, safety practices, and teamwork.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMoreInfo() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

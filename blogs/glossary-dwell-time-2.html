@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary: Dwell Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-term {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .definition.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Glossary of Terms</h1>
+    <p><span class="glossary-term" onclick="toggleDefinition('dwellTime')">Dwell Time</span>: The amount of time a user spends on a webpage before returning to the search results.</p>
+    <div id="dwellTime" class="definition">
+        <p><strong>Dwell Time</strong> is a critical metric in SEO, indicating user engagement and content relevance. A longer dwell time suggests that users find the content valuable, which can positively impact search rankings.</p>
+    </div>
+
+    <script>
+        function toggleDefinition(termId) {
+            const definition = document.getElementById(termId);
+            definition.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

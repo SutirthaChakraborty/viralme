@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Study shows increasing video consumption among female audiences, highlighting trends in media consumption.">
+    <title>Video Consumption Increase Among Female Audiences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #5a67d8;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #48bb78;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #38a169;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Consumption Trends Among Women</h1>
+</header>
+
+<article>
+    <h2>Year Over Year Growth in Video Consumption</h2>
+    <p>Recent studies indicate that video consumption among female audiences has been increasing year over year. This trend highlights a shift in how women interact with media, particularly online videos.</p>
+    <p>With platforms like YouTube, TikTok, and Instagram driving engagement, more women are consuming content that aligns with their interests and lifestyles.</p>
+    <button id="toggleContent">Read More</button>
+    <div class="content" id="moreContent">
+        <p>This increase can be attributed to various factors including better access to technology, the popularity of influencer marketing, and the rise of relatable and diverse content. Brands are increasingly targeting female demographics to create relatable advertising strategies that resonate with this growing audience.</p>
+        <p>Understanding these trends is crucial for content creators and marketers aiming to customize their offerings and enhance viewer engagement.</p>
+    </div>
+</article>
+
+<script>
+    document.getElementById('toggleContent').addEventListener('click', function() {
+        var content = document.getElementById('moreContent');
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+            this.textContent = 'Read Less';
+        } else {
+            content.style.display = 'none';
+            this.textContent = 'Read More';
+        }
+    });
+</script>
+
+</body>
+</html>

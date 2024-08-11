@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matterport FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .faq-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .faq-list li {
+            margin-bottom: 10px;
+        }
+        .faq-list .question {
+            cursor: pointer;
+        }
+        .faq-list .answer {
+            display: none;
+        }
+        .faq-list .question:after {
+            content: '+';
+            color: #333;
+        }
+        .faq-list .answer:after {
+            content: '-';
+            color: #333;
+        }
+        .faq-list .active .answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>FAQ: What is Matterport used for?</h2>
+        <ul class="faq-list">
+            <li class="question">
+                <span class="question-text">What is Matterport?</span>
+                <span class="answer-text">Matterport is a technology that allows for the creation of 3D models of physical spaces. These models can be used for a variety of purposes, including virtual tours, real estate marketing, and design planning.</span>
+            </li>
+            <li class="question">
+                <span class="question-text">How is Matterport different from traditional photography?</span>
+                <span class="answer-text">Matterport offers a more immersive experience than traditional photography. It provides a 3D model of the space, allowing users to navigate and explore the environment as if they were physically there. This is particularly useful for large spaces or for spaces that cannot be fully captured in a single photograph.</span>
+            </li>
+            <li class="question">
+                <span class="question-text">What are the applications of Matterport?</span>
+                <span class="answer-text">Matterport has a wide range of applications, including real estate marketing, virtual tours, architectural design, retail space planning, and even educational purposes. It can be used for marketing, training, and planning purposes, offering a more interactive and immersive experience than traditional methods.</span>
+            </li>
+        </ul>
+        <script>
+            document.querySelectorAll('.question').forEach(question => {
+                question.addEventListener('click', function() {
+                    this.querySelector('.answer-text').classList.toggle('active');
+                    this.querySelector(':last-child').textContent = this.querySelector('.answer-text').style.display == 'block' ? '-' : '+';
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

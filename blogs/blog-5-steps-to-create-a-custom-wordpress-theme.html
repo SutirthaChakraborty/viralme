@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to create a custom WordPress theme in 5 easy steps. Perfect for beginners and developers looking to enhance their skills.">
+    <title>5 Steps to Create a Custom WordPress Theme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .step {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 3px solid #0073aa;
+            background: #eaeaea;
+        }
+        .details p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>5 Steps to Create a Custom WordPress Theme</h1>
+
+<div class="step" onclick="toggleDetails('step1')">
+    <h2>Step 1: Setup Your Development Environment</h2>
+    <div id="step1" class="details">
+        <p>Install WordPress locally using tools like XAMPP, MAMP, or Local by Flywheel. This allows you to test your theme without affecting a live site.</p>
+    </div>
+</div>
+
+<div class="step" onclick="toggleDetails('step2')">
+    <h2>Step 2: Create a Base Theme Structure</h2>
+    <div id="step2" class="details">
+        <p>Create a new folder in the wp-content/themes directory. Inside, create the style.css and index.php files as the core of your theme.</p>
+    </div>
+</div>
+
+<div class="step" onclick="toggleDetails('step3')">
+    <h2>Step 3: Add Essential Theme Files</h2>
+    <div id="step3" class="details">
+        <p>Include files like header.php, footer.php, and functions.php. These files help structure your theme and add functionality through WordPress hooks.</p>
+    </div>
+</div>
+
+<div class="step" onclick="toggleDetails('step4')">
+    <h2>Step 4: Style Your Theme with CSS</h2>
+    <div id="step4" class="details">
+        <p>Write custom CSS in style.css to design your theme. Use responsive design to ensure it looks great on all devices.</p>
+    </div>
+</div>
+
+<div class="step" onclick="toggleDetails('step5')">
+    <h2>Step 5: Test and Debug Your Theme</h2>
+    <div id="step5" class="details">
+        <p>Activate your theme in WordPress and thoroughly test functionality. Use tools like Theme Check and Query Monitor for debugging.</p>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(stepId) {
+        const details = document.getElementById(stepId);
+        if (details.style.display === "block") {
+            details.style.display = "none";
+        } else {
+            details.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

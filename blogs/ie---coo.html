@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Chief Operating Officer (COO) roles, responsibilities, and skills necessary for business leadership.">
+    <title>Understanding the COO Role</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .role-info, .skills {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .toggle-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Chief Operating Officer (COO)</h1>
+    </div>
+    <div class="content">
+        <div class="role-info">
+            <h2>Role and Responsibilities</h2>
+            <p>The COO oversees the organization's ongoing operations and procedures, ensuring efficiency and growth.</p>
+            <button class="toggle-button" onclick="toggleInfo('responsibilities')">Show Responsibilities</button>
+            <ul id="responsibilities" style="display:none;">
+                <li>Implementing business strategies.</li>
+                <li>Managing day-to-day operations.</li>
+                <li>Leading and mentoring teams.</li>
+                <li>Driving organizational change.</li>
+            </ul>
+        </div>
+        <div class="skills" style="margin-top:20px;">
+            <h2>Essential Skills</h2>
+            <p>The ideal COO should possess a diverse skill set tailored to business leadership.</p>
+            <button class="toggle-button" onclick="toggleInfo('skillsList')">Show Skills</button>
+            <ul id="skillsList" style="display:none;">
+                <li>Strategic Planning</li>
+                <li>Financial Acumen</li>
+                <li>Leadership & Communication</li>
+                <li>Problem Solving</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

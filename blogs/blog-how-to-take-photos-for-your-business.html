@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 800px;
+  padding: 15px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+ KeywordHighlight {
+  background-color: yellow;
+  font-weight: bold;
+ }
+
+.example {
+  font-style: italic;
+}
+
+.code {
+  background-color: #222;
+  color: white;
+  display: block;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.interactive-btn {
+  background-color: #337ab7;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.interactive-btn:hover {
+  background-color: #29629d;
+}
+
+.readmore {
+  color: #333;
+  cursor: pointer;
+}
+
+.code-block {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  max-width: 800px;
+  overflow: auto;
+}
+
+</style>
+<script>
+function highlightKeywords() {
+  const keywords = ['photography', 'business', 'optimization', 'SEO', 'target audience'];
+  const text = document.getElementById('content').textContent;
+  for (let keyword of keywords) {
+    const regex = new RegExp(keyword, 'gi');
+    text = text.replace(regex, `<KeywordHighlight>${keyword}</KeywordHighlight>`);
+  }
+  document.getElementById('content').textContent = text;
+}
+</script>
+</head>
+<body onload="highlightKeywords()">
+<header>
+  <h1>How to Take Photos for Your Business: A Guide for Better Reach</h1>
+</

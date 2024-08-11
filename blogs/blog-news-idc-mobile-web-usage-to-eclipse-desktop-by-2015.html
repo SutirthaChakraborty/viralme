@@ -1,0 +1,75 @@
+#### HTML Code with CSS and JS for Blog News
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      float: left;
+      width: 20%;
+      background: #f2f2f2;
+      padding: 10px;
+      height: 100vh;
+      overflow: auto;
+    }
+    nav a {
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      color: #333;
+    }
+    article {
+      float: left;
+      padding: 20px;
+      width: 80%;
+      background-color: #fff;
+    }
+  </style>
+  <script>
+    function loadContent(content) {
+      document.getElementById('content').innerHTML = content;
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Blog News</h1>
+  </header>
+  <nav>
+    <a href="#" onclick="loadContent('Content about IDC')">IDC</a>
+    <a href="#" onclick="loadContent('Mobile Web Usage')">Mobile Web Usage</a>
+    <a href="#" onclick="loadContent('Desktop vs Mobile')">Desktop vs Mobile</a>
+  </nav>
+  <article id="content">
+    <h2>Welcome to Blog News</h2>
+    <p>Select a topic from the left to view the content here.</p>
+  </article>
+</body>
+</html>
+
+
+#### Explanation
+The provided HTML code creates a simple web page for blog news with interactive CSS and JavaScript to explain the topics.
+
+- **HTML Structure**: The HTML document includes the necessary structure for a web page, including the `<!DOCTYPE>` declaration, `<html>`, `<head>`, and `<body>` tags.
+- **Meta Tags**: Meta tags are included for character set and viewport settings.
+- **CSS**: The CSS styles define the layout and appearance of the page, including the header, navigation, and article sections [[1]](https://www.knowledgehut.com/blog/web-development/html-projects) [[2]](https://blog.hubspot.com/website/html-projects-for-beginners).
+- **JavaScript**: A JavaScript function `loadContent` is included to dynamically load content into the article section based on the user's selection from the navigation menu [[1]](https://www.knowledgehut.com/blog/web-development/html-projects).
+
+This code provides a basic framework for a blog news website with interactive features to engage users and present information about IDC, mobile web usage, and the shift towards mobile web usage compared to desktop.

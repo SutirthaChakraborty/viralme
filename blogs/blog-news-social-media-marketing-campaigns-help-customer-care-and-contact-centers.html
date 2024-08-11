@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News | Social Media Marketing | Customer Care</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f3f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        h1, p {
+            margin-bottom: 1rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            width: 40%;
+        }
+        .card:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .link {
+            color: #3b5998;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .link:hover {
+            color: dodgerblue;
+        }
+    </style>
+    <script>
+        // JavaScript to highlight linked topics
+        function highlightKeyword(keyword, element) {
+            const regex = new RegExp(keyword, 'gi');
+            element.innerHTML = element.innerHTML.replace(regex, '<span class="keyword">$&</span>');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const blogKeywords = ['blog', 'news', 'social media'];
+            const marketingKeywords = ['marketing', 'campaigns', 'customer care', 'contact centers'];
+            document.querySelectorAll('.section h1').forEach((h1) => {
+                blogKeywords.forEach((keyword) => {
+                    highlightKeyword(keyword, h1);
+                });
+                marketingKeywords.forEach((keyword) => {
+                    highlightKeyword(keyword, h1);
+               

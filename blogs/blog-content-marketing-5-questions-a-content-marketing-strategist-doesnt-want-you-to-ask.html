@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+        .question:hover {
+            background-color: #e9e9e9;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>5 Questions a Content Marketing Strategist Doesn't Want You to Ask</h1>
+
+    <div class="question">
+        <strong>1. What is your content strategy?</strong>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <div class="answer">Understanding the content strategy is crucial for aligning goals and expectations.</div>
+    </div>
+
+    <div class="question">
+        <strong>2. How do you measure content success?</strong>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <div class="answer">Metrics such as engagement, conversion rates, and SEO performance are key indicators.</div>
+    </div>
+
+    <div class="question">
+        <strong>3. What tools do you use for content creation?</strong>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <div class="answer">Popular tools include Google Analytics, SEMrush, and various content management systems.</div>
+    </div>
+
+    <div class="question">
+        <strong>4. How do you handle negative feedback?</strong>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <div class="answer">Addressing negative feedback promptly can enhance brand reputation and trust.</div>
+    </div>
+
+    <div class="question">
+        <strong>5. What are your thoughts on SEO in content marketing?</strong>
+        <button onclick="toggleAnswer(this)">Show Answer</button>
+        <div class="answer">SEO is essential for visibility; integrating keywords naturally is crucial for success.</div>
+    </div>
+
+    <script>
+        function toggleAnswer(button) {
+            const answer = button.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>

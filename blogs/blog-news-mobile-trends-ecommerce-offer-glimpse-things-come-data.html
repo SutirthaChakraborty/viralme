@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Trends in Ecommerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin-top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .trend {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background: #e2e6ea;
+            border-left: 3px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Emerging Mobile Trends in Ecommerce</h1>
+    </header>
+    <section>
+        <h2>Stay Ahead with the Latest Trends</h2>
+        <p>The landscape of ecommerce is continuously evolving, with mobile trends leading the way. Key statistics show:</p>
+        <ul>
+            <li>Over 50% of online shopping is done via mobile devices.</li>
+            <li>Mobile-friendly websites increase conversion rates significantly.</li>
+            <li>Personalization drives customer engagement and loyalty.</li>
+        </ul>
+        <button onclick="toggleTrend()">What’s Next?</button>
+        <div class="trend" id="trend">
+            <p>Anticipate advancements in AI in ecommerce, voice search integration, and augmented reality shopping experiences. These innovations will redefine customer interactions and enhance online shopping efficiency.</p>
+        </div>
+    </section>
+    <script>
+        function toggleTrend() {
+            var trend = document.getElementById("trend");
+            if (trend.style.display === "none" || trend.style.display === "") {
+                trend.style.display = "block";
+            } else {
+                trend.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

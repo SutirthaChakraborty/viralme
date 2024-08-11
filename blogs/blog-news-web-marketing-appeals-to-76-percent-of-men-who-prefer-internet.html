@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog news on web marketing trends appealing to 76% of men who prefer the Internet.">
+    <title>Web Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #777;
+        }
+        .toggle-info {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .info {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Web Marketing Insights</h1>
+</header>
+
+<div class="container">
+    <h2>The Power of Blog News</h2>
+    <p>Recent studies show that <span class="keyword">76 percent of men prefer</span> to consume news online, demonstrating the importance of digital platforms in <span class="keyword">web marketing</span>.</p>
+    
+    <p>Blogs serve as a powerful tool for <span class="keyword">content marketing</span>. They attract audiences through engaging content and provide value, making them essential for building brand loyalty and increasing <span class="keyword">customer engagement</span>.</p>
+    
+    <div class="toggle-info">Click here for more insights!</div>
+    <div class="info">
+        <h3>Key Marketing Strategies</h3>
+        <ul>
+            <li>SEO Optimization</li>
+            <li>Social Media Integration</li>
+            <li>Email Campaigns</li>
+            <li>Audience Analysis</li>
+        </ul>
+        <p>Implementing these strategies can enhance visibility and cater to the preferences of your target audience.</p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2023 Web Marketing Insights. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelector('.toggle-info').addEventListener('click', function() {
+        var info = document.querySelector('.info');
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+            this.textContent = "Click here to hide insights!";
+        } else {
+            info.style.display = "none";
+            this.textContent = "Click here for more insights!";
+        }
+    });
+</script>
+
+</body>
+</html>

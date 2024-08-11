@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cultural Blog Colors: Global Branding</title>
+<style>
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background: #00bfff; /* Cool Blue */
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.color-block {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-block em {
+  font-style: normal;
+  color: white;
+}
+
+.color-block:hover {
+  transform: scale(1.1);
+  animation: color-bounce 0.5s ease-in-out;
+}
+
+@keyframes color-bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.color-description {
+  width: 45%;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+footer {
+  background-color: #3498db; /* Deep Blue */
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+</style>
+
+<script>
+// JavaScript to toggle color explanations on hover
+window.addEventListener('DOMContentLoaded', function() {
+  const colorBlocks = document.querySelectorAll('.color-block');
+
+  colorBlocks.forEach(function(block) {
+    block.addEventListener('mouseover', function() {

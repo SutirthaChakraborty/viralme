@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Email Marketing - 4 Cold Emails & Templates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .email-template {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Email Marketing: 4 Effective Cold Email Templates</h1>
+</header>
+
+<div class="container">
+    <h2>Unlock the Power of Cold Emails</h2>
+    <p>Cold emailing is an essential strategy for businesses looking to engage potential clients. With the right approach, you can build valuable connections.</p>
+
+    <h2>Email Templates for Every Business</h2>
+    
+    <div class="email-template" id="template1">
+        <h3>1. Introduction Cold Email</h3>
+        <p>Subject: Let's Connect!</p>
+        <p>Hi [Name],<br>I'm [Your Name], and I admire your work at [Company]. I'd love to connect and discuss mutual interests.</p>
+    </div>
+    
+    <div class="email-template" id="template2">
+        <h3>2. Value Proposition Cold Email</h3>
+        <p>Subject: Boost Your Sales with [Your Service]</p>
+        <p>Hi [Name],<br>Are you looking to increase sales? Our service has helped companies like yours achieve a 20% increase in revenue.</p>
+    </div>
+
+    <div class="email-template" id="template3">
+        <h3>3. Following Up Cold Email</h3>
+        <p>Subject: Following Up on My Previous Email</p>
+        <p>Hi [Name],<br>I wanted to follow up regarding my previous message. I believe we can collaborate effectively.</p>
+    </div>
+    
+    <div class="email-template" id="template4">
+        <h3>4. Opportunity Cold Email</h3>
+        <p>Subject: Unique Opportunity for [Company]</p>
+        <p>Hi [Name],<br>I'm reaching out to share an exclusive opportunity that could benefit [Company]. Let's connect!</p>
+    </div>
+
+    <button onclick="showTemplates()">Show/Hide Templates</button>
+</div>
+
+<script>
+    function showTemplates() {
+        const templates = document.querySelectorAll('.email-template');
+        templates.forEach(template => {
+            template.style.display = (template.style.display === 'none' || template.style.display === '') ? 'block' : 'none';
+        });
+    }
+
+    // Initially hide templates
+    document.querySelectorAll('.email-template').forEach(template => template.style.display = 'none');
+</script>
+
+</body>
+</html>

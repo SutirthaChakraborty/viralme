@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Blog Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #dedede;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .keyword-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+        }
+        .keyword-list li {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .keyword-list li:hover {
+            color: dodgerblue;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .cta {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 20px;
+            cursor: pointer;
+       }
+    </style>
+    <script>
+        // simulate interactive keyword highlighting
+        function highlightKeyword(keyword) {
+            const elements = document.querySelectorAll('.keyword-list li');
+            elements.forEach((el) => {
+                el.classList.remove('highlighted');
+            });
+            const clickedElement = document.querySelector('.keyword-list li:contains("'+keyword+'")');
+            clickedElement.classList.add('highlighted');
+        }
+    </script>
+</head>

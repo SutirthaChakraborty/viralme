@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the evolution of social media through Blog Legacy, Google Plus, LinkedIn, and their impact on the Final Four.">
+    <title>Social Media Madness: Blog Legacy & Final Four</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        header {
+            background: #0077b5;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Madness: Blog Legacy & Final Four</h1>
+    </header>
+    <article>
+        <h2>Blog Legacy</h2>
+        <p>Discover how blogs have shaped communication and driven engagement in the age of social media. Explore platforms that thrived and faded away.</p>
+    </article>
+    <article>
+        <h2>Google Plus</h2>
+        <p>Once hailed as a potential competitor to Facebook, Google Plus evolved social interactions. Understanding its rise and fall offers insights into user preferences.</p>
+    </article>
+    <article>
+        <h2>LinkedIn</h2>
+        <p>As the premier professional networking site, LinkedIn has transformed job searching and recruiting. Learn how it connects millions of professionals globally.</p>
+    </article>
+    <article>
+        <h2>Final Four in Social Media</h2>
+        <p>The concept of Final Four represents the top players in social media today. Join the conversation on the platforms that have withstood the test of time.</p>
+    </article>
+    <button onclick="highlightKeywords()">Highlight Keywords</button>
+    <script>
+        function highlightKeywords() {
+            const keywords = ['Blog Legacy', 'Google Plus', 'LinkedIn', 'Final Four', 'social media', 'engagement', 'networking'];
+            let content = document.body.innerHTML;
+
+            keywords.forEach(keyword => {
+                const regex = new RegExp(`(${keyword})`, 'gi');
+                content = content.replace(regex, '<span style="background-color: yellow;">$1</span>');
+            });
+
+            document.body.innerHTML = content;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Weekly - Video Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        .content {
+            line-height: 1.6;
+            color: #333;
+        }
+        .highlight {
+            background-color: #FFFFE0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.content a').click(function(e) {
+                e.preventDefault(); // Prevent link from navigating away
+                var keyword = $(this).text().replace(/(\W)/g, '').replace(/video/i, 'video-content'); // Highlight video keyword
+                $(this).parent().addClass('highlight');
+                // Add a simple highlighting effect
+                setTimeout(function() {
+                    $(this).removeClass('highlight');
+                }, 2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a href="#content">Content Marketing Weekly - A Video Recap</a></h1>
+        </div>
+       

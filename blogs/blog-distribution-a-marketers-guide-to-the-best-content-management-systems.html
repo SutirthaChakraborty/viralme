@@ -1,0 +1,67 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客分发：营销人员的最佳内容管理系统指南</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        button {
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>博客分发：营销人员的最佳内容管理系统指南</h1>
+        <p>在当今竞争激烈的市场中，拥有一个高质量的博客是吸引潜在客户和提高品牌知名度的关键。使用一个功能强大的内容管理系统(CMS)可以帮助您轻松地管理和发布您的博客文章。本文将为您介绍一些最佳的内容管理系统，以及如何选择适合您需求的系统。</p>
+        <button onclick="showContent('content1')">显示内容1</button>
+        <button onclick="showContent('content2')">显示内容2</button>
+        <div id="content1" style="display:none;">
+            <h2>内容1标题</h2>
+            <p>这是内容1的简介。在这里，您可以详细介绍内容1的主题和要点。</p>
+        </div>
+        <div id="content2" style="display:none;">
+            <h2>内容2标题</h2>
+            <p>这是内容2的简介。在这里，您可以详细介绍内容2的主题和要点。</p>
+        </div>
+    </div>
+    <script>
+        function showContent(id) {
+            var contents = document.getElementsByClassName("content");
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+            }
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</body>
+</html>

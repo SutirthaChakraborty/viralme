@@ -1,0 +1,53 @@
+#### HTML Code with CSS and JS for Download File
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download Your File</h1>
+        <p>Click the button below to download your file instantly. Enjoy seamless access to your documents with our easy download feature!</p>
+        <a href="path/to/your/file.pdf" class="download-button" download>Download Now</a>
+    </div>
+    <script>
+        document.querySelector('.download-button').addEventListener('click', function() {
+            alert('Your download will start shortly!');
+        });
+    </script>
+</body>
+</html>

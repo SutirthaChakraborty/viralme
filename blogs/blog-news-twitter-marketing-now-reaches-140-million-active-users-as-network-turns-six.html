@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Twitter Marketing's 140M Active Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #3399ff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .stat {
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+        .content {
+            line-height: 1.6;
+            color: #555;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        /* Use JavaScript to animate the statistic number */
+        .animate-stat {
+            animation: count-up 2s linear infinite;
+        }
+        @keyframes count-up {
+            from {
+                font-size: 36px;
+            }
+            to {
+                font-size: 54px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var statElement = document.querySelector(".stat");
+            setInterval(() => {
+                var currentSize = parseInt(getComputedStyle(statElement).fontSize);
+                if (currentSize < 72) {
+                    currentSize += 2;
+                } else {
+                    currentSize = 36;
+                }
+                statElement.style.fontSize = currentSize + "px";
+            }, 10

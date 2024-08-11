@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Life at Brafton - Balancing Both Sides</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d0e7ff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Life at Brafton: Balancing Both Sides</h1>
+</header>
+
+<article>
+    <h2>How Laura Leone Transitioned from Designing to Managing</h2>
+    <p>Laura Leone exemplifies the balance between creativity and management. With her background in design, she has successfully transitioned into a Project Manager role at Brafton, where she utilizes her creative insights to drive project success.</p>
+    <p>Her journey highlights the importance of adaptability and the ability to leverage both creative and managerial skills in a fast-paced environment.</p>
+    
+    <div class="interactive" onclick="toggleDetails()">Click here to learn more about Laura's journey!</div>
+    <div id="details" style="display:none;">
+        <p>Laura's role involves not just managing projects but also mentoring her team, ensuring that creativity thrives alongside productivity. Her story is a testament to the idea that one can excel in multiple domains by embracing both sides of life.</p>
+    </div>
+</article>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("details");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

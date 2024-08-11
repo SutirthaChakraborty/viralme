@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Social Media Marketers Unprepared for Brand Criticism</title>
+    <meta name="description" content="Explore how social media marketers are unprepared for brand criticism and the importance of proactive brand management. Join our survey!">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        #survey {
+            display: none;
+            margin-top: 20px;
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Are Social Media Marketers Unprepared for Brand Criticism?</h1>
+        <p>In today's digital age, brand criticism can spread rapidly through social media channels. It's essential for marketers to have a proactive strategy in place to manage and respond to negative feedback effectively.</p>
+        <p>As companies face backlash on platforms like Twitter, Facebook, and Instagram, our latest survey reveals shocking data on how unprepared marketers really are when it comes to handling criticism.</p>
+        <a href="#" class="button" id="showSurvey">Take Our Survey</a>
+        <div id="survey">
+            <h2>Join the Conversation!</h2>
+            <p>We want to hear from you! What strategies do you use to handle brand criticism? Share your thoughts below:</p>
+            <textarea rows="4" cols="50" placeholder="Your comments..."></textarea><br>
+            <button onclick="submitSurvey()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('showSurvey').onclick = function() {
+            var survey = document.getElementById('survey');
+            if (survey.style.display === 'none') {
+                survey.style.display = 'block';
+            } else {
+                survey.style.display = 'none';
+            }
+        }
+
+        function submitSurvey() {
+            alert("Thank you for submitting your feedback!");
+            document.getElementById('survey').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

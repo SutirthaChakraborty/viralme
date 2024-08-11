@@ -1,0 +1,68 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog: Mobile Navigation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add these styles to make the navigation mobile-friendly */
+        @media (max-width: 768px) {
+            .navbar {
+                display: flex;
+                flex-direction: column;
+            }
+            .logo {
+                margin-bottom: 1rem;
+            }
+            .nav-links {
+                display: none;
+                overflow: auto;
+                position: absolute;
+                top: 100%;
+                width: 100%;
+                background-color: #333;
+                padding: 0.5rem;
+                z-index: 1;
+            }
+            .nav-links a {
+                display: block;
+                padding: 0.5rem 1rem;
+                text-align: left;
+            }
+            .show-nav-links {
+                cursor: pointer;
+                display: inline-block;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Blog Logo" width="100" class="responsive-logo">
+        </div>
+        <button id="show-nav-links" class="show-nav-links">☰ Mobile Nav</button>
+        <div class="nav-links" id="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Articles</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+
+    <!-- Rest of your blog content goes here -->
+
+    <script>
+        document.getElementById("show-nav-links").addEventListener("click", function() {
+            document.getElementById("nav-links").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
+
+In the above code, I have created a simple HTML structure with a responsive mobile navigation menu. The CSS includes a media query that hides the normal navigation on smaller screens (less than 768px) and displays a toggle button. When the button is clicked, it reveals the navigation links as a dropdown.
+
+For better SEO, I have included relevant keywords in the HTML

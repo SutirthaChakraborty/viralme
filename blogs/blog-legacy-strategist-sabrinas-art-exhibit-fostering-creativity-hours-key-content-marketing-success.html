@@ -1,0 +1,74 @@
+<div id="blog-container">
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrina's Art Exhibit: Fostering Creativity & Key Content Marketing Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f1c40f;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: white;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .subheading {
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .column {
+            float: left;
+            width: 48%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .column:nth-child(odd) {
+            margin-right: 2%;
+        }
+        .content {
+            background-color: #f6f6f6;
+        }
+        .highlight {
+            background-color: #d0ebff;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".content h2").click(function() {
+                if ($(this).hasClass("active")) {
+                    $(this).removeClass("active");
+                    $(this).next(".details").slideUp(300);
+                } else {
+                    $(".content h2").not(this).removeClass("active");
+                    $(".content .details").slideUp(300);
+                    $(this).addClass("active");
+                    $(this).next(".details").slideDown(300);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Sabrina's Art Exhibit Blog: Legacy, Creativity & Content Marketing Mastery</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2 id="exhibit-info" class="sub

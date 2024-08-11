@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Costs in Singapore - FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        .active {
+            background: #e1e1e1;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FAQs on Video Production Costs in Singapore</h1>
+<div class="faq">
+    <h3>1. What is the average cost for video production in Singapore?</h3>
+    <div class="answer">The average cost for video production in Singapore can range from SGD 1,500 to SGD 10,000, depending on the project's complexity and length.</div>
+</div>
+<div class="faq">
+    <h3>2. What factors affect video production costs?</h3>
+    <div class="answer">Factors include scriptwriting, pre-production planning, filming duration, equipment used, and post-production editing quality.</div>
+</div>
+<div class="faq">
+    <h3>3. Is there a cost difference for corporate vs. commercial video production?</h3>
+    <div class="answer">Yes, corporate videos tend to be less expensive as they focus on information delivery, while commercial videos often require more creativity and higher production value.</div>
+</div>
+
+<button id="showAll">Show/Hide All Answers</button>
+
+<script>
+    const faqs = document.querySelectorAll('.faq');
+    faqs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            const answer = faq.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            faq.classList.toggle('active');
+        });
+    });
+
+    document.getElementById('showAll').addEventListener('click', () => {
+        faqs.forEach(faq => {
+            const answer = faq.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            faq.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

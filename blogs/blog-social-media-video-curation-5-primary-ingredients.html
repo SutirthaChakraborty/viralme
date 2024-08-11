@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Video Curation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .ingredient {
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            margin: 5px 0;
+            transition: background 0.3s;
+        }
+        .ingredient:hover {
+            background: #e9ecef;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Top 5 Ingredients for Effective Blog Video Curation</h1>
+</header>
+
+<section>
+    <h2>Key Ingredients</h2>
+    <div class="ingredient" onclick="showDetail('content')">1. Quality Content</div>
+    <div class="ingredient" onclick="showDetail('engagement')">2. Audience Engagement</div>
+    <div class="ingredient" onclick="showDetail('social-sharing')">3. Social Media Sharing</div>
+    <div class="ingredient" onclick="showDetail('optimization')">4. SEO Optimization</div>
+    <div class="ingredient" onclick="showDetail('consistency')">5. Consistent Posting</div>
+
+    <div id="details" style="margin-top: 20px;"></div>
+</section>
+
+<script>
+    function showDetail(ingredient) {
+        const details = {
+            content: "Quality Content: Provide high-value, relevant video content that informs and entertains your audience.",
+            engagement: "Audience Engagement: Encourage viewer interaction through comments, polls, and feedback to foster community and connection.",
+            social-sharing: "Social Media Sharing: Utilize social platforms for sharing videos to reach wider audiences and improve visibility.",
+            optimization: "SEO Optimization: Optimize video titles, descriptions, and tags for better search engine rankings.",
+            consistency: "Consistent Posting: Maintain a regular posting schedule to build audience anticipation and loyalty."
+        };
+        document.getElementById('details').innerText = details[ingredient];
+    }
+</script>
+
+</body>
+</html>

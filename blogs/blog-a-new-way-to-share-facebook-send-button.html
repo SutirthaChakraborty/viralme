@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Share with Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .share-button {
+            display: inline-block;
+            background-color: #4267B2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .share-button:hover {
+            background-color: #365899;
+        }
+        .info {
+            margin-top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Share Your Blog with Facebook</h1>
+    <a href="#" class="share-button" id="facebookShareBtn">Share on Facebook</a>
+
+    <div class="info">
+        <h2>Why Use the Facebook Share Button?</h2>
+        <p>The Facebook Share Button allows users to easily share your blog content with their friends, increasing your reach and engagement. It's a simple yet effective way to promote your posts and drive traffic to your site.</p>
+    </div>
+
+    <script>
+        document.getElementById('facebookShareBtn').onclick = function() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}&t=${title}`;
+            window.open(facebookShareUrl, 'Share on Facebook', 'width=600,height=400');
+        };
+    </script>
+
+</body>
+</html>

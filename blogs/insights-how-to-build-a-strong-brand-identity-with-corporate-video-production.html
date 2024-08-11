@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Building a Strong Brand Identity with Corporate Video Production</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #007BFF;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.title h2 {
+  margin: 0;
+}
+
+.content {
+  line-height: 1.6;
+  text-align: justify;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.keyword-list {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+
+.keyword {
+  color: #0056b3;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: #FFFFE0;
+}
+
+.video-explanation {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  max-width: 500px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: dodgerblue;
+}
+
+</style>
+<script>
+window.onload = function() {
+  const keywords = document.querySelectorAll('.keyword');
+  let activeKeyword = '';
+
+  keywords.forEach(keyword => {
+    keyword.addEventListener('click', function() {
+      if (keyword.classList.contains('highlight')) {
+        keyword.classList.remove('highlight');
+      } else {
+        activeKeyword = keyword.innerText;
+        keyword.classList.add('highlight');
+        highlightExplanation(activeKeyword);
+      }
+    });
+  });
+
+ 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas Cross City Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Luas Cross City</h1>
+    <p>Your guide to Dublin's Tram Network</p>
+</header>
+
+<div class="content">
+    <h2>Explore Luas Cross City</h2>
+    <p>The Luas Cross City has enhanced transport in Dublin by connecting key locations.</p>
+    <button class="toggle-button" onclick="toggleDetails()">Learn More</button>
+    <div class="details" id="moreInfo">
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Integration with other transport systems</li>
+            <li>Reduced travel time across the city</li>
+            <li>Improved accessibility for commuters</li>
+            <li>Environmentally friendly transport option</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("moreInfo");
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

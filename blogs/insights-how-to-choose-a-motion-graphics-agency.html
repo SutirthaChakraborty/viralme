@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover key insights on choosing the right motion graphics agency for your business.">
+    <title>Choosing a Motion Graphics Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .keyword {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            background: #e7f3ff;
+            border-left: 6px solid #2196F3;
+            padding: 10px;
+        }
+        .keyword:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights on Choosing a Motion Graphics Agency</h1>
+    <p>Finding the right <span class="keyword" onclick="toggleInfo('portfolio')">motion graphics agency</span> is crucial for the success of your project. Here are some key aspects to consider:</p>
+    
+    <h2>1. Review Their <span class="keyword" onclick="toggleInfo('portfolio')">Portfolio</span></h2>
+    <div id="portfolio" class="info">
+        <p>Examine their previous work to gauge creativity, style, and relevance to your needs.</p>
+    </div>
+    
+    <h2>2. Client Testimonials and <span class="keyword" onclick="toggleInfo('testimonials')">Reviews</span></h2>
+    <div id="testimonials" class="info">
+        <p>Check client feedback to assess reliability and quality of service.</p>
+    </div>
+    
+    <h2>3. Understanding Your <span class="keyword" onclick="toggleInfo('needs')">Needs</span></h2>
+    <div id="needs" class="info">
+        <p>Clearly define your objectives and ensure the agency aligns with your vision.</p>
+    </div>
+    
+    <h2>4. Communication and <span class="keyword" onclick="toggleInfo('communication')">Collaboration</span></h2>
+    <div id="communication" class="info">
+        <p>Choose an agency that values transparent communication and is open to feedback.</p>
+    </div>
+    
+    <h2>5. Budget and <span class="keyword" onclick="toggleInfo('budget')">Pricing</span></h2>
+    <div id="budget" class="info">
+        <p>Ensure the agency fits within your budget while delivering quality results. Compare quotes from different agencies.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(id) {
+        const infoDiv = document.getElementById(id);
+        infoDiv.style.display = infoDiv.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

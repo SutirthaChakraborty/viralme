@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking System</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.booking-container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f9f9f9;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.booking-title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		.booking-form {
+			margin-top: 20px;
+		}
+		
+		.booking-form input[type="text"],
+		.booking-form input[type="date"],
+		.booking-form input[type="number"] {
+			width: 100%;
+			height: 40px;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.booking-form input[type="submit"] {
+			width: 100%;
+			height: 40px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.booking-form input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		
+		.booking-success {
+			color: #4CAF50;
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+		
+		.booking-error {
+			color: #ff0000;
+			font-size: 18px;
+			font-weight: bold;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="booking-container">
+		<h2 class="booking-title">Booking System</h2>
+		<form class="booking-form">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br><br>
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="date"><br><br>
+			<label for="number">Number of People:</label>
+			<input type="number" id="number" name="number"><br><br>
+			<input type="submit" value="Book Now">
+		</form>
+		<script>
+			const form = document.querySelector('.booking-form');
+			form.addEventListener('submit', (e) => {
+				e.preventDefault();
+				const name = document.getElementById('name').value;
+				const date = document.getElementById('date').value;
+				const number = document.getElementById('number').value;
+				if (name && date && number) {
+					alert(`Booking successful! Name: ${name}, Date: ${date}, Number of People: ${number}`);
+				} else {
+					alert('Please fill in all the fields!');
+				}
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+
+Keywords: Booking System, Online Booking, Reservation, Hotel Booking, Flight Booking, Travel Booking, Accommodation Booking, Event Booking, Appointment Booking.

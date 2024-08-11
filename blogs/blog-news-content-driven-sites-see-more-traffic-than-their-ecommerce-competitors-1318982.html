@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog News Content Driven Sites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .image {
+            width: 40%;
+        }
+        .image img {
+            width: 100%;
+        }
+        .text {
+            width: 58%;
+        }
+        .text h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .text p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .text a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class=\"container\">
+    <div class=\"content\">
+        <div class=\"image\">
+            <img src=\"https://via.placeholder.com/400x200\" alt=\"Image\">
+        </div>
+        <div class=\"text\">
+            <h2>Blog News Content Driven Sites</h2>
+            <p>According to recent research, blog news content driven sites see more traffic than their ecommerce competitors. This is because people are naturally drawn to information and want to learn something new through reading blogs. By providing valuable and relevant content, you can attract more visitors to your site and increase your chances of making sales or conversions.</p>
+            <a href=\"https://www.example.com/blog\" target=\"_blank\" rel=\"noopener noreferrer\">Learn More &rarr;</a>
+        </div>
+    </div>
+</div>
+<script>
+    // Add interactivity using JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+        var image = document.querySelector('.image img');
+        var scaleValue = window.innerWidth / image.clientWidth;
+        image.style.transform = 'scale(' + scaleValue + ')';
+        window.addEventListener('resize', function() {
+            scaleValue = window.innerWidth / image.clientWidth;
+            image.style.transform = 'scale(' + scaleValue + ')';
+        });
+    });
+</script>
+</body>
+</html>

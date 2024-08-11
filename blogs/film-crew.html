@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the essential roles and responsibilities of a film crew. Discover the key positions in filmmaking, from directors to cinematographers.">
+    <title>Film Crew Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #e94e77;
+        }
+        .crew-member {
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .crew-member:hover {
+            transform: scale(1.05);
+        }
+        #details {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: none;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Film Crew Roles</h1>
+    <p>Film crews consist of various specialized roles that contribute to the creation of a movie. Here's an overview of key positions:</p>
+
+    <div class="crew-member" onclick="showDetails('director')">
+        <h2>Director</h2>
+        <p>Responsible for the overall vision and execution of the film.</p>
+    </div>
+    <div class="crew-member" onclick="showDetails('cinematographer')">
+        <h2>Cinematographer</h2>
+        <p>Manages camera work and lighting to capture the film’s visual elements.</p>
+    </div>
+    <div class="crew-member" onclick="showDetails('producer')">
+        <h2>Producer</h2>
+        <p>Oversees production logistics, finances, and overall project management.</p>
+    </div>
+    <div class="crew-member" onclick="showDetails('editor')">
+        <h2>Editor</h2>
+        <p>Responsible for assembling the raw footage into a coherent final product.</p>
+    </div>
+    
+    <div id="details"></div>
+
+    <script>
+        function showDetails(role) {
+            const details = {
+                director: "The Director not only leads the artistic vision of the film but also works with the cast to shape performances and collaborates with all departments to ensure the film's integrity during shooting.",
+                cinematographer: "A Cinematographer, or Director of Photography, selects the camera, lens, and lighting to create the intended mood and aesthetic of the film, greatly influencing how a story is told visually.",
+                producer: "Producers are key business figures in filmmaking. They manage the entire production process, coordinate between various departments, and ensure that the project adheres to the budget and schedule.",
+                editor: "The Editor pieces together the footage from various takes and angles to shape the film's narrative. They work closely with the director to realize the pacing and storytelling vision."
+            };
+            const detailDiv = document.getElementById('details');
+            detailDiv.style.display = 'block';
+            detailDiv.innerHTML = `<h3>${role.charAt(0).toUpperCase() + role.slice(1)} Details</h3><p>${details[role]}</p>`;
+        }
+    </script>
+
+</body>
+</html>

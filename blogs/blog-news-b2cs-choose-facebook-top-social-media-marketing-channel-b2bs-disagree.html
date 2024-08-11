@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2C vs B2B Social Media Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>B2C vs B2B Social Media Marketing</h1>
+</header>
+
+<article>
+    <h2>B2Cs Choose Facebook as Top Marketing Channel</h2>
+    <p>Consumer-facing companies find Facebook to be an effective platform for reaching their audience, with 51% reporting successful marketing efforts.</p>
+    <span class="toggle">Read more</span>
+    <div class="details">
+        <p>Facebook's algorithm changes have made organic reach challenging, leading brands to invest more in ads. B2Cs leverage Facebook's vast user base to enhance brand awareness and customer engagement.</p>
+    </div>
+</article>
+
+<article>
+    <h2>B2Bs Disagree on Facebook's Effectiveness</h2>
+    <p>In contrast, only 36% of B2Bs find Facebook effective for their marketing strategies, often preferring LinkedIn for professional networking.</p>
+    <span class="toggle">Read more</span>
+    <div class="details">
+        <p>B2Bs focus on connecting with decision-makers and industry professionals, making LinkedIn a more suitable platform for their marketing efforts.</p>
+    </div>
+</article>
+
+<script>
+    const toggles = document.querySelectorAll('.toggle');
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const details = toggle.nextElementSibling;
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

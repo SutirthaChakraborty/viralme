@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Government Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        section {
+            margin: 20px 0;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .category {
+            cursor: pointer;
+            margin: 5px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .category:hover {
+            background: #007BFF;
+            color: #fff;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            border-left: 3px solid #007BFF;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Understanding the Government of Ireland</h1>
+</header>
+
+<section>
+    <div class="category" onclick="toggleDetails('executive')">Executive Branch</div>
+    <div class="details" id="executive">
+        The executive branch is headed by the Taoiseach (Prime Minister) and is responsible for implementing laws and policies. The Irish government consists of the Cabinet, which is composed of Ministers and Secretaries.
+    </div>
+
+    <div class="category" onclick="toggleDetails('legislative')">Legislative Branch</div>
+    <div class="details" id="legislative">
+        The Oireachtas (Parliament) consists of two houses: Dáil Éireann (House of Representatives) and Seanad Éireann (Senate). It is responsible for making laws, reviewing proposals, and debating pertinent issues.
+    </div>
+
+    <div class="category" onclick="toggleDetails('judicial')">Judicial Branch</div>
+    <div class="details" id="judicial">
+        The judicial system interprets laws and ensures justice. It includes the Supreme Court, High Court, and Circuit Courts, protecting citizen rights and ensuring legal compliance.
+    </div>
+</section>
+
+<script>
+    function toggleDetails(category) {
+        var details = document.getElementById(category);
+        if (details.style.display === "block") {
+            details.style.display = "none";
+        } else {
+            details.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

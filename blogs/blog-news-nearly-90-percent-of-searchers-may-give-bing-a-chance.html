@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Search Engagement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0078d4;
+        }
+        #interactive-div {
+            display: none;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e2e2e2;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog News: Bing's Rising Popularity</h1>
+    <p>Did you know that nearly <span class="keyword">90% of searchers</span> are considering giving <span class="keyword">Bing</span> a chance? As competition intensifies, Bing is enhancing its search algorithms and user experience.</p>
+    <p>With innovative features and improved performance, it's no surprise that users are exploring new ways to optimize search results.</p>
+    <button onclick="toggleInfo()">Learn More</button>
+    <div id="interactive-div">
+        <p>Bing is focusing on personalized search results, integrated shopping experiences, and AI-driven tools that might attract users from other search engines.</p>
+    </div>
+    
+    <script>
+        function toggleInfo() {
+            const infoDiv = document.getElementById('interactive-div');
+            if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+                infoDiv.style.display = 'block';
+            } else {
+                infoDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

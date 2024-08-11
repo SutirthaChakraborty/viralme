@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breaking News: Facebook Acquires Instagram for $1 Billion – Learn about this significant acquisition in the tech world.">
+    <title>Facebook Acquires Instagram for $1 Billion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background: #4267B2;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #4267B2;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .toggle {
+            background-color: #4267B2;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Breaking Blog News</h1>
+    <p>Facebook Acquires Instagram for a Reported $1 Billion!</p>
+</header>
+
+<article>
+    <h2>Details of the Acquisition</h2>
+    <p>In a monumental move, Facebook has announced the acquisition of Instagram, a popular photo-sharing platform, for an estimated $1 billion. This strategic acquisition is expected to enhance Facebook's position in the social media landscape.</p>
+    <button class="toggle" onclick="toggleDetails()">Read More</button>
+    <div id="moreInfo" class="hidden">
+        <p>This acquisition is seen as a way for Facebook to expand its user base and integrate Instagram's functionalities into its own platform. The deal illustrates the growing trend of tech giants acquiring innovative startups to maintain market dominance.</p>
+    </div>
+</article>
+
+<footer>
+    <p>&copy; 2023 Blog News - Stay updated with the latest in technology!</p>
+</footer>
+
+<script>
+    function toggleDetails() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.classList.contains('hidden')) {
+            moreInfo.classList.remove('hidden');
+            event.target.textContent = "Read Less";
+        } else {
+            moreInfo.classList.add('hidden');
+            event.target.textContent = "Read More";
+        }
+    }
+</script>
+
+</body>
+</html>

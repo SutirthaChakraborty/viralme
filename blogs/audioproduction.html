@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .controls button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .controls button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class=\"container\">
+        <h1>Audio Production</h1>
+        <div class=\"controls\">
+            <button onclick=\"playAudio()">Play</button>
+            <button onclick=\"pauseAudio()\">Pause</button>
+        </div>
+        <audio id=\"audio\" src=\"https://www.example.com/audiofile.mp3\"></audio>
+    </div>
+    <script>
+        var audio = document.getElementById('audio');
+        function playAudio() {
+            audio.play();
+        }
+        function pauseAudio() {
+            audio.pause();
+        }
+    </script>
+</body>
+</html>

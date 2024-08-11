@@ -1,0 +1,76 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Event Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .faq-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 15px;
+        }
+        .faq-item {
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 45%;
+        }
+        .question {
+            margin-bottom: 5px;
+        }
+        .answer {
+            max-height: 200px;
+            overflow: auto;
+            line-height: 1.5;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Simple expand/collapse functionality using JavaScript
+        function toggleAnswer(id) {
+            var element = document.getElementById(id);
+            if (element.classList.contains("expanded")) {
+                element.classList.remove("expanded");
+            } else {
+                element.classList.add("expanded");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions (FAQs) About Event Photography</h1>
+    </header>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button onclick="toggleAnswer('faq1')" class="question">1. What equipment do event photographers need?</button>
+            <div id="faq1" class="answer expanded">
+                Event photographers require a high-quality camera, lenses for various焦距, lighting equipment (strobes or reflectors), and a fast memory card for capturing detailed moments.
+            </div>
+        </div>
+        <div class="faq-item">
+            <button onclick="toggleAnswer('faq2')" class

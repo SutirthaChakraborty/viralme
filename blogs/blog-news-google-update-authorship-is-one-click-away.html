@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with the latest Google updates on blog news and authorship. Discover how authorship is just one click away!">
+    <title>Google Update: Blog News & Authorship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .toggle-btn {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 15px;
+        }
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Google Update: Blog News & Authorship</h1>
+    <div class="container">
+        <p>Get ready to dive into the latest updates from Google that impact blog news and authorship!</p>
+        <button class="toggle-btn" onclick="toggleContent()">Learn More</button>
+
+        <div class="content">
+            <h2>Understanding Google Authorship</h2>
+            <p>Google Authorship connects your content with your identity across the web, making it easier for readers to find and trust the author behind the articles.</p>
+            <h2>Why It's Important?</h2>
+            <p>With recent updates, having authorship is vital for boosting your blog's SEO and credibility. It helps your content stand out in search results.</p>
+            <h2>One Click Away!</h2>
+            <p>Implementing authorship is now easier than ever! With Google's streamlined processes, you can establish your authorship in just one click.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent() {
+            const content = document.querySelector('.content');
+            content.classList.toggle('active');
+            const button = document.querySelector('.toggle-btn');
+            button.textContent = content.classList.contains('active') ? 'Show Less' : 'Learn More';
+        }
+    </script>
+
+</body>
+</html>

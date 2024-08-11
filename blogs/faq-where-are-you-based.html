@@ -1,0 +1,55 @@
+Here's a small HTML code snippet with CSS that you can use to create an FAQ section on your website:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <style>
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .answer {
+            display: none;
+            margin-bottom: 10px;
+        }
+        
+        .question.active {
+            color: blue;
+        }
+        
+        .question.active + .answer {
+            display: block;
+        }
+    </style>
+    <script>
+        function toggleAnswer(event) {
+            const question = event.target;
+            question.classList.toggle("active");
+        }
+        
+        const questions = document.querySelectorAll(".question");
+        questions.forEach(question => {
+            question.addEventListener("click", toggleAnswer);
+        });
+    </script>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    
+    <div class="question">Where are you based?</div>
+    <div class="answer">We are based in [Your Location].</div>
+    
+    <!-- Add more questions and answers here -->
+    
+</body>
+</html>
+
+
+This code creates a simple FAQ section with collapsible questions and answers. When a question is clicked, the corresponding answer is displayed or hidden. The CSS styles the questions to make them bold and adds a cursor pointer to indicate interactivity. The JavaScript code adds an event listener to each question, toggling the "active" class when clicked, which controls the display of the answer.
+
+Feel free to customize the code and add more questions and answers as needed. Remember to replace `[Your Location]` with the actual location where your company is based.
+
+I hope this helps! Let me know if you have any further questions.

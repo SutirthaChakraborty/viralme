@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Gossip News</title>
+    <meta name="description" content="Stay updated with the latest celebrity gossip and news. Discover how SEO strategies can help blog sites grow in popularity.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .gossip-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+            background: #e9e9e9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Celebrity Gossip Hub</h1>
+    <p>Your daily dose of the latest celebrity news and gossip!</p>
+</header>
+
+<div class="container">
+    <h2>Latest Gossip</h2>
+    <div class="gossip-item">
+        <h3>Stars Spotted Together!</h3>
+        <p>Witnesses claim two A-list celebrities were seen having dinner...</p>
+        <button class="button" onclick="toggleContent(this)">Read More</button>
+        <div class="toggle-content">Details: Sources say they are collaborating on a secret project.</div>
+    </div>
+    <div class="gossip-item">
+        <h3>Upcoming Movie Releases</h3>
+        <p>Get the scoop on the most anticipated films of the year...</p>
+        <button class="button" onclick="toggleContent(this)">Read More</button>
+        <div class="toggle-content">Details: Featuring top Hollywood actors and directors!</div>
+    </div>
+</div>
+
+<script>
+    function toggleContent(button) {
+        var content = button.nextElementSibling;
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            button.textContent = "Read Less";
+        } else {
+            content.style.display = "none";
+            button.textContent = "Read More";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Adds Forum Questions and Answers to Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .faq {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background: #e7e7e7;
+            border: 1px solid #ccc;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Google Enhances Search with Forum Questions</h1>
+    </header>
+    <div class="container">
+        <h2>Overview</h2>
+        <p>Google has recently integrated forum questions and top answers directly into its search results, providing users with a more enriching experience. This move enhances the visibility of community-driven content and facilitates easier access to relevant information.</p>
+        
+        <h2>Key Features</h2>
+        <div class="faq" onclick="toggleAnswer('answer1')">
+            <strong>1. Access to Community Insights</strong>
+        </div>
+        <div id="answer1" class="answer">
+            Users can now see popular questions from forums alongside search results, showcasing community knowledge and expertise.
+        </div>
+        
+        <div class="faq" onclick="toggleAnswer('answer2')">
+            <strong>2. Enhanced User Engagement</strong>
+        </div>
+        <div id="answer2" class="answer">
+            This feature encourages users to engage more deeply with content, as they can now find answers to common questions more readily.
+        </div>
+        
+        <div class="faq" onclick="toggleAnswer('answer3')">
+            <strong>3. Improved Search Relevance</strong>
+        </div>
+        <div id="answer3" class="answer">
+            By including forum content, Google improves the relevance of search results, making it easier for users to find what they need.
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

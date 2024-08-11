@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google vs Yelp: The Battle for Local Search Dominance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google vs Yelp: The Battle for Local Search Dominance</h1>
+    </header>
+    <article>
+        <h2>Introduction</h2>
+        <p>As Google enhances its Maps and local search capabilities, it aims to outperform Yelp in providing users with the best local business information.</p>
+        
+        <h2>Key Improvements</h2>
+        <ul>
+            <li>Enhanced user interface for better navigation.</li>
+            <li>Integration of user reviews and ratings directly in search results.</li>
+            <li>Real-time updates on business hours and availability.</li>
+        </ul>
+
+        <div class="interactive">
+            <h3>See the Difference</h3>
+            <p>Click the button below to see how Google Maps results compare to Yelp.</p>
+            <button onclick="showComparison()">Show Comparison</button>
+            <p id="comparison" style="display:none;">Google Maps provides more integrated information, while Yelp focuses on user-generated content and reviews.</p>
+        </div>
+    </article>
+
+    <script>
+        function showComparison() {
+            var comparison = document.getElementById("comparison");
+            comparison.style.display = comparison.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

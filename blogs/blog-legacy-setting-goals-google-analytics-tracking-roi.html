@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Setting Goals & Google Analytics ROI Tracking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .goal-setting {
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Blog Legacy and Setting Goals</h1>
+        <div class="goal-setting">
+            <h2>Why Set Goals?</h2>
+            <p>Setting clear objectives helps you measure progress and optimize content performance. Use SMART criteria to define your goals.</p>
+        </div>
+        <div>
+            <h2>Using Google Analytics for ROI Tracking</h2>
+            <p>Track your blog’s success by implementing Google Analytics. Set goals such as lead generation, newsletter signups, or product purchases to measure ROI.</p>
+            <button onclick="showMetrics()">Click to View Metrics</button>
+            <div id="metrics" style="display:none;">
+                <p>Monthly Visitors: 10,000</p>
+                <p>Conversion Rate: 5%</p>
+                <p>Average Order Value: $50</p>
+                <p>ROI: 200%</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showMetrics() {
+            var metricsDiv = document.getElementById('metrics');
+            if (metricsDiv.style.display === "none") {
+                metricsDiv.style.display = "block";
+            } else {
+                metricsDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

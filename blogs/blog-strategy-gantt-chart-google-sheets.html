@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Strategy Gantt Chart Google Sheets</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#gantt-chart {
+			width: 800px;
+			height: 600px;
+			border: 1px solid #ccc;
+			margin: 20px auto;
+		}
+		
+		#gantt-chart th {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+		}
+		
+		#gantt-chart td {
+			border: 1px solid #ccc;
+			padding: 10px;
+			text-align: left;
+		}
+		
+		#gantt-chart .task {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		#gantt-chart .task:hover {
+			background-color: #ccc;
+		}
+		
+		#gantt-chart .task-details {
+			display: none;
+		}
+		
+		#gantt-chart .task:hover .task-details {
+			display: block;
+			position: absolute;
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ccc;
+			width: 200px;
+			height: 100px;
+			top: 0;
+			left: 100%;
+			z-index: 1;
+		}
+		
+		#gantt-chart .task-details ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#gantt-chart .task-details ul li {
+			margin-bottom: 10px;
+		}
+		
+		#gantt-chart .task-details ul li span {
+			font-weight: bold;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Blog Strategy Gantt Chart Google Sheets</h1>
+	<h2>Using Google Sheets to Create a Gantt Chart for Your Blog Strategy</h2>
+	<p>In this example, we'll create a simple Gantt chart using Google Sheets to visualize our blog strategy.</p>
+	<table id="gantt-chart">
+		<thead>
+			<tr>
+				<th>Task</th>
+				<th>Start Date</th>
+				<th>End Date</th>
+				<th>Duration</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="task">
+				<td>Content Creation</td>
+				<td>2023-03-01</td>
+				<td>2023-03-15</td>
+				<td>14 days</td>
+				<td><span class="status">In Progress</span></td>
+				<div class="task-details">
+					<ul>
+						<li><span>Task:</span> Create 10 blog posts</li>
+						<li><span>Assignee:</span> John Doe</li>
+						<li><span>Due Date:</span> 2023-03-15</li>
+					</ul>
+				</div>
+			</tr>
+			<tr class="task">
+				<td>Editing and Proofreading</td>
+				<td>2023-03-16</td>
+				<td>2023-03-20</td>
+				<td>4 days</td>
+				<td><span class="status">Complete</span></td>
+				<div class="task-details">
+					<ul>
+						<li><span>Task:</span> Edit and proofread 10 blog posts</li>
+						<li><span>Assignee:</span> Jane Doe</li>
+						<li><span>Due Date:</span> 2023-03-20</li>
+					</ul>
+				</div>
+			</tr>
+			<tr class="task">
+				<td>Publishing</td>
+				<td>2023-03-21</td>
+				<td>2023-03-25</td>
+				<td>4 days</td>
+				<td><span class="status">In Progress</span></td>
+				<div class="task-details">
+					<ul>
+						<li><span>Task:</span> Publish 10 blog posts</li>
+						<li><span>Assignee:</span> Bob Smith</li>
+						<li><span>Due Date:</span> 2023-03-25</li>
+					</ul>
+				</div>
+			</tr>
+		</tbody>
+	</table>
+	
+	<script>
+		// Get all task elements
+		var tasks = document.querySelectorAll('.task');
+		
+		// Add event listener to each task element
+		tasks.forEach(function(task) {
+			task.addEventListener('mouseover', function() {
+				task.classList.add('hover');
+			});
+			task.addEventListener('mouseout', function() {
+				task.classList.remove('hover');
+			});
+		});
+	</script>
+</body>
+</html>
+
+This HTML code uses CSS to create a simple Gantt chart with interactive hover effects. The JavaScript code adds an event listener to each task element to toggle the hover effect when the mouse is hovered over the task. The keywords used in this code include "blog strategy", "Gantt chart", "Google Sheets", "content creation", "editing and proofreading", and "publishing".

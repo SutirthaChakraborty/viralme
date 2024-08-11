@@ -1,0 +1,103 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Trends: Blog News, Brands, SEO Strategies</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    background: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.blog-posts {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.blog-post {
+    margin: 10px 0;
+}
+.blog-post h2 {
+    margin: 0;
+    padding: 0;
+}
+.blog-post p {
+    line-height: 1.5;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<script>
+// Simple JS to highlight the current section
+document.addEventListener('click', function(e) {
+    if(e.target.matches('.nav-link')) {
+        let sectionId = e.target.getAttribute('href');
+        document.querySelector(sectionId).scrollIntoView({behavior: 'smooth'});
+    }
+});
+</script>
+</head>
+<body>
+<header>
+    <h1>Tech Trends</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#blog-posts" class="nav-link">Blog Posts</a></li>
+        <li><a href="#brands" class="nav-link">Brands</a></li>
+        <li><a href="#seo-strategies" class="nav-link">SEO Strategies</a></li>
+        <li><a href="#social-media" class="nav-link">Social Media</a></li>
+    </ul>
+</nav>
+<div class="blog-posts" id="blog-posts">
+    <h2>Blog Posts</h2>
+    <div class="blog-post">
+        <h2>Blog Post 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptas.</p>
+    </div>
+    <div class="blog-post">
+        <h2>Blog Post 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptas.</p>
+    </div>
+</div>
+<div class="brands" id="brands">
+    <h2>Brands</h2>
+    <p>Google, Facebook, and Others...</p>
+</div>
+<div class="seo-strategies" id="seo-strategies">
+    <h2>SEO Strategies</h2>
+    <p>Best Practices for SEO...</p>
+</div>
+<div class="social-media" id="social-media">
+    <h2>Social Media</h2>
+    <p>A Look at Social Media Giants...</p>
+</div>
+<footer>
+    <p>&copy; 2024 Tech Trends. All rights reserved.</p>
+</footer>
+</body>
+</html>

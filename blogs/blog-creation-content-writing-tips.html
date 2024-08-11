@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Creation & Content Writing Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        h2 {
+            color: #35424a;
+        }
+        .tips {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #35424a;
+            background: #e9ecef;
+        }
+        button {
+            padding: 10px 20px;
+            background: #35424a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1f2f38;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Creation & Content Writing Tips</h1>
+</header>
+
+<section>
+    <h2>Essential Tips for Blogging</h2>
+    <div class="tips">1. Identify Your Niche: Choose a topic you are passionate about.</div>
+    <div class="tips">2. Craft Compelling Headlines: Use power words to grab attention.</div>
+    <div class="tips">3. Structure Your Content: Use headings, subheadings, and bullet points.</div>
+    <div class="tips">4. Optimize for SEO: Use keywords naturally throughout your post.</div>
+    <div class="tips">5. Engage Your Audience: Ask questions and invite comments.</div>
+    <button onclick="showMoreTips()">Show More Tips</button>
+</section>
+
+<script>
+    function showMoreTips() {
+        const moreTips = [
+            "6. Use High-Quality Images: Visuals can enhance engagement.",
+            "7. Promote on Social Media: Share posts to reach a larger audience.",
+            "8. Consistency is Key: Stick to a blogging schedule.",
+            "9. Analyze Your Performance: Use analytics to find what works.",
+            "10. Keep Learning: Stay updated with writing trends and techniques."
+        ];
+        moreTips.forEach(tip => {
+            const newTip = document.createElement('div');
+            newTip.className = 'tips';
+            newTip.textContent = tip;
+            document.querySelector('section').appendChild(newTip);
+        });
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest in the cosmetics industry through our blog. Find inspiration and insights from our dynamic web presence and exclusive interviews.">
+    <title>Inspiring Blog News: Cosmetics Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff6f61;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .interview {
+            border-left: 4px solid #ff6f61;
+            padding-left: 15px;
+            margin: 20px 0;
+        }
+        .toggle-btn {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .toggle-content {
+            display: none;
+            padding: 10px;
+            background: #f1f1f1;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Inspiring Blog News: Cosmetics Company</h1>
+    <nav>
+        <a href="#latest">Latest Trends</a>
+        <a href="#interviews">Interviews</a>
+        <a href="#tips">Beauty Tips</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Welcome to Our Dynamic Blog</h2>
+    <p>Stay updated with the latest trends in the cosmetics industry. Our blog aims to inspire customers through informative articles and engaging interviews.</p>
+
+    <div class="interview">
+        <h3>Featured Interview: CEO of GlamorCo</h3>
+        <button class="toggle-btn" onclick="toggleContent()">Show Insights</button>
+        <div class="toggle-content" id="insights">
+            <p>In our exclusive interview, the CEO shares insights on sustainable beauty practices and the future of cosmetics. Learn how GlamorCo is committed to inspiring a new generation of beauty enthusiasts.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Inspiring Cosmetics Blog. All rights reserved.</p>
+</footer>
+
+<script>
+    function toggleContent() {
+        var content = document.getElementById("insights");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Content Marketing for Restaurants</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .menu {
+            display: none;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        .menu.active {
+            display: block;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Organic Content Marketing</h1>
+        <nav>
+            <a href="#news">Latest News</a>
+            <a href="#menu">Menu Highlights</a>
+        </nav>
+    </header>
+    <section id="news">
+        <h2>Latest Trends in Organic Content Marketing</h2>
+        <p>Explore how restaurants are attracting customers through organic content marketing strategies. Engage your audience with authentic stories, seasonal ingredient highlights, and user-generated content.</p>
+        <button onclick="toggleMenu()">View Seasonal Menu</button>
+        <div class="menu" id="menu">
+            <h3>Seasonal Organic Menu</h3>
+            <ul>
+                <li>Roasted Beet Salad with Goat Cheese</li>
+                <li>Herb-Crusted Salmon with Quinoa</li>
+                <li>Vegan Tacos with Fresh Avocado</li>
+                <li>Grilled Seasonal Vegetables</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

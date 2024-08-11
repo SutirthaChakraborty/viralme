@@ -1,0 +1,82 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog News: Google Updates its Look, Images, and 19894404 - Interactive Experience">
+    <title>Google News Redesign & Image Exploration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .title {
+            font-size: 24px;
+        }
+
+        .content {
+            line-height: 1.5;
+        }
+
+        .news-teaser {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .news-teaser:hover {
+            border-bottom-color: #333;
+            text-decoration: none;
+        }
+
+        .img-caption {
+            text-align: center;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0069d9;
+        }
+    </style>
+    <script>
+        // Add interactivity using JavaScript
+        window.onload = function() {
+            var highlightElement = document.getElementById('keywordHighlight');
+            const keywords = ['blog news', 'Google updates', 'look', 'Google Images', '19894404'];
+            highlightsKeywords(keywords);
+        };
+
+        function highlightsKeywords(keywords) {
+            keywords.forEach(function(keyword) {
+                const elements = document.querySelectorAll('*');
+                elements.forEach(function(e) {
+                    if (e.innerText.toLowerCase().includes

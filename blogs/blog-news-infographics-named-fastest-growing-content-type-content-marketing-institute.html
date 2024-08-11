@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastest Growing Content Type - Infographics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        .info-btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .info-btn:hover {
+            background: #005bb5;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e0f7fa;
+            border-left: 5px solid #0073e6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fastest Growing Content Type: Infographics</h1>
+</header>
+
+<article>
+    <h2>Why Infographics?</h2>
+    <p>Infographics have emerged as the fastest growing content type in content marketing due to their ability to simplify complex information, making it digestible at a glance.</p>
+    <button class="info-btn" onclick="toggleInfo()">Learn More</button>
+    <div class="info" id="info">
+        <p>According to the Content Marketing Institute, infographics enhance user engagement and improve shareability, making them an effective tool for visual storytelling.</p>
+    </div>
+</article>
+
+<script>
+    function toggleInfo() {
+        var infoDiv = document.getElementById("info");
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

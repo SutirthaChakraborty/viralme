@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Questionnaire - Rieva Lesonsky | Grow Biz Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .questionnaire {
+            margin-top: 20px;
+        }
+        .question {
+            margin-top: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Legacy Content Questionnaire by Rieva Lesonsky</h1>
+    </header>
+    <div class="content">
+        <h2>Maximize Your Content's Potential</h2>
+        <p>At Grow Biz Media, we’re committed to helping you enhance your blog strategy. Use this questionnaire to assess your legacy content effectively.</p>
+        
+        <div class="questionnaire">
+            <div class="question">
+                <label for="content-title">1. What is the title of your content?</label><br>
+                <input type="text" id="content-title" placeholder="Enter content title" required>
+            </div>
+            <div class="question">
+                <label for="published-date">2. When was it published?</label><br>
+                <input type="date" id="published-date" required>
+            </div>
+            <div class="question">
+                <label for="content-performance">3. How has this content performed (views/shares)?</label><br>
+                <input type="text" id="content-performance" placeholder="Enter views and shares" required>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('submit').onclick = function() {
+            const title = document.getElementById('content-title').value;
+            const date = document.getElementById('published-date').value;
+            const performance = document.getElementById('content-performance').value;
+            alert(`Content Title: ${title}\nPublished Date: ${date}\nPerformance: ${performance}`);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Twitter Activity Tab Fully Rolled Out</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #1DA1F2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .tab {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #e1e8ed;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+        .tab.active {
+            background: #1DA1F2;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            margin-top: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Twitter Activity Tab Update</h1>
+    </header>
+    <div class="content">
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('news')">News</div>
+            <div class="tab" onclick="showTab('activity')">Activity</div>
+        </div>
+        <div id="news" class="tab-content active">
+            <h2>Latest Blog News</h2>
+            <p>Twitter has fully rolled out its new Activity Tab, enhancing user engagement and interaction. This feature allows users to track their interactions and see real-time updates on their posts.</p>
+        </div>
+        <div id="activity" class="tab-content">
+            <h2>Twitter Activity Insights</h2>
+            <p>The Activity Tab provides insights into user engagement, showcasing likes, retweets, and comments, making it easier for users to connect with their audience.</p>
+        </div>
+    </div>
+    <script>
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            document.querySelector(`.tab-content#${tabName}`).classList.add('active');
+            document.querySelector(`.tab[onclick="showTab('${tabName}')"]`).classList.add('active');
+        }
+    </script>
+</body>
+</html>

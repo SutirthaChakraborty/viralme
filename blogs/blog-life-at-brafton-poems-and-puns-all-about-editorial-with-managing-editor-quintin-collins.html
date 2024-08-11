@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploring the life at Brafton through poetry and puns. Join Managing Editor Quintin Collins for a fun editorial journey!">
+    <title>Life at Brafton: Editorial Poems & Puns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #6a5acd;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #6a5acd;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #5a4bb5;
+        }
+        .poem {
+            display: none;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Life at Brafton with Quintin Collins</h1>
+    <p>Poems and Puns on Editorial Adventures</p>
+</header>
+
+<section>
+    <h2>Welcome to the Editorial World!</h2>
+    <p>Join Managing Editor <strong>Quintin Collins</strong> as we explore the vibrant life at Brafton through creative expressions! Click below for a poetic take on editorial magic.</p>
+    <button id="togglePoem">Show Poem</button>
+    <div class="poem" id="poem">
+        <p>In the world of words we find our flight,<br>
+        Crafting tales that shine so bright.<br>
+        Editorials that dance and play,<br>
+        With puns and prose, we seize the day!</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById("togglePoem").addEventListener("click", function() {
+        var poem = document.getElementById("poem");
+        if (poem.style.display === "none" || poem.style.display === "") {
+            poem.style.display = "block";
+            this.textContent = "Hide Poem";
+        } else {
+            poem.style.display = "none";
+            this.textContent = "Show Poem";
+        }
+    });
+</script>
+
+</body>
+</html>

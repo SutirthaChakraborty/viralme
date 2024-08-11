@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leisure Travel Blog Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .keyword:hover {
+            text-decoration: underline;
+        }
+        #info {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Exploring Leisure Travel Trends</h1>
+    <p>The growing <span class="keyword" onclick="showInfo('travel')">interest in leisure travel</span> provides marketers unique opportunities to engage with customers online.</p>
+    <p>Through social media, SEO, and targeted ads, brands can tap into the digital behavior of travelers seeking inspiration and deals.</p>
+    <p>Understanding <span class="keyword" onclick="showInfo('millennials')">millennial travel habits</span> and <span class="keyword" onclick="showInfo('sustainability')">sustainable travel options</span> is crucial for effective outreach.</p>
+    
+    <div id="info"></div>
+</div>
+
+<script>
+    function showInfo(type) {
+        const infoBox = document.getElementById('info');
+        if (type === 'travel') {
+            infoBox.innerHTML = "<strong>Travel Insights:</strong> More people are prioritizing leisure travel, contributing to an increase in travel-related content online.";
+        } else if (type === 'millennials') {
+            infoBox.innerHTML = "<strong>Millennial Trends:</strong> Millennials prefer personalized experiences and are drawn to eco-friendly travel options.";
+        } else if (type === 'sustainability') {
+            infoBox.innerHTML = "<strong>Sustainable Travel:</strong> There's a rising demand for responsible travel, prompting brands to showcase their sustainability efforts.";
+        } else {
+            infoBox.innerHTML = "";
+        }
+    }
+</script>
+
+</body>
+</html>

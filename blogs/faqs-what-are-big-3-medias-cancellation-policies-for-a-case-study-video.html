@@ -1,0 +1,76 @@
+#### HTML Code for FAQs with CSS
+
+Here's a small HTML code snippet that you can use as a starting point for creating an FAQs section with CSS styling:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQs</title>
+    <style>
+        /* CSS for FAQs */
+        .faq {
+            margin-bottom: 20px;
+        }
+        
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+        
+        .answer p {
+            margin-bottom: 5px;
+        }
+        
+        /* CSS for animation */
+        .answer.show {
+            display: block;
+            animation: fade-in 0.5s ease-in-out;
+        }
+        
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        // JavaScript for toggling answers
+        function toggleAnswer(index) {
+            var answer = document.getElementById('answer-' + index);
+            answer.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer(1)">What is the cancellation policy?</div>
+        <div class="answer" id="answer-1">
+            <p>The cancellation policy for the case study video is as follows:</p>
+            <ul>
+                <li>Cancellations made more than 7 days before the scheduled date will receive a full refund.</li>
+                <li>Cancellations made between 7 days and 48 hours before the scheduled date will receive a 50% refund.</li>
+                <li>No refunds will be provided for cancellations made less than 48 hours before the scheduled date.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Add more FAQs here -->
+    
+</body>
+</html>
+
+
+In this code, we have created a simple FAQs section with one question and answer. You can add more FAQs by duplicating the HTML code inside the `<div class="faq">` element and updating the question and answer content.
+
+The CSS styles the FAQs section with a basic layout and animation. The JavaScript function `toggleAnswer` is used to toggle the visibility of the answer when the question is clicked.
+
+Feel free to customize the HTML and CSS according to your specific requirements.

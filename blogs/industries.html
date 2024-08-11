@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Industries</title>
+	<style>
+		body{
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		.industry-container{
+			width: 80%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		.industry-header{
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-bottom: 1px solid #333;
+		}
+		.industry-list{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.industry-list li{
+			padding: 10px;
+			border-bottom: 1px solid #f0f0f0;
+		}
+		.industry-list li:hover{
+			background-color: #f5f5f5;
+		}
+		.industry-desc{
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		.js-tooltip{
+			position: absolute;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 5px;
+			border-radius: 5px;
+			display: none;
+			z-index: 1000;
+		}
+		.js-tooltip::after{
+			content: "";
+			position: absolute;
+			border-width: 10px;
+			border-style: solid;
+			border-color: #fff transparent transparent transparent;
+			top: 100%;
+			left: 50%;
+			margin-left: -10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="industry-container">
+		<h2 class="industry-header"> Industries</h2>
+		<ul class="industry-list">
+			<li>
+				<h3>Manufacturing</h3>
+				<p class="industry-desc">Manufacturing is the production of goods on a large scale, often using machines and assembly lines.</p>
+				<span class="js-tooltip" data-tooltip="Manufacturing is a major driver of economic growth and development.">?</span>
+			</li>
+			<li>
+				<h3>Servicing</h3>
+				<p class="industry-desc">Servicing refers to the provision of intangible goods and services, such as healthcare, education, and finance.</p>
+				<span class="js-tooltip" data-tooltip="Servicing industries are critical to the well-being of individuals and society as a whole.">?</span>
+			</li>
+			<li>
+				<h3>Construction</h3>
+				<p class="industry-desc">Construction involves the building, repair, and renovation of structures, such as buildings, roads, and bridges.</p>
+				<span class="js-tooltip" data-tooltip="Construction is a vital industry that helps shape the physical environment and infrastructure of our communities.">?</span>
+			</li>
+			<li>
+				<h3>Energy</h3>
+				<p class="industry-desc">Energy production and distribution involves the extraction, processing, and transmission of energy sources, such as oil, gas, and electricity.</p>
+				<span class="js-tooltip" data-tooltip="Energy is a critical component of modern life, powering our homes, transportation, and industries.">?</span>
+			</li>
+		</ul>
+		<script>
+			var tooltips = document.querySelectorAll('.js-tooltip');
+			tooltips.forEach(function(tooltip) {
+				tooltip.addEventListener('mouseover', function() {
+					this.style.display = 'block';
+				});
+				tooltip.addEventListener('mouseout', function() {
+					this.style.display = 'none';
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+This HTML code creates a simple webpage that displays a list of industries, along with a brief description and a tooltip that appears when you hover over the question mark. The CSS styles the layout and design of the page, while the JavaScript code adds interactivity to the tooltips.

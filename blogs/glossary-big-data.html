@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Big Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .glossary-term {
+            margin: 10px 0;
+            padding: 10px;
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .glossary-term:hover {
+            background: #ecf0f1;
+        }
+        .definition {
+            display: none;
+            margin-top: 5px;
+            padding: 5px;
+            border-left: 4px solid #3498db;
+            background: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary of Big Data</h1>
+    <div class="glossary-term" onclick="toggleDefinition('def1')">
+        <strong>Big Data</strong>
+        <div id="def1" class="definition">Large and complex data sets that traditional data processing software can’t manage efficiently.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def2')">
+        <strong>Data Analytics</strong>
+        <div id="def2" class="definition">The science of analyzing raw data to make conclusions about that information.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def3')">
+        <strong>Machine Learning</strong>
+        <div id="def3" class="definition">A branch of artificial intelligence that focuses on building systems that learn from data and improve their performance over time.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def4')">
+        <strong>Data Mining</strong>
+        <div id="def4" class="definition">The process of discovering patterns and knowledge from large amounts of data.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def5')">
+        <strong>Data Visualization</strong>
+        <div id="def5" class="definition">The graphical representation of information and data to provide an accessible way to see and understand trends, outliers, and patterns.</div>
+    </div>
+    <script>
+        function toggleDefinition(id) {
+            var def = document.getElementById(id);
+            def.style.display = def.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

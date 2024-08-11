@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover insights from the podcast featuring Jeff and Francis interviewing Jarod, a real-life wunderkind. Learn about innovation, creativity, and success.">
+    <title>Podcast Insights: Jeff & Francis Interview Jarod</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+        }
+        .interactive {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Podcast Insights</h1>
+    <p>Jeff & Francis Interview Jarod - The Real-Life Wunderkind</p>
+</header>
+
+<div class="container">
+    <div class="interactive">
+        <h2>Explore Key Topics</h2>
+        <p>This podcast explores creativity, innovation, and success in today's rapidly changing world. Click the button below to reveal key quotes from Jarod.</p>
+        <button onclick="revealQuotes()">Show Quotes</button>
+        <div id="quotes" style="display:none; margin-top: 15px;">
+            <p><strong>Jarod:</strong> "True genius is not just about knowledge; it's about passion and perseverance."</p>
+            <p><strong>Jarod:</strong> "Embrace failure as a stepping stone to success."</p>
+            <p><strong>Jarod:</strong> "Innovation springs from curiosity and a desire to make a difference."</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Podcast Insights. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function revealQuotes() {
+        var quotesDiv = document.getElementById('quotes');
+        if (quotesDiv.style.display === 'none') {
+            quotesDiv.style.display = 'block';
+        } else {
+            quotesDiv.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

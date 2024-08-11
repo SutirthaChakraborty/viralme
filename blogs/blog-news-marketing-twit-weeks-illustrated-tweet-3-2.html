@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .tweet-button {
+            background: #1da1f2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .tweet-button:hover {
+            background: #0d8dd6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News Marketing</h1>
+    <p>Stay updated with the latest trends in marketing and social media!</p>
+</header>
+
+<article>
+    <h2>Understanding Twitter Marketing</h2>
+    <p>Twitter is a powerful platform for engaging with your audience. By utilizing trending topics and hashtags, you can significantly increase your reach and visibility.</p>
+    <button class="tweet-button" onclick="tweet()">Tweet This!</button>
+</article>
+
+<article>
+    <h2>Effective Blog Strategies</h2>
+    <p>Creating valuable content is key to attracting readers. Focus on SEO and use relevant keywords to enhance your blog's visibility.</p>
+    <button class="tweet-button" onclick="tweet()">Tweet This!</button>
+</article>
+
+<script>
+    function tweet() {
+        const tweetContent = "Check out this amazing blog post on marketing strategies! #BlogMarketing #TwitterTips";
+        const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetContent)}`;
+        window.open(twitterUrl, '_blank');
+    }
+</script>
+
+</body>
+</html>

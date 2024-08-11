@@ -1,0 +1,83 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Infographics: Engaging Visual Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+        }
+        
+        .topic {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .infographic {
+            border: 1px solid #ccc;
+            width: 45%;
+            margin: 20px;
+            padding: 25px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .infographic:hover {
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .infographic {
+                width: 95%;
+            }
+        }
+    </style>
+    <script>
+        function showExplanation(id) {
+            var explanation = document.getElementById(id);
+            explanation.style.display = (explanation.style.display === 'none' ? 'block' : 'none');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Blog

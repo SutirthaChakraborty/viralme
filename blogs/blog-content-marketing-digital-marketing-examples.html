@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #35424a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Content Marketing Strategies</h1>
+    </header>
+    <div class="container">
+        <article>
+            <h2>What is Content Marketing?</h2>
+            <p>Content marketing is a strategic approach focused on creating and distributing valuable, relevant content to attract and engage a clearly defined audience.</p>
+            <button class="btn" onclick="showExamples()">Show Examples</button>
+            <div id="examples" style="display:none;">
+                <h3>Examples of Content Marketing:</h3>
+                <ul>
+                    <li>Blog Posts</li>
+                    <li>Infographics</li>
+                    <li>Videos</li>
+                    <li>Podcasts</li>
+                    <li>Social Media Posts</li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <h2>Benefits of Blogging in Digital Marketing</h2>
+            <p>Blogging enhances SEO, builds brand authority, and drives traffic to your website. It is essential for establishing a strong online presence.</p>
+        </article>
+    </div>
+    <script>
+        function showExamples() {
+            var examplesDiv = document.getElementById("examples");
+            if (examplesDiv.style.display === "none") {
+                examplesDiv.style.display = "block";
+            } else {
+                examplesDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

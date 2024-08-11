@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Strategy: Content Buckets 101</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .bucket {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+        .bucket:hover {
+            transform: scale(1.02);
+        }
+        .examples {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 4px solid #007bff;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog Strategy: Content Buckets 101</h1>
+    <p>Content buckets are essential for organizing your blog strategy effectively. They help categorize your content into themes, making it easier to plan and distribute across various channels.</p>
+
+    <div class="bucket">
+        <h2>1. Educational Content</h2>
+        <p>This bucket focuses on providing valuable information to your audience, positioning your brand as a trusted resource.</p>
+        <button onclick="toggleExamples('eduExamples')">Show Examples</button>
+        <div id="eduExamples" class="examples">
+            <ul>
+                <li>How-to guides</li>
+                <li>Tutorials</li>
+                <li>Industry insights</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bucket">
+        <h2>2. Entertaining Content</h2>
+        <p>Engage your audience with fun and relatable content that resonates with them.</p>
+        <button onclick="toggleExamples('entExamples')">Show Examples</button>
+        <div id="entExamples" class="examples">
+            <ul>
+                <li>Quizzes</li>
+                <li>Memes</li>
+                <li>Behind-the-scenes stories</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bucket">
+        <h2>3. Promotional Content</h2>
+        <p>Highlight your products or services while providing value to your audience.</p>
+        <button onclick="toggleExamples('promoExamples')">Show Examples</button>
+        <div id="promoExamples" class="examples">
+            <ul>
+                <li>Product launches</li>
+                <li>Special offers</li>
+                <li>Customer testimonials</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleExamples(id) {
+            var examples = document.getElementById(id);
+            if (examples.style.display === "none" || examples.style.display === "") {
+                examples.style.display = "block";
+            } else {
+                examples.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

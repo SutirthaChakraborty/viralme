@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore blog insights about life at Brafton with Tim Olech, diving deep into graphic design concepts, trends, and techniques.">
+    <title>Life at Brafton: Graphic Design Insights with Tim Olech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077b6;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #0077b6;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 15px;
+            border: none;
+            background: #0077b6;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #005f8a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life at Brafton with Tim Olech</h1>
+    </header>
+    <div class="content">
+        <h2>Digging into Graphic Design</h2>
+        <p>Welcome to our blog where <span class="keyword">graphic design</span> meets creativity! Join Tim Olech as he explores the world of visual communication and design trends that influence our digital landscape.</p>
+        <p>From <span class="keyword">branding</span> to <span class="keyword">typography</span>, discover key concepts that make up effective graphic design. Learn how to enhance your projects and boost your skills in the industry.</p>
+        <button id="exploreBtn">Explore More</button>
+        <div id="moreInfo" style="display:none;">
+            <h3>Why Graphic Design Matters</h3>
+            <p>Graphic design is essential for <span class="keyword">marketing</span> and <span class="keyword">business</span> growth. It helps convey your message effectively, making it more engaging and memorable.</p>
+            <h3>Join the Discussion</h3>
+            <p>Share your thoughts on graphic design trends and how they impact your work. Let's learn together!</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('exploreBtn').onclick = function() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+                this.textContent = 'Hide Info';
+            } else {
+                moreInfo.style.display = 'none';
+                this.textContent = 'Explore More';
+            }
+        };
+    </script>
+</body>
+</html>

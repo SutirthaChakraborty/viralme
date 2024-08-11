@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Revenue Growth</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #343a40;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .revenue {
+            font-weight: bold;
+            color: #28a745;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News Revenue Insights</h1>
+    </header>
+    <nav>
+        <a href="#news">Latest News</a>
+        <a href="#trends">Trends</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <div class="container">
+        <h2>Projected Revenue Growth</h2>
+        <p>The blog news revenue is expected to rise by **20% in 2011**, driven by increased digital advertising and subscription models.</p>
+        <p class="revenue">This growth reflects a significant shift in consumer behavior towards online content consumption.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <p>Factors contributing to this growth include:</p>
+            <ul>
+                <li>Increased mobile usage for news consumption.</li>
+                <li>Enhanced targeting capabilities in digital advertising.</li>
+                <li>Growing popularity of niche blogs and content creators.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

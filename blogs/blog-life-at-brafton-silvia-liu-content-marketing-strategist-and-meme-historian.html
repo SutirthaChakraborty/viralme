@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life at Brafton: Silvia Liu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Life at Brafton: Silvia Liu</h1>
+</header>
+
+<section>
+    <h2>About Silvia Liu</h2>
+    <p>Silvia Liu is a talented Content Marketing Strategist and a meme historian at Brafton. Originally from Sydney, Australia, she now resides in Rancho Cucamonga, California. Silvia combines her analytical skills with creativity to drive successful content marketing strategies.</p>
+</section>
+
+<section>
+    <h2>Content Marketing Insights</h2>
+    <p>At Brafton, Silvia focuses on creating engaging content that resonates with audiences. Her expertise in SEO and keyword strategy helps in maximizing reach and engagement.</p>
+</section>
+
+<section class="interactive">
+    <h2>Learn More About Content Marketing</h2>
+    <button onclick="showTips()">Click for Tips!</button>
+    <p id="tips" style="display:none;">1. Understand your audience's needs.<br>2. Use long-tail keywords for better SEO.<br>3. Create shareable content to increase reach.</p>
+</section>
+
+<script>
+    function showTips() {
+        var tips = document.getElementById("tips");
+        if (tips.style.display === "none") {
+            tips.style.display = "block";
+        } else {
+            tips.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

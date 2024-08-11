@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        article {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .post-meta {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple Blog</h1>
+    </header>
+    <div class="container">
+        <article>
+            <h2>Blogging Made Easy</h2>
+            <p class="post-meta">Published on August 10, 2024</p>
+            <p>Blogging is a powerful way to share your thoughts and connect with others. It can be easier than you think!</p>
+            <button onclick="toggleContent()">Read More</button>
+            <div class="toggle-content" id="moreContent">
+                <p>To start a blog, choose a niche, create quality content, and engage with your audience. Remember, consistency is key!</p>
+            </div>
+        </article>
+    </div>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("moreContent");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

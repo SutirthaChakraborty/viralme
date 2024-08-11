@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Blog Video Production Guide</title>
+    <meta name="description" content="The complete video production checklist for bloggers. Enhance your content strategy and engage viewers.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .checklist {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .checklist-item {
+            margin: 10px 0;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .details {
+            display: none;
+            margin-top: 5px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Video Production Guide</h1>
+    <p>Your Essential Checklist for Success</p>
+</header>
+
+<div class="checklist">
+    <h2>Video Production Checklist</h2>
+    <div class="checklist-item">
+        <span class="toggle">🎥 Pre-Production</span>
+        <div class="details">
+            <ul>
+                <li>Establish video goals</li>
+                <li>Script writing</li>
+                <li>Storyboard creation</li>
+            </ul>
+        </div>
+    </div>
+    <div class="checklist-item">
+        <span class="toggle">🎬 Production</span>
+        <div class="details">
+            <ul>
+                <li>Set up lighting and audio</li>
+                <li>Camera setup and framing</li>
+                <li>Recording the footage</li>
+            </ul>
+        </div>
+    </div>
+    <div class="checklist-item">
+        <span class="toggle">✂️ Post-Production</span>
+        <div class="details">
+            <ul>
+                <li>Video editing</li>
+                <li>Sound design</li>
+                <li>Color grading</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    const toggles = document.querySelectorAll('.toggle');
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const details = toggle.nextElementSibling;
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

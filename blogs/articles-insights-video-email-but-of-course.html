@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles, Insights, Video, Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Articles, Insights, Video, and Email</h1>
+    </header>
+    <section>
+        <h2 class="interactive" onclick="toggleContent('articles')">Articles</h2>
+        <div id="articles" class="content">
+            <p>Discover in-depth articles that provide valuable insights into various topics, enhancing your knowledge and understanding.</p>
+        </div>
+    </section>
+    <section>
+        <h2 class="interactive" onclick="toggleContent('insights')">Insights</h2>
+        <div id="insights" class="content">
+            <p>Gain unique perspectives and expert opinions that can help you make informed decisions in your field.</p>
+        </div>
+    </section>
+    <section>
+        <h2 class="interactive" onclick="toggleContent('video')">Video</h2>
+        <div id="video" class="content">
+            <p>Watch engaging videos that explain complex concepts in an easy-to-understand manner, perfect for visual learners.</p>
+        </div>
+    </section>
+    <section>
+        <h2 class="interactive" onclick="toggleContent('email')">Email</h2>
+        <div id="email" class="content">
+            <p>Learn how to effectively communicate through email, including tips on writing compelling subject lines and content.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

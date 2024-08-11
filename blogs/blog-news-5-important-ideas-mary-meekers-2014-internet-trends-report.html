@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the key insights from Mary Meeker's 2014 Internet Trends Report, covering mobile growth, user engagement, and digital marketing trends.">
+    <title>Mary Meeker's 2014 Internet Trends Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .idea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 5px solid #35424a;
+            transition: background 0.3s;
+        }
+        .idea:hover {
+            background: #e8e8e8;
+        }
+        button {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mary Meeker's 2014 Internet Trends Report</h1>
+</header>
+
+<div class="content">
+    <h2>5 Important Ideas</h2>
+    <div class="idea" id="idea1" onclick="toggleDetails('details1')">
+        <strong>1. Mobile Usage Growth</strong>
+        <p>Mobile internet usage has surpassed desktop, highlighting the shift in user behavior.</p>
+        <div id="details1" style="display:none;">
+            <p>This shift represents opportunities for businesses to optimize websites for mobile devices.</p>
+        </div>
+    </div>
+    <div class="idea" id="idea2" onclick="toggleDetails('details2')">
+        <strong>2. Importance of Video Content</strong>
+        <p>Video consumption is skyrocketing as users crave more visual content.</p>
+        <div id="details2" style="display:none;">
+            <p>Brands need to focus on integrating video into their marketing strategies for better engagement.</p>
+        </div>
+    </div>
+    <div class="idea" id="idea3" onclick="toggleDetails('details3')">
+        <strong>3. Data-Driven Marketing</strong>
+        <p>Companies are increasingly using data analytics to drive marketing decisions.</p>
+        <div id="details3" style="display:none;">
+            <p>Utilizing data can enhance targeting efficiency and improve ROI.</p>
+        </div>
+    </div>
+    <div class="idea" id="idea4" onclick="toggleDetails('details4')">
+        <strong>4. E-commerce Growth</strong>
+        <p>Online shopping is rapidly increasing, reflecting changing consumer preferences.</p>
+        <div id="details4" style="display:none;">
+            <p>Businesses must adapt to provide seamless online shopping experiences.</p>
+        </div>
+    </div>
+    <div class="idea" id="idea5" onclick="toggleDetails('details5')">
+        <strong>5. Rise of Social Media Advertising</strong>
+        <p>Social media platforms are becoming key channels for advertising.</p>
+        <div id="details5" style="display:none;">
+            <p>Investing in social media marketing can yield substantial returns for brands.</p>
+        </div>
+    </div>
+    <button onclick="window.scrollTo(0, 0)">Back to Top</button>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = details.style.display === "none" ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>

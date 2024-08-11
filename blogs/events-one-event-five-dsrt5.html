@@ -1,0 +1,48 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events One Event Five DSRT5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        .event {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .event.active {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events One Event Five DSRT5</h1>
+    <p>Here are some events related to the topic. Click on an event to learn more!</p>
+    <div class="event" onclick="showEventInfo('event1')">Event One</div>
+    <div class="event" onclick="showEventInfo('event2')">Event Two</div>
+    <div class="event" onclick="showEventInfo('event3')">Event Three</div>
+    <div class="event" onclick="showEventInfo('event4')">Event Four</div>
+    <div class="event" onclick="showEventInfo('event5')">Event Five</div>
+
+    <script>
+        function showEventInfo(eventId) {
+            alert(`This is information about ${eventId}.`);
+        }
+    </script>
+</body>
+</html>

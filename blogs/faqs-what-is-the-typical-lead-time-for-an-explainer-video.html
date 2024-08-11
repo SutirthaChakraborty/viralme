@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs: Typical Lead Time for an Explainer Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px 0;
+            padding: 15px;
+            transition: background 0.3s;
+        }
+        .faq:hover {
+            background: #e9ecef;
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FAQs: What is the Typical Lead Time for an Explainer Video?</h1>
+    <div class="faq">
+        <div class="question">What is the average lead time for an explainer video?</div>
+        <div class="answer">Typically, the lead time for an explainer video ranges from **2 to 6 weeks**, depending on the complexity and length of the video.</div>
+    </div>
+    <div class="faq">
+        <div class="question">What factors influence the lead time?</div>
+        <div class="answer">Factors include **script development**, **storyboarding**, **animation style**, and **client feedback** cycles.</div>
+    </div>
+    <div class="faq">
+        <div class="question">Can the lead time be shortened?</div>
+        <div class="answer">Yes, using pre-existing templates and clear communication can help reduce the lead time significantly.</div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

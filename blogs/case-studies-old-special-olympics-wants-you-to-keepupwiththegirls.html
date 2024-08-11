@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Special Olympics, Case Studies, Keep Up With The Girls, Empowerment, Inclusion, Sports for All, Women's Sports, Athlete Stories">
+    <title>Special Olympics - Keep Up With The Girls</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .case-study {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .case-study:hover {
+            transform: scale(1.03);
+        }
+        button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #245d42;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Special Olympics: Keep Up With The Girls</h1>
+</header>
+
+<section>
+    <div class="case-study">
+        <h2>Empowering Young Women Athletes</h2>
+        <p>Explore how Special Olympics empowers young women to participate in sports and build confidence. Discover inspiring stories of athletes who overcome challenges.</p>
+        <button onclick="showDetails('empowerment')">Learn More</button>
+    </div>
+
+    <div class="case-study">
+        <h2>Inclusive Sports Programs</h2>
+        <p>Learn about the inclusive sports programs that are making a difference in communities worldwide. Join the movement for equality in sports.</p>
+        <button onclick="showDetails('inclusion')">Learn More</button>
+    </div>
+
+    <div class="case-study">
+        <h2>Celebrating Athlete Achievements</h2>
+        <p>Every athlete has a story! Celebrate the achievements of female athletes in Special Olympics and their journey towards success.</p>
+        <button onclick="showDetails('achievement')">Learn More</button>
+    </div>
+</section>
+
+<script>
+    function showDetails(type) {
+        let message = "";
+        switch(type) {
+            case 'empowerment':
+                message = "Empowering young women athletes focuses on skill-building and confidence through sports participation.";
+                break;
+            case 'inclusion':
+                message = "Inclusive sports programs create opportunities for all athletes, regardless of ability.";
+                break;
+            case 'achievement':
+                message = "Celebrating athlete achievements highlights personal milestones and fosters community support.";
+                break;
+            default:
+                message = "Information not available.";
+        }
+        alert(message);
+    }
+</script>
+
+</body>
+</html>

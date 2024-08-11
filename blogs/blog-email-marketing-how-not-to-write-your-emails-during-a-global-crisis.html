@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing during a Global Crisis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .tips {
+            list-style-type: none;
+            padding: 0;
+        }
+        .tips li {
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .tips li:hover {
+            background: #e1e1e1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Email Marketing in Crisis</h1>
+        <p>How to Avoid Mistakes in Your Email Campaigns</p>
+    </header>
+
+    <section>
+        <h2>Key Insights</h2>
+        <ul class="tips">
+            <li onclick="showTip('tip1')">1. Avoid Insensitivity</li>
+            <li onclick="showTip('tip2')">2. Don't Oversell</li>
+            <li onclick="showTip('tip3')">3. Prioritize Empathy</li>
+            <li onclick="showTip('tip4')">4. Limit Frequency</li>
+            <li onclick="showTip('tip5')">5. Craft Thoughtful Messages</li>
+        </ul>
+        <div id="tipContent" style="margin-top: 20px;"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Email Marketing Insights</p>
+    </footer>
+
+    <script>
+        function showTip(tip) {
+            const tips = {
+                tip1: "Avoid insensitive language or messaging that may come off as tone-deaf.",
+                tip2: "Don't push for sales aggressively; focus on providing value.",
+                tip3: "Show understanding and compassion for your audience's situation.",
+                tip4: "Refrain from overwhelming your audience with too many emails.",
+                tip5: "Be thoughtful in your communication; it should reflect care and respect."
+            };
+            document.getElementById('tipContent').textContent = tips[tip];
+        }
+    </script>
+</body>
+</html>

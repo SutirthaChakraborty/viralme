@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Simplified Mobile Photo Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #343a40;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        .photo-thumb {
+            width: 300px;
+            height: 200px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .photo-thumb:hover {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .caption p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .related-words {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        // Add a lightbox effect for the photos
+        function openLightbox(img) {
+            var lightbox = document.getElementById('lightbox');
+            lightbox.style.display = img.classList

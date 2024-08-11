@@ -1,0 +1,58 @@
+Here's a simple HTML code snippet with CSS that includes an interactive popup explaining the topic of Housing Finance Ireland. The keywords have been integrated to improve search visibility:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Housing Finance Ireland</title>
+<style>
+  .hover-box {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #F7F7F7;
+    border: 1px solid #DDD;
+    text-align: center;
+    line-height: 150px;
+    transition: .3s;
+  }
+
+  .hover-box:hover {
+    background-color: #FCE4EC;
+  }
+
+  .popup {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .hover-box:hover .popup {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="hover-box" onclick="togglePopup(this)">
+    <h3>Housing Finance Ireland</h3>
+    <p>Keywords: home loan, mortgage, housing loans, government support, housing market</p>
+    <div class="popup">
+      <p>Understanding Housing Finance Ireland is key to navigating the Irish housing market. They offer loans and support for individuals and developers to secure affordable housing. Keywords like "IRISH HOUSING FINANCE", "LSH (Local Support Scheme)", and "first-time buyers" will enhance your online search for related services and policies.</p>
+      <a href="https://www.housingfinanceireland.ie/" target="_blank">Learn More</a>
+    </div>
+  </div>
+
+  <script>
+    function togglePopup(box) {
+      var popup = box.querySelector('.popup');
+      popup.style.display = (popup.style.display === 'block' ? 'none' : 'block');
+    }
+  </script>
+</body>
+</html>
+
+This code creates a simple box with hover effects and an interactive popup that appears when the box is hovered over, providing a brief explanation of Housing Finance Ireland and relevant keywords for better search results. When clicked, it opens the official website in a new tab.

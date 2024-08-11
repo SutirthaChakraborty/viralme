@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Dublin, Ireland - a vibrant city known for its rich history, culture, and attractions.">
+    <title>Dublin, Ireland - A Cultural Journey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .attraction {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .attraction:hover {
+            background: #e7f1ff;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e7f7ff;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Dublin, Ireland</h1>
+        <p>Your guide to the heart of Ireland's culture and history</p>
+    </header>
+    <div class="content">
+        <h2>Top Attractions</h2>
+        <div class="attraction" onclick="toggleDetails('guinness')">
+            Guinness Storehouse
+            <div id="guinness" class="details">Learn about the history of Ireland's famous stout and enjoy a pint with a view of the city.</div>
+        </div>
+        <div class="attraction" onclick="toggleDetails('trinity')">
+            Trinity College
+            <div id="trinity" class="details">Home to the Book of Kells, this historic university is a must-visit for book lovers.</div>
+        </div>
+        <div class="attraction" onclick="toggleDetails('temple')">
+            Temple Bar
+            <div id="temple" class="details">Experience Dublin's vibrant nightlife and cultural scene in this iconic area.</div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

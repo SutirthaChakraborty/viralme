@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Food Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+        }
+        .faq-title {
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e7e7e7;
+            padding-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item .faq-question {
+            font-weight: bold;
+        }
+        .faq-item .faq-answer {
+            display: none;
+            margin-left: 15px;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h2 class="faq-title">Do we do food photography?</h2>
+        <div class="faq-item">
+            <div class="faq-question">
+                What types of food photography do you offer?
+            </div>
+            <div class="faq-answer">
+                We offer a range of food photography services, including still life, product, and lifestyle shots. Our team specializes in capturing the essence and quality of food, whether it's for commercial, editorial, or personal projects.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                How do you ensure the food looks appetizing in photos?
+            </div>
+            <div class="faq-answer">
+                Our approach involves meticulous styling, careful lighting, and the use of high-quality equipment to bring out the best in each dish. We also pay attention to the background and composition to ensure the food is the focal point.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                Can you provide examples of your food photography work?
+            </div>
+            <div class="faq-answer">
+                Yes, we'd be happy to share examples upon request. Our portfolio showcases a variety of projects, from restaurant menus to food packaging design.
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Best Types of Animated Videos for Business</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .video-type {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .video-type:hover {
+            transform: scale(1.05);
+        }
+        .video-type h2 {
+            color: #007BFF;
+        }
+        .video-type p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>5 Best Types of Animated Videos for Business</h1>
+
+    <div class="video-type" onclick="showDetails('explainer')">
+        <h2>1. Explainer Videos</h2>
+        <p>Short videos that explain your product or service in a simple and engaging way.</p>
+    </div>
+
+    <div class="video-type" onclick="showDetails('whiteboard')">
+        <h2>2. Whiteboard Animation</h2>
+        <p>Creative storytelling using hand-drawn illustrations on a whiteboard.</p>
+    </div>
+
+    <div class="video-type" onclick="showDetails('animated')">
+        <h2>3. Animated Infographics</h2>
+        <p>Visual representation of data and information through animated graphics.</p>
+    </div>
+
+    <div class="video-type" onclick="showDetails('testimonial')">
+        <h2>4. Testimonial Videos</h2>
+        <p>Animated videos featuring customer testimonials to build trust and credibility.</p>
+    </div>
+
+    <div class="video-type" onclick="showDetails('promotional')">
+        <h2>5. Promotional Videos</h2>
+        <p>Dynamic videos that promote your brand, product, or service effectively.</p>
+    </div>
+
+    <script>
+        function showDetails(type) {
+            let message = '';
+            switch(type) {
+                case 'explainer':
+                    message = 'Explainer videos are concise and focus on the key benefits of your product.';
+                    break;
+                case 'whiteboard':
+                    message = 'Whiteboard animations are engaging and can simplify complex ideas.';
+                    break;
+                case 'animated':
+                    message = 'Animated infographics make data more digestible and visually appealing.';
+                    break;
+                case 'testimonial':
+                    message = 'Testimonial videos leverage social proof to enhance brand trust.';
+                    break;
+                case 'promotional':
+                    message = 'Promotional videos are essential for marketing campaigns and brand awareness.';
+                    break;
+            }
+            alert(message);
+        }
+    </script>
+
+</body>
+</html>

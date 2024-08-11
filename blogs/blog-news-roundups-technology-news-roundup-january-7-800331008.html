@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest technology news roundup for January 7, highlighting key trends and innovations in the tech industry.">
+    <title>Technology News Roundup - January 7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0077cc;
+        }
+        .news-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .news-item:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Technology News Roundup - January 7</h1>
+    
+    <div class="news-item">
+        <h2>1. Breakthrough in AI Technology</h2>
+        <p>A new AI model has been developed that improves processing times by 50%. This could revolutionize industries relying on data analytics.</p>
+        <button onclick="alert('Read more about Breakthrough in AI Technology')">Learn More</button>
+    </div>
+    
+    <div class="news-item">
+        <h2>2. Cybersecurity Threats Surge</h2>
+        <p>Cybersecurity threats have increased by 30% in the past month, prompting new measures from major tech companies.</p>
+        <button onclick="alert('Discover more on Cybersecurity Threats')">Learn More</button>
+    </div>
+
+    <div class="news-item">
+        <h2>3. Electric Vehicles on the Rise</h2>
+        <p>Electric vehicle sales have outpaced gas-powered cars for the first time, signaling a significant shift in the automotive industry.</p>
+        <button onclick="alert('Explore the rise of Electric Vehicles')">Learn More</button>
+    </div>
+
+    <script>
+        // Simple JavaScript to enhance interactivity
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert(`You clicked on: ${button.parentElement.querySelector('h2').innerText}`);
+            });
+        });
+    </script>
+
+</body>
+</html>

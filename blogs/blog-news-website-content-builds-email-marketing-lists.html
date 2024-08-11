@@ -1,0 +1,140 @@
+#### HTML Code for Blog News Website with Email Marketing Lists
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Email Marketing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="submit_email.php" method="post">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <section class="latest-news">
+        <h2>Latest News</h2>
+        <article>
+            <h3>Article Title</h3>
+            <p>Summary of the article content...</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Another Article Title</h3>
+            <p>Summary of another article...</p>
+            <a href="#">Read More</a>
+        </article>
+        <!-- More articles go here -->
+    </section>
+    <footer>
+        <p>&copy; 2024 Blog News Website</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+#### CSS Code
+
+css
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.newsletter {
+    text-align: center;
+    padding: 2rem;
+}
+
+section.newsletter form input[type="email"] {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+section.newsletter form button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+section.latest-news {
+    padding: 2rem;
+}
+
+section.latest-news article {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+#### JavaScript Code
+
+javascript
+// Script for handling newsletter subscription
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    let email = event.target.querySelector('input[type="email"]').value;
+    // Code to handle the subscription
+    // ...
+    // Display a success message
+    alert('Thank you for subscribing!');
+});
+
+
+This HTML code creates a simple blog news website with a navigation bar, a newsletter subscription section, and a section for displaying the latest news articles. The CSS provides styling for the different sections of the website, and the JavaScript code handles the newsletter subscription form submission.
+
+**Keywords**: HTML, CSS, blog website, email marketing, newsletter, interactive, JavaScript, web development, HTML projects, CSS styling.

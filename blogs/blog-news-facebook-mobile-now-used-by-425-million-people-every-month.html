@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Facebook Mobile Usage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4267B2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #4267B2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #365899;
+        }
+        .toggle {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Facebook Mobile Now Used by 425 Million Users</h1>
+    </header>
+    <article>
+        <h2>Stay Updated with Blog News</h2>
+        <p>Facebook mobile usage has skyrocketed to an impressive 425 million users every month. This trend highlights the importance of utilizing social media platforms for news consumption and interaction.</p>
+        <p>With mobile devices becoming the primary source of information, engaging with content on Facebook has never been more crucial for businesses and bloggers alike.</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div class="toggle" id="moreInfo">
+            <h3>Why Use Facebook for News?</h3>
+            <ul>
+                <li>Instant updates and notifications</li>
+                <li>Wide audience reach and engagement</li>
+                <li>Interactive features for better user experience</li>
+                <li>Optimal for sharing multimedia content</li>
+            </ul>
+        </div>
+    </article>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

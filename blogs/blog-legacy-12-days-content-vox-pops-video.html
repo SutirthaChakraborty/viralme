@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our Blog Legacy: 12 Days of Engaging Vox Pops Videos. Discover informative content and interactive insights.">
+    <title>Blog Legacy: 12 Days of Vox Pops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #5c67f2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .video {
+            margin: 20px 0;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #5c67f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4a54d1;
+        }
+        .feedback {
+            display: none;
+            margin: 10px 0;
+        }
+        .feedback.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Legacy: 12 Days of Vox Pops Videos</h1>
+        <p>Engage with our powerful video content!</p>
+    </header>
+    <div class="container">
+        <h2>What are Vox Pops?</h2>
+        <p>Vox Pops, or "man on the street" interviews, capture genuine opinions and insights from everyday people. They provide a voice to the community and help share diverse perspectives on various topics.</p>
+        
+        <div class="video">
+            <h3>Featured Vox Pop Video</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vox Pop Example" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <button id="feedbackBtn">Share Your Thoughts</button>
+        <div class="feedback" id="feedbackSection">
+            <h4>Your Input:</h4>
+            <textarea rows="4" cols="50" placeholder="Type your feedback here..."></textarea><br>
+            <button id="submitFeedback">Submit</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('feedbackBtn').onclick = function() {
+            document.getElementById('feedbackSection').classList.toggle('active');
+        };
+        document.getElementById('submitFeedback').onclick = function() {
+            alert('Thank you for your feedback!');
+            document.getElementById('feedbackSection').classList.remove('active');
+        };
+    </script>
+</body>
+</html>

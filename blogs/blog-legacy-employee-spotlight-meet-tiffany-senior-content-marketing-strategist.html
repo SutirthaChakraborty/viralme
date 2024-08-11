@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Spotlight: Meet Tiffany</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .bio {
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #e7f3ff;
+            border-left: 6px solid #2196F3;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Employee Spotlight</h1>
+    </header>
+    <div class="container">
+        <h2>Meet Tiffany</h2>
+        <p class="bio">Tiffany is a Senior Content Marketing Strategist with over 5 years of experience in creating engaging content that drives traffic and boosts brand awareness.</p>
+        <div class="highlight">
+            **Key Achievements:**
+            <ul>
+                <li>Increased organic traffic by 150% through strategic content planning.</li>
+                <li>Developed a successful email marketing campaign that achieved a 30% open rate.</li>
+                <li>Led a team of content creators to produce high-quality blog posts and articles.</li>
+            </ul>
+        </div>
+        <button onclick="showMoreInfo()">Learn More About Tiffany</button>
+        <div id="moreInfo" style="display:none;">
+            <p>Tiffany enjoys hiking and photography in her free time. She believes in the power of storytelling and its ability to connect people.</p>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

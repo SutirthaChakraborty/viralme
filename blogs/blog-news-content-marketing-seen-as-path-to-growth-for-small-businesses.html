@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog news on content marketing for small businesses. Learn how content marketing can drive growth, engagement, and visibility.">
+    <title>Content Marketing for Small Businesses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .keywords {
+            font-style: italic;
+            color: #555;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Content Marketing: A Path to Growth for Small Businesses</h1>
+    </header>
+    <article>
+        <h2>Why Content Marketing Matters</h2>
+        <p>Content marketing is essential for small businesses looking to enhance their <span class="keywords">online presence</span> and attract more customers. By creating valuable and relevant content, businesses can engage with their audience, build trust, and improve brand <span class="keywords">visibility</span>.</p>
+        <button onclick="toggleContent()">Learn More</button>
+        <div class="toggle-content" id="extraContent">
+            <p>Implementing <span class="keywords">SEO strategies</span> in your content marketing can boost your search engine rankings. This leads to increased <span class="keywords">organic traffic</span> and opportunities for conversion. Use blogs, infographics, and videos to reach diverse audiences!</p>
+        </div>
+    </article>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById('extraContent');
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

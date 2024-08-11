@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how corporate video companies contribute to sustainability efforts. Insights, innovative strategies, and industry trends.">
+    <title>Sustainability Insights: Role of Corporate Video Companies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .video {
+            display: none;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Insights into Sustainability</h1>
+        <p>Corporate video companies play a vital role in promoting sustainability through engaging storytelling, visual education, and brand advocacy. By showcasing eco-friendly practices, they help organizations connect with audiences while emphasizing their commitment to social responsibility.</p>
+        <p>Innovative strategies such as interviews with sustainability experts, case studies, and animated explanations enhance the understanding of environmental issues.</p>
+        <button id="toggleVideo">Watch Video Insights</button>
+        <div class="video" id="videoContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleVideo').onclick = function() {
+            var video = document.getElementById('videoContainer');
+            if (video.style.display === 'none' || video.style.display === '') {
+                video.style.display = 'block';
+                this.innerText = 'Hide Video Insights';
+            } else {
+                video.style.display = 'none';
+                this.innerText = 'Watch Video Insights';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Google Enhances Interface with Interactive News Feature">
+    <meta name="keywords" content="blog news, Google update, interactive content, interface design, user engagement">
+    <title>Google Adds Interactive News Feature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .article {
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            width: 50%;
+        }
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content p {
+            line-height: 1.6;
+            font-size: 18px;
+        }
+        .cta {
+            background-color: #3498db;
+            color: #ffffff;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.article .interact').click(function() {
+                $(this).next('.popup').slideToggle();
+            });
+            $('.popup .close').click(function() {
+                $('.popup').slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="article">
+            <h1>Google's Latest Interface Update: Interactive News Feature</h1>
+            <p>Recently, Google has rolled out a new addition to its interface, enhancing user experience with an interactive content feature designed to better cater to readers seeking engaging updates and news. This feature allows users to delve deeper into stories by triggering relevant pop-ups with a simple click,

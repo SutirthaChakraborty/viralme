@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statwolf Case Study: Driving Leads with Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            width: 70%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+        .content.active {
+            display: block;
+        }
+        .sidebar button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .sidebar button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Statwolf Case Study: Driving Leads with Content</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Topics</h2>
+            <button onclick="showContent('overview')">Overview</button>
+            <button onclick="showContent('strategy')">Content Strategy</button>
+            <button onclick="showContent('results')">Results</button>
+        </div>
+        <div class="content" id="overview">
+            <h2>Overview</h2>
+            <p>Statwolf, a Dublin-based data analytics SaaS business, implemented a long-term inbound marketing strategy to enhance brand awareness and drive lead generation.</p>
+        </div>
+        <div class="content" id="strategy">
+            <h2>Content Strategy</h2>
+            <p>The strategy included blogging, social media, email marketing, and premium content assets, aligning marketing and sales teams effectively.</p>
+        </div>
+        <div class="content" id="results">
+            <h2>Results</h2>
+            <p>This approach led to a remarkable 310% increase in leads, showcasing the power of effective content marketing.</p>
+        </div>
+    </div>
+    <script>
+        function showContent(topic) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(topic).classList.add('active');
+        }
+    </script>
+</body>
+</html>

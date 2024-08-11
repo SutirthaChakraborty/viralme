@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .content {
+            margin: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #28A745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Email Marketing Challenge: Creating Relevant Content</h1>
+    </header>
+    <div class="content">
+        <h2>The Importance of Relevant Content</h2>
+        <p>In <span class="keyword">email marketing</span>, crafting <span class="keyword">relevant content</span> is key to engaging your audience. It boosts <span class="keyword">open rates</span> and <span class="keyword">click-through rates</span>, ultimately enhancing <span class="keyword">conversion rates</span>.</p>
+        <button onclick="showTips()">Click for Tips</button>
+        <div id="tips" style="display:none;">
+            <h3>Tips for Creating Relevant Email Content</h3>
+            <ul>
+                <li>Segment your audience effectively.</li>
+                <li>Use clear, concise subject lines.</li>
+                <li>Personalize your messages based on user behavior.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Email Marketing Insights</p>
+    </footer>
+    <script>
+        function showTips() {
+            var tipsDiv = document.getElementById("tips");
+            if (tipsDiv.style.display === "none") {
+                tipsDiv.style.display = "block";
+            } else {
+                tipsDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

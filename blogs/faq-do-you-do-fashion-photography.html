@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQ on fashion photography services, tips, and insights into the world of fashion photography.">
+    <title>FAQ - Fashion Photography Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .faq {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #ccc;
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Photography FAQ</h1>
+</header>
+
+<div class="faq">
+    <div class="question">Do you do fashion photography?</div>
+    <div class="answer">Yes, we specialize in fashion photography, offering services for editorial shoots, lookbooks, and personal branding. Our portfolio showcases diverse styles and creativity to meet the fashion industry's needs.</div>
+
+    <div class="question">What should I wear for a fashion shoot?</div>
+    <div class="answer">Choose outfits that reflect your style and the concept of the shoot. Bold colors and unique patterns often stand out well on camera.</div>
+
+    <div class="question">How do you prepare for a fashion shoot?</div>
+    <div class="answer">Preparation involves wardrobe selection, location scouting, and mood boarding. We collaborate with clients to ensure a clear vision.</div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

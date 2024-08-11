@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understanding the consequences of running red lights, traffic safety tips, and legal implications.">
+    <title>Breaking Red Lights: Traffic Safety Awareness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #e63946;
+            color: white;
+            padding: 10px 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .highlight {
+            color: #f1fa8c;
+            font-weight: bold;
+        }
+        #toggleInfo {
+            cursor: pointer;
+            color: #1d3557;
+            text-decoration: underline;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            border: 1px solid #1d3557;
+            padding: 10px;
+            background-color: #a8dadc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Breaking Red Lights: A Dangerous Mistake</h1>
+    </header>
+    <section>
+        <h2>Consequences of Running Red Lights</h2>
+        <p>Breaking a red light can lead to severe accidents, injuring drivers, passengers, and pedestrians. The <span class="highlight">legal penalties</span> include hefty fines and increased insurance premiums.</p>
+        <p id="toggleInfo">Click here to learn more... </p>
+        <div class="info" id="moreInfo">
+            <p>In fact, nearly <span class="highlight">50% of traffic accidents</span> involve red-light running incidents. Always stop at red lights to ensure your safety and the safety of others.</p>
+            <p>In many jurisdictions, running a red light is classified as a serious traffic violation. Convictions can lead to points on your driver's record, affecting your driving privileges.</p>
+        </div>
+    </section>
+    <script>
+        document.getElementById("toggleInfo").onclick = function() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

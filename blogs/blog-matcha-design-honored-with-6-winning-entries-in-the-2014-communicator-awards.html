@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Design - 2014 Communicator Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .awards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .award {
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 30%;
+            transition: transform 0.2s;
+        }
+        .award:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matcha Design - 2014 Communicator Awards</h1>
+</header>
+
+<section>
+    <h2>Celebrating Excellence in Design</h2>
+    <p>Matcha Design was honored with **6 winning entries** in the prestigious **2014 Communicator Awards**, recognizing outstanding achievements in communication and design.</p>
+</section>
+
+<section>
+    <h2>Award Categories</h2>
+    <div class="awards">
+        <div class="award">
+            <h3>Web Design</h3>
+            <p>Innovative web design that enhances user experience.</p>
+        </div>
+        <div class="award">
+            <h3>Branding</h3>
+            <p>Creative branding solutions that resonate with audiences.</p>
+        </div>
+        <div class="award">
+            <h3>Interactive Media</h3>
+            <p>Engaging interactive media that captivates users.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Matcha Design. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.award').forEach(award => {
+        award.addEventListener('click', () => {
+            alert('You clicked on ' + award.querySelector('h3').innerText);
+        });
+    });
+</script>
+
+</body>
+</html>

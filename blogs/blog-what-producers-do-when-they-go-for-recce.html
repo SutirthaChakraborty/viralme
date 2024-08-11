@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover what producers do during a recce, including planning, location scouting, and collaborating with the creative team.">
+    <title>Producers and Recce: Behind the Scenes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keywords {
+            font-size: 0.9em;
+            color: #555;
+            margin: 10px 0;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Producers on Recce</h1>
+</header>
+<div class="content">
+    <h2>What Do Producers Do When They Go for Recce?</h2>
+    <p>Producers play a critical role in the preparation of film and television projects. During a recce (reconnaissance), they scout locations, assess logistics, and collaborate with directors and cinematographers. The recce ensures that the creative vision is aligned with practical execution.</p>
+    <p class="keywords">Keywords: Recce, Location Scouting, Film Production, Site Visit, Collaboration, Logistics, Creative Team</p>
+    <button id="revealDetails">Learn More</button>
+    <p id="moreInfo" style="display:none;">During a recce, producers: <ul>
+        <li>Identify potential filming locations.</li>
+        <li>Evaluate the accessibility and feasibility of each site.</li>
+        <li>Discuss budget constraints and resource allocation.</li>
+        <li>Coordinate with local authorities for permits.</li>
+        <li>Consider safety and security measures for the cast and crew.</li></ul>
+    </p>
+</div>
+<script>
+    document.getElementById('revealDetails').onclick = function() {
+        var moreInfo = document.getElementById('moreInfo');
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+            this.innerText = "Show Less";
+        } else {
+            moreInfo.style.display = "none";
+            this.innerText = "Learn More";
+        }
+    };
+</script>
+</body>
+</html>

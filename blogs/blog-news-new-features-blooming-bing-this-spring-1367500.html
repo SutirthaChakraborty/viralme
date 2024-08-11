@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Blog News: New Features and Blooming Stories</title>
+    <style>
+        /* Use relevant keywords in CSS class names */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F5F8FA;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #343A40;
+        }
+        
+        .blog-container {
+            background-image: url('春季风景.jpg'); /* Use a relevant image URL */
+            background-size: cover;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 960px;
+            height: auto;
+        }
+        
+        .blog-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .blog-post-title {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        .blog-post-content {
+            line-height: 1.6;
+        }
+        
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 1.5rem;
+        }
+        
+        .feature-item {
+            width: 45%;
+            padding: 1rem;
+        }
+        
+        .feature-item-title {
+            font-size: 18px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-item-description {
+            color: #6C757D;
+        }
+        
+        .btn-container {
+            text-align: center;
+        }
+    </style>
+    <script>
+        // Add interactive functionality using vanilla JavaScript
+        function highlightArticle() {
+            var articles = document.getElementsByClassName("blog-post-title");
+            for (var i = 0; i < articles.length; i++) {
+                articles[i].addEventListener("mouseover", function() {
+                    this.style.textDecoration = "underline";
+                });
+                articles[i].addEventListener("mouseout", function()

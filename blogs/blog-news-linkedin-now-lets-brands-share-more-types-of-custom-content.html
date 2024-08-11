@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Brand Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0077b5;
+            color: white;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #0077b5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005582;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exciting LinkedIn Update for Brands!</h1>
+    <p>Share Custom Content Like Never Before!</p>
+</header>
+
+<article>
+    <h2>What's New?</h2>
+    <p>LinkedIn now allows brands to share various types of custom content, enhancing engagement and visibility. Brands can leverage multiple forms of content, including blog posts, articles, and multimedia, to connect with their audience more effectively.</p>
+    <button onclick="showMoreInfo()">Learn More</button>
+    <p id="moreInfo" style="display:none;">With this update, businesses can improve their brand storytelling and establish stronger connections with their target audience. Utilize hashtags, engaging visuals, and interactive polls to boost reach and encourage discussions.</p>
+</article>
+
+<script>
+    function showMoreInfo() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

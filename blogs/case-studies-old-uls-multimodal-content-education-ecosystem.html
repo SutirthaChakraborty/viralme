@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies: Old ULS Multimodal Content Education Ecosystem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        #sidebar {
+            width: 25%;
+            background: #333;
+            color: white;
+            padding: 15px;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        #sidebar h2 {
+            color: #f4f4f4;
+        }
+        #sidebar a {
+            color: #f4f4f4;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        #sidebar a:hover {
+            text-decoration: underline;
+        }
+        #content {
+            width: 75%;
+            padding: 20px;
+        }
+        #content h1 {
+            color: #333;
+        }
+        .case-study {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div id="sidebar">
+    <h2>Topics</h2>
+    <a href="#" onclick="showContent('study1')">Case Study 1: ULS Implementation</a>
+    <a href="#" onclick="showContent('study2')">Case Study 2: Multimodal Learning</a>
+    <a href="#" onclick="showContent('study3')">Case Study 3: Educational Ecosystem</a>
+</div>
+
+<div id="content">
+    <h1>Case Studies on Old ULS Multimodal Content Education Ecosystem</h1>
+    <div id="case-study-content">
+        <div class="case-study" id="study1" style="display:none;">
+            <h2>Case Study 1: ULS Implementation</h2>
+            <p>This study explores the implementation of the Old ULS in educational settings, focusing on its impact on student engagement and learning outcomes.</p>
+        </div>
+        <div class="case-study" id="study2" style="display:none;">
+            <h2>Case Study 2: Multimodal Learning</h2>
+            <p>This case study examines how multimodal content enhances learning experiences by catering to diverse learning styles.</p>
+        </div>
+        <div class="case-study" id="study3" style="display:none;">
+            <h2>Case Study 3: Educational Ecosystem</h2>
+            <p>Analyzing the Old ULS as part of a broader educational ecosystem, this study highlights its role in fostering collaborative learning environments.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showContent(studyId) {
+        const studies = document.querySelectorAll('.case-study');
+        studies.forEach(study => {
+            study.style.display = 'none';
+        });
+        document.getElementById(studyId).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google's Fight Against Spam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d0e7ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google's Efforts to Keep the Internet Spam-Free</h1>
+    </header>
+    <article>
+        <h2>Understanding Google's Anti-Spam Measures</h2>
+        <p>Google employs a variety of techniques to combat spam across its platforms, ensuring a safer and more reliable internet experience for users. These measures include advanced algorithms, machine learning, and community reporting systems.</p>
+        <div class="interactive" onclick="showMoreInfo()">Click here to learn more about Google's spam detection technology!</div>
+        <p id="moreInfo" style="display:none;">Google's spam detection technology utilizes AI to analyze patterns and behaviors associated with spam. This includes monitoring user feedback and continuously updating its algorithms to adapt to new spam tactics.</p>
+    </article>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

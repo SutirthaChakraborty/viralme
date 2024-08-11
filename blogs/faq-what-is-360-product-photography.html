@@ -1,0 +1,55 @@
+#### HTML Code with CSS for 360 Product Photography
+
+Below is a small HTML code with CSS to create a simple 360 product photography viewer. This code will allow users to interactively view a product from all angles.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>360 Product Photography Viewer</title>
+  <style>
+    /* CSS for 360 Product Viewer */
+    .product-container {
+      width: 400px;
+      height: 400px;
+      perspective: 1000px;
+    }
+    .product-image {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product-container:hover .product-image {
+      transform: rotateY(360deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="product-container">
+    <div class="product-image">
+      <img src="image1.jpg" alt="Product Image">
+    </div>
+  </div>
+</body>
+</html>
+
+
+#### Explanation
+The provided HTML and CSS code creates a simple 360 product photography viewer. When a user hovers over the product image, it rotates 360 degrees, allowing them to view the product from all angles.
+
+This code utilizes CSS to define the container and image properties, enabling the interactive 360-degree viewing experience. The `perspective` property creates a 3D space for transforming the product image, and the `transform` property enables the rotation effect when the user hovers over the image.
+
+This code snippet is a basic example of how HTML and CSS can be used to implement a 360 product photography viewer on a web page.
+
+For more advanced features and functionalities, additional JavaScript and libraries may be required, depending on the specific requirements of the project.
+
+**Keywords**: 360 product photography, HTML, CSS, interactive product viewer, 3D product images, product rotation, 360-degree view, product customization, product configuration, 3D-rendered images, interactive tools, e-commerce design, product animations, 360-degree viewer, JavaScript, web development.

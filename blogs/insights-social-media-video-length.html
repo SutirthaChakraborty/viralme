@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover insights on social media video length for optimal engagement.">
+    <meta name="keywords" content="social media, video length, engagement, marketing, video strategy">
+    <title>Insights on Social Media Video Length</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #3b5998;
+            color: white;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .video-length {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #e6e6e6;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .tips {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Media Video Length Insights</h1>
+    </header>
+    <div class="content">
+        <h2>Optimal Video Lengths</h2>
+        <div class="video-length" onclick="toggleTips('tips1')">Instagram: 30 seconds</div>
+        <div id="tips1" class="tips">Shorter videos (up to 30 seconds) tend to perform better on Instagram, maximizing engagement.</div>
+        
+        <div class="video-length" onclick="toggleTips('tips2')">TikTok: 15-60 seconds</div>
+        <div id="tips2" class="tips">Videos that are engaging within the first few seconds can keep viewer attention.</div>
+        
+        <div class="video-length" onclick="toggleTips('tips3')">YouTube: 7-15 minutes</div>
+        <div id="tips3" class="tips">Longer, detailed videos tend to rank better and retain viewers longer on YouTube.</div>
+        
+        <div class="video-length" onclick="toggleTips('tips4')">Facebook: 1-2 minutes</div>
+        <div id="tips4" class="tips">Concise videos promote better sharing and replay rates on Facebook.</div>
+    </div>
+    <script>
+        function toggleTips(tipId) {
+            var tips = document.getElementById(tipId);
+            if (tips.style.display === "none" || tips.style.display === "") {
+                tips.style.display = "block";
+            } else {
+                tips.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

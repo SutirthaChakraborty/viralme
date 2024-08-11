@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Blog Legacy Content Questionnaire by Sara Jacobi at Northeastern College for Professional Studies. A framework for assessing the relevance and impact of legacy content.">
+    <title>Blog Legacy Content Questionnaire | Sara Jacobi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .questionnaire {
+            margin-top: 20px;
+        }
+        .question {
+            margin: 15px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Legacy Content Questionnaire</h1>
+        <h2>By Sara Jacobi | Northeastern College Professional Studies</h2>
+        <p>This questionnaire aims to help content creators assess the value of their legacy content. Engaging with your audience, understanding their needs, and refining your content strategy is essential. Below, you can explore key questions to evaluate your legacy content effectively.</p>
+        
+        <div class="questionnaire">
+            <div class="question">
+                <label for="question1">1. How relevant is the content to current audience needs?</label><br>
+                <input type="text" id="question1" placeholder="Your answer">
+            </div>
+            <div class="question">
+                <label for="question2">2. What feedback have you received on this content over time?</label><br>
+                <input type="text" id="question2" placeholder="Your answer">
+            </div>
+            <div class="question">
+                <label for="question3">3. How has the content performed in terms of views and engagement?</label><br>
+                <input type="text" id="question3" placeholder="Your answer">
+            </div>
+            <button onclick="submitQuestionnaire()">Submit</button>
+        </div>
+
+        <p id="response" style="margin-top: 20px; color: green;"></p>
+    </div>
+
+    <script>
+        function submitQuestionnaire() {
+            const question1 = document.getElementById('question1').value;
+            const question2 = document.getElementById('question2').value;
+            const question3 = document.getElementById('question3').value;
+            const responseMessage = `Thank you for your responses! 
+                1. Relevance: ${question1}
+                2. Feedback: ${question2}
+                3. Performance: ${question3}`;
+            document.getElementById('response').innerText = responseMessage;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Message Writing in the 21st Century Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy: Message Writing in the 21st Century Web</h1>
+</header>
+
+<article>
+    <h2>The Evolution of Communication</h2>
+    <p>
+        In the 21st century, digital communication has reshaped how we write and share messages. From social media to personal blogs, the way we express thoughts has transformed significantly.
+    </p>
+    <button id="interactiveBtn">Learn More</button>
+    <p id="moreContent" style="display: none;">
+        Emphasizing brevity and clarity, effective writing in today's online space requires engaging hooks and persuasive imagery, adapting communication styles to diverse audiences across platforms.
+    </p>
+</article>
+
+<script>
+    document.getElementById("interactiveBtn").onclick = function() {
+        var content = document.getElementById("moreContent");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>

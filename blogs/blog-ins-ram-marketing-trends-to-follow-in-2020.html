@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top RAM Marketing Trends to Follow in 2020</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .trend {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .trend:hover {
+            background: #e8f0fe;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>RAM Marketing Trends to Follow in 2020</h1>
+</header>
+
+<section>
+    <div class="trend" onclick="showTrend('1')">
+        1. Micro-Influencer Collaborations
+    </div>
+    <div class="trend" onclick="showTrend('2')">
+        2. Data-Driven Personalization
+    </div>
+    <div class="trend" onclick="showTrend('3')">
+        3. Video Marketing Dominance
+    </div>
+    <div class="trend" onclick="showTrend('4')">
+        4. Interactive Content
+    </div>
+    <div class="trend" onclick="showTrend('5')">
+        5. AI and Chatbots
+    </div>
+
+    <div id="trendDetail" style="margin-top: 20px;"></div>
+</section>
+
+<script>
+    function showTrend(trendId) {
+        const trendDetails = {
+            '1': 'Micro-influencers have become essential in marketing strategies, offering brands authentic connections with niche audiences.',
+            '2': 'Using AI and analytics, brands can create personalized experiences for customers, enhancing engagement and conversion rates.',
+            '3': 'Video content continues to grow, with live streaming and short-form videos capturing audience attention more effectively than traditional formats.',
+            '4': 'Interactive content engages users more deeply, leading to higher sharing rates and brand loyalty.',
+            '5': 'Chatbots and AI streamline customer service, offering personalized responses and 24/7 availability.'
+        };
+        document.getElementById('trendDetail').innerHTML = `<strong>Trend Detail:</strong> ${trendDetails[trendId]}`;
+    }
+</script>
+
+</body>
+</html>

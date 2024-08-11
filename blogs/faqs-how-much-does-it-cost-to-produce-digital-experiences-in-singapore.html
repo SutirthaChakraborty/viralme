@@ -1,0 +1,56 @@
+Here's a simple HTML code with CSS and a basic JavaScript explanation for the topic "FAQs: Cost of Producing Digital Experiences in Singapore". The keywords have been included to improve search visibility. The interactive CSS is achieved using hover effects, and the JavaScript provides a toggle to show/hide more detailed explanations.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="FAQs on the cost of producing digital experiences in Singapore - keywords: digital experiences, cost, Singapore, production">
+    <title>Cost of Digital Experiences in Singapore</title>
+    <style>
+        .faq-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .faq-item {
+            width: calc(33.33% - 1rem);
+            margin: 1rem;
+            padding: 1rem 0;
+            box-sizing: border-box;
+        }
+        
+        .faq-item:hover .more {
+            display: block;
+        }
+        
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .more {
+            display: none;
+            margin-top: 0.5rem;
+        }
+    </style>
+    <script>
+        function toggleDetails(qId) {
+            var more = document.getElementById(qId + "-more");
+            more.style.display = more.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <h2>FAQs: Cost of Producing Digital Experiences in Singapore</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question" onclick="toggleDetails('q1')">1. How much does it cost to create a basic website?</div>
+            <div id="q1-more" class="more">
+                <p>The cost can range from $500 to $5,000, depending on the complexity and features needed.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleDetails('q2')">2. How about mobile app development?</div>
+            <div id="q2-more" class="more">
+                <p>App development can cost from $10,000 to $50,000 or more, depending on platform (iOS

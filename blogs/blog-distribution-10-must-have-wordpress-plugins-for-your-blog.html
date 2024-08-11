@@ -1,0 +1,87 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  padding: 15px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plugin-list {
+  list-style: none;
+  padding: 0;
+}
+
+.plugin-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.plugin-item h3 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.plugin-item p {
+  margin: 5px 0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+</style>
+<script>
+// JavaScript to toggle plugin details on click
+function toggleDetails(id) {
+  var element = document.getElementById(id);
+  if (element.style.display === 'none') {
+    element.style.display = 'block';
+  } else {
+    element.style.display = 'none';
+  }
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="title">
+    <h1>10 Must-Have WordPress Plugins for Enhanced Blog Distribution</h1>
+  </div>
+  <ul class="plugin-list">
+    <li class="plugin-item" id="plugin1">
+      <h3><a href="#plugin-details-1" onclick="return toggleDetails('plugin-details-1')">Yoast SEO</a></h3>
+      <p>Improve SEO with detailed analysis and adaptable content</p>
+      <div class="plugin-details" style="display:none;">
+        (<

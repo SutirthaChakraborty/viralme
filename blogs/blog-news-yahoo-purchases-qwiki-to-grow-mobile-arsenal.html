@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yahoo acquires Qwiki to enhance mobile capabilities and streamline content delivery. Explore the future of mobile news.">
+    <title>Yahoo Acquires Qwiki - Boosting Mobile Arsenal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #0078d7;
+        }
+        button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yahoo's Strategic Move: Acquiring Qwiki</h1>
+    </header>
+    <article>
+        <h2>Understanding the Acquisition</h2>
+        <p>In a bold step to expand its mobile arsenal, Yahoo has announced the acquisition of Qwiki, a multimedia platform known for its innovative approach to content delivery.</p>
+        <h2>Implications for Mobile Users</h2>
+        <p>This acquisition aims to enhance user experience by providing engaging and summarized content, catering to the growing demand for mobile news consumption.</p>
+        <button id="moreInfo">Learn More</button>
+        <div id="additionalInfo" style="display:none;">
+            <p>Qwiki's technology allows for quick access to relevant news, integrating visuals and concise summaries, which will significantly contribute to Yahoo's mobile news offerings.</p>
+        </div>
+    </article>
+    <script>
+        document.getElementById('moreInfo').onclick = function() {
+            var additionalInfo = document.getElementById('additionalInfo');
+            if (additionalInfo.style.display === "none") {
+                additionalInfo.style.display = "block";
+                this.innerText = "Show Less";
+            } else {
+                additionalInfo.style.display = "none";
+                this.innerText = "Learn More";
+            }
+        };
+    </script>
+</body>
+</html>

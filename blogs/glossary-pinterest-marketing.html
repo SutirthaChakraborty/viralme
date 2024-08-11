@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Marketing Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        h1 {
+            color: #bd081c;
+        }
+        .term {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            transition: 0.3s;
+        }
+        .term:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.02);
+        }
+        .definition {
+            display: none;
+            margin-top: 5px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #0077cc;
+        }
+        .toggle:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pinterest Marketing Glossary</h1>
+    <div class="term">
+        <span class="toggle">Pin</span>: <span class="definition">A saved image or video that is shared on Pinterest.</span>
+    </div>
+    <div class="term">
+        <span class="toggle">Board</span>: <span class="definition">A collection of Pins organized around a specific theme or topic.</span>
+    </div>
+    <div class="term">
+        <span class="toggle">Rich Pin</span>: <span class="definition">A type of Pin that includes extra information directly on the Pin itself.</span>
+    </div>
+    <div class="term">
+        <span class="toggle">Pinterest SEO</span>: <span class="definition">The process of optimizing Pins and Boards to improve visibility in search results.</span>
+    </div>
+    <div class="term">
+        <span class="toggle">Impressions</span>: <span class="definition">The number of times Pins are viewed in the Pinterest feed.</span>
+    </div>
+    <div class="term">
+        <span class="toggle">Engagement</span>: <span class="definition">The total actions taken on your Pin, including saves, clicks, and comments.</span>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const definition = toggle.nextElementSibling;
+                definition.style.display = definition.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

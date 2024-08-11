@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Creation - Holiday GIF Resource</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gif-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gif {
+            margin: 10px;
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .gif:hover {
+            transform: scale(1.05);
+        }
+        .gif img {
+            max-width: 100%;
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Unique Holiday GIF Resource Page!</h1>
+</header>
+
+<div class="content">
+    <h2>Blog Creation Tips</h2>
+    <p>Creating a blog is a fantastic way to share your thoughts and experiences. Here are some essential tips:</p>
+    <ul>
+        <li>Choose a niche that you are passionate about.</li>
+        <li>Use engaging visuals to attract readers.</li>
+        <li>Optimize your content with relevant keywords for better reach.</li>
+        <li>Regularly update your blog to keep your audience engaged.</li>
+    </ul>
+
+    <h2>Explore Our GIF Collection</h2>
+    <div class="gif-container">
+        <div class="gif">
+            <img src="holiday1.gif" alt="Holiday GIF 1">
+        </div>
+        <div class="gif">
+            <img src="holiday2.gif" alt="Holiday GIF 2">
+        </div>
+        <div class="gif">
+            <img src="holiday3.gif" alt="Holiday GIF 3">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Holiday GIF Resource. All rights reserved.</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.gif').forEach(gif => {
+        gif.addEventListener('click', () => {
+            alert('You clicked on a GIF!');
+        });
+    });
+</script>
+
+</body>
+</html>

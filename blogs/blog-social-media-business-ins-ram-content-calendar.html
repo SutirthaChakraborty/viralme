@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Business Blog | Instagram Content Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #3b5998;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+        .day {
+            background: #e6e6e6;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .day:hover {
+            background: #b3b3b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Instagram Content Calendar for Social Media Businesses</h1>
+</header>
+
+<section>
+    <h2>Why a Content Calendar?</h2>
+    <p>A well-planned content calendar helps you manage your social media strategy effectively. It aids in scheduling posts, maintaining consistency, and tracking engagement. Use it to boost your business's online presence.</p>
+</section>
+
+<section>
+    <h2>Instagram Content Calendar</h2>
+    <div class="calendar">
+        <div class="day" onclick="alert('Post Idea: Motivational Monday!')">Mon</div>
+        <div class="day" onclick="alert('Post Idea: Tip Tuesday!')">Tue</div>
+        <div class="day" onclick="alert('Post Idea: Work Wednesday!')">Wed</div>
+        <div class="day" onclick="alert('Post Idea: Throwback Thursday!')">Thu</div>
+        <div class="day" onclick="alert('Post Idea: Feature Friday!')">Fri</div>
+        <div class="day" onclick="alert('Post Idea: Social Saturday!')">Sat</div>
+        <div class="day" onclick="alert('Post Idea: Self-care Sunday!')">Sun</div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2023 Social Media Business Blog. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.day').forEach(function(day) {
+        day.addEventListener('click', function() {
+            alert('You clicked on ' + this.innerText);
+        });
+    });
+</script>
+
+</body>
+</html>

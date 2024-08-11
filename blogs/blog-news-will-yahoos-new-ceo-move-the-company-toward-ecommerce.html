@@ -1,0 +1,65 @@
+Here's a simple HTML block with inline CSS and JavaScript to showcase a brief blog post on Yahoo's new CEO and its potential impact on ecommerce. The keywords have been included in the content for better search visibility.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yahoo's New CEO and the Ecommerce Future – Insights from an Industry Leader">
+    <meta name="keywords" content="Yahoo, new CEO, ecommerce, strategy, retail, EaaS, online marketplace">
+    <title>Yahoo's New CEO: Shaping the Ecommerce Direction</title>
+    <style>
+        .blog-post {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .image {
+            width: 30%;
+            margin-right: 20px;
+        }
+        .description {
+            width: 65%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+    <script>
+        function highlightKeywords() {
+            document.querySelectorAll('p').forEach(paragraph => {
+                ['Yahoo', 'new CEO', 'ecommerce', 'strategy', 'retail', 'EaaS', 'online marketplace'].forEach(keyword => {
+                    const matches = paragraph.innerText.match(new RegExp(keyword, 'gi'));
+                    if (matches) {
+                        matches.forEach(match => {
+                            paragraph.innerHTML = paragraph.innerHTML.replace(match, `<span class="keyword">${match}</span>`);
+                        });
+                    }
+                });
+            });
+        }
+    </script>
+</head>
+<body onload="highlightKeywords()">
+    <div class="blog-post">
+        <h1>Yahoo's New CEO: A New Ecommerce

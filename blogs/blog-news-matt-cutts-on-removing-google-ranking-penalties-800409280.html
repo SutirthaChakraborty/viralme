@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Cutts on Google Ranking Penalties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #e8491d;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #e8491d;
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Matt Cutts Discusses Google Ranking Penalties</h1>
+    </header>
+    <article>
+        <h2>Understanding Google Penalties</h2>
+        <p>In a recent blog post, <span class="keywords">Matt Cutts</span> addressed the misconceptions surrounding <span class="keywords">Google ranking penalties</span>. Many website owners fear penalties without understanding the underlying reasons.</p>
+        <span class="toggle" onclick="toggleContent()">Read More</span>
+        <div id="moreInfo" class="hidden">
+            <h3>Types of Penalties</h3>
+            <p>Matt emphasized two main types: <span class="keywords">algorithmic penalties</span> and <span class="keywords">manual actions</span>. While algorithmic penalties are automated, manual actions require user intervention.</p>
+        </div>
+    </article>
+    <footer>
+        <p>&copy; 2023 Blog News | Follow us for more insights!</p>
+    </footer>
+    <script>
+        function toggleContent() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.classList.contains("hidden")) {
+                moreInfo.classList.remove("hidden");
+            } else {
+                moreInfo.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irish Life Pension Portal Case Studies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #004B87;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .case-study {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .case-study:hover {
+            transform: scale(1.02);
+        }
+        .btn {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Irish Life Pension Portal Case Studies</h1>
+</header>
+
+<section>
+    <div class="case-study">
+        <h2>Case Study 1: Enhanced User Experience</h2>
+        <p>Learn how Irish Life revamped its pension portal to provide an intuitive user experience, improving customer satisfaction.</p>
+        <button class="btn" onclick="toggleDetails('detail1')">Read More</button>
+        <div id="detail1" style="display:none;">
+            <p>Through user testing and feedback, the portal's navigation was optimized, resulting in a 40% increase in user engagement.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2>Case Study 2: Mobile Accessibility</h2>
+        <p>Discover how Irish Life made their pension portal mobile-friendly, catering to the growing number of on-the-go users.</p>
+        <button class="btn" onclick="toggleDetails('detail2')">Read More</button>
+        <div id="detail2" style="display:none;">
+            <p>The mobile optimization led to a 50% increase in access from smartphones, enhancing customer interaction.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2>Case Study 3: Comprehensive Resource Center</h2>
+        <p>Explore how the addition of a resource center informed users about pension options, retirement plans, and investment strategies.</p>
+        <button class="btn" onclick="toggleDetails('detail3')">Read More</button>
+        <div id="detail3" style="display:none;">
+            <p>This resource initiative increased user retention by 30%, fostering long-term relationships with clients.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Irish Life. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function toggleDetails(detailId) {
+        const detail = document.getElementById(detailId);
+        detail.style.display = (detail.style.display === 'none' || detail.style.display === '') ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

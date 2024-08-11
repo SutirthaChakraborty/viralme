@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brafton's community outreach initiatives for Typhoon Haiyan relief, leveraging baking for charity.">
+    <title>Brafton's Community Outreach: Baking for Typhoon Haiyan Relief</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        .content {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        .reveal {
+            margin-top: 20px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brafton's Community Outreach: Baking for Typhoon Haiyan Relief</h1>
+    </header>
+    <div class="content">
+        <p>Join us in our charitable initiative to support Typhoon Haiyan relief through baking! Our community outreach program aims to raise funds and awareness about the ongoing impact of Typhoon Haiyan.</p>
+        <p>By utilizing baking as a catalyst for change, we engage local donors and volunteers to contribute to this noble cause. Every cupcake and cookie sold helps us provide essential aid to those affected by the disaster.</p>
+        <button id="infoButton">Learn More</button>
+        <div id="info" class="hidden reveal">
+            <p>Our programs include baking workshops, charity bake sales, and educational sessions on the importance of community support during crises. Join us in making a difference!</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('infoButton').onclick = function() {
+            var infoDiv = document.getElementById('info');
+            if (infoDiv.classList.contains('hidden')) {
+                infoDiv.classList.remove('hidden');
+                this.textContent = "Show Less";
+            } else {
+                infoDiv.classList.add('hidden');
+                this.textContent = "Learn More";
+            }
+        }
+    </script>
+</body>
+</html>

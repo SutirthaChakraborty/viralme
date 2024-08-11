@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore entertaining blog news and captivating stories that leave lasting impressions. Discover key content for memorable experiences.">
+    <title>Blog News & Entertaining Stories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3e8e41;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .story {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        button {
+            background-color: #3e8e41; 
+            color: white; 
+            border: none; 
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2e6b31;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News & Entertaining Stories</h1>
+</header>
+
+<div class="container">
+    <h2>Latest Stories</h2>
+    <div class="story" id="story1">
+        <h3>The Art of Memorable Content</h3>
+        <p>Discover techniques to create engaging and memorable stories that captivate your audience.</p>
+        <button onclick="revealMore('content1')">Read More</button>
+        <div id="content1" style="display:none;">
+            <p>Memorable content relies on storytelling, emotional resonance, and user engagement. Explore how different formats can enhance your message!</p>
+        </div>
+    </div>
+    <div class="story" id="story2">
+        <h3>Top Entertaining News of the Week</h3>
+        <p>Stay updated with the most entertaining news that sparks joy and conversation.</p>
+        <button onclick="revealMore('content2')">Read More</button>
+        <div id="content2" style="display:none;">
+            <p>This week's highlights include viral videos, amusing anecdotes, and heartwarming stories that keep the world entertained!</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function revealMore(contentId) {
+        var content = document.getElementById(contentId);
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

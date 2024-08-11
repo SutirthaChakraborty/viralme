@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measuring the Value of Social Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Measuring Social Content Value</h1>
+    </header>
+    <section>
+        <h2>Why It Matters</h2>
+        <p>Measuring the value of social content is a top concern among marketers. With the rise of digital marketing, understanding how social media impacts brand awareness and customer engagement is crucial.</p>
+    </section>
+    <section>
+        <h2>Key Metrics</h2>
+        <p>Marketers focus on metrics such as engagement rates, reach, and conversion rates to evaluate the effectiveness of their social media strategies.</p>
+    </section>
+    <div class="interactive">
+        <h3>Interactive Metric Calculator</h3>
+        <p>Click the button below to calculate your engagement rate!</p>
+        <input type="number" id="likes" placeholder="Likes" />
+        <input type="number" id="comments" placeholder="Comments" />
+        <input type="number" id="shares" placeholder="Shares" />
+        <button onclick="calculateEngagement()">Calculate Engagement Rate</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        function calculateEngagement() {
+            const likes = parseInt(document.getElementById('likes').value) || 0;
+            const comments = parseInt(document.getElementById('comments').value) || 0;
+            const shares = parseInt(document.getElementById('shares').value) || 0;
+            const totalEngagement = likes + comments + shares;
+            const engagementRate = totalEngagement > 0 ? (totalEngagement / 100) * 100 : 0;
+            document.getElementById('result').innerText = `Your Engagement Rate is: ${engagementRate}%`;
+        }
+    </script>
+</body>
+</html>

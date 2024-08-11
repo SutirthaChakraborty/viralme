@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Marketing Recap - July 2013</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .summary {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keywords {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .toggle-btn {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e2e2;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog Legacy Content Marketing Recap - July 2013</h1>
+    <div class="summary">
+        <p>In July 2013, content marketing evolved, emphasizing SEO, social media strategies, and audience engagement. Brands began focusing on creating evergreen content that drives traffic and boosts lead generation.</p>
+        <div class="keywords">Keywords: Content Marketing, SEO, Evergreen Content, Audience Engagement, Brand Strategy</div>
+    </div>
+    <button class="toggle-btn">Show More Details</button>
+    <div class="details">
+        <p>Key highlights included:</p>
+        <ul>
+            <li>Increased importance of quality over quantity in content creation.</li>
+            <li>Leveraging analytics to understand audience behavior.</li>
+            <li>The rise of visual content like infographics and videos.</li>
+            <li>Integration of social media channels for broader outreach.</li>
+        </ul>
+    </div>
+
+    <script>
+        document.querySelector('.toggle-btn').addEventListener('click', function() {
+            const details = document.querySelector('.details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                this.innerText = 'Show Less Details';
+            } else {
+                details.style.display = 'none';
+                this.innerText = 'Show More Details';
+            }
+        });
+    </script>
+
+</body>
+</html>

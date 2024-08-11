@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the legacy content questionnaire by Mel Carson and Delightful Communications. Discover how to leverage your blog's legacy content for better engagement.">
+    <title>Legacy Content Questionnaire - Mel Carson | Delightful Communications</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .questionnaire {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .question {
+            margin: 10px 0;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Legacy Content Questionnaire</h1>
+    <div class="questionnaire">
+        <p>By Mel Carson and Delightful Communications</p>
+        <div class="question">
+            <strong>1. What is the main purpose of your Blog's legacy content?</strong>
+            <input type="text" id="purpose" placeholder="e.g., Inform, Educate, Entertain">
+        </div>
+        <div class="question">
+            <strong>2. How frequently do you update your legacy content?</strong>
+            <input type="text" id="frequency" placeholder="e.g., Weekly, Monthly, Annually">
+        </div>
+        <div class="question">
+            <strong>3. What strategies do you use to repurpose legacy content?</strong>
+            <input type="text" id="strategies" placeholder="e.g., Social media, Newsletters">
+        </div>
+        <button onclick="submitQuestionnaire()">Submit</button>
+    </div>
+
+    <script>
+        function submitQuestionnaire() {
+            const purpose = document.getElementById('purpose').value;
+            const frequency = document.getElementById('frequency').value;
+            const strategies = document.getElementById('strategies').value;
+
+            if(purpose && frequency && strategies) {
+                alert(`Thank you for your responses!\n\n1. Purpose: ${purpose}\n2. Frequency: ${frequency}\n3. Strategies: ${strategies}`);
+            } else {
+                alert("Please fill in all fields.");
+            }
+        }
+    </script>
+
+</body>
+</html>

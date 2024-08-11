@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Writing: Blog Post Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        .toggle {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .toggle-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #007bff;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Content Writing</h1>
+    <p>Understanding Blog Post Structure</p>
+</header>
+
+<div class="container">
+    <h2>Essential Elements of a Blog Post</h2>
+    <ol>
+        <li>Title: Crafting an Engaging Headline</li>
+        <li>Introduction: Hooking Your Readers</li>
+        <li>Body: Providing Valuable Content</li>
+        <li>Conclusion: Summarizing and Encouraging Engagement</li>
+        <li>Call to Action (CTA): Prompting Reader Interaction</li>
+    </ol>
+
+    <button class="toggle">Learn More About Each Element</button>
+    <div class="toggle-content">
+        <p><strong>Title:</strong> Use keywords for SEO and make it compelling.</p>
+        <p><strong>Introduction:</strong> Start with a question or an interesting fact to grab attention.</p>
+        <p><strong>Body:</strong> Structure your content with headings, bullet points, and images for better readability.</p>
+        <p><strong>Conclusion:</strong> Reinforce your main points and leave the reader with a thought-provoking idea.</p>
+        <p><strong>CTA:</strong> Encourage comments, shares, or further reading to foster engagement.</p>
+    </div>
+</div>
+
+<script>
+    document.querySelector('.toggle').addEventListener('click', function() {
+        const content = document.querySelector('.toggle-content');
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
+
+</body>
+</html>

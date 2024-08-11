@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Steps to Boost Your Blog Traffic: headlines &amp; Keywords</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        .step {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .example {
+            background-color: #f9f9f9;
+            border-left: 5px solid #333;
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+
+        .caption {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+    <script>
+        function highlightKeyword(text, keyword) {
+            const regex = new RegExp(keyword, 'gi');
+            const spans = text.match(regex);
+            spans.forEach((match, index) => {
+                const span = document.createElement('span');
+                span.classList.add('keyword');
+                if (index === 0) {
+                    span.classList.add('first-keyword');
+                }
+                text = text.slice(0, match.index) + span + text.slice(match.index + match.length);
+            });
+            return text;
+        }
+
+        function applyKeywordsToHeadlines() {
+            const headings = document.querySelectorAll('h1');
+            headings.forEach((heading) => {
+                heading.innerHTML = highlightKeyword(heading.innerHTML,

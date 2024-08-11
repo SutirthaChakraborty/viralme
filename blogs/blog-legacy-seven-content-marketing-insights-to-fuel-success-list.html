@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Legacy Seven's top content marketing insights to boost your strategy and fuel success. Discover tips and techniques for effective blogging.">
+    <title>Legacy Seven: Content Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        li:hover {
+            background: #e7f0ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Content Marketing Insights by Legacy Seven</h1>
+    </header>
+    <main>
+        <h2>7 Tips to Fuel Your Content Marketing Success</h2>
+        <ul id="insights-list">
+            <li onclick="showDetail('1')">1. Know Your Audience</li>
+            <li onclick="showDetail('2')">2. Create Valuable Content</li>
+            <li onclick="showDetail('3')">3. Optimize for SEO</li>
+            <li onclick="showDetail('4')">4. Leverage Social Media</li>
+            <li onclick="showDetail('5')">5. Measure and Analyze Performance</li>
+            <li onclick="showDetail('6')">6. Consistency is Key</li>
+            <li onclick="showDetail('7')">7. Adapt and Evolve</li>
+        </ul>
+        <div id="detail" style="margin-top: 20px;"></div>
+    </main>
+    <script>
+        const insights = {
+            '1': 'Understanding your audience is crucial for effective content marketing. Conduct surveys and utilize analytics to pinpoint their needs.',
+            '2': 'Provide genuine value in your content to build trust and loyalty with your audience. Quality should always trump quantity.',
+            '3': 'Utilize SEO best practices by integrating relevant keywords naturally into your content to improve your visibility on search engines.',
+            '4': 'Promote your content across social media platforms to increase engagement and broaden your reach. Engagement is critical for success.',
+            '5': 'Use tools like Google Analytics to track performance metrics. Adjust your strategies based on data-driven insights.',
+            '6': 'Maintain a consistent posting schedule to keep your audience engaged and establish a reliable presence.',
+            '7': 'Stay updated on industry trends and be flexible to change your approach based on new findings or audience feedback.'
+        };
+
+        function showDetail(id) {
+            document.getElementById('detail').innerText = insights[id];
+        }
+    </script>
+</body>
+</html>

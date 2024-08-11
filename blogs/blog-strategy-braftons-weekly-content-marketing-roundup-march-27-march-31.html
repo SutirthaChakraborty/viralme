@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brafton's Weekly Content Marketing Roundup: March 27 - March 31. Explore key strategies, insights, and trends in content marketing.">
+    <title>Brafton's Content Marketing Roundup | March 27 - March 31</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            background: #e9ecef;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .card:hover {
+            background: #d1d1d1;
+            transition: background 0.3s;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brafton's Weekly Content Marketing Roundup</h1>
+        <p>Dates: March 27 - March 31</p>
+        <div class="card" onclick="toggleVisibility('content1')">
+            <h3>Content Strategy Insights</h3>
+            <p>Click to reveal key strategies in content marketing.</p>
+            <div id="content1" class="hidden">
+                <p>Discover effective techniques for driving engagement and conversions through authentic storytelling and SEO optimization.</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleVisibility('content2')">
+            <h3>Emerging Trends</h3>
+            <p>Click to learn about new trends in digital marketing.</p>
+            <div id="content2" class="hidden">
+                <p>Stay ahead of the curve by understanding the impact of AI on content creation and the rise of video marketing.</p>
+            </div>
+        </div>
+        <div class="card" onclick="toggleVisibility('content3')">
+            <h3>Metrics that Matter</h3>
+            <p>Click to see crucial metrics for measuring success.</p>
+            <div id="content3" class="hidden">
+                <p>Learn about key performance indicators (KPIs) that can transform your content marketing strategy.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleVisibility(id) {
+            var content = document.getElementById(id);
+            content.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

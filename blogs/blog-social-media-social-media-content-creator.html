@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Social Media Content Creator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #0077cc;
+            color: white;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-button {
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .social-button:hover {
+            opacity: 0.8;
+        }
+        .facebook { background: #3b5998; }
+        .twitter { background: #1da1f2; }
+        .instagram { background: #e1306c; }
+        .linkedin { background: #0077b5; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Social Media Content Creator</h1>
+    <p>Engage your audience and expand your reach!</p>
+</header>
+
+<div class="content">
+    <h2>Why Social Media Matters</h2>
+    <p>Social media platforms are essential for content creators to share their work, connect with audiences, and build a personal brand. By leveraging social media, you can enhance your visibility and drive traffic to your blog.</p>
+    
+    <h3>Key Strategies for Success</h3>
+    <ul>
+        <li>Consistent Posting: Regular updates keep your audience engaged.</li>
+        <li>Quality Content: Share valuable and relevant content to attract followers.</li>
+        <li>Engagement: Interact with your audience through comments and messages.</li>
+    </ul>
+
+    <div class="social-buttons">
+        <a href="#" class="social-button facebook"><i class="fab fa-facebook-f"></i> Share on Facebook</a>
+        <a href="#" class="social-button twitter"><i class="fab fa-twitter"></i> Tweet</a>
+        <a href="#" class="social-button instagram"><i class="fab fa-instagram"></i> Share on Instagram</a>
+        <a href="#" class="social-button linkedin"><i class="fab fa-linkedin-in"></i> Share on LinkedIn</a>
+    </div>
+</div>
+
+<script>
+    const buttons = document.querySelectorAll('.social-button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            alert(`You clicked on ${this.textContent}`);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: News on Social Media Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Blog: News on Social Media Analytics</h1>
+    <p>Blog post content goes here...</p>
+    <div id="survey-container">
+        <h2>Marketers Want More Social Media Analytics</h2>
+        <p>What features do you want to see in social media analytics?</p>
+        <input type="text" id="feature-input" placeholder="Enter feature...">
+        <button id="add-feature">Add Feature</button>
+        <ul id="feature-list"></ul>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#add-feature').on('click', function() {
+                var feature = $('#feature-input').val();
+                $('#feature-list').append('<li>' + feature + '</li>');
+                $('#feature-input').val('');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#survey-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#survey-container h2 {
+    margin-bottom: 10px;
+}
+
+#feature-input, #add-feature {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#feature-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#feature-list li {
+    margin-bottom: 5px;
+}

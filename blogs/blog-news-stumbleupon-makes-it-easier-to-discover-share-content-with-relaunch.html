@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover and Share with StumbleUpon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        button {
+            background: #0077cc;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>StumbleUpon Relaunch: Discover and Share Content Easily!</h1>
+</header>
+
+<article>
+    <h2>Explore New Content</h2>
+    <p>StumbleUpon's relaunch makes it easier than ever to discover interesting articles, videos, and websites tailored to your preferences.</p>
+    <button onclick="discoverContent()">Discover Now!</button>
+    <p id="content"></p>
+</article>
+
+<script>
+    const contentArray = [
+        "Discover amazing recipes from around the world.",
+        "Explore the latest tech news and reviews.",
+        "Read thought-provoking articles on current events.",
+        "Watch trending videos that will entertain and inform you."
+    ];
+
+    function discoverContent() {
+        const randomIndex = Math.floor(Math.random() * contentArray.length);
+        document.getElementById('content').innerText = contentArray[randomIndex];
+    }
+</script>
+
+</body>
+</html>

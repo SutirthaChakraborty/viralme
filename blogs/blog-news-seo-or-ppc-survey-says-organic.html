@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog News SEO or PPC Survey Says Organic</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			border-bottom: 1px solid #333;
+		}
+		
+		.content {
+			padding: 20px;
+		}
+		
+		.question {
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		
+		.answer {
+			margin-top: 10px;
+		}
+		
+		.interactive {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.interactive:hover {
+			background-color: #ccc;
+		}
+		
+		.result {
+			font-weight: bold;
+			margin-top: 20px;
+		}
+		
+		.result span {
+			color: #666;
+		}
+		
+		.js-enabled {
+			display: none;
+		}
+	</style>
+	<script>
+		var answers = [];
+		var total = 0;
+		
+		function submitAnswer() {
+			var answer = document.querySelector('input[name="answer"]:checked').value;
+			answers.push(answer);
+			total++;
+			document.querySelector('.total').innerHTML = 'Total votes: ' + total;
+			document.querySelector('.result').innerHTML = 'Result: ' + getMostCommonAnswer();
+		}
+		
+		function getMostCommonAnswer() {
+			var maxCount = 0;
+			var mostCommonAnswer = '';
+			for (var i = 0; i < answers.length; i++) {
+				var count = 0;
+				for (var j = 0; j < answers.length; j++) {
+					if (answers[i] === answers[j]) {
+						count++;
+					}
+				}
+				if (count > maxCount) {
+					maxCount = count;
+					mostCommonAnswer = answers[i];
+				}
+			}
+			return mostCommonAnswer;
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Blog News SEO or PPC Survey Says Organic</h1>
+		</div>
+		<div class="content">
+			<p class="question">What is the most effective way to drive traffic to your blog?</p>
+			<label class="interactive"><input type="radio" name="answer" value="SEO"> Search Engine Optimization (SEO)</label>
+			<label class="interactive"><input type="radio" name="answer" value="PPC"> Pay-Per-Click (PPC) Advertising</label>
+			<label class="interactive"><input type="radio" name="answer" value="Organic"> Organic Traffic</label>
+			<button onclick="submitAnswer()">Submit Answer</button>
+			<p class="total">Total votes: 0</p>
+			<p class="result"></p>
+		</div>
+	</div>
+</body>
+</html>
+
+This HTML code includes a simple survey with three options: SEO, PPC, and Organic. When the user submits their answer, the code uses JavaScript to count the votes and display the most common answer. The CSS styles the layout and adds interactive effects to the buttons. The keywords used include "blog news SEO or PPC survey says organic" to help with search engine optimization.

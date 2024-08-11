@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: 7 Ways Keyword-Focused SEO Culture Changed This Year</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 5px solid #3498db;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .topic:hover {
+            background: #ecf0f1;
+        }
+        .detail {
+            display: none;
+            margin: 10px 0 10px 20px;
+            font-style: italic;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>7 Ways Keyword-Focused SEO Culture Changed This Year</h1>
+
+        <div class="topic" onclick="toggleDetail(1)">1. Shift to Intent-Based SEO</div>
+        <div class="detail" id="detail1">The focus has moved toward understanding user intent rather than just matching keywords.</div>
+
+        <div class="topic" onclick="toggleDetail(2)">2. Voice Search Optimization</div>
+        <div class="detail" id="detail2">More users are using voice search, prompting a change in keyword strategies to natural language.</div>
+
+        <div class="topic" onclick="toggleDetail(3)">3. Emphasis on Long-Tail Keywords</div>
+        <div class="detail" id="detail3">Marketers now prioritize long-tail keywords that offer specific search intents and less competition.</div>
+
+        <div class="topic" onclick="toggleDetail(4)">4. Local SEO Focus</div>
+        <div class="detail" id="detail4">There’s been an increase in local keyword targeting to assist consumers in finding nearby services.</div>
+
+        <div class="topic" onclick="toggleDetail(5)">5. Visual Search Integration</div>
+        <div class="detail" id="detail5">The rise of visual search tools has influenced how keywords are chosen and optimized.</div>
+
+        <div class="topic" onclick="toggleDetail(6)">6. Core Web Vitals Influence</div>
+        <div class="detail" id="detail6">User experience metrics have become crucial, affecting keyword strategies for better rankings.</div>
+
+        <div class="topic" onclick="toggleDetail(7)">7. Content Quality Over Quantity</div>
+        <div class="detail" id="detail7">Search engines prioritize high-quality, informative content over sheer volume, impacting keyword use.</div>
+
+        <button onclick="resetDetails()">Reset</button>
+    </div>
+
+    <script>
+        function toggleDetail(index) {
+            const detail = document.getElementById(`detail${index}`);
+            detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function resetDetails() {
+            const details = document.querySelectorAll('.detail');
+            details.forEach(detail => detail.style.display = 'none');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Mind Reading and Google Interests Tab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .card {
+            width: 45%;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        
+        .card h2 {
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+        
+        .card p {
+            line-height: 1.5;
+        }
+        
+        .cta {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function showContent(event) {
+            if (event.target.matches('.mind-reader')) {
+                document.getElementById('mind-reader-explanation').classList.toggle('hidden');
+                document.getElementById('interests-tab-explanation').classList.toggle('hidden');
+            } else if (event.target.matches('.interests-tab')) {
+                document.getElementById('mind-reader-explanation').classList.toggle('hidden');
+                document.getElementById('interests-tab-explanation').classList.toggle('hidden');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Blog News: Unveiling the Mind-Reading Capabilities of Google's New Interests Tab</h1>
+    
+    <div class="container">
+        <div class="card">
+            <h2>Mind Reader</h2>
+            <p>Stay ahead with the latest digital marketing trends – Learn how Google's new mind-reading

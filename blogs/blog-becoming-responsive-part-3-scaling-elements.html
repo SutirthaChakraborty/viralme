@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog: Scaling Elements - Part 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: justify;
+            color: #555;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .responsive-image {
+            width: 100%;
+            height: auto;
+        }
+        .btn-scale {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn-scale:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Web Design: Scaling Elements - Part 3</h1>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/600x400" alt="Responsive Design" class="responsive-image">
+        </div>
+        <p>In this third part of our series on responsive web design, we focus on the importance of scaling elements effectively. As devices come in all shapes and sizes, it's vital to ensure that components on your website adapt seamlessly.</p>
+        <p>Scaling is not just about resizing images; it involves typography, buttons, and layout adjustments to enhance user experience. Using relative units like percentages and viewport units can greatly improve scalability.</p>
+        <button class="btn-scale" onclick="scaleElement()">Scale Me!</button>
+    </div>
+    <script>
+        function scaleElement() {
+            const btn = document.querySelector('.btn-scale');
+            btn.style.transform = 'scale(1.5)';
+            setTimeout(() => {
+                btn.style.transform = 'scale(1)';
+            }, 500);
+        }
+    </script>
+</body>
+</html>

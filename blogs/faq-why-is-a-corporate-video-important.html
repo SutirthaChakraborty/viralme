@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Why Corporate Videos Matter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        .question {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        
+        .answer {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 70%;
+        }
+
+        .toggle-btn {
+            display: none;
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .toggle-btn+.answer {
+            display: none;
+        }
+
+        .show-answer {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .answer {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id + '-answer');
+            var toggleBtn = document.getElementById(id + '-toggle');
+
+            if (answer.classList.contains('show-answer')) {
+                answer.style.display = 'none';
+                toggleBtn.textContent = 'Show Answer';
+            } else {
+                answer.style.display = 'block';
+                toggleBtn.textContent = 'Hide Answer';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>FAQ: Why Corporate Videos Matter</h1>
+    </header>
+    <div class="container">
+        <div class="question">
+            <h3 id="q1">1. What's the primary purpose of

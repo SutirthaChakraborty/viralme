@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handel's Messiah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Handel's Messiah</h1>
+        <p>The Oratorio that Transcended Time</p>
+    </header>
+    <section>
+        <h2>About the Messiah</h2>
+        <p>Handel's Messiah, composed in 1741, is one of the most celebrated oratorios in Western music.</p>
+        <button class="toggle" onclick="toggleDetails()">Show More Details</button>
+        <div id="details" class="hidden">
+            <h3>Origins and Composition</h3>
+            <p>George Frideric Handel composed this masterpiece, which is performed frequently during the Christmas season.</p>
+            <h3>Musical Structure</h3>
+            <p>The work is divided into three parts: the Prophecy, the Passion, and the Resurrection, highlighting key events in Christianity.</p>
+            <h3>Popular Selections</h3>
+            <p>Notable pieces including "Hallelujah" and "For Unto Us a Child Is Born" are a staple in choral repertoires.</p>
+        </div>
+    </section>
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById('details');
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+            } else {
+                details.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

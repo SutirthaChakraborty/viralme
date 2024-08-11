@@ -1,0 +1,53 @@
+Sure! Here's a small HTML code snippet with CSS that showcases an art exhibition using a 3D Matterport virtual tour:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Art Exhibition - 3D Matterport Virtual Tour</title>
+    <style>
+        /* CSS styling for the exhibition container */
+        .exhibition-container {
+            width: 100%;
+            height: 600px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* CSS styling for the Matterport virtual tour */
+        .matterport-tour {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="exhibition-container">
+        <iframe class="matterport-tour" src="https://example.com/matterport-tour" allowfullscreen></iframe>
+    </div>
+    
+    <script>
+        // JavaScript code to make the virtual tour interactive
+        const exhibitionContainer = document.querySelector('.exhibition-container');
+        const matterportTour = document.querySelector('.matterport-tour');
+        
+        exhibitionContainer.addEventListener('click', () => {
+            // Play or pause the virtual tour when the exhibition container is clicked
+            if (matterportTour.paused) {
+                matterportTour.play();
+            } else {
+                matterportTour.pause();
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+In this code snippet, we have an HTML structure with a container div for the exhibition and an iframe to embed the 3D Matterport virtual tour. The CSS defines the styles for the exhibition container and the Matterport tour. The JavaScript code adds interactivity to the virtual tour by allowing it to be played or paused when the exhibition container is clicked.
+
+Please note that the **src** attribute of the iframe should be replaced with the actual URL of the 3D Matterport virtual tour you want to embed.
+
+This code can be used as a starting point for creating a webpage that showcases an art exhibition using a 3D Matterport virtual tour. It can be further customized and enhanced based on your specific requirements and design preferences.
+
+Keywords: art exhibition, 3D Matterport virtual tour, interactive CSS, JavaScript, webpage, interactivity, embed, iframe.

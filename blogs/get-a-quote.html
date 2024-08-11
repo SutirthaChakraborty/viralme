@@ -1,0 +1,58 @@
+#### HTML Code with CSS and JavaScript
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Quote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        #quoteButton {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #quoteButton:hover {
+            background-color: #218838;
+        }
+        #quoteDisplay {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get a Quote</h1>
+    <p>Click the button below to receive a motivational quote!</p>
+    <button id="quoteButton">Get Quote</button>
+    <div id="quoteDisplay"></div>
+
+    <script>
+        const quotes = [
+            "The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt",
+            "Do not wait to strike till the iron is hot, but make it hot by striking. - William Butler Yeats",
+            "Success is not the key to happiness. Happiness is the key to success. - Albert Schweitzer",
+            "You miss 100% of the shots you don’t take. - Wayne Gretzky"
+        ];
+
+        document.getElementById("quoteButton").onclick = function() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quoteDisplay").innerText = quotes[randomIndex];
+        };
+    </script>
+</body>
+</html>

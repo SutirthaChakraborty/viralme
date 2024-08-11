@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Production Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .tip {
+            background: #e7f3fe;
+            border-left: 6px solid #31708f;
+            margin: 10px 0;
+            padding: 10px;
+            transition: background 0.3s;
+        }
+        .tip:hover {
+            background: #c4e1eb;
+        }
+        .toggle-tip {
+            cursor: pointer;
+            color: #31708f;
+            font-weight: bold;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Production Insights</h1>
+</header>
+
+<section>
+    <h2>Avoid Common Mistakes in Video Production</h2>
+    <div class="tip">
+        <span class="toggle-tip" onclick="toggleTip('tip1')">1. Neglecting Proper Planning</span>
+        <p id="tip1" class="hidden">Planning is crucial. Create a detailed storyboard and script to guide your production process.</p>
+    </div>
+    <div class="tip">
+        <span class="toggle-tip" onclick="toggleTip('tip2')">2. Ignoring Audio Quality</span>
+        <p id="tip2" class="hidden">Audio is as important as visuals. Invest in good microphones and conduct sound checks.</p>
+    </div>
+    <div class="tip">
+        <span class="toggle-tip" onclick="toggleTip('tip3')">3. Poor Lighting Choices</span>
+        <p id="tip3" class="hidden">Lighting sets the mood and tone. Utilize natural light or invest in studio lights for the best results.</p>
+    </div>
+    <div class="tip">
+        <span class="toggle-tip" onclick="toggleTip('tip4')">4. Skipping Post-Production Edits</span>
+        <p id="tip4" class="hidden">Post-production is essential. Edit for pacing, clarity, and to enhance the overall quality of the video.</p>
+    </div>
+</section>
+
+<script>
+    function toggleTip(tipId) {
+        const tip = document.getElementById(tipId);
+        tip.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social and Search Trends: Blog News</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  header { background-color: #f4f4f4; padding: 10px; }
+  header h1 { margin: 0; }
+  nav ul { list-style: none; padding: 0; margin: 0; }
+  nav a { display: inline-block; padding: 5px 10px; text-decoration: none; color: #333; }
+  nav a:hover { background-color: #ddd; }
+  article { margin: 20px 0; }
+  footer { background-color: #333; color: white; padding: 10px; text-align: center; }
+  footer a { color: white; text-decoration: none; }
+</style>
+<script>
+  // Simple JavaScript to highlight the current section
+  document.querySelectorAll('nav a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.querySelectorAll('nav a').forEach(function(otherLink) {
+        otherLink.classList.remove('active');
+      });
+      this.classList.add('active');
+    });
+  });
+</script>
+</head>
+<body>
+<header>
+  <h1>Blog News: Social and Search Trends</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#social">Social</a></li>
+    <li><a href="#search">Search</a></li>
+    <li><a href="#trends">Trends</a></li>
+  </ul>
+</nav>
+<article id="blog">
+  <h2>Blog</h2>
+  <p>Discover our latest insights and analysis on the intersection of social and search trends.</p>
+</article>
+<article id="news">
+  <h2>News</h2>
+  <p>Stay updated with the latest news affecting social and search platforms.</p>
+</article>
+<article id="social">
+  <h2>Social</h2>
+  <p>Explore our articles on social media platforms and their evolving impact on digital marketing.</p>
+</article>
+<article id="search">
+  <h2>Search</h2>
+  <p>Learn about the latest advancements in search engine optimization and user behavior.</p>
+</article>
+<article id="trends">
+  <h2>Trends</h2>
+  <p>Browse our analysis of emerging trends in social and search that businesses should be aware of.</p>
+</article>
+<footer>
+  <p>&copy; 2024 Blog News: Social and Search Trends. All rights reserved.</p>
+</footer>
+</body>
+</html>

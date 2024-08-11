@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Blog News on Yelp YP.com Partner Signalling through Semantic Search Enhancements">
+    <meta name="keywords" content="blog news, yelp, yp, partner, signalling, semantic search, performance improvements, user experience">
+    <title>Yelp YP Partner Signalling with Semantic Search on Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        article {
+            border-left: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            line-height: 1.5;
+            overflow: auto;
+        }
+
+        button.show-detail {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: none;
+            cursor: pointer;
+        }
+
+        .show-detail.active {
+            background-color: #45a049;
+        }
+
+        .hidden-detail {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .toggle-btn区域 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function toggleDetails(e) {
+            const detailSection = document.getElementById("detail-section");
+            const showButton = e.target;
+            if (showButton.classList.contains("active")) {
+                showButton.classList.remove("active");
+                detailSection.classList.remove("hidden-detail");
+            } else {
+                showButton.classList.add("active");
+                detailSection.classList.add("hidden-detail");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let showButton = document.querySelector('.show-detail');
+            showButton

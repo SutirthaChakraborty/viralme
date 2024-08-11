@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: What are Promotion Videos?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+        }
+        .faq {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s;
+        }
+        .question:hover {
+            background-color: #f0f0f0;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            margin-top: -1px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #357ab8;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ: What are Promotion Videos?</h1>
+    <div class="faq">
+        <div class="question">What is a promotion video?</div>
+        <div class="answer">Promotion videos are short visual content designed to market a product, service, or brand, effectively capturing audience attention.</div>
+        
+        <div class="question">Why are promotion videos important?</div>
+        <div class="answer">They help in increasing brand awareness, engaging potential customers, and driving conversions by showcasing unique selling points.</div>
+        
+        <div class="question">What platforms are best for sharing promotion videos?</div>
+        <div class="answer">Promotion videos work well on social media platforms, websites, and video sharing sites like YouTube, enhancing outreach and visibility.</div>
+        
+        <div class="question">What elements should a promotion video include?</div>
+        <div class="answer">A clear message, compelling visuals, strong call-to-action, and engaging sound are crucial for effective promotion videos.</div>
+        
+        <button id="toggleButton">Toggle Answers</button>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        document.getElementById('toggleButton').addEventListener('click', () => {
+            questions.forEach(question => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

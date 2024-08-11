@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life at Brafton: Sweets & Fundraising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #d2691e;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .sweets {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .fundraising {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life at Brafton: For the Love of Sweets & Fundraising</h1>
+    </header>
+    <div class="content">
+        <div class="sweets">
+            <h2>Our Sweet Treats</h2>
+            <p>At Brafton, we celebrate our passion for sweets! From homemade cookies to gourmet cupcakes, our team loves to indulge in delightful desserts. Join us in our sweet adventures!</p>
+            <button onclick="showSweets()">Learn More</button>
+            <p id="sweets-info" style="display:none;">We often host bake sales to raise funds for local charities, combining our love for sweets with a purpose!</p>
+        </div>
+        <div class="fundraising">
+            <h2>Fundraising Initiatives</h2>
+            <p>Our fundraising efforts are driven by a desire to give back to the community. We organize events that not only raise money but also bring our team together.</p>
+            <button onclick="showFundraising()">Get Involved</button>
+            <p id="fundraising-info" style="display:none;">Join us in our next fundraising event and help make a difference!</p>
+        </div>
+    </div>
+    <script>
+        function showSweets() {
+            var info = document.getElementById("sweets-info");
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
+        function showFundraising() {
+            var info = document.getElementById("fundraising-info");
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

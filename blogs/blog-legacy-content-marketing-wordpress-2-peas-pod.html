@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Marketing - 2 Peas Pod</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Legacy Content Marketing</h1>
+        <p>Welcome to 2 Peas Pod - Your Guide to Effective Blogging</p>
+    </header>
+    <div class="container">
+        <article>
+            <h2>What is Legacy Content Marketing?</h2>
+            <p>Legacy content marketing refers to the practice of creating timeless content that continues to attract traffic and engagement over time. This strategy is essential for building a sustainable blog that resonates with your audience.</p>
+            <button onclick="toggleContent()">Read More</button>
+            <div id="moreContent" style="display:none;">
+                <p>By focusing on evergreen topics, you can ensure that your content remains relevant and valuable, driving consistent traffic to your blog.</p>
+            </div>
+        </article>
+        <article>
+            <h2>Why Use WordPress for Blogging?</h2>
+            <p>WordPress is a powerful platform that offers flexibility and ease of use for bloggers. It supports various plugins and themes, making it ideal for customizing your blog.</p>
+        </article>
+    </div>
+    <script>
+        function toggleContent() {
+            var content = document.getElementById("moreContent");
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

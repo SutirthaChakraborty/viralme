@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog News: Ecommerce Spending Growth </title>
+    <meta name="description" content="Ecommerce spending grows 13% in Q3. Discover key insights and trends related to online shopping, digital retail, and consumer behavior.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 15px 0;
+            border: 1px solid #dddddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .toggleDetails {
+            margin: 15px 0;
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ecommerce News Update</h1>
+    </header>
+    <article>
+        <h2>Ecommerce Spending Grows 13% in Q3</h2>
+        <p>The latest report reveals that consumer spending in ecommerce has grown by 13% in the third quarter, showcasing the resilience and ongoing transition to digital retail.</p>
+        <button class="toggleDetails">Read More</button>
+        <div class="details">
+            <p>This growth indicates a shift in purchasing behavior as customers increasingly prefer online shopping. Key sectors contributing to this surge include electronics, fashion, and home goods. Marketers are encouraged to leverage these insights to optimize their campaigns and improve user experiences.</p>
+            <ul>
+                <li>Online shopping trends</li>
+                <li>Digital marketing strategies</li>
+                <li>Consumer behavior changes</li>
+                <li>Impact on retail businesses</li>
+            </ul>
+        </div>
+    </article>
+    <script>
+        document.querySelector('.toggleDetails').addEventListener('click', function() {
+            var details = document.querySelector('.details');
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+                this.textContent = 'Read Less';
+            } else {
+                details.style.display = 'none';
+                this.textContent = 'Read More';
+            }
+        });
+    </script>
+</body>
+</html>

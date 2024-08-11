@@ -1,0 +1,49 @@
+Here's a simple HTML and CSS code snippet with an embedded JavaScript section that highlights key terms. The content highlights the topic of a blog post about Facebook marketing reach and the discovery that 8.7% of accounts are fake. The code includes relevant keywords for better search visibility.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Marketing Reach: Real Audience Statistics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #005ebd;
+        }
+        .key-terms {
+            color: #ee7621;
+            cursor: pointer;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function highlightKeyword(needle) {
+            var text = document.getElementById('post-text').innerHTML;
+            var matchStart = 0;
+            while ((matchStart = text.indexOf(needle, matchStart)) > -1) {
+                text = text.substring(0, matchStart) + '<span class="highlight">' + needle + '</span>' + text.substring(matchStart + needle.length);
+                matchStart += needle.length;
+            }
+            document.getElementById('post-text').innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Real Facebook Marketing Reach: Fake Accounts Analysis Report (8.7%)</h1>
+        <p id="post-text">A recent report reveals that <span class="key-terms" onclick="highlightKeyword('fake accounts')">8.7%</span> of Facebook accounts are estimated to be <span class="key-terms" onclick="highlightKeyword('fake')">fake</span>, impacting the accuracy of reach calculations for businesses. To optimize your Facebook strategy, consider targeting <span class="key-terms" onclick="highlightKeyword('real audiences')">real audiences

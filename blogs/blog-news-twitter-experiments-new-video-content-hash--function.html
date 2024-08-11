@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News | Twitter Experiments | New Video Content & Hash Function</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #3498db;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-text {
+            color: #fff;
+            font-size: 24px;
+        }
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .topic-card {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+        .topic-card:hover {
+            background-color: #f5f5f5;
+            transition: background-color 0.3s ease;
+        }
+        h3 {
+            margin-top: 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Interactive Hash Function Explanation using JavaScript
+        function hashFunctionExplanation() {
+            var expDiv = document.getElementById("hash-function-explanation");
+            if (window.location.hash === "#hash-explanation") {
+                expDiv.style.display = "block";
+            } else {
+                expDiv.style.display = "none";
+            }
+        }
+        window.addEventListener("hashchange", hashFunctionExplanation);
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#topics" class="header-text">Blog News & Twitter Experiments</a>
+       

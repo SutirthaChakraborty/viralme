@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Updates & Review Policy Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .update-item {
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 0;
+        }
+        .update-item:last-child {
+            border-bottom: none;
+        }
+        .toggle-button {
+            background-color: #5bc0de;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background: #f9f9f9;
+            padding: 10px;
+            border-left: 3px solid #5bc0de;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Latest Google Updates & Review Policy</h1>
+        <div class="update-item">
+            <h2>Understanding Google Review Policies</h2>
+            <button class="toggle-button" onclick="toggleDetails(event)">Learn More</button>
+            <div class="details">
+                <p>Google's review policies emphasize authentic feedback. Understanding these can enhance your business presence.</p>
+            </div>
+        </div>
+        <div class="update-item">
+            <h2>Impact of Yelp Reviews</h2>
+            <button class="toggle-button" onclick="toggleDetails(event)">Learn More</button>
+            <div class="details">
+                <p>Yelp reviews significantly influence search visibility and reputation on Google Maps. Engage with reviewers.</p>
+            </div>
+        </div>
+        <div class="update-item">
+            <h2>Recent Policy Changes</h2>
+            <button class="toggle-button" onclick="toggleDetails(event)">Learn More</button>
+            <div class="details">
+                <p>Keep updated on Google's seasonal reviews policies to avoid content removal and maintain listing rankings.</p>
+            </div>
+        </div>
+        <div class="update-item">
+            <h2>Yelp's Shift Away from Google Maps</h2>
+            <button class="toggle-button" onclick="toggleDetails(event)">Learn More</button>
+            <div class="details">
+                <p>Yelp is focusing on internal growth strategies, impacting its visibility on Google Maps.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(event) {
+            const details = event.target.nextElementSibling;
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

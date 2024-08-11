@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Do You Create Promo Videos?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #34495e;
+        }
+        .faq-container {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+        }
+        .faq-container:hover {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            background: #2980b9;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            outline: none;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQ: Do You Create Promo Videos?</h1>
+    <div class="faq-container">
+        <button class="toggle-button" onclick="toggleAnswer()">Do you offer professional promotional video production services?</button>
+        <div class="answer" id="answer">
+            <p>Yes, we specialize in creating high-quality promotional videos that effectively showcase your brand and products. Our team ensures that each video is tailored to meet your marketing goals and resonates with your target audience.</p>
+        </div>
+    </div>
+    <script>
+        function toggleAnswer() {
+            var answer = document.getElementById('answer');
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

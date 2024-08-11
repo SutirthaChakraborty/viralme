@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Event Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .event-gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .event-photo {
+            margin: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .event-photo img {
+            width: 100%;
+            height: auto;
+        }
+        .event-photo:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Charity Event Photography</h1>
+        <p>Capturing Moments that Matter for a Cause</p>
+    </header>
+    
+    <section>
+        <h2>Why Charity Event Photography?</h2>
+        <p>Charity events bring communities together, and quality photography captures the spirit and emotions of such occasions. Through effective visual storytelling, we can promote awareness and encourage donations for important causes.</p>
+    </section>
+
+    <section>
+        <h2>Gallery</h2>
+        <div class="event-gallery" id="gallery">
+            <div class="event-photo" onclick="showPhoto('image1.jpg')">
+                <img src="image1_thumb.jpg" alt="Charity Event 1">
+            </div>
+            <div class="event-photo" onclick="showPhoto('image2.jpg')">
+                <img src="image2_thumb.jpg" alt="Charity Event 2">
+            </div>
+            <div class="event-photo" onclick="showPhoto('image3.jpg')">
+                <img src="image3_thumb.jpg" alt="Charity Event 3">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Join us in making a difference! Follow us on social media.</p>
+    </footer>
+
+    <script>
+        function showPhoto(imageSrc) {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            const img = document.createElement('img');
+            img.src = imageSrc;
+            img.style.width = '100%';
+            img.style.height = 'auto';
+            gallery.appendChild(img);
+            gallery.onclick = () => location.reload(); // Reload to go back to gallery
+        }
+    </script>
+</body>
+</html>

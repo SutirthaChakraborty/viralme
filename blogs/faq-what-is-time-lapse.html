@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: What is Time Lapse?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq-container {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .active {
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>FAQ: What is Time Lapse?</h1>
+        <div class="question" onclick="toggleAnswer(this)">What is time lapse photography?</div>
+        <div class="answer">Time lapse photography is a technique that implies capturing a series of images at spaced intervals to record changes that take place slowly over time. When played at normal speed, time appears to be moving faster.</div>
+
+        <div class="question" onclick="toggleAnswer(this)">How is time lapse created?</div>
+        <div class="answer">To create a time lapse, a camera shoots frames at intervals (for example, once every second) and then plays back these images at a normal frame rate (for example, 30 frames per second), making it look like time is speeding up.</div>
+        
+        <div class="question" onclick="toggleAnswer(this)">Where is time lapse used?</div>
+        <div class="answer">Time lapse is commonly used in documentaries, nature films, urban development projects, and art installations to showcase changes over weeks, months, or even years in a condensed format.</div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+            element.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

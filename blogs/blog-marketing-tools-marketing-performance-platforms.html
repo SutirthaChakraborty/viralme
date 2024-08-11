@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Marketing Tools & Performance Platforms</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+nav {
+  background-color: #444;
+  padding: 5px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+nav a:hover {
+  background-color: #000;
+  color: #fff;
+}
+.content {
+  padding: 20px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+</style>
+<script>
+function showDetails(event) {
+  var target = event.target;
+  var details = target.nextElementSibling;
+  if (target.tagName === 'A') {
+    details.style.display = 'block';
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <h1>Blog Marketing Tools & Performance Platforms</h1>
+</header>
+<nav>
+  <a href="#tools">Tools</a>
+  <a href="#platforms">Platforms</a>
+</nav>
+<div class="content">
+  <h2>Tools</h2>
+  <p>Discover the best tools for blog marketing...</p>
+  <h2>Platforms</h2>
+  <p>Explore platforms for measuring blog performance...</p>
+</div>
+<footer>
+  <p>&copy; 2024 Blog Marketing Tools & Performance Platforms</p>
+</footer>
+<details id="tools" onclick="showDetails(event)">
+  <summary>Details for Tools</summary>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+</details>
+<details id="platforms" onclick="showDetails(event)">
+  <summary>Details for Platforms</summary>
+  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+</details>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Twitter, Widgets, Relevant Content, Blog News, Social Media Updates, Content Highlighting">
+    <title>Twitter Rolls Out Widgets to Highlight Relevant Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #1DA1F2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .widget {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .widget:hover {
+            background: #e0e0e0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Twitter Updates</h1>
+    </header>
+    <div class="container">
+        <h1>Twitter Rolls Out New Widgets for Relevant Content</h1>
+        <p>Twitter has introduced innovative widgets designed to highlight relevant content, enhancing user experience and engagement on the platform.</p>
+        <div class="widget" onclick="alert('Widget 1: Trending Topics');">
+            <p><strong>Trending Topics</strong> - Discover what people are talking about right now!</p>
+        </div>
+        <div class="widget" onclick="alert('Widget 2: Suggested Accounts');">
+            <p><strong>Suggested Accounts</strong> - Follow accounts that matter to you!</p>
+        </div>
+        <div class="widget" onclick="alert('Widget 3: Popular Tweets');">
+            <p><strong>Popular Tweets</strong> - Catch up on the hottest tweets in your network.</p>
+        </div>
+    </div>
+    <footer>
+        <p>Stay connected with the latest updates on social media platforms!</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.widget').forEach(widget => {
+            widget.addEventListener('click', function() {
+                alert("More info on: " + this.querySelector('strong').innerText);
+            });
+        });
+    </script>
+</body>
+</html>

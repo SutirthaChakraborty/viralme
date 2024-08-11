@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest blog news on what women want featuring engaging videos and discussions.">
+    <title>Blog News: What Women Want</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        h1 {
+            color: #333;
+        }
+        .video {
+            margin: 20px 0;
+            text-align: center;
+        }
+        button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: What Women Want</h1>
+</header>
+
+<main>
+    <p>Stay updated with insightful content exploring the needs, desires, and aspirations of women in today's world. Watch videos that highlight real experiences and valuable tips.</p>
+    
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="What Women Want" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <button id="infoToggle">Learn More</button>
+    <div class="info" id="infoContent">
+        <p>This section delves deeper into understanding the preferences of women, discussing topics such as empowerment, health, relationships, and personal growth. Join the conversation!</p>
+    </div>
+</main>
+
+<script>
+    document.getElementById('infoToggle').addEventListener('click', function() {
+        const info = document.getElementById('infoContent');
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+            this.textContent = "Show Less";
+        } else {
+            info.style.display = "none";
+            this.textContent = "Learn More";
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aoife O'Reilly's presentation on innovative design thinking and creativity.">
+    <meta name="keywords" content="Aoife O'Reilly, presentation, design thinking, creativity, innovation, interactive">
+    <title>Aoife O'Reilly Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #5a67d8;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .interactive {
+            cursor: pointer;
+            background: #e2e8f0;
+            padding: 10px;
+            border: 1px solid #cbd5e0;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aoife O'Reilly: Design Thinking & Creativity</h1>
+    </header>
+    <div class="content">
+        <h2>About the Presentation</h2>
+        <p>Aoife O'Reilly's presentation covers key concepts in design thinking and how creativity can drive innovative solutions. Discover methodologies that can enhance problem-solving skills and inspire new ideas.</p>
+        <div class="interactive" onclick="toggleDetails()">Click to Learn More</div>
+        <div id="details" class="hidden">
+            <h3>Key Topics:</h3>
+            <ul>
+                <li>Understanding Design Thinking</li>
+                <li>Applying Creativity in Real-World Scenarios</li>
+                <li>Collaborative Problem Solving</li>
+                <li>Case Studies on Innovation</li>
+            </ul>
+            <h3>Interactive Session:</h3>
+            <p>Join Aoife for a live Q&A session where your questions can shape the conversation!</p>
+        </div>
+    </div>
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById('details');
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+            } else {
+                details.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>

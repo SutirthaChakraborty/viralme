@@ -1,0 +1,92 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Facebook Dominates, Yet Social Marketing Must Include Emerging Platforms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .headline {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .platforms {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .platform {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            width: 25%;
+            text-align: center;
+        }
+
+        .platform a {
+            display: block;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .platform:hover {
+            background-color: #e0e0e0;
+        }
+
+        .interactive {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+    <script>
+        function showPlatformInfo(platformName) {
+            var platforms = document.getElementsByClassName("interactive");
+            for (var i = 0; i < platforms.length; i++) {
+                platforms[i].classList.remove("active");
+            }
+            var platform = document.querySelector(`.platform[data-platform="${platformName}"]`);
+            if (platform) {
+                platform.classList.add("active");
+               

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Social Metrics Matter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+        .metric span {
+            cursor: pointer;
+            color: #007bff;
+        }
+        .info {
+            display: none;
+            background: #efefef;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Social Metrics & Google Insights</h1>
+    </header>
+    <article>
+        <h2>The Importance of Social Metrics</h2>
+        <p>Social metrics are crucial for bloggers and businesses to measure engagement, reach, and overall success of their content. Key metrics include likes, shares, comments, and followers.</p>
+        <div class="metric">
+            <span onclick="toggleInfo('engagement')">Engagement Rate</span>
+            <span onclick="toggleInfo('reach')">Reach</span>
+            <span onclick="toggleInfo('conversion')">Conversion Rate</span>
+        </div>
+        <div class="info" id="engagement">
+            <p>Engagement rate tracks how actively your audience interacts with your content, reflecting its quality.</p>
+        </div>
+        <div class="info" id="reach">
+            <p>Reach measures the total number of unique users who see your content, indicating potential audience size.</p>
+        </div>
+        <div class="info" id="conversion">
+            <p>Conversion rate shows the percentage of users who take a desired action after engaging with your content.</p>
+        </div>
+    </article>
+    <script>
+        function toggleInfo(metric) {
+            const infoElements = document.querySelectorAll('.info');
+            infoElements.forEach((info) => {
+                if (info.id === metric) {
+                    info.style.display = info.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    info.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

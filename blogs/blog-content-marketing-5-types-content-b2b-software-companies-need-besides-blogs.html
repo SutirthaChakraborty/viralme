@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Software Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .content-type {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .content-type:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .description {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 3px solid #0073e6;
+            background: #e9f8ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Content Marketing for B2B Software Companies</h1>
+        <p>Explore 5 Essential Content Types Beyond Blogs</p>
+    </header>
+    <h2>Key Content Types for B2B Success</h2>
+    <div class="content-type" onclick="toggleDescription('video')">
+        <h3>1. Video Content</h3>
+        <p>Engaging videos that explain complex topics.</p>
+        <div id="video" class="description">Consider product demos, webinars, and customer testimonials that enhance understanding and trust.</div>
+    </div>
+    <div class="content-type" onclick="toggleDescription('ebooks')">
+        <h3>2. E-books</h3>
+        <p>In-depth resources that provide valuable insights.</p>
+        <div id="ebooks" class="description">E-books establish authority and can generate leads through gated content.</div>
+    </div>
+    <div class="content-type" onclick="toggleDescription('infographics')">
+        <h3>3. Infographics</h3>
+        <p>Visual representation of data and trends.</p>
+        <div id="infographics" class="description">Infographics simplify complex information, making it more digestible for your audience.</div>
+    </div>
+    <div class="content-type" onclick="toggleDescription('case_studies')">
+        <h3>4. Case Studies</h3>
+        <p>Real-life examples showcasing success stories.</p>
+        <div id="case_studies" class="description">Case studies demonstrate the effectiveness of your solutions, building credibility.</div>
+    </div>
+    <div class="content-type" onclick="toggleDescription('white_papers')">
+        <h3>5. White Papers</h3>
+        <p>Authoritative reports informing on specific topics.</p>
+        <div id="white_papers" class="description">White papers help to position your brand as a thought leader in the industry.</div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            const description = document.getElementById(id);
+            description.style.display = description.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

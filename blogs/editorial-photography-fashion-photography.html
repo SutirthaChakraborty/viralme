@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of Editorial and Fashion Photography. Learn about techniques, trends, and the impact on visual storytelling.">
+    <title>Editorial & Fashion Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Editorial & Fashion Photography</h1>
+        <p>Capturing Style and Story</p>
+    </header>
+    
+    <section>
+        <h2>What is Editorial Photography?</h2>
+        <p>Editorial photography encompasses images created for editorial publications, such as magazines and newspapers, providing visual storytelling alongside text.</p>
+        <button onclick="toggleContent('editorialContent')">Learn More</button>
+        <div id="editorialContent" class="toggle-content">
+            <p>It often conveys a narrative or theme, featuring styles like lifestyle, portrait, and documentary photography. Editors choose images that resonate with their audience, making it crucial for photographers to understand both art and journalism.</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>What is Fashion Photography?</h2>
+        <p>Fashion photography is specifically focused on clothing and other fashion items, often aimed at magazines and advertisements that highlight trends and styles.</p>
+        <button onclick="toggleContent('fashionContent')">Learn More</button>
+        <div id="fashionContent" class="toggle-content">
+            <p>It showcases creativity and art direction, combining colors, settings, and poses to create captivating visuals that influence cultural trends. Understanding current fashion movements is key for success in this field.</p>
+        </div>
+    </section>
+    
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

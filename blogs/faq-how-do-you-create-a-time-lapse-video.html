@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: How to Create a Time Lapse Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .question:hover {
+            background: #ecf0f1;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            border-left: 3px solid #2ecc71;
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FAQ: How to Create a Time Lapse Video</h1>
+
+<div class="faq">
+    <div class="question">1. What is a Time Lapse Video?</div>
+    <div class="answer">A time lapse video is a sequence of video frames taken at set intervals to capture changes that take place slowly over time.</div>
+</div>
+
+<div class="faq">
+    <div class="question">2. What Equipment Do I Need?</div>
+    <div class="answer">You need a camera, a tripod to keep it steady, and ideally, an intervalometer to automatically capture images at set intervals.</div>
+</div>
+
+<div class="faq">
+    <div class="question">3. How Do I Set Up My Shot?</div>
+    <div class="answer">Choose a stable location, frame your subject, set your camera settings, and ensure adequate battery and storage for long shoots.</div>
+</div>
+
+<div class="faq">
+    <div class="question">4. What Software Can I Use for Editing?</div>
+    <div class="answer">Popular software for editing time lapse videos includes Adobe Premiere Pro, Final Cut Pro, and free options like DaVinci Resolve.</div>
+</div>
+
+<div class="faq">
+    <div class="question">5. Tips for Capturing Great Time Lapse Videos?</div>
+    <div class="answer">Experiment with different intervals, use smooth movements for dynamic shots, and ensure consistent lighting throughout your shoot.</div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(q => {
+        q.addEventListener('click', function() {
+            const answer = this.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

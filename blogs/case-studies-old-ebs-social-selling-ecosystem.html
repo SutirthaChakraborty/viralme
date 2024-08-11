@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies: Old EBS Social Selling Ecosystem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .case-study {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .case-study:hover {
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .toggle-details {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Case Studies: Old EBS Social Selling Ecosystem</h1>
+
+    <div class="case-study">
+        <h2>Case Study 1: Boosting Brand Awareness through Social Media</h2>
+        <span class="toggle-details">Show Details</span>
+        <div class="details">
+            <p>This study highlights how Old EBS utilized social platforms for brand promotion, increasing visibility and customer engagement.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2>Case Study 2: Leveraging Influencer Marketing</h2>
+        <span class="toggle-details">Show Details</span>
+        <div class="details">
+            <p>Explore the tactics used by Old EBS in partnering with industry influencers to enhance trust and drive conversions.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2>Case Study 3: Building Community through Online Engagement</h2>
+        <span class="toggle-details">Show Details</span>
+        <div class="details">
+            <p>This case study illustrates how Old EBS created a strong online community, leading to improved customer loyalty.</p>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle-details');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const details = toggle.nextElementSibling;
+                if (details.style.display === 'block') {
+                    details.style.display = 'none';
+                    toggle.textContent = 'Show Details';
+                } else {
+                    details.style.display = 'block';
+                    toggle.textContent = 'Hide Details';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Penguin Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .glossary-term {
+            cursor: pointer;
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-left: 5px solid #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Penguin Glossary</h1>
+    <p>Explore key terms related to Google Penguin, an important algorithm update that affects SEO and website rankings.</p>
+    
+    <div>
+        <span class="glossary-term" onclick="toggleDefinition('definition1')">Google Penguin</span>
+        <div id="definition1" class="definition">A Google algorithm update aimed at reducing web spam and improving the quality of search results by penalizing sites that engage in manipulative link-building practices.</div>
+    </div>
+    
+    <div>
+        <span class="glossary-term" onclick="toggleDefinition('definition2')">Link Building</span>
+        <div id="definition2" class="definition">The process of acquiring hyperlinks from other websites to your own, which is crucial for improving search engine rankings.</div>
+    </div>
+    
+    <div>
+        <span class="glossary-term" onclick="toggleDefinition('definition3')">SEO (Search Engine Optimization)</span>
+        <div id="definition3" class="definition">The practice of optimizing a website to rank higher in search engine results, increasing organic traffic.</div>
+    </div>
+
+    <script>
+        function toggleDefinition(id) {
+            var definition = document.getElementById(id);
+            if (definition.style.display === "none" || definition.style.display === "") {
+                definition.style.display = "block";
+            } else {
+                definition.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

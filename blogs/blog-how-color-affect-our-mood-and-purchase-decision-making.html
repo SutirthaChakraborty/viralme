@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how color influences mood and affects purchasing decisions. Explore the psychological effects of colors in marketing.">
+    <title>Colors and Your Mood: Impacts on Purchase Decisions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8b400;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #f8b400;
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            border: 2px solid #ccc;
+        }
+        .color-info {
+            display: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Psychology of Color</h1>
+    <p>How Colors Impact Mood & Purchasing Behavior</p>
+</header>
+
+<section>
+    <h2>Explore Key Colors</h2>
+    <div class="color-box" style="background-color: red;" onclick="showInfo('Red')">Red</div>
+    <div class="color-box" style="background-color: blue;" onclick="showInfo('Blue')">Blue</div>
+    <div class="color-box" style="background-color: green;" onclick="showInfo('Green')">Green</div>
+    <div class="color-box" style="background-color: yellow;" onclick="showInfo('Yellow')">Yellow</div>
+    
+    <div id="color-info" class="color-info"></div>
+</section>
+
+<footer>
+    <p>© 2023 Color Psychology Blog. All rights reserved.</p>
+</footer>
+
+<script>
+    function showInfo(color) {
+        let info = '';
+        switch(color) {
+            case 'Red':
+                info = 'Red evokes passion and urgency. It stimulates appetite, making it a popular choice in food marketing.';
+                break;
+            case 'Blue':
+                info = 'Blue promotes calmness and trust. Often used in branding to convey stability and dependability.';
+                break;
+            case 'Green':
+                info = 'Green symbolizes nature and tranquility. It is associated with health and wellness products.';
+                break;
+            case 'Yellow':
+                info = 'Yellow evokes happiness and optimism. It grabs attention and is often used in discount signage.';
+                break;
+        }
+        document.getElementById('color-info').innerText = info;
+        document.getElementById('color-info').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

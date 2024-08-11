@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Content Creation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #ffffff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #e8491d;
+        }
+        button {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e8491d;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News Content Creation</h1>
+    <p>Exploring the Discipline of Content Creation in 2013</p>
+</header>
+
+<article>
+    <h2>The Rise of Content Creation</h2>
+    <p>In 2013, <span class="keywords">blogging</span> evolved into a distinct discipline, emphasizing the importance of <span class="keywords">SEO</span> and <span class="keywords">audience engagement</span>. Content creators began focusing on <span class="keywords">quality</span> over quantity, leading to more impactful and shareable posts.</p>
+    <button onclick="toggleDetails()">Read More</button>
+    <div id="details" style="display:none;">
+        <p>As the digital landscape grew, so did the need for <span class="keywords">strategic content planning</span>. Marketers recognized that well-crafted blog posts could drive traffic and enhance brand visibility. This shift marked a significant change in how content was perceived and produced.</p>
+    </div>
+</article>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("details");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keeling's Rewilding Case Studies in Ireland</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        .interactive:hover {
+            background-color: #d1e7fd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Keeling's Rewilding Case Studies in Ireland</h1>
+</header>
+
+<nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#impact">Impact</a>
+</nav>
+
+<section id="introduction">
+    <h2>Introduction</h2>
+    <p>Keeling's Rewilding project aims to restore natural ecosystems in Ireland, focusing on biodiversity and sustainable practices.</p>
+</section>
+
+<section id="case-studies">
+    <h2>Case Studies</h2>
+    <p>Explore various case studies showcasing successful rewilding efforts:</p>
+    <div class="interactive" onclick="showDetails('case1')">
+        <strong>Case Study 1: Reintroduction of Native Species</strong>
+    </div>
+    <div class="interactive" onclick="showDetails('case2')">
+        <strong>Case Study 2: Habitat Restoration</strong>
+    </div>
+    <div class="interactive" onclick="showDetails('case3')">
+        <strong>Case Study 3: Community Involvement</strong>
+    </div>
+    <div id="details" style="margin-top: 10px;"></div>
+</section>
+
+<section id="impact">
+    <h2>Impact</h2>
+    <p>The rewilding initiatives have led to increased biodiversity, improved ecosystem services, and enhanced community engagement.</p>
+</section>
+
+<script>
+    function showDetails(caseId) {
+        let details = {
+            case1: "This case study focuses on the successful reintroduction of native species such as the Irish hare and red squirrel.",
+            case2: "This study highlights habitat restoration efforts in the Burren region, enhancing local flora and fauna.",
+            case3: "Community involvement has been crucial, with local volunteers participating in planting and monitoring activities."
+        };
+        document.getElementById('details').innerText = details[caseId];
+    }
+</script>
+
+</body>
+</html>

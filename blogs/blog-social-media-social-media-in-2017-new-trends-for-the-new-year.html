@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Trends 2017</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .trend {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+        .trend:hover {
+            transform: scale(1.02);
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        #trendsList {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Social Media Trends for the New Year: Insights from 2017</h1>
+   
+    <div class="trend" onclick="toggleDetail('trend1')">
+        <h2>1. Video Content Dominance</h2>
+        <p>2017 saw a significant rise in video content consumption, with platforms like Instagram and Facebook prioritizing video over other forms of content.</p>
+    </div>
+
+    <div class="trend" onclick="toggleDetail('trend2')">
+        <h2>2. Live Streaming Revolution</h2>
+        <p>Live streaming gained immense popularity, leading brands to engage audiences in real-time.</p>
+    </div>
+
+    <div class="trend" onclick="toggleDetail('trend3')">
+        <h2>3. Rise of Influencer Marketing</h2>
+        <p>Marketers increasingly turned to influencers to reach target demographics effectively.</p>
+    </div>
+
+    <div id="trendsList">
+        <h3>Further Details</h3>
+        <ul>
+            <li>Video content is projected to account for 80% of all consumer internet traffic by 2020.</li>
+            <li>Platforms like Facebook Live had over 200 million monthly active users in 2017.</li>
+            <li>76% of marketers stated that influencer marketing efforts were effective in 2017.</li>
+        </ul>
+    </div>
+
+    <button class="button" onclick="displayTrends()">Show More Insights</button>
+
+    <script>
+        function toggleDetail(trendId) {
+            const trendDetails = {
+                trend1: "Video engagement can increase up to 1200%. Explore more video marketing strategies.",
+                trend2: "Live videos generate 6x more interactions than traditional video posts. Consider incorporating it into your strategy.",
+                trend3: "66% of marketers plan to increase their influencer marketing budget in the coming years."
+            };
+            alert(trendDetails[trendId]);
+        }
+
+        function displayTrends() {
+            const trendsList = document.getElementById('trendsList');
+            trendsList.style.display = trendsList.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

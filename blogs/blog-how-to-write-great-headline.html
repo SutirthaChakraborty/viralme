@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Write Great Headlines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .headline {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .headline:hover {
+            background-color: #e7f0ff;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>How to Write Great Headlines</h1>
+    <p>Unlock the secret to catchy and compelling headlines!</p>
+</header>
+
+<div class="container">
+    <h2>Why Headlines Matter</h2>
+    <p>Great headlines grab attention, boost SEO, and encourage click-throughs.</p>
+
+    <h2>Tips for Writing Great Headlines</h2>
+    <div class="headline" onclick="showTip('Use Numbers')">1. Use Numbers</div>
+    <div class="headline" onclick="showTip('Ask Questions')">2. Ask Questions</div>
+    <div class="headline" onclick="showTip('Make It Compelling')">3. Make It Compelling</div>
+    <div class="headline" onclick="showTip('Keep It Short')">4. Keep It Short</div>
+
+    <div id="tipDisplay" style="margin-top: 20px;"></div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Headline Mastery</p>
+</footer>
+
+<script>
+    function showTip(tip) {
+        let tipMessage = '';
+        switch (tip) {
+            case 'Use Numbers':
+                tipMessage = 'Using numbers in your headlines can increase engagement. For example, "10 Tips to Write Great Headlines."';
+                break;
+            case 'Ask Questions':
+                tipMessage = 'Questions pique curiosity. For instance, "Are Your Headlines Hurting Your Blog?"';
+                break;
+            case 'Make It Compelling':
+                tipMessage = 'Words like "amazing" or "ultimate" encourage clicks. Example: "The Ultimate Guide to Writing Headlines."';
+                break;
+            case 'Keep It Short':
+                tipMessage = 'Aim for 6 to 10 words for maximum impact. Concise equals memorable!';
+                break;
+        }
+        document.getElementById('tipDisplay').innerText = tipMessage;
+    }
+</script>
+
+</body>
+</html>

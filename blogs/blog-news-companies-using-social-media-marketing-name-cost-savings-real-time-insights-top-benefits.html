@@ -1,0 +1,102 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.header p {
+  font-weight: bold;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  padding: 14px;
+}
+
+.news-card img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.news-card h2 {
+  margin: 0;
+}
+
+.content {
+  margin-left: 140px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: deepskyblue;
+}
+
+.button-hover-effect {
+  transition: background-color 0.3s ease;
+}
+
+</style>
+<script>
+window.onload = function() {
+  const button1 = document.getElementById("social-media-btn");
+  button1.addEventListener("mouseover", function() {
+    button1.classList.add("button-hover-effect");
+  });
+  button1.addEventListener("mouseout", function() {
+    button1.classList.remove("button-hover-effect");
+  });
+};
+
+const button2 = document.getElementById("cost-savings-btn");
+button2.addEventListener("mouseover", function() {
+  button2.classList.add("button-hover-effect");
+});
+button2.addEventListener("mouseout", function() {
+  button2.classList.remove("button-hover-effect");
+});
+</script>
+</head>
+<body>
+<div class="container">
+  <h1>Blog News: Real-Time Social Media Marketing Insights & Cost Savings for Companies</h1>
+
+  <div class="news-card">
+    <img src

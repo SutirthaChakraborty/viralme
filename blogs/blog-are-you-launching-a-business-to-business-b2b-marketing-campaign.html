@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Marketing Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Launching Your B2B Marketing Campaign</h1>
+    </header>
+    <section>
+        <h2>Understanding B2B Marketing</h2>
+        <p>B2B marketing focuses on selling products or services to other businesses. Key strategies include content marketing, SEO, and email marketing to nurture leads and build relationships.</p>
+    </section>
+    <section>
+        <h2>Effective Strategies</h2>
+        <p>Utilize **SEO** techniques to enhance visibility, create **valuable content** that addresses industry pain points, and leverage **social media** for outreach.</p>
+    </section>
+    <section class="interactive">
+        <h2>Interactive Element</h2>
+        <p>Click the button to learn more about B2B marketing strategies!</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <p id="moreInfo" style="display:none;">Consider using **influencer marketing** and **guest blogging** to expand your reach and credibility in the industry.</p>
+    </section>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

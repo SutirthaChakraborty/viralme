@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .event {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .event h2 {
+            margin: 0;
+            color: #333;
+        }
+        .event p {
+            color: #666;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Upcoming Live Events</h1>
+</header>
+
+<div class="event">
+    <h2>Music Fest 2023</h2>
+    <p>Date: June 15, 2023</p>
+    <p>Location: Central Park</p>
+    <button onclick="toggleDetails('details1')">Show Details</button>
+    <div id="details1" class="details">
+        <p>Join us for an amazing lineup of artists and bands. Experience live performances, food trucks, and fun activities!</p>
+    </div>
+</div>
+
+<div class="event">
+    <h2>Art Exhibition</h2>
+    <p>Date: July 20, 2023</p>
+    <p>Location: City Gallery</p>
+    <button onclick="toggleDetails('details2')">Show Details</button>
+    <div id="details2" class="details">
+        <p>Explore stunning artworks from talented local artists. Refreshments will be served.</p>
+    </div>
+</div>
+
+<div class="event">
+    <h2>Tech Conference 2023</h2>
+    <p>Date: August 30, 2023</p>
+    <p>Location: Downtown Convention Center</p>
+    <button onclick="toggleDetails('details3')">Show Details</button>
+    <div id="details3" class="details">
+        <p>Learn about the latest innovations in technology, attend workshops, and network with industry leaders.</p>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        if (details.style.display === "none" || !details.style.display) {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

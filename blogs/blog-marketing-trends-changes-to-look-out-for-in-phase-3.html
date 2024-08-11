@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Marketing Trends in Phase 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .trend {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            transition: background 0.3s;
+        }
+        .trend:hover {
+            background: #e9ecef;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Marketing Trends to Watch in Phase 3</h1>
+</header>
+
+<section>
+    <h2>Key Trends</h2>
+    <div class="trend" onclick="toggleDetails('trend1')">
+        <strong>1. Increased Focus on Video Content</strong>
+        <p id="trend1" style="display:none;">Video content is becoming essential for engagement. Blogs that incorporate video are likely to see higher interaction rates.</p>
+    </div>
+    <div class="trend" onclick="toggleDetails('trend2')">
+        <strong>2. Personalization and AI</strong>
+        <p id="trend2" style="display:none;">Using AI to personalize content for readers can significantly enhance user experience and retention.</p>
+    </div>
+    <div class="trend" onclick="toggleDetails('trend3')">
+        <strong>3. Voice Search Optimization</strong>
+        <p id="trend3" style="display:none;">With the rise of voice-activated devices, optimizing blog content for voice search is crucial for visibility.</p>
+    </div>
+    <button onclick="alert('Stay updated with these trends!')">Learn More</button>
+</section>
+
+<script>
+    function toggleDetails(trendId) {
+        var trend = document.getElementById(trendId);
+        if (trend.style.display === "none") {
+            trend.style.display = "block";
+        } else {
+            trend.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

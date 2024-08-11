@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Video Planning & Localization Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background-color: #4caf50;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .topic-box {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .topic {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        a {
+            color: #4caf50;
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        function revealContent(topicId) {
+            const topics = document.querySelectorAll('.topic');
+            for (let topic of topics) {
+                topic.classList.remove('active');
+            }
+            const selectedTopic = document.getElementById(topicId);
+            selectedTopic.classList.add('active');
+            const contentSection = document.getElementById('content-' + topicId);
+            if (contentSection.style.display === 'none') {
+                contentSection.style.display = 'block';
+            } else {
+                contentSection.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>How to Plan, Localize, and Budget E-Learning Videos: A Practical Guide</h1>
+    </header>
+    
+    <section id="topics">
+        <div class="topic-box">
+            <div class="topic" id="planning" onclick="revealContent('planning')">
+                <h2>1</h2>
+                <span>Video Planning: Objectives, Audience, & Content Structure</span>
+            </div>
+            <div class="topic active" id="localization" onclick="revealContent('localization')">
+                <h2>2</h

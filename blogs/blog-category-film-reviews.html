@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore in-depth film reviews, movie analysis, and criticism. Discover the latest trends in cinema and join the conversation around your favorite films.">
+    <title>Film Reviews - Blog Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .review {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #333;
+            background-color: #f9f9f9;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Film Reviews</h1>
+        <p>Your source for the latest in cinema criticism and analysis.</p>
+    </header>
+    <div class="container">
+        <div class="review">
+            <h2>The Rise of the Anti-Hero</h2>
+            <p>Explore the trend of anti-heroes in modern cinema and their impact on audience engagement and storytelling.</p>
+            <button onclick="toggleReviewDetails('details1')">Read More</button>
+            <div id="details1" style="display:none;">
+                <p>Anti-heroes like Deadpool and Walter White have captivated audiences, prompting discussions about morality in storytelling.</p>
+            </div>
+        </div>
+        <div class="review">
+            <h2>Cinematic Techniques: A Deeper Look</h2>
+            <p>Analyze the innovative cinematographic techniques used in today's biggest blockbusters. </p>
+            <button onclick="toggleReviewDetails('details2')">Read More</button>
+            <div id="details2" style="display:none;">
+                <p>From color grading to camera angles, the artistry behind filmmaking adds depth to the viewer's experience.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleReviewDetails(detailId) {
+            var details = document.getElementById(detailId);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

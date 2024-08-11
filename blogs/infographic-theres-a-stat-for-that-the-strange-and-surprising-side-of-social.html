@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Infographic: There's a Stat for That - The Strange and Surprising Side of Social</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			width: 800px;
+			margin: 40px auto;
+			background-color: #f9f9f9;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.stat {
+			margin-bottom: 20px;
+		}
+		
+		.stat img {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.stat h2 {
+			margin-top: 0;
+		}
+		
+		.stat p {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		
+		.interactive {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.interactive:hover {
+			background-color: #3e8e41;
+		}
+		
+		.interactive:active {
+			background-color: #2e6a3f;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>There's a Stat for That - The Strange and Surprising Side of Social</h1>
+		<div class="stat">
+			<img src="stat1.jpg" alt="Stat 1">
+			<h2>Did you know?</h2>
+			<p>60% of users say that reading about other people's experiences helps them decide what to buy.</p>
+			<button class="interactive" onclick="alert('Read more...')">Read more...</button>
+		</div>
+		<div class="stat">
+			<img src="stat2.jpg" alt="Stat 2">
+			<h2>Did you know?</h2>
+			<p>The average person spends around 2 hours and 25 minutes on social media each day.</p>
+			<button class="interactive" onclick="alert('Read more...')">Read more...</button>
+		</div>
+		<script>
+			var stats = document.querySelectorAll('.stat');
+			stats.forEach(function(stat) {
+				stat.addEventListener('click', function() {
+					alert('Read more...');
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
+
+
+Note: You'll need to replace "stat1.jpg" and "stat2.jpg" with the actual file names and paths of your images.

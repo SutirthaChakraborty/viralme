@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Bing's Top Searches of 2011</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .searches {
+            margin-top: 20px;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .search-item {
+            margin: 5px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-item:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bing's Top Searches of 2011</h1>
+    <p>Explore the most popular search queries of 2011 as announced by Bing, showcasing trends in entertainment, sports, politics, and more.</p>
+    <div class="searches" id="searches">
+        <div class="search-item" onclick="showDetails('Lady Gaga')">1. Lady Gaga</div>
+        <div class="search-item" onclick="showDetails('Justin Bieber')">2. Justin Bieber</div>
+        <div class="search-item" onclick="showDetails('Britney Spears')">3. Britney Spears</div>
+        <div class="search-item" onclick="showDetails('Osama Bin Laden')">4. Osama Bin Laden</div>
+        <div class="search-item" onclick="showDetails('iPhone 5')">5. iPhone 5</div>
+    </div>
+    <div id="details" style="margin-top:20px;"></div>
+
+    <script>
+        function showDetails(searchTerm) {
+            const details = {
+                'Lady Gaga': 'Lady Gaga was a pop sensation in 2011, known for her unique style and hit songs like "Born This Way".',
+                'Justin Bieber': 'Justin Bieber dominated the charts with catchy melodies and a growing fan base worldwide.',
+                'Britney Spears': 'Britney Spears made headlines in 2011 with her albums and return to the pop scene after a hiatus.',
+                'Osama Bin Laden': 'The news of Osama Bin Laden’s death was a major event in 2011, impacting global politics.',
+                'iPhone 5': 'The anticipation for the iPhone 5 release generated buzz among tech enthusiasts and consumers.'
+            };
+            document.getElementById('details').innerHTML = details[searchTerm];
+        }
+    </script>
+</body>
+</html>

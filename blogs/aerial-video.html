@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Aerial Video Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .video {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .info {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Aerial Video</h1>
+        <div class="video">
+            <video width="100%" controls>
+                <source src="aerial-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button onclick="toggleInfo()">Show More Info</button>
+        <div class="info" id="info" style="display: none;">
+            <h2>Benefits of Aerial Video</h2>
+            <ul>
+                <li>**Enhanced Perspective**: Offers unique views and angles.</li>
+                <li>**Increased Engagement**: Captivates audience attention effectively.</li>
+                <li>**Versatile Applications**: Used in real estate, tourism, and events.</li>
+                <li>**Cost-effective Production**: Reduces the need for extensive equipment.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('info');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

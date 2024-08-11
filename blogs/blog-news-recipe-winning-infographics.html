@@ -1,0 +1,81 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News & Recipes: Winning Infographics</title>
+    <style>
+        /* Use important keywords */
+        .blog {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            width: 45%;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #4ab3ca;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .recipe img {
+            width: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #4ab3ca;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #307481;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add interactivity: toggle recipe details on hover
+            $(".recipe").hover(function() {
+                $(this).find(".recipe-content").slideToggle(200);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="blog">
+        <div class="container">
+            <div class="section">
+                <h

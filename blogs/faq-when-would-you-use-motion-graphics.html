@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: When to Use Motion Graphics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .faq-container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .faq {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .faq:hover {
+            background-color: #f1f1f1;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>FAQ: When to Use Motion Graphics</h1>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>1. What are motion graphics?</strong>
+            <div class="answer">Motion graphics are animated graphic designs. They are often used in marketing, advertising, and video production to create engaging visual content.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>2. When should you use motion graphics?</strong>
+            <div class="answer">Use motion graphics when you want to capture attention, explain complex ideas, promote a product, or enhance storytelling in videos.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>3. What are the benefits of using motion graphics?</strong>
+            <div class="answer">They increase engagement, simplify information, improve retention rates, and can convey emotions effectively.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(faqElement) {
+            const answer = faqElement.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

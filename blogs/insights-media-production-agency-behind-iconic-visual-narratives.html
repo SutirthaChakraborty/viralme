@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Media Production Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 5px solid #2196F3;
+        }
+        button {
+            padding: 10px 15px;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #1976D2;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights Media Production Agency</h1>
+    <p>Behind Iconic Visual Narratives</p>
+</header>
+
+<div class="content">
+    <h2>About Us</h2>
+    <p>At Insights Media, we specialize in crafting **engaging visual stories** that resonate with audiences. Our team is dedicated to producing **high-quality media** that elevates brands and communicates powerful messages.</p>
+</div>
+
+<div class="content">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Video Production</li>
+        <li>Brand Development</li>
+        <li>Creative Direction</li>
+        <li>Post-Production Services</li>
+    </ul>
+</div>
+
+<div class="interactive">
+    <h3>Learn More About Our Process</h3>
+    <button id="toggleProcess">Show/Hide Our Process</button>
+    <div id="processDetails" style="display:none;">
+        <p>We follow a structured approach to media production:</p>
+        <ol>
+            <li>Concept Development</li>
+            <li>Scripting</li>
+            <li>Shooting</li>
+            <li>Editing</li>
+            <li>Final Delivery</li>
+        </ol>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleProcess').addEventListener('click', function() {
+        var details = document.getElementById('processDetails');
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+        } else {
+            details.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

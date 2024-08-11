@@ -1,0 +1,105 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brafton Content Marketing Services Infographic</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .infographic {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+  }
+  .infographic h2 {
+    margin-bottom: 10px;
+  }
+  .infographic ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .infographic ul li {
+    margin-bottom: 10px;
+  }
+  .infographic .highlight {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .infographic .highlight span {
+    background-color: #007bff;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: white;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+
+<div class="infographic">
+  <h2>Brafton Content Marketing Services</h2>
+  <ul>
+    <li>
+      <h3>Content Strategy</h3>
+      <p>Developing a comprehensive strategy to create valuable, relevant, and consistent content.</p>
+    </li>
+    <li>
+      <h3>Content Creation</h3>
+      <p>Creating engaging content that resonates with your target audience.</p>
+    </li>
+    <li>
+      <h3>Content Promotion</h3>
+      <p>Promoting your content across various channels to reach your target audience.</p>
+      <div class="highlight">
+        <span>Interactive Chart</span>
+        <canvas id="promotionChart" width="400" height="200"></canvas>
+        <script>
+          var ctx = document.getElementById('promotionChart').getContext('2d');
+          var promotionChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Social Media', 'Email Marketing', 'Content Syndication'],
+              datasets: [{
+                label: 'Content Promotion',
+                data: [50, 30, 20],
+                backgroundColor: [
+                  'rgba(255, 99, 132, 0.6)',
+                  'rgba(54, 162, 235, 0.6)',
+                  'rgba(255, 206, 86, 0.6)'
+                ],
+                borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)'
+                ],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+      </div>
+    </li>
+    <li>
+      <h3>Content Analysis</h3>
+      <p>Analyzing content performance to understand what works and what doesn’t.</p>
+    </li>
+  </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

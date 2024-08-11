@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the partnership between Google and Twitter as tweets now appear in search results, enhancing real-time news accessibility.">
+    <title>Google & Twitter Partnership: Tweets in Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #009688;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .tweet-container {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            background: #f8f9fa;
+        }
+        button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google & Twitter Partnership</h1>
+        <h2>Tweets Now Appear in Search Results</h2>
+    </header>
+    <article>
+        <p>In a groundbreaking move, Google and Twitter have partnered to enhance the visibility of real-time news. As tweets now appear directly in Google search results, users can access live updates and trending topics easily, revolutionizing how news is consumed in the digital age.</p>
+        <div class="tweet-container" id="tweetContainer">
+            <p><strong>Latest Tweet:</strong></p>
+            <p id="latestTweet">Loading tweet...</p>
+        </div>
+        <button onclick="fetchTweet()">Get Latest Tweet</button>
+    </article>
+    <script>
+        function fetchTweet() {
+            // Simulated function to fetch a tweet
+            const tweets = [
+                "🚀 Excited to see our partnership with @Google take flight! #News #Twitter",
+                "📰 Google's search results just got a whole lot better with Twitter integration! #Partnership #Innovation",
+                "📈 Stay updated with the latest trends as tweets now show up in your Google searches! #RealTime#Updates"
+            ];
+            const randomTweet = tweets[Math.floor(Math.random() * tweets.length)];
+            document.getElementById("latestTweet").innerText = randomTweet;
+        }
+    </script>
+</body>
+</html>

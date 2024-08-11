@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Content People Podcast: Exploring Creative Leadership. Join us as we dive deep into innovative strategies and insights for leading creative teams.">
+    <title>Content People Podcast</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #28A745;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Content People Podcast</h1>
+    <p>Discover Creative Leadership Insights</p>
+</header>
+
+<section>
+    <h2>About Our Podcast</h2>
+    <p>Welcome to the <strong>Content People Podcast</strong>, where we explore the intricacies of creative leadership and the art of managing innovative teams. Join us as we interview thought leaders, entrepreneurs, and creatives who share their journey and strategies for success.</p>
+    <button onclick="toggleContent()">More About Us</button>
+    <div id="moreInfo" style="display:none;">
+        <p>In this podcast, we focus on topics such as:</p>
+        <ul>
+            <li>Creative Collaboration</li>
+            <li>Innovative Problem Solving</li>
+            <li>Leadership Styles</li>
+            <li>Team Dynamics</li>
+            <li>Effective Communication</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function toggleContent() {
+        const moreInfo = document.getElementById('moreInfo');
+        if (moreInfo.style.display === 'none') {
+            moreInfo.style.display = 'block';
+        } else {
+            moreInfo.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

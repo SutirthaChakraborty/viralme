@@ -1,0 +1,65 @@
+Here's a simple HTML and CSS code snippet that you can use for a FAQs page on the lead time for a webinar video project with Big 3 Media. I've included interactive CSS and minimal JavaScript to provide a hover effect on the questions.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | Webinar Video Project Lead Time</title>
+    <style>
+        /* Basic styling */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0 auto;
+            width: 80%;
+        }
+        .faq-item {
+            position: relative;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .faq-item:hover {
+            background-color: #f5f5f5;
+        }
+        .question {
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            margin-top: 5px;
+        }
+        .show-answer {
+            cursor: pointer;
+        }
+        .show-answer:hover::before {
+            content: "\25BC";
+        }
+    </style>
+    <script>
+        function toggleAnswer(element) {
+            element.nextElementSibling.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <div class="faq-list">
+        <div class="faq-item">
+            <div class="question">
+                <a href="#" class="show-answer" onclick="toggleAnswer(this)">What is the lead time needed to initiate a webinar video project with Big 3 Media?</a>
+            </div>
+            <div class="answer">
+                <p>The lead time for a webinar video project typically ranges from 2-4 weeks, depending on the scope, customization, and production schedule. For a smoother process, it's recommended to submit a detailed project brief well in advance.</p>
+            </div>
+        </div>
+        <!-- Add more FAQ items with appropriate questions and answers -->
+    </div>
+</body>
+</html>
+
+
+Remember to adjust the content within the `<div class="answer">` tags with more detailed information as needed, and you can add more FAQ items by creating additional

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore information about tenders, bidding processes, and tender management. Learn how to navigate public and private tender opportunities.">
+    <title>Tender Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .keyword {
+            background: #e9ecef;
+            border-radius: 5px;
+            padding: 5px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Tenders</h1>
+    </header>
+    <div class="container">
+        <h2>What is a Tender?</h2>
+        <p>A tender is a formal invitation to bid issued by an organization or company for a project or service. It often involves competitive bidding and can be related to public contracts or private agreements.</p>
+        <h2>Types of Tenders</h2>
+        <ul>
+            <li class="keyword">Open Tender</li>
+            <li class="keyword">Invited Tender</li>
+            <li class="keyword">Negotiated Tender</li>
+        </ul>
+        <h2>Why Participate in Tenders?</h2>
+        <p>Engaging in tender processes can provide businesses with various opportunities, including:</p>
+        <ul>
+            <li>Access to larger projects</li>
+            <li>Increased credibility</li>
+            <li>Potential for long-term partnerships</li>
+        </ul>
+        <button onclick="toggleDetails()">Show More Details</button>
+        <div id="details" style="display:none;">
+            <h3>How to Prepare for a Tender</h3>
+            <p>Understanding the requirements, preparing comprehensive documentation, and meeting deadlines are essential for a successful tender submission.</p>
+        </div>
+    </div>
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById('details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

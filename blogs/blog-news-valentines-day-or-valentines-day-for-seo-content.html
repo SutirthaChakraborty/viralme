@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the best Valentine's Day ideas, gifts, and tips for a perfect romantic celebration.">
+    <meta name="keywords" content="Valentine's Day, romantic gifts, love stories, date ideas, Valentine's Day 2024, couples, love, relationships">
+    <title>Valentine's Day Blog: News and Ideas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        .content {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .interactive-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .interactive-button:hover {
+            background-color: #c0392b;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f1c40f;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Valentine's Day 2024: Celebrate Love</h1>
+</header>
+
+<div class="content">
+    <p>Welcome to our Valentine's Day blog! Find the latest news on romantic gifts, date ideas, and more to make this Valentine's special.</p>
+    <p>Looking for unique ways to express your love? From heartfelt DIY gifts to the top rated restaurants, we've got you covered!</p>
+    <button class="interactive-button" onclick="showIdeas()">Click for Romantic Ideas</button>
+    <div class="output" id="ideasOutput"></div>
+</div>
+
+<script>
+    function showIdeas() {
+        const ideas = [
+            "Plan a surprise picnic in the park.",
+            "Create a scrapbook of your favorite memories together.",
+            "Cook a romantic dinner with their favorite dish.",
+            "Take a dance class together.",
+            "Write heartfelt love letters to each other."
+        ];
+        const outputDiv = document.getElementById("ideasOutput");
+        outputDiv.innerHTML = '<strong>Romantic Ideas:</strong><br>' + ideas.join('<br>');
+        outputDiv.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

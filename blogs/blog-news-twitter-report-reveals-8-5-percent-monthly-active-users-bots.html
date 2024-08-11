@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest news on Twitter's bot activity revealing that 8.5% of monthly active users are bots.">
+    <title>Twitter Report: 8.5% Bots Among Active Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1DA1F2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .stats {
+            padding: 10px;
+            background-color: #e1f5fe;
+            border-left: 5px solid #0d47a1;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0d47a1;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Twitter Bot Report</h1>
+</header>
+
+<article>
+    <h2>8.5% of Monthly Active Twitter Users are Bots</h2>
+    <p>Recent reports reveal that a significant portion of Twitter's monthly active users are actually bots, accounting for an alarming 8.5%. This finding raises questions about user engagement and the authenticity of interactions on the platform.</p>
+    
+    <div class="stats">
+        <h3>Key Statistics:</h3>
+        <ul>
+            <li>Total monthly active users: Over 330 million</li>
+            <li>Estimated bots: Approximately 28 million</li>
+            <li>Impact on brand engagement: High</li>
+        </ul>
+    </div>
+    
+    <button id="more-info">Learn More</button>
+    <div id="details" style="display:none;">
+        <p>Bots can be used for various purposes including spam, spreading misinformation, and automating tweets. Understanding their influence is crucial for effective social media strategies.</p>
+    </div>
+</article>
+
+<script>
+    document.getElementById("more-info").onclick = function() {
+        var details = document.getElementById("details");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+            this.textContent = "Show Less";
+        } else {
+            details.style.display = "none";
+            this.textContent = "Learn More";
+        }
+    };
+</script>
+
+</body>
+</html>

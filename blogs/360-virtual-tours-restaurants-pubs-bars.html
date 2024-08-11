@@ -1,0 +1,88 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Virtual Tours for Restaurants, Pubs & Bars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .preview {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .preview:hover .controls {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            opacity: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .control {
+            margin-top: 10px;
+        }
+
+        .active {
+            background-color: lightblue;
+        }
+
+        .button {
+            color: #333;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        @media (hover: none) {
+            .preview:hover .controls {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        function showContent(index) {
+            document.querySelectorAll('.preview').forEach((preview, i) => {
+                preview.classList.remove('active');
+            });
+            document.getElementById('preview-' + index).classList.add('active');
+            document.getElementById('content-'

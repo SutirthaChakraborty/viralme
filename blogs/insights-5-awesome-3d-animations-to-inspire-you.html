@@ -1,0 +1,130 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights: 5 Awesome 3D Animations to Inspire You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .animation-preview {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .animation-preview img {
+            width: 100%;
+            height: auto;
+        }
+        .animation-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+        .details-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .details-container h2 {
+            margin: 10px 0;
+        }
+        .details-container p {
+            margin: 5px 0;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
+    <script>
+        function init() {
+            // Initialize Three.js scene and camera
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            // Add a cube to the scene
+            var geometry = new THREE.BoxGeometry(1, 1, 1);
+            var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+            var cube = new THREE.Mesh(geometry, material);
+            scene.add(cube);
+
+            // Camera controls
+            var controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+            // Render loop
+            function animate() {
+                requestAnimationFrame(animate);
+                cube.rotation.x += 0.01;
+                cube.rotation.y += 0.01;
+                renderer.render(scene, camera);
+            }
+            animate();
+        }
+        window.addEventListener('load', init);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights: 5 Awesome 3D Animations to Inspire You</h1>
+        <div class="animation-preview">
+            <img src="https://www.example.com/animation1.png" alt="Animation 1">
+            <div class="animation-info">
+                <h2>Animation 1</h2>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="animation-preview">
+            <img src="https://www.example.com/animation2.png" alt="Animation 2">
+            <div class="animation-info">
+                <h2>Animation 2</h2>
+                <p>Description: Integer nec odio. Pellentesque in ipsum id orci porta dapibus.</p>
+            </div>
+        </div>
+        <div class="animation-preview">
+            <img src="https://www.example.com/animation3.png" alt="Animation 3">
+            <div class="animation-info">
+                <h2>Animation 3</h2>
+                <p>Description: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            </div>
+        </div>
+        <div class="animation-preview">
+            <img src="https://www.example.com/animation4.png" alt="Animation 4">
+            <div class="animation-info">
+                <h2>Animation 4</h2>
+                <p>Description: Curabitur blandit tempus porttitor.</p>
+            </div>
+        </div>
+        <div class="animation-preview">
+            <img src="https://www.example.com/animation5.png" alt="Animation 5">
+            <div class="animation-info">
+                <h2>Animation 5</h2>
+                <p>Description: Donec ullamcorper nulla non felis.</p>
+            </div>
+        </div>
+        <div class="details-container">
+            <h2>More Details</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        </div>
+    </div>
+</body>
+</html>

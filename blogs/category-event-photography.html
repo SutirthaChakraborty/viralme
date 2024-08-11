@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expert Event Photography Services to Capture Your Special Moments.">
+    <meta name="keywords" content="Event Photography, Professional Photographer, Corporate Events, Wedding Photography, Party Photography">
+    <title>Event Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Professional Event Photography</h1>
+        <p>Capturing your special moments with expert skills in various event photography categories such as:</p>
+        <ul>
+            <li>Wedding Photography</li>
+            <li>Corporate Events</li>
+            <li>Party Photography</li>
+            <li>Graduation Photography</li>
+            <li>Birthday Celebrations</li>
+        </ul>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="event1.jpg" alt="Wedding Event">
+            <img src="event2.jpg" alt="Corporate Gathering">
+            <img src="event3.jpg" alt="Birthday Party">
+        </div>
+        <button class="button" onclick="alert('Contact us for your event photography needs!')">Book Now</button>
+    </div>
+    <script>
+        document.querySelectorAll('.gallery img').forEach((img) => {
+            img.addEventListener('click', () => {
+                alert('Displaying details for: ' + img.alt);
+            });
+        });
+    </script>
+</body>
+</html>

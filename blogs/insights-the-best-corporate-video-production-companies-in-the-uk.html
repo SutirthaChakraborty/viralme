@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the top corporate video production companies in the UK, known for their creativity and efficiency.">
+    <title>Best Corporate Video Production Companies in the UK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0056b3;
+        }
+        .company {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .company:hover {
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Top Corporate Video Production Companies in the UK</h1>
+    </header>
+    <div class="container">
+        <h2>Insights on Best Companies</h2>
+        <div class="company" onclick="toggleInfo(this)">
+            <h3>Company A - Creative Visuals</h3>
+            <p>Specializes in corporate branding and promotional videos.</p>
+            <div class="info" style="display: none;">
+                <p>Track Record: Highly-rated client reviews with impactful storytelling.</p>
+            </div>
+        </div>
+        <div class="company" onclick="toggleInfo(this)">
+            <h3>Company B - Visionary Productions</h3>
+            <p>Expert in animated explainer videos.</p>
+            <div class="info" style="display: none;">
+                <p>Track Record: Over 500 successful projects in various industries.</p>
+            </div>
+        </div>
+        <div class="company" onclick="toggleInfo(this)">
+            <h3>Company C - Professional Insights</h3>
+            <p>Known for corporate training and internal communication videos.</p>
+            <div class="info" style="display: none;">
+                <p>Track Record: Collaborated with Fortune 500 companies.</p>
+            </div>
+        </div>
+        <button onclick="contactUs()">Contact Us for More Info</button>
+    </div>
+    <script>
+        function toggleInfo(element) {
+            var info = element.querySelector(".info");
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
+        
+        function contactUs() {
+            alert("For inquiries, please email us at info@videoproductionuk.com");
+        }
+    </script>
+</body>
+</html>

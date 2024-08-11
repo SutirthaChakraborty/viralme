@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>above the fold podcast</title>
+	<style>
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			text-align: center;
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			border-bottom: 1px solid #666;
+		}
+		
+		.header h1 {
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		
+		.episode-list {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.episode-list li {
+			margin: 20px;
+			background-color: #f7f7f7;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.episode-list li:hover {
+			background-color: #ccc;
+		}
+		
+		.episode-list li h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		
+		.episode-list li p {
+			font-size: 16px;
+			color: #666;
+		}
+		
+		/* CSS animations */
+		@keyframes fadein {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		
+		@keyframes zoomin {
+			from {
+				transform: scale(0.5);
+			}
+			to {
+				transform: scale(1);
+			}
+		}
+		
+		.episode-list li:hover {
+			animation: zoomin 0.5s;
+		}
+		
+		.episode-list li:hover p {
+			animation: fadein 0.5s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>above the fold podcast</h1>
+			<p>Episode 20: More butt coverage needed</p>
+		</header>
+		<ul class="episode-list">
+			<li>
+				<h2>Episode 1: Introduction to podcast</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+			</li>
+			<li>
+				<h2>Episode 2: Podcasting 101</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+			</li>
+			<li>
+				<h2>Episode 3: Podcasting 102</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+			</li>
+			<li>
+				<h2>Episode 20: More butt coverage needed</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+			</li>
+		</ul>
+	</div>
+	
+	<script>
+		// JavaScript code to interact with the podcast episodes
+		const episodeList = document.querySelector('.episode-list');
+		episodeList.addEventListener('mouseover', (e) => {
+			const episode = e.target.closest('li');
+			episode.classList.add('hover');
+		});
+		episodeList.addEventListener('mouseout', (e) => {
+			const episode = e.target.closest('li');
+			episode.classList.remove('hover');
+		});
+	</script>
+</body>
+</html>
+
+
+Keywords: above the fold podcast, podcasting, episode list, CSS animations, JavaScript interaction, butt coverage, podcasting 101, podcasting 102, more butt coverage needed.

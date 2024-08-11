@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Side of Tech Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        #jokeButton {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #joke {
+            margin-top: 20px;
+            font-size: 18px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        #joke:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explore the Funny Side of Tech</h1>
+    <p>Discover humorous insights and hilarious anecdotes that make the tech world more relatable. From quirky gadgets to absurd online behavior, technology often offers a comedic twist!</p>
+    <button id="jokeButton">Get a Tech Joke!</button>
+    <div id="joke"></div>
+
+    <script>
+        const jokes = [
+            "Why do programmers prefer dark mode? Because light attracts bugs!",
+            "I would tell you a joke about UDP, but you might not get it.",
+            "Why was the computer cold? It left its Windows open!",
+            "Why don’t programmers like nature? It has too many bugs.",
+            "JavaScript is like teenage sex. Everyone talks about it, nobody really knows how to do it, everyone thinks everyone else is doing it."
+        ];
+        
+        document.getElementById('jokeButton').addEventListener('click', function() {
+            const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+            document.getElementById('joke').innerText = randomJoke;
+        });
+    </script>
+</body>
+</html>

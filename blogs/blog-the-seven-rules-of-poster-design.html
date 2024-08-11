@@ -1,0 +1,87 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Rules of Poster Design</title>
+    <style>
+        /* Use .rule-1 to .rule-7 classes for styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rule-container {
+            margin-bottom: 20px;
+        }
+
+        .rule-number {
+            font-size: 24px;
+            display: inline-block;
+            background-color: #e6e6e6;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+
+        .rule-description {
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+        .example {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: #ffffff;
+        }
+
+        .rule-explanation {
+            font-style: italic;
+            color: #666666;
+        }
+
+        /* Interactive CSS: hover effect */
+        .example:hover {
+            border-color: #ff69b4;
+        }
+
+        .embedded-js {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Interactive JS: reveal explanations on hover */
+        .show-explanation:hover .embedded-js {
+            display: block;
+            animation: fadeIn 0.3s forwards;
+        }
+    </style>
+    <script>
+        function revealExplanations() {
+            const explanations = document.querySelectorAll('.show-explanation .embedded-js');
+            explanations.forEach((exp) => {
+                exp.style.display = 'block';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">

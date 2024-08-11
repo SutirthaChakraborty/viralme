@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Focus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .social-data {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .social-data div {
+            background: #e2e2e2;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social-data div:hover {
+            background: #d1d1d1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News Focus</h1>
+        <nav>
+            <a href="#latest">Latest News</a>
+            <a href="#trending">Trending Topics</a>
+            <a href="#social">Social Insights</a>
+        </nav>
+    </header>
+    <div class="container">
+        <article>
+            <h2>Understanding Google SERPs</h2>
+            <p>Google Search Engine Results Pages (SERPs) are crucial for visibility. They display organic results, paid ads, and rich snippets.</p>
+            <div class="social-data">
+                <div onclick="alert('Facebook Shares: 120')">Facebook</div>
+                <div onclick="alert('Twitter Tweets: 75')">Twitter</div>
+                <div onclick="alert('LinkedIn Shares: 50')">LinkedIn</div>
+            </div>
+        </article>
+        <article>
+            <h2>Maximizing Reach with Keywords</h2>
+            <p>Utilizing effective keywords can significantly enhance your blog's reach. Focus on long-tail keywords for better targeting.</p>
+            <div class="social-data">
+                <div onclick="alert('Instagram Likes: 200')">Instagram</div>
+                <div onclick="alert('Pinterest Pins: 30')">Pinterest</div>
+                <div onclick="alert('Reddit Upvotes: 15')">Reddit</div>
+            </div>
+        </article>
+    </div>
+    <script>
+        document.querySelectorAll('.social-data div').forEach(item => {
+            item.addEventListener('click', event => {
+                alert('Social data clicked!');
+            });
+        });
+    </script>
+</body>
+</html>

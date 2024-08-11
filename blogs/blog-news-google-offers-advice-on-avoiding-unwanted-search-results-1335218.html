@@ -1,0 +1,83 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Offers Advice: Avoiding Unwanted Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #3366cc;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        article {
+            margin: 20px 0;
+        }
+
+        .keyword-list {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .keyword {
+            font-weight: bold;
+        }
+
+        button.explain {
+            background-color: dodgerblue;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        button.explain:hover {
+            background-color: deepskyblue;
+        }
+
+        .explanation {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function toggleExplanations() {
+            var explanations = document.getElementsByClassName('explanation');
+            for (var i = 0; i < explanations.length; i++) {
+                explanations[i].style.display = explanations[i].classList.contains('active') ? 'none' : 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h

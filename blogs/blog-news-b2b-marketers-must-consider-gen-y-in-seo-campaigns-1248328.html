@@ -1,0 +1,59 @@
+Here's a simple HTML and CSS code snippet that highlights the topic and includes related keywords. The interactive CSS and JS are used to show a tooltip when hovering over specific elements. I've added some relevant keywords in the content to enhance discoverability.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: B2B Marketers Need to Target Gen Y in SEO</title>
+    <style>
+        .content {
+            font-family: Arial, sans-serif;
+        }
+        
+        .topic {
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .keyword {
+            font-style: italic;
+            color: #669933;
+            cursor: help;
+            transition: color 0.3s;
+        }
+        
+        .keyword:hover {
+            color: #ff0000;
+        }
+        
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            border: 1px solid #d3d3d3;
+            padding: 5px;
+            z-index: 1;
+        }
+    </style>
+    <script>
+        function showTooltip(htitle, htext) {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.innerHTML = htext;
+            tooltip.style.display = 'block';
+            tooltip.style.top = htitle.offsetTop - 20 + 'px';
+            tooltip.style.left = htitle.offsetLeft + 'px';
+        }
+
+        function hideTooltip() {
+            const tooltip = document.getElementById('tooltip');
+            tooltip.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h2 class="topic">B2B Marketers Should Focus on SEO Strategies for <span class="keyword" title="Targeted marketing efforts">Targeting</span> Gen Y</h2>
+        <p>In today's digital landscape, B2B marketers must understand how to <span class="keyword" title="Search engine optimization">optimize</span> their campaigns for Gen Y, a tech-savvy audience that demands engaging content. By including <span class="keyword" title="Relevant keywords">keywords like "B2B marketing", "SEO best practices

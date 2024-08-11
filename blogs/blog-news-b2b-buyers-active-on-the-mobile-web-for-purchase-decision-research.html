@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Buyers on Mobile Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            background-color: #007BFF;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            display: inline-block;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            background-color: #28A745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>B2B Buyers Active on Mobile Web</h1>
+        <p>Understand the Impact of Mobile on Purchase Decisions</p>
+    </header>
+    <div class="container">
+        <h2>Key Insights</h2>
+        <p>The B2B buying process is transforming as buyers increasingly utilize mobile devices for research. Key factors include:</p>
+        <span class="keyword">Mobile Optimization</span>
+        <span class="keyword">Purchase Decisions</span>
+        <span class="keyword">B2B Marketing</span>
+        <span class="keyword">SEO Strategies</span>
+        <span class="keyword">User Experience</span>
+        
+        <p>With mobile web usage growing, businesses must adapt their strategies to capture today's mobile-driven B2B buyer.</p>
+        
+        <button id="toggleInfo">Learn More</button>
+        <div id="info">
+            <h3>Mobile Web Influence</h3>
+            <p>Research shows that B2B buyers are heavily influenced by online content accessed via mobile devices, including product reviews, comparisons, and case studies. Providing mobile-friendly content can significantly enhance engagement and conversion rates.</p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('toggleInfo').onclick = function() {
+            var info = document.getElementById('info');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahoo Paid Search Transition to Microsoft AdCenter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            color: #0078d7;
+            font-weight: bold;
+        }
+        button {
+            background-color: #008cba;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f7f;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yahoo Paid Search Transition</h1>
+</header>
+
+<div class="content">
+    <h2>Upcoming Changes in Search Marketing</h2>
+    <p>The <span class="keyword">Yahoo Paid Search</span> transition to <span class="keyword">Microsoft AdCenter</span> is expected to commence this Monday. This change will impact how marketers migrate their search ads.</p>
+    <p>With more advertisers relying on search engines to reach their target audience, the shift to Microsoft AdCenter will introduce new features and tools that may enhance campaign performance.</p>
+    <p>Marketers are advised to prepare for the transition and ensure a smooth transfer of their ad campaigns to avoid disruptions.</p>
+    
+    <button id="infoButton">Learn More About the Transition</button>
+    <div id="moreInfo" style="display:none;">
+        <p>Further information includes updates on <span class="keyword">search advertising</span> capabilities and integration with Microsoft services, which can lead to improved ROI for advertisers.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("infoButton").onclick = function() {
+        var info = document.getElementById("moreInfo");
+        info.style.display = (info.style.display === "none" || info.style.display === "") ? "block" : "none";
+        this.innerText = (info.style.display === "block") ? "Show Less" : "Learn More About the Transition";
+    };
+</script>
+
+</body>
+</html>

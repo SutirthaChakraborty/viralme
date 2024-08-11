@@ -1,0 +1,68 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Portraits - Artistic Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category-header {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .portrait-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 10px;
+        }
+        .portrait-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .portrait-card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .portrait-card:hover img {
+            transform: scale(1.1);
+        }
+        .portrait-title {
+            padding: 8px;
+            background-color: #f4f4f4;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function revealDescription(id) {
+            var description = document.getElementById(id);
+            description.style.display = (description.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header class="category-header">
+        <h1>Category Portraits: A Gallery of Artistic Mastery</h1>
+        <div class="searchbox">
+            <input type="text" id="searchInput" placeholder="Search by keyword..." onkeyup="searchPortraits(event)">
+        </div>
+        <button onclick="revealDescription('descriptionContainer')">About Portraits</button>
+    </header>
+    <div id="descriptionContainer" style="

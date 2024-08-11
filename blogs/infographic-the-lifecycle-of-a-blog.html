@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infographic illustrating the lifecycle of a blog, covering essential stages from ideation to promotion.">
+    <title>Infographic: The Lifecycle of a Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .infographic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .stage {
+            margin: 15px 0;
+            padding: 15px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .stage:hover {
+            transform: scale(1.05);
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <h1>Infographic: The Lifecycle of a Blog</h1>
+    <div class="infographic">
+        <div class="stage" onclick="toggleDetails(this)">
+            <strong>1. Ideation</strong>
+            <div class="details">Brainstorming topics and researching your niche.</div>
+        </div>
+        <div class="stage" onclick="toggleDetails(this)">
+            <strong>2. Content Creation</strong>
+            <div class="details">Writing and editing high-quality blog posts.</div>
+        </div>
+        <div class="stage" onclick="toggleDetails(this)">
+            <strong>3. Publishing</strong>
+            <div class="details">Optimizing and publishing your content on your blog.</div>
+        </div>
+        <div class="stage" onclick="toggleDetails(this)">
+            <strong>4. Promotion</strong>
+            <div class="details">Sharing your blog through social media and SEO strategies.</div>
+        </div>
+        <div class="stage" onclick="toggleDetails(this)">
+            <strong>5. Engagement</strong>
+            <div class="details">Interacting with readers through comments and feedback.</div>
+        </div>
+        <div class="stage" onclick="toggleDetails(this)">
+            <strong>6. Analysis</strong>
+            <div class="details">Using analytics to measure performance and adjust strategies.</div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(element) {
+            const details = element.querySelector('.details');
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

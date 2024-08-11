@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #333;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.keyword {
+  font-weight: bold;
+}
+
+.xlabel {
+  font-weight: 500;
+  color: #696;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const tooltips = document.querySelectorAll('.tooltip');
+  tooltips.forEach(tooltip => {
+    tooltip.addEventListener('mouseover', function() {
+      this.style.color = ' white';
+      this.style.filter = ' drop-shadow(0 0 5px rgba(0, 0, 0, 0.5))';
+    });
+    tooltip.addEventListener('mouseout', function() {
+      this.style.color = 'black';
+      this.style.filter = ' none';
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+  <h1 class="title">Third Thursday Blog Tip: Dominate SERP with These 3 Must-Haves</h1>
+  <div class="section">
+    <div class="column">
+      <p class="xlabel keyword">Keyword-rich Title:</p>
+      <p>Your Blog Title: "Legacy SEO Boost: Third Thursday's Top 3 Strategies for <span class="tooltip">Better Reach</span>"</p>
+    </div>
+    <div class="column">
+      <p class="xlabel keyword">Optimized Meta Description:</p>
+     

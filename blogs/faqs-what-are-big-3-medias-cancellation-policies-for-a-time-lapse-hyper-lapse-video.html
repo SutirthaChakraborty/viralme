@@ -1,0 +1,63 @@
+#### HTML and CSS Code for Big 3 Media's Cancellation Policies for Time-Lapse and Hyper-Lapse Videos
+
+Below is a small HTML code with CSS to display information about the cancellation policies for time-lapse and hyper-lapse videos. The code includes interactive CSS and JS to explain the topics.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big 3 Media's Cancellation Policies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .faq-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .question {
+      cursor: pointer;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+    .answer {
+      display: none;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq-container">
+    <h2>Big 3 Media's Cancellation Policies for Time-Lapse and Hyper-Lapse Videos</h2>
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(1)">What is the cancellation policy for time-lapse videos?</div>
+      <div class="answer" id="answer1">The cancellation policy for time-lapse videos is as follows... **(add relevant information here)**</div>
+    </div>
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(2)">What is the cancellation policy for hyper-lapse videos?</div>
+      <div class="answer" id="answer2">The cancellation policy for hyper-lapse videos is as follows... **(add relevant information here)**</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleAnswer(id) {
+      const answer = document.getElementById('answer' + id);
+      answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a simple FAQ section with questions about the cancellation policies for time-lapse and hyper-lapse videos. Each question is clickable, and when clicked, it reveals the corresponding answer. The CSS styles the layout and appearance of the FAQ section, while the JavaScript enables the interactive functionality to show and hide the answers.
+
+Feel free to customize the content and styles as needed for your specific use case.

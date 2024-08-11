@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Midwestern design firm sues Microsoft over Bing name controversy. Stay updated with the latest blog news.">
+    <title>Midwestern Design Firm Sues Microsoft Over Bing Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keywords {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .toggle {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 15px;
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Midwestern Design Firm Lawsuit Against Microsoft</h1>
+        <p>A small <span class="keywords">Midwestern design firm</span> has filed a lawsuit against <span class="keywords">Microsoft</span>, claiming copyright infringement over the brand name <span class="keywords">Bing</span>. This lawsuit has stirred significant discussion about intellectual property rights in the tech industry.</p>
+        
+        <button class="toggle">Click to Learn More</button>
+        <div class="toggle-content">
+            <p>The firm argues that they have been operating under the name Bing for over a decade in their local market and that Microsoft’s use has caused confusion among consumers. This case raises important questions about trademark laws and brand identity.</p>
+            <p>Stay tuned for further updates as this legal battle unfolds, potentially impacting the <span class="keywords">branding strategies</span> of tech companies across the globe.</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.toggle').addEventListener('click', function() {
+            const content = document.querySelector('.toggle-content');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            this.textContent = content.style.display === 'block' ? 'Click to Hide' : 'Click to Learn More';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog News: Understanding Google Analytics Traffic Counts</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 10px;
+}
+.btn {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #45a049;
+}
+.chart {
+    width: 100%;
+    height: 300px;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Blog News: Understanding Google Analytics Traffic Counts</h1>
+<p>Google Analytics is a powerful tool for tracking website traffic and understanding user behavior. But how accurate are the traffic counts provided by Google Analytics?</p>
+<button class="btn" onclick="showChart()">View Traffic Chart</button>
+<div id="chartContainer" class="chart"></div>
+<script>
+function showChart() {
+    var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+            text: "Weekly Traffic Trends"
+        },
+        axisX: {
+            title: "Week"
+        },
+        axisY: {
+            title: "Traffic Counts"
+        },
+        data: [{
+            type: "line",
+            dataPoints: [
+                { x: 1, y: 200 },
+                { x: 2, y: 300 },
+                { x: 3, y: 250 },
+                { x: 4, y: 280 },
+                { x: 5, y: 320 }
+            ]
+        }]
+    });
+    chart.render();
+}
+</script>
+</div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

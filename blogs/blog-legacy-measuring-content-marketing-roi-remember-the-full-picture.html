@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measuring Content Marketing ROI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #fff;
+            background: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #eef;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog Legacy: Measuring Content Marketing ROI</h1>
+    <div class="content">
+        <p>Understanding the full picture of your content marketing ROI is crucial for sustainable growth. By analyzing various metrics, you can evaluate the effectiveness of your campaigns.</p>
+        <p>Key Metrics to Consider:</p>
+        <ul>
+            <li>Website Traffic</li>
+            <li>Lead Generation</li>
+            <li>Customer Engagement</li>
+            <li>Conversion Rates</li>
+            <li>Brand Awareness</li>
+        </ul>
+        <button class="button" onclick="calculateROI()">Calculate Your ROI</button>
+        <div class="result" id="roiResult"></div>
+    </div>
+
+    <script>
+        function calculateROI() {
+            const investment = prompt("Enter your total investment in content marketing:");
+            const revenue = prompt("Enter the total revenue generated from content marketing:");
+            
+            if (investment && revenue) {
+                const roi = ((revenue - investment) / investment) * 100;
+                document.getElementById("roiResult").innerHTML = `Your content marketing ROI is ${roi.toFixed(2)}%.`;
+                document.getElementById("roiResult").style.display = 'block';
+            } else {
+                alert("Please enter valid numbers.");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single vs Multi-Camera Setups</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .toggle {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights: Single Camera vs. Multi-Camera Setups</h1>
+    <button class="toggle" onclick="toggleInfo('single')">Single Camera Insights</button>
+    <button class="toggle" onclick="toggleInfo('multi')">Multi-Camera Insights</button>
+
+    <div id="single" class="result">
+        <h2>Single Camera Setup</h2>
+        <p>A single camera setup is easy to manage and offers a straightforward workflow. It’s cost-effective and perfect for solo creators or smaller productions. However, it can limit dynamic angles and may require more editing time to achieve variety.</p>
+    </div>
+    
+    <div id="multi" class="result">
+        <h2>Multi Camera Setup</h2>
+        <p>Multi-camera setups allow for dynamic storytelling with multiple angles, enhancing viewer engagement. Ideal for live events and complex productions, they can be more expensive and require more gear and crew. However, they can streamline post-production and cut down on editing time.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(type) {
+        const singleInfo = document.getElementById('single');
+        const multiInfo = document.getElementById('multi');
+        
+        if (type === 'single') {
+            singleInfo.style.display = singleInfo.style.display === 'block' ? 'none' : 'block';
+            multiInfo.style.display = 'none';
+        } else {
+            multiInfo.style.display = multiInfo.style.display === 'block' ? 'none' : 'block';
+            singleInfo.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

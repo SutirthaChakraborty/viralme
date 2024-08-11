@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: The Future of Web Content Consumption on Mobile Devices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: Mobile Devices and the Future of Web Content</h1>
+</header>
+
+<section>
+    <h2>The Impact of <span class="keyword">Mobile Devices</span> on Web Content</h2>
+    <p>The advent of <span class="keyword">smartphones</span> has revolutionized content consumption. Users now prefer quick, accessible information at their fingertips.</p>
+    <button id="moreInfo">Learn More</button>
+    <div id="extraContent" style="display:none;">
+        <p>As mobile internet access grows, so does the importance of optimizing content for <span class="keyword">mobile devices</span>. This means using <span class="keyword">responsive web design</span> and prioritizing <span class="keyword">user experience</span>.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Future Tech Blog</p>
+</footer>
+
+<script>
+    document.getElementById('moreInfo').onclick = function() {
+        var extraContent = document.getElementById('extraContent');
+        if (extraContent.style.display === "none") {
+            extraContent.style.display = "block";
+            this.innerText = "Show Less";
+        } else {
+            extraContent.style.display = "none";
+            this.innerText = "Learn More";
+        }
+    };
+</script>
+
+</body>
+</html>

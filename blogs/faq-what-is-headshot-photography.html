@@ -1,0 +1,94 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ: What is Headshot Photography</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .faq {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .question {
+      background-color: #e1e1e1;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .question:hover {
+      background-color: #f2f2f2;
+    }
+
+    .answer {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .toggle-btn {
+      display: none;
+      cursor: pointer;
+    }
+
+    .active .toggle-btn {
+      display: inline-block;
+    }
+
+    .toggle-content {
+      display: none;
+    }
+
+    .active .toggle-content {
+      display: block;
+    }
+
+    .js-explanation {
+      margin-top: 10px;
+      font-style: italic;
+      color: #808080;
+    }
+
+  </style>
+  <script>
+    function toggleContent(qId, aId) {
+      const questions = document.querySelectorAll('.question');
+      const answers = document.querySelectorAll('.answer');
+      const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+      questions.forEach(question => {
+        question.onclick = function() {
+          toggleBtns[this.id].classList.toggle('active');
+          const answer = document.getElementById(aId + this.dataset.id);
+          answer.classList.toggle('active');
+        };
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      toggleContent();
+    });
+  </script>
+</head>
+<body>
+  <h1>FAQ: What is Headshot Photography</h1>
+  <div class="faq">
+    <div class="question" data-id="1">
+      <h3>

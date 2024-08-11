@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google News Update for Webmasters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            background: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Google Might Start Giving Webmasters the Examples They Want</h1>
+    <p>In an exciting update, Google has hinted at providing webmasters with insightful examples that can improve search engine optimization. This shift aims to enhance content relevance and engagement.</p>
+    
+    <button id="toggleInfo">Learn More</button>
+    
+    <div class="info" id="info">
+        <p>With this update, webmasters can expect:</p>
+        <ul>
+            <li>Tailored examples for better keyword strategy</li>
+            <li>Guidelines to align content with user intent</li>
+            <li>Enhanced visibility in SERPs through rich snippets</li>
+            <li>Improved chances of appearing in featured snippets</li>
+        </ul>
+        <p>This could drive more traffic and improve overall site performance. Stay updated for the latest strategies!</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleInfo').addEventListener('click', function() {
+        var info = document.getElementById('info');
+        if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block';
+        } else {
+            info.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get ready for CMWorld! Discover the latest blog news, strategies, and insights to elevate your content marketing game.">
+    <title>CMWorld Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        #info {
+            margin-top: 20px;
+            display: none;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-left: 4px solid #67b7ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CMWorld Blog News</h1>
+        <p>Less than a month away. Are you ready?</p>
+    </header>
+    <div class="container">
+        <h2>Prepare for CMWorld</h2>
+        <p>Join industry leaders and content enthusiasts at Content Marketing World 2023. This year's event promises insightful sessions, networking opportunities, and strategies that can transform your content marketing efforts.</p>
+        <button id="moreInfoButton">Learn More</button>
+        <div id="info">
+            <h3>Key Highlights:</h3>
+            <ul>
+                <li>Innovation in Content Marketing</li>
+                <li>Building Customer Relationships</li>
+                <li>Data-Driven Strategies</li>
+                <li>Networking Opportunities</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById("moreInfoButton").onclick = function() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+                this.innerHTML = "Show Less";
+            } else {
+                info.style.display = "none";
+                this.innerHTML = "Learn More";
+            }
+        };
+    </script>
+</body>
+</html>

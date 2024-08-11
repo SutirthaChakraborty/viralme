@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: What is Brand Videography?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            transition: background 0.3s;
+        }
+        .question:hover {
+            background: #f0f0f0;
+        }
+        .answer {
+            display: none;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FAQ: What is Brand Videography?</h1>
+    <div class="faq">
+        <div class="question">What is brand videography?</div>
+        <div class="answer">Brand videography is the art of creating videos that represent a brand's identity, values, and message. It involves storytelling through visuals to engage audiences and enhance brand recognition.</div>
+
+        <div class="question">Why is brand videography important?</div>
+        <div class="answer">Brand videography is crucial as it helps in building emotional connections with the audience, increasing engagement, and improving brand recall. Videos are more likely to be shared, making them a powerful marketing tool.</div>
+
+        <div class="question">What types of videos are used in brand videography?</div>
+        <div class="answer">Common types include promotional videos, brand stories, testimonials, product demonstrations, and behind-the-scenes footage. Each type serves to highlight different aspects of the brand.</div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

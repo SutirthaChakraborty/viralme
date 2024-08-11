@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Blog News Metrics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #ff4081;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .metrics {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .metric {
+            background: #e0e0e0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .metric:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pinterest Blog News Metrics Don't Lie</h1>
+    </header>
+    <article>
+        <h2>Understanding Pinterest Metrics</h2>
+        <p>Pinterest is a powerful platform for bloggers and marketers. The metrics provided by Pinterest can help you understand your audience and improve your content strategy.</p>
+        <div class="metrics">
+            <div class="metric">
+                <h3>Engagement Rate</h3>
+                <p>Measure how users interact with your pins.</p>
+            </div>
+            <div class="metric">
+                <h3>Impressions</h3>
+                <p>Track how many times your pins are seen.</p>
+            </div>
+            <div class="metric">
+                <h3>Clicks</h3>
+                <p>Count the number of clicks on your pins.</p>
+            </div>
+        </div>
+    </article>
+    <script>
+        const metrics = document.querySelectorAll('.metric');
+        metrics.forEach(metric => {
+            metric.addEventListener('click', () => {
+                alert(`You clicked on ${metric.querySelector('h3').innerText}`);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Francesco Baldini</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 5px;
+        }
+        .toggle-button {
+            cursor: pointer;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Academy Francesco Baldini</h1>
+    <p>Empowering Future Leaders in Education</p>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>The Academy Francesco Baldini is dedicated to providing high-quality education and training programs. Our mission is to foster knowledge, innovation, and creativity among students.</p>
+    
+    <button class="toggle-button" onclick="toggleDetails()">Learn More</button>
+    <div id="details" class="hidden">
+        <h3>Our Programs</h3>
+        <ul>
+            <li>Leadership Development</li>
+            <li>Creative Thinking Workshops</li>
+            <li>Advanced Learning Techniques</li>
+            <li>Personalized Mentorship</li>
+        </ul>
+        <h3>Contact Us</h3>
+        <p>Email: info@academybaldini.com</p>
+        <p>Phone: +123456789</p>
+    </div>
+</section>
+
+<script>
+    function toggleDetails() {
+        const details = document.getElementById('details');
+        details.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

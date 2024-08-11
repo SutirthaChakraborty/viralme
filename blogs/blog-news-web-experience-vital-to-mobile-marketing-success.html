@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Marketing Success: Boosting Web and Blog News Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+        }
+        .logo {
+            color: #333;
+            font-size: 30px;
+        }
+        .topics {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .topic {
+            width: 45%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+        .topic:hover {
+            border-color: #ccc;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        article {
+            background-color: #f9f9f9;
+            padding: 15px;
+        }
+        .content {
+            max-width: 80%;
+            margin: auto;
+        }
+        .keyword-reminder {
+            font-style: italic;
+            color: #999;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add interactivity: highlight keywords on hover
+            $('.keyword').on('mouseenter', function() {
+                $(this).css('background-color', 'yellow');
+                $(this).siblings('.keyword-reminder').show();
+            });
+            $('.keyword').on('mouseleave', function() {
+                $(this).css('background-color', '');
+                $(this).siblings('.keyword-reminder').hide();
+           

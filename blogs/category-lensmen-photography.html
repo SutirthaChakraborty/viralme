@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="lensmen photography, professional photography, photographers, photography tips, photojournalism, portrait photography, landscape photography">
+    <title>Lensmen Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Lensmen Photography</h1>
+        <p>Discover the art of capturing moments with professional photography. Our focus is on delivering high-quality images through expert techniques and creative vision.</p>
+        
+        <h2>Our Specialties</h2>
+        <ul>
+            <li>Portrait Photography</li>
+            <li>Landscape Photography</li>
+            <li>Event Documentation</li>
+            <li>Commercial Photography</li>
+            <li>Photojournalism</li>
+        </ul>
+        
+        <h2>Gallery</h2>
+        <div class="image-gallery">
+            <img src="portrait.jpg" alt="Portrait Photography" onclick="showAlert('Portrait Photography')">
+            <img src="landscape.jpg" alt="Landscape Photography" onclick="showAlert('Landscape Photography')">
+            <img src="event.jpg" alt="Event Photography" onclick="showAlert('Event Documentation')">
+            <img src="commercial.jpg" alt="Commercial Photography" onclick="showAlert('Commercial Photography')">
+        </div>
+    </div>
+    
+    <script>
+        function showAlert(topic) {
+            alert('Explore the beauty of ' + topic + ' with Lensmen Photography!');
+        }
+    </script>
+</body>
+</html>

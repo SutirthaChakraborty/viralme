@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>B2B Marketing Budget Bump in 2014</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.headline {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		
+		.paragraph {
+			margin-bottom: 20px;
+		}
+		
+		.highlight {
+			background-color: #f7f7f7;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		
+		.interactive {
+			cursor: pointer;
+		}
+		
+		.interactive:hover {
+			background-color: #ccc;
+		}
+		
+		#chart {
+			width: 500px;
+			height: 300px;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="headline">B2B Marketing Budget Bump in 2014</h1>
+	<p class="paragraph">According to a recent study, B2B marketing is expected to receive a significant budget bump in 2014.</p>
+	<p class="paragraph">The study, conducted by <a href="https://www.marketingprofs.com/" target="_blank">MarketingProfs</a>, found that 64% of B2B marketers plan to increase their marketing budgets in the coming year.</p>
+	<p class="paragraph">This increase in budget is expected to be driven by the growing importance of digital marketing in the B2B space. The study found that 75% of B2B marketers plan to increase their use of social media marketing, while 63% plan to increase their use of email marketing.</p>
+	<p class="paragraph">To learn more about the study and its findings, click <span class="interactive">here</span>.</p>
+	<div id="chart"></div>
+	<script>
+		var chart = new CanvasJS.Chart("chart", {
+			theme: "light2",
+			data: [
+				{
+					type: "pie",
+					dataPoints: [
+						{ y: 64, label: "Budget Increase" },
+						{ y: 36, label: "No Change" }
+					],
+					dataPointRadius: 20
+				}
+			],
+			options: {
+				animationEnabled: true,
+				title: {
+					text: "B2B Marketing Budget Increase in 2014"
+				}
+			}
+		});
+		chart.render();
+	</script>
+</body>
+</html>
+
+Keywords: B2B marketing, budget bump, 2014, marketingprofs, digital marketing, social media marketing, email marketing, marketing budget increase.

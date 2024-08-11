@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Shopping Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .keywords {
+            font-style: italic;
+            color: #007BFF;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #facts {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Holiday Shopping Insights</h1>
+</header>
+
+<article>
+    <h2>Researching Holiday Purchases</h2>
+    <p>Did you know that savvy shoppers spend around <strong>12 to 15 hours</strong> researching their holiday purchases? This deep dive into product reviews, price comparisons, and seasonal deals is essential for making informed buying decisions.</p>
+    <p>This blog explores the importance of being a well-informed consumer during the holiday shopping season. By investing time in research, <span class="keywords">shoppers can save money, find the best deals, and avoid impulse buys</span>.</p>
+    <button onclick="toggleFacts()">Learn More</button>
+    <div id="facts">
+        <ul>
+            <li>Consumers prefer online resources for price comparisons.</li>
+            <li>Social media influences holiday shopping decisions significantly.</li>
+            <li>Email promotions are a key factor in consumer engagement.</li>
+        </ul>
+    </div>
+</article>
+
+<script>
+    function toggleFacts() {
+        const facts = document.getElementById("facts");
+        if (facts.style.display === "none") {
+            facts.style.display = "block";
+        } else {
+            facts.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

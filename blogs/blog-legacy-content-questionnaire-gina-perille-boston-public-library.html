@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Questionnaire - Gina Perille</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .questionnaire {
+            margin: 20px 0;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy Content Questionnaire</h1>
+    <p>By Gina Perille, Boston Public Library</p>
+</header>
+
+<div class="container">
+    <h2>Help Us Improve Our Legacy Content</h2>
+    <p>We value your feedback on our blog's legacy content. Please fill out this short questionnaire.</p>
+    
+    <form class="questionnaire" id="legacyForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Your Name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Your Email">
+        
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" rows="4" required placeholder="Share your thoughts on our legacy blog content"></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="responseMessage" style="display:none; padding:10px; margin-top:15px; background:#e2f0d9; border:1px solid #c3e6cb; border-radius:5px;"></div>
+</div>
+
+<script>
+    document.getElementById('legacyForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var name = document.getElementById('name').value;
+        var responseMessage = document.getElementById('responseMessage');
+        responseMessage.style.display = 'block';
+        responseMessage.innerHTML = "Thank you for your feedback, " + name + "!";
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

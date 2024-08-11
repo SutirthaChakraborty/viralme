@@ -1,0 +1,79 @@
+Here's a simple HTML code with inline CSS for a blog post about Coca-Cola reaffirming the importance of social media marketing for their sales. It includes some relevant keywords for better search visibility. The interactive CSS element is a lightbox for image zoom:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola Emphasizes Social Media Marketing for Enhanced Sales</title>
+    <style>
+        /* Style for blog post */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .blog-post {
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .blog-content {
+            line-height: 1.6;
+        }
+
+        .keyword-list {
+            margin-top: 20px;
+            list-style-type: disc;
+        }
+
+        .image-zoom {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .image-zoom img {
+            transition: transform 0.3s ease;
+        }
+
+        .image-zoom .zoomed {
+            transform: scale(1.2);
+        }
+
+        .interactive-lightbox {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        function toggleZoom(img) {
+            var lightbox = document.querySelector('.interactive-lightbox');
+            if (lightbox.style.display === 'none') {
+                lightbox.style.display = 'block';
+                img.classList.add('zoomed');
+            } else {
+                lightbox.style.display = 'none';
+                img.classList.remove('zoomed');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="blog

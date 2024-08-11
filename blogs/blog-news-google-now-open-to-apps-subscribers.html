@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google News Now Open to Apps Subscribers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Google News Now Open to Apps Subscribers</h1>
+</header>
+
+<article>
+    <h2>Latest Updates on Google News</h2>
+    <p>Google has recently announced that its news platform is now open to <span class="keywords">apps subscribers</span>, allowing users to access a wider range of content. This move aims to enhance user engagement and provide more personalized news experiences.</p>
+    <p>With this update, subscribers can enjoy exclusive articles, real-time updates, and tailored news feeds based on their interests. This is a significant step in making news more accessible and relevant to users.</p>
+    <button onclick="toggleDetails()">Read More</button>
+    <div id="details" style="display:none;">
+        <p>Subscribers will benefit from features such as:</p>
+        <ul>
+            <li>Curated content from various sources</li>
+            <li>Interactive news articles</li>
+            <li>Enhanced search capabilities</li>
+        </ul>
+    </div>
+</article>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById("details");
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

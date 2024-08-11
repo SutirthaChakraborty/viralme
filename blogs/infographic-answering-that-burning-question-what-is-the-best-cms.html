@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best CMS</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		.infographic {
+			width: 80%;
+			margin: 20px auto;
+			background-color: #f9f9f9;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.infographic h2 {
+			margin-top: 0;
+		}
+		.infographic img {
+			width: 100%;
+			height: 200px;
+			margin-bottom: 20px;
+		}
+		.infographic p {
+			margin-bottom: 20px;
+		}
+		.infographic ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.infographic li {
+			margin-bottom: 10px;
+		}
+		.infographic li:before {
+			content: "\2022";
+			margin-right: 10px;
+		}
+		.infographic a {
+			text-decoration: none;
+			color: #337ab7;
+		}
+		.infographic a:hover {
+			color: #23527c;
+		}
+	</style>
+</head>
+<body>
+	<div class="infographic">
+		<h2>What is the Best CMS?</h2>
+		<img src="https://www.example.com/best-cms.jpg" alt="Best CMS">
+		<p>With so many Content Management Systems (CMS) out there, it can be overwhelming to choose the right one for your website. Here's a rundown of the top contenders:</p>
+		<ul>
+			<li>WordPress: The most popular CMS, with over 60 million websites using it. It's free, open-source, and highly customizable.</li>
+			<li>Joomla: A powerful and flexible CMS, known for its ease of use and scalability. It's also free and open-source.</li>
+			<li>Drupal: A highly secure and scalable CMS, popular among enterprise-level businesses. It's also free and open-source.</li>
+			<li>Shopify: A popular CMS for e-commerce websites, known for its ease of use and scalability. It's not free, but offers a 14-day trial.</li>
+		</ul>
+		<p>So, which CMS is best for you? It ultimately depends on your needs and preferences. But with this infographic, you'll have a better idea of what each CMS has to offer.</p>
+		<p>Want to learn more about each CMS? Click on the links below:</p>
+		<ul>
+			<li><a href="https://www.wordpress.com" target="_blank">WordPress</a></li>
+			<li><a href="https://www.joomla.com" target="_blank">Joomla</a></li>
+			<li><a href="https://www.drupal.org" target="_blank">Drupal</a></li>
+			<li><a href="https://www.shopify.com" target="_blank">Shopify</a></li>
+		</ul>
+	</div>
+	<script>
+		var infographic = document.querySelector('.infographic');
+		var img = infographic.querySelector('img');
+		var p = infographic.querySelector('p');
+		var ul = infographic.querySelector('ul');
+		var lis = ul.querySelectorAll('li');
+		
+		img.addEventListener('load', function() {
+			p.classList.add('hidden');
+			ul.classList.add('hidden');
+			setTimeout(function() {
+				p.classList.remove('hidden');
+				ul.classList.remove('hidden');
+			}, 2000);
+		});
+		
+		lis.forEach(function(li) {
+			li.addEventListener('mouseover', function() {
+				li.classList.add('highlight');
+			});
+			li.addEventListener('mouseout', function() {
+				li.classList.remove('highlight');
+			});
+		});
+	</script>
+</body>
+</html>

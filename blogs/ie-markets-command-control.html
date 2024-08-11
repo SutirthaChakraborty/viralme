@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IE Markets Command Control</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+            text-align: center;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .command {
+            background-color: #e5e5e5;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .command:hover {
+            background-color: #cccccc;
+        }
+
+        .command-icon {
+            margin-right: 10px;
+            color: #333333;
+            font-size: 1.2em;
+        }
+
+        .description {
+            line-height: 1.5;
+        }
+    </style>
+    <script>
+        // Simple JavaScript to toggle command active state
+        functiontoggleButtonState(id, activeClass) {
+            var button = document.getElementById(id);
+            if (button.classList.contains(activeClass)) {
+                button.classList.remove(activeClass);
+            } else {
+                button.classList.add(activeClass);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>IE Markets Command Control</h1>
+        <div class="card">
+            <button class="command" onclick="toggleButtonState('marketCommand', 'active')" id="marketCommand">
+                <span class="command-icon">📈</span>
+                Browse Markets
+            </button>
+            <div class="description">
+                Explore market trends, quotes, and indicators
+                <div class="active-indicator"

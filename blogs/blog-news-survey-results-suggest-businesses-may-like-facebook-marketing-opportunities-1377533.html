@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Marketing Opportunities for Businesses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #3b5998;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .survey {
+            margin-top: 20px;
+        }
+        .survey input[type="text"], .survey input[type="submit"] {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+        }
+        .result {
+            margin-top: 20px;
+            display: none;
+            background: #e7f3fe;
+            padding: 10px;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exploring Facebook Marketing Opportunities</h1>
+</header>
+
+<div class="content">
+    <h2>Survey Results Overview</h2>
+    <p>Recent surveys suggest that businesses are increasingly interested in leveraging Facebook marketing opportunities. With over 2.8 billion monthly active users, Facebook provides a vast platform for targeted advertising and customer engagement.</p>
+    
+    <div class="survey">
+        <h3>Share Your Thoughts!</h3>
+        <input type="text" id="feedback" placeholder="What do you think about Facebook marketing?" />
+        <input type="submit" value="Submit" onclick="showResult()" />
+    </div>
+    
+    <div class="result" id="result">
+        <p>Thank you for your feedback! Your insights help us understand the market better.</p>
+    </div>
+</div>
+
+<script>
+    function showResult() {
+        var feedback = document.getElementById('feedback').value;
+        if (feedback) {
+            document.getElementById('result').style.display = 'block';
+        } else {
+            alert('Please enter your feedback before submitting.');
+        }
+    }
+</script>
+
+</body>
+</html>

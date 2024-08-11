@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the vibrant culture and rich history of Dublin City with our guided tours. Experience the best attractions, local cuisine, and hidden gems.">
+    <title>Dublin City Tour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #004d00;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .tour-info {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .attractions {
+            list-style-type: none;
+            padding: 0;
+        }
+        .attractions li {
+            background: #e7e7e7;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .attractions li:hover {
+            background: #d4d4d4;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #004d00;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dublin City Tour</h1>
+        <p>Discover the Heart of Ireland!</p>
+    </header>
+    <div class="tour-info">
+        <h2>Top Attractions</h2>
+        <ul class="attractions" id="attractionList">
+            <li data-info="Dublin Castle: A historic castle and government complex dating back to the 13th century.">Dublin Castle</li>
+            <li data-info="Trinity College: Home to the famous Book of Kells and beautiful campus.">Trinity College</li>
+            <li data-info="Guinness Storehouse: Learn about the history of Dublin's iconic stout.">Guinness Storehouse</li>
+            <li data-info="St. Patrick's Cathedral: The largest cathedral in Ireland, built in honor of the patron saint.">St. Patrick's Cathedral</li>
+            <li data-info="Temple Bar: A vibrant area known for its nightlife and cultural scene.">Temple Bar</li>
+        </ul>
+        <div id="infoDisplay" style="margin-top: 20px; font-weight: bold;"></div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Dublin City Tours | Explore, Experience, Enjoy!</p>
+    </footer>
+    <script>
+        const attractions = document.querySelectorAll('.attractions li');
+        const infoDisplay = document.getElementById('infoDisplay');
+
+        attractions.forEach(attraction => {
+            attraction.addEventListener('click', () => {
+                const info = attraction.getAttribute('data-info');
+                infoDisplay.textContent = info;
+            });
+        });
+    </script>
+</body>
+</html>

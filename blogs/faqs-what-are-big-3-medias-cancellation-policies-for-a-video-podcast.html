@@ -1,0 +1,68 @@
+Sure, here's a simple HTML structure with CSS and lightweight JavaScript for a FAQs page about the Big 3 media companies' cancellation policies for a video podcast. The keywords are included in the content to improve search visibility. The interactive CSS and JS help to highlight relevant answers when clicked.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Big 3 Media Cancellation Policies | Video Podcast FAQs</title>
+<style>
+/* CSS for FAQs */
+.faq {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.question {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.answer {
+  display: none;
+  padding: 0.5rem;
+  background-color: #e6f2ff;
+}
+
+.question:hover .answer {
+  display: block;
+}
+
+</style>
+<script>
+// JavaScript for highlighting answer
+document.addEventListener('DOMContentLoaded', function() {
+  var questions = document.querySelectorAll('.question');
+  questions.forEach(question => {
+    question.addEventListener('click', function() {
+      questions.forEach(q => q.classList.remove('active'));
+      this.classList.add('active');
+      this.nextElementSibling.classList.toggle('shown');
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="faq">
+  <div class="question" id="faq1">
+    <h3>1️⃣ BBC Cancellation Policy</h3>
+    <p>What happens if I cancel my iPlayer subscription?</p>
+  </div>
+  <div class="answer hidden" id="answer1">
+    <p>Refunds may be available based on the subscription term. <strong>Keyword:</strong> iPlayer subscription, cancellation refund</p>
+  </div>
+
+  <div class="question" id="faq2">
+    <h3>2️⃣ Netflix Cancellation Policy</h3>
+    <p>Can I get a refund for a canceled streaming membership?</p>
+  </div>
+  <div class="answer hidden" id="answer2">
+    <p>N通常不提供全额退款,不过具体的政策可能因地区而异. <strong>Keyword:</strong> Netflix refund, membership cancellation</p>
+  </div>
+
+  <div class="question" id="faq3">
+    <h3>3️⃣ Spotify Cancellation Policy</h3>
+   

@@ -1,0 +1,87 @@
+#### HTML Code for FAQs and Cancellation Policies for an Event Highlights Video
+
+Below is a small HTML code snippet that you can use as a starting point for creating a FAQs section and displaying cancellation policies for an event highlights video:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQs and Cancellation Policies</title>
+  <style>
+    /* CSS styles for the FAQs section */
+    .faq {
+      margin-bottom: 20px;
+    }
+    .question {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .answer {
+      display: none;
+      margin-top: 10px;
+    }
+    /* CSS styles for the video and cancellation policies */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .cancellation-policies {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+  <script>
+    // JavaScript code for toggling the display of FAQ answers
+    function toggleAnswer(index) {
+      var answer = document.getElementById('answer-' + index);
+      if (answer.style.display === 'none') {
+        answer.style.display = 'block';
+      } else {
+        answer.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>FAQs</h1>
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(1)">Q: What is the event about?</div>
+    <div class="answer" id="answer-1">A: The event is a highlights video showcasing the best moments of our recent event. It includes interviews, performances, and behind-the-scenes footage.</div>
+  </div>
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(2)">Q: How can I watch the video?</div>
+    <div class="answer" id="answer-2">A: The video can be watched on our website or through our official YouTube channel. Simply click on the play button to start watching.</div>
+  </div>
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(3)">Q: Can I download the video?</div>
+    <div class="answer" id="answer-3">A: Unfortunately, the video is not available for download. However, you can watch it online as many times as you like.</div>
+  </div>
+  <div class="faq">
+    <div class="question" onclick="toggleAnswer(4)">Q: How long is the video?</div>
+    <div class="answer" id="answer-4">A: The video has a duration of approximately 30 minutes.</div>
+  </div>
+  <div class="cancellation-policies">
+    <h2>Cancellation Policies</h2>
+    <p>For information about our cancellation policies, please refer to our <a href="https://example.com/cancellation-policies">Cancellation Policies</a> page.</p>
+  </div>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
+
+
+Please note that you need to replace `VIDEO_ID` in the `<iframe>` tag with the actual ID of your event highlights video on YouTube.
+
+This HTML code includes CSS styles for the FAQs section, the video container, and the cancellation policies. It also includes JavaScript code for toggling the display of FAQ answers when the questions are clicked.
+
+Feel free to modify the code and add more FAQs or customize the styles to suit your needs.

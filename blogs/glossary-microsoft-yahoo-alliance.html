@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Yahoo Alliance Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0078d4;
+        }
+        .glossary-term {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+        .glossary-term:hover {
+            background-color: #e7f3ff;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #0078d4;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary of Microsoft Yahoo Alliance</h1>
+    <div class="glossary-term">
+        <span class="toggle" onclick="toggleDefinition('term1')">Microsoft Yahoo Alliance</span>
+        <div class="definition" id="term1">A partnership formed in 2009 between Microsoft and Yahoo to enhance their competitiveness in the online search and advertising markets.</div>
+    </div>
+    <div class="glossary-term">
+        <span class="toggle" onclick="toggleDefinition('term2')">Search and Advertising</span>
+        <div class="definition" id="term2">Refers to the business of displaying ads associated with search results, aimed at increasing visibility and revenue for both companies.</div>
+    </div>
+    <div class="glossary-term">
+        <span class="toggle" onclick="toggleDefinition('term3')">Bing</span>
+        <div class="definition" id="term3">Microsoft's search engine that powers Yahoo's search results as part of their alliance, leveraging advanced technology to improve user experience.</div>
+    </div>
+
+    <script>
+        function toggleDefinition(termId) {
+            var definition = document.getElementById(termId);
+            if (definition.style.display === "none" || definition.style.display === "") {
+                definition.style.display = "block";
+            } else {
+                definition.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

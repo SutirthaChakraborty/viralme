@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Best B2B Marketing Videos of the Past 5 Years</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.video-container {
+			width: 80%;
+			margin: 40px auto;
+			background-color: #f0f0f0;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.video-title {
+			font-weight: bold;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		
+		.video-desc {
+			font-size: 14px;
+			color: #666;
+			margin-bottom: 20px;
+		}
+		
+		.video-btn {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.video-btn:hover {
+			background-color: #3e8e41;
+		}
+		
+		.video-modal {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: none;
+		}
+		
+		.video-modal-content {
+			position: relative;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			width: 80%;
+			margin: 40px auto;
+		}
+		
+		.video-modal-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+		
+		.video-modal-close:hover {
+			color: #666;
+		}
+	</style>
+</head>
+<body>
+	<h1>Best B2B Marketing Videos of the Past 5 Years</h1>
+	<div class="video-container">
+		<h2 class="video-title">Video 1: "The Future of B2B Marketing" by HubSpot</h2>
+		<p class="video-desc">This video showcases the latest trends and strategies in B2B marketing, featuring expert insights from industry leaders.</p>
+		<button class="video-btn">Watch Now</button>
+	</div>
+	
+	<div class="video-modal" id="video-modal-1">
+		<div class="video-modal-content">
+			<iframe width="100%" height="500" src="https://www.youtube.com/embed/[VIDEO_ID_1]" frameborder="0" allowfullscreen></iframe>
+			<button class="video-modal-close" onclick="closeModal('video-modal-1')">×</button>
+		</div>
+	</div>
+	
+	<script>
+		function closeModal(id) {
+			document.getElementById(id).style.display = 'none';
+		}
+		
+		var videoBtns = document.querySelectorAll('.video-btn');
+		videoBtns.forEach(function(btn) {
+			btn.addEventListener('click', function() {
+				var modalId = btn.dataset.modal;
+				document.getElementById(modalId).style.display = 'block';
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+Keywords: B2B marketing, best videos, past 5 years, video strategy, marketing trends, industry leaders, expert insights, interactive CSS, JS, video modal, YouTube embed.

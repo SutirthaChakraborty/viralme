@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs: Big 3 Media's Webinar Cancellation Policies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .faq:hover {
+            transform: scale(1.02);
+        }
+        .question {
+            cursor: pointer;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FAQs: Big 3 Media's Webinar Cancellation Policies</h1>
+
+    <div class="faq">
+        <div class="question">What is Big 3 Media's general cancellation policy for webinars?</div>
+        <div class="answer">Big 3 Media typically requires cancellations to be made at least 7 days prior to the webinar date for a full refund.</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">Can I reschedule my webinar booking?</div>
+        <div class="answer">Yes, participants can reschedule their booking up to 48 hours before the webinar without incurring a fee.</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">Are there any exceptions to the cancellation policy?</div>
+        <div class="answer">Exceptions may apply in cases of emergencies or unforeseen circumstances. Contact customer support for assistance.</div>
+    </div>
+
+    <div class="faq">
+        <div class="question">What happens if I miss the webinar?</div>
+        <div class="answer">If you miss the webinar, a recorded version will be sent to your registered email within 24 hours.</div>
+    </div>
+
+    <script>
+        const faqs = document.querySelectorAll('.faq');
+        faqs.forEach(faq => {
+            faq.querySelector('.question').addEventListener('click', () => {
+                const answer = faq.querySelector('.answer');
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumblr Blog Customization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #35424a;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Customize Your Tumblr Blog</h1>
+    </header>
+    <div class="content">
+        <h2>Why Customize?</h2>
+        <p>Customizing your Tumblr blog allows you to create a unique identity and categorize your posts effectively. With Tumblr's flexible HTML and CSS options, you can tailor your blog to reflect your personal style.</p>
+        <button class="button" onclick="showCustomizationTips()">Get Customization Tips</button>
+        <div id="tips" style="display:none; margin-top: 20px;">
+            <h3>Customization Tips:</h3>
+            <ul>
+                <li>Use CSS to change colors, fonts, and layouts.</li>
+                <li>Incorporate widgets for social media integration.</li>
+                <li>Utilize tags to categorize your posts for better reach.</li>
+                <li>Experiment with different themes to find your perfect fit.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showCustomizationTips() {
+            var tips = document.getElementById('tips');
+            if (tips.style.display === "none") {
+                tips.style.display = "block";
+            } else {
+                tips.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+#### HTML Code with CSS for Articles News Money 2020
+
+Here's a small HTML code with CSS to showcase information about articles, news, and money in 2020. This code includes interactive CSS and JS to explain the topics.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles, News, and Money 2020</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            float: left;
+            width: 20%;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Articles, News, and Money 2020</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showContent('articles')">Articles</a></li>
+            <li><a href="#" onclick="showContent('news')">News</a></li>
+            <li><a href="#" onclick="showContent('money')">Money</a></li>
+        </ul>
+    </nav>
+    <article>
+        <section id="articles" class="active">
+            <h2>Articles</h2>
+            <p>Explore the latest articles on various topics.</p>
+        </section>
+        <section id="news">
+            <h2>News</h2>
+            <p>Stay updated with the latest news from around the world.</p>
+        </section>
+        <section id="money">
+            <h2>Money</h2>
+            <p>Learn about financial strategies and money management.</p>
+        </section>
+    </article>
+
+    <script>
+        function showContent(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+
+This HTML code includes a simple page structure with a header, navigation, and article sections. The navigation allows users to click on different topics (Articles, News, Money) to display the relevant content on the right side of the page. The CSS styles the layout and provides interactivity to show/hide content based on user interaction.
+
+**Keywords**: HTML, CSS, articles, news, money, 2020, web development, interactive, JavaScript, front-end programming, financial strategies, money management.

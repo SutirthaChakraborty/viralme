@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of photography. Learn techniques, tips, and tricks for capturing stunning images.">
+    <title>Photography - Capture the Moment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .photo-example {
+            display: none;
+            margin-top: 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .photo-example img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photography: Capture the Beauty</h1>
+        <p>Learn about <span class="keyword" onclick="togglePhotoExample()">different photography styles</span> and tips!</p>
+    </header>
+    <div class="content">
+        <h2>Categories in Photography</h2>
+        <ul>
+            <li>Portrait Photography</li>
+            <li>Landscape Photography</li>
+            <li>Macro Photography</li>
+            <li>Wildlife Photography</li>
+            <li>Street Photography</li>
+        </ul>
+        <div class="photo-example" id="photoExample">
+            <h3>Example: Landscape Photography</h3>
+            <img src="https://example.com/landscape-photo.jpg" alt="Landscape Example">
+            <p>Landscape photography captures the beauty of nature and settings.</p>
+        </div>
+    </div>
+    <script>
+        function togglePhotoExample() {
+            const example = document.getElementById('photoExample');
+            example.style.display = example.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

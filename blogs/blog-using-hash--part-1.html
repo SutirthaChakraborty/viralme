@@ -1,0 +1,93 @@
+#### HTML and CSS Blog with Hash Part 1
+
+To create a simple blog using HTML and CSS with interactive features, you can utilize the hash property in HTMLAnchorElement to enable content loading based on the fragment identifier of the URL. Here's a basic example of how you can achieve this:
+
+**HTML:**
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog with Hash</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is the content for section 1.</p>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>This is the content for section 2.</p>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>This is the content for section 3.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+**CSS (styles.css):**
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+**JavaScript (script.js):**
+javascript
+document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        let targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
+In this example, clicking on the links in the navigation will smoothly scroll to the corresponding sections on the page, demonstrating the use of the hash property for content navigation.
+
+This basic setup provides a simple and decent look for technical documentation, allowing users to click on topics in the left section to load the content on the right, as described in the search results [[1]](https://www.knowledgehut.com/blog/web-development/html-projects).

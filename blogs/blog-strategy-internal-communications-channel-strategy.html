@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.card {
+  width: 400px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.link-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.link {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+</style>
+<script>
+function toggleContent() {
+  var section = document.getElementById("internal-communications-content");
+  if (section.style.display === "block") {
+    section.style.display = "none";
+  } else {
+    section.style.display = "block";
+  }
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="header">Blog Strategy & Internal Communications Channel Strategy</div>
+    <div class="content">
+      <h3>Introduction</h3>
+      <p>Welcome to our blog where we share insights on effective <b>blog strategy</b> to improve <b>internal communications</b>. Learn about boosting engagement, content creation, and selecting <strong>communication channels</strong> that resonate with your team. Click the button below to dive deeper into the topic.</p>
+
+      <div class="link-box">
+        <button onclick="toggleContent()" class="link">Explore Internal Communications Channel Strategies<i class="fa fa-caret-down" aria-hidden="true"></i></button>
+        <a

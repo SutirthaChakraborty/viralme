@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Toronto Analysis on Copywriting and Twitter Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #0077c2;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background-color: white;
+            padding: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        .article-header {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .twitter-link {
+            text-decoration: none;
+            color: #45a049;
+        }
+        .twitter-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+    <script>
+        function highlightKeywords() {
+            const keywords = ["blog", "news", "Toronto", "copywriting", "Twitter", "1300223"];
+            document.querySelectorAll('p').forEach((paragraph) => {
+                keywords.forEach((keyword) => {
+                    paragraph.innerHTML = paragraph.innerHTML.replace(new RegExp(keyword, 'gi'), `<span class="keyword">$&</span>`);
+                });
+            });
+            // Adding CSS for highlighting the keywords
+            const keywordStyle = `
+                .keyword {
+                    background-color: #FFFF00;
+                    font-weight: bold;
+                }
+            `;
+            document.head.insertAdjacentHTML('beforeend', `<style>${keywordStyle}</style>`);
+        }
+        document

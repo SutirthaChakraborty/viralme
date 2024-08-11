@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Ads vs Google Ads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .cta-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 5px solid #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bing Ads vs Google Ads</h1>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <p>Bing Ads and Google Ads are two powerful platforms for paid search marketing. While Google dominates the market, Bing offers unique advantages such as lower CPC and a different audience demographic.</p>
+        <a href="#" class="cta-button" onclick="toggleInfo('bingAdvantages')">Learn More About Bing Ads</a>
+        <div id="bingAdvantages" class="info">
+            <p>Bing Ads often have higher CTRs in specific verticals like shopping and finance, making them a viable option for targeted campaigns.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Key Differences</h2>
+        <p>Google Ads provides a larger reach due to its extensive user base, while Bing Ads allows for more precise demographic targeting and potentially better ROI for certain niches.</p>
+        <a href="#" class="cta-button" onclick="toggleInfo('googleAdvantages')">Learn More About Google Ads</a>
+        <div id="googleAdvantages" class="info">
+            <p>Google Ads offers advanced features and a broader audience, making it ideal for businesses looking for maximum exposure.</p>
+        </div>
+    </section>
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

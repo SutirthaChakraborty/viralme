@@ -1,0 +1,65 @@
+#### HTML and CSS Code for Interactive Videos
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Insights</title>
+    <style>
+        /* CSS for video container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+        
+        /* CSS for video iframe */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* CSS for interactive elements */
+        .interactive-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        .interactive-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Video Insights</h1>
+    <div class="video-container">
+        <iframe src="https://www.example.com/interactive-video" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p>Explore the interactive features of this video to gain valuable insights!</p>
+    <a href="#" class="interactive-button">Like</a>
+    <a href="#" class="interactive-button">Comment</a>
+    <a href="#" class="interactive-button">Share</a>
+    <script>
+        // JavaScript for interactive buttons
+        document.querySelectorAll('.interactive-button').forEach(button => {
+            button.addEventListener('click', function() {
+                // Add your interactive functionality here
+            });
+        });
+    </script>
+</body>
+</html>

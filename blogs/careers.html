@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore various career options, job trends, skills needed, and guidance for professional growth.">
+    <title>Careers: Explore Your Professional Path</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .career-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .career-title {
+            cursor: pointer;
+            color: #007BFF;
+        }
+        .career-content {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        .show {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Careers: Navigate Your Future</h1>
+<div class="career-section">
+    <h2 class="career-title">1. Tech Careers</h2>
+    <div class="career-content">Explore fields like Software Development, Data Science, and Cybersecurity. Key skills: programming, problem-solving, and analytical thinking.</div>
+</div>
+
+<div class="career-section">
+    <h2 class="career-title">2. Healthcare Careers</h2>
+    <div class="career-content">Opportunities in Nursing, Physical Therapy, and Pharmacy are thriving. Essential skills: compassion, communication, and critical thinking.</div>
+</div>
+
+<div class="career-section">
+    <h2 class="career-title">3. Creative Careers</h2>
+    <div class="career-content">Includes Graphic Design, Marketing, and Content Creation. Important skills: creativity, adaptability, and collaboration.</div>
+</div>
+
+<div class="career-section">
+    <h2 class="career-title">4. Business Careers</h2>
+    <div class="career-content">Fields like Finance, Human Resources, and Project Management offer diverse paths. Skills needed: analytical abilities, leadership, and negotiation.</div>
+</div>
+
+<footer>
+    &copy; 2023 Career Exploration. All Rights Reserved.
+</footer>
+
+<script>
+    const titles = document.querySelectorAll('.career-title');
+    titles.forEach(title => {
+        title.addEventListener('click', () => {
+            const content = title.nextElementSibling;
+            content.classList.toggle('show');
+        });
+    });
+</script>
+
+</body>
+</html>

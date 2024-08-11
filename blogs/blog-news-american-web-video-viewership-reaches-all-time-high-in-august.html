@@ -1,0 +1,99 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>August's All-Time High in American Web Video Viewership</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+.news-header {
+  margin-bottom: 20px;
+}
+.news-content {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.news-content:last-child {
+  border-bottom: none;
+}
+.news-date {
+  font-size: 0.8em;
+  color: #666;
+}
+.news-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.news-excerpt {
+  font-size: 1em;
+}
+.news-read-more {
+  color: #333;
+  font-size: 0.9em;
+  margin-top: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.news-read-more:hover {
+  text-decoration: underline;
+}
+.news-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+</style>
+<script>
+function toggleContent(id) {
+  var content = document.getElementById(id);
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+  } else {
+    content.style.display = 'none';
+  }
+}
+</script>
+</head>
+<body>
+<header>
+  <h1>Blog News</h1>
+</header>
+<div class="container">
+  <div class="news-header">
+    <h2>August's All-Time High in American Web Video Viewership</h2>
+  </div>
+  <div class="news-content">
+    <div class="news-date">September 1, 2024</div>
+    <div class="news-title">Breaking News: Video Streaming Giants</div>
+    <div class="news-excerpt">In a surprising turn of events, American web video viewership reached an all-time high in August, surpassing previous records set in 2021. This surge was attributed to the release of several blockbuster web series and movies, leading to a 20% increase in viewership compared to the same period last year.</div>
+    <div class="news-read-more" onclick="toggleContent('content1');">Read More</div>
+  </div>
+  <div id="content1" class="news-content" style="display: none;">
+    <div class="news-date">September 1, 2024</div>
+    <div class="news-title">Breaking News: Video Streaming Giants</div>
+    <div class="news-excerpt">In a surprising turn of events, American web video viewership reached an all-time high in August, surpassing previous records set in 2021. This surge was attributed to the release of several blockbuster web series and movies, leading to a 20% increase in viewership compared to the same period last year.</div>
+    <div class="news-read-more" onclick="toggleContent('content1');">Read Less</div>
+  </div>
+</div>
+</body>
+</html>

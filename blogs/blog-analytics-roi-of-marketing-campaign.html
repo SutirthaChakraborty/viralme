@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Analytics & ROI of Marketing Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        #roiResult {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Analytics & ROI of Marketing Campaigns</h1>
+        <div class="section">
+            <h2>Understanding ROI in Marketing</h2>
+            <p>Return on Investment (ROI) is a critical metric for evaluating the effectiveness of marketing campaigns. Analyzing blog performance can provide insights into traffic, engagement, and conversion rates, ultimately impacting ROI.</p>
+        </div>
+        <div class="section">
+            <h2>Key Metrics to Analyze</h2>
+            <ul>
+                <li>Traffic Generation</li>
+                <li>User Engagement</li>
+                <li>Conversion Rates</li>
+                <li>Customer Acquisition Cost (CAC)</li>
+                <li>Lifetime Value (LTV)</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Calculate Your Marketing ROI</h2>
+            <input type="number" id="revenue" placeholder="Revenue from Campaign" />
+            <input type="number" id="cost" placeholder="Total Cost of Campaign" />
+            <button class="btn" onclick="calculateROI()">Calculate ROI</button>
+            <div id="roiResult"></div>
+        </div>
+    </div>
+    <script>
+        function calculateROI() {
+            const revenue = parseFloat(document.getElementById('revenue').value);
+            const cost = parseFloat(document.getElementById('cost').value);
+            if (isNaN(revenue) || isNaN(cost) || cost === 0) {
+                document.getElementById('roiResult').innerText = 'Please enter valid numbers.';
+                return;
+            }
+            const roi = ((revenue - cost) / cost) * 100;
+            document.getElementById('roiResult').innerText = `Your Marketing ROI is: ${roi.toFixed(2)}%`;
+        }
+    </script>
+</body>
+</html>

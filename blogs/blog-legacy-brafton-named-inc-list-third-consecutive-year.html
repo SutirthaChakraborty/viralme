@@ -1,0 +1,102 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brafton Legacy Blog</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.highlight {
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.highlight-text {
+    background-color: #ffc107;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+.list li {
+    margin-bottom: 10px;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('highlight-button').addEventListener('click', function() {
+        var text = document.getElementById('highlight-text').value;
+        var highlight = document.createElement('div');
+        highlight.classList.add('highlight');
+        highlight.textContent = text;
+        document.body.appendChild(highlight);
+    });
+});
+</script>
+</head>
+<body>
+<header>
+    <h1>Brafton Legacy Blog</h1>
+</header>
+<nav>
+    <ul class="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<article>
+    <h2>Brafton Named Inc. Magazine's List Third Consecutive Year</h2>
+    <p>Brafton, a leading content marketing agency, has been named to Inc. magazine's prestigious Inc. 5000 list for the third consecutive year. This recognition marks Brafton's ongoing commitment to innovation, growth, and excellence in the content marketing industry.</p>
+    <p>Inc. magazine's Inc. 5000 list is a comprehensive ranking of the fastest-growing private companies in the United States, with Brafton making the list for its significant revenue growth over the past three years. This achievement is a testament to Brafton's ability to adapt to changing market conditions, deliver exceptional client service, and maintain a culture of innovation.</p>
+    <p>"Being named to the Inc. 5000 list for the third consecutive year is a significant achievement for Brafton," said Brafton CEO. "It reflects our dedication to providing our clients with the highest quality content marketing solutions and our ongoing commitment to growth and innovation."</p>
+    <p>Brafton's success is attributed to its unique approach to content marketing, which combines creativity with data-driven insights to deliver measurable results for clients across a wide range of industries. The agency's team of experts continuously seeks to stay ahead of the curve, leveraging the latest trends and technologies to offer the best possible solutions to its clients.</p>
+</article>
+<footer>
+    <p>&copy; 2024 Brafton Legacy Blog. All rights reserved.</p>
+</footer>
+<div id="highlight-container">
+    <button id="highlight-button">Highlight Text</button>
+    <input type="text" id="highlight-text" placeholder="Enter text to highlight">
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Storytelling with Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights that Tell Your Brand Story with Video</h1>
+</header>
+
+<div class="container">
+    <h2>Why Use Video for Brand Storytelling?</h2>
+    <p>Video marketing allows brands to convey emotions and connect with their audience on a deeper level.</p>
+    <p>Utilizing storytelling through video can increase engagement, enhance brand recall, and build trust with your audience.</p>
+
+    <h2>Watch Our Explainer Video</h2>
+    <video controls>
+        <source src="your-video-url.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <button id="learnMoreBtn">Learn More About Video Marketing</button>
+    <div id="moreInfo" style="display:none;">
+        <h3>Key Insights:</h3>
+        <ul>
+            <li>Video content drives higher engagement rates.</li>
+            <li>Story-driven videos boost audience connection.</li>
+            <li>Visually appealing narratives increase shareability.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.getElementById('learnMoreBtn').onclick = function() {
+        var infoDiv = document.getElementById('moreInfo');
+        if (infoDiv.style.display === 'none') {
+            infoDiv.style.display = 'block';
+        } else {
+            infoDiv.style.display = 'none';
+        }
+    };
+</script>
+
+</body>
+</html>

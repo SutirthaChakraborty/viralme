@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: How Long Should a YouTube Video Be?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .interactive-button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interaction-result {
+            margin-top: 20px;
+            display: none;
+            padding: 10px;
+            background: #e7f3ff;
+            border: 1px solid #0077cc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YouTube Video Length Guide</h1>
+    </header>
+    <article>
+        <h2>Finding the Perfect Duration</h2>
+        <p>Video length is crucial for YouTube marketing success. Research suggests that the optimal video length is between 7 to 15 minutes for engagement.</p>
+        <h2>Why Video Length Matters</h2>
+        <p>Shorter videos may lead to higher viewer retention, while longer videos can provide in-depth content. Balance is key.</p>
+        <button class="interactive-button" onclick="toggleInteraction()">What is the ideal video length?</button>
+        <div class="interaction-result" id="result"></div>
+    </article>
+    <script>
+        function toggleInteraction() {
+            const result = document.getElementById('result');
+            if (result.style.display === 'none' || result.style.display === '') {
+                result.style.display = 'block';
+                result.textContent = 'The ideal YouTube video length is generally between 7 to 15 minutes for optimal viewer engagement.';
+            } else {
+                result.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

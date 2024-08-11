@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Chroma Key Photography Services - Perfect for Product Photography, Virtual Backgrounds, and Enhanced Visuals.">
+    <title>Chroma Key Photography Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2980b9;
+        }
+        .service-box {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Professional Chroma Key Photography Services</h1>
+    <p>Elevate your visuals with our specialized chroma key photography, perfect for businesses, creatives, and marketers.</p>
+
+    <div class="service-box">
+        <h2>Product Photography</h2>
+        <p>Showcase your products effectively with vibrant backgrounds tailored to your brand.</p>
+        <button onclick="alert('Discover more about our Product Photography!')">Learn More</button>
+    </div>
+
+    <div class="service-box">
+        <h2>Virtual Backgrounds</h2>
+        <p>Create immersive environments with custom virtual backgrounds for any purpose.</p>
+        <button onclick="alert('Explore our Virtual Background options!')">Learn More</button>
+    </div>
+
+    <div class="service-box">
+        <h2>Enhanced Visuals</h2>
+        <p>Boost your online presence with high-quality images that capture attention.</p>
+        <button onclick="alert('Inquire about our Enhanced Visuals!')">Learn More</button>
+    </div>
+
+    <script>
+        document.querySelectorAll('.service-box button').forEach(button => {
+            button.addEventListener('click', function() {
+                const service = this.parentElement.querySelector('h2').innerText;
+                alert(`You are interested in: ${service}`);
+            });
+        });
+    </script>
+
+</body>
+</html>

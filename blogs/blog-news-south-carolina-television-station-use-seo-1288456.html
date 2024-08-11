@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest blog news from South Carolina's premier television station. Stay updated with local news, weather updates, and engaging stories.">
+    <title>South Carolina Television Station Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #2980b9;
+        }
+        h2 {
+            color: #333;
+        }
+        .article {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218c4a;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Our South Carolina TV Station Blog</h1>
+    <p>Your source for the latest news, weather updates, and exclusive stories in South Carolina.</p>
+
+    <div class="article">
+        <h2>Latest News Updates</h2>
+        <p>Get the latest breaking news from South Carolina, including live updates on events, politics, and community stories. Stay tuned for our comprehensive coverage!</p>
+        <button onclick="toggleDetails()">Show Details</button>
+        <div class="hidden" id="details">
+            <p>We cover local sports, cultural events, and important community issues. Tune in for expert analysis and more.</p>
+        </div>
+    </div>
+
+    <div class="article">
+        <h2>Weather Forecast</h2>
+        <p>Check our daily weather forecasts to plan your day effectively. Expect accurate updates on storms, temperature changes, and outdoor advice.</p>
+        <button onclick="toggleWeatherDetails()">Show More Weather Info</button>
+        <div class="hidden" id="weatherDetails">
+            <p>Stay safe with our up-to-date alerts on severe weather conditions across South Carolina.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            var details = document.getElementById("details");
+            details.classList.toggle("hidden");
+        }
+        
+        function toggleWeatherDetails() {
+            var weatherDetails = document.getElementById("weatherDetails");
+            weatherDetails.classList.toggle("hidden");
+        }
+    </script>
+    
+</body>
+</html>

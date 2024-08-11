@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Design: Winning 2014 DesignFirms Web Award</title>
+    <style>
+        /* Use Zepto CSS for better interactivity */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #673ab7;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        p {
+            line-height: 1.5;
+            color: #333333;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        // Interactive CSS & JS for explaining the awards
+        window.onload = function() {
+            document.querySelector('.info-icon').addEventListener('click', function() {
+                this.classList.toggle('info-open');
+                var explanation = document.querySelector('.info-explanation');
+                explanation.classList.toggle('hidden');
+            });
+        };
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Blog Matcha Design Wins 2014 DesignFirms Web Award</h1>
+        <h2>MidFirst Bank Money Moments - Interactive Online Financial Literacy Course</h2>
+        <p>In 2014, Matcha Design distinguished itself with the

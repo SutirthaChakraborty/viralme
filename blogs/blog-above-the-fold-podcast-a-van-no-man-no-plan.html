@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog Above the Fold - Podcast a Van No Man No Plan</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		#header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		#header h1 {
+			font-size: 36px;
+			margin-top: 0;
+		}
+		
+		#main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px;
+		}
+		
+		#main .card {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		#main .card h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+		
+		#main .card p {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+		
+		#main .card button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		#main .card button:hover {
+			background-color: #3e8e41;
+		}
+		
+		@media (max-width: 768px) {
+			#main {
+				flex-direction: column;
+			}
+			#main .card {
+				margin: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<h1>Blog Above the Fold - Podcast a Van No Man No Plan</h1>
+	</header>
+	<main id="main">
+		<div class="card">
+			<h2>Blog Above the Fold</h2>
+			<p>Stay up-to-date with the latest blog posts and articles on our podcast.</p>
+			<button>Read More</button>
+		</div>
+		<div class="card">
+			<h2>Podcast a Van</h2>
+			<p>Join our podcast as we explore the world of van life and share our experiences.</p>
+			<button>Listen Now</button>
+		</div>
+		<div class="card">
+			<h2>No Man No Plan</h2>
+			<p>Discover the importance of planning and preparation in achieving your goals.</p>
+			<button>Learn More</button>
+		</div>
+	</main>
+	<script>
+		const cards = document.querySelectorAll('.card');
+		
+		cards.forEach(card => {
+			card.addEventListener('click', () => {
+				card.classList.toggle('active');
+				const content = card.querySelector('p');
+				if (card.classList.contains('active')) {
+					content.style.display = 'block';
+				} else {
+					content.style.display = 'none';
+				}
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+Keywords: Blog Above the Fold, Podcast a Van No Man No Plan, Van Life, Planning, Preparation, Goal Achievement.

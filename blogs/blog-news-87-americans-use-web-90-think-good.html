@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest blog news on internet usage trends in America. Discover how 87% of Americans use the web and 90% believe it's beneficial.">
+    <title>Latest Blog News: Internet Usage in America</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: Internet Usage in America</h1>
+</header>
+
+<article>
+    <h2>87% of Americans Use the Web</h2>
+    <p>Recent studies highlight that 87% of Americans engage with the internet regularly, making it an integral part of daily life. From social media to online shopping, the web has transformed how we communicate and acquire information.</p>
+    
+    <h2>90% Believe the Internet is Beneficial</h2>
+    <p>An overwhelming 90% of Americans think that the internet has had a positive impact on society. It's seen as a powerful tool for education, connectivity, and business.</p>
+    
+    <button id="statsButton">Show Usage Statistics</button>
+    <div id="stats" style="display:none; margin-top: 10px;">
+        <p>Internet Usage: 87%</p>
+        <p>Positive Impact: 90%</p>
+    </div>
+</article>
+
+<script>
+    document.getElementById('statsButton').onclick = function() {
+        var stats = document.getElementById('stats');
+        if (stats.style.display === "none") {
+            stats.style.display = "block";
+        } else {
+            stats.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>

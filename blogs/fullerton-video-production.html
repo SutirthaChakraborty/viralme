@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fullerton Video Production offers high-quality video services including corporate videos, promotional videos, and event coverage.">
+    <title>Fullerton Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            margin: 10px;
+            flex: 0 0 30%;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .service:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fullerton Video Production</h1>
+        <p>Your partner for quality video solutions</p>
+    </header>
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service" onclick="showInfo('Corporate Videos')">Corporate Videos</div>
+            <div class="service" onclick="showInfo('Promotional Videos')">Promotional Videos</div>
+            <div class="service" onclick="showInfo('Event Coverage')">Event Coverage</div>
+        </div>
+        <div id="info" style="margin-top: 20px;"></div>
+    </div>
+    <footer>
+        <p>Contact us: info@fullertonvideoproduction.com</p>
+    </footer>
+    <script>
+        function showInfo(service) {
+            const info = {
+                'Corporate Videos': 'We create professional corporate videos that effectively communicate your brand message and values.',
+                'Promotional Videos': 'Our promotional videos are designed to enhance your marketing strategies and attract more customers.',
+                'Event Coverage': 'We offer comprehensive coverage for events, capturing every memorable moment in high quality.'
+            };
+            document.getElementById('info').innerText = info[service];
+        }
+    </script>
+</body>
+</html>

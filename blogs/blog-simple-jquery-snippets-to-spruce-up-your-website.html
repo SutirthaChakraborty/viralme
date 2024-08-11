@@ -1,0 +1,66 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Simple jQuery snippets to enhance your website's design with interactive elements.">
+    <meta name="keywords" content="jQuery, website, snippets, CSS, JavaScript, enhancement, interactivity, design">
+    <title>jQuery Snippets for a Better-Styled Website</title>
+    <style>
+        /* CSS */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f1f1f1;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .snippet {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .snippet:hover {
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        .snippet.code {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .snippet.description {
+            font-style: italic;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h1>jQuery Snippets to Spruce Up Your Website</h1>
+        <div class="snippet code">
+            <pre id="scrollEffect"><code class="javascript">
+// Smooth scroll effect
+$(document).ready(function() {
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var target = $(this.hash);
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000, function() {
+            window.location.hash = target.attr('href');
+        });
+    });
+});
+            </code></pre>
+        </div>
+        <div class="snippet description">
+            Smooth scrolling between sections using jQuery. This script animation makes your content more interactive.
+        </div>
+        <div class="snippet code">
+            <pre id="responsiveVideos"><code

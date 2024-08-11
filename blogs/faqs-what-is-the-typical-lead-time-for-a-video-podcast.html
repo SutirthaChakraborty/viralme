@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ on Video Podcast Lead Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .faq-container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq {
+            margin: 10px 0;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .active {
+            background: #e74c3c;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQs: Video Podcast Lead Time</h1>
+    <div class="faq-container">
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>What is the typical lead time for producing a video podcast?</strong>
+            <div class="answer">The typical lead time for producing a video podcast ranges from 2 to 6 weeks. Factors such as content preparation, scheduling guests, and post-production editing can affect this timeline.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>Why is planning important for video podcast lead time?</strong>
+            <div class="answer">Proper planning helps streamline the production process, ensuring that equipment, locations, and guests are ready, which ultimately shortens the overall lead time.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>How can I reduce the lead time for my video podcast?</strong>
+            <div class="answer">You can reduce lead time by creating a detailed script, conducting pre-interviews, and utilizing efficient editing software. Collaboration with experienced teams also helps expedite the process.</div>
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.querySelector('.answer');
+            const isActive = answer.style.display === 'block';
+            answer.style.display = isActive ? 'none' : 'block';
+            element.classList.toggle('active', !isActive);
+        }
+    </script>
+</body>
+</html>

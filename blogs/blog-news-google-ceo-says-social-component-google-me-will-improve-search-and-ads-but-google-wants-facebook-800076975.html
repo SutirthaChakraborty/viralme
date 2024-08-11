@@ -1,0 +1,146 @@
+#### HTML Code with CSS for Blog News
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog News</title>
+    <style>
+        /* CSS styles for the blog news page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        main {
+            margin: 20px;
+        }
+        
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        .post h2 {
+            margin: 0;
+            font-size: 20px;
+        }
+        
+        .post p {
+            margin: 10px 0;
+        }
+        
+        .author {
+            font-style: italic;
+            color: #888;
+        }
+        
+        .published-date {
+            color: #888;
+        }
+        
+        footer {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News</h1>
+    </header>
+    <main>
+        <div class="post">
+            <h2>Google CEO says social component Google Me will improve search and ads</h2>
+            <p>According to Google's CEO, the social component Google Me will improve search and ads. This move is aimed at enhancing user experience and providing more relevant content. The integration of social features into Google's search and advertising platforms will allow users to discover personalized content and enable advertisers to target their audience more effectively.</p>
+            <p>For more information, please visit the official Google website.</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Blog News. All rights reserved.
+    </footer>
+</body>
+</html>
+
+
+#### Explanation of the HTML Code
+
+The provided HTML code creates a simple blog news page with a header, main content area, and footer. Here's a breakdown of the code:
+
+- The `<header>` element contains the title of the blog news page.
+- The `<main>` element is where the blog post content is displayed.
+- Inside the `<main>` element, there is a `<div>` with the class "post" that represents a single blog post.
+- The blog post has a `<h2>` heading for the title and `<p>` elements for the content.
+- The `<footer>` element contains the copyright information.
+
+#### Interactive CSS and JS
+
+To make the blog news page more interactive, you can add CSS and JavaScript code. Here's an example of how you can enhance the page with interactive features:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog News</title>
+    <style>
+        /* CSS styles for the blog news page */
+        /* ... (same as previous code) ... */
+        
+        /* CSS styles for interactive features */
+        .post:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .post h2 {
+            cursor: pointer;
+        }
+        
+        .post-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        // JavaScript code for interactive features
+        window.addEventListener('DOMContentLoaded', function() {
+            var postTitles = document.querySelectorAll('.post h2');
+            
+            postTitles.forEach(function(title) {
+                title.addEventListener('click', function() {
+                    var postContent = this.nextElementSibling;
+                    postContent.style.display = postContent.style.display === 'none' ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- ... (same as previous code) ... -->
+</body>
+</html>
+
+
+Explanation of the Interactive Features:
+
+- The CSS styles added to the `.post:hover` selector change the background color of a blog post when hovering over it.
+- The CSS styles added to the `.post h2` selector change the cursor to a pointer when hovering over a blog post title.
+- The JavaScript code adds a click event listener to each blog post title. When a title is clicked, it toggles the display of the corresponding post content using the `display` property.
+
+With these interactive features, users can now hover over blog posts to see a visual indication and click on the titles to expand or collapse the post content.
+
+Please note that the provided code is a basic example and can be further customized and enhanced based on your specific requirements.

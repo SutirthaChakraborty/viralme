@@ -1,0 +1,91 @@
+以下是关于“事件”（Events）的一小段HTML代码，包括CSS和JS：
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Events</title>
+    <style>
+        /* 设置页面样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        /* 设置事件列表样式 */
+        .event-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .event-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .event-list li:last-child {
+            border-bottom: none;
+        }
+        
+        /* 设置事件详细信息样式 */
+        .event-detail {
+            display: none;
+        }
+        
+        /* 设置事件详细信息显示样式 */
+        .event-detail.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events</h1>
+    <ul class="event-list">
+        <li>
+            <h2>Event 1</h2>
+            <p>Event 1 description</p>
+            <button class="event-button">查看详细信息</button>
+            <div class="event-detail">
+                <p>Event 1 detail</p>
+            </div>
+        </li>
+        <li>
+            <h2>Event 2</h2>
+            <p>Event 2 description</p>
+            <button class="event-button">查看详细信息</button>
+            <div class="event-detail">
+                <p>Event 2 detail</p>
+            </div>
+        </li>
+        <li>
+            <h2>Event 3</h2>
+            <p>Event 3 description</p>
+            <button class="event-button">查看详细信息</button>
+            <div class="event-detail">
+                <p>Event 3 detail</p>
+            </div>
+        </li>
+    </ul>
+    
+    <script>
+        // 获取事件列表
+        const eventList = document.querySelector('.event-list');
+        // 获取事件按钮
+        const eventButtons = eventList.querySelectorAll('.event-button');
+        // 获取事件详细信息
+        const eventDetails = eventList.querySelectorAll('.event-detail');
+        
+        // 添加事件监听器
+        eventButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                // 显示或隐藏事件详细信息
+                eventDetails[index].classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+关键词：事件、事件监听器、事件详细信息、JavaScript、HTML、CSS

@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Life at Brafton - Art, Music, and Graphic Design with Sam Oxley</title>
+    <meta name="description" content="Explore the vibrant life at Brafton with insights into art, music, and graphic design from Sam Oxley. Discover tips, tricks, and creative inspiration.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life at Brafton: Art, Music, and Graphic Design</h1>
+        <p>Insights with Sam Oxley</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Art & Creativity</h2>
+            <p>Discover how art inspires our work culture at Brafton. Engage with various forms of artistic expression to fuel your creativity.</p>
+            <button class="button" onclick="toggleInfo('artInfo')">More about Art</button>
+            <div id="artInfo" class="info">
+                <p>Art not only enhances our workspace but also encourages innovative thinking. Explore workshops and resources to boost your artistic skills.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Music & Inspiration</h2>
+            <p>The role of music in boosting creativity and productivity at Brafton. Find out how we incorporate music into our daily routine.</p>
+            <button class="button" onclick="toggleInfo('musicInfo')">More about Music</button>
+            <div id="musicInfo" class="info">
+                <p>Music helps in creating a positive environment. Join us for weekly jam sessions to refresh your mind and soul!</p>
+            </div>
+        </section>
+        <section>
+            <h2>Graphic Design & Digital Art</h2>
+            <p>Insights into graphic design trends that shape our marketing strategies. Learn about tools and techniques from Sam Oxley.</p>
+            <button class="button" onclick="toggleInfo('designInfo')">More about Graphic Design</button>
+            <div id="designInfo" class="info">
+                <p>Stay ahead with modern design trends. Attend our design critiques to sharpen your skills and gather feedback.</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        function toggleInfo(infoId) {
+            const info = document.getElementById(infoId);
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

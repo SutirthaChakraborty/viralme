@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Ways to Speed Up Your Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .tip {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .tip:hover {
+            transform: scale(1.02);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>5 Ways to Speed Up Your Website</h1>
+    
+    <div class="tip">
+        <h2>1. Optimize Images</h2>
+        <p>Use compressed images to reduce load times without sacrificing quality.</p>
+    </div>
+    
+    <div class="tip">
+        <h2>2. Minimize HTTP Requests</h2>
+        <p>Reduce the number of elements on your page to decrease the number of requests.</p>
+    </div>
+    
+    <div class="tip">
+        <h2>3. Use Browser Caching</h2>
+        <p>Leverage browser caching to store frequently accessed resources locally.</p>
+    </div>
+    
+    <div class="tip">
+        <h2>4. Minify CSS and JavaScript</h2>
+        <p>Remove unnecessary characters from your code to improve load speed.</p>
+    </div>
+    
+    <div class="tip">
+        <h2>5. Use a Content Delivery Network (CDN)</h2>
+        <p>Distribute your content across multiple servers to enhance access speed.</p>
+    </div>
+
+    <button onclick="alert('Learn more about optimizing your website!')">Learn More</button>
+
+    <script>
+        document.querySelectorAll('.tip').forEach(tip => {
+            tip.addEventListener('click', () => {
+                alert(tip.querySelector('h2').innerText + ' - ' + tip.querySelector('p').innerText);
+            });
+        });
+    </script>
+</body>
+</html>

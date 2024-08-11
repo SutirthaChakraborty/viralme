@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our collection of press photos showcasing impactful moments in history.">
+    <title>Press Photos Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .photo {
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .description {
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Press Photos Gallery</h1>
+    <div class="gallery">
+        <div class="photo" onclick="showDetails('Photo 1: Historic Event')">
+            <img src="photo1.jpg" alt="Historic Event">
+            <div class="description">Historic Event</div>
+        </div>
+        <div class="photo" onclick="showDetails('Photo 2: Cultural Moment')">
+            <img src="photo2.jpg" alt="Cultural Moment">
+            <div class="description">Cultural Moment</div>
+        </div>
+        <div class="photo" onclick="showDetails('Photo 3: Political Milestone')">
+            <img src="photo3.jpg" alt="Political Milestone">
+            <div class="description">Political Milestone</div>
+        </div>
+    </div>
+
+    <script>
+        function showDetails(info) {
+            alert(info);
+        }
+    </script>
+
+</body>
+</html>

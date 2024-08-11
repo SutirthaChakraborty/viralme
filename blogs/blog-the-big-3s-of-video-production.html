@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Big 3's of video production: Pre-Production, Production, and Post-Production. Expert tips and insights for aspiring filmmakers.">
+    <title>The Big 3's of Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .toggle-btn {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background-color: #eef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Big 3's of Video Production</h1>
+        <p>Explore the core elements: Pre-Production, Production, and Post-Production.</p>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>1. Pre-Production</h2>
+            <button class="toggle-btn" onclick="toggleDetails('preproduction')">Learn More</button>
+            <div id="preproduction" class="details">
+                <p>Planning your project is crucial. It involves scripting, storyboarding, budgeting, and scheduling.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>2. Production</h2>
+            <button class="toggle-btn" onclick="toggleDetails('production')">Learn More</button>
+            <div id="production" class="details">
+                <p>This is the execution phase where filming occurs. It's essential to manage crews and ensure equipment readiness.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>3. Post-Production</h2>
+            <button class="toggle-btn" onclick="toggleDetails('postproduction')">Learn More</button>
+            <div id="postproduction" class="details">
+                <p>Editing, sound design, and color correction take place here to create the final product.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

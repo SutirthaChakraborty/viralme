@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Marketing Trends 2016</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .keyword-highlight {
+            background-color: #e3f2fd;
+            font-weight: bold;
+            padding: 2px 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            border: none;
+            background-color: #0073e6;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .trends-info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Content Marketing Trends 2016</h1>
+        <p>Explore email marketing and mobile strategies!</p>
+    </header>
+    
+    <article>
+        <h2>Top Content Trends of 2016</h2>
+        <ul>
+            <li>Increased focus on <span class="keyword-highlight">mobile-friendly</span> content.</li>
+            <li>Rise of <span class="keyword-highlight">visual content</span> like videos and infographics.</li>
+            <li>Greater integration of <span class="keyword-highlight">email marketing</span> with social media.</li>
+            <li>Personalization in <span class="keyword-highlight">content marketing</span> will be key!</li>
+        </ul>
+
+        <h2>12 Days of Content: A Challenge</h2>
+        <p>Engage your audience with <span class="keyword-highlight">12 days of content</span> that emphasizes unique themes each day.</p>
+
+        <button id="toggleTrendsBtn">Toggle 2016 Content Trends</button>
+        <div id="trendsInfo" class="trends-info">
+            <p>Content trends for 2016 emphasize shorter formats, storytelling, and audience engagement through interactive elements.</p>
+            <p>Mobile optimization is crucial as more users access content via their devices.</p>
+            <p>Utilizing <span class="keyword-highlight">email marketing</span> effectively can drive traffic and engagement.</p>
+        </div>
+    </article>
+
+    <script>
+        document.getElementById('toggleTrendsBtn').addEventListener('click', function() {
+            const trendsInfo = document.getElementById('trendsInfo');
+            if (trendsInfo.style.display === 'none' || trendsInfo.style.display === '') {
+                trendsInfo.style.display = 'block';
+                this.innerText = 'Hide 2016 Content Trends';
+            } else {
+                trendsInfo.style.display = 'none';
+                this.innerText = 'Show 2016 Content Trends';
+            }
+        });
+    </script>
+</body>
+</html>

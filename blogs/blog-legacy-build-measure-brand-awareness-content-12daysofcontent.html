@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Days of Content: Building Brand Awareness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .toggle {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>12 Days of Content: Building Brand Awareness</h1>
+    </header>
+    <section>
+        <h2>What is Brand Awareness?</h2>
+        <p>Brand awareness is the extent to which consumers are familiar with the distinctive qualities or image of a particular brand.</p>
+        <button class="toggle">Learn More</button>
+        <div class="content">
+            <p>Effective brand awareness strategies help in increasing recognition and preference among consumers, leading to increased loyalty and sales.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Build-Measure-Learn Framework</h2>
+        <p>This iterative process helps businesses build their brand through effective content strategies, leveraging audience feedback.</p>
+        <button class="toggle">Learn More</button>
+        <div class="content">
+            <p>By continually measuring the impact of content, brands can tailor their messaging to align with consumer preferences.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Engaging Content for 12 Days</h2>
+        <p>Creating engaging content over 12 days can significantly enhance brand visibility and engagement.</p>
+        <button class="toggle">Learn More</button>
+        <div class="content">
+            <p>Content ideas may include blog posts, videos, infographics, and social media campaigns to keep the audience engaged.</p>
+        </div>
+    </section>
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                toggle.textContent = toggle.textContent === 'Learn More' ? 'Show Less' : 'Learn More';
+            });
+        });
+    </script>
+</body>
+</html>

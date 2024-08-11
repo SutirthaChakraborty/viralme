@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing SEO Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-term {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .glossary-term:hover {
+            background-color: #e9ecef;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bing SEO Glossary</h1>
+    <div class="glossary-term" onclick="toggleDefinition('def1')">
+        <strong>SEO (Search Engine Optimization)</strong>
+        <div id="def1" class="definition">The process of optimizing a website to rank higher in search engine results, particularly on Bing.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def2')">
+        <strong>Bing Webmaster Tools</strong>
+        <div id="def2" class="definition">A free service provided by Bing that helps webmasters manage their site's presence in Bing search results.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def3')">
+        <strong>Keywords</strong>
+        <div id="def3" class="definition">Words or phrases that users type into search engines, crucial for targeting the right audience.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def4')">
+        <strong>Backlinks</strong>
+        <div id="def4" class="definition">Links from other websites that point to your site, important for improving search rankings.</div>
+    </div>
+
+    <script>
+        function toggleDefinition(id) {
+            var definition = document.getElementById(id);
+            if (definition.style.display === "none" || definition.style.display === "") {
+                definition.style.display = "block";
+            } else {
+                definition.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

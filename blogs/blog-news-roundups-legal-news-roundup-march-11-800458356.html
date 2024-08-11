@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal News Roundup - March 11</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Legal News Roundup - March 11</h1>
+    </header>
+    <article>
+        <h2>Latest Developments in Legal Affairs</h2>
+        <p>Stay updated with the most significant legal news and insights from around the world.</p>
+        <div class="toggle" onclick="toggleDetails('details1')">Read More</div>
+        <div id="details1" class="details">
+            <p>This month, key rulings have emerged that could reshape the landscape of corporate law, including significant changes in compliance regulations.</p>
+        </div>
+    </article>
+    <article>
+        <h2>Impact of Recent Legislation</h2>
+        <p>Explore how new laws are affecting various sectors.</p>
+        <div class="toggle" onclick="toggleDetails('details2')">Read More</div>
+        <div id="details2" class="details">
+            <p>Recent legislation has introduced stricter penalties for corporate fraud, aiming to enhance accountability and transparency in business practices.</p>
+        </div>
+    </article>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

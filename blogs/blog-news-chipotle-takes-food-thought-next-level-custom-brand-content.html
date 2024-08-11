@@ -1,0 +1,82 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Chipotle Enhances Food Thought with Custom Brand Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            border: 1px solid #e3e3e3;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #336699;
+            margin-bottom: 30px;
+        }
+
+        .post {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .post-date {
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        .post-content {
+            margin-left: 30px;
+            line-height: 1.6;
+        }
+
+        .custom-brand {
+            color: #ee6b42;
+            font-weight: bold;
+        }
+
+        .cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ee6b42;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        // Include some basic interactivity: show/hide custom content when a keyword is clicked
+        window.onload = function() {
+            const keywords = document.querySelectorAll('.keyword');
+            keywords.forEach(keyword => {
+                keyword.addEventListener('click', function() {
+                    const customContent = document.getElementById('custom-content');
+                    if (customContent.style.display === 'none') {
+                        customContent.style.display = 'block';
+                    } else {
+                        customContent.style.display = 'none';
+                    }
+                });
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+       

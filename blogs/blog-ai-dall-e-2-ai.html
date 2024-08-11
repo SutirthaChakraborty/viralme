@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the capabilities of DALL-E 2 AI, a groundbreaking tool for generating creative images from text prompts. Discover how AI art is transforming the creative landscape.">
+    <title>DALL-E 2 AI Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007acc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            background: #007acc;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #005f99;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DALL-E 2 AI: Create Art from Text</h1>
+</header>
+
+<section>
+    <h2>What is DALL-E 2?</h2>
+    <p>DALL-E 2 is an advanced AI model developed by OpenAI that generates stunning images from text descriptions. It showcases how artificial intelligence can enhance creativity and inspire artists.</p>
+    <button onclick="generateArt()">Generate Art!</button>
+    <div id="output"></div>
+</section>
+
+<script>
+    function generateArt() {
+        const prompts = [
+            "A futuristic cityscape at sunset",
+            "A dragon made of clouds",
+            "A robot painting on a canvas",
+            "A surreal dreamlike landscape with floating islands",
+            "A vintage car on a rainbow road"
+        ];
+        const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
+        document.getElementById("output").innerHTML = `<strong>Generated Prompt:</strong> ${randomPrompt}`;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights into Corporate Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .step {
+            margin: 20px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 5px solid #007BFF;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f7f7f7;
+            border-left: 5px solid #17a2b8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights into Corporate Video Production Process</h1>
+    <div class="step" onclick="toggleDetails('pre-production')">
+        <strong>Step 1: Pre-Production</strong>
+        <div id="pre-production" class="details">
+            <p>Pre-Production involves planning, concepts, and scripting. Key activities include budget setting, location scouting, and scheduling.</p>
+        </div>
+    </div>
+    <div class="step" onclick="toggleDetails('production')">
+        <strong>Step 2: Production</strong>
+        <div id="production" class="details">
+            <p>The Production phase is where the actual filming takes place. This includes directing, shooting, and capturing audio, which is crucial for quality outputs.</p>
+        </div>
+    </div>
+    <div class="step" onclick="toggleDetails('post-production')">
+        <strong>Step 3: Post-Production</strong>
+        <div id="post-production" class="details">
+            <p>Post-Production involves editing, sound design, and motion graphics. It's essential for creating a polished final product that effectively communicates the intended message.</p>
+        </div>
+    </div>
+    <div class="step" onclick="toggleDetails('distribution')">
+        <strong>Step 4: Distribution</strong>
+        <div id="distribution" class="details">
+            <p>The Distribution phase includes strategy for sharing your corporate video across platforms, ensuring maximum reach and engagement with your audience.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const detailElement = document.getElementById(id);
+        detailElement.style.display = detailElement.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Site Speed & Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .cta {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Importance of Mobile Site Speed for Content Marketing</h1>
+</header>
+
+<section>
+    <h2>Why Mobile Speed Matters</h2>
+    <p>As tablet ownership grows, ensuring your blog loads quickly on mobile devices is crucial for retaining visitors. **Fast loading times** enhance user experience and improve **SEO rankings**, making your content more discoverable.</p>
+</section>
+
+<section>
+    <h2>Key Strategies for Improving Speed</h2>
+    <ul>
+        <li>Optimize images for faster loading.</li>
+        <li>Minimize HTTP requests by combining files.</li>
+        <li>Use asynchronous loading for JavaScript.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Interactive Speed Test</h2>
+    <div class="cta" onclick="testSpeed()">Click here to test your site's speed!</div>
+    <p id="speedResult"></p>
+</section>
+
+<script>
+    function testSpeed() {
+        const startTime = performance.now();
+        fetch('https://example.com') // Replace with your URL
+            .then(response => {
+                const endTime = performance.now();
+                const timeTaken = (endTime - startTime).toFixed(2);
+                document.getElementById('speedResult').innerText = `Your site loaded in ${timeTaken} milliseconds.`;
+            })
+            .catch(error => {
+                document.getElementById('speedResult').innerText = 'Error testing speed.';
+            });
+    }
+</script>
+
+</body>
+</html>

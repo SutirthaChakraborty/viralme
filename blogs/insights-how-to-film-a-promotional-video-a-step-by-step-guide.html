@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step guide to filming a promotional video. Learn tips and techniques for effective video marketing.">
+    <title>How to Film a Promotional Video: A Step-by-Step Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0066cc;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .step {
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #0066cc;
+            transition: background 0.3s;
+        }
+        .step:hover {
+            background: #e6f7ff;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>How to Film a Promotional Video</h1>
+</header>
+
+<div class="container">
+    <div class="step" id="step1">1. Define Your Goals</div>
+    <div class="step" id="step2">2. Know Your Audience</div>
+    <div class="step" id="step3">3. Write a Script</div>
+    <div class="step" id="step4">4. Choose the Right Equipment</div>
+    <div class="step" id="step5">5. Scout Locations</div>
+    <div class="step" id="step6">6. Film with Quality</div>
+    <div class="step" id="step7">7. Edit and Review</div>
+    <div class="step" id="step8">8. Promote Your Video</div>
+    <button onclick="showDetails()">Show Tips</button>
+</div>
+
+<script>
+    function showDetails() {
+        const tips = [
+            "Set measurable objectives like increasing brand awareness or driving sales.",
+            "Understand demographics, interests, and challenges of your target audience.",
+            "Craft a script that tells a story, highlights benefits, and ends with a call to action.",
+            "Invest in a good camera, microphone, and lighting for professional results.",
+            "Identify locations that align with your story and ensure they are suitable for filming.",
+            "Follow best practices for framing, angles, and audio quality.",
+            "Use editing software to enhance visuals, add music, and polish your video.",
+            "Utilize social media, email marketing, and your website to share your video."
+        ];
+        
+        const steps = document.querySelectorAll('.step');
+        steps.forEach((step, index) => {
+            step.textContent += ": " + tips[index];
+        });
+    }
+</script>
+
+</body>
+</html>

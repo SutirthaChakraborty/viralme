@@ -1,0 +1,50 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Chrome to Leap, Firefox Soon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .interactive {
+            display: inline-block;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog News: Chrome to Leap, Firefox Soon</h1>
+    <p>Stay up-to-date with the latest news and updates on the world of web browsers!</p>
+    <div class="interactive" onclick="showInfo('chrome')">Show Chrome News</div>
+    <div class="interactive" onclick="showInfo('firefox')">Show Firefox News</div>
+    <div id="info"></div>
+
+    <script>
+        function showInfo(browser) {
+            const info = document.getElementById('info');
+            if (browser === 'chrome') {
+                info.innerHTML = `<strong>Chrome News:</strong><br>Chrome is expected to leap forward in its performance and security features. Stay tuned for more updates!`;
+            } else if (browser === 'firefox') {
+                info.innerHTML = `<strong>Firefox News:</strong><br>Firefox is also set to receive some exciting improvements soon. Keep an eye out for these updates!`;
+            } else {
+                info.innerHTML = '<strong>Invalid selection. Please choose either Chrome or Firefox.</strong>';
+            }
+        }
+    </script>
+</body>
+</html>

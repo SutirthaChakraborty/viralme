@@ -1,0 +1,81 @@
+Here's a simple HTML code with CSS and a bit of JavaScript to showcase a category for event videography. I've included some relevant keywords in the content and styling to improve search visibility:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Videography Services</title>
+    <style>
+        .category-container {
+            background-color: #f2f2f2;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .service-description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        .services-list {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .service-item {
+            flex: 1;
+            padding: 10px 20px;
+        }
+
+        .service-item a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .service-item a:hover {
+            color: #ff5f00;
+        }
+
+        .learn-more {
+            background-color: #ff5f00;
+            display: inline-block;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .learn-more:hover {
+            background-color: #d44b13;
+        }
+
+        @media (max-width: 600px) {
+            .services-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <script>
+        function showDetails(event) {
+            var serviceDetails = document.getElementById('service-details');
+            if (event.target.id === 'show-details-btn') {
+               

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Improve your video marketing strategy with Facebook's new metrics and insights.">
+    <title>Improve Your Video Marketing with Facebook's New Metrics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .metric {
+            background: #ecf0f1;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 5px solid #3498db;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .metric:hover {
+            background: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Boost Your Video Marketing with Facebook's New Metrics</h1>
+    <p>Facebook has recently launched new metrics that can revolutionize your video marketing strategy. These insights provide deeper understanding of viewer engagement and content performance, helping you tailor your campaigns for better results.</p>
+    <div class="metric" onclick="showDetail('viewDuration')">
+        <strong>View Duration</strong><br>
+        Measure how long viewers are engaging with your videos.
+    </div>
+    <div class="metric" onclick="showDetail('engagementRate')">
+        <strong>Engagement Rate</strong><br>
+        Analyze interaction levels through likes, shares, and comments.
+    </div>
+    <div class="metric" onclick="showDetail('completionRate')">
+        <strong>Completion Rate</strong><br>
+        Track percentage of viewers who watch your videos to the end.
+    </div>
+    <p id="details" style="margin-top: 15px;"></p>
+</div>
+
+<script>
+    function showDetail(metric) {
+        let details = '';
+        switch (metric) {
+            case 'viewDuration':
+                details = 'Understanding view duration can help you identify trends in viewer interest and optimize video content accordingly.';
+                break;
+            case 'engagementRate':
+                details = 'Higher engagement rates indicate content that resonates with your audience, allowing for more focused marketing efforts.';
+                break;
+            case 'completionRate':
+                details = 'A high completion rate signals that your content is relevant and compelling, an important factor in audience retention.';
+                break;
+            default:
+                details = '';
+        }
+        document.getElementById('details').innerText = details;
+    }
+</script>
+
+</body>
+</html>

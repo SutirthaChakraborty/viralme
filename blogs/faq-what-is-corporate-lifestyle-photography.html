@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: What is Corporate Lifestyle Photography?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .faq-item {
+            margin: 15px 0;
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        .active {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FAQ: Corporate Lifestyle Photography</h1>
+    </header>
+    <div class="container">
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h2>What is Corporate Lifestyle Photography?</h2>
+            <div class="answer">Corporate lifestyle photography captures real-life scenarios in a corporate setting, showcasing the culture and environment of a business through visual storytelling. It highlights the interactions between employees, their workspace, and the overall work atmosphere.</div>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h2>Why is it important for businesses?</h2>
+            <div class="answer">This photography style is crucial for branding, marketing, and recruitment. It helps businesses present a relatable image, enhancing their brand narrative and attracting potential clients and employees.</div>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <h2>Who benefits from Corporate Lifestyle Photography?</h2>
+            <div class="answer">Companies, marketing teams, HR departments, and recruitment agencies benefit from this type of photography, as it effectively communicates their brand values and work culture.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

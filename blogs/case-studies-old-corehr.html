@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies on Old CoreHR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        #container {
+            display: flex;
+            margin: 20px;
+        }
+        #menu {
+            width: 30%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #content {
+            width: 70%;
+            padding: 15px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .topic {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .topic:hover {
+            background: #f0f0f0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Case Studies on Old CoreHR</h1>
+    </header>
+    <div id="container">
+        <div id="menu">
+            <div class="topic" onclick="showContent('study1')">Case Study 1: Implementation Challenges</div>
+            <div class="topic" onclick="showContent('study2')">Case Study 2: User Adoption</div>
+            <div class="topic" onclick="showContent('study3')">Case Study 3: Performance Metrics</div>
+        </div>
+        <div id="content">
+            <div id="study1" class="hidden">
+                <h2>Implementation Challenges</h2>
+                <p>This case study explores the various challenges faced during the implementation of Old CoreHR systems, including integration issues and user training.</p>
+            </div>
+            <div id="study2" class="hidden">
+                <h2>User Adoption</h2>
+                <p>This study focuses on strategies to enhance user adoption of Old CoreHR systems, highlighting best practices and user feedback.</p>
+            </div>
+            <div id="study3" class="hidden">
+                <h2>Performance Metrics</h2>
+                <p>Analyzing the performance metrics of Old CoreHR systems, this case study provides insights into efficiency improvements and ROI.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showContent(studyId) {
+            const studies = document.querySelectorAll('#content > div');
+            studies.forEach(study => {
+                study.classList.add('hidden');
+            });
+            document.getElementById(studyId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

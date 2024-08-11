@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Users by Income - Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .income-level {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .income-level:hover {
+            background: #d1d1d1;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Understanding Internet Users by Income</h1>
+    <p>Discover how income levels affect internet usage and digital marketing strategies.</p>
+    
+    <div class="income-level" onclick="toggleDetails('high-income')">
+        High Income
+    </div>
+    <div id="high-income" class="details">
+        <p>High-income users are more likely to use premium online services and make online purchases.</p>
+    </div>
+
+    <div class="income-level" onclick="toggleDetails('middle-income')">
+        Middle Income
+    </div>
+    <div id="middle-income" class="details">
+        <p>Middle-income users often use social media for brand engagement and online shopping.</p>
+    </div>
+
+    <div class="income-level" onclick="toggleDetails('low-income')">
+        Low Income
+    </div>
+    <div id="low-income" class="details">
+        <p>Low-income users may primarily access free content but are showing growing trends in online usage.</p>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(incomeLevel) {
+        const details = document.getElementById(incomeLevel);
+        if (details.style.display === "none" || details.style.display === "") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

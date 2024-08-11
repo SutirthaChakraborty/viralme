@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to set up authorship in six simple steps within six minutes.">
+    <title>Infographic: Set Up Authorship in 6 Steps</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .infographic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .step {
+            background: #fff;
+            border: 2px solid #3498db;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 80%;
+            transition: transform 0.3s;
+        }
+        .step:hover {
+            transform: scale(1.05);
+        }
+        .step h2 {
+            color: #3498db;
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Set Up Authorship in 6 Steps</h1>
+    <div class="infographic">
+        <div class="step">
+            <h2>Step 1: Create a Google+ Profile</h2>
+            <p>Ensure you have a complete Google+ profile with a profile picture and bio.</p>
+        </div>
+        <div class="step">
+            <h2>Step 2: Link Your Content</h2>
+            <p>Add a link to your Google+ profile in the author section of your blog or website.</p>
+        </div>
+        <div class="step">
+            <h2>Step 3: Use Rel=Author Tag</h2>
+            <p>Implement the rel=author tag in your HTML to connect your content to your profile.</p>
+        </div>
+        <div class="step">
+            <h2>Step 4: Verify Your Authorship</h2>
+            <p>Check if your authorship is verified by searching for your content on Google.</p>
+        </div>
+        <div class="step">
+            <h2>Step 5: Monitor Your Results</h2>
+            <p>Use Google Search Console to track how your authorship is performing.</p>
+        </div>
+        <div class="step">
+            <h2>Step 6: Keep Your Profile Updated</h2>
+            <p>Regularly update your Google+ profile with new content and achievements.</p>
+        </div>
+    </div>
+    <button class="button" onclick="alert('You are now ready to set up authorship!')">Get Started</button>
+
+    <script>
+        document.querySelectorAll('.step').forEach(step => {
+            step.addEventListener('click', () => {
+                alert(step.querySelector('h2').innerText + ' - ' + step.querySelector('p').innerText);
+            });
+        });
+    </script>
+</body>
+</html>

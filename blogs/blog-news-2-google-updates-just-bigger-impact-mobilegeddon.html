@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Google Updates & Mobilegeddon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .update {
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .impact {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5bc0de;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #31b0d5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Latest Blog News: Google Updates</h1>
+    
+    <div class="update">
+        <h2>Google's Helpful Content Update</h2>
+        <p>This update focuses on enhancing user experience by prioritizing content that demonstrates first-hand expertise. Sites with unhelpful content may see a drop in rankings.</p>
+        <button onclick="toggleImpact('impact1')">Learn More</button>
+        <p id="impact1" style="display:none;">This update encourages creators to produce valuable content that meets user needs, impacting SEO strategies significantly.</p>
+    </div>
+
+    <div class="update">
+        <h2>Mobilegeddon: The Mobile-Friendly Update</h2>
+        <p>Initially perceived as a drastic change, Mobilegeddon aimed to push websites towards mobile optimization. The impact was more of a gentle nudge rather than a catastrophic event.</p>
+        <button onclick="toggleImpact('impact2')">Learn More</button>
+        <p id="impact2" style="display:none;">This update rewarded mobile-friendly sites with better rankings, making it essential for webmasters to adapt to mobile-first indexing.</p>
+    </div>
+
+    <script>
+        function toggleImpact(id) {
+            var impact = document.getElementById(id);
+            if (impact.style.display === "none") {
+                impact.style.display = "block";
+            } else {
+                impact.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

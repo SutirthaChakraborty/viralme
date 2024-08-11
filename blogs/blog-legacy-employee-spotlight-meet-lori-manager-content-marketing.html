@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Employee Spotlight featuring Lori, the Manager of Content Marketing. Discover her journey, achievements, and insights into content strategy.">
+    <title>Employee Spotlight: Meet Lori - Manager of Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        .highlight {
+            color: #ff6347;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .bio {
+            display: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee Spotlight: Meet Lori</h1>
+    <h2>The Manager of Content Marketing</h2>
+    <p>Lori has been a pillar of our <span class="highlight">content marketing team</span> for over five years. Her expertise in creating compelling narratives has significantly enhanced our brand's online presence.</p>
+    <p>Throughout her journey, Lori has led multiple successful campaigns, inspiring her team with <span class="highlight">innovative strategies</span> and a passion for storytelling.</p>
+    <button class="button" onclick="toggleBio()">Read More About Lori</button>
+    <div class="bio" id="bio">
+        <h3>About Lori:</h3>
+        <p>Lori's career started as a content writer, and her keen understanding of SEO and audience engagement paved her way to management. She emphasizes the importance of team collaboration and mentorship in achieving overall success.</p>
+        <p>In her free time, Lori enjoys blogging about marketing trends and participating in industry workshops to stay ahead of the curve.</p>
+    </div>
+</div>
+
+<script>
+    function toggleBio() {
+        var bio = document.getElementById("bio");
+        if (bio.style.display === "none" || bio.style.display === "") {
+            bio.style.display = "block";
+        } else {
+            bio.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millennials & User-Generated Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Millennials' Response to User-Generated Content</h1>
+    </header>
+    <article>
+        <h2>Why User-Generated Content Matters</h2>
+        <p>Millennials are increasingly drawn to **authenticity** and **personalization** in content. Studies show that they respond best to **user-generated content (UGC)**, which fosters a sense of community and trust.</p>
+        <div class="interactive" onclick="toggleResult()">Click to see how UGC impacts engagement!</div>
+        <div class="result" id="result">User-generated content can increase engagement by up to **28%** among millennials, making it a powerful tool for brands.</div>
+    </article>
+    <script>
+        function toggleResult() {
+            var result = document.getElementById('result');
+            if (result.style.display === "none" || result.style.display === "") {
+                result.style.display = "block";
+            } else {
+                result.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

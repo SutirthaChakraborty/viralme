@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: CardStar Adds Foursquare Check-Ins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 10px 0;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .button {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>CardStar Expands Features with Foursquare Check-Ins</h2>
+        <p>CardStar, the leading customer loyalty app, has integrated Foursquare check-ins, allowing marketers to turn shoppers into advocates. This enhancement enables businesses to better engage with customers and foster loyalty through interactive experiences.</p>
+        <p>By utilizing Foursquare’s geo-location capabilities, marketers can reward users for check-ins, transforming them into brand advocates and driving foot traffic.</p>
+        <a href="#" class="button" onclick="showDetails()">Learn More</a>
+        <div id="extraInfo" style="display:none;">
+            <p>Discover how this integration can boost customer engagement and retention rates by leveraging user-generated content and location-based marketing tactics.</p>
+        </div>
+    </div>
+
+    <script>
+        function showDetails() {
+            var extraInfo = document.getElementById('extraInfo');
+            if (extraInfo.style.display === "none") {
+                extraInfo.style.display = "block";
+            } else {
+                extraInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

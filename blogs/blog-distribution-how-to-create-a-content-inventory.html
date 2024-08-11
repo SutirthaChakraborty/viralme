@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Distribution & Content Inventory Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .content-list {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How to Create a Content Inventory</h1>
+    </header>
+    <section>
+        <h2>Understanding Blog Distribution</h2>
+        <p>Blog distribution is the process of promoting your content across various platforms to reach a wider audience.</p>
+        <p>Effective blog distribution enhances your online presence and drives targeted traffic to your website.</p>
+        <button onclick="toggleContent('distribution')">Learn More</button>
+        <div id="distribution" class="content-list">
+            <ul>
+                <li>Utilize Social Media Platforms</li>
+                <li>Email Newsletters</li>
+                <li>Guest Blogging</li>
+                <li>SEO Optimization</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Steps to Create a Content Inventory</h2>
+        <p>A content inventory is a comprehensive list of all the content you have on your site. This is crucial for content audits and strategizing future content.</p>
+        <button onclick="toggleContent('inventory')">Learn More</button>
+        <div id="inventory" class="content-list">
+            <ul>
+                <li>Identify All Content Types</li>
+                <li>Organize by Categories</li>
+                <li>Evaluate Content Performance</li>
+                <li>Plan for Future Content Creation</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

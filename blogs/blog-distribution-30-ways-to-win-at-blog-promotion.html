@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30 Ways to Win at Blog Promotion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle {
+            cursor: pointer;
+            color: #0073e6;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>30 Ways to Win at Blog Promotion</h1>
+</header>
+
+<section>
+    <h2>1. Leverage Social Media</h2>
+    <p class="toggle">Show Details</p>
+    <div class="details">
+        <p>Share your blog posts on platforms like Facebook, Twitter, and Instagram to reach a wider audience.</p>
+    </div>
+</section>
+
+<section>
+    <h2>2. Collaborate with Influencers</h2>
+    <p class="toggle">Show Details</p>
+    <div class="details">
+        <p>Partner with influencers in your niche to promote your blog and gain credibility.</p>
+    </div>
+</section>
+
+<section>
+    <h2>3. Optimize for SEO</h2>
+    <p class="toggle">Show Details</p>
+    <div class="details">
+        <p>Use relevant keywords and meta tags to improve your blog's visibility on search engines.</p>
+    </div>
+</section>
+
+<script>
+    const toggles = document.querySelectorAll('.toggle');
+    toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const details = toggle.nextElementSibling;
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

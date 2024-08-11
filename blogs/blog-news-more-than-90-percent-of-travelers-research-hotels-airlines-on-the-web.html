@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Research Insights</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0077c0;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0077c0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0077c0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005f9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Research Insights</h1>
+    </header>
+    <div class="content">
+        <h2>Did You Know?</h2>
+        <p>More than **90% of travelers** conduct their research for **hotels** and **airlines** online before making a booking. This trend highlights the importance of having a strong online presence for travel-related businesses.</p>
+        <p>Utilizing effective **SEO strategies** and engaging content can significantly enhance visibility and attract potential customers.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <p id="moreInfo" style="display:none;">Travelers often look for **reviews**, **price comparisons**, and **destination guides** to make informed decisions. Websites that provide comprehensive information and user-friendly interfaces tend to perform better in attracting bookings.</p>
+    </div>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the shift from scrolling feeds to swiping through Instagram Stories and its impact on user engagement.">
+    <title>Blog: Swipe vs Scroll - Changing Habits in Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #ff3d00;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .swipe-scroll {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .card {
+            background: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            width: 45%;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Swipe vs Scroll: Changing Social Media Habits</h1>
+</header>
+
+<div class="content">
+    <h2>The Evolution of Engagement</h2>
+    <p>In recent years, user interaction on platforms like Instagram has transitioned from scrolling through feeds to swiping through Stories. This shift alters how we consume content, focusing more on brief, engaging moments.</p>
+
+    <div class="swipe-scroll">
+        <div class="card" onclick="showDetails('swipe')">
+            <h3>SWIPE</h3>
+            <p>Swipe through Stories for quick, engaging content.</p>
+        </div>
+        <div class="card" onclick="showDetails('scroll')">
+            <h3>SCROLL</h3>
+            <p>Scroll through endless feeds of posts and updates.</p>
+        </div>
+    </div>
+
+    <div id="details" style="display:none; margin-top: 20px;">
+        <h3>Details:</h3>
+        <p id="content-detail"></p>
+    </div>
+</div>
+
+<script>
+    function showDetails(type) {
+        const detailContainer = document.getElementById('details');
+        const contentDetail = document.getElementById('content-detail');
+        
+        if (type === 'swipe') {
+            contentDetail.innerText = 'Swiping through Stories encourages quick consumption and instant engagement, making content feel more vibrant and immediate.';
+        } else {
+            contentDetail.innerText = 'Scrolling emphasizes prolonged engagement with a continuous flow of information, often leading to overwhelming content overload.';
+        }
+        
+        detailContainer.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

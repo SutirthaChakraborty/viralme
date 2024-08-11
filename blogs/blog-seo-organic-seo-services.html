@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our Blog SEO and Organic SEO services to enhance your online visibility and drive traffic.">
+    <title>Blog SEO & Organic SEO Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog SEO & Organic SEO Services</h1>
+    </header>
+    <section>
+        <h2>What is Blog SEO?</h2>
+        <p>Blog SEO refers to the practice of optimizing your blog content to improve its visibility on search engines. This includes using relevant <span class="keyword">keywords</span>, creating high-quality content, and building backlinks.</p>
+        <button onclick="toggleInfo('blogSEOInfo')">Learn More</button>
+        <div id="blogSEOInfo" class="info">
+            <p>Effective Blog SEO strategies include optimizing titles, using <span class="keyword">meta descriptions</span>, and ensuring your blog is mobile-friendly.</p>
+        </div>
+    </section>
+    <section>
+        <h2>What is Organic SEO?</h2>
+        <p>Organic SEO focuses on improving your website's ranking through unpaid methods. This involves creating valuable content that attracts <span class="keyword">organic traffic</span> and optimizing your site structure.</p>
+        <button onclick="toggleInfo('organicSEOInfo')">Learn More</button>
+        <div id="organicSEOInfo" class="info">
+            <p>Key components of Organic SEO include keyword research, on-page optimization, and link building to enhance your site's authority.</p>
+        </div>
+    </section>
+    <script>
+        function toggleInfo(infoId) {
+            var info = document.getElementById(infoId);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

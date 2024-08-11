@@ -1,0 +1,105 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invest in Email, Website Content, and Facebook Marketing</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+.news-container {
+  margin-top: 20px;
+}
+.news-item {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.news-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.news-item img {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+.news-item .content {
+  margin-left: 120px;
+}
+.news-item .content h2 {
+  margin-top: 0;
+}
+.news-item .content p {
+  margin: 5px 0;
+}
+.news-item .content a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+<script>
+function toggleContent(event) {
+  var target = event.target || event.srcElement;
+  if (target.tagName === 'SPAN') {
+    var content = target.parentNode.querySelector('.content');
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+  }
+}
+document.addEventListener('click', toggleContent);
+</script>
+</head>
+<body>
+<div class="container">
+<h1>Blog News</h1>
+<div class="news-container">
+  <div class="news-item">
+    <img src="news1.jpg" alt="News 1">
+    <div class="content" style="display: none;">
+      <h2>Consumers Say Invest in Email Marketing</h2>
+      <p>Email marketing remains a powerful tool for reaching your audience.</p>
+      <a href="#">Read More</a>
+    </div>
+    <span>Read More</span>
+  </div>
+  <div class="news-item">
+    <img src="news2.jpg" alt="News 2">
+    <div class="content" style="display: none;">
+      <h2>Website Content is King</h2>
+      <p>Create engaging content to attract and retain visitors.</p>
+      <a href="#">Read More</a>
+    </div>
+    <span>Read More</span>
+  </div>
+  <div class="news-item">
+    <img src="news3.jpg" alt="News 3">
+    <div class="content" style="display: none;">
+      <h2>Facebook Marketing: The Future of Brand Engagement</h2>
+      <p>Leverage Facebook's features to connect with your audience.</p>
+      <a href="#">Read More</a>
+    </div>
+    <span>Read More</span>
+  </div>
+</div>
+</div>
+</body>
+</html>

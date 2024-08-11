@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the differences between legacy content marketing and modern content marketing strategies with engaging GIFs.">
+    <title>Content Marketing Evolution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .gif {
+            display: block;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        .toggle {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .info {
+            display: none;
+            margin: 10px 0;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #e7f3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Legacy Content Marketing vs. Modern Content Marketing</h1>
+        
+        <h2>Legacy Content Marketing</h2>
+        <img src="legacy-content-marketing.gif" alt="Legacy Content Marketing" class="gif">
+        <button class="toggle" onclick="toggleInfo('legacyInfo')">Learn More</button>
+        <div class="info" id="legacyInfo">
+            <p>Legacy content marketing focused primarily on one-way communication, often relying on traditional media. Strategies were less targeted and often lacked audience engagement.</p>
+        </div>
+        
+        <h2>Modern Content Marketing</h2>
+        <img src="modern-content-marketing.gif" alt="Modern Content Marketing" class="gif">
+        <button class="toggle" onclick="toggleInfo('modernInfo')">Learn More</button>
+        <div class="info" id="modernInfo">
+            <p>Today's content marketing emphasizes interactive, engaging strategies leveraging social media, SEO, and personalized content to build community and trust with the audience.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Google Hotpot - A Social Recommendation Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #4285f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ae8;
+        }
+        .map {
+            display: none;
+            margin-top: 20px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Discover Local Businesses with Google Hotpot</h1>
+        <p>Google Hotpot was an innovative social recommendation tool that helped users find local businesses tailored to their preferences.</p>
+        <p>By leveraging user-generated reviews, it highlighted eateries, shops, and services on users' local maps.</p>
+        <p>Hotpot integrated seamlessly with Google Maps, making it effortless to share recommendations with friends and explore new spots in your vicinity.</p>
+        <button id="showMapBtn">Show Recommended Places</button>
+        <div id="map" class="map"></div>
+    </div>
+    
+    <script>
+        document.getElementById('showMapBtn').addEventListener('click', function() {
+            var mapDiv = document.getElementById('map');
+            mapDiv.style.display = (mapDiv.style.display === 'block') ? 'none' : 'block';
+            if (mapDiv.style.display === 'block') {
+                mapDiv.innerHTML = '<iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509887!2d144.9537353158479!3d-37.81720997975168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f7e7b59%3A0x5045675218ceed4!2sLocal%20Business!5e0!3m2!1sen!2sau!4v1616161616161!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>';
+            }
+        });
+    </script>
+</body>
+</html>

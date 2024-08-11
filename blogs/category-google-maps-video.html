@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Video Integration</title>
+    <style>
+        /* CSS for category container */
+        .category-container {
+            position: relative;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .video-explanation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .keyword-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .keyword-list li {
+            display: inline-block;
+            margin-right: 5px;
+            color: #555;
+        }
+    </style>
+    <script>
+        // Simple JavaScript for video play/pause functionality
+        function toggleVideo() {
+            var video = document.getElementById("video-example");
+            if (video.paused) {
+                video.play();
+                document.querySelector(".play-button").innerText = 'Pause';
+            } else {
+                video.pause();
+                document.querySelector(".play-button").innerText = 'Play';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="category-container">
+        <h2 class="category-title">Interactive Google Maps Videos</h2>
+        <div class="video-container">
+            <video id="video-example" controls>
+                <source src="https://example.com/maps_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="play-button" onclick="toggleVideo()">Play</button>
+        </div>
+        <div class="video-explanation">
+            <h3>Understanding Google Maps for Video Content</h

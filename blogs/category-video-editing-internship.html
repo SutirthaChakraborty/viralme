@@ -1,0 +1,90 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Internship</title>
+    <style>
+        /* Apply some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+
+        .keyword-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        a {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Interactive CSS for keyword rollover effect */
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .keyword:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* JavaScript to show/hide explanation on keyword click */
+        .explanation {
+            display: none;
+            background-color: #dfe1e3;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .keyword.show-explanation {
+            border-bottom: 1px solid #ccc;
+            cursor: default;
+        }
+
+        .explanation.show {
+            display: block;
+        }
+
+        .button-panel {
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+    <script>
+        // JavaScript function for showing/hiding explanations
+        function toggleExplanation(keyword) {
+            var explanation = document.getElementById(keyword + "-explanation");
+            if (explanation.classList.contains("show")) {
+                explanation.classList.remove("show");
+            }

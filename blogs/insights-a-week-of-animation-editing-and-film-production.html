@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights from a week of animation editing and film production, exploring techniques, tools, and creative processes in filmmaking.">
+    <title>Week of Animation Editing & Film Production Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3e8e41;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .toggle {
+            background-color: #3e8e41;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights from a Week of Animation Editing</h1>
+        <p>Exploring Film Production Techniques</p>
+    </header>
+    <section>
+        <h2>Day 1: Pre-production Planning</h2>
+        <button class="toggle">Show Tips</button>
+        <div class="content">
+            <p>Effective pre-production involves scriptwriting, storyboarding, and scheduling to streamline the animation process.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Day 2: Animation Techniques</h2>
+        <button class="toggle">Show Tips</button>
+        <div class="content">
+            <p>Utilizing techniques such as 2D Animation, 3D Animation, and Stop Motion to enhance storytelling.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Day 3: Editing Software</h2>
+        <button class="toggle">Show Tools</button>
+        <div class="content">
+            <p>Popular tools include Adobe After Effects, Final Cut Pro, and DaVinci Resolve for seamless editing.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Day 4: Sound Design</h2>
+        <button class="toggle">Show Importance</button>
+        <div class="content">
+            <p>Sound design is crucial in film production, enhancing the mood and immersing the audience.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Day 5: Feedback and Revisions</h2>
+        <button class="toggle">Show Process</button>
+        <div class="content">
+            <p>Gathering feedback from peers leads to valuable revisions and improves the final product.</p>
+        </div>
+    </section>
+    <script>
+        const toggles = document.querySelectorAll('.toggle');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

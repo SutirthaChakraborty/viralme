@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the most important marketing buzzwords of 2018 with our serious guide to eBooks. Understand key concepts in digital marketing.">
+    <title>The Serious Guide to 21 Marketing Buzzwords in 2018</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .buzzword {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .buzzword:hover {
+            background-color: #e8f5e9;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>E-Books: The Serious Guide to 21 Marketing Buzzwords (2018)</h1>
+</header>
+
+<div class="buzzword" onclick="toggleDefinition('def1')">
+    <h2>1. Content Marketing</h2>
+    <p class="definition" id="def1">Content marketing focuses on creating valuable content to attract and engage a target audience.</p>
+</div>
+
+<div class="buzzword" onclick="toggleDefinition('def2')">
+    <h2>2. Influencer Marketing</h2>
+    <p class="definition" id="def2">Influencer marketing harnesses the power of social media influencers to promote products.</p>
+</div>
+
+<div class="buzzword" onclick="toggleDefinition('def3')">
+    <h2>3. SEO (Search Engine Optimization)</h2>
+    <p class="definition" id="def3">SEO involves optimizing website content to rank higher in search engine results.</p>
+</div>
+
+<script>
+    function toggleDefinition(id) {
+        const definition = document.getElementById(id);
+        definition.style.display = definition.style.display === 'none' || !definition.style.display ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

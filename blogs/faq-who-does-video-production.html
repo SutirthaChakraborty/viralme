@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Who Does Video Production?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .faq-section {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq {
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            border-left: 3px solid #007BFF;
+            background-color: #f9f9f9;
+            margin-top: 5px;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-section">
+        <h1>FAQ on Video Production</h1>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>Who are the professionals involved in video production?</strong>
+            <div class="answer">Video production involves Directors, Producers, Camera Operators, Editors, and Scriptwriters, among others, all collaborating to create high-quality video content.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>What is the role of a Video Producer?</strong>
+            <div class="answer">The Video Producer oversees all aspects of production, managing budgets, scheduling, and ensuring that the project's vision is realized effectively.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>How does video editing enhance production quality?</strong>
+            <div class="answer">Video editing plays a critical role in storytelling, pacing, and visual aesthetics, allowing for the seamless integration of various shots and sound elements.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>What equipment is essential for video production?</strong>
+            <div class="answer">Essential equipment includes cameras, microphones, lighting kits, and editing software to ensure professional-quality outputs.</div>
+        </div>
+        <div class="faq" onclick="toggleAnswer(this)">
+            <strong>How is video production evolving with technology?</strong>
+            <div class="answer">Technology advancements like 4K cameras, drones, and online collaboration tools have transformed video production, making it more accessible and efficient.</div>
+        </div>
+    </div>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.querySelector('.answer');
+            answer.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

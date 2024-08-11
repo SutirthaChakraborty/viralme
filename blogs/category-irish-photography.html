@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the beauty of Irish photography, showcasing landscapes, culture, and heritage.">
+    <title>Irish Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .photo {
+            width: calc(33.333% - 10px);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Discover Irish Photography</h1>
+    <p>Immerse yourself in the stunning landscapes, rich culture, and vibrant heritage of Ireland through photography.</p>
+
+    <div class="gallery">
+        <img src="irish-landscape1.jpg" alt="Irish Landscape" class="photo" onclick="openModal(this.src)">
+        <img src="irish-culture1.jpg" alt="Irish Culture" class="photo" onclick="openModal(this.src)">
+        <img src="irish-heritage1.jpg" alt="Irish Heritage" class="photo" onclick="openModal(this.src)">
+        <img src="irish-landscape2.jpg" alt="Irish Landscape" class="photo" onclick="openModal(this.src)">
+        <img src="irish-culture2.jpg" alt="Irish Culture" class="photo" onclick="openModal(this.src)">
+        <img src="irish-heritage2.jpg" alt="Irish Heritage" class="photo" onclick="openModal(this.src)">
+    </div>
+
+    <div class="modal" id="modal" onclick="closeModal()">
+        <img id="modalImage" src="" alt="Expanded View">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('modalImage').src = src;
+            document.getElementById('modal').style.display = 'flex';
+        }
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

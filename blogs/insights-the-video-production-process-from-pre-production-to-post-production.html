@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Production Process</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    .section {
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .sub-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .process-item {
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #f4f4f4;
+    }
+    .process-item:last-child {
+        margin-bottom: 0;
+    }
+    .process-item.active {
+        background-color: #ccc;
+    }
+</style>
+<script>
+    function toggleProcess(section) {
+        var processItem = document.querySelectorAll('.process-item');
+        for (var i = 0; i < processItem.length; i++) {
+            processItem[i].classList.remove('active');
+        }
+        var target = document.getElementById(section);
+        if (target) {
+            target.classList.add('active');
+        }
+    }
+</script>
+</head>
+<body>
+<div class="section">
+    <div class="title">Video Production Process</div>
+    <div class="sub-title">Understanding the Journey from Pre-Production to Post-Production</div>
+</div>
+<div class="process-item active" id="pre-production">
+    <div class="title">Pre-Production</div>
+    <div class="sub-title">Planning and Preparation</div>
+    <div>Concept and Script Development</div>
+    <div>Shooting Schedule and Budget</div>
+    <div>Location and Equipment Selection</div>
+    <div>Casting and Crew</div>
+</div>
+<div class="process-item" id="production" onclick="toggleProcess('production')">
+    <div class="title">Production</div>
+    <div class="sub-title">The Actual Shooting</div>
+    <div>Directing and Filming</div>
+    <div>Lighting and Sound</div>
+    <div>Editing and Post-Production</div>
+</div>
+<div class="process-item" id="post-production" onclick="toggleProcess('post-production')">
+    <div class="title">Post-Production</div>
+    <div class="sub-title">Finalization and Distribution</div>
+    <div>Color Correction</div>
+    <div>Sound Mixing</div>
+    <div>Final Cut and Effects</div>
+    <div>Distribution and Marketing</div>
+</div>
+</body>
+</html>

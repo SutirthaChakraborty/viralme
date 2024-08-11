@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog D S Christmas eCard Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 0;
+        }
+        .ecards {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .ecard {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 30%;
+            transition: transform 0.3s;
+        }
+        .ecard:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog D S Christmas eCard Features</h1>
+    <p>Capture the festive spirit with our animated eCards for clients!</p>
+</header>
+
+<section class="ecards">
+    <div class="ecard">
+        <h2>Surprise Animation</h2>
+        <p>Delight clients with lively animations that bring eCards to life.</p>
+        <button class="button" onclick="revealSurprise('Surprise 1')">Reveal Surprise</button>
+        <p class="surprise" style="display:none;"></p>
+    </div>
+
+    <div class="ecard">
+        <h2>Personalization Options</h2>
+        <p>Customize messages and designs to fit your branding.</p>
+        <button class="button" onclick="revealSurprise('Surprise 2')">Reveal Surprise</button>
+        <p class="surprise" style="display:none;"></p>
+    </div>
+
+    <div class="ecard">
+        <h2>Easy Sharing</h2>
+        <p>Send your eCards via email or social media effortlessly.</p>
+        <button class="button" onclick="revealSurprise('Surprise 3')">Reveal Surprise</button>
+        <p class="surprise" style="display:none;"></p>
+    </div>
+</section>
+
+<script>
+    function revealSurprise(surprise) {
+        const paragraph = event.target.nextElementSibling;
+        switch(surprise) {
+            case 'Surprise 1':
+                paragraph.textContent = "Watch a festive snowflake animation!";
+                break;
+            case 'Surprise 2':
+                paragraph.textContent = "Choose from various fun video templates!";
+                break;
+            case 'Surprise 3':
+                paragraph.textContent = "Share directly with one click!";
+                break;
+            default:
+                paragraph.textContent = "";
+        }
+        paragraph.style.display = "block";
+    }
+</script>
+
+</body>
+</html>

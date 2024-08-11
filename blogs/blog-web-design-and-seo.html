@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Web Design and SEO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .hover-effect:hover {
+            background-color: #e7e7e7;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Web Design & SEO</h1>
+        <nav>
+            <a href="#design">Design Tips</a>
+            <a href="#seo">SEO Strategies</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content" id="design">
+            <h2>Effective Blog Design</h2>
+            <p>Creating a visually appealing blog is essential for attracting visitors. Use a <span class="keyword">responsive design</span> to ensure your blog looks great on all devices. Incorporate <span class="keyword">user-friendly navigation</span> and a clean layout to enhance user experience.</p>
+            <p class="hover-effect" onclick="alert('Explore more about blog design!')">Learn more about blog design!</p>
+        </div>
+        <div class="content" id="seo">
+            <h2>SEO Best Practices</h2>
+            <p>To improve your blog's visibility, focus on <span class="keyword">keyword optimization</span>, quality content, and <span class="keyword">backlinking</span>. Regularly update your blog to keep content fresh and relevant.</p>
+            <p class="hover-effect" onclick="alert('Discover SEO strategies!')">Discover more SEO strategies!</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Blog Web Design and SEO</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.hover-effect').forEach(item => {
+            item.addEventListener('mouseover', event => {
+                item.style.color = '#007BFF';
+            });
+            item.addEventListener('mouseout', event => {
+                item.style.color = 'black';
+            });
+        });
+    </script>
+</body>
+</html>

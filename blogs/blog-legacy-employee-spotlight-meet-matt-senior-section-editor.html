@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Spotlight: Meet Matt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .spotlight {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        .toggle-info {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .additional-info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e7f3ff;
+            border-left: 3px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy Employee Spotlight</h1>
+</header>
+
+<div class="spotlight">
+    <h2>Meet Matt</h2>
+    <p><strong>Position:</strong> Senior Section Editor</p>
+    <p><strong>Experience:</strong> With over 10 years in editorial, Matt plays a pivotal role in curating quality content and guiding the editorial team.</p>
+    <button class="toggle-info" onclick="toggleInfo()">More About Matt</button>
+    <div class="additional-info" id="info">
+        <p><strong>Passion:</strong> Matt is dedicated to mentoring new writers and believes in the power of storytelling to connect individuals.</p>
+        <p><strong>Fun Fact:</strong> An avid traveler, Matt has visited over 20 countries and loves sharing his experiences through his writing.</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById('info');
+        if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block';
+        } else {
+            info.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

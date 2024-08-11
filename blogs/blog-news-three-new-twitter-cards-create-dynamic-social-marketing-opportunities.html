@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Twitter Cards for Social Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #1DA1F2;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .card {
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: 0.3s;
+        }
+        .card:hover {
+            background-color: #f0f5fa;
+            cursor: pointer;
+        }
+        button {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1a91da;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Exploring Dynamic Twitter Cards</h1>
+        <p>Discover the latest features of Twitter Cards that enhance your social marketing strategy.</p>
+        
+        <div class="card" onclick="showDetails('Card 1')">
+            <h2>Twitter Summary Card</h2>
+            <p>Showcases an image, title, and description to engage users effectively.</p>
+        </div>
+        
+        <div class="card" onclick="showDetails('Card 2')">
+            <h2>Twitter Player Card</h2>
+            <p>Perfect for video or audio content to keep your audience entertained.</p>
+        </div>
+
+        <div class="card" onclick="showDetails('Card 3')">
+            <h2>Twitter App Card</h2>
+            <p>Drive app installations with card elements designed for mobile apps.</p>
+        </div>
+
+        <button onclick="alert('Explore more about Twitter Cards!')">Learn More</button>
+    </div>
+
+    <script>
+        function showDetails(cardTitle) {
+            alert("You clicked on: " + cardTitle);
+        }
+    </script>
+</body>
+</html>

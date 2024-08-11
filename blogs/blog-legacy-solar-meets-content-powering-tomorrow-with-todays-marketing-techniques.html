@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Solar: Powering Tomorrow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d1d1d1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Legacy Solar</h1>
+        <p>Powering Tomorrow with Today's Marketing Techniques</p>
+    </header>
+    <section>
+        <h2>Innovative Marketing Strategies</h2>
+        <p>Utilizing **content marketing** and **SEO** techniques to enhance visibility and engagement.</p>
+        <div class="interactive" onclick="showInfo('contentMarketing')">Learn about Content Marketing</div>
+        <div class="interactive" onclick="showInfo('seo')">Learn about SEO Techniques</div>
+    </section>
+    <section>
+        <h2>Solar Energy Insights</h2>
+        <p>Exploring the benefits of **solar energy** and its impact on sustainable living.</p>
+        <div class="interactive" onclick="showInfo('solarBenefits')">Discover Solar Benefits</div>
+    </section>
+    <script>
+        function showInfo(topic) {
+            let message;
+            switch(topic) {
+                case 'contentMarketing':
+                    message = "Content marketing involves creating valuable content to attract and engage your target audience.";
+                    break;
+                case 'seo':
+                    message = "SEO (Search Engine Optimization) is the practice of optimizing your website to rank higher in search engine results.";
+                    break;
+                case 'solarBenefits':
+                    message = "Solar energy reduces electricity bills, lowers carbon footprint, and promotes energy independence.";
+                    break;
+                default:
+                    message = "Topic not found.";
+            }
+            alert(message);
+        }
+    </script>
+</body>
+</html>

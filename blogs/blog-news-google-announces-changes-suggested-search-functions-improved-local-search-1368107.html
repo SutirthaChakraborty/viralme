@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google's Enhanced Search Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4285F4;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        #keywords {
+            font-weight: bold;
+            color: #4285F4;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #suggestions {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest Blog News</h1>
+    <p>Google Enhances Suggested Search and Local Search Features</p>
+</header>
+
+<article>
+    <h2>Enhancements to Search Functionality</h2>
+    <p>Google recently announced significant upgrades to its <span id="keywords">suggested search functions</span> and <span id="keywords">local search capabilities</span>. These changes aim to provide users with more relevant and timely search results, enhancing their overall search experience.</p>
+    
+    <h3>Interactive Search Suggestions</h3>
+    <input type="text" id="searchInput" placeholder="Type a query...">
+    <div id="suggestions"></div>
+</article>
+
+<script>
+    const suggestions = [
+        "Improved search algorithms",
+        "Local business listings",
+        "Real-time updates",
+        "Enhanced user experience",
+        "Optimized mobile search",
+        "Visual search tools"
+    ];
+
+    document.getElementById('searchInput').addEventListener('input', function() {
+        const input = this.value.toLowerCase();
+        const filteredSuggestions = suggestions.filter(suggestion => 
+            suggestion.toLowerCase().includes(input)
+        );
+        
+        const suggestionsDiv = document.getElementById('suggestions');
+        suggestionsDiv.innerHTML = filteredSuggestions.map(s => `<p>${s}</p>`).join('');
+    });
+</script>
+
+</body>
+</html>

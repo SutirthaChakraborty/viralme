@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowrite Product Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .demo {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flowrite Product Demo</h1>
+        <p>Supercharge your communication with Flowrite!</p>
+    </header>
+    <section>
+        <h2>What is Flowrite?</h2>
+        <p>Flowrite is an innovative tool designed to enhance your writing efficiency. It helps you create emails and messages faster, giving you more control over your content.</p>
+        <button onclick="toggleDemo()">Watch Demo</button>
+        <div class="demo" id="demo">
+            <p>Flowrite allows you to automate repetitive writing tasks, making it ideal for frequent communicators. Experience the intuitive interface and see how it can transform your workflow!</p>
+        </div>
+    </section>
+    <script>
+        function toggleDemo() {
+            const demo = document.getElementById('demo');
+            demo.style.display = demo.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

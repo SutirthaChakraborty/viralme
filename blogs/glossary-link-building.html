@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Link Building</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .glossary-term {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .definition {
+            display: none;
+            border-left: 3px solid #0056b3;
+            padding-left: 10px;
+            margin-top: 5px;
+            background-color: #e9f5ff;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Glossary of Link Building</h1>
+<p>Explore essential terms related to <strong>SEO</strong> and <strong>link building</strong> to enhance your understanding and strategies for website ranking improvement.</p>
+
+<h2>Key Terms</h2>
+<div>
+    <span class="glossary-term" onclick="toggleDefinition('def1')">Backlink</span>
+    <div class="definition" id="def1">A <strong>backlink</strong> is a hyperlink that points to your website from another site, crucial for improving SEO rankings.</div>
+</div>
+<div>
+    <span class="glossary-term" onclick="toggleDefinition('def2')">Anchor Text</span>
+    <div class="definition" id="def2">The <strong>anchor text</strong> is the clickable text in a hyperlink that is visible to users and helps search engines understand the context of the linked page.</div>
+</div>
+<div>
+    <span class="glossary-term" onclick="toggleDefinition('def3')">Nofollow Links</span>
+    <div class="definition" id="def3">A <strong>nofollow link</strong> is a link that does not pass on SEO value, meaning it does not help in improving the linked page's ranking in search engines.</div>
+</div>
+<div>
+    <span class="glossary-term" onclick="toggleDefinition('def4')">Link Equity</span>
+    <div class="definition" id="def4"><strong>Link equity</strong> refers to the value passed from one site to another through links, influencing search engine rankings.</div>
+</div>
+
+<script>
+    function toggleDefinition(id) {
+        var definition = document.getElementById(id);
+        if (definition.style.display === "none" || definition.style.display === "") {
+            definition.style.display = "block";
+        } else {
+            definition.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

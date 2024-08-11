@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the works and insights of author M. Veale, a prominent figure in contemporary literature.">
+    <title>M. Veale - Author Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .bio {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .toggle-button:hover {
+            background-color: #2980b9;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>M. Veale - Author Profile</h1>
+    <div class="bio">
+        <p>M. Veale is a celebrated author known for their captivating storytelling and profound insights into human nature. Their works often explore themes of identity, resilience, and the complexities of modern life.</p>
+        <button class="toggle-button" onclick="toggleMoreInfo()">Learn More</button>
+        <div id="more-info" class="hidden">
+            <p>With a unique narrative style, M. Veale has garnered a dedicated readership and critical acclaim. Their latest book, "Echoes of Tomorrow," delves into the intricacies of time and memory, challenging readers to reflect on their own experiences.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMoreInfo() {
+            var moreInfo = document.getElementById("more-info");
+            if (moreInfo.classList.contains("hidden")) {
+                moreInfo.classList.remove("hidden");
+            } else {
+                moreInfo.classList.add("hidden");
+            }
+        }
+    </script>
+
+</body>
+</html>

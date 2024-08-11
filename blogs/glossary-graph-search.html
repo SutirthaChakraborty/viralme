@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary Graph Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+        }
+        .glossary {
+            margin: 20px 0;
+        }
+        .term {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .term:hover {
+            color: #007BFF;
+        }
+        .definition {
+            display: none;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Glossary Graph Search</h1>
+    </header>
+    <div class="container">
+        <h2>Key Terms</h2>
+        <div class="glossary">
+            <div class="term">Graph Search</div>
+            <div class="definition">A method used to explore and retrieve information structured in graph format.</div>
+            
+            <div class="term">Node</div>
+            <div class="definition">An individual element or vertex within a graph representing entities.</div>
+            
+            <div class="term">Edge</div>
+            <div class="definition">A connection between two nodes, indicating a relationship or path.</div>
+            
+            <div class="term">Pathfinding</div>
+            <div class="definition">The process of determining the route between nodes in a graph.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.term').forEach(term => {
+            term.addEventListener('click', () => {
+                const definition = term.nextElementSibling;
+                definition.style.display = definition.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

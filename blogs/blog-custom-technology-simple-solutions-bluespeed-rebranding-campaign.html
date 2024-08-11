@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Bluespeed's rebranding campaign focusing on custom technology solutions. Learn about innovative strategies that drive growth.">
+    <title>Bluespeed Rebranding Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bluespeed Rebranding: Custom Technology Solutions</h1>
+    </header>
+    <div class="container">
+        <h2>Innovative Strategies for Growth</h2>
+        <p>The Bluespeed rebranding campaign aims to showcase our commitment to delivering custom technology solutions tailored to our client's needs. Through strategic planning, we focus on simple yet effective solutions that empower businesses to thrive in a digital landscape.</p>
+        <p>Our approach includes leveraging innovative technologies, enhancing user experience, and driving brand awareness.</p>
+        <button class="button" onclick="showMoreInfo()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <h3>Our Key Objectives:</h3>
+            <ul>
+                <li>Enhancing digital presence</li>
+                <li>Adopting user-friendly technologies</li>
+                <li>Building lasting client relationships</li>
+                <li>Driving measurable results</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showMoreInfo() {
+            const infoDiv = document.getElementById('moreInfo');
+            infoDiv.style.display = infoDiv.style.display === 'none' ? 'block' : 'none';
+            const btnText = infoDiv.style.display === 'block' ? 'Show Less' : 'Learn More';
+            document.querySelector('.button').innerText = btnText;
+        }
+    </script>
+</body>
+</html>

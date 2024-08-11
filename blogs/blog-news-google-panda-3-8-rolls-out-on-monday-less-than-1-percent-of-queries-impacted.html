@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Panda 3.8 Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .impact {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Google Panda 3.8 Update</h1>
+    </header>
+    <nav>
+        <a href="#news">News</a>
+        <a href="#impact">Impact</a>
+        <a href="#guidelines">Guidelines</a>
+    </nav>
+    <div class="container">
+        <section id="news">
+            <h2>Update Overview</h2>
+            <p>On Monday, Google rolled out the Panda 3.8 update, affecting less than 1% of queries. This update aims to enhance the quality of search results by targeting low-quality content.</p>
+        </section>
+        <section id="impact">
+            <h2>Impact of the Update</h2>
+            <button onclick="toggleImpact()">Show Impact Details</button>
+            <div class="impact" id="impactDetails">
+                <p>This update primarily impacts sites with low-quality content, duplicate articles, and shallow information. Websites are encouraged to focus on delivering high-quality, valuable content to improve their rankings.</p>
+            </div>
+        </section>
+        <section id="guidelines">
+            <h2>Guidelines for Webmasters</h2>
+            <p>Webmasters should ensure their content is original, informative, and user-friendly. Regularly updating and improving existing content can help mitigate any negative effects from the Panda update.</p>
+        </section>
+    </div>
+    <script>
+        function toggleImpact() {
+            var impactDetails = document.getElementById("impactDetails");
+            if (impactDetails.style.display === "none" || impactDetails.style.display === "") {
+                impactDetails.style.display = "block";
+            } else {
+                impactDetails.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>5 Common HTML Mistakes - Blog</title>
+<meta name="description" content="A blog post highlighting and explaining 5 common HTML mistakes to avoid, along with tips for better website structure.">
+<style>
+body {
+font-family: Arial, sans-serif;
+color: #333;
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+header {
+background-color: #f2f2f2;
+padding: 10px;
+text-align: center;
+}
+
+h1 {
+color: #333;
+font-size: 28px;
+}
+
+h2 {
+color: #555;
+font-size: 24px;
+margin-top: 30px;
+}
+
+article {
+line-height: 1.6;
+}
+
+.error-box {
+background-color: #ffcece;
+padding: 15px;
+margin-bottom: 20px;
+border-left: 3px solid #f00;
+}
+
+.code-block {
+background-color: #f8f8f8;
+padding: 12px;
+border-radius: 5px;
+margin-bottom: 10px;
+overflow: auto;
+}
+
+.example {
+color: #999;
+font-style: italic;
+}
+
+button.highlight {
+background-color: #4CAF50;
+color: #fff;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+border-radius: 3px;
+}
+
+button.highlight:hover {
+background-color: #45a049;
+}
+
+</style>
+<script>
+window.onload = function() {
+    const highlightButton = document.getElementById('highlightButton');
+    highlightButton.addEventListener('click', function() {
+        const codeBlock = document.querySelector('.code-block pre');
+        codeBlock.classList.toggle('highlighted');
+    });
+};
+</script>
+</head>
+<body>
+<header>
+<h1>5 Common HTML Mistakes to Avoid for Better Websites</h1>
+</header>
+<main>
+<article>
+<h2>Error 1: Inconsistent DOCTYPE</h2>
+<p>Error occurs when you don't define a proper <code>&lt;!DOCTYPE&gt;</code> at the beginning of your HTML document. This is important for browser compatibility.</p>
+<div class="error-box">
+html
+<!-- Incorrect DOCTYPE -->
+<!DOCTYPE html>
+...
+
+<div class="code-block" id="highlightButton"

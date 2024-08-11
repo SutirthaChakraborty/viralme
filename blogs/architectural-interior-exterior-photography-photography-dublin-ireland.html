@@ -1,0 +1,103 @@
+#### HTML Code for Architectural Interior Exterior Photography in Dublin, Ireland
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architectural Photography Dublin, Ireland</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Architectural Photography Dublin, Ireland</h1>
+  </header>
+  <section class="gallery">
+    <h2>Explore Our Photography</h2>
+    <div class="photo-grid">
+      <img src="exterior1.jpg" alt="Exterior Photo 1">
+      <img src="interior1.jpg" alt="Interior Photo 1">
+      <!-- More images here -->
+    </div>
+  </section>
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We specialize in capturing the beauty of architectural interiors and exteriors in Dublin and throughout Ireland. Our team of professional photographers is dedicated to showcasing the unique elements of each building through stunning imagery.</p>
+  </section>
+  <footer>
+    <p>Contact us at info@architecturalphotography.ie</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+#### CSS Code (styles.css)
+
+css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.gallery {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+#### JavaScript Code (script.js)
+
+javascript
+// Interactive features can be added using JavaScript to create image sliders, lightbox effects, and more.
+// Example: Implement a lightbox gallery for the images in the photo-grid section.
+// Example code for a simple lightbox:
+const images = document.querySelectorAll('.photo-grid img');
+images.forEach(image => {
+  image.addEventListener('click', () => {
+    const lightbox = document.createElement('div');
+    lightbox.id = 'lightbox';
+    lightbox.innerHTML = `<img src="${image.src}" alt="${image.alt}">`;
+    document.body.appendChild(lightbox);
+    lightbox.addEventListener('click', e => {
+      if (e.target !== e.currentTarget) return;
+      lightbox.remove();
+    });
+  });
+});
+
+
+This HTML code provides a basic structure for a website dedicated to architectural photography in Dublin, Ireland. The CSS file (styles.css) includes styling for the layout, and the JavaScript file (script.js) demonstrates how interactive features, such as a lightbox gallery, can be implemented to enhance the user experience.

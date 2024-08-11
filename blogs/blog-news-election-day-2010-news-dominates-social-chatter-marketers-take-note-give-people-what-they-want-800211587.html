@@ -1,0 +1,62 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Election Day 2010</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .interactive-example {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog News Election Day 2010</h1>
+    <p>Election Day is a significant event in the political world. In this example, we will create an interactive HTML page that showcases news from Election Day 2010.</p>
+    <div class="interactive-example">
+        <h2>Interactive Example: Marketers Take Note</h2>
+        <p>Give people what they want! This is a crucial lesson for marketers during election season. By understanding the needs and interests of voters, you can tailor your marketing strategy to appeal to them.</p>
+        <button onclick="showVoterInterests()">Show Voter Interests</button>
+        <div id="voterInterests" style="display: none;">
+            <h3>Voter Interests</h3>
+            <ul id="interestList"></ul>
+        </div>
+    </div>
+    <script>
+        function showVoterInterests() {
+            const voterInterests = [
+                "Healthcare",
+                "Taxes",
+                "Education",
+                "Environment",
+                "Jobs"
+            ];
+            const interestList = document.getElementById("interestList");
+            interestList.innerHTML = "";
+            voterInterests.forEach(interest => {
+                const listItem = document.createElement("li");
+                listItem.textContent = interest;
+                interestList.appendChild(listItem);
+            });
+            document.getElementById("voterInterests").style.display = "block";
+        }
+    </script>
+</body>
+</html>

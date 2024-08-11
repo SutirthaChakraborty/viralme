@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Strategy: Customer Archetype</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .archetype {
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+            transition: background-color 0.5s; 
+        }
+        .archetype:hover {
+            background-color: #ecf0f1;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Strategy: Understanding Customer Archetype</h1>
+        <p>Creating a successful blog requires a strategic approach, and understanding your customer archetype is key. A customer archetype helps in identifying the target audience and tailoring content to their needs.</p>
+        
+        <h2>What is a Customer Archetype?</h2>
+        <p>A customer archetype is a detailed profile of your ideal customer based on demographics, behaviors, motivations, and goals. By defining these archetypes, you can create relevant blog content that resonates with your audience.</p>
+
+        <h3>Key Elements of a Customer Archetype</h3>
+        <div class="archetype" data-info="Demographics: Age, gender, income level, etc.">Demographics</div>
+        <div class="archetype" data-info="Behavior: Online behavior, interests, content consumption habits.">Behavior</div>
+        <div class="archetype" data-info="Motivation: Goals, pain points, what drives them to your blog.">Motivation</div>
+        
+        <button onclick="showInfo()">Show More Info</button>
+        <p id="info" style="margin-top: 10px;"></p>
+    </div>
+
+    <script>
+        function showInfo() {
+            const archetypes = document.querySelectorAll('.archetype');
+            let info = "Key Elements:\n";
+            archetypes.forEach(archetype => {
+                info += `${archetype.textContent}: ${archetype.dataset.info}\n`;
+            });
+            document.getElementById('info').textContent = info;
+        }
+    </script>
+</body>
+</html>

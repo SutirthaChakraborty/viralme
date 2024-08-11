@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Employee Spotlight: Meet Thomas, Senior Video Animator at Blog Legacy.">
+    <title>Employee Spotlight: Meet Thomas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
+        }
+        .bio {
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #45a049;
+        }
+        #videoModal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Employee Spotlight: Meet Thomas</h1>
+    <img src="thomas.jpg" alt="Thomas, Senior Video Animator" class="profile-img">
+    <div class="bio">
+        <p>Meet Thomas, our talented Senior Video Animator here at Blog Legacy. With over a decade of experience, Thomas brings creativity and expertise to our production team, enhancing our storytelling through stunning visuals.</p>
+        <p>When he’s not animating, Thomas enjoys hiking and exploring the great outdoors. Join us as we celebrate his contributions to our projects and get a glimpse of his exciting work in motion!</p>
+    </div>
+    <button class="btn" onclick="toggleVideo()">Watch Thomas in Action</button>
+</div>
+
+<div id="videoModal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleVideo()">&times;</span>
+        <h2>Thomas's Animation Showcase</h2>
+        <video width="100%" controls>
+            <source src="thomas-animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<script>
+    function toggleVideo() {
+        const modal = document.getElementById("videoModal");
+        modal.style.display = modal.style.display === "block" ? "none" : "block";
+    }
+    window.onclick = function(event) {
+        const modal = document.getElementById("videoModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="FAQ, video services, platform, streaming, content, subscribers, compatibility">
+    <title>FAQ: Video Services Provided</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #e1e1e1;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        .faq {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .question {
+            background-color: #f9f9f9;
+            border-bottom: 1px solid #e1e1e1;
+            padding: 1rem;
+        }
+        .question:hover {
+            background-color: #f5f5f5;
+        }
+        .answer {
+            margin-top: -3rem;
+            display: none;
+        }
+        .show-answer {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+    <script>
+        function toggleAnswer(questionNum) {
+            const answer = document.getElementById(`answer${questionNum}`);
+            const showAnswer = document.getElementById(`show-answer${questionNum}`);
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                showAnswer.textContent = 'Hide Answer';
+            } else {
+                answer.style.display = 'none';
+                showAnswer.textContent = 'Show Answer';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions: Video Services Provided</h1>
+        <div class="faq">
+            <div class="question" id="question1" onclick="toggleAnswer('1')">
+               

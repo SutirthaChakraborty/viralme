@@ -1,0 +1,63 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Weekly: Fresh Takes on Guidelines, Influencer Marketing, and Creativity</title>
+    <style>
+        @keyframes hoverEffect {
+            from {background-color: #f2f2f2; color: #333;}
+            to {background-color: #333; color: #f2f2f2;}
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            max-width: 500px;
+            margin: 10px auto;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            animation: hoverEffect 0.5s ease;
+        }
+        
+        .card-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .topic-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .category {
+            background-color: #f7f7f7;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .category:hover {
+            background-color: #e5e5e5;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.category').click(function() {
+                var category = $(this).text();
+                // Replace with actual toggle content for each category
+                var content = {
+                    "Guidelines": "<p>Learn about the latest SEO best practices and content strategy tips for creating effective content.</p>",
+                    "Influencer Marketing": "<p>Discover insights on choosing the right influencers, measuring ROI, and fostering authentic partnerships.</p>",
+                    "Creativity": "<p>Gain inspiration and practical techniques to enhance your content's visual appeal and storytelling power.</p>"
+                };
+
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('

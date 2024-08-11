@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Video for Employee Engagement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Enhancing Employee Engagement with Video</h1>
+</header>
+
+<section>
+    <h2>Benefits of Video for Employee Engagement</h2>
+    <p>Using video content can significantly enhance employee engagement by fostering a sense of community, improving communication, and promoting a positive work culture.</p>
+    <button onclick="toggleContent()">Learn More</button>
+    <div id="moreContent" class="hidden">
+        <ul>
+            <li><strong>Training Videos:</strong> Streamlined training and onboarding processes.</li>
+            <li><strong>Team Highlights:</strong> Celebrate achievements and team milestones.</li>
+            <li><strong>Feedback Channels:</strong> Create video feedback loops for continuous improvement.</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Interactive Video Content</h2>
+    <p>Interactive video surveys can boost participation and collect valuable feedback. Consider using tools that allow employees to engage directly with video content.</p>
+    <button onclick="toggleInteractive()">Show Interactive Ideas</button>
+    <div id="interactiveContent" class="hidden">
+        <ul>
+            <li>Quizzes to test knowledge post-training.</li>
+            <li>Live Q&A sessions to address employee concerns.</li>
+            <li>Polls integrated into video for real-time feedback.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function toggleContent() {
+        const content = document.getElementById('moreContent');
+        content.classList.toggle('hidden');
+    }
+    function toggleInteractive() {
+        const interactive = document.getElementById('interactiveContent');
+        interactive.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

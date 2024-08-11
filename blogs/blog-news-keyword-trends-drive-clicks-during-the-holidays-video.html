@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Blog News Keyword Trends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4682b4;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .content:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        .keywords {
+            margin: 20px 0;
+            background: #e7f3fe;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            color: #fff;
+            background: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Holiday Keyword Trends for Blog Success</h1>
+    </header>
+    <div class="content">
+        <h2>Maximize Your Blog Clicks with Trending Keywords</h2>
+        <p>During the holiday season, leveraging keyword trends is essential for driving clicks and engagement.</p>
+        <div class="keywords" id="keywordList"> 
+            <strong>Popular Keywords:</strong> <span>holiday shopping, gift ideas, festive recipes, holiday sales, Christmas promotions, New Year resolutions</span> 
+        </div>
+        <button onclick="showTrends()">Show Trending Video Insights</button>
+        <div id="videoContainer" style="display:none; margin-top: 20px;">
+            <h3>Holiday Video Marketing Trends</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideolink" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        function showTrends() {
+            const videoContainer = document.getElementById('videoContainer');
+            videoContainer.style.display = videoContainer.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

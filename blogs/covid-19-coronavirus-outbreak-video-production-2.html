@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video production about COVID-19 coronavirus outbreak, informative content and statistics.">
+    <title>COVID-19 Coronavirus Outbreak Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .video {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .statistics {
+            display: none;
+            margin-top: 20px;
+            background: #eaeaea;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>COVID-19 Coronavirus Outbreak</h1>
+    <p>This video production aims to provide valuable insights into the global impact of the COVID-19 pandemic, bringing awareness to safety measures, vaccinations, and personal stories.</p>
+    
+    <div class="video">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <button id="toggleStatistics">Show COVID-19 Statistics</button>
+    
+    <div class="statistics" id="statistics">
+        <h2>Current COVID-19 Statistics</h2>
+        <ul>
+            <li>Total Cases: 250 million</li>
+            <li>Total Deaths: 5 million</li>
+            <li>Vaccinated Individuals: 150 million</li>
+            <li>Countries Affected: 200+</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleStatistics').addEventListener('click', function() {
+        var stats = document.getElementById('statistics');
+        if (stats.style.display === 'none' || stats.style.display === '') {
+            stats.style.display = 'block';
+        } else {
+            stats.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

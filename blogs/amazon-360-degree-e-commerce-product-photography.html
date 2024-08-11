@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon 360° E-Commerce Product Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff9900;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border: 2px solid #ff9900;
+            border-radius: 8px;
+        }
+        .image-rotate {
+            display: none;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .btn {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #cc7a00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Amazon 360° E-Commerce Product Photography</h1>
+    <p>Enhance your online shopping experience with stunning 360-degree product views! This innovative approach offers customers a comprehensive look at items before purchasing on platforms like Amazon.</p>
+    <p>Applying 360-degree photography can boost conversion rates, reduce returns, and improve customer satisfaction. Learn more about how this technique works!</p>
+
+    <div class="image-container">
+        <img src="your-first-image.jpg" alt="Product View" id="mainImage">
+        <img src="your-second-image.jpg" class="image-rotate" alt="Product View" id="rotateImage">
+    </div>
+    
+    <button class="btn" onclick="rotateImage()">View 360°</button>
+</div>
+
+<script>
+    let isRotated = false;
+    function rotateImage() {
+        const mainImage = document.getElementById('mainImage');
+        const rotateImage = document.getElementById('rotateImage');
+        if (!isRotated) {
+            mainImage.style.display = 'none';
+            rotateImage.style.display = 'block';
+            isRotated = true;
+        } else {
+            mainImage.style.display = 'block';
+            rotateImage.style.display = 'none';
+            isRotated = false;
+        }
+    }
+</script>
+
+</body>
+</html>

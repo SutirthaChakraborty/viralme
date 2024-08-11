@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies: Failte Ireland Toolkit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .content {
+            display: flex;
+        }
+        .sidebar {
+            width: 25%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .main {
+            width: 70%;
+            margin-left: 5%;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .case-study {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .case-study:hover {
+            background-color: #e9ecef;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Failte Ireland Toolkit Case Studies</h1>
+    </header>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="sidebar">
+            <h2>Case Studies</h2>
+            <div class="case-study" onclick="toggleDetails('study1')">
+                <h3>Study 1: Tourism Growth</h3>
+                <div id="study1" class="details">This study explores the impact of the Failte Ireland toolkit on local tourism growth, showcasing successful strategies and outcomes.</div>
+            </div>
+            <div class="case-study" onclick="toggleDetails('study2')">
+                <h3>Study 2: Community Engagement</h3>
+                <div id="study2" class="details">An analysis of how the toolkit facilitated community engagement in tourism initiatives, leading to enhanced visitor experiences.</div>
+            </div>
+            <div class="case-study" onclick="toggleDetails('study3')">
+                <h3>Study 3: Sustainable Practices</h3>
+                <div id="study3" class="details">This case study highlights sustainable practices adopted by businesses using the Failte Ireland toolkit, promoting eco-friendly tourism.</div>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Overview</h2>
+            <p>The Failte Ireland toolkit provides resources and strategies for enhancing tourism in Ireland. These case studies illustrate its effectiveness in various areas.</p>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(studyId) {
+            const details = document.getElementById(studyId);
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

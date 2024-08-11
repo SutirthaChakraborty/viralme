@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Search Trends - Think UX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2em;
+        }
+        p {
+            line-height: 1.5;
+        }
+        .stats {
+            background: #e7f1ff;
+            padding: 15px;
+            border-left: 5px solid #007BFF;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: Think UX</h1>
+</header>
+
+<div class="container">
+    <h2>The Shift to Mobile Search</h2>
+    <p>In recent studies, it has been found that 46% of consumers prefer to search for products on mobile devices. This significant trend highlights the importance of optimizing user experience for mobile platforms.</p>
+    
+    <div class="stats">
+        <h3>Key Findings:</h3>
+        <ul>
+            <li>46% of product searches occur on mobile.</li>
+            <li>Responsive design enhances UX.</li>
+            <li>Fast load times increase engagement.</li>
+            <li>Intuitive navigation boosts mobile sales.</li>
+        </ul>
+    </div>
+
+    <button onclick="showMoreInfo()">Learn More</button>
+    
+    <div id="moreInfo" style="display:none;">
+        <h3>Why Mobile UX Matters?</h3>
+        <p>With the rise of mobile shopping, a seamless user experience is crucial for retaining consumers and driving sales.</p>
+        <p>Investing in mobile optimization can significantly enhance your brand's visibility and overall reach.</p>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        const moreInfoDiv = document.getElementById('moreInfo');
+        if (moreInfoDiv.style.display === 'none') {
+            moreInfoDiv.style.display = 'block';
+        } else {
+            moreInfoDiv.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

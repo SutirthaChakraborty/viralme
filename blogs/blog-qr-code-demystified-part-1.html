@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: QR Code Demystified - Part 1</title>
+    <meta name="description" content="Explore the basics of QR codes, their uses, and how they work in our blog series: QR Code Demystified - Part 1.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            background-color: #e2e2f2;
+            padding: 5px;
+            border-radius: 3px;
+            margin: 5px 0;
+        }
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Blog: QR Code Demystified - Part 1</h1>
+        <p>Welcome to our series where we decode <span class="keyword">QR codes</span>! In this first part, we will explore what QR codes are and how they are used.</p>
+        
+        <h2>What is a QR Code?</h2>
+        <p>A QR (Quick Response) code is a two-dimensional barcode that can store links, text, and data and is scannable by smartphones.</p>
+        
+        <h2>How Do QR Codes Work?</h2>
+        <p>When scanned, QR codes can redirect users to websites, provide information about products, or even initiate downloads.</p>
+        
+        <h2>Interactive QR Code Generation</h2>
+        <button onclick="generateQRCode()">Generate a Sample QR Code</button>
+        <div id="qr-code-container"></div>
+        
+        <script>
+            function generateQRCode() {
+                const qrCodeContainer = document.getElementById("qr-code-container");
+                qrCodeContainer.innerHTML = '';
+                const qrCodeData = "https://example.com"; // You can change this to any URL or text
+                const qrCodeImage = document.createElement("img");
+                qrCodeImage.src = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrCodeData)}&size=200x200`;
+                qrCodeImage.classList.add("qr-code");
+                qrCodeContainer.appendChild(qrCodeImage);
+            }
+        </script>
+    </div>
+</body>
+</html>

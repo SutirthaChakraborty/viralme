@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Social Media Analytics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-term {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .glossary-term:hover {
+            background: #e9ecef;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Glossary of Social Media Analytics</h1>
+
+<div class="glossary-term" onclick="toggleDefinition('def1')">
+    <strong>Engagement Rate</strong>
+    <div id="def1" class="definition">The percentage of interactions (likes, comments, shares) relative to total followers or impressions, indicating how well content resonates with the audience.</div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('def2')">
+    <strong>Reach</strong>
+    <div id="def2" class="definition">The total number of unique users who have seen your content, providing insight into the potential audience size.</div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('def3')">
+    <strong>Impressions</strong>
+    <div id="def3" class="definition">The total number of times your content is displayed, regardless of whether it was clicked or not.</div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('def4')">
+    <strong>Click-Through Rate (CTR)</strong>
+    <div id="def4" class="definition">The ratio of users who click on a specific link to the number of total users who view a page, often used to measure the effectiveness of online advertising.</div>
+</div>
+
+<script>
+    function toggleDefinition(id) {
+        var definition = document.getElementById(id);
+        if (definition.style.display === "none" || definition.style.display === "") {
+            definition.style.display = "block";
+        } else {
+            definition.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

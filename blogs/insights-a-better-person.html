@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights on becoming a better person through self-improvement and personal growth.">
+    <title>Insights to Become a Better Person</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .insight {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights to Become a Better Person</h1>
+    </header>
+    <section>
+        <h2>Key Insights</h2>
+        <p>Click on the buttons below to reveal insights on personal growth and self-improvement.</p>
+        <button onclick="toggleInsight('insight1')">Insight 1: Practice Gratitude</button>
+        <div id="insight1" class="insight">Practicing gratitude can improve your mental health and overall happiness.</div>
+        
+        <button onclick="toggleInsight('insight2')">Insight 2: Embrace Change</button>
+        <div id="insight2" class="insight">Embracing change helps you adapt and grow in various aspects of life.</div>
+        
+        <button onclick="toggleInsight('insight3')">Insight 3: Continuous Learning</button>
+        <div id="insight3" class="insight">Lifelong learning keeps your mind sharp and opens new opportunities.</div>
+    </section>
+    <script>
+        function toggleInsight(insightId) {
+            var insight = document.getElementById(insightId);
+            if (insight.style.display === "none" || insight.style.display === "") {
+                insight.style.display = "block";
+            } else {
+                insight.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Practices in Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .topic {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            transition: background-color 0.3s;
+        }
+        .topic:hover {
+            background-color: #e9f5ff;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights on Ethical Practices for Video Production Companies</h1>
+        <div class="topic" onclick="toggleDetails('copyright')">
+            <strong>1. Respect Copyright and Intellectual Property</strong>
+            <p id="copyright" style="display:none;">Always credit creators and obtain necessary permissions for using their work.</p>
+        </div>
+        <div class="topic" onclick="toggleDetails('transparency')">
+            <strong>2. Maintain Transparency with Clients</strong>
+            <p id="transparency" style="display:none;">Be open about processes, costs, and potential challenges during production.</p>
+        </div>
+        <div class="topic" onclick="toggleDetails('diversity')">
+            <strong>3. Promote Diversity and Inclusion</strong>
+            <p id="diversity" style="display:none;">Ensure diverse representation in your projects and team.</p>
+        </div>
+        <div class="topic" onclick="toggleDetails('sustainability')">
+            <strong>4. Commit to Sustainable Practices</strong>
+            <p id="sustainability" style="display:none;">Implement eco-friendly practices in production to minimize environmental impact.</p>
+        </div>
+        <button onclick="alert('Thank you for engaging with our ethical practices!')">Learn More</button>
+    </div>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

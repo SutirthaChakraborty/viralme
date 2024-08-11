@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Failte Ireland Case Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Discover Ireland: A Case Study</h1>
+</header>
+
+<section>
+    <h2>Introduction</h2>
+    <p>Failte Ireland has revamped the Discover Ireland website to enhance user experience and promote Irish tourism effectively.</p>
+</section>
+
+<section>
+    <h2>Key Features</h2>
+    <p>The new website focuses on content marketing, showcasing curated travel content to engage visitors and drive conversions.</p>
+    <div class="interactive" onclick="toggleContent('feature1')">Click to learn about Content Marketing</div>
+    <div id="feature1" class="content">
+        <p>Content marketing is essential for conversion in the travel industry, helping to attract and retain visitors.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Visual Appeal</h2>
+    <p>The website utilizes stunning visuals of Ireland's landscapes, enhancing the overall aesthetic and user engagement.</p>
+    <div class="interactive" onclick="toggleContent('feature2')">Click to learn about Visual Design</div>
+    <div id="feature2" class="content">
+        <p>High-quality images of Ireland's mountains, coastlines, and cultural landmarks are used to captivate users.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Conclusion</h2>
+    <p>Failte Ireland's new website is a prime example of how effective design and content strategy can boost tourism.</p>
+</section>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

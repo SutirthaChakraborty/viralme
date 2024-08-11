@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        .tip {
+            margin: 15px 0;
+            padding: 10px;
+            border-left: 5px solid #007bff;
+            background: #f8f9fa;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>4 Marketing Automation Tips for Engaging Content</h1>
+    </header>
+    <div class="container">
+        <h2>Boost Your Lead Capture with These 4 Tips</h2>
+        <div class="tip" onclick="toggleDetail(1)">
+            <h3>1. Segment Your Audience</h3>
+            <p id="detail1" style="display:none;">Utilize marketing automation to segment your audience based on their behaviors and preferences. This allows for personalized content delivery, increasing engagement and conversion rates.</p>
+        </div>
+        <div class="tip" onclick="toggleDetail(2)">
+            <h3>2. Automate Email Campaigns</h3>
+            <p id="detail2" style="display:none;">Set up automated email campaigns that nurture leads through tailored content. Drip campaigns can keep your audience engaged while promoting relevant blog posts.</p>
+        </div>
+        <div class="tip" onclick="toggleDetail(3)">
+            <h3>3. Use Lead Magnets</h3>
+            <p id="detail3" style="display:none;">Offer valuable resources like eBooks, whitepapers, or webinars in exchange for contact information. This increases lead capture while providing useful content to your audience.</p>
+        </div>
+        <div class="tip" onclick="toggleDetail(4)">
+            <h3>4. Analyze and Optimize</h3>
+            <p id="detail4" style="display:none;">Leverage analytics tools to track your content’s performance. Understand which content types resonate most with your audience and optimize future campaigns accordingly.</p>
+        </div>
+    </div>
+    <script>
+        function toggleDetail(tipNumber) {
+            const detail = document.getElementById('detail' + tipNumber);
+            detail.style.display = (detail.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

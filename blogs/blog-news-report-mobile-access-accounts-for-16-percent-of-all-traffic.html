@@ -1,0 +1,75 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Report: Mobile Access Reaches 16% Traffic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .title {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+        }
+        .stat {
+            background-color: #f3f3f3;
+            padding: 15px;
+            margin-right: 20px;
+            border-radius: 5px;
+            color: #4CAF50;
+            font-size: 18px;
+        }
+        .stat-mobile {
+            background-color: #4CAF50;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function showMobileAccessPercentage() {
+            const mobileAccess = document.getElementById("mobileAccess");
+            const mobileIntent = document.getElementById("mobileIntent");
+            const mobileTotal = document.getElementById("mobileTotal");
+
+            const mobileValue = 16; // Percentage value
+            if (mobileAccess.checked) {
+                mobileIntent.innerHTML = "Mobile access accounts for " + mobileValue + "% of total traffic.";
+                mobileTotal.style.display = "inline-block";
+            } else {
+                mobileIntent.innerHTML = "Mobile access proportions unknown.";
+                mobileTotal.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Blog News Report:

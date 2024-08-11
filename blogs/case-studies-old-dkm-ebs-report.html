@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies: Old DKM EBS Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .case-study {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .toggle-button {
+            display: inline-block;
+            margin: 10px 0;
+            background: #007BFF;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #eaeaea;
+            border-left: 4px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Case Studies: Old DKM EBS Report</h1>
+        <div class="case-study">
+            <h2>Case Study 1: Impact on Business Processes</h2>
+            <button class="toggle-button" onclick="toggleDetails(this)">Show Details</button>
+            <div class="details">
+                <p>This case study examines the influence of the Old DKM EBS report on operational efficiency. Key metrics reveal a 15% increase in productivity.</p>
+            </div>
+        </div>
+        <div class="case-study">
+            <h2>Case Study 2: Cost Reduction Strategies</h2>
+            <button class="toggle-button" onclick="toggleDetails(this)">Show Details</button>
+            <div class="details">
+                <p>Analyzing cost reduction measures implemented through insights from the EBS report led to a 20% decrease in expenses.</p>
+            </div>
+        </div>
+        <div class="case-study">
+            <h2>Case Study 3: Customer Satisfaction Improvements</h2>
+            <button class="toggle-button" onclick="toggleDetails(this)">Show Details</button>
+            <div class="details">
+                <p>This study highlights the advancements in customer satisfaction, reporting a 30% boost attributed to changes indicated in the Old DKM EBS report.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(button) {
+            const details = button.nextElementSibling;
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+                button.textContent = "Hide Details";
+            } else {
+                details.style.display = "none";
+                button.textContent = "Show Details";
+            }
+        }
+    </script>
+</body>
+</html>

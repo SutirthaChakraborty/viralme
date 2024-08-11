@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Video Production Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            background: #e7f3ff;
+            border: 1px solid #0056b3;
+            border-radius: 5px;
+            padding: 15px;
+            width: 30%;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #003d80;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Professional Animated Video Production Services</h1>
+    <p>Enhance your brand's story with our expert animated video services. Our dedicated team specializes in a range of creative video solutions tailored to engage your target audience.</p>
+
+    <div class="services">
+        <div class="service">
+            <h2>Explainer Videos</h2>
+            <p>Boost understanding with engaging explainer animations. Perfect for conveying complex ideas clearly and effectively.</p>
+        </div>
+        <div class="service">
+            <h2>Marketing Videos</h2>
+            <p>Attract customers with eye-catching animated marketing videos designed to promote your products and services.</p>
+        </div>
+        <div class="service">
+            <h2>Training Videos</h2>
+            <p>Deliver informative training with animated videos that simplify learning and retain viewers' attention.</p>
+        </div>
+    </div>
+
+    <button onclick="showMoreInfo()">Learn More</button>
+
+    <div id="moreInfo" style="display:none; margin-top: 20px;">
+        <h2>Why Choose Animated Videos?</h2>
+        <p>Animated videos are proven to have a higher engagement rate. They are versatile and can be tailored to fit any industry, making complex topics simple and entertaining.</p>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

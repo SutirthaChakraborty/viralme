@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the BitGo product tour, featuring secure digital asset custody, multi-signature wallets, and institutional-grade solutions.">
+    <title>BitGo Product Tour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .section:hover {
+            background-color: #f9f9f9;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the BitGo Product Tour</h1>
+        <div class="section">
+            <h2>Secure Digital Asset Custody</h2>
+            <p>Discover how BitGo provides unmatched security for your digital assets with multi-signature wallets and advanced custody solutions.</p>
+            <button onclick="toggleInfo('info1')">Learn More</button>
+            <div id="info1" style="display:none;">
+                <p>BitGo ensures your assets are protected with the highest levels of security through our multi-signature technology.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Multi-Signature Wallets</h2>
+            <p>Experience the benefits of multi-signature wallets that enhance security while enabling seamless transactions.</p>
+            <button onclick="toggleInfo('info2')">Learn More</button>
+            <div id="info2" style="display:none;">
+                <p>With multi-signature wallets, multiple keys are required to authorize a transaction, providing additional layers of security.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Institutional-Grade Solutions</h2>
+            <p>Learn about our institutional-grade solutions designed for enterprises, hedge funds, and family offices.</p>
+            <button onclick="toggleInfo('info3')">Learn More</button>
+            <div id="info3" style="display:none;">
+                <p>BitGo offers tailored solutions that include compliance, insurance options, and dedicated support for institutions.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInfo(id) {
+            const infoDiv = document.getElementById(id);
+            infoDiv.style.display = infoDiv.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

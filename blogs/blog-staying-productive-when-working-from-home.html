@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staying Productive When Working From Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .tip {
+            padding: 10px;
+            margin-top: 10px;
+            border-left: 5px solid #4CAF50;
+        }
+        .toggle {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background: #e9e9e9;
+            border-radius: 3px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog: Staying Productive When Working From Home</h1>
+</header>
+
+<main>
+    <h2>Top Tips for Remote Work Productivity</h2>
+    <div class="tip">
+        <strong>1. Create a Dedicated Workspace</strong>
+        <p>Setting up a dedicated workspace helps improve focus and minimizes distractions.</p>
+        <button onclick="toggleContent('tip1')">More Info</button>
+        <div class="toggle" id="tip1">Consider using a room or a corner of your home that’s free from noise and interruptions.</div>
+    </div>
+
+    <div class="tip">
+        <strong>2. Establish a Daily Routine</strong>
+        <p>Following a consistent schedule can enhance productivity and maintain work-life balance.</p>
+        <button onclick="toggleContent('tip2')">More Info</button>
+        <div class="toggle" id="tip2">Set specific work hours and stick to them, just as you would in an office environment.</div>
+    </div>
+
+    <div class="tip">
+        <strong>3. Take Regular Breaks</strong>
+        <p>Short breaks throughout the day can boost mental clarity and reduce fatigue.</p>
+        <button onclick="toggleContent('tip3')">More Info</button>
+        <div class="toggle" id="tip3">Step away from your desk, stretch, or take a short walk to recharge.</div>
+    </div>
+
+    <div class="tip">
+        <strong>4. Use Productivity Tools</strong>
+        <p>Leveraging apps for task management can help keep you organized and on track.</p>
+        <button onclick="toggleContent('tip4')">More Info</button>
+        <div class="toggle" id="tip4">Tools like Trello, Asana, or Todoist can help prioritize tasks effectively.</div>
+    </div>
+
+    <div class="tip">
+        <strong>5. Stay Connected with Colleagues</strong>
+        <p>Regular communication fosters collaboration and a sense of team spirit.</p>
+        <button onclick="toggleContent('tip5')">More Info</button>
+        <div class="toggle" id="tip5">Use video calls, chats, or virtual meetings to maintain relationships.</div>
+    </div>
+</main>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

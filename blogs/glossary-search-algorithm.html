@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Glossary Search Algorithm - Learn the fundamentals and applications of glossary search algorithms in data retrieval and information systems.">
+    <title>Glossary Search Algorithm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-search {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .results {
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .result-item {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary Search Algorithm</h1>
+    <p>Explore the concept and functionality of glossary search algorithms used in data retrieval.</p>
+    <div class="glossary-search">
+        <input type="text" id="search" placeholder="Search glossary terms..." onkeyup="searchGlossary()">
+        <div class="results" id="results"></div>
+    </div>
+
+    <script>
+        const glossaryTerms = [
+            "Algorithm",
+            "Binary Search",
+            "Data Retrieval",
+            "Information Systems",
+            "Linear Search",
+            "Search Efficiency",
+            "Search Functionality",
+            "Glossary Search",
+            "Indexing",
+            "Keyword Search"
+        ];
+
+        function searchGlossary() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+            if (query) {
+                const filteredTerms = glossaryTerms.filter(term => term.toLowerCase().includes(query));
+                filteredTerms.forEach(term => {
+                    const div = document.createElement('div');
+                    div.className = 'result-item';
+                    div.textContent = term;
+                    resultsContainer.appendChild(div);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Distribution: Selecting Social Networks for Content Promotion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .infographic {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .network {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .network:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Distribution: Choosing the Right Social Networks</h1>
+    </header>
+    <div class="infographic">
+        <h2>Infographic: Select Social Networks for Effective Content Promotion</h2>
+        <div class="network" onclick="showDetails('facebook')">Facebook</div>
+        <div class="network" onclick="showDetails('twitter')">Twitter</div>
+        <div class="network" onclick="showDetails('instagram')">Instagram</div>
+        <div class="network" onclick="showDetails('linkedin')">LinkedIn</div>
+        <div id="details" style="margin-top: 15px;"></div>
+    </div>
+
+    <script>
+        function showDetails(network) {
+            const detailText = {
+                facebook: "Facebook is ideal for reaching a broad audience with various content types such as articles, videos, and images. It allows for targeted ads to promote blog posts effectively.",
+                twitter: "Twitter excels in real-time engagement and is perfect for sharing short updates, driving traffic with links, and engaging with followers through retweets and hashtags.",
+                instagram: "Instagram focuses on visual storytelling, making it fantastic for brands with strong imagery. Use it to share blog highlights or behind-the-scenes content.",
+                linkedin: "LinkedIn is the go-to platform for B2B content sharing. It’s ideal for professional articles, industry insights, and networking with like-minded professionals."
+            };
+            document.getElementById('details').innerText = detailText[network];
+        }
+    </script>
+</body>
+</html>

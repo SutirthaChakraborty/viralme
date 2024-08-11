@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights with a Dash of Humour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .insight {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .insight:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Insights with a Dash of Humour</h1>
+    <div class="insight">
+        <p><strong>Insight:</strong> Laughter is the best medicine!</p>
+        <button onclick="showJoke()">Get a Joke</button>
+        <p id="joke" style="margin-top: 10px;"></p>
+    </div>
+
+    <script>
+        function showJoke() {
+            const jokes = [
+                "Why don't scientists trust atoms? Because they make up everything!",
+                "I told my computer I needed a break, and now it won't stop sending me KitKat ads!",
+                "Why did the scarecrow win an award? Because he was outstanding in his field!"
+            ];
+            const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+            document.getElementById('joke').innerText = randomJoke;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Twitter Announcements - Contextual Headlines</title>
+    <style>
+        /* Use useful keywords for CSS */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .headline {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .tweet {
+            background-color: #f2f2f2;
+            padding: 12px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tweet__content {
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+
+        .tweet__date {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .尘粒HoverHeader {
+            position: relative;
+            cursor: pointer;
+            color: inherit;
+        }
+
+        .尘粒HoverHeader:hover::before {
+            content: "[+] Show More";
+            display: inline-block;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            padding: 3px 10px;
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 3px;
+            transition: .3s;
+        }
+
+        .尘粒HoverHeader:hover::after {
+            display: none;
+        }
+
+        .尘粒HoverContent {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .尘粒HoverContent[data-show="false"] {
+            opacity: 1;
+            height: auto;
+        }
+
+        .js-toggle button {
+            display: none;
+        }
+
+        .js-toggle button + .尘粒HoverContent {
+            display: none;
+        }
+
+        @media (max

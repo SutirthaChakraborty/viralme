@@ -1,0 +1,84 @@
+Here's a simple HTML page with CSS and JavaScript focused on industries content marketing for e-commerce, with related keywords included:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industries Content Marketing for E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .header {
+            background-color: #3498db;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        
+        .title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+        
+        .keyword-list {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        
+        .keyword-item {
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        
+        .keyword-item:hover {
+            text-decoration: underline;
+        }
+
+        .js-popover {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        
+        .js-popover-content {
+            max-width: 300px;
+            font-size: 14px;
+            color: #333;
+            margin-top: -1px;
+        }
+    </style>
+
+    <script>
+        function showPopover(e) {
+            const keywordItem = e.target.closest('.keyword-item');
+            const popover = document.getElementById('popover_' + keywordItem.id);
+            if (popover.style.display === 'block') {
+                popover.style.display = 'none';
+            } else {
+                const content = keywordItem.dataset.popover;
+                popover.innerHTML = content;
+                popover.style.display = 'block';
+               

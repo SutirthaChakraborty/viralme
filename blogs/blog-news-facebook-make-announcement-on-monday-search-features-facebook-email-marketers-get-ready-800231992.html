@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Blog News Announcement</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+      color: #3b5998;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+    
+    .announcement {
+      background-color: #f0f0f0;
+      border-radius: 5px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .search {
+      margin-top: 10px;
+    }
+    
+    input[type="text"], button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    button {
+      background-color: #3b5998;
+      color: white;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #344e86;
+    }
+    
+    .email {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .email a {
+      color: #3b5998;
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    // Add interactivity: Show announcement on Monday
+    function checkDate() {
+      var today = new Date();
+      var dayOfWeek = today.getDay();
+      
+      if (dayOfWeek === 1) { // Monday
+        document.getElementById('announcement').style.display = 'block';
+      } else {
+        document.getElementById('announcement').style.display = 'none';
+      }
+    }
+    
+    window.onload = checkDate;
+ 

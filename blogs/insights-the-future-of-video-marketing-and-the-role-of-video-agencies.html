@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of Video Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle-button {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights: The Future of Video Marketing</h1>
+    <div class="section">
+        <h2>Trends Shaping Video Marketing</h2>
+        <p>With increasing mobile usage and social media integration, video marketing is becoming crucial for businesses. Key trends include live streaming, 360-degree videos, and personalized content.</p>
+        <button class="toggle-button" onclick="toggleContent('trend1')">Learn More</button>
+        <div id="trend1" class="toggle-content">
+            <p>Video consumption will grow tremendously, with predictions suggesting that by 2025, 80% of online content will be video. Engaging with audiences through compelling storytelling can enhance brand loyalty.</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Role of Video Agencies</h2>
+        <p>Video agencies are crucial in producing high-quality video content that aligns with marketing strategies. They help brands optimize their video marketing efforts.</p>
+        <button class="toggle-button" onclick="toggleContent('agency1')">Discover More</button>
+        <div id="agency1" class="toggle-content">
+            <p>These agencies provide expertise in editing, scripting, and distributing videos, ensuring that the content not only resonates but also reaches target audiences effectively.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

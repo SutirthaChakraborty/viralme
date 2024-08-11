@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>博客内容营销B2G Marketing</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>博客内容营销B2G Marketing</h1>
+	<p>博客内容营销是指通过在博客平台上发布有价值的内容来吸引目标audience，提高品牌知名度和信任度，ultimately driving business results.</p>
+	<p>B2G Marketing是指企业之间的营销活动，它的主要目的是通过内容营销和其他营销渠道来建立长期的关系与企业之间的合作伙伴关系。</p>
+	<button id="show-more">点击查看更多关于博客内容营销和B2G Marketing的信息</button>
+	<div id="more-info" style="display:none;">
+		<h2>博客内容营销的好处</h2>
+		<ul>
+			<li>提高品牌知名度和信任度</li>
+			<li>增加网站流量和 engagement</li>
+			<li>提高SEO排名</li>
+			<li>建立长期的关系与目标audience</li>
+		</ul>
+		<h2>B2G Marketing的好处</h2>
+		<ul>
+			<li>建立长期的关系与企业之间的合作伙伴关系</li>
+			<li>提高企业的可见性和知名度</li>
+			<li>增加企业的 revenue 和 profits</li>
+			<li>提高企业的竞争优势</li>
+		</ul>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
+style.css:
+#more-info {
+	display: none;
+}
+
+#show-more:hover {
+	background-color: #4CAF50;
+	color: #fff;
+}
+
+#show-more:active {
+	background-color: #3e8e41;
+	color: #fff;
+}
+
+script.js:
+document.getElementById("show-more").addEventListener("click", function() {
+	document.getElementById("more-info").style.display = "block";
+});

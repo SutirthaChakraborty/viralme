@@ -1,0 +1,96 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distraction-Free Learning</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.focus-tip {
+  padding: 10px 20px;
+  background-color: #cceeff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.focus-tip::before {
+  content: '🌟';
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.focus-tip:nth-child(2) {
+  background-color: #ffbb22;
+}
+
+.focus-tip:nth-child(3) {
+  background-color: #99cc00;
+}
+
+.focus-tip:nth-child(4) {
+  background-color: #ff9900;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+</style>
+<script>
+function focusTips() {
+  const tips = document.querySelectorAll('.focus-tip');
+  tips.forEach((tip, index) => {
+    setTimeout(() => {
+      tip.style.opacity = 1;
+    }, index * 1000);
+  });
+}
+
+window.addEventListener('DOMContentLoaded', focusTips);
+</script>
+</head>
+<body>
+<div class="container">
+  <h1>Distraction-Free Learning</h1>
+  <p>Learn how to focus and maximize your productivity.</p>
+  <div class="focus-tip">
+    <p>Focus on one task at a time.</p>
+  </div>
+  <div class="focus-tip">
+    <p>Remove distractions, like social media notifications.</p>
+  </div>
+  <div class="focus-tip">
+    <p>Practice mindfulness and meditation.</p>
+  </div>
+  <div class="focus-tip">
+    <p>Take short breaks to rest your eyes and mind.</p>
+  </div>
+</div>
+</body>
+</html>

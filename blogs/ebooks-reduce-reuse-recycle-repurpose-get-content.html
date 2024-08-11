@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBooks: Reduce, Reuse, Recycle, Repurpose</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Believe in the eBook Revolution!</h1>
+        <p>Discover how eBooks can help you <strong>reduce</strong>, <strong>reuse</strong>, <strong>recycle</strong>, and <strong>repurpose</strong> content while staying eco-friendly.</p>
+        <button onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="infoSection">
+            <h2>eBooks and Sustainability</h2>
+            <p>eBooks significantly reduce paper waste, contribute to recycling efforts, and allow content to be reused and repurposed globally.</p>
+            <ul>
+                <li><strong>Reduce:</strong> Less paper means fewer trees cut down.</li>
+                <li><strong>Reuse:</strong> Easily shareable and transferable across devices.</li>
+                <li><strong>Recycle:</strong> Digital content does not contribute to landfill waste.</li>
+                <li><strong>Repurpose:</strong> Adapt and modify content for various audiences and platforms.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("infoSection");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

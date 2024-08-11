@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Joanna Wiebe | Copywriting Mastery</title>
+    <meta name="description" content="Join Academy Joanna Wiebe for advanced copywriting courses and workshops. Elevate your writing skills and boost conversions.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            color: #333;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .toggle-info {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .info-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Academy Joanna Wiebe</h1>
+        <p>Unlock the Secrets of Persuasive Copywriting</p>
+    </header>
+    <section>
+        <h2>About Joanna Wiebe</h2>
+        <p>Joanna Wiebe is a leading expert in the field of copywriting. Known for her innovative teaching methods, she helps aspiring writers and marketers master the art of persuasive content.</p>
+        <span class="toggle-info">Learn More</span>
+        <div class="info-content">
+            <p>With years of experience, Joanna has developed a unique curriculum that empowers students with real-world skills, focusing on practical applications that drive results.</p>
+        </div>
+    </section>
+    <section>
+        <h2>Courses Offered</h2>
+        <ul>
+            <li>Persuasive Copywriting Fundamentals</li>
+            <li>Conversion Optimization Techniques</li>
+            <li>SEO Copywriting Strategies</li>
+            <li>Email Marketing Mastery</li>
+        </ul>
+    </section>
+    <script>
+        document.querySelector('.toggle-info').addEventListener('click', function() {
+            const infoContent = document.querySelector('.info-content');
+            if (infoContent.style.display === "none" || infoContent.style.display === "") {
+                infoContent.style.display = "block";
+                this.textContent = "Show Less";
+            } else {
+                infoContent.style.display = "none";
+                this.textContent = "Learn More";
+            }
+        });
+    </script>
+</body>
+</html>

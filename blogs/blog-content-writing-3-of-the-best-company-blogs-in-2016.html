@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Company Blogs of 2016</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+        }
+        article {
+            background: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keywords {
+            font-size: 0.9em;
+            color: #555;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>3 Best Company Blogs of 2016</h1>
+</header>
+
+<article>
+    <h2>1. HubSpot Blog</h2>
+    <p>HubSpot's blog is a treasure trove of marketing insights, offering valuable content on inbound marketing, SEO, and social media strategies.</p>
+    <p class="keywords">Keywords: Inbound Marketing, SEO, Content Strategy</p>
+    <button onclick="alert('Explore HubSpot Blog!')">Learn More</button>
+</article>
+
+<article>
+    <h2>2. Buffer Blog</h2>
+    <p>Buffer's blog focuses on social media management and marketing, providing tips and tools for effective online engagement.</p>
+    <p class="keywords">Keywords: Social Media, Engagement, Marketing Tools</p>
+    <button onclick="alert('Discover Buffer Blog!')">Learn More</button>
+</article>
+
+<article>
+    <h2>3. Moz Blog</h2>
+    <p>Moz's blog is essential for SEO professionals, offering expert advice on search engine optimization and digital marketing trends.</p>
+    <p class="keywords">Keywords: SEO, Digital Marketing, Analytics</p>
+    <button onclick="alert('Visit Moz Blog!')">Learn More</button>
+</article>
+
+<script>
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', function() {
+            alert('You clicked on: ' + this.parentElement.querySelector('h2').innerText);
+        });
+    });
+</script>
+
+</body>
+</html>

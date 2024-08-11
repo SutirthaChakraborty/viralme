@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog SEO Mastery with Relevant Keywords</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #e67e22;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+.keyword-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.keyword {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.keyword:hover {
+    background-color: #2980b9;
+}
+
+.explanation {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+</style>
+<script>
+function toggleExplanation(keyword) {
+    var explanationBlock = document.getElementById('related-explanation');
+    var keywords = document.getElementsByClassName('keyword');
+
+    for (var i = 0; i < keywords.length; i++) {
+        keywords[i].classList.remove('active');
+    }
+
+    keyword.classList.add('active');
+
+    if (explanationBlock.style.display === 'none') {
+        explanationBlock.style.display = 'block';
+    } else {
+        explanationBlock.style.display = 'none';
+    }
+}
+</script>
+</head>
+<body>
+<div class="container">
+    <header>

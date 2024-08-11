@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academy Liz Willits offers comprehensive educational programs in various fields. Join us for professional development and personal growth!">
+    <title>Academy Liz Willits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to Academy Liz Willits</h1>
+    <p>Your journey to professional excellence starts here!</p>
+</header>
+<div class="container">
+    <h2>What We Offer</h2>
+    <p>Academy Liz Willits provides diverse educational programs tailored to your needs, ranging from online courses to workshops and seminars.</p>
+    <button id="toggleInfoBtn">Learn More</button>
+    <div id="moreInfo" class="hidden">
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>Expert instructors with real-world experience</li>
+            <li>Flexible learning paths for your busy schedule</li>
+            <li>Networking opportunities with industry professionals</li>
+        </ul>
+    </div>
+</div>
+<script>
+    document.getElementById("toggleInfoBtn").addEventListener("click", function() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.classList.contains("hidden")) {
+            moreInfo.classList.remove("hidden");
+            this.textContent = "Show Less";
+        } else {
+            moreInfo.classList.add("hidden");
+            this.textContent = "Learn More";
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Photography Showcase</title>
+    <style>
+        /* CSS for corporate photography landing page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .category-header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .photography-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            margin-top: 20px;
+        }
+
+        .project-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .project-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            text-align: justify;
+        }
+
+        .clickable {
+            cursor: pointer;
+        }
+
+        /* JavaScript for hover effect */
+        .interactive-hover {
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .interactive-hover:hover {
+            transform: scale(1.05);
+            z-index: 1;
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+           

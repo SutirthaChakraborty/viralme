@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Marketing Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Successful Influencer Marketing Through Custom Content</h1>
+    </header>
+    <article>
+        <h2>Why Custom Content is Key</h2>
+        <p>In influencer marketing, the effectiveness of your campaign often hinges on the originality and relevance of the content produced. Custom content resonates more with audiences, leading to higher engagement rates and better brand visibility.</p>
+        
+        <button id="learnMoreBtn">Learn More</button>
+        <p id="additionalInfo" style="display:none;">Developing tailored content allows influencers to authentically represent your brand. Utilizing audience insights and creative storytelling can significantly boost your marketing ROI.</p>
+    </article>
+
+    <script>
+        document.getElementById("learnMoreBtn").addEventListener("click", function() {
+            const info = document.getElementById("additionalInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+                this.textContent = "Show Less";
+            } else {
+                info.style.display = "none";
+                this.textContent = "Learn More";
+            }
+        });
+    </script>
+</body>
+</html>

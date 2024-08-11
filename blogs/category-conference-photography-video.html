@@ -1,0 +1,102 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conference, Photography, & Video: A Dynamic Showcase</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.column {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-header {
+  background-color: #4eb883;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+}
+
+.category-content {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.category-block {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.category-block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.category-block h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+.category-block p {
+  font-size: 16px;
+}
+
+.interactive-center {
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.button {
+  background-color: #4eb883;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #42a56b;
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var buttonContainer = document.querySelector(".button-container");
+  var categoryItems = document.querySelectorAll(".category-block");
+
+  categoryItems.forEach(function(item) {
+    item.addEventListener("mouseover", function() {
+      item.classList.add("hovered");
+    });
+  
+    item.addEventListener("mouseout", function() {
+      item.classList.remove

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Social Media: Live Tweeting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .tweet-container {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .tweet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1A8CD8;
+        }
+        #liveTweets {
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog & Social Media: Live Tweeting</h1>
+    <div class="tweet-container">
+        <h2>Latest Tweets</h2>
+        <div id="liveTweets"></div>
+        <input type="text" id="tweetInput" placeholder="What's happening?" />
+        <button onclick="postTweet()">Tweet</button>
+    </div>
+
+    <script>
+        function postTweet() {
+            const tweetInput = document.getElementById('tweetInput');
+            const tweetContent = tweetInput.value;
+
+            if (tweetContent) {
+                const tweetDiv = document.createElement('div');
+                tweetDiv.classList.add('tweet');
+                tweetDiv.textContent = tweetContent;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = function() {
+                    tweetDiv.remove();
+                };
+
+                tweetDiv.appendChild(deleteButton);
+                document.getElementById('liveTweets').prepend(tweetDiv);
+
+                tweetInput.value = '';
+            } else {
+                alert("Please enter a tweet.");
+            }
+        }
+    </script>
+
+</body>
+</html>

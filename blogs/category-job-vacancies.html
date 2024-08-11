@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore job vacancies in various categories including IT, healthcare, engineering, finance, and more. Find your dream job today!">
+    <title>Job Vacancies - Find Your Next Opportunity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .job-category {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .job-category:hover {
+            background-color: #e9ecef;
+        }
+        .job-list {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Job Vacancies</h1>
+    <p>Your pathway to finding the perfect job</p>
+</header>
+
+<div class="job-category" onclick="toggleJobList('it-jobs')">
+    <h2>IT & Technology</h2>
+    <div id="it-jobs" class="job-list">
+        <p>1. Software Developer</p>
+        <p>2. Data Analyst</p>
+        <p>3. Cybersecurity Specialist</p>
+    </div>
+</div>
+
+<div class="job-category" onclick="toggleJobList('healthcare-jobs')">
+    <h2>Healthcare</h2>
+    <div id="healthcare-jobs" class="job-list">
+        <p>1. Nurse</p>
+        <p>2. Medical Assistant</p>
+        <p>3. Pharmacist</p>
+    </div>
+</div>
+
+<div class="job-category" onclick="toggleJobList('engineering-jobs')">
+    <h2>Engineering</h2>
+    <div id="engineering-jobs" class="job-list">
+        <p>1. Civil Engineer</p>
+        <p>2. Mechanical Engineer</p>
+        <p>3. Electrical Engineer</p>
+    </div>
+</div>
+
+<div class="job-category" onclick="toggleJobList('finance-jobs')">
+    <h2>Finance</h2>
+    <div id="finance-jobs" class="job-list">
+        <p>1. Financial Analyst</p>
+        <p>2. Accountant</p>
+        <p>3. Investment Banker</p>
+    </div>
+</div>
+
+<script>
+    function toggleJobList(id) {
+        var jobList = document.getElementById(id);
+        jobList.style.display = jobList.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

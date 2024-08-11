@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emprove Explainer: Enhance your understanding with interactive learning tools.">
+    <title>Emprove Explainer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Emprove Explainer</h1>
+        <p>Discover the power of interactive learning with Emprove Explainer. This tool enhances your understanding of complex topics through engaging visuals and explanations.</p>
+        <button class="button" onclick="toggleInfo()">Learn More</button>
+        <div class="info" id="info">
+            <h2>Key Features:</h2>
+            <ul>
+                <li>Interactive Visuals</li>
+                <li>Step-by-Step Explanations</li>
+                <li>Real-Time Feedback</li>
+                <li>Accessible Learning Resources</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

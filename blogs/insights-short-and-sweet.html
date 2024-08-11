@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights: Short and Sweet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .toggle-button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden-info {
+            display: none;
+            margin-top: 15px;
+            background-color: #e9f5e9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights: Short and Sweet</h1>
+        <p>Discover essential insights in brief summaries to enhance understanding and retention.</p>
+        <button class="toggle-button" onclick="toggleInfo()">Show More Insights</button>
+        <div id="moreInfo" class="hidden-info">
+            <h2>Why Short Insights Matter</h2>
+            <p>Short insights are impactful, easily digestible pieces of information that facilitate quicker learning and better decision-making.</p>
+            <ul>
+                <li>Enhanced retention</li>
+                <li>Clear communication</li>
+                <li>Time efficiency</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById('moreInfo');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

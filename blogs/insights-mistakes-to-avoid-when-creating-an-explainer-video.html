@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights: Mistakes to Avoid in Explainer Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #0066cc;
+        }
+        .mistake {
+            background: #fff;
+            border-left: 5px solid #ffcc00;
+            margin: 10px 0;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+        .mistake:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights: Mistakes to Avoid in Explainer Videos</h1>
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h2>Mistake 1: Overcomplicating the Message</h2>
+        <p class="details" style="display: none;">Keep your message clear and focused. Avoid using jargon and keep it straightforward.</p>
+    </div>
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h2>Mistake 2: Neglecting the Target Audience</h2>
+        <p class="details" style="display: none;">Tailor your content to resonate with your audience. Understanding their needs is key.</p>
+    </div>
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h2>Mistake 3: Ignoring Visual Appeal</h2>
+        <p class="details" style="display: none;">Use engaging visuals and animations to keep viewers interested and convey your message effectively.</p>
+    </div>
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h2>Mistake 4: Long Length</h2>
+        <p class="details" style="display: none;">Keep your videos short and concise (1-2 minutes). Attention spans are limited!</p>
+    </div>
+    <button class="btn" onclick="alert('For more tips, visit our website!')">Get More Tips</button>
+
+    <script>
+        function toggleDetails(element) {
+            const details = element.querySelector('.details');
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

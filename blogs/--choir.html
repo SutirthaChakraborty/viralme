@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choir: Harmony in Voice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Discover the Joy of Choir</h1>
+        <p>Join a choir to experience the harmony of voices. Explore the benefits of singing in a group, improve vocal skills, and build lasting friendships.</p>
+        <button id="showInfoBtn">Learn More</button>
+        <div class="info" id="choirInfo">
+            <h2>Benefits of Singing in a Choir</h2>
+            <ul>
+                <li>Enhances vocal techniques</li>
+                <li>Improves teamwork skills</li>
+                <li>Boosts confidence and self-esteem</li>
+                <li>Reduces stress and promotes mental well-being</li>
+                <li>Creates a sense of community</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('showInfoBtn').addEventListener('click', function() {
+            var infoDiv = document.getElementById('choirInfo');
+            if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+                infoDiv.style.display = 'block';
+            } else {
+                infoDiv.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Twitter & Bing Partnership Extended</title>
+    <meta name="description" content="Twitter and Bing have announced an extension of their partnership, enhancing news delivery and social media integration. Stay updated with the latest news!">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bb5;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .timestamp {
+            color: gray;
+            font-size: 0.9em;
+        }
+        .expand-button {
+            background: #007bb5;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Twitter & Bing Extend Their Partnership</h1>
+</header>
+
+<article>
+    <h2>Latest Announcement</h2>
+    <p class="timestamp">Published on: October 20, 2023</p>
+    <p>Twitter and Bing have officially announced an extension of their existing partnership, focusing on enhanced news delivery and improved social media integration into search results.</p>
+    <button class="expand-button" onclick="toggleContent()">Read More</button>
+    <div class="content" id="extraContent">
+        <p>This extended relationship aims to provide users with real-time updates on trending topics, blending Twitter's dynamic social feed with Bing's powerful search algorithms. Expect improved visibility of tweets in search results, allowing for a more integrated experience.</p>
+        <p>The collaboration is expected to deliver a significant boost to news distribution, enabling businesses and influencers to connect with larger audiences efficiently.</p>
+    </div>
+</article>
+
+<script>
+    function toggleContent() {
+        var content = document.getElementById("extraContent");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

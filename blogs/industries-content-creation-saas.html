@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Industries Content Creation SaaS</title>
+	<style>
+		.body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.industry-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.industry-card {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			width: 300px;
+			margin-bottom: 20px;
+		}
+		
+		.industry-card:hover {
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+		}
+		
+		.industry-card img {
+			width: 100%;
+			height: 150px;
+			border-radius: 10px 10px 0 0;
+		}
+		
+		.industry-card h2 {
+			margin-top: 0;
+		}
+		
+		.industry-card p {
+			margin-bottom: 20px;
+		}
+		
+		.js-tooltip {
+			position: relative;
+			display: inline-block;
+		}
+		
+		.js-tooltip::after {
+			content: attr(data-tooltip);
+			position: absolute;
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			transform: translateY(-100%);
+			transition: transform 0.3s ease-in-out;
+		}
+		
+		.js-tooltip:hover::after {
+			transform: translateY(0);
+		}
+	</style>
+</head>
+<body>
+	<div class="body">
+		<header class="header">
+			<h1>Industries Content Creation SaaS</h1>
+			<p>Discover the power of content creation for your industry</p>
+		</header>
+		<div class="industry-container">
+			<div class="industry-card">
+				<img src="https://via.placeholder.com/300x150" alt="Industry 1">
+				<h2>Industry 1: Technology</h2>
+				<p>Learn how to create engaging content for the tech industry, from blogging to video production</p>
+				<span class="js-tooltip" data-tooltip="Learn more about creating content for the tech industry">?</span>
+			</div>
+			<div class="industry-card">
+				<img src="https://via.placeholder.com/300x150" alt="Industry 2">
+				<h2>Industry 2: Healthcare</h2>
+				<p>Explore the importance of content creation for the healthcare industry, from medical writing to social media management</p>
+				<span class="js-tooltip" data-tooltip="Learn more about creating content for the healthcare industry">?</span>
+			</div>
+			<div class="industry-card">
+				<img src="https://via.placeholder.com/300x150" alt="Industry 3">
+				<h2>Industry 3: Finance</h2>
+				<p>Discover the role of content creation in the finance industry, from financial writing to video production</p>
+				<span class="js-tooltip" data-tooltip="Learn more about creating content for the finance industry">?</span>
+			</div>
+		</div>
+	</div>
+	<script>
+		// Add event listener to tooltips
+		document.querySelectorAll('.js-tooltip').forEach((tooltip) => {
+			tooltip.addEventListener('mouseover', () => {
+				tooltip.style.transform = 'translateY(0)';
+			});
+			tooltip.addEventListener('mouseout', () => {
+				tooltip.style.transform = 'translateY(-100%)';
+			});
+		});
+	</script>
+</body>
+</html>
+
+
+Keywords: Industries Content Creation SaaS, Technology, Healthcare, Finance, Content Creation, SaaS, Industries, Technology Content Creation, Healthcare Content Creation, Finance Content Creation.

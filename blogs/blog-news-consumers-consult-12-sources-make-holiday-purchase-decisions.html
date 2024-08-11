@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover how consumers research and consult sources before making holiday purchase decisions. Learn about the latest trends in shopping.">
+    <title>Consumer Holiday Purchase Decisions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .source {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 4px solid #007BFF;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Holiday Purchase Decisions</h1>
+        <p>How Consumers Consult 12 Sources</p>
+    </header>
+    <div class="container">
+        <h2>Researching Before Shopping</h2>
+        <p>In today's digital world, consumers consult multiple sources before making holiday purchases. Understanding these decision-making processes can enhance marketing strategies and customer engagement.</p>
+        
+        <div class="source" onclick="toggleDetails(this);">
+            <strong>Online Reviews</strong>
+            <p class="details" style="display:none;">Consumers often check reviews on platforms like Amazon and Yelp for feedback on products.</p>
+        </div>
+        <div class="source" onclick="toggleDetails(this);">
+            <strong>Social Media</strong>
+            <p class="details" style="display:none;">Platforms like Facebook and Instagram heavily influence buying decisions, showcasing trends and customer opinions.</p>
+        </div>
+        <div class="source" onclick="toggleDetails(this);">
+            <strong>Blogs and Articles</strong>
+            <p class="details" style="display:none;">Many shoppers seek expert advice through blogs and articles that compare products and provide insights.</p>
+        </div>
+        <div class="source" onclick="toggleDetails(this);">
+            <strong>Product Videos</strong>
+            <p class="details" style="display:none;">Video reviews and unboxing showcases help consumers visualize products better before buying.</p>
+        </div>
+        <div class="source" onclick="toggleDetails(this);">
+            <strong>Price Comparison Websites</strong>
+            <p class="details" style="display:none;">These tools allow consumers to find the best prices and deals available across multiple retailers.</p>
+        </div>
+        <button onclick="alert('Start your holiday shopping research now!')">Get Started</button>
+    </div>
+
+    <script>
+        function toggleDetails(element) {
+            var details = element.querySelector('.details');
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

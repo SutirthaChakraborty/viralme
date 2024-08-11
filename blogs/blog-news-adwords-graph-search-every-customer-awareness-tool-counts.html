@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Awareness Tools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #4682b4;
+        }
+        .graph {
+            display: none;
+            width: 100%;
+            height: 200px;
+            margin-top: 20px;
+            border: 1px solid #35424a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Enhancing Customer Awareness</h1>
+    </header>
+    <div class="container">
+        <h2>Blog News: Tools for Better Reach</h2>
+        <p>In today’s digital landscape, utilizing tools like <strong>AdWords</strong> and <strong>Graph Search</strong> is essential for enhancing customer awareness. Every customer awareness tool counts towards your marketing success.</p>
+        <button onclick="toggleGraph()">Show Interaction Graph</button>
+        <canvas id="customerGraph" class="graph"></canvas>
+    </div>
+    <script>
+        function toggleGraph() {
+            const graph = document.getElementById('customerGraph');
+            graph.style.display = graph.style.display === 'none' ? 'block' : 'none';
+            if (graph.style.display === 'block') {
+                const ctx = graph.getContext('2d');
+                ctx.clearRect(0, 0, graph.width, graph.height);
+                ctx.fillStyle = '#4682b4';
+                ctx.fillRect(10, 10, 100, 100);
+                ctx.fillRect(120, 20, 100, 80);
+                ctx.fillRect(230, 30, 100, 60);
+                ctx.fillStyle = '#35424a';
+                ctx.font = '16px Arial';
+                ctx.fillText('Customer Awareness Tools', 10, 150);
+            }
+        }
+    </script>
+</body>
+</html>

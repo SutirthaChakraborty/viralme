@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive guide to color correction and grading in post-production for film and video. Enhance your visuals with expert techniques.">
+    <title>Insights: Color Correction & Grading Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .color-sample {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights: Color Correction & Grading Guide</h1>
+        <h2>Understanding Color Correction</h2>
+        <p>Color correction is the process of adjusting the colors in your footage to achieve a consistent and pleasing look. Key terms include <strong>white balance</strong>, <strong>exposure</strong>, and <strong>contrast</strong>.</p>
+        <h2>Color Grading Techniques</h2>
+        <p>Color grading enhances the mood of your footage. Use tools like <strong>curves</strong>, <strong>luts</strong>, and <strong>color wheels</strong> to achieve your desired aesthetic.</p>
+        <h2>Interactive Color Samples</h2>
+        <div>
+            <div class="color-sample" style="background-color: #ff5733;" onclick="displayColorCode('#ff5733')"></div>
+            <div class="color-sample" style="background-color: #33c1ff;" onclick="displayColorCode('#33c1ff')"></div>
+            <div class="color-sample" style="background-color: #85ff33;" onclick="displayColorCode('#85ff33')"></div>
+        </div>
+        <h2>Useful Resources</h2>
+        <a href="#" class="btn">Explore More Techniques</a>
+        <p id="color-code" style="margin-top: 15px;"></p>
+    </div>
+    
+    <script>
+        function displayColorCode(color) {
+            document.getElementById('color-code').innerText = "Selected Color Code: " + color;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local SEO Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0073e6;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Local SEO News</h1>
+    </header>
+    <section>
+        <h2>Pew Data Insights</h2>
+        <p>According to recent <span class="keyword">Pew Research</span>, **28% of U.S. adults** regularly utilize location-based services on their mobile devices. This highlights the growing importance of **local SEO** in digital marketing strategies.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <p id="moreInfo" style="display:none;">Younger adults, particularly those aged 18-49, are even more inclined to use these services, emphasizing the need for businesses to optimize their online presence through **Google Places** and **social media marketing**.</p>
+    </section>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

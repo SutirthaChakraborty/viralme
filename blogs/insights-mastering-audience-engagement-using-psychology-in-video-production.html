@@ -1,0 +1,75 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Audience Engagement in Video Production: Psychology Insights</title>
+    <style>
+        /* CSS for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f6fc;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .keyword-list {
+            line-height: 1.5;
+            cursor: pointer;
+            color: #4aa0ff;
+            text-decoration: underline;
+        }
+        .keyword-list:hover {
+            text-decoration: none;
+            color: #005DA5;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            cursor: help;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        // JavaScript for tooltip function
+        function showTooltip(e) {
+            var target = e.target;
+            var content = target.getAttribute("data-tooltip");
+            var tooltip = target.querySelector(".tooltiptext");
+            tooltip.textContent = content;
+            tooltip.classList.toggle

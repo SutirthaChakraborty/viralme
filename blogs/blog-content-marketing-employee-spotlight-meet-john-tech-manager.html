@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Employee Spotlight on John, Tech Manager. Learn about his journey in content marketing.">
+    <title>Employee Spotlight: Meet John, Tech Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+        }
+        article {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Employee Spotlight</h1>
+        <h2>Meet John, Our Tech Manager</h2>
+    </header>
+    <article>
+        <p>John has been with our company for over 5 years, leading our tech team with enthusiasm and innovation. His expertise in content marketing strategies has transformed our outreach.</p>
+        <p>With a background in software engineering and a passion for digital marketing, John has played a crucial role in enhancing our online presence.</p>
+        <button onclick="showMoreInfo()">Learn More About John's Journey</button>
+        <p id="moreInfo" style="display:none;">John's journey began as a software developer, but his knack for storytelling and understanding audience needs led him to pivot into content marketing. He is now instrumental in crafting engaging blog content that drives traffic and engagement.</p>
+    </article>
+    <script>
+        function showMoreInfo() {
+            const moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

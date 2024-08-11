@@ -1,0 +1,67 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big 3 Media Cancellation Policies Infographic Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 300px;
+            margin-bottom: 20px;
+            background-color: #f2f2f2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .card h2 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .card p {
+            font-size: 1.1em;
+        }
+        .card button {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button-hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function explainPolicy(id) {
+            var policyContent = document.getElementById(id);
+            policyContent.classList.toggle("hidden");
+            var button = document.getElementById("button-toggle-" + id);
+            button.textContent = (button.textContent === "Show Details") ? "

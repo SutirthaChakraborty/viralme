@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Blog Content Writing & Copywriting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card {
+            background: #e2f0d9;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .details {
+            display: none;
+            padding: 10px;
+            background: #d9f2e6;
+            border-left: 5px solid #28a745;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exploring Blog Content Writing & Copywriting Types</h1>
+<div class="content">
+    <div class="card" onclick="toggleDetails('blogPost')">
+        <h2>Blog Posts</h2>
+        <p>Engaging articles that provide valuable information to readers.</p>
+        <div id="blogPost" class="details">
+            <p>Blog posts aim to educate, inspire, or entertain the audience, enhancing your SEO strategy with targeted keywords.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails('copywriting')">
+        <h2>Copywriting</h2>
+        <p>Persuasive writing aimed at marketing a product or service.</p>
+        <div id="copywriting" class="details">
+            <p>Effective copywriting influences consumer behavior and boosts conversion rates through compelling calls-to-action.</p>
+        </div>
+    </div>
+
+    <div class="card" onclick="toggleDetails('technicalWriting')">
+        <h2>Technical Writing</h2>
+        <p>Clear and concise documentation for specific audiences.</p>
+        <div id="technicalWriting" class="details">
+            <p>Technical writing is essential for creating manuals, guides, and tutorials, ensuring clarity and accessibility for users.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        details.style.display = details.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

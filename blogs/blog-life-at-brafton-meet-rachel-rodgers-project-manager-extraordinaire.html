@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life at Brafton: Meet Rachel Rodgers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d0e7ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life at Brafton: Meet Rachel Rodgers</h1>
+    </header>
+    <section>
+        <h2>About Rachel</h2>
+        <p>Rachel Rodgers is a project manager extraordinaire at Brafton, known for her exceptional communication skills and personal touch in every project. Her journey from a writer to a project manager showcases her dedication and passion for storytelling and strategy.</p>
+        <p>With a background in slam poetry, Rachel brings creativity and insight into her role, ensuring that every project resonates with clients and audiences alike.</p>
+    </section>
+    <section>
+        <h2>Interactive Experience</h2>
+        <div class="interactive" onclick="showMessage()">Click here to learn more about Rachel's projects!</div>
+        <p id="message" style="display:none;">Rachel has successfully managed numerous projects that blend creativity with strategic execution, making her a vital asset to the Brafton team.</p>
+    </section>
+    <script>
+        function showMessage() {
+            var message = document.getElementById('message');
+            message.style.display = message.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

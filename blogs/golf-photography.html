@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Photography Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1a6f3d;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .image-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .tips {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ffe9;
+            border-left: 5px solid #1a6f3d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Golf Photography Guide</h1>
+        <p>Capture the essence of the game with stunning golf photography. Here are essential tips and techniques to elevate your photography skills on the golf course.</p>
+        
+        <div class="image-gallery">
+            <img src="golf1.jpg" alt="Golf Swing">
+            <img src="golf2.jpg" alt="Golf Course Landscape">
+            <img src="golf3.jpg" alt="Golf Action Shot">
+        </div>
+        
+        <div class="tips">
+            <h2>Photography Tips:</h2>
+            <ul>
+                <li>Use a fast shutter speed to freeze motion during swings.</li>
+                <li>Experiment with different angles to showcase the beauty of the course.</li>
+                <li>Golden hour (early morning or late afternoon) provides the best lighting.</li>
+                <li>Capture candid moments of players to narrate a story.</li>
+                <li>Invest in a zoom lens to get close-up shots from a distance.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-gallery img').forEach(img => {
+            img.addEventListener('click', () => {
+                alert('This is a great shot of ' + img.alt);
+            });
+        });
+    </script>
+</body>
+</html>

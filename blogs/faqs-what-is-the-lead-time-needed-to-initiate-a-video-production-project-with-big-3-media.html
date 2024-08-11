@@ -1,0 +1,75 @@
+Here's a simple HTML code with CSS and JavaScript to create a FAQ page about the lead time needed for a video production project with Big 3 Media, along with some relevant keywords for better search visibility:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big 3 Media Video Production Lead Time FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        
+        .question {
+            font-weight: bold;
+        }
+        
+        .answer {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        
+        .search {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        @media (max-width: 600px) {
+            .faq-container {
+                padding: 10px;
+            }
+        }
+        
+        .show-answer {
+            display: none;
+            cursor: pointer;
+        }
+        .show-answer + .answer {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleAnswer(questionId) {
+            const answer = document.getElementById(questionId + "-answer");
+            if (answer.classList.contains("show-answer")) {
+                answer.classList.remove("show-answer");
+            } else {
+                answer.classList.add("show-answer");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="faq-container">
+        <h2>Lead Time for Video Production with Big 3 Media</h2>
+        <div class="faq-question">
+            <p class="question">1️⃣ Q: <span id="lead-time-question" class="question">What is the lead time for starting a video

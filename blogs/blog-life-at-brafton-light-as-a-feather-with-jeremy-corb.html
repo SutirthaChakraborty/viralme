@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover life at Brafton through the lens of Jeremy Corb in our blog 'Light as a Feather'. Explore creativity, innovation, and design.">
+    <title>Brafton Blog - Light as a Feather with Jeremy Corb</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .extraInfo {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 3px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Life at Brafton</h1>
+    <h2>Light as a Feather with Jeremy Corb</h2>
+</header>
+
+<article>
+    <h2>Welcome to the Blog!</h2>
+    <p>Join Jeremy Corb as he explores the vibrant life at Brafton, sharing insights on creativity, teamwork, and innovative design processes. Get ready to be inspired and uplifted!</p>
+    <p class="toggle" onclick="toggleInfo()">Learn More About Jeremy Corb</p>
+    <div class="extraInfo" id="info">
+        <p>Jeremy Corb is a creative strategist at Brafton, known for his engaging content and unique perspective on digital marketing trends. His approach blends creativity with data-driven strategies, making him a vital part of our team.</p>
+    </div>
+</article>
+
+<footer>
+    <p>&copy; 2023 Brafton. Stay connected for more insights!</p>
+</footer>
+
+<script>
+    function toggleInfo() {
+        const extraInfo = document.getElementById('info');
+        if (extraInfo.style.display === 'none' || extraInfo.style.display === '') {
+            extraInfo.style.display = 'block';
+        } else {
+            extraInfo.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

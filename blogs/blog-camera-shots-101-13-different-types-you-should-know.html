@@ -1,0 +1,157 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog: Camera Shots 101</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content > div {
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.content > div img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content > div:nth-child(3),
+.content > div:nth-child(6) {
+  flex: 0 0 50%;
+}
+
+.content > div:nth-child(5) {
+  flex: 0 0 33%;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.content > div').forEach(function(div) {
+    var title = div.querySelector('h2');
+    var img = div.querySelector('img');
+    var description = div.querySelector('p');
+    
+    img.addEventListener('click', function() {
+      alert(title.textContent + '\n' + description.textContent);
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Blog: Camera Shots 101</h1>
+  </div>
+  <div class="content">
+    <div>
+      <h2>1. Over the Shoulder</h2>
+      <p>This shot is where the camera is positioned behind the subject, capturing their side profile.</p>
+      <img src="https://via.placeholder.com/150" alt="Over the Shoulder Shot">
+    </div>
+    <div>
+      <h2>2. Close-Up</h2>
+      <p>A close-up shot focuses on a specific part of the subject, often the face or hands.</p>
+      <img src="https://via.placeholder.com/150" alt="Close-Up Shot">
+    </div>
+    <div>
+      <h2>3. Wide Angle</h2>
+      <p>Wide-angle shots cover a large area, creating a sense of space and often making the subject appear smaller.</p>
+      <img src="https://via.placeholder.com/150" alt="Wide Angle Shot">
+    </div>
+    <div>
+      <h2>4. Medium Shot</h2>
+      <p>This shot captures the subject from the chest up, providing a balance between close-ups and long shots.</p>
+      <img src="https://via.placeholder.com/150" alt="Medium Shot">
+    </div>
+    <div>
+      <h2>5. Close-Up (Part 2)</h2>
+      <p>A variation of the close-up shot, focusing on a different aspect of the subject.</p>
+      <img src="https://via.placeholder.com/150" alt="Close-Up Shot 2">
+    </div>
+    <div>
+      <h2>6. Long Shot</h2>
+      <p>Long shots cover a wide area, with the subject often seen in the context of their environment.</p>
+      <img src="https://via.placeholder.com/150" alt="Long Shot">
+    </div>
+    <div>
+      <h2>7. Angle Shot</h2>
+      <p>This shot captures the subject from an unusual angle, adding interest and dynamism to the image.</p>
+      <img src="https://via.placeholder.com/150" alt="Angle Shot">
+    </div>
+    <div>
+      <h2>8. High Angle</h2>
+      <p>From above, this shot can make the subject appear smaller or more vulnerable.</p>
+      <img src="https://via.placeholder.com/150" alt="High Angle Shot">
+    </div>
+    <div>
+      <h2>9. Low Angle</h2>
+      <p>From below, this shot can make the subject appear more imposing or powerful.</p>
+      <img src="https://via.placeholder.com/150" alt="Low Angle Shot">
+    </div>
+    <div>
+      <h2>10. Profile Shot</h2>
+      <p>This shot captures the subject's profile, often emphasizing their facial features or defining their shape.</p>
+      <img src="https://via.placeholder.com/150" alt="Profile Shot">
+    </div>
+    <div>
+      <h2>11. Telephoto Shot</h2>
+      <p>Telephoto shots are taken from a distance, magnifying the subject and their surroundings.</p>
+      <img src="https://via.placeholder.com/150" alt="Telephoto Shot">
+    </div>
+    <div>
+      <h2>12. Macro Shot</h2>
+      <p>A macro shot captures the subject at a very close range, focusing on textures and small details.</p>
+      <img src="https://via.placeholder.com/150" alt="Macro Shot">
+    </div>
+    <div>
+      <h2>13. Rear Shot</h2>
+      <p>This shot captures the subject from behind, often used to show motion or to focus on the background.</p>
+      <img src="https://via.placeholder.com/150" alt="Rear Shot">
+    </div>
+  </div>
+  <div class="footer">
+    <p>Explore more about camera shots and their uses in photography and filmmaking.</p>
+  </div>
+</div>
+</body>
+</html>

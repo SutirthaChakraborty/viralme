@@ -1,0 +1,72 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Blog Content Marketing Hacks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .title {
+            text-align: center;
+            font-weight: bold;
+            color: #0056b3;
+        }
+        .subtitle {
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        .section {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .keyword-list {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.keyword').click(function() {
+                const keywordContainer = $('.content-marketing-hacks');
+                if (keywordContainer.is(':visible')) {
+                    keywordContainer.slideUp(300);
+                } else {
+                    keywordContainer.slideDown(300);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Weekly Blog Content Marketing Hacks</h1>
+        </div>
+        <div class="subtitle">Improve Your Strategy for Better Reach</div>
+        
+        <div id="content-marketing-hacks" class="section" style="display: none;">
+            <h2>Hack 1: <span class="keyword">Keyword Research</span></h2>
+            <p>Create a content strategy around SEO-friendly keywords that cater to your audience's search queries.</p>
+
+            <h2>Hack 2:

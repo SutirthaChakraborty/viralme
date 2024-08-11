@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore essential social media guidelines to create winning posts on popular networks like Facebook, Instagram, Twitter, LinkedIn, and Pinterest.">
+    <title>Social Media Guidelines for Winning Posts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .platform {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: 0.3s;
+        }
+        .platform:hover {
+            border-color: #007BFF;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Social Media Guidelines</h1>
+        <div class="platform">
+            <h2>Facebook</h2>
+            <p><strong>Best Practices:</strong> Use engaging visuals, keep text concise, and post during peak hours.</p>
+            <button onclick="toggleDetails('fbDetails')">Learn More</button>
+            <div id="fbDetails" class="details">
+                <p>Utilize Facebook Stories for ephemeral content and encourage user interaction through polls and questions.</p>
+            </div>
+        </div>
+        <div class="platform">
+            <h2>Instagram</h2>
+            <p><strong>Best Practices:</strong> Focus on high-quality images, use relevant hashtags, and tell a story through captions.</p>
+            <button onclick="toggleDetails('instaDetails')">Learn More</button>
+            <div id="instaDetails" class="details">
+                <p>Engage with followers through Instagram Live and reels to boost visibility further.</p>
+            </div>
+        </div>
+        <div class="platform">
+            <h2>Twitter</h2>
+            <p><strong>Best Practices:</strong> Keep tweets under 280 characters, use trending hashtags, and engage with your audience.</p>
+            <button onclick="toggleDetails('twitterDetails')">Learn More</button>
+            <div id="twitterDetails" class="details">
+                <p>Retweet and reply to relevant conversations to increase reach and visibility.</p>
+            </div>
+        </div>
+        <div class="platform">
+            <h2>LinkedIn</h2>
+            <p><strong>Best Practices:</strong> Share industry insights, professional updates, and utilize LinkedIn groups for networking.</p>
+            <button onclick="toggleDetails('linkedinDetails')">Learn More</button>
+            <div id="linkedinDetails" class="details">
+                <p>Post articles and professional achievements to establish authority and grow connections.</p>
+            </div>
+        </div>
+        <div class="platform">
+            <h2>Pinterest</h2>
+            <p><strong>Best Practices:</strong> Use vertical images, write keyword-rich descriptions, and curate boards effectively.</p>
+            <button onclick="toggleDetails('pinterestDetails')">Learn More</button>
+            <div id="pinterestDetails" class="details">
+                <p>Collaborate with others by joining boards to increase visibility and engagement.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleDetails(detailId) {
+            const detail = document.getElementById(detailId);
+            detail.style.display = (detail.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

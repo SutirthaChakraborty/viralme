@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Open Graph Glossary">
+    <meta property="og:description" content="Explore the essential terms of Open Graph protocol and enhance your social media sharing.">
+    <meta property="og:image" content="https://example.com/og-image.jpg">
+    <meta property="og:url" content="https://example.com/open-graph-glossary">
+    <title>Open Graph Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-term {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .glossary-term:hover {
+            transform: scale(1.05);
+            border-color: #007BFF;
+        }
+        .definition {
+            display: none;
+            margin-top: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Open Graph Glossary</h1>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        <strong>Open Graph Protocol</strong>
+        <div class="definition">A protocol used to integrate web pages into the social graph, allowing for rich previews on social media platforms.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        <strong>og:title</strong>
+        <div class="definition">The title of your web page as it should appear in the social media post.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        <strong>og:description</strong>
+        <div class="definition">A brief summary or description of the content of your web page for social sharing.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        <strong>og:image</strong>
+        <div class="definition">The image that represents your content and appears in your social media post.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition(this)">
+        <strong>og:url</strong>
+        <div class="definition">The canonical URL of your web page that you want to share on social media.</div>
+    </div>
+
+    <script>
+        function toggleDefinition(term) {
+            const definition = term.querySelector(".definition");
+            definition.style.display = definition.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

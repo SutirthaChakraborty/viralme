@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridal Blog Content Writing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ff66b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article-title {
+            font-size: 1.5em;
+            color: #ff66b3;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        .keywords {
+            font-size: 0.9em;
+            color: grey;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ff66b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Brides Say: Catchy Wedding Brand Articles</h1>
+</header>
+
+<div class="container">
+    <div class="article">
+        <div class="article-title" onclick="toggleContent(this)">1. How to Write Catchy Wedding Content</div>
+        <div class="content">
+            <p>Engage brides with compelling stories. Use keywords like <strong>wedding planning</strong>, <strong>bridal tips</strong>, and <strong>romantic themes</strong>.</p>
+        </div>
+    </div>
+
+    <div class="article">
+        <div class="article-title" onclick="toggleContent(this)">2. Top 10 Bridal Blogs to Follow</div>
+        <div class="content">
+            <p>Explore the best blogs that inspire brides with <strong>real wedding stories</strong>, <strong>fashion advice</strong>, and <strong>DIY ideas</strong>.</p>
+        </div>
+    </div>
+
+    <div class="article">
+        <div class="article-title" onclick="toggleContent(this)">3. Creating Engaging Listicles for Wedding Brands</div>
+        <div class="content">
+            <p>Listicles capture attention! Use titles like <strong>5 Must-Have Wedding Accessories</strong> or <strong>7 Unique Wedding Venues</strong>.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Bridal Blog Content Writing</p>
+</footer>
+
+<script>
+    function toggleContent(element) {
+        const content = element.nextElementSibling;
+        content.style.display = (content.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>

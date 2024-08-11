@@ -1,0 +1,42 @@
+#### HTML Code for Matterport Virtual Tour Time Lapse
+
+Here is a small HTML code snippet that you can use to embed a Matterport virtual tour time lapse on your website:
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matterport Virtual Tour Time Lapse</title>
+    <style>
+        /* Add your custom CSS styles here */
+        /* For example, you can style the iframe container */
+        .tour-container {
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            position: relative;
+        }
+        .tour-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="tour-container">
+        <iframe width="853" height="480" src="https://my.matterport.com/show/?m=BswfThZ38kh" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+    </div>
+</body>
+</html>
+
+
+#### Explanation
+
+- The HTML code above creates a basic webpage with a container div for the Matterport virtual tour time lapse.
+- The CSS styles inside the `<style>` tags allow you to customize the appearance of the iframe container. You can modify these styles to fit your website's design.
+- The iframe element is used to embed the Matterport virtual tour time lapse. The `src` attribute should be replaced with the URL of your specific Matterport model.
+
+Please note that this code is a starting point, and you can further customize it to meet your specific requirements.

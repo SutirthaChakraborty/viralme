@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academy David White - A premier institution for innovative learning and personal development.">
+    <meta name="keywords" content="Academy David White, education, personal development, innovative learning, workshops, courses">
+    <title>Academy David White</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Academy David White</h1>
+    </header>
+    <section>
+        <h2>About Us</h2>
+        <p>Academy David White is dedicated to fostering innovative learning and personal development through a variety of workshops and courses.</p>
+        <button onclick="showMoreInfo()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <p>Our programs are designed to empower individuals with the skills needed for success in today's dynamic environment.</p>
+        </div>
+    </section>
+    <script>
+        function showMoreInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

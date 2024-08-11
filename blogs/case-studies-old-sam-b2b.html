@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore case studies of Old Sam, a B2B leader in innovative solutions. Discover strategies, success stories, and industry insights.">
+    <title>Old Sam B2B Case Studies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .case-study {
+            background: white;
+            border: 1px solid #ddd;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .case-study h2 {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .summary {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Old Sam B2B Case Studies</h1>
+
+    <div class="case-study">
+        <h2 onclick="toggleSummary(this)">Case Study 1: Innovative Product Launch</h2>
+        <div class="summary">
+            <p>Explore how Old Sam successfully launched a new product line, leveraging strategic partnerships and market research to engage customers effectively. Key tactics included targeted marketing campaigns and a robust feedback loop.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2 onclick="toggleSummary(this)">Case Study 2: Supply Chain Optimization</h2>
+        <div class="summary">
+            <p>This case study highlights Old Sam’s approach to optimizing its supply chain by implementing technology solutions that improved efficiency and reduced costs. The integration of data analytics played a crucial role.</p>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <h2 onclick="toggleSummary(this)">Case Study 3: Customer Relationship Management</h2>
+        <div class="summary">
+            <p>Learn how Old Sam enhanced its customer relationship management strategies, resulting in improved client satisfaction and retention rates. This study outlines the importance of personalized communication and feedback systems.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleSummary(element) {
+            const summary = element.nextElementSibling;
+            summary.style.display = summary.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

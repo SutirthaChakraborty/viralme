@@ -1,0 +1,57 @@
+Here's a simple HTML code snippet with CSS and JavaScript to showcase the topic "Blog Legacy: 3 Website Design Mistakes That Kill Marketing ROI," along with useful keywords. I've incorporated some basic interactivity using JavaScript for a cleaner presentation.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: 3 Website Design Mistakes</title>
+    <style>
+        .error {
+            color: tomato;
+            font-weight: bold;
+        }
+        .hover-effect {
+            transition: background-color 0.3s ease;
+        }
+        .warning-box:hover {
+            background-color: yellow;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function highlightError(index) {
+            const mistakes = document.querySelectorAll('.mistake');
+            mistakes.forEach((error, i) => {
+                if (i === index) {
+                    error.classList.add('error');
+                } else {
+                    error.classList.remove('error');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Blog Legacy: 3 Website Design Mistakes That Kill Marketing ROI</h1>
+    
+    <div class="section">
+        <h2>Mistake 1: Inconsistent Navigation</h2>
+        <p>Ensure your site has a clear and <span class="mistake" onclick="highlightError(0)">user-friendly navigation</span> to help visitors find content easily.</p>
+    </div>
+
+    <div class="section hover-effect">
+        <h2>Mistake 2: Poor Mobile Responsiveness</h2>
+        <p>A non-responsive design affects <span class="mistake" onclick="highlightError(1)">mobile user experience,</span>要害失去一大批潜在客户。</p>
+    </div>
+
+    <div class="section">
+        <h2>Mistake 3: Lack of Call-to-Action</h2>
+        <p>Make sure each page has a <span class="mistake" onclick="highlightError(2)">clear CTA</span>, compelling users to take action and boost ROI.</p>
+        <button class="button" onclick="alert('Learn more about avoiding

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights Search for Simplicity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            background-color: #e7f3ff;
+            border-left: 5px solid #2196F3;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1e88e5;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Insights Search for Simplicity</h1>
+        <p>Discover how simplifying your search can enhance efficiency and productivity. Here are some key insights:</p>
+        <div class="keyword">Keyword Optimization</div>
+        <div class="keyword">User-Centric Design</div>
+        <div class="keyword">AI-Powered Search</div>
+        <div class="keyword">Data-Driven Insights</div>
+        
+        <button onclick="showInsights()">Show More Insights</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function showInsights() {
+            const insights = [
+                "1. Focus on essential queries to improve results.",
+                "2. Use natural language processing for better understanding.",
+                "3. Regularly update content for relevance and accuracy.",
+                "4. Analyze user behavior to refine search algorithms."
+            ];
+            document.getElementById('output').innerHTML = insights.join('<br>');
+        }
+    </script>
+
+</body>
+</html>

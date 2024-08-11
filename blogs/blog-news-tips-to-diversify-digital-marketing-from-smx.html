@@ -1,0 +1,73 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMX Blog: Diversifying Digital Marketing Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+        h1 {
+            color: #005cb8;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            margin-top: 35px;
+        }
+        .tip {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .tip:last-child {
+            border-bottom: none;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #005cb8;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #004080;
+        }
+    </style>
+    <script>
+        // JavaScript to display tooltips on hover (useful for adding more information)
+        function showTooltipTip(target) {
+            var tooltip = document.getElementById('tooltip-' + target.dataset.tipId);
+            tooltip.style.display = target.dataset.tooltip ? 'block' : 'none';
+        }
+
+        document.querySelectorAll('.tip').forEach(function (tip) {
+            tip.addEventListener('mouseover', function () {
+                showTooltipTip(this);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Marketing Tips to Diversify Your Strategy from SMX</h1>
+
+        <div class="section">
+            <h2>SEO</h2

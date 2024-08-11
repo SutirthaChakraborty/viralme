@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Local Search Consumers and Conversion Rates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .blog-header {
+            background-color: #f2f2f2;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .blog-post {
+            max-width: 800px;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 20px;
+            border-left: 5px solid #e5e5e5;
+            border-right: 5px solid #e5e5e5;
+        }
+
+        .keyword-box {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .keyword {
+            font-weight: bold;
+        }
+
+        .callout {
+            background-color: #f6f6f6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .callout p {
+            margin-bottom: 5px;
+        }
+        .interactivity {
+            background-color: #eaf2f8;
+            padding: 10px;
+        }
+        .interactivity a {
+            display: inline-block;
+            background-color: #007ba7;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            margin: 5px 0;
+        }
+        .interactivity a:hover {
+            background-color: #00568b;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.callout').hover(
+                function () {
+                    $(this).find('.tooltip').stop().slideToggle(200);
+                },
+                function () {
+                    $(this).find('.tooltip').stop().slideUp(200);
+                }
+            );
+        });
+    </script>
+</head>
+<body>

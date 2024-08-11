@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore essential eBooks, FAQs, and best practices for marketers in social media. Enhance your digital marketing strategies with expert insights.">
+    <title>eBooks & Social Media Best Practices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .faq-section {
+            margin-top: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .faq {
+            margin: 10px 0;
+        }
+        .faq-button {
+            display: block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: left;
+            width: 100%;
+            text-decoration: none;
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background: #e9ecef;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>eBooks & Social Media Insights</h1>
+    <p>Uncover best practices for marketers</p>
+</header>
+
+<section class="faq-section">
+    <h2>FAQs About Social Media Best Practices</h2>
+    <div class="faq">
+        <button class="faq-button">What are the key social media platforms for marketers?</button>
+        <div class="faq-answer">The main platforms include Facebook, Instagram, Twitter, LinkedIn, and TikTok. Each has unique features suitable for different target audiences.</div>
+    </div>
+    <div class="faq">
+        <button class="faq-button">How often should I post on social media?</button>
+        <div class="faq-answer">Consistency is key. Daily posts are ideal, but focus on quality and audience engagement rather than quantity.</div>
+    </div>
+    <div class="faq">
+        <button class="faq-button">What type of content works best on social media?</button>
+        <div class="faq-answer">Visual content, such as images and videos, tends to perform best. Infographics and live streams are also highly engaging.</div>
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.faq-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

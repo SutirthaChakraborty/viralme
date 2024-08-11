@@ -1,0 +1,85 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Choosing the Right Social Marketing Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .platform {
+            display: inline-block;
+            width: 200px;
+            margin-right: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .platform img {
+            width: 100%;
+            height: auto;
+        }
+
+        .platform h3 {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .platform p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .platform a {
+            display: block;
+            background-color: #3c77bf;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+        
+        .platform a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+            .platform {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+    <script>
+        // Interactive CSS and JS to highlight the relevant section based on click
+        document.querySelectorAll('.platform').forEach(platform => {
+            platform.addEventListener('click', (event) => {
+                event.preventDefault();
+                const theme = event.target.className.includes("active");
+                const sections = document.querySelectorAll('.section');
+                sections.forEach(section =>

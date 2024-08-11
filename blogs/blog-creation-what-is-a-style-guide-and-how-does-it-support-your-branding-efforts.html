@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about blog creation and how a style guide can enhance your branding.">
+    <title>Blog Creation: Understanding Style Guides</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Creation & Style Guides</h1>
+</header>
+
+<div class="content">
+    <h2>What is a Style Guide?</h2>
+    <p>A style guide is a document that provides rules and guidelines for your blog's design, content, and overall branding.</p>
+    
+    <h2>How Style Guides Support Branding</h2>
+    <p>Consistency in design and messaging strengthens your brand’s identity and helps establish trust with your audience.</p>
+    
+    <button id="toggleInfo">Learn More</button>
+    <div id="extraInfo" style="display: none;">
+        <p>Using a style guide ensures all blog posts reflect the same tone, font style, color palette, and logo usage, making your brand recognizable and professional.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggleInfo').addEventListener('click', function() {
+        const extraInfo = document.getElementById('extraInfo');
+        extraInfo.style.display = extraInfo.style.display === 'none' ? 'block' : 'none';
+        this.textContent = extraInfo.style.display === 'none' ? 'Learn More' : 'Show Less';
+    });
+</script>
+
+</body>
+</html>

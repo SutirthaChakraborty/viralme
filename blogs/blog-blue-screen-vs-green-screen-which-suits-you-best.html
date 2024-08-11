@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the advantages and disadvantages of blue screen vs green screen for video production. Discover which color keying suits your project best.">
+    <title>Blue Screen vs Green Screen: Which Suits You Best?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007acc;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blue Screen vs Green Screen: Which Suits You Best?</h1>
+</header>
+
+<section>
+    <h2>The Basics of Chroma Keying</h2>
+    <p>Both blue screens and green screens are used in chroma keying, a technique that allows you to overlay one image or video over another by removing a specific color range.</p>
+</section>
+
+<section>
+    <h2>Advantages of Green Screen</h2>
+    <p>Green screens are more popular because they require less light and are easier to work with in digital editing. Click below for more info!</p>
+    <button onclick="toggleInfo('greenScreenInfo')">Learn More</button>
+    <div id="greenScreenInfo" class="info">
+        <p>Green is also the furthest color from skin tones, making it advantageous for hosting and interviews.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Advantages of Blue Screen</h2>
+    <p>Blue screens are favored for shooting scenes with human subjects, as blue can be used for darker settings. Click below for more details!</p>
+    <button onclick="toggleInfo('blueScreenInfo')">Learn More</button>
+    <div id="blueScreenInfo" class="info">
+        <p>Blue screens work better with hair and in darker areas due to their richer contrast.</p>
+    </div>
+</section>
+
+<script>
+    function toggleInfo(infoId) {
+        const infoDiv = document.getElementById(infoId);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

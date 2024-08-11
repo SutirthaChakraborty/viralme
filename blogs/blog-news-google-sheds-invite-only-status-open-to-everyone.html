@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Google's blog news now open for everyone. Stay updated with the latest trends and insights.">
+    <title>Google Blog News - Open to Everyone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #34a853;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4caf50;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Google Blog News - Now Open to Everyone</h1>
+</header>
+
+<article>
+    <h2>Exciting Changes at Google</h2>
+    <p>Google has officially opened its blog news platform, which was previously invite-only, to everyone! Now, users can access the latest updates, tips, and trends directly from Google.</p>
+    <p>This transition represents an important step towards transparency and community engagement. With an open platform, everyone can contribute, discuss, and share valuable insights.</p>
+    <button onclick="toggleDetails()">Read More</button>
+    <div id="moreDetails" class="hidden">
+        <p>Google aims to foster a more inclusive environment where users can partake in discussions relevant to modern technology and innovation. This move is expected to enhance user interaction and broaden the reach of their news updates.</p>
+    </div>
+</article>
+
+<script>
+    function toggleDetails() {
+        const details = document.getElementById('moreDetails');
+        if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+        } else {
+            details.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

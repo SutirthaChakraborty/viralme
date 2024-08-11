@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the different types of corporate videos such as promotional, training, and testimonial videos. Discover how each can enhance your brand's reach.">
+    <title>Types of Corporate Videos - FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .faq {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        .faq:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .faq-title {
+            cursor: pointer;
+            font-size: 1.2em;
+            margin: 0;
+            color: #2980b9;
+        }
+        .faq-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FAQs on Types of Corporate Videos</h1>
+
+<div class="faq">
+    <h2 class="faq-title">1. Promotional Videos</h2>
+    <div class="faq-content">Promotional videos aim to market a product or service, creating brand awareness and engagement.</div>
+</div>
+
+<div class="faq">
+    <h2 class="faq-title">2. Training Videos</h2>
+    <div class="faq-content">Training videos are used to educate employees about procedures, skills, or company policies.</div>
+</div>
+
+<div class="faq">
+    <h2 class="faq-title">3. Testimonial Videos</h2>
+    <div class="faq-content">Testimonial videos feature satisfied customers sharing their positive experiences and feedback.</div>
+</div>
+
+<div class="faq">
+    <h2 class="faq-title">4. Corporate Culture Videos</h2>
+    <div class="faq-content">These videos showcase the company's values, mission, and workplace atmosphere, attracting talent.</div>
+</div>
+
+<script>
+    const faqTitles = document.querySelectorAll('.faq-title');
+    faqTitles.forEach(title => {
+        title.addEventListener('click', () => {
+            const content = title.nextElementSibling;
+            content.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

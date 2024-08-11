@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Brafton's Infographic on SEO Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0056b3;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .infographic {
+            width: 100%;
+            height: auto;
+            border: 2px solid #0056b3;
+            margin: 10px 0;
+        }
+        .keyword {
+            background-color: #e7f1ff;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .keyword:hover {
+            background-color: #d0e4ff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0056b3;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Legacy: Why Content is Key for SEO</h1>
+    </header>
+    <div class="content">
+        <p>Discover Brafton's infographic illustrating the importance of quality content in SEO strategy.</p>
+        <img src="infographic-url.jpg" alt="Brafton SEO Infographic" class="infographic">
+        <p>Optimize your website with effective <span class="keyword" onclick="alert('SEO Best Practices: Focus on keyword research, high-quality content, and optimizing your site structure.');">SEO Strategies</span>.</p>
+        <p>Learn how engaging content improves <span class="keyword" onclick="alert('User Engagement: It keeps visitors on your site longer and reduces bounce rates.');">User Engagement</span> and boosts <span class="keyword" onclick="alert('Search Rankings: Content that addresses user needs ranks higher in search results.');">Search Rankings</span>.</p>
+    </div>
+    <footer>
+        <p>&copy; 2023 Blog Legacy. All rights reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.keyword').forEach(item => {
+            item.addEventListener('click', event => {
+                alert(`You clicked on: ${item.textContent}`);
+            });
+        });
+    </script>
+</body>
+</html>

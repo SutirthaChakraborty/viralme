@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Campaigns & Festive Promotions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        } 
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .insight {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            background: #e8f5e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights on Seasonal Campaigns</h1>
+        <h2>Harnessing the Spirit of Festive Promotions</h2>
+        <p>The digital age allows brands to connect with audiences through innovative seasonal marketing strategies. Emphasizing consumer sentiment and cultural relevance enhances engagement and drives sales.</p>
+        <p>Explore how festive promotions, tailored content, and timely outreach can create memorable experiences and boost brand loyalty.</p>
+        <button onclick="toggleInsight()">Show Insights</button>
+        <div class="insight" id="insight">
+            <p>1. Leverage Data Analytics for Personalization: Understand your audience's preferences by analyzing past engagement and purchasing behaviors.</p>
+            <p>2. Create Shareable Content: Design visually appealing and easy-to-share content that resonates with your audience's holiday spirit.</p>
+            <p>3. Optimize Multichannel Strategies: Ensure a seamless experience by integrating online and offline campaigns during peak seasons.</p>
+            <p>4. Build Community through Social Media: Engage with your audience directly, fostering a sense of community and belonging.</p>
+            <p>5. Focus on Eco-Friendly Initiatives: Promote sustainability in your seasonal campaigns to attract environmentally conscious consumers.</p>
+        </div>
+    </div>
+    <script>
+        function toggleInsight() {
+            var insight = document.getElementById("insight");
+            if (insight.style.display === "none" || insight.style.display === "") {
+                insight.style.display = "block";
+            } else {
+                insight.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

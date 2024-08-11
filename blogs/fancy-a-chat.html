@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join us for a friendly chat about various topics. Share your thoughts and connect with others in a positive environment.">
+    <title>Fancy a Chat?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .chat-box {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .chat-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .chat-button:hover {
+            background-color: #45a049;
+        }
+        .response {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-box">
+        <h1>Fancy a Chat?</h1>
+        <p>Let’s discuss anything that interests you! Press the button below to start the conversation.</p>
+        <button class="chat-button" onclick="startChat()">Start Chat</button>
+        <div class="response" id="chatResponse"></div>
+    </div>
+
+    <script>
+        function startChat() {
+            const topics = [
+                "What's your favorite hobby?",
+                "Do you have any book recommendations?",
+                "Let's talk about travel destinations!",
+                "What do you think about current events?",
+                "Share your favorite recipes!"
+            ];
+            const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+            document.getElementById('chatResponse').innerText = randomTopic;
+        }
+    </script>
+</body>
+</html>

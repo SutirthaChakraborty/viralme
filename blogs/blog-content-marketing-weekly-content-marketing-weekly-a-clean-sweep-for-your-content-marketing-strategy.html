@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weekly Content Marketing insights to optimize your blog strategy.">
+    <title>Weekly Content Marketing Strategies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 15px;
+            background: #0077cc;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        li:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Weekly Content Marketing Strategies</h1>
+        <p>Clean Sweep for Your Content Marketing Strategy</p>
+    </header>
+    <div class="content">
+        <h2>Topics to Explore</h2>
+        <ul>
+            <li onclick="showDetails('contentPlanning')">Content Planning</li>
+            <li onclick="showDetails('seo')">SEO Best Practices</li>
+            <li onclick="showDetails('socialMedia')">Social Media Strategies</li>
+            <li onclick="showDetails('analytics')">Analyzing Content Performance</li>
+        </ul>
+        <div id="details" style="margin-top: 20px;"></div>
+    </div>
+    <script>
+        function showDetails(topic) {
+            let details = '';
+            switch(topic) {
+                case 'contentPlanning':
+                    details = '<h3>Content Planning</h3><p>Effective content planning ensures you stay consistent and relevant in your blogging efforts.</p>';
+                    break;
+                case 'seo':
+                    details = '<h3>SEO Best Practices</h3><p>Incorporate keywords, meta tags, and quality backlinks to enhance your search engine visibility.</p>';
+                    break;
+                case 'socialMedia':
+                    details = '<h3>Social Media Strategies</h3><p>Utilize platforms like Facebook, Twitter, and LinkedIn to distribute your content and engage your audience.</p>';
+                    break;
+                case 'analytics':
+                    details = '<h3>Analyzing Content Performance</h3><p>Use tools like Google Analytics to measure the effectiveness of your content and refine your approach.</p>';
+                    break;
+                default:
+                    details = '<p>Select a topic to see more details.</p>';
+            }
+            document.getElementById('details').innerHTML = details;
+        }
+    </script>
+</body>
+</html>

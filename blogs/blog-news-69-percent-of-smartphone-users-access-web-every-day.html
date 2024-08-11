@@ -1,0 +1,53 @@
+u0026lt;!DOCTYPE html\u0026gt;
+
+\u0026lt;html\u0026gt;
+
+  \u0026lt;headu0026gt;
+    \u0026lt;title\u0026gt;Blog News: 69% of Smartphone Users Access Web Every Day\u0026lt;/title\u0026gt;
+    \u0026lt;style\u0026gt;
+      body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 2rem; }
+      h1 { color: #333; margin-bottom: 1rem; }
+      p { font-size: 1rem; line-height: 1.5; margin-bottom: 1rem; }
+      .data-container { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+      .data-container img { width: 80px; height: auto; border-radius: 5px; }
+      .data-container h2,
+      .data-container p { margin: 0; }
+      .data-container h2 { font-size: 1.2rem; color: #333; margin-right: 1rem; }
+      .data-container p { font-weight: bold; color: #777; margin-right: 1rem; }
+
+      @media (max-width: 768px) {
+        .data-container img,
+        .data-container h2,
+        .data-container p,
+        .data-container span { font-size: 0.8rem; }
+      }
+
+    </style\u0026gt;
+  \u0026lt;/head\u0026gt;
+
+  \u0026lt;body\u0026gt;
+
+    \u0026lt;h1\u0026gt;Blog News: 69% of Smartphone Users Access Web Every Day\u0026lt;/h1u0026gt;
+
+    \u0026lt;div class="data-container"\u0026gt;\u0026lt;img src="https://via.placeholder.com/80" alt="Stats Image"\u0026gt;\u0026lt;div class="data-info"\u0026gt;\u0026lt;h2\u0026gt;Smartphone Users Access Web Daily\u0026lt;/h2\u0026gt;\u0026lt;p\u0026gt;With the increasing use of smartphones, it's no surprise that more and more people are accessing the web every day. In fact, a recent study found that over half of smartphone users (69%) access the web on a daily basis. This trend is likely to continue as technology advances and more people become reliant on their devices for information and entertainment. As a result, businesses looking to reach this audience should consider optimizing their websites for mobile devices and developing strategies to engage with this growing market.&lt;/pu0026gt;\u0026lt;/div\u0026gt;u0026lt;/div\u0026gt;\u0026lt;/div\u0026gt;
+
+  \u0026lt;script\u0026gt;
+    document.addEventListener('DOMContentLoaded', function() {
+      var dataContainer = document.querySelectorAll('.data-container');
+      var dataInfo = document.querySelectorAll('.data-info');
+      var mobileDataContainer = document.querySelectorAll('.mobile-data');
+      var mobileDataInfo = document.querySelectorAll('.mobile-data-info');
+
+      var mobileScreenWidth = window.innerWidth <= 768px ? true : false;
+
+      var updateDataContainer = function() {
+        var totalPercentage = dataContainer[1].dataset.percentage * dataContainer[1].children[1].textContent * dataContainer[1].children[1].children[1].textContent * dataContainer[1].children[1].children[3].textContent * dataContainer[1].children[1].children[5].textContent + (mobileScreenWidth && dataContainer[3].dataset.percentage * dataContainer[3].children[1].textContent * dataContainer[3].children[1].children[1].textContent * dataContainer[3].children[1].children[3].textContent * dataContainer[3].children[1].children[5].textContent);
+        dataContainer[1].children[1].textContent = totalPercentage.toFixed(4);
+        dataContainer[1].children[5].textContent = (totalPercentage > 1 && totalPercentage <=1.99) || (totalPercentage > 9 && totalPercentage <=9.99) || (totalPercentage > 99 && totalPercentage <=99.99) || (totalPercentage > 999 && totalPercentage <=999.99) || (totalPercentage > 9999 && totalPercentage <=9999.99) || (totalPercentage > 99999 && totalPercentage <=99999.99) || (totalPercentage > 999999 && totalPercentage <=999999.99) || (totalPercentage > 9999999 && totalPercentage <=9999999.99) || (totalPercentage > 1e+5 && totalPercentage <=1e+5) || (totalPercentage > 1e+5 && totalPercentage <=1e+5) || (totalPercentage > 1e+5 && totalPercentage <=1e+5) || (totalPercentage > 1e+5 && totalPercentage <=1e+5) || (totalPercentage > 1e+5 && totalPercentage <=1e+5) || (totalPercentage > 1e+5 && totalPercentage <=1e+5) || (totalPercentage > 1e+5 && totalPercentage <=1e+5) || (totalPercentage > 'NaN' && totalPercentage <='NaN') || (totalPercentage === Infinity && totalPercentage !== Infinity) || (totalPercentage === 'Infinity' && totalPercentage !== 'Infinity') || (totalPercentage === 'NaN' && totalPercentage !== 'NaN') || (totalPercentage === 'undefined' && totalPercentage !== 'undefined') || (totalPercentage === 'null' && totalPercentage !== 'null') || (totalPercentage === 'true' && totalPercentage !== 'false');
+        dataContainer[1].children[7].textContent = (totalPercentage >= 'NaN') || (totalPercentage === Infinity) || (totalPercentage === 'Infinity') || (totalPercentage === 'NaN') || (totalPercentage === 'undefined') || (totalPercentage === 'null') || (totalPercentage ==)= true || (totalPercentage === false);
+      };
+
+      var updateDataInfo = function() {
+        var totalTextLength = dataContainer[3].dataset.textLength * dataInfo[3].textContent * dataInfo[3].children[1].textContent * dataInfo[3].children[1].children[1].textContent * dataInfo[3].children[1].children[3].textContent * dataInfo[3].children[1].children[5].textContent + (mobileScreenWidth && dataContainer[5].dataset.textLength * dataInfo[5].textContent * dataInfo[5].children[1].textContent * dataInfo[5].children[1].children[1].textContent * dataInfo[5].children[1].children[3].textContent * dataInfo[5].children[1].children[5].textContent);
+        dataInfo[3].textContent = totalTextLength.toFixed(4);
+        dataInfo[5].textContent = (totalTextLength >= 'NaN') || (totalTextLength === Infinity) || (totalTextLength === 'Infinity') || (totalTextLength === 'NaN') || (totalTextLength === 'undefined') || (totalTextLength === 'null') || (totalTextLength === true) || (totalTextLength === false); // Add your custom logic here if needed!

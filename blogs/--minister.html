@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the Role of a Minister</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .info-section {
+            background-color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .info-section:hover {
+            background-color: #ecf0f1;
+            cursor: pointer;
+        }
+        .more-info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #dfe6e9;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>The Role of a Minister in Government</h1>
+
+<div class="info-section" onclick="toggleInfo('info1')">
+    <h2>What is a Minister?</h2>
+    <p>A minister is a high-ranking official in the government, typically in charge of a specific department.</p>
+    <div id="info1" class="more-info">Ministers are responsible for implementing government policies, managing their departments, and facilitating communication between the government and the public.</div>
+</div>
+
+<div class="info-section" onclick="toggleInfo('info2')">
+    <h2>Types of Ministers</h2>
+    <p>There are various types of ministers such as cabinet ministers, junior ministers, and state ministers.</p>
+    <div id="info2" class="more-info">Each type has different responsibilities and levels of authority within the government structure.</div>
+</div>
+
+<div class="info-section" onclick="toggleInfo('info3')">
+    <h2>Responsibilities of Ministers</h2>
+    <p>Ministers manage government departments and implement policies.</p>
+    <div id="info3" class="more-info">Their responsibilities include budget management, public service delivery, and representing their department in the legislature.</div>
+</div>
+
+<script>
+    function toggleInfo(infoId) {
+        var info = document.getElementById(infoId);
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

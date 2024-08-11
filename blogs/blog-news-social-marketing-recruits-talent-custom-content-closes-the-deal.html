@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News on Social Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 10px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: Social Marketing Insights</h1>
+</header>
+
+<section>
+    <h2>Recruiting Talent</h2>
+    <p>Effective social marketing strategies can help businesses attract top talent.</p>
+    <button onclick="toggleContent('recruiting')">Learn More</button>
+    <div id="recruiting" class="toggle-content">
+        <p>Utilizing social media platforms allows companies to showcase their culture and values, making them more appealing to potential recruits.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Custom Content Creation</h2>
+    <p>Creating tailored content is essential for engaging your audience.</p>
+    <button onclick="toggleContent('customContent')">Learn More</button>
+    <div id="customContent" class="toggle-content">
+        <p>Custom content that resonates with your target audience can significantly enhance brand loyalty and customer engagement.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Closing the Deal</h2>
+    <p>Social marketing can effectively drive conversions and close deals.</p>
+    <button onclick="toggleContent('closingDeal')">Learn More</button>
+    <div id="closingDeal" class="toggle-content">
+        <p>By leveraging social proof and targeted advertising, businesses can increase their chances of closing sales.</p>
+    </div>
+</section>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

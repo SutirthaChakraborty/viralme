@@ -1,0 +1,110 @@
+#### HTML Code with CSS and JS for Blog News on Four Main Types of Mobile Websites
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Blog News: Four Main Types of Mobile Websites</title>
+</head>
+<body>
+  <header>
+    <h1>Blog News</h1>
+    <nav>
+      <ul>
+        <li><a href="#responsive">Responsive Websites</a></li>
+        <li><a href="#mobile">Mobile Websites</a></li>
+        <li><a href="#dynamic">Dynamic Serving</a></li>
+        <li><a href="#amp">AMP (Accelerated Mobile Pages)</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="responsive">
+      <h2>Responsive Websites</h2>
+      <p>Responsive websites are designed to adapt to various screen sizes, providing an optimal viewing experience on all devices.</p>
+    </section>
+    <section id="mobile">
+      <h2>Mobile Websites</h2>
+      <p>Mobile websites are specifically tailored to fit small device screens, ensuring easy navigation and readability.</p>
+    </section>
+    <section id="dynamic">
+      <h2>Dynamic Serving</h2>
+      <p>Dynamic serving involves serving different HTML and CSS on the same URL depending on the user's device, ensuring a tailored experience.</p>
+    </section>
+    <section id="amp">
+      <h2>AMP (Accelerated Mobile Pages)</h2>
+      <p>AMP is a framework for creating fast-loading mobile web pages, optimized for better performance and user experience.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Blog News</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+#### CSS (styles.css)
+css
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Style navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Style main content sections */
+main section {
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: #f4f4f4;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+#### JavaScript (script.js)
+javascript
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+
+This HTML code, along with the associated CSS and JavaScript, creates a blog news page discussing the four main types of mobile websites: responsive websites, mobile websites, dynamic serving, and AMP (Accelerated Mobile Pages). The page includes a header with navigation, main content sections for each type of website, and a footer. The CSS provides styling for the layout, while the JavaScript enables smooth scrolling for anchor links within the page. **The code is designed to be responsive and interactive, providing an engaging user experience for readers interested in mobile website types**.

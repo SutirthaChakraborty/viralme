@@ -1,0 +1,60 @@
+Sure, below is the HTML code with inline CSS and JavaScript to explain the topic "Three Free Analytics Tools to Find Your Most Valuable Content Pages" in an interactive way:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Three Free Analytics Tools</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .tool {
+            border: 2px solid #007bff;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .tool:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog Legacy: Three Free Analytics Tools</h1>
+    <p>Discover the power of analytics with these three free tools to uncover your most valuable content pages.</p>
+    <div class="tool" onclick="showToolInfo('Google Analytics')">Google Analytics</div>
+    <div class="tool" onclick="showToolInfo('Matomo')">Matomo</div>
+    <div class="tool" onclick="showToolInfo('Clicky')">Clicky</div>
+    <div id="toolInfo"></div>
+    <script>
+        function showToolInfo(toolName) {
+            let info = '';
+            if (toolName === 'Google Analytics') {
+                info = 'Google Analytics provides in-depth insights into user behavior and content performance.';
+            } else if (toolName === 'Matomo') {
+                info = 'Matomo offers powerful analytics and full control over your data privacy.';
+            } else if (toolName === 'Clicky') {
+                info = 'Clicky delivers real-time analytics with detailed heatmaps and visitor tracking.';
+            }
+            document.getElementById('toolInfo').innerText = info;
+        }
+    </script>
+</body>
+</html>
+

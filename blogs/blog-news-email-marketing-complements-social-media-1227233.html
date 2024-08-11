@@ -1,0 +1,84 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog News, Email Marketing, Complements, & Social Media Tips: Enhancing Reach">
+    <meta name="keywords" content="blog, news, email marketing, social media, complements, reach, strategy, interactive, css, js">
+    <title> Blog & Marketing Hub </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: underline;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        // Include any relevant interactive CSS or JS, e.g. lightbox effect
+        function showPopUp() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function hidePopUp() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        document.querySelectorAll('.popup-toggle').forEach(toggle => {
+            toggle.addEventListener('click', showPopUp);
+            toggle.onclick = function () {
+                hidePopUp();
+            };
+        });
+    </script>
+</head>
+<body

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy SEO Tips: Finding Money Keyword Phrases with Excel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 3px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Legacy SEO Tip: Finding Your Money Keyword Phrases with Excel</h1>
+        <h2>Step-by-Step Guide</h2>
+        <p>Learn how to use Excel to uncover valuable keyword phrases that can drive traffic to your blog.</p>
+        
+        <h2>Keyword Phrases to Consider</h2>
+        <div class="keyword">SEO Optimization</div>
+        <div class="keyword">Keyword Research</div>
+        <div class="keyword">Content Marketing</div>
+        <div class="keyword">Search Volume</div>
+        <div class="keyword">Long-tail Keywords</div>
+        
+        <h2>Interactive Keyword Search</h2>
+        <input type="text" id="keywordInput" placeholder="Type a keyword phrase...">
+        <button onclick="findKeywords()">Find Related Phrases</button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function findKeywords() {
+            const keywords = [
+                'Best blogging strategies',
+                'How to optimize blog posts',
+                'Effective keyword targeting',
+                'Boost blog traffic with SEO',
+                'Excel for keyword analysis',
+                'Finding high-ranking keywords'
+            ];
+
+            const input = document.getElementById('keywordInput').value.toLowerCase();
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '';
+
+            const filteredKeywords = keywords.filter(keyword => keyword.toLowerCase().includes(input));
+            if(filteredKeywords.length > 0) {
+                resultDiv.innerHTML = '<h3>Related Keyword Phrases:</h3>' + filteredKeywords.map(k => '<div class="keyword">' + k + '</div>').join('');
+            } else {
+                resultDiv.innerHTML = '<h3>No related phrases found.</h3>';
+            }
+        }
+    </script>
+</body>
+</html>

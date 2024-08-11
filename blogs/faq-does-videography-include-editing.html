@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ: Does Videography Include Editing?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq-container {
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            cursor: pointer;
+            border: 1px solid #007BFF;
+            border-radius: 4px;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+        .faq-item:hover {
+            background-color: #e7f1ff;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>FAQ: Does Videography Include Editing?</h1>
+        <div class="faq-item" onclick="toggleAnswer('answer1')">
+            <strong>Q: Does videography include editing?</strong>
+            <div class="answer" id="answer1">
+                <p>A: Yes, videography typically includes editing as an essential part of the video production process. 
+                While videography focuses on the actual filming and capturing visual content, editing brings the footage together to create a cohesive story. 
+                This includes cutting, coloring, and adding effects to enhance the final product.</p>
+            </div>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer('answer2')">
+            <strong>Q: What are the key components of videography?</strong>
+            <div class="answer" id="answer2">
+                <p>A: Key components of videography include camera operation, lighting setup, sound recording, and post-production editing.
+                Each element plays a crucial role in the overall quality and impact of the video.</p>
+            </div>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer('answer3')">
+            <strong>Q: How important is editing in videography?</strong>
+            <div class="answer" id="answer3">
+                <p>A: Editing is critically important in videography as it shapes the narrative, improves pacing, and enhances visual appeal.
+                Effective editing can turn raw footage into a polished and engaging final product.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleAnswer(answerId) {
+            var answer = document.getElementById(answerId);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

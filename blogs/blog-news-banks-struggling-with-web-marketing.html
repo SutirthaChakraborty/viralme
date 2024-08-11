@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Blog: Struggling with Web Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .accordion {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #007BFF;
+            background-color: #e7f1ff;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .panel {
+            padding: 0 10px;
+            display: none;
+            overflow: hidden;
+            background: #f1f1f1;
+            margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Banking Blog: Challenges in Web Marketing</h1>
+        <p>The modern banking industry faces significant challenges in adapting to digital marketing strategies. Many banks struggle with search engine optimization (SEO), social media engagement, and effectively reaching younger customers.</p>
+        
+        <a href="#learn-more" class="btn">Learn More</a>
+
+        <div id="learn-more">
+            <h2>Key Issues Banks Face</h2>
+            <button class="accordion">1. Ineffective SEO Strategies</button>
+            <div class="panel">
+                <p>Many banks fail to optimize their websites for search engines, losing visibility in search results that could attract new customers.</p>
+            </div>
+
+            <button class="accordion">2. Low Engagement on Social Media</button>
+            <div class="panel">
+                <p>Despite having profiles, banks often struggle to create engaging content that resonates with their audience, leading to low interaction rates.</p>
+            </div>
+
+            <button class="accordion">3. Outdated Marketing Techniques</button>
+            <div class="panel">
+                <p>Traditional marketing strategies do not effectively reach tech-savvy consumers who prefer online channels for banking needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            };
+        }
+    </script>
+
+</body>
+</html>

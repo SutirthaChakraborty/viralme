@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Case Study - Social Marketing Boost</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .statistics {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .stat {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .stat:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Case Study: Daniel's Trading</h1>
+        <p>Achieving a 65% Lift in Social Conversions</p>
+    </header>
+    <div class="container">
+        <h2>Overview</h2>
+        <p>Discover how an innovative social marketing strategy led to a remarkable 65% increase in social conversions for Daniel's Trading.</p>
+        
+        <div class="statistics">
+            <div class="stat">
+                <h3>65%</h3>
+                <p>Increase in Social Conversions</p>
+            </div>
+            <div class="stat">
+                <h3>50%</h3>
+                <p>Growth in Audience Engagement</p>
+            </div>
+            <div class="stat">
+                <h3>30%</h3>
+                <p>Improvement in Lead Generation</p>
+            </div>
+        </div>
+        
+        <button id="infoButton">Learn More</button>
+        <div id="info">
+            <h2>Key Strategies</h2>
+            <ul>
+                <li>Targeted Social Media Ads</li>
+                <li>Engaging Visual Content</li>
+                <li>Influencer Collaborations</li>
+                <li>Regular Engagement with Followers</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('infoButton').addEventListener('click', function() {
+            const infoSection = document.getElementById('info');
+            infoSection.style.display = infoSection.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

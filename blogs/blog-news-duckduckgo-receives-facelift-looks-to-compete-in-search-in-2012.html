@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DuckDuckGo receives a facelift in 2012 to enhance its search capabilities and compete more effectively with major search engines.">
+    <title>DuckDuckGo Facelift | Search Engine News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .keywords {
+            font-weight: bold;
+            color: #0078d4;
+        }
+        button {
+            background: #0078d4;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DuckDuckGo Facelift: Competing in 2012</h1>
+    </header>
+    <article>
+        <h2>Introduction</h2>
+        <p>In 2012, <span class="keywords">DuckDuckGo</span> underwent a significant redesign aimed at enhancing user experience and expanding its market share against established search giants.</p>
+        <button id="showMore">Read More</button>
+        <div id="moreInfo" style="display:none;">
+            <h3>What Changed?</h3>
+            <p>The new interface offered improved search algorithms, streamlined navigation, and greater privacy features, emphasizing the platform's commitment to user anonymity.</p>
+            <h3>Impact on Search Engine Market</h3>
+            <p>This bold move positioned DuckDuckGo as a strong alternative, appealing to users seeking a privacy-centric search engine amidst growing concerns over data tracking.</p>
+        </div>
+    </article>
+    <script>
+        document.getElementById('showMore').onclick = function() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+                this.innerText = "Read Less";
+            } else {
+                moreInfo.style.display = "none";
+                this.innerText = "Read More";
+            }
+        };
+    </script>
+</body>
+</html>

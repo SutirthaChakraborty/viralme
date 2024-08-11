@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Startpage | Alternative Search Engines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #218838;
+        }
+        #news {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exploring Alternative Search Engines</h1>
+</header>
+
+<div class="content">
+    <h2>Welcome to Your Go-To Blog News Startpage!</h2>
+    <p>Stay updated with the latest trends and insights about alternative search engines like <strong>Ixquick</strong>. Discover how these platforms prioritize privacy and offer unique features compared to mainstream search engines.</p>
+    <button class="button" onclick="toggleNews()">Show Latest News</button>
+    
+    <div id="news">
+        <h3>Latest Updates on Alternative Search Engines:</h3>
+        <ul>
+            <li><strong>Ixquick:</strong> A search engine focused on privacy.</li>
+            <li><strong>DuckDuckGo:</strong> Another popular privacy-oriented engine.</li>
+            <li><strong>Qwant:</strong> A European search engine that doesn’t track users.</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleNews() {
+        var news = document.getElementById("news");
+        if (news.style.display === "none" || news.style.display === "") {
+            news.style.display = "block";
+        } else {
+            news.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

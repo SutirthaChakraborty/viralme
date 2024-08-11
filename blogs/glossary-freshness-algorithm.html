@@ -1,0 +1,81 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary freshness algorithm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .glossary {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+            max-width: 800px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .def {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .example {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .button-container {
+            text-align: center;
+        }
+        
+        .button {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <script>
+        function showExplanation() {
+            var explanation = document.getElementById("explanation");
+            if (explanation.style.display === "none") {
+                explanation.style.display = "block";
+            } else {
+                explanation.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Glossary: Freshness Algorithm</h1>
+    
+    <div class="glossary">
+        <h2>Definition</h2>
+        <p class="def">Freshness algorithm is a technique used in various context like search engines, social media, and caching systems to determine the relevance and recency of content. It

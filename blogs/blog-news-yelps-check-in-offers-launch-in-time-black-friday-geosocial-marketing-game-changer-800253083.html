@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Yelp Check-In Offers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .offer-list {
+            list-style: none;
+            padding: 0;
+        }
+        .offer-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e0f7fa;
+            border-radius: 5px;
+        }
+        .more-info {
+            cursor: pointer;
+            color: #0073e6;
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleInfo(event) {
+            const info = event.target.nextElementSibling;
+            info.style.display = info.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Big News: Yelp Check-In Offers!</h1>
+    </header>
+    <div class="container">
+        <h2>Launch Your Offers in Time for Black Friday!</h2>
+        <p>Learn how the power of geosocial marketing can transform your business this holiday season. Unleash the potential of Yelp Check-In offers to attract more customers and increase foot traffic.</p>
+        <ul class="offer-list">
+            <li>
+                <span class="more-info" onclick="toggleInfo(event)">Exclusive Discounts</span>
+                <div style="display: none;">Offer exclusive discounts to customers who check in!</div>
+            </li>
+            <li>
+                <span class="more-info" onclick="toggleInfo(event)">Enhanced Visibility</span>
+                <div style="display: none;">Boost your visibility on Yelp and attract more visitors!</div>
+            </li>
+            <li>
+                <span class="more-info" onclick="toggleInfo(event)">Engagement Boost</span>
+                <div style="display: none;">Engage your audience with social media integration!</div>
+            </li>
+        </ul>
+        <p>Don't miss out on this game-changing opportunity. Sign up now and watch your business thrive this Black Friday!</p>
+        <p>Contact us: <strong>800-253-083</strong></p>
+    </div>
+</body>
+</html>

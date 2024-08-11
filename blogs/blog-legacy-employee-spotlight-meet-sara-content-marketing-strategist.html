@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Sara, our Content Marketing Strategist. Discover her journey at Blog Legacy and her impactful role in driving content strategy.">
+    <title>Employee Spotlight: Meet Sara, Content Marketing Strategist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .profile h2 {
+            margin: 0;
+        }
+        button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #info {
+            display: none;
+            padding: 15px;
+            background: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Employee Spotlight</h1>
+        <div class="profile">
+            <img src="sara-profile.jpg" alt="Sara's Profile Picture">
+            <div>
+                <h2>Meet Sara</h2>
+                <p>Our talented Content Marketing Strategist at Blog Legacy.</p>
+            </div>
+        </div>
+        <button id="toggleInfo">Show More About Sara</button>
+        <div id="info">
+            <p>Sara has been with Blog Legacy for over 5 years, contributing to our content strategy and driving engagement through innovative campaigns. Her expertise in SEO, storytelling, and audience engagement has played a key role in elevating our brand's presence.</p>
+            <p>Fun fact: Sara is an avid traveler and often draws inspiration from her adventures in her content.</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggleInfo').addEventListener('click', function() {
+            var info = document.getElementById('info');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

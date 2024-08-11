@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the latest trends in video marketing campaigns, YouTube features, and blog news that are driving engagement across platforms.">
+    <title>Video Marketing Campaigns on the Rise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0073e6;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .video-container {
+            display: none;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .video-container video {
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Marketing on the Rise</h1>
+    <p>Stay updated with the latest blog news and YouTube feature highlights.</p>
+</header>
+
+<article>
+    <h2>The New Wave of Video Marketing Campaigns</h2>
+    <p>Video marketing campaigns are becoming increasingly popular, utilizing engaging visuals and informative content to capture audiences' attention.</p>
+    <p>With the rise of platforms like YouTube, marketers are leveraging these channels to enhance brand visibility and drive conversions.</p>
+    <button id="play-video">Watch Our Highlight Reel</button>
+    <div class="video-container" id="video-container">
+        <video controls>
+            <source src="highlight-reel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</article>
+
+<script>
+    document.getElementById('play-video').addEventListener('click', function() {
+        const videoContainer = document.getElementById('video-container');
+        videoContainer.style.display = 'flex';
+    });
+</script>
+
+</body>
+</html>

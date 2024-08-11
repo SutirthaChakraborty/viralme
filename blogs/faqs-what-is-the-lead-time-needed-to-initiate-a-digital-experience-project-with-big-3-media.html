@@ -1,0 +1,69 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQs: Digital Experience Project with Big 3 Media</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .faq-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+  }
+  .faq-item {
+    background-color: #fff;
+    padding: 10px;
+    border-top: 1px solid #e7e7e7;
+    cursor: pointer;
+  }
+  .faq-item.active {
+    background-color: #f3f3f3;
+  }
+  .faq-content {
+    padding: 10px 0;
+    display: none;
+  }
+  .faq-content p {
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="faq-container">
+  <h2>FAQs: Digital Experience Project with Big 3 Media</h2>
+  <div class="faq-item" onclick="toggle('faq1')">
+    <h2>What is the typical lead time to initiate a digital experience project with Big 3 Media?</h2>
+  </div>
+  <div id="faq1" class="faq-content">
+    <p>The lead time for initiating a digital experience project with Big 3 Media can vary depending on several factors, including project scope, complexity, and the current workload of the team. Generally, it might take anywhere from 1 to 4 weeks to establish the initial project setup, including project planning, team allocation, and initial discussions. However, it's important to note that this is a rough estimate, and the actual timeline can be influenced by specific project requirements and internal project management processes.</p>
+  </div>
+</div>
+<script>
+  function toggle(id) {
+    var faqItem = document.getElementsByClassName("faq-item");
+    var faqContent = document.getElementById(id);
+    
+    for (var i = 0; i < faqItem.length; i++) {
+      faqItem[i].classList.remove("active");
+      faqContent[i].style.display = "none";
+    }
+    
+    faqItem.classList.add("active");
+    faqContent.style.display = "block";
+  }
+</script>
+</body>
+</html>

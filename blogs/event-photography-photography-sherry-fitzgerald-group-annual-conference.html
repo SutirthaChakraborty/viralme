@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Capture unforgettable moments at the Sherry Fitzgerald Group Annual Conference through stunning event photography.">
+    <title>Event Photography - Sherry Fitzgerald Group Annual Conference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 1rem;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 1rem;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .photo {
+            flex: 1 1 calc(33.333% - 15px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Photography</h1>
+        <h2>Sherry Fitzgerald Group Annual Conference</h2>
+    </header>
+    <main>
+        <p>Join us at the Sherry Fitzgerald Group Annual Conference where we focus on showcasing the best in event photography. Our professional photographers capture every moment, ensuring that you can relive the excitement of the event.</p>
+        
+        <div class="gallery">
+            <div class="photo" onclick="displayPhoto('photo1.jpg')">
+                <img src="photo1_thumb.jpg" alt="Sherry Fitzgerald Group Event">
+            </div>
+            <div class="photo" onclick="displayPhoto('photo2.jpg')">
+                <img src="photo2_thumb.jpg" alt="Networking Session">
+            </div>
+            <div class="photo" onclick="displayPhoto('photo3.jpg')">
+                <img src="photo3_thumb.jpg" alt="Keynote Speaker">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Sherry Fitzgerald Group. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        function displayPhoto(photo) {
+            const imgWindow = window.open("", "Image", "width=800,height=600");
+            imgWindow.document.write(`<html><head><title>Event Photo</title></head><body style="margin:0;">`);
+            imgWindow.document.write(`<img src="${photo}" style="width:100%; height:auto; display:block; margin:0;"/>`);
+            imgWindow.document.write(`</body></html>`);
+            imgWindow.document.close();
+        }
+    </script>
+</body>
+</html>

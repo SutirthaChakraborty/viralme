@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Analytics: Keyword Ranking on Google</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword-form {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .results {
+            margin-top: 20px;
+            background-color: #e2e2e2;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Blog Analytics: Find Your Keyword Ranking on Google</h1>
+        <p>Understanding your keyword ranking is crucial for optimizing your blog's SEO. Here’s how you can find your ranking:</p>
+        <ol>
+            <li>Use tools like Google Search Console for insights.</li>
+            <li>Check rank tracking tools such as SEMrush or Ahrefs.</li>
+            <li>Perform Google searches using incognito mode for unbiased results.</li>
+        </ol>
+        <div class="keyword-form">
+            <input type="text" id="keywordInput" placeholder="Enter your keyword">
+            <button onclick="findRanking()">Find Ranking</button>
+        </div>
+        <div class="results" id="resultsContainer" style="display: none;">
+            <h2>Your Keyword Ranking:</h2>
+            <p id="rankingResult"></p>
+        </div>
+    </div>
+
+    <script>
+        function findRanking() {
+            const keyword = document.getElementById('keywordInput').value;
+            const dummyRankings = {
+                'SEO tips': 'Ranked 5th',
+                'Blogging strategies': 'Ranked 3rd',
+                'Keyword research': 'Ranked 10th'
+            };
+
+            const ranking = dummyRankings[keyword] || 'Keyword not found in rankings.';
+            document.getElementById('rankingResult').textContent = ranking;
+            document.getElementById('resultsContainer').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

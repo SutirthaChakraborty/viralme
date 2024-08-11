@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Marketing News Roundup - November 5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .news-item {
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+            transition: background-color 0.3s ease;
+        }
+        .news-item:hover {
+            background-color: #f0f8ff;
+        }
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            color: #007BFF;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+        .read-more:hover {
+            color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Internet Marketing News Roundup - November 5</h1>
+    </header>
+    <div class="container">
+        <div class="news-item" id="news1" onclick="toggleDetails('details1')">
+            <h2>Latest SEO Trends</h2>
+            <p>Discover the most effective SEO strategies for 2023 that can boost your site's visibility and ranking.</p>
+            <div id="details1" style="display:none;">
+                <p>Learn about the importance of E-A-T (Expertise, Authoritativeness, Trustworthiness) in SEO and how to leverage it effectively.</p>
+                <a class="read-more" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="news-item" id="news2" onclick="toggleDetails('details2')">
+            <h2>Social Media Marketing Updates</h2>
+            <p>Stay ahead with the latest changes in social media algorithms that affect your marketing strategy.</p>
+            <div id="details2" style="display:none;">
+                <p>Find out how to adapt your content strategy to maximize engagement on platforms like Facebook and Instagram.</p>
+                <a class="read-more" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="news-item" id="news3" onclick="toggleDetails('details3')">
+            <h2>Email Marketing Best Practices</h2>
+            <p>Explore the essential tips for creating successful email campaigns that convert.</p>
+            <div id="details3" style="display:none;">
+                <p>Understand the importance of segmentation and personalization in email marketing to improve your open and click rates.</p>
+                <a class="read-more" href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Internet Marketing News Roundup</p>
+    </footer>
+    <script>
+        function toggleDetails(detailsId) {
+            var details = document.getElementById(detailsId);
+            if (details.style.display === "none") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

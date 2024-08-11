@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Grafton Street, Dublin's vibrant shopping and cultural hub. Discover street performers, shops, and cafes.">
+    <title>Grafton Street - Dublin's Iconic Shopping Destination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to Grafton Street</h1>
+        <p>Grafton Street is one of Dublin's most famous shopping streets, known for its vibrant atmosphere, street performers, and a wide array of shops and cafes. It's a must-visit destination for both locals and tourists.</p>
+        <div class="interactive">
+            <h2>Discover Grafton Street</h2>
+            <button onclick="showInfo()">Click to Learn More!</button>
+            <p id="info" style="display:none;">Grafton Street is renowned for its high-end shops, including Brown Thomas and various boutiques. The street is also famous for its lively street performances, making it a cultural hotspot in Dublin.</p>
+        </div>
+    </div>
+    <script>
+        function showInfo() {
+            var info = document.getElementById("info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

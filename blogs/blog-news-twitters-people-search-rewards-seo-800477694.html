@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News & Twitter Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+        }
+        .keyword {
+            font-weight: bold;
+            color: #0077cc;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .search-box {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Stay Updated with Blog News & Social Media Insights</h1>
+    </header>
+    <section>
+        <p>Explore the latest <span class="keyword">news</span> from your favorite blogs, social media platforms, and more. Utilize Twitter to find trending topics and engage with insightful content!</p>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for Twitter users or news..." />
+            <button class="btn" onclick="searchContent()">Search</button>
+        </div>
+        <p>Incorporate <span class="keyword">SEO</span> strategies to improve your content visibility and drive organic traffic. Discover <span class="keyword">rewards</span> for active participation and engagement!</p>
+        <p>Connect with different <span class="keyword">people</span> and discover new opportunities across various platforms.</p>
+    </section>
+    <script>
+        function searchContent() {
+            const query = document.getElementById("searchInput").value;
+            if(query) {
+                alert("Searching for: " + query);
+            } else {
+                alert("Please enter a search term.");
+            }
+        }
+    </script>
+</body>
+</html>

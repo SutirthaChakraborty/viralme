@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the top graphic design trends for 2016 that enhance marketing and are usable on mobile and accessible across all platforms.">
+    <title>Top Graphic Design Trends for 2016</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .trend {
+            margin: 15px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .trend:hover {
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Top Graphic Design Trends for 2016</h1>
+</header>
+
+<article>
+    <h2>Trends Overview</h2>
+    <p>In 2016, marketing strategies are increasingly reliant on stunning visuals that enhance user engagement. Here are the top graphic design trends that emphasize usability on mobile and accessibility.</p>
+
+    <div class="trend" onclick="showDetail('minimalism')">
+        <h3>1. Minimalism</h3>
+        <p>Clean layouts and simple typography dominate design this year.</p>
+    </div>
+    
+    <div class="trend" onclick="showDetail('bold_colors')">
+        <h3>2. Bold Colors</h3>
+        <p>Bright, eye-catching colors capture attention and enhance branding.</p>
+    </div>
+
+    <div class="trend" onclick="showDetail('responsive_design')">
+        <h3>3. Responsive Design</h3>
+        <p>Designs adapt seamlessly across devices, ensuring better user experience.</p>
+    </div>
+
+    <div class="trend" onclick="showDetail('accessibility')">
+        <h3>4. Accessibility</h3>
+        <p>Focusing on inclusive design that caters to all users.</p>
+    </div>
+
+    <div id="detail" style="margin-top: 20px;"></div>
+</article>
+
+<script>
+    function showDetail(trend) {
+        let detailText = "";
+
+        switch(trend) {
+            case 'minimalism':
+                detailText = "<h2>Minimalism</h2><p>Focusing on essential elements creates clarity and emphasizes the message, making it suitable for various mobile platforms.</p>";
+                break;
+            case 'bold_colors':
+                detailText = "<h2>Bold Colors</h2><p>Using strong color schemes helps in brand recognition, attracting attention instantly, especially on mobile devices.</p>";
+                break;
+            case 'responsive_design':
+                detailText = "<h2>Responsive Design</h2><p>Designs that look great on any screen size improve accessibility, ensuring users have a consistent experience.</p>";
+                break;
+            case 'accessibility':
+                detailText = "<h2>Accessibility</h2><p>Designing with accessibility in mind allows those with disabilities to engage with content effectively, broadening the audience base.</p>";
+                break;
+        }
+        document.getElementById("detail").innerHTML = detailText;
+    }
+</script>
+
+</body>
+</html>

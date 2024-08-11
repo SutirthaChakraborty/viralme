@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the 2019 Blog Content Marketing Trends Report eBook with insights on strategies, best practices, and effective content marketing trends.">
+    <title>2019 Blog Content Marketing Trends Report eBook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: background 0.3s;
+            margin-top: 5px;
+        }
+        .accordion.active, .accordion:hover {
+            background: #0056b3;
+        }
+        .panel {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>2019 Blog Content Marketing Trends Report eBook</h1>
+</header>
+
+<section>
+    <h2>Unlock the Secrets of Content Marketing</h2>
+    <p>Discover the latest <span class="keyword">content marketing trends</span> with our comprehensive <span class="keyword">2019 trends report eBook</span>. Enhance your marketing strategies with insights on <span class="keyword">SEO tactics</span>, <span class="keyword">social media integrations</span>, and <span class="keyword">engaging storytelling</span>.</p>
+    
+    <button class="accordion">Content Marketing Strategies</button>
+    <div class="panel">
+        <p>Learn about the effective <span class="keyword">content marketing strategies</span> that drive results. Focus on customer-centric content creation and data-driven decisions to boost engagement.</p>
+    </div>
+    
+    <button class="accordion">Best Practices for SEO</button>
+    <div class="panel">
+        <p>Implement <span class="keyword">best SEO practices</span> to ensure your content gets found. Understand keyword research, backlinking, and mobile optimization in this <span class="keyword">trends report</span>.</p>
+    </div>
+    
+    <button class="accordion">The Role of Social Media</button>
+    <div class="panel">
+        <p>Discover the importance of <span class="keyword">social media</span> in driving traffic to your blog. Explore platforms, timing, and sharing techniques that enhance reach and engagement.</p>
+    </div>
+
+    <button class="accordion">Interactive Content Types</button>
+    <div class="panel">
+        <p>Explore various <span class="keyword">interactive content types</span> that captivate users, including quizzes, polls, and infographics, making your content more shareable and impactful.</p>
+    </div>
+
+    <p><strong>Download the full eBook to delve deeper into these trends!</strong></p>
+</section>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

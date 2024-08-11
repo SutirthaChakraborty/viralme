@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Types of Commercial Video Productions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .faq-title {
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .faq-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .faq-title:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="faq-title">1. What is a Corporate Video?</div>
+            <div class="faq-content">
+                Corporate videos are created for businesses to promote their services or products. They help enhance corporate identity, showcase company culture, and build brand awareness.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title">2. What are Promotional Videos?</div>
+            <div class="faq-content">
+                Promotional videos aim to market a specific product or service. They are often short and designed to grab the viewer’s attention quickly.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title">3. What is Commercial Advertising?</div>
+            <div class="faq-content">
+                Commercial advertising videos are designed to sell a product or service. They can air on television, social media, or online platforms to reach a large audience.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title">4. What are Event Videos?</div>
+            <div class="faq-content">
+                Event videos capture live events, such as conferences, concerts, or weddings. They provide a record of the event for attendees and can be used for future promotions.
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title">5. What is Explainer Video?</div>
+            <div class="faq-content">
+                Explainer videos are short, engaging videos that explain a company’s core product or service. They often use animation and storytelling to simplify complex ideas.
+            </div>
+        </div>
+    </div>
+    <script>
+        const titles = document.querySelectorAll('.faq-title');
+        titles.forEach(title => {
+            title.addEventListener('click', () => {
+                const content = title.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

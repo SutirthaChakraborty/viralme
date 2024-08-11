@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Google Places Introduces iPhone App with Hotpot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4285f4;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        button {
+            background-color: #34a853;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2c7a43;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest Blog News</h1>
+</header>
+
+<article>
+    <h2>Google Places Launches Hotpot iPhone App</h2>
+    <p>Google Places has officially introduced its latest iPhone application featuring Hotpot. This innovative app allows users to explore local businesses, share reviews, and receive personalized recommendations based on their preferences.</p>
+    
+    <button onclick="toggleDetails()">Learn More</button>
+    
+    <div id="additional-info" class="hidden">
+        <h3>Key Features:</h3>
+        <ul>
+            <li>Personalized Recommendations</li>
+            <li>Access to Local Reviews</li>
+            <li>User-Friendly Interface</li>
+            <li>Integration with Google Maps</li>
+        </ul>
+        <h3>Download Now!</h3>
+        <p>Experience the best of local dining, entertainment, and more with the new Google Hotpot app on your iPhone.</p>
+    </div>
+</article>
+
+<script>
+    function toggleDetails() {
+        var details = document.getElementById('additional-info');
+        if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+        } else {
+            details.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

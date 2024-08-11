@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the top video production agencies in the United Kingdom in 2023. Get insights on the best companies offering video marketing, corporate video services, and creative production.">
+    <title>Top Video Production Agencies in the UK - 2023 Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        h1 {
+            color: #333;
+        }
+        .agency {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .agency:hover {
+            transform: scale(1.02);
+        }
+        .agency h2 {
+            color: #0066cc;
+        }
+        .toggle-info {
+            cursor: pointer;
+            color: #0066cc;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Top Video Production Agencies in the United Kingdom - 2023</h1>
+    <p>Discover the leading video production agencies in the UK, specializing in creative video content, corporate video services, and video marketing strategies. These agencies are known for their exceptional storytelling and high-quality production standards.</p>
+
+    <div class="agency">
+        <h2>Agency A</h2>
+        <p>Specializes in corporate videos and marketing campaigns.</p>
+        <span class="toggle-info">More Info</span>
+        <div class="details">
+            <p>Agency A has worked with top brands to create engaging video content that resonates with audiences.</p>
+        </div>
+    </div>
+
+    <div class="agency">
+        <h2>Agency B</h2>
+        <p>Renowned for creative storytelling and documentary production.</p>
+        <span class="toggle-info">More Info</span>
+        <div class="details">
+            <p>Agency B produces compelling documentaries that highlight impactful narratives.</p>
+        </div>
+    </div>
+
+    <div class="agency">
+        <h2>Agency C</h2>
+        <p>Expertise in promotional videos and social media content.</p>
+        <span class="toggle-info">More Info</span>
+        <div class="details">
+            <p>Agency C creates vibrant promotional videos tailored for social media platforms.</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-info').forEach(item => {
+            item.addEventListener('click', event => {
+                const details = event.target.nextElementSibling;
+                details.style.display = details.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary Crowdsourcing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .definition {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .definition__term {
+            font-weight: bold;
+        }
+        .definition__description {
+            margin-left: 20px;
+        }
+        .btn-explain {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-explain:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function explainTerm() {
+            var term = document.getElementById("term");
+            var description = document.getElementById("description-" + term.textContent.toLowerCase().replace(/ /g, '-'));
+            if (description.style.display === 'none') {
+                description.style.display = 'block';
+                term.classList.add('active');
+            } else {
+                description.style.display = 'none';
+                term.classList.remove('active');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Glossary of Crowdsourcing</h1>
+        <div class="glossary">
+            <!-- Glossary terms and descriptions -->
+            <div class="definition">
+                <p class="definition__term">1. <span id="term crowdourcing" class="definition__term" onclick="explainTerm()">Crowdsourcing</span></p>
+                <

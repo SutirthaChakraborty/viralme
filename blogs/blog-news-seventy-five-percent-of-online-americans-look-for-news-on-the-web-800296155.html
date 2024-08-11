@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Online News Consumption</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #444;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            background-color: #f0c0c0;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        #newsConsumption {
+            margin-top: 20px;
+        }
+        .bar {
+            transition: width 0.5s;
+            height: 20px;
+            background-color: #76c7c0;
+        }
+        .barContainer {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News</h1>
+        <p>Exploring Online News Consumption</p>
+    </header>
+    <div class="content">
+        <h2>Did You Know?</h2>
+        <p>Approximately <span class="keyword">75% of online Americans</span> actively seek news on the web. This statistic highlights the importance of digital news platforms and the shift in how people access information.</p>
+        <div id="newsConsumption">
+            <h3>News Consumption Visualization</h3>
+            <div class="barContainer">
+                <div class="bar" id="newsBar" style="width: 75%;"></div>
+            </div>
+            <p>75% of online Americans search for news online.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Blog News</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bar = document.getElementById('newsBar');
+            bar.addEventListener('mouseover', function() {
+                bar.style.backgroundColor = '#4caf50';
+            });
+            bar.addEventListener('mouseout', function() {
+                bar.style.backgroundColor = '#76c7c0';
+            });
+        });
+    </script>
+</body>
+</html>

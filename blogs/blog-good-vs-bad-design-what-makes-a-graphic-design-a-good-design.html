@@ -1,0 +1,92 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Blog post: Good vs. Bad Design - Understanding what makes a great graphic design">
+<title>Good vs Bad Design: A Comprehensive Guide</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article {
+  line-height: 1.6;
+}
+
+.good-design {
+  background: #f0f8ff;
+  border-left: 5px solid #337ab7;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.bad-design {
+  background: #fff8f8;
+  border-left: 5px solid #cb4b16;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+.diff {
+  color: #707070;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+ footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+</style>
+<script>
+window.onload = function() {
+  var goodDesigns = document.querySelectorAll('.good-design');
+  var badDesigns = document.querySelectorAll('.bad-design');
+  
+  function toggleExplanation() {
+    goodDesigns.forEach(design => design.classList.toggle('interactive'));
+    badDesigns.forEach(design => design.classList.toggle('interactive'));
+  }
+
+  document.getElementById('toggleButton').addEventListener('click', toggleExplanation);
+};
+</script>
+</head>
+<body>
+<header>
+<h1>Good vs Bad Design: A Journey Through Visual Perception</h1>
+</

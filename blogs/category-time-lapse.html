@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Lapse Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Discover Time Lapse Photography</h1>
+</header>
+
+<section>
+    <h2>What is Time Lapse?</h2>
+    <p>Time lapse photography is a technique that captures images at set intervals to record changes that take place slowly over time. It is used to accelerate time for events like sunset, flower blooming, or cityscapes.</p>
+</section>
+
+<section>
+    <h2>Benefits of Time Lapse</h2>
+    <ul>
+        <li>Captures the passage of time</li>
+        <li>Visual storytelling</li>
+        <li>Creates stunning visual effects</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Generate Your Own Time Lapse</h2>
+    <button onclick="generateTimeLapse()">Click to see a time lapse example</button>
+    <div id="timeLapseOutput"></div>
+</section>
+
+<script>
+    function generateTimeLapse() {
+        const output = document.getElementById('timeLapseOutput');
+        output.innerHTML = "<img src='https://via.placeholder.com/300x200.png?text=Time+Lapse' alt='Time Lapse Example' />";
+        setTimeout(() => {
+            output.innerHTML += "<p>The scene changes over time...</p>";
+        }, 2000);
+    }
+</script>
+
+</body>
+</html>

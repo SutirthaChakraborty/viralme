@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Photography by Sherry Fitzgerald</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 4px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conference Photography by Sherry Fitzgerald</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to Our Photography Services</h2>
+        <p>Capture the essence of your event with professional conference photography by industry expert Sherry Fitzgerald. Our lensmen specialize in:</p>
+        <ul>
+            <li>High-quality image capture</li>
+            <li>Dynamic event coverage</li>
+            <li>On-site editing and instant delivery</li>
+        </ul>
+        <button class="button" onclick="toggleGallery()">View Gallery</button>
+        <div class="gallery" id="gallery" style="display:none;">
+            <img src="image1.jpg" alt="Conference Photo 1">
+            <img src="image2.jpg" alt="Conference Photo 2">
+            <img src="image3.jpg" alt="Conference Photo 3">
+            <img src="image4.jpg" alt="Conference Photo 4">
+            <img src="image5.jpg" alt="Conference Photo 5">
+        </div>
+    </div>
+    <script>
+        function toggleGallery() {
+            const gallery = document.getElementById('gallery');
+            gallery.style.display = gallery.style.display === 'none' ? 'flex' : 'none';
+        }
+    </script>
+</body>
+</html>

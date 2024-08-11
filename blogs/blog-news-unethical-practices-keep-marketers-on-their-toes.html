@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated on unethical marketing practices. Discover how they impact the industry and keep marketers vigilant.">
+    <title>Blog: Unethical Marketing Practices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            background: #e2e2e2;
+            padding: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+        .reveal {
+            background-color: #e0f7fa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Unethical Marketing Practices</h1>
+    </header>
+    <div class="container">
+        <h2>Why Marketers Must Stay Vigilant</h2>
+        <p>Unethical practices in marketing can lead to consumer mistrust and damage brand reputation. Staying informed is key for effective and ethical marketing strategies.</p>
+        <div class="keyword" onclick="toggleDetails('keywords1')">Click to learn about <strong>deceptive advertising</strong></div>
+        <div id="keywords1" class="hidden">Deceptive advertising misleads consumers, often through false claims or exaggeration, impacting both customers and competitors.</div>
+        
+        <div class="keyword" onclick="toggleDetails('keywords2')">Click to learn about <strong>data privacy violations</strong></div>
+        <div id="keywords2" class="hidden">Data privacy violations involve mishandling consumer data, leading to legal penalties and loss of customer confidence.</div>
+        
+        <div class="keyword" onclick="toggleDetails('keywords3')">Click to learn about <strong>buying fake reviews</strong></div>
+        <div id="keywords3" class="hidden">Buying fake reviews undermines trust in authentic customer experiences and can result in severe backlash from consumers.</div>
+    </div>
+    
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                details.classList.add('reveal');
+            } else {
+                details.classList.add('hidden');
+                details.classList.remove('reveal');
+            }
+        }
+    </script>
+</body>
+</html>

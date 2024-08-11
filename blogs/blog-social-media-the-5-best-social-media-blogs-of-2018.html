@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Social Media Blogs of 2018</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0077cc;
+        }
+        .blog-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .blog-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .blog-item:hover {
+            transform: scale(1.02);
+        }
+        .blog-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .blog-description {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>The 5 Best Social Media Blogs of 2018</h1>
+    <ul class="blog-list">
+        <li class="blog-item" onclick="showDetails('blog1')">
+            <h2 class="blog-title">Buffer Blog</h2>
+            <p class="blog-description">Insights on social media marketing and engaging content strategies.</p>
+        </li>
+        <li class="blog-item" onclick="showDetails('blog2')">
+            <h2 class="blog-title">Social Media Examiner</h2>
+            <p class="blog-description">The latest trends in social media and expert advice for marketers.</p>
+        </li>
+        <li class="blog-item" onclick="showDetails('blog3')">
+            <h2 class="blog-title">Hootsuite Blog</h2>
+            <p class="blog-description">In-depth articles on social media management and analytics.</p>
+        </li>
+        <li class="blog-item" onclick="showDetails('blog4')">
+            <h2 class="blog-title">Mashable Social Media</h2>
+            <p class="blog-description">Updates and tools for social media enthusiasts and businesses.</p>
+        </li>
+        <li class="blog-item" onclick="showDetails('blog5')">
+            <h2 class="blog-title">Sprout Social Insights</h2>
+            <p class="blog-description">Tips and strategies for enhancing your social media presence.</p>
+        </li>
+    </ul>
+    
+    <script>
+        function showDetails(blog) {
+            let details = {
+                blog1: "The Buffer Blog offers actionable tips and latest insights on social media marketing, focusing on engagement and performance.",
+                blog2: "Social Media Examiner covers the ever-evolving landscape of social media, providing expert insights and case studies.",
+                blog3: "Hootsuite Blog features resources from industry experts on managing and analyzing social media campaigns effectively.",
+                blog4: "Mashable’s Social Media section provides updates on trends, tools, and tips for effective social online marketing.",
+                blog5: "Sprout Social Insights focuses on social media strategy, guiding brands on improving engagement and ROI."
+            };
+            alert(details[blog]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="insights product demo video examples, product overview, interactive UI, CSS3, HTML5, video showcase">
+    <title>Insights Product Demo Video Examples</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .video-example {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .video thumbnail {
+            width: 300px;
+            height: 160px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .video iframe {
+            width: 450px;
+            height: 250px;
+            border: none;
+        }
+        .video-description {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .video-example {
+                flex-direction: column;
+            }
+            .video iframe {
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+    <script>
+        // Basic JavaScript for video lightbox
+        function toggleVideo(x) {
+            var video = document.getElementById(x);
+            if (video.classList.contains("active")) {
+                video.classList.remove("active");
+            } else {
+                video.src = video.getAttribute('data-src');
+                video.play();
+                video.classList.add("active");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights Product Demo Video Examples</h1>
+        <div class="video-example">
+            <figure class="video">
+                <img src="video1_thumbnail.jpg" alt="Demo Video 1" class="thumbnail" data-src="video1.mp4" onclick="toggleVideo('video1')">
+                <div class="video-description">
+                    <h3>Video 1: Overview</h3>
+                </div>
+            </figure>
+           

@@ -1,0 +1,97 @@
+#### HTML Code with CSS and JS for Blog Legacy Employee Spotlight
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Legacy Employee Spotlight</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+    }
+    .employee-spotlight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .employee-spotlight img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+    .employee-spotlight .info {
+      flex: 1;
+    }
+    .employee-spotlight h2 {
+      margin: 0 0 0.5rem;
+    }
+    .employee-spotlight p {
+      margin: 0;
+    }
+    .employee-spotlight .button {
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .employee-spotlight .button:hover {
+      background-color: #555;
+    }
+  </style>
+  <script>
+    function showEmployeeDetails(employeeId) {
+      // Fetch employee details based on the ID and display them dynamically
+      // Example: fetch('employee-details-api?id=' + employeeId)
+      //          .then(response => response.json())
+      //          .then(data => {
+      //            // Update the employee details section with the fetched data
+      //          });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Blog Legacy Employee Spotlight</h1>
+  </header>
+  <section>
+    <div class="employee-spotlight" onclick="showEmployeeDetails(1)">
+      <img src="melinda.jpg" alt="Melinda">
+      <div class="info">
+        <h2>Melinda</h2>
+        <p>Marketing Research Executive</p>
+      </div>
+      <button class="button">Read More</button>
+    </div>
+    <!-- More employee spotlights can be added dynamically -->
+  </section>
+</body>
+</html>
+
+
+#### Explanation
+The provided HTML code creates a simple webpage for showcasing an employee spotlight in a blog legacy. It includes a header, a section for the employee spotlight, and interactive JavaScript functionality to display more details about the employee when the "Read More" button is clicked.
+
+The CSS styles define the layout, colors, and formatting of the webpage, while the JavaScript function `showEmployeeDetails` is intended to fetch and display additional details about the employee dynamically.
+
+This code aims to provide a basic structure for showcasing an employee spotlight in a blog legacy, with the potential for further customization and expansion based on specific requirements.
+
+**Keywords**: HTML project, CSS styling, employee spotlight, marketing research executive, interactive JavaScript, blog legacy.

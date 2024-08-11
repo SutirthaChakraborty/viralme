@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Analytics 2016 Content Trends</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0073e6;
+        }
+        .trend {
+            margin-bottom: 15px;
+        }
+        .btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Analytics 2016: Content Trends</h1>
+    </header>
+    <section>
+        <h2>Competitive Analysis for Better Content</h2>
+        <p>Leverage competitive analysis to create content that outperforms the rest. Analyze top-performing blogs, and identify keywords and strategies that convert.</p>
+        <div class="trend">
+            <h3>Content Length & Engagement</h3>
+            <p>Longer articles tend to rank higher and receive more shares. Aim for 1500+ words for in-depth insights!</p>
+        </div>
+        <div class="trend">
+            <h3>Visual Content Dominance</h3>
+            <p>Posts with images or videos receive 94% more views. Use engaging visuals to enhance your message.</p>
+        </div>
+        <div class="trend">
+            <h3>Mobile Optimization</h3>
+            <p>With the rise of mobile usage, ensure your content is mobile-friendly. Consider layout, speed, and usability.</p>
+        </div>
+        <button class="btn" onclick="displayKeywords()">Show Keywords</button>
+        <div id="keywords" style="margin-top: 15px; display: none;">
+            <h3>Related Keywords:</h3>
+            <ul>
+                <li>Blog Analytics</li>
+                <li>Content Marketing</li>
+                <li>SEO Trends</li>
+                <li>Competitive Research</li>
+                <li>Content Strategy</li>
+                <li>2016 Trends</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function displayKeywords() {
+            var keywordsDiv = document.getElementById("keywords");
+            if (keywordsDiv.style.display === "none") {
+                keywordsDiv.style.display = "block";
+            } else {
+                keywordsDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

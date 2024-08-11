@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .photo {
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+        }
+        .photo:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Corporate Photography</h1>
+        <p>Capture Your Brand's Story</p>
+    </header>
+    
+    <section>
+        <h2>What is Corporate Photography?</h2>
+        <p>Corporate photography showcases your brand's identity through professional images. Perfect for websites, marketing materials, and social media, it includes:</p>
+        <ul>
+            <li>Headshots</li>
+            <li>Event Coverage</li>
+            <li>Product Photography</li>
+            <li>Office Spaces</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Why is it Important?</h2>
+        <p>Quality visuals enhance credibility and attract clients. Good corporate images help convey professionalism, trust, and brand values.</p>
+    </section>
+    
+    <section>
+        <h2>Gallery</h2>
+        <div class="gallery" id="gallery">
+            <div class="photo" onclick="showAlert('Headshot Example')">
+                <img src="headshot.jpg" alt="Corporate Headshot">
+            </div>
+            <div class="photo" onclick="showAlert('Event Coverage Example')">
+                <img src="event.jpg" alt="Corporate Event">
+            </div>
+            <div class="photo" onclick="showAlert('Product Photography Example')">
+                <img src="product.jpg" alt="Product">
+            </div>
+            <div class="photo" onclick="showAlert('Office Space Example')">
+                <img src="office.jpg" alt="Office Space">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Corporate Photography Services</p>
+    </footer>
+
+    <script>
+        function showAlert(imageTitle) {
+            alert("This is an example of " + imageTitle + ".");
+        }
+    </script>
+</body>
+</html>

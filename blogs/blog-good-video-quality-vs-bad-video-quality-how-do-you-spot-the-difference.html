@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to distinguish between good video quality and bad video quality. Explore tips and techniques to spot the difference.">
+    <title>Good Video Quality vs Bad Video Quality</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .quality-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+        .good {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+        }
+        .bad {
+            background: #F44336;
+            color: white;
+            padding: 10px;
+        }
+        .toggle-btn {
+            margin: 10px 0;
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Good Video Quality vs Bad Video Quality</h1>
+</header>
+
+<div class="container">
+    <h2>How to Spot the Difference</h2>
+    <p>Understanding video quality is essential for content creators and viewers alike. Good video quality can enhance viewing experiences, while bad video quality can detract from it. Here we break down key differences.</p>
+
+    <div class="quality-indicator" id="qualityIndicator">
+        <div class="good">Good Video Quality</div>
+        <div class="bad">Bad Video Quality</div>
+    </div>
+
+    <ul>
+        <li>High resolution (1080p, 4K) vs Low resolution (480p, 720p)</li>
+        <li>Consistent frame rate vs Choppy or uneven frame rate</li>
+        <li>Good color accuracy vs Faded or oversaturated colors</li>
+        <li>Clear audio vs Muffled or distorted sound</li>
+    </ul>
+
+    <button class="toggle-btn" onclick="toggleQuality()">Toggle Quality Example</button>
+    <video id="exampleVideo" width="100%" controls>
+        <source id="videoSource" src="good_quality.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    let isGoodQuality = true;
+
+    function toggleQuality() {
+        const videoSource = document.getElementById('videoSource');
+        if (isGoodQuality) {
+            videoSource.src = 'bad_quality.mp4';
+            videoSource.parentElement.load();
+            isGoodQuality = false;
+        } else {
+            videoSource.src = 'good_quality.mp4';
+            videoSource.parentElement.load();
+            isGoodQuality = true;
+        }
+    }
+</script>
+
+</body>
+</html>

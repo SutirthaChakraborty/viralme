@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Colleges Failing at SEO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Colleges Failing at SEO</h1>
+</header>
+
+<section>
+    <h2>The SEO Challenge for Educational Institutions</h2>
+    <p>Many colleges and universities are struggling to optimize their websites for search engines, resulting in lower visibility and prospective students.</p>
+    <p>Common reasons include poor content strategies, lack of keyword optimization, and outdated web design.</p>
+    <button onclick="toggleInfo()">Learn More</button>
+    <div id="moreInfo" class="hidden">
+        <h3>Why SEO Matters for Colleges</h3>
+        <p>Higher education institutions need to adopt effective SEO techniques to attract applicants and provide relevant content. Implementing best practices can enhance their online presence and improve engagement.</p>
+    </div>
+</section>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById('moreInfo');
+        if (info.classList.contains('hidden')) {
+            info.classList.remove('hidden');
+        } else {
+            info.classList.add('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>

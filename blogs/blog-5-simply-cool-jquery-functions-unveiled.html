@@ -1,0 +1,163 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Simply Cool jQuery Functions Unveiled</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .article {
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        .article h2 {
+            margin: 0 0 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        .article p {
+            margin: 0 0 10px;
+            line-height: 1.5;
+        }
+        .article .code {
+            background-color: #f6f6f6;
+            padding: 10px;
+            margin: 10px 0;
+            overflow: auto;
+        }
+        .article .code pre {
+            margin: 0;
+            padding: 0;
+            overflow-x: auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Example 1: Simple jQuery Function
+            $('.article').on('mouseover', '.code', function() {
+                $(this).css('background-color', 'lightblue');
+            });
+            $('.article').on('mouseout', '.code', function() {
+                $(this).css('background-color', '');
+            });
+
+            // Example 2: SlideToggle
+            $('#show-more').on('click', function() {
+                $('.hidden-content').slideToggle(500);
+            });
+
+            // Example 3: Animate
+            $('.animate').click(function() {
+                $(this).animate({
+                    opacity: 0.25,
+                    width: 'toggle',
+                    height: 'toggle'
+                }, 500);
+            });
+
+            // Example 4: FadeIn
+            $('.fade-in').hide().fadeIn(1000);
+
+            // Example 5: Append HTML
+            $('#append-html').click(function() {
+                $(this).parent().append('<p>Appended HTML content.</p>');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>5 Simply Cool jQuery Functions Unveiled</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#example1">Example 1</a></li>
+            <li><a href="#example2">Example 2</a></li>
+            <li><a href="#example3">Example 3</a></li>
+            <li><a href="#example4">Example 4</a></li>
+            <li><a href="#example5">Example 5</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <article id="example1" class="article">
+            <h2>Example 1: Simple jQuery Function</h2>
+            <p>This example demonstrates a simple jQuery function that changes the background color of a code block on mouseover.</p>
+            <div class="code">
+                <pre>
+                    &lt;script&gt;
+                        $(document).ready(function() {
+                            $('.article').on('mouseover', '.code', function() {
+                                $(this).css('background-color', 'lightblue');
+                            });
+                            $('.article').on('mouseout', '.code', function() {
+                                $(this).css('background-color', '');
+                            });
+                        });
+                    &lt;/script&gt;
+                </pre>
+            </div>
+        </article>
+        <article id="example2" class="article">
+            <h2>Example 2: SlideToggle</h2>
+            <p>This example uses the SlideToggle method to show and hide content.</p>
+            <button id="show-more">Show More</button>
+            <div class="hidden-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, consequatur.</p>
+            </div>
+        </article>
+        <article id="example3" class="article">
+            <h2>Example 3: Animate</h2>
+            <p>This example uses the Animate method to change the opacity, width, and height of an element.</p>
+            <div class="animate">Click Me!</div>
+        </article>
+        <article id="example4" class="article">
+            <h2>Example 4: FadeIn</h2>
+            <p>This example uses the FadeIn method to make content appear gradually.</p>
+            <div class="fade-in">Fade In Content</div>
+        </article>
+        <article id="example5" class="article">
+            <h2>Example 5: Append HTML</h2>
+            <p>This example demonstrates how to append HTML content to an element.</p>
+            <button id="append-html">Append HTML</button>
+        </article>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Marketing Costs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cost-details {
+            margin-top: 20px;
+        }
+        .toggle-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .cost-info {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            background-color: #e7f3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Marketing Costs Explained</h1>
+        <p>Email marketing is a powerful strategy for businesses looking to engage with their audience. Understanding the costs involved is crucial for effective budgeting.</p>
+        <div class="cost-details">
+            <h2>Factors Influencing Email Marketing Costs:</h2>
+            <ul>
+                <li>Size of your email list</li>
+                <li>Email service provider (ESP) pricing</li>
+                <li>Design and content creation</li>
+            </ul>
+            <button class="toggle-button" onclick="toggleCostInfo()">Show Cost Breakdown</button>
+            <div class="cost-info" id="costInfo">
+                <h3>Email Marketing Cost Breakdown:</h3>
+                <ul>
+                    <li>Basic plans: $10 - $50/month</li>
+                    <li>Advanced plans: $50 - $200/month</li>
+                    <li>Custom solutions: $200+/month</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleCostInfo() {
+            const costInfo = document.getElementById('costInfo');
+            costInfo.style.display = costInfo.style.display === 'none' || costInfo.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

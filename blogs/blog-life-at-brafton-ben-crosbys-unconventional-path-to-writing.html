@@ -1,0 +1,68 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Life at Brafton - Ben Crosby's Unconventional Path to Writing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e6e6e6;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            line-height: 1.6;
+            margin-bottom: 40px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ddd;
+            padding-left: 30px;
+            border-radius: 5px;
+        }
+        .quote {
+            margin: 20px 0;
+            padding: 15px;
+            font-style: italic;
+            background-color: #f0f0f0;
+            border-left: 3px solid #ccc;
+        }
+        .author-info {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function highlightKeywords() {
+            const keywords = ['Brafton', 'Ben Crosby', 'Unconventional path', 'Writing', 'Life at Brafton'];
+            const text = document.querySelectorAll('.content p');
+            keywords.forEach(keyword => {
+                text.forEach((p) => {
+                    p.addEventListener('mouseover', () => {
+                        p.innerHTML = p.innerHTML.replace(new RegExp(keyword, 'gi'), `<span class="keyword">${keyword}</span>`);
+                    });
+                    p.addEventListener('mouseout', () => {
+                        p.innerHTML = p.innerHTML.replace(/<span class="keyword">/g, '').replace(/<\/span

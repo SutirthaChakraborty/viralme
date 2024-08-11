@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog SEO: Keyword Discovery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .keyword {
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .keyword:hover {
+            background-color: #3498db;
+        }
+        #info {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #2980b9;
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Blog SEO: What Every Marketer Should Know About Keyword Discovery</h1>
+    <p>Effective keyword discovery is crucial for optimizing your blog for search engines. Here are some **key concepts**:</p>
+    
+    <div>
+        <span class="keyword" onclick="showInfo('Long-tail Keywords')">Long-tail Keywords</span>
+        <span class="keyword" onclick="showInfo('Search Intent')">Search Intent</span>
+        <span class="keyword" onclick="showInfo('Competitor Analysis')">Competitor Analysis</span>
+        <span class="keyword" onclick="showInfo('Keyword Tools')">Keyword Tools</span>
+    </div>
+
+    <div id="info"></div>
+
+    <script>
+        function showInfo(keyword) {
+            const info = {
+                'Long-tail Keywords': 'Long-tail keywords are longer and more specific keyword phrases that target niche demographics.',
+                'Search Intent': 'Understanding search intent helps you create content that meets the needs of your audience.',
+                'Competitor Analysis': 'Analyzing competitors can reveal valuable keywords and strategies that you can leverage.',
+                'Keyword Tools': 'Tools like Google Keyword Planner, SEMrush, and Ahrefs can help identify relevant keywords.'
+            };
+            document.getElementById('info').innerHTML = info[keyword] || 'Click on a keyword for more information.';
+        }
+    </script>
+
+</body>
+</html>

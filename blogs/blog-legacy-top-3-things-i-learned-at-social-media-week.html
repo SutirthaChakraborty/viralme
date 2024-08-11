@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the top 3 insights I gained at Social Media Week. Enhance your social media strategy with these key lessons.">
+    <title>Top 3 Learnings from Social Media Week</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            color: #333;
+        }
+        .learning {
+            background: white;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .learning:hover {
+            transform: scale(1.02);
+        }
+        .toggle-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Top 3 Things I Learned at Social Media Week</h1>
+
+<div class="learning">
+    <h2>1. The Power of Video Content</h2>
+    <button class="toggle-button" onclick="toggleContent('content1')">Read More</button>
+    <div id="content1" class="content">
+        <p>Video content is more engaging than images or text. Platforms like Instagram and Facebook prioritize video, making it essential for outreach.</p>
+    </div>
+</div>
+
+<div class="learning">
+    <h2>2. Authenticity Matters</h2>
+    <button class="toggle-button" onclick="toggleContent('content2')">Read More</button>
+    <div id="content2" class="content">
+        <p>Audiences value transparency and genuine interactions. Brands that communicate authentically foster trust and loyalty.</p>
+    </div>
+</div>
+
+<div class="learning">
+    <h2>3. The Importance of Analytics</h2>
+    <button class="toggle-button" onclick="toggleContent('content3')">Read More</button>
+    <div id="content3" class="content">
+        <p>Utilizing analytics tools helps in understanding audience behavior and tailoring content effectively for maximum impact.</p>
+    </div>
+</div>
+
+<script>
+    function toggleContent(id) {
+        var content = document.getElementById(id);
+        content.style.display = (content.style.display === "none" || content.style.display === "") ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>

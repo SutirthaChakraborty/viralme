@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comscore LinkedIn Monthly Visits Rise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077b5;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0077b5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005582;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comscore Reports Rise in LinkedIn Monthly Visits</h1>
+    </header>
+    <article>
+        <h2>Overview</h2>
+        <p>Recent data from Comscore indicates a significant increase in monthly visits to LinkedIn, highlighting the platform's growing importance in professional networking and job searching.</p>
+    </article>
+    <article>
+        <h2>Key Insights</h2>
+        <p>The rise in visits can be attributed to various factors, including enhanced user engagement features and a surge in remote job postings.</p>
+    </article>
+    <div class="interactive">
+        <h2>Explore the Data</h2>
+        <button onclick="showData()">Click to Show Monthly Visits Data</button>
+        <p id="data" style="display:none;">LinkedIn's monthly visits have increased by 25% over the last year, reaching over 900 million visits in July 2024.</p>
+    </div>
+    <script>
+        function showData() {
+            var data = document.getElementById("data");
+            if (data.style.display === "none") {
+                data.style.display = "block";
+            } else {
+                data.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

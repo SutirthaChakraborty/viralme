@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Writing with Impact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #35424a;
+        }
+        .toggle-button {
+            padding: 10px;
+            background: #35424a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Blog Legacy</h1>
+    <p>Crafting Meaningful Content Without Overwhelming Your Readers</p>
+</header>
+
+<article>
+    <h2>Effective Writing Strategies</h2>
+    <p>Writing for a blog is about engagement, not just cramming information. Focus on clarity, purpose, and the reader's journey.</p>
+    <button class="toggle-button" onclick="toggleContent()">Learn More</button>
+    <div id="extraContent" class="hidden">
+        <h3>Key Elements of Relatable Writing</h3>
+        <ul>
+            <li>Understand Your Audience</li>
+            <li>Use Simple Language</li>
+            <li>Engage with Stories</li>
+            <li>Encourage Interaction</li>
+        </ul>
+    </div>
+</article>
+
+<script>
+    function toggleContent() {
+        const content = document.getElementById('extraContent');
+        content.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

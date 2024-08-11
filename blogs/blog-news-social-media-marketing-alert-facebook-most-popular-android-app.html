@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Marketing Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .social-buttons {
+            margin: 20px 0;
+        }
+        .social-buttons a {
+            text-decoration: none;
+            color: white;
+            background: #3b5998; /* Facebook color */
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background 0.3s;
+        }
+        .social-buttons a:hover {
+            background: #2d4373;
+        }
+        .alert {
+            padding: 15px;
+            background-color: #f44336;
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: Social Media Marketing Alerts</h1>
+</header>
+
+<div class="content">
+    <div class="alert">
+        **Stay Updated!** The latest trends in social media marketing can significantly impact your strategy. 
+    </div>
+    <h2>Facebook: The Most Popular Android App</h2>
+    <p>Facebook remains the leading social media platform, especially among Android users. With over 2.9 billion monthly active users, it offers unparalleled reach for marketers.</p>
+    
+    <div class="social-buttons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Share on Facebook</a>
+        <a href="https://twitter.com" target="_blank" style="background: #1da1f2;"><i class="fab fa-twitter"></i> Tweet</a>
+        <a href="https://www.instagram.com" target="_blank" style="background: #e1306c;"><i class="fab fa-instagram"></i> Share on Instagram</a>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.social-buttons a').forEach(button => {
+        button.addEventListener('click', function() {
+            alert('You are sharing this content on ' + this.innerText);
+        });
+    });
+</script>
+
+</body>
+</html>

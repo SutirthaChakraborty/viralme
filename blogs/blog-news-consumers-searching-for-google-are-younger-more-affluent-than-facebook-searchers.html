@@ -1,0 +1,86 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Search Demographics</title>
+  <style>
+    /* CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 24px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .heading {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .info {
+      line-height: 1.5;
+      color: #333;
+    }
+
+    .keyword-box {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+    }
+
+    .keyword {
+      font-weight: bold;
+    }
+
+    .keyword-link {
+      font-weight: normal;
+      color: #007BFF;
+      text-decoration: underline;
+    }
+
+    .chart-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .chart {
+      width: 40%;
+    }
+
+    .flow-chart {
+      height: 200px;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+      padding: 16px;
+    }
+
+    .tooltip {
+      position: absolute;
+      display: none;
+      background-color: white;
+      padding: 8px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hover {
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    // JS to show tooltip on keyword hover
+    function showTooltip(keyword, value) {
+      document.querySelector('.tooltip').textContent = `Keyword: ${keyword}, Value: ${value}`;
+      document.querySelector('.tooltip').style.display = 'block';
+      document.querySelector('.tooltip').style.top = `${event.pageY}px`;
+      document.querySelector('.tooltip').

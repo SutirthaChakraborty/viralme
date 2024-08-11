@@ -1,0 +1,54 @@
+Here's a small HTML code with CSS on the topic of "Blog News: 70% of Pinterest Users Start Conversations with Brands Online". The code includes interactive CSS and JavaScript to explain the topics.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: 70% of Pinterest Users Start Conversations with Brands Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .interactive {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .interactive p {
+            font-size: 24px;
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Blog News: 70% of Pinterest Users Start Conversations with Brands Online</h1>
+    <div class="interactive">
+        <p>According to recent data, <span class="interactive_text" id="percentage">70%</span> of Pinterest users start conversations with brands online. This highlights the importance of having a strong presence on the platform and engaging with your audience through personalized messaging.</p>
+    </div>
+</body>
+</html>
+
+
+To make the percentage interactive, you can use JavaScript to update the `id` attribute of the `span` element based on the current percentage value. Here's an example of how you can achieve this:
+
+html
+<script>
+    const percentageElement = document.getElementById('percentage');
+    const percentageValue = parseFloat(window.location.search.split('=')[1]); // Assuming the URL contains the percentage value as a query parameter, e.g., "?percentage=75"
+
+    percentageElement.textContent = percentageValue + '%';
+}
+</script>

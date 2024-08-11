@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become the Best Singaporean TikToker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff0055;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #ff0055;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #e4004f;
+        }
+        .tips {
+            display: none;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to be the Best Singaporean TikToker</h1>
+        <p>Are you ready to elevate your TikTok game? Here are some strategies to stand out in the vibrant Singaporean TikTok community!</p>
+        <button id="tipButton">Show Tips</button>
+        <div class="tips" id="tips">
+            <h3>Top Tips:</h3>
+            <ul>
+                <li>Engage with local trends and culture</li>
+                <li>Use popular hashtags like <strong>#SGTikTok</strong> and <strong>#SingaporeLife</strong></li>
+                <li>Collaborate with other Singaporean creators</li>
+                <li>Consistency is key; post regularly!</li>
+                <li>Utilize catchy music that resonates with your audience</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('tipButton').addEventListener('click', function() {
+            const tipsElement = document.getElementById('tips');
+            tipsElement.style.display = tipsElement.style.display === 'none' || tipsElement.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

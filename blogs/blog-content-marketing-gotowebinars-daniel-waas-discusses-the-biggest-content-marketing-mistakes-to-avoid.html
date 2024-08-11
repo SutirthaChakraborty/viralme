@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Mistakes | GoToWebinar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            margin: 20px 0;
+        }
+        h2 {
+            color: #333;
+        }
+        .mistakes {
+            cursor: pointer;
+            color: #0077cc;
+            text-decoration: underline;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 3px solid #0077cc;
+            background-color: #e9f5ff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Biggest Content Marketing Mistakes to Avoid</h1>
+    <p>Insights from Daniel Waas on GoToWebinar</p>
+</header>
+
+<article>
+    <h2>Common Mistakes</h2>
+    <p>Learn from the pitfalls of content marketing. Click on the mistakes below to unveil explanations.</p>
+    <ul>
+        <li class="mistakes" onclick="toggleDetail('mistake1')">1. Not Knowing Your Audience</li>
+        <div id="mistake1" class="details">Failing to define your target audience can lead to irrelevant content and lost opportunities.</div>
+        
+        <li class="mistakes" onclick="toggleDetail('mistake2')">2. Ignoring SEO Best Practices</li>
+        <div id="mistake2" class="details">Content without SEO makes it hard to be found. Optimize keywords and meta tags.</div>
+        
+        <li class="mistakes" onclick="toggleDetail('mistake3')">3. Inconsistent Posting Schedule</li>
+        <div id="mistake3" class="details">Consistency builds trust. Create a content calendar to stay on track.</div>
+        
+        <li class="mistakes" onclick="toggleDetail('mistake4')">4. Not Measuring Results</li>
+        <div id="mistake4" class="details">Use analytics to track performance and refine your strategy based on real data.</div>
+        
+        <li class="mistakes" onclick="toggleDetail('mistake5')">5. Focusing Solely on Promotion</li>
+        <div id="mistake5" class="details">Content should provide value. Balance promotional material with informative or entertaining content.</div>
+    </ul>
+</article>
+
+<script>
+    function toggleDetail(id) {
+        const detail = document.getElementById(id);
+        detail.style.display = detail.style.display === 'none' || detail.style.display === '' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

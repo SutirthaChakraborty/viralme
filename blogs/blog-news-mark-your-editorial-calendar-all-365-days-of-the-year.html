@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog news and editorial calendar for 365 days a year. Stay organized and enhance your content strategy with our comprehensive calendar.">
+    <title>Editorial Calendar | Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .day {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .day:hover {
+            background-color: #f0f0f0;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Mark Your Editorial Calendar</h1>
+<p>Stay on top of your blogging schedule with our 365-day editorial calendar. Organize your blog news, plan your posts, and enhance your content strategy throughout the year!</p>
+
+<div class="calendar" id="calendar"></div>
+
+<p class="message" id="message"></p>
+
+<script>
+    for (let i = 1; i <= 365; i++) {
+        const dayElement = document.createElement('div');
+        dayElement.className = 'day';
+        dayElement.innerText = `Day ${i}`;
+        dayElement.onclick = () => {
+            document.getElementById('message').innerText = `You clicked on Day ${i}. Plan your content!`;
+        };
+        document.getElementById('calendar').appendChild(dayElement);
+    }
+</script>
+
+</body>
+</html>

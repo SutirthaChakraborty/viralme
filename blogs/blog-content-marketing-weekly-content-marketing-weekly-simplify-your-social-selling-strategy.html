@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Weekly Content Marketing Strategies</h1>
+</header>
+
+<div class="container">
+    <h2>Simplify Your Social Selling Strategy</h2>
+    <p>Discover essential tips on content marketing that can enhance your social selling approach. Leverage your blog as a powerful tool to attract, engage, and convert potential customers.</p>
+    
+    <div class="content">
+        <button id="tipsButton">Show Content Marketing Tips</button>
+        <div id="tips" style="display: none;">
+            <ul>
+                <li>Utilize SEO Keywords to boost your visibility.</li>
+                <li>Engage your audience with interactive content.</li>
+                <li>Regularly update your blog with fresh, relevant content.</li>
+                <li>Promote your content through social media platforms.</li>
+                <li>Track analytics for continuous improvement.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("tipsButton").addEventListener("click", function() {
+        var tips = document.getElementById("tips");
+        if (tips.style.display === "none") {
+            tips.style.display = "block";
+        } else {
+            tips.style.display = "none";
+        }
+    });
+</script>
+
+</body>
+</html>

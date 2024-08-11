@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the top content marketing mistakes made by experts and how to avoid them for better online visibility and engagement.">
+    <title>Top Content Marketing Mistakes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #0077cc;
+            color: white;
+        }
+        article {
+            background: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .mistake {
+            background-color: #e7f3ff;
+            border-left: 5px solid #2196F3;
+            margin: 10px 0;
+            padding: 10px;
+            transition: transform 0.2s;
+        }
+        .mistake:hover {
+            transform: scale(1.02);
+        }
+        button {
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Top Content Marketing Mistakes By Experts</h1>
+</header>
+
+<article>
+    <h2>Common Mistakes in Content Marketing</h2>
+    
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h3>1. Ignoring Audience Needs</h3>
+        <p>Many experts create content without understanding their audience.</p>
+    </div>
+    
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h3>2. Overlooking SEO Best Practices</h3>
+        <p>Failing to optimize for search engines can limit reach.</p>
+    </div>
+    
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h3>3. Inconsistent Posting Schedule</h3>
+        <p>Inconsistency can lead to audience disengagement.</p>
+    </div>
+    
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h3>4. Lack of Engagement with Audience</h3>
+        <p>Not interacting can create a disconnect with followers.</p>
+    </div>
+    
+    <div class="mistake" onclick="toggleDetails(this)">
+        <h3>5. Focusing Solely on Promotion</h3>
+        <p>Too much promotion can turn audiences away.</p>
+    </div>
+</article>
+
+<script>
+    function toggleDetails(element) {
+        const details = element.querySelector('p');
+        details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // Initialize p elements to be hidden
+    document.querySelectorAll('.mistake p').forEach(p => {
+        p.style.display = 'none';
+    });
+</script>
+
+</body>
+</html>

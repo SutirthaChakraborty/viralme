@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HomeGrid Failure Ireland: Photography & Video Grants</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e2e6ea;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 25px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+.card a {
+    display: block;
+    color: #3498db;
+    text-decoration: none;
+    padding: 10px 0;
+    background-color: #f4f8fb;
+    margin-top: 20px;
+}
+
+.interactive {
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #e8f1fa;
+}
+
+.stat {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+</style>
+<script>
+function explainTopic(event) {
+    var target = event.target;
+    if (target.className === 'explainBtn') {
+        var text = document.getElementById('explanation').innerText;
+        alert("Explanation: " + text);
+    }
+}
+</script>
+</head>
+<body>
+<div class="container">
+<div class="card" id="grant1">
+    <h3>HomeGrid Failure Ireland Grant</h3>
+    <p>Apply for photography &amp; video projects that support local communities</p>
+    <a href="#" class="explainBtn" onclick="explainTopic(event)">Learn More</a>
+    <div id="explanation" style="display: none;">Elig

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Aren't QR Codes More Popular?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .keyword:hover {
+            text-decoration: underline;
+        }
+        #qrCode {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Why Aren't QR Codes More Popular?</h1>
+        <p>Despite their potential, **QR codes** have not achieved widespread adoption. Factors include:</p>
+        <ul>
+            <li>**Lack of Awareness**: Many users are unaware of how to scan QR codes.</li>
+            <li>**User Experience**: Scanning requires a smartphone, which can be a barrier.</li>
+            <li>**Security Concerns**: Users worry about malicious links embedded in QR codes.</li>
+        </ul>
+        <p>To explore more about QR codes, click on the keywords below:</p>
+        <span class="keyword" onclick="showInfo('usage')">Usage</span> | 
+        <span class="keyword" onclick="showInfo('security')">Security</span> | 
+        <span class="keyword" onclick="showInfo('future')">Future Trends</span>
+        
+        <div id="qrCode"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&size=100x100"></script>
+    <script>
+        function showInfo(topic) {
+            let message = '';
+            switch(topic) {
+                case 'usage':
+                    message = 'QR codes are widely used for marketing, payments, and information sharing.';
+                    break;
+                case 'security':
+                    message = 'Always verify the source of a QR code before scanning to avoid scams.';
+                    break;
+                case 'future':
+                    message = 'With advancements in technology, QR codes may see increased integration in daily life.';
+                    break;
+                default:
+                    message = 'No information available.';
+            }
+            $('#qrCode').html('<p>' + message + '</p>');
+        }
+    </script>
+</body>
+</html>

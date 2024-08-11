@@ -1,0 +1,110 @@
+#### HTML Code for a Documentary Category Page
+
+Below is a small HTML code snippet that showcases a category page for documentaries. The code includes CSS styling to enhance the visual appearance of the page. Additionally, interactive CSS and JS elements are included to provide an interactive experience for the user.
+
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documentary Category</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .documentary-card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .documentary-card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        
+        .documentary-card h2 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .documentary-card p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        
+        .documentary-card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .documentary-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentary Category</h1>
+    
+    <div class="documentary-card">
+        <img src="documentary1.jpg" alt="Documentary 1">
+        <h2>Documentary Title 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc id aliquam ultricies, nunc nunc.</p>
+        <button>Watch Now</button>
+    </div>
+    
+    <div class="documentary-card">
+        <img src="documentary2.jpg" alt="Documentary 2">
+        <h2>Documentary Title 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc id aliquam ultricies, nunc nunc.</p>
+        <button>Watch Now</button>
+    </div>
+    
+    <div class="documentary-card">
+        <img src="documentary3.jpg" alt="Documentary 3">
+        <h2>Documentary Title 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc id aliquam ultricies, nunc nunc.</p>
+        <button>Watch Now</button>
+    </div>
+    
+    <script>
+        // JavaScript code for interactivity
+        const buttons = document.querySelectorAll('.documentary-card button');
+        
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                alert('You clicked the "Watch Now" button!');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+Please note that the code provided is a basic example and can be customized further to suit your specific needs.

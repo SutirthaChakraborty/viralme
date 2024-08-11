@@ -1,0 +1,66 @@
+
+
+HTML: 
+
+html
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\">
+    <title>FAQ</title>
+    <link rel=\"stylesheet\" href=\"style.css\">
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <div id=\"faqs\">
+        <div class=\"card\">
+            <div class=\"question">What are the Big 3 medias?</div>
+            <div class=\"answer\">The Big 3 medias are Google, Facebook, and Amazon.</div>
+        </div>
+        <div class=\"card\">
+            <div class=\"question\">What is cancellation policy for interactive video?</div>
+            <div class=\"answer\">Cancellation policies vary by platform and subscription type. Please check your account settings or contact the platform's customer support for more information.</div>
+        </div>
+    </div>
+    <script src=\"script.js\"></script>
+</body>
+</html>
+
+
+CSS (style.css): 
+
+css
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+\#faqs {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+\.card {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+\.question {
+    font-weight: bold;
+}
+\.answer {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+JavaScript (script.js): 
+
+javascript
+a = document.querySelector('.answer');
+a.addEventListener('click', function() {
+a.scrollIntoView({behavior: 'smooth'}); });

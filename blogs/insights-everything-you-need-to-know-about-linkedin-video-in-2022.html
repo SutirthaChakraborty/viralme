@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights on LinkedIn Video in 2022: Enhance your branding, engagement, and networking with effective video strategies on LinkedIn.">
+    <title>LinkedIn Video Insights 2022</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #0077b5;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        ul li:hover {
+            background: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights on LinkedIn Video in 2022</h1>
+    <p>LinkedIn video is a powerful tool for professionals in 2022. Here's what you need to know:</p>
+    <ul>
+        <li onclick="showDetail('engagement')">Boosting Engagement</li>
+        <li onclick="showDetail('branding')">Enhancing Branding</li>
+        <li onclick="showDetail('networking')">Networking Opportunities</li>
+        <li onclick="showDetail('content')">Content Strategies</li>
+        <li onclick="showDetail('analytics')">Analyzing Performance</li>
+    </ul>
+    <div id="detail" style="margin-top: 20px;"></div>
+</div>
+
+<script>
+    function showDetail(topic) {
+        let detail = "";
+        switch(topic) {
+            case 'engagement':
+                detail = "<strong>Boosting Engagement:</strong> Videos receive 5x more engagement than text posts. Utilize polls and questions to foster interaction!";
+                break;
+            case 'branding':
+                detail = "<strong>Enhancing Branding:</strong> Consistent video content showcases your expertise, builds credibility, and strengthens your brand identity.";
+                break;
+            case 'networking':
+                detail = "<strong>Networking Opportunities:</strong> Videos can enhance connections. Share personal stories and insights that resonate with your audience.";
+                break;
+            case 'content':
+                detail = "<strong>Content Strategies:</strong> Focus on storytelling, educational material, and industry insights. Authenticity is key!";
+                break;
+            case 'analytics':
+                detail = "<strong>Analyzing Performance:</strong> Use LinkedIn analytics to measure engagement and reach your target audience more effectively.";
+                break;
+            default:
+                detail = "Select a topic to learn more!";
+        }
+        document.getElementById("detail").innerHTML = detail;
+    }
+</script>
+
+</body>
+</html>

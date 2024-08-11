@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background-color 0.5s ease;
+    }
+    
+    .event-card {
+      width: 700px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .event-title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .event-description {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .button-box {
+      padding: 10px;
+    }
+    
+    .button {
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    
+    /* Interaction on hover */
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 768px) {
+      .event-card {
+        width: 90%;
+      }
+    }
+  </style>
+  <script>
+    function showEvents() {
+      var cardsContainer = document.getElementById("event-cards");
+      fetch("https://example.com/live-events-data.json?keyword=webinar,conference,lectures")
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(event => {
+            var card = document.createElement("div");
+            card.classList.add("event-card");
+            card.innerHTML = `
+              <h3 class="event-title">${event.title}</h3>
+              <p class="event-description">${event.description}</p>
+              <p class="button-box">
+                <button class="button" onclick="showMore('${event.id}')">${event.eventType} Details</button>
+              </p>
+           

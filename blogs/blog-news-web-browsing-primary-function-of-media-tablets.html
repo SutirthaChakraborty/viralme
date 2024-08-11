@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News on Media Tablets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #28A745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog News: The Role of Media Tablets in Web Browsing</h1>
+    </header>
+    <article>
+        <h2>Understanding Media Tablets</h2>
+        <p>Media tablets are versatile devices primarily used for web browsing, streaming, and content consumption. Their portability and touch interface make them ideal for users seeking a seamless browsing experience.</p>
+        <button onclick="showInfo()">Learn More</button>
+        <p id="info" style="display:none;">Media tablets, like the iPad and Android tablets, have transformed how we access information. They serve as a bridge between smartphones and laptops, catering to various needs, including social media, e-books, and online news.</p>
+    </article>
+    <script>
+        function showInfo() {
+            const info = document.getElementById('info');
+            info.style.display = info.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

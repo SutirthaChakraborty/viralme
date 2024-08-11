@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our Blog Legacy: 12 days of engaging content, insightful interviews, and captivating videos. Join us on a journey of inspiration and knowledge.">
+    <title>Blog Legacy: 12 Days of Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy: 12 Days of Insightful Content</h1>
+</header>
+
+<section>
+    <h2>What to Expect</h2>
+    <p>Join us for 12 exciting days filled with expert interviews, thought-provoking articles, and engaging videos. Our theme revolves around innovation, creativity, and real-world applications in industry.</p>
+    <button id="learnMoreBtn">Learn More</button>
+    <div id="moreContent" style="display:none;">
+        <p>Our featured content includes:</p>
+        <ul>
+            <li>Exclusive interviews with industry leaders</li>
+            <li>Video tutorials on best practices</li>
+            <li>Daily blog posts on trending topics</li>
+            <li>Interactive discussions and Q&A sessions</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    document.getElementById("learnMoreBtn").onclick = function() {
+        var contentDiv = document.getElementById("moreContent");
+        contentDiv.style.display = contentDiv.style.display === "none" ? "block" : "none";
+        this.innerText = contentDiv.style.display === "block" ? "Show Less" : "Learn More";
+    }
+</script>
+
+</body>
+</html>

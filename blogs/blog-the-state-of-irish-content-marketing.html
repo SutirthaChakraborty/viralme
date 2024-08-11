@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The State of Irish Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        .toggle-content {
+            display: none;
+            margin-top: 15px;
+        }
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The State of Irish Content Marketing</h1>
+</header>
+
+<div class="container">
+    <h2>Understanding Irish Content Marketing</h2>
+    <p>Content marketing in Ireland is evolving rapidly. With the increasing importance of digital presence, brands are focusing on engaging storytelling and audience-driven content.</p>
+
+    <h2>Key Trends in Irish Content Marketing</h2>
+    <p>1. **Localisation of Content**: Businesses are tailoring content to resonate with Irish culture and values.</p>
+    <p>2. **Video Content Dominance**: Video marketing continues to rise, capturing audience attention effectively.</p>
+    <p>3. **Increased Use of Social Media**: Platforms like Instagram, LinkedIn, and Facebook are major channels for marketing campaigns.</p>
+    
+    <button id="more-info-btn">Toggle Detailed Trends</button>
+    <div class="toggle-content" id="more-info">
+        <p>4. **User-Generated Content**: Encouraging customers to share their experiences is proving effective for brand loyalty.</p>
+        <p>5. **Data-Driven Strategies**: Brands are leveraging analytics to shape their content marketing strategies for better engagement.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("more-info-btn").addEventListener("click", function() {
+        var content = document.getElementById("more-info");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            this.textContent = "Hide Detailed Trends";
+        } else {
+            content.style.display = "none";
+            this.textContent = "Toggle Detailed Trends";
+        }
+    });
+</script>
+
+</body>
+</html>

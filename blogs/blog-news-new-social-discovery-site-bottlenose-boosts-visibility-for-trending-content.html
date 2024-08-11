@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover trending content with Bottlenose, a new social discovery platform that boosts visibility for blog news and trending topics.">
+    <title>Bottlenose - Boost Your Social Discovery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin-top: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #005bb5;
+        }
+        #trendingContent {
+            margin-top: 15px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bottlenose - Social Discovery Redefined</h1>
+</header>
+
+<div class="content">
+    <p>Welcome to Bottlenose, your go-to social discovery site designed to enhance visibility for trending content. Stay updated with the latest blog news and trending topics. Join a community where new discoveries await!</p>
+    <button class="button" onclick="toggleContent()">Discover Trending Content</button>
+    <div id="trendingContent">
+        <h2>Latest Trends</h2>
+        <ul>
+            <li>Breaking News in Technology</li>
+            <li>Top 10 Health Tips for a Better Life</li>
+            <li>Fashion Trends You Need to Know</li>
+            <li>Gaming News: What's Hot Right Now</li>
+            <li>Travel Destinations You Must Visit</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function toggleContent() {
+        const content = document.getElementById('trendingContent');
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block';
+        } else {
+            content.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

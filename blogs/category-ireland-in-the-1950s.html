@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category: Ireland in the 1950s</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .description {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #555;
+        }
+        .key-points {
+            margin-top: 20px;
+            list-style-type: disc;
+        }
+        .key-point {
+            color: #333;
+        }
+        .image {
+            display: block;
+            margin: 0 auto;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        .interactive {
+            padding: 10px;
+            background-color: lightblue;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background-color: dodgerblue;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.interactive').click(function() {
+                $(this).toggleClass('active');
+                if ($(this).hasClass('active')) {
+                    $('#popup').fadeIn();
+                } else {
+                    $('#popup').fadeOut();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            A Glimpse into Ireland in the 1950s
+        </div>
+        <div class="description">
+            This webpage presents an overview of life and culture in Ireland during the 1950s, focusing on key events,

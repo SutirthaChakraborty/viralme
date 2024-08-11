@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brafton Research Lab Remote Work Survey - Insights on remote work trends, employee productivity, and workplace flexibility.">
+    <title>Brafton Research Lab Remote Work Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #28A745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-left: 4px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Brafton Research Lab Remote Work Survey</h1>
+</header>
+
+<article>
+    <h2>Overview of the Survey</h2>
+    <p>The Brafton Research Lab conducted a comprehensive survey on remote work, focusing on employee productivity, virtual collaboration, and the impact of flexible work hours.</p>
+    <button onclick="toggleInfo('productivity')">View Productivity Insights</button>
+    <div id="productivity" class="info">
+        <p>68% of respondents reported increased productivity while working remotely, citing fewer distractions and better work-life balance.</p>
+    </div>
+    
+    <button onclick="toggleInfo('collaboration')">View Collaboration Insights</button>
+    <div id="collaboration" class="info">
+        <p>75% of participants favored digital collaboration tools, with Zoom and Slack being the most popular choices.</p>
+    </div>
+
+    <button onclick="toggleInfo('flexibility')">View Flexibility Insights</button>
+    <div id="flexibility" class="info">
+        <p>80% expressed a desire for ongoing remote work options even after the pandemic, emphasizing the need for workplace flexibility.</p>
+    </div>
+</article>
+
+<script>
+    function toggleInfo(id) {
+        const infoDiv = document.getElementById(id);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

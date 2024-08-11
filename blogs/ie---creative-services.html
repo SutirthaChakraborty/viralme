@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .service {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.03);
+            border-color: #4CAF50;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Creative Services Partner</h1>
+</header>
+
+<div class="container">
+    <h2>About Our Services</h2>
+    <p>Transforming ideas into engaging experiences through expert creative services.</p>
+
+    <div class="service">
+        <h3>Graphic Design</h3>
+        <p>We craft visually stunning graphics that capture your brand's essence.</p>
+        <button onclick="showMore('graphicDesign')">Learn More</button>
+        <div id="graphicDesign" style="display:none;">Our graphic design services include logo design, brochures, and branding solutions.</div>
+    </div>
+
+    <div class="service">
+        <h3>Web Development</h3>
+        <p>Develop modern, responsive websites tailored to your business needs.</p>
+        <button onclick="showMore('webDevelopment')">Learn More</button>
+        <div id="webDevelopment" style="display:none;">We specialize in creating user-friendly websites that drive engagement and conversions.</div>
+    </div>
+
+    <div class="service">
+        <h3>Content Creation</h3>
+        <p>Engage your audience with compelling content that tells your story.</p>
+        <button onclick="showMore('contentCreation')">Learn More</button>
+        <div id="contentCreation" style="display:none;">Our team creates high-quality articles, blog posts, and social media content.</div>
+    </div>
+</div>
+
+<script>
+    function showMore(serviceId) {
+        const content = document.getElementById(serviceId);
+        content.style.display = (content.style.display === "none") ? "block" : "none";
+    }
+</script>
+
+</body>
+</html>

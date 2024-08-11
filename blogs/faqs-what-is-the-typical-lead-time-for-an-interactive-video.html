@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>FAQs - Interactive Video Lead Time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .faq {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        .faq:hover {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h1>FAQs on Interactive Video Lead Time</h1>
+
+<div class="faq">
+    <div class="question">What is the typical lead time for an interactive video?</div>
+    <div class="answer">The typical lead time for creating an interactive video can range from 4 to 8 weeks, depending on complexity and requirements.</div>
+</div>
+
+<div class="faq">
+    <div class="question">Factors Affecting Lead Time</div>
+    <div class="answer">Factors such as script development, graphic design, and client feedback can impact the overall timeline.</div>
+</div>
+
+<div class="faq">
+    <div class="question">How to expedite the process?</div>
+    <div class="answer">Clear communication, timely feedback, and well-prepared content can significantly expedite lead times.</div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

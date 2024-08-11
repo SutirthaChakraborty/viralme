@@ -1,0 +1,53 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Initiative Exploration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .container {
+    width: 60%;
+    margin: auto;
+  }
+  .header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .paragraph {
+    margin: 10px 0;
+  }
+  .highlight {
+    color: green;
+    font-weight: bold;
+  }
+  .interactive {
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 class="header">Welcome to the New Initiative</h1>
+  <p class="paragraph">The new initiative aims to address a growing need in our community. It's a collaborative effort to foster innovation and improve the quality of life for all.</p>
+  <p class="paragraph highlight">Key Features:</p>
+  <ul>
+    <li><span class="interactive" onclick="highlightFeature(this)">Feature 1</span> - Explained in more detail...</li>
+    <li><span class="interactive" onclick="highlightFeature(this)">Feature 2</span> - Discussed in depth...</li>
+    <li><span class="interactive" onclick="highlightFeature(this)">Feature 3</span> - Highlighted for its importance...</li>
+  </ul>
+  <script>
+    function highlightFeature(feature) {
+      var highlighted = document.querySelector('.highlight');
+      if (highlighted) highlighted.classList.remove('highlight');
+      feature.classList.add('highlight');
+    }
+  </script>
+</div>
+</body>
+</html>

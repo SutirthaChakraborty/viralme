@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stay updated with the latest Hootsuite blogs and news on integrated content marketing campaigns.">
+    <title>Hootsuite Updates & Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .news-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .update {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .update:last-child {
+            border-bottom: none;
+        }
+        .toggle-details {
+            cursor: pointer;
+            color: #007bff;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hootsuite Blog News & Updates</h1>
+    <div class="news-section">
+        <div class="update">
+            <strong>Integrated Content Marketing Campaigns</strong>
+            <p>Discover strategies for creating cohesive marketing campaigns that connect with your audience.</p>
+            <span class="toggle-details">Read more...</span>
+            <div class="details">
+                <p>Integrated content marketing involves blending various digital platforms to tell a consistent story. Using Hootsuite, you can schedule posts and engage your audience across platforms effectively.</p>
+            </div>
+        </div>
+        <div class="update">
+            <strong>Enhancements in Hootsuite's Support Features</strong>
+            <p>Learn about the latest updates to Hootsuite's customer support channels.</p>
+            <span class="toggle-details">Read more...</span>
+            <div class="details">
+                <p>Recent updates include improved chat support and an extensive self-help resource center to assist users more efficiently in managing their campaigns.</p>
+            </div>
+        </div>
+        <div class="update">
+            <strong>Latest Hootsuite Features for Marketers</strong>
+            <p>Stay ahead with new tools tailored for successful content marketing.</p>
+            <span class="toggle-details">Read more...</span>
+            <div class="details">
+                <p>Hootsuite now offers enhanced analytics and reporting capabilities that allow marketers to track engagement and optimize their strategies.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle-details');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const details = this.nextElementSibling;
+                if (details.style.display === 'block') {
+                    details.style.display = 'none';
+                } else {
+                    details.style.display = 'block';
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>

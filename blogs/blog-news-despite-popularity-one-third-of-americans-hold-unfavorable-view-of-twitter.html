@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the divide on Twitter's popularity – one-third of Americans hold an unfavorable view. Discover insights and opinions that shape social media trends.">
+    <title>Twitter's Popularity: The Divide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #1DA1F2;
+        }
+        #stats {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 15px;
+            color: white;
+            background-color: #1DA1F2;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0d8bcc;
+        }
+        #explanation {
+            margin-top: 20px;
+            display: none;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #e7f3fe;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Twitter's Popularity: A Divided Nation</h1>
+<div id="stats">
+    <p>Despite its popularity, a significant <strong>one-third of Americans</strong> view Twitter unfavorably. Let's explore the reasons behind this divide.</p>
+    <button id="toggle-btn">Click to Learn More</button>
+    <div id="explanation">
+        <p>Reasons for the unfavorable views include concerns about misinformation, privacy issues, and toxicity in online conversations. As social media continues to evolve, understanding public sentiment is crucial for platforms looking to enhance user experience.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('toggle-btn').addEventListener('click', function() {
+        var explanation = document.getElementById('explanation');
+        if (explanation.style.display === 'none' || explanation.style.display === '') {
+            explanation.style.display = 'block';
+            this.textContent = 'Show Less';
+        } else {
+            explanation.style.display = 'none';
+            this.textContent = 'Click to Learn More';
+        }
+    });
+</script>
+
+</body>
+</html>

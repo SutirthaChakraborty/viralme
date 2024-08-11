@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the art of red carpet videography, capturing glamorous moments and celebrity interviews.">
+    <title>Red Carpet Videography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #c72c41;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .video {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .video iframe {
+            border: none;
+            border-radius: 8px;
+        }
+        .toggle-info {
+            background: #c72c41;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #eaeaea;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Red Carpet Videography</h1>
+    </header>
+    <div class="content">
+        <h2>Capturing Glamour and Excitement</h2>
+        <p>Red carpet videography is essential for documenting high-profile events, showcasing celebrity appearances, and creating memorable highlights.</p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" allowfullscreen></iframe>
+        </div>
+        <button class="toggle-info">Learn More</button>
+        <div class="info">
+            <p>Effective red carpet videography involves strategic camera angles, high-quality equipment, and engaging storytelling to capture the essence of the event.</p>
+            <p>Key elements include:</p>
+            <ul>
+                <li>Interviews with celebrities</li>
+                <li>Behind-the-scenes footage</li>
+                <li>Highlight reels of the event</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.querySelector('.toggle-info').addEventListener('click', function() {
+            const info = document.querySelector('.info');
+            info.style.display = info.style.display === 'none' || info.style.display === '' ? 'block' : 'none';
+        });
+    </script>
+</body>
+</html>

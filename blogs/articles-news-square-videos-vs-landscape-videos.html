@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Comparison of articles, news, square videos, and landscape videos - explore format options for better reach on the web.">
+<title>Articles vs Square & Landscape Videos: A Content Breakdown</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+animation: fade-in 2s ease-in-out;
+}
+
+.square-video {
+width: 300px;
+height: 300px;
+border: 1px solid #ccc;
+display: inline-block;
+margin: 10px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+position: relative;
+cursor: pointer;
+}
+
+.square-video iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.landscape-video {
+width: 800px;
+height: 450px;
+display: block;
+border: 1px solid #ccc;
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+margin: 20px 0;
+}
+
+video {
+object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+.square-video, .landscape-video {
+width: 100%;
+max-width: 100%;
+}
+}
+
+/* Animation */
+@keyframes fade-in {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+/* Interactive CSS */
+.square-video:hover .video-title {
+transform: translateY(-5px);
+}
+
+.video-title {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+color: white;
+background-color: rgba(0, 0, 0, 0.8);
+padding: 5px;
+text-align: center;
+transition: all 0.3s ease;
+}
+
+@media screen and (hover: none) {
+/* For mobile devices */
+.square-video .video-title {
+display: none;
+}
+}
+
+</style>
+<script>
+// JavaScript to toggle video content on hover for square videos
+document.querySelectorAll('.square-video').forEach(function(videoElement) {
+videoElement.addEventListener('mouseover', function() {
+videoElement.querySelector('.video-title').style.display = 'block';
+});
+videoElement.addEventListener

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Animation Companies in the UK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #5a5a5a;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .company {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 5px solid #2980b9;
+            transition: background-color 0.3s;
+        }
+        .company:hover {
+            background-color: #eaf4fa;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background: #2980b9;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Top Animation Companies in the UK</h1>
+        <div class="company">
+            <h2>1. Aardman Animations</h2>
+            <button onclick="toggleDetails('details1')">Details</button>
+            <div id="details1" class="details">Known for its stop-motion techniques, Aardman creates beloved characters like Wallace and Gromit. Their innovative storytelling has made them a cornerstone of British animation.</div>
+        </div>
+        <div class="company">
+            <h2>2. Blue Zoo Animation</h2>
+            <button onclick="toggleDetails('details2')">Details</button>
+            <div id="details2" class="details">Blue Zoo is renowned for its high-quality CGI animation and has worked on numerous children's shows, expanding its reach globally with a focus on creativity.</div>
+        </div>
+        <div class="company">
+            <h2>3. Studio AKA</h2>
+            <button onclick="toggleDetails('details3')">Details</button>
+            <div id="details3" class="details">Famed for their unique visual styles, Studio AKA creates content that ranges from advertising to award-winning short films with a strong narrative focus.</div>
+        </div>
+        <div class="company">
+            <h2>4. Framestore</h2>
+            <button onclick="toggleDetails('details4')">Details</button>
+            <div id="details4" class="details">Framestore specializes in visual effects and has contributed to major film productions, blending animation with live-action in seamless ways.</div>
+        </div>
+        <div class="company">
+            <h2>5. Passion Pictures</h2>
+            <button onclick="toggleDetails('details5')">Details</button>
+            <div id="details5" class="details">This company has a reputation for creating heartfelt animated films and commercials, focusing on storytelling that resonates with audiences.</div>
+        </div>
+        <div class="company">
+            <h2>6. The Mill</h2>
+            <button onclick="toggleDetails('details6')">Details</button>
+            <div id="details6" class="details">The Mill combines cutting-edge technology with artistry to deliver stunning commercials and imagery in both animation and VFX.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

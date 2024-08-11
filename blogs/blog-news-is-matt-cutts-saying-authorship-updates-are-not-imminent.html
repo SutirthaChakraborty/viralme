@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest blog news: Matt Cutts on authorship updates not being imminent. Keep your SEO strategies up to date!">
+    <title>Blog News: Matt Cutts on Authorship Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background: #35424a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News Update</h1>
+</header>
+
+<article>
+    <h2>Matt Cutts on Authorship Updates</h2>
+    <p>In recent discussions, Matt Cutts mentioned that authorship updates are not imminent. SEO experts should stay informed about these changes as they can impact search visibility.</p>
+    <p>Keeping your SEO strategies current is crucial for maintaining your blog's reach and effectiveness. Follow our blog for more updates!</p>
+    <button id="moreInfoBtn">Find Out More</button>
+    <div id="moreInfo" style="display:none;">
+        <p>Although authorship updates are not expected soon, understanding their significance can help you prepare for future shifts in Google’s algorithms. Stay tuned!</p>
+    </div>
+</article>
+
+<script>
+    document.getElementById('moreInfoBtn').addEventListener('click', function() {
+        const infoDiv = document.getElementById('moreInfo');
+        infoDiv.style.display = infoDiv.style.display === 'none' ? 'block' : 'none';
+        this.textContent = infoDiv.style.display === 'block' ? 'Show Less' : 'Find Out More';
+    });
+</script>
+
+</body>
+</html>

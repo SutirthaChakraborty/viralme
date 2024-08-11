@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Failte Ireland Digital That Delivers Scheme - Enhancing tourism businesses through photography and video production.">
+    <title>Failte Ireland Digital That Delivers Scheme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .photography, .videography {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+        #toggleContent {
+            cursor: pointer;
+            color: #3498db;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Failte Ireland Digital That Delivers Scheme</h1>
+        <p>The Digital That Delivers scheme from Failte Ireland supports tourism businesses in enhancing their online presence through professional photography and video production, particularly for digital marketing and promotion.</p>
+        
+        <h2>Photography</h2>
+        <div class="photography">
+            <p>This scheme helps businesses capture stunning visuals that truly represent the experience they offer.</p>
+            <div id="photographyContent" style="display: none;">
+                <p>High-quality images can dramatically increase engagement on social media and improve website aesthetics, leading to higher visitor conversions.</p>
+            </div>
+            <span id="togglePhotography" class="toggle" onclick="toggleVisibility('photographyContent')">Read more...</span>
+        </div>
+        
+        <h2>Video Production</h2>
+        <div class="videography">
+            <p>Video content is essential for storytelling and attracting visitors. It resonates well with audiences and showcases the uniqueness of experiences.</p>
+            <div id="videoContent" style="display: none;">
+                <p>Using impactful video can lead to increased visibility and is often shared more on platforms compared to static images.</p>
+            </div>
+            <span id="toggleVideo" class="toggle" onclick="toggleVisibility('videoContent')">Read more...</span>
+        </div>
+        
+        <a href="#" class="button">Get Started</a>
+    </div>
+
+    <script>
+        function toggleVisibility(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

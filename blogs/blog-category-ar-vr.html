@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR & VR Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .interactive:hover {
+            background: #d1d1d1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploring AR & VR Technologies</h1>
+    </header>
+    <div class="content">
+        <h2>What is AR & VR?</h2>
+        <p>Augmented Reality (AR) enhances the real world by overlaying digital information, while Virtual Reality (VR) immerses users in a completely virtual environment. Both technologies are transforming industries such as gaming, education, and healthcare.</p>
+        
+        <div class="interactive" onclick="toggleInfo()">Click here to learn more!</div>
+        <div id="moreInfo" style="display:none;">
+            <h3>Applications of AR & VR</h3>
+            <ul>
+                <li>Gaming: Immersive experiences that engage players.</li>
+                <li>Education: Interactive learning environments.</li>
+                <li>Healthcare: Surgical simulations and patient care training.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo() {
+            var info = document.getElementById("moreInfo");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

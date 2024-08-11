@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inheritance in CSS</title>
+  <style>
+    /* Keywords: CSS inheritance, parent-child styles, cascading rules, specificity */
+
+    /* Define a base element */
+    .base-element {
+      background-color: #f2f2f2;
+      color: black;
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    /* Create a parent class with some styles */
+    .parent-class {
+      font-weight: bold;
+      border: 1px solid grey;
+    }
+
+    /* Child class extends parent with its own rules */
+    .child-class:extend(.parent-class) {
+      background-color: #eaeaea;
+      color: green;
+    }
+
+    /* Specificity rule override: inline styles */
+    .element-with-inline {
+      display: flex;
+      color: red !important;
+    }
+
+    /* Media query for responsive design */
+    @media screen and (max-width: 768px) {
+      .mobile-view {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <script>
+    // JavaScript explanation: Event listener to toggle a class on parent element
+    window.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.getElementById('toggle-button');
+      toggleButton.addEventListener('click', function () {
+        const parentElement = document.querySelector('.parent-class');
+        parentElement.classList.toggle('toggle-on-off');
+        if (parentElement.classList.contains('toggle-on-off')) {
+          console.log('Applied class');
+        } else {
+          console.log('Removed class');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Inheritance in CSS</h1>
+  <button id="toggle-button">Toggle Parent Class</button>
+  <p class="base-element">This is a paragraph showing inheritance. 
+    <span class="parent-class" id="parent-element">Parent</span>
+    <span class="child-class">Child</span>
+  </p>
+  <p class="element-with-inline">Element with inline styles: <span class="element-with-inline" style="color: blue;">This text will be overridden by inline style</span></p>
+
+  <h2>Mobile View (480px and below

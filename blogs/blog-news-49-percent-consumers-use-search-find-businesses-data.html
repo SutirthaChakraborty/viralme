@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: 49% of Consumers Use Search to Find Businesses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .fact {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News</h1>
+    <h2>Consumer Insights</h2>
+</header>
+
+<section>
+    <h2>The Power of Search: 49% of Consumers</h2>
+    <p class="fact">Did you know that 49% of consumers use search engines to find businesses?</p>
+    <p>This statistic highlights the critical role search engine optimization (SEO) plays in enhancing visibility and driving customer engagement. Businesses that leverage effective SEO strategies can maximize their online presence and attract valuable traffic.</p>
+    <button id="moreInfoBtn">Click for More Info</button>
+    <div id="extraInfo" style="display:none;">
+        <p>Investing in local SEO, utilizing keywords, and optimizing your website can lead to higher search rankings and more business inquiries. Stay ahead of the competition by focusing on online discoverability!</p>
+    </div>
+</section>
+
+<script>
+    document.getElementById("moreInfoBtn").onclick = function() {
+        var extraInfo = document.getElementById("extraInfo");
+        if (extraInfo.style.display === "none") {
+            extraInfo.style.display = "block";
+            this.innerHTML = "Click to Hide Info";
+        } else {
+            extraInfo.style.display = "none";
+            this.innerHTML = "Click for More Info";
+        }
+    };
+</script>
+
+</body>
+</html>

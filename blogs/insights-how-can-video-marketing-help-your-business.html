@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            background-color: #e7f1ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+            display: inline-block;
+        }
+        .toggle-info {
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7f1ff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights on Video Marketing</h1>
+        <p>Video marketing is a powerful tool that can enhance your business in various ways. Here are some key insights:</p>
+        <div class="keyword">Brand Awareness</div>
+        <div class="keyword">Increased Engagement</div>
+        <div class="keyword">Higher Conversion Rates</div>
+        <div class="keyword">SEO Benefits</div>
+        <div class="keyword">Customer Connection</div>
+        
+        <button class="toggle-info">Show More Insights</button>
+        <div class="info">
+            <p>1. <strong>Boosts Visibility:</strong> Videos significantly enhance social shares, leading to better visibility.</p>
+            <p>2. <strong>Builds Trust:</strong> Featuring customer testimonials in videos can foster trust with prospects.</p>
+            <p>3. <strong>Enhances Brand Recall:</strong> Visual content increases the chances of brand retention.</p>
+            <p>4. <strong>Improves Customer Education:</strong> Explainer videos effectively communicate product features.</p>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.querySelector('.toggle-info');
+        const infoDiv = document.querySelector('.info');
+        
+        toggleButton.addEventListener('click', () => {
+            infoDiv.style.display = infoDiv.style.display === 'none' || infoDiv.style.display === '' ? 'block' : 'none';
+            toggleButton.textContent = toggleButton.textContent === 'Show More Insights' ? 'Show Less' : 'Show More Insights';
+        });
+    </script>
+</body>
+</html>

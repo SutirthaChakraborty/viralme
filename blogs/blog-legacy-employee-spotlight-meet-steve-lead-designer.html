@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Spotlight: Meet Steve</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .highlight {
+            background-color: #e7f3ff;
+            border-left: 6px solid #007BFF;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Employee Spotlight</h1>
+</header>
+
+<div class="container">
+    <h2>Meet Steve, Lead Designer</h2>
+    <p>Steve has been a pivotal part of our design team for over 5 years. His creativity and attention to detail have transformed our projects and elevated our brand.</p>
+    
+    <div class="highlight">
+        <strong>Fun Fact:</strong> Steve is an avid traveler and draws inspiration from the cultures he experiences around the world!
+    </div>
+
+    <button onclick="showMoreInfo()">Learn More About Steve</button>
+    <div id="moreInfo" style="display:none;">
+        <p>Steve specializes in user experience design and has a knack for creating intuitive interfaces. He believes that great design is not just about aesthetics but also about functionality.</p>
+    </div>
+</div>
+
+<script>
+    function showMoreInfo() {
+        var moreInfo = document.getElementById("moreInfo");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

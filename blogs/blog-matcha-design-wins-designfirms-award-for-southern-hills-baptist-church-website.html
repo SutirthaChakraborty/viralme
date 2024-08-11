@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matcha Design wins DesignFirms award for their outstanding work on Southern Hills Baptist Church website.">
+    <meta name="keywords" content="Matcha Design, DesignFirms Award, Southern Hills Baptist Church, Web Design, Award-winning Design, Church Website">
+    <title>Matcha Design Wins DesignFirms Award</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #5cb85c;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Matcha Design Wins DesignFirms Award!</h1>
+</header>
+
+<div class="content">
+    <h2>Outstanding Achievement in Web Design</h2>
+    <p>Matcha Design has been recognized for their exceptional work on the <strong>Southern Hills Baptist Church website</strong>, winning a prestigious <strong>DesignFirms Award</strong>. This award highlights their commitment to innovative <strong>web design</strong> and user-friendly interfaces.</p>
+    <button id="moreInfoBtn">Click for More Info</button>
+    <p id="moreInfo" style="display:none;">This award-winning project showcases cutting-edge design principles, integrating beautiful aesthetics with functionality. The site is optimized for user experience, making it easy for visitors to access church services, events, and community resources.</p>
+</div>
+
+<script>
+    document.getElementById("moreInfoBtn").onclick = function() {
+        var info = document.getElementById("moreInfo");
+        if (info.style.display === "none") {
+            info.style.display = "block";
+            this.innerText = "Show Less Info";
+        } else {
+            info.style.display = "none";
+            this.innerText = "Click for More Info";
+        }
+    };
+</script>
+
+</body>
+</html>

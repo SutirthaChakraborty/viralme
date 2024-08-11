@@ -1,0 +1,75 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog News & Lyrics Explorer</title>
+<style>
+body { font-family: Arial, sans-serif; }
+.search-box { margin: 10px; }
+.search-results { margin: 10px; }
+.result-item { padding: 10px; border: 1px solid #ddd; }
+</style>
+<script>
+function searchBlogs() {
+  let query = document.getElementById('blog-search').value;
+  fetch(`https://www.googleapis.com/customsearch/v1?key=YOUR_API_KEY&cx=YOUR_CUSTOM_SEARCH_ENGINE&q=${query}`)
+    .then(response => response.json())
+    .then(data => {
+      let results = data.items;
+      let searchBox = document.getElementById('blog-search-results');
+      searchBox.innerHTML = '';
+      results.forEach(result => {
+        let item = `
+          <div class="result-item">
+            <h2>${result.title}</h2>
+            <p>${result.snippet}</p>
+          </div>
+        `;
+        searchBox.insertAdjacentHTML('beforeend', item);
+      });
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function searchLyrics() {
+  let query = document.getElementById('lyrics-search').value;
+  fetch(`https://api.lyrics.ovh/suggestion?q=${query}`)
+    .then(response => response.json())
+    .then(data => {
+      let results = data.result;
+      let searchBox = document.getElementById('lyrics-search-results');
+      searchBox.innerHTML = '';
+      results.forEach(result => {
+        let item = `
+          <div class="result-item">
+            <h2>${result.title}</h2>
+            <p>${result.lyrics}</p>
+          </div>
+        `;
+        searchBox.insertAdjacentHTML('beforeend', item);
+      });
+    })
+    .catch(error => console.error('Error:', error));
+}
+</script>
+</head>
+<body>
+<h1>Blog News & Lyrics Explorer</h1>
+
+<div class="search-box">
+  <input type="text" id="blog-search" placeholder="Search for blog posts...">
+  <button onclick="searchBlogs()">Search</button>
+  <div id="blog-search-results"></div>
+</div>
+
+<div class="search-box">
+  <input type="text" id="lyrics-search" placeholder="Search for lyrics...">
+  <button onclick="searchLyrics()">Search</button>
+  <div id="lyrics-search-results"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

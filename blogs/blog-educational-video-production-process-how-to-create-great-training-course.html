@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how to create great training courses with our educational video production process. Tips and tricks for effective online learning.">
+    <title>Educational Video Production for Training Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .keywords {
+            font-style: italic;
+            color: #555;
+        }
+        .expandable {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e9ecef;
+            border-left: 4px solid #007BFF;
+        }
+        .toggle-button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Creating a Great Training Course</h1>
+</header>
+
+<div class="content">
+    <h2>The Educational Video Production Process</h2>
+    <p>Discover the essential steps in creating effective educational videos:</p>
+    <ul>
+        <li>Research and Outline your course content.</li>
+        <li>Write a Script that engages learners.</li>
+        <li>Choose the Right Equipment for high-quality production.</li>
+        <li>Edit and Enhance your video with tools and effects.</li>
+    </ul>
+    
+    <button class="toggle-button" onclick="toggleVisibility('tips')">Interactive Tips</button>
+    <div id="tips" class="expandable">
+        <p>Utilize keywords like <span class="keywords">video production, e-learning, instructional design, course creation</span> to boost your visibility online.</p>
+        <p>Always prioritize audio clarity and visual consistency to ensure effective learning experiences.</p>
+    </div>  
+</div>
+
+<script>
+    function toggleVisibility(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Design - Top B2B Company in Oklahoma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Matcha Design: Oklahoma's Top B2B Company 2022</h1>
+    </header>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>In 2022, Matcha Design was recognized as the number one B2B company in Oklahoma in the Clutch Top Performers list. Our innovative digital solutions have transformed businesses and helped elevate brand visibility across various industries.</p>
+        <button class="accordion">Our Services</button>
+        <div class="panel">
+            <p>At Matcha Design, we offer a range of services including web design, branding, digital marketing, and e-commerce solutions. We focus on creating user-friendly designs that connect brands with their target audiences.</p>
+        </div>
+        <button class="accordion">Why Choose Us?</button>
+        <div class="panel">
+            <p>With a dedicated team of professionals and a portfolio of successful projects, we pride ourselves on delivering results-driven strategies tailored to meet our client's needs. Trust the experts recognized for excellence!</p>
+        </div>
+        <button class="accordion">Get in Touch</button>
+        <div class="panel">
+            <p>Ready to boost your business? Contact us today to find out how we can help you thrive in the competitive marketplace.</p>
+            <a class="btn" href="mailto:info@matchadesign.com">Contact Us</a>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

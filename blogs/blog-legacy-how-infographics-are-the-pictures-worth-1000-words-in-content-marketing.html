@@ -1,0 +1,56 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: Infographics are the Pictures Worth 1000 Words in Content Marketing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        .infographic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+        .infographic img {
+            width: 100%;
+            max-width: 800px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .infographic:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+    <script>
+        // Interactive effect on infographic title hover
+        function revealDetails(target) {
+            target.nextElementSibling.style.display = target.getAttribute('data-info') === 'hidden' ? 'block' : 'none';
+        }
+
+        let infographicTitles = document.querySelectorAll('.infographic h2');
+        infographicTitles.forEach((title) => {
+            title.addEventListener('mouseover', revealDetails);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Unleashing the Power of <span class="keyword emphasized">Infographics</span> in Content Marketing</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="infographic" data-info="hidden">
+                <img src="https://example.com/image1-infographic.png" alt="Infographic1: Content Marketing Statistics">
+                <h2 onmouseover="revealDetails(this)">Visualize Content Strategy<a href="#info1" data-info="hidden" class="info-reveal">Hover for more details</a></h2>
+                <div id="info1" style="display: none;">
+                    <p>This infographic showcases the impact of infographics in driving engagement and boosting <span class="keyword emphasized keyword-keypoint">SEO</span>.</p>
+                </div>
+            </div>
+            <div class="infographic">
+                <img src="https://example.com/image

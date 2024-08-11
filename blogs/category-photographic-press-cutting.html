@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photographic Press Cutting Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .category {
+            margin-bottom: 20px;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .category:hover {
+            background-color: #e0e0e0;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Photographic Press Cutting</h1>
+        <div class="category" onclick="toggleDetails('details1')">
+            <strong>What is Photographic Press Cutting?</strong>
+            <div class="details" id="details1">
+                Photographic press cutting refers to the collection of published articles and images from newspapers and magazines. This process captures visuals in a physical format, often used for historical records, research, and media analysis.
+            </div>
+        </div>
+        <div class="category" onclick="toggleDetails('details2')">
+            <strong>Importance of Press Cuttings</strong>
+            <div class="details" id="details2">
+                Press cuttings serve as valuable resources for journalists, researchers, and businesses to track media coverage, understand public perception, and evaluate the impact of press releases.
+            </div>
+        </div>
+        <div class="category" onclick="toggleDetails('details3')">
+            <strong>How to Compile Photographic Press Cuttings</strong>
+            <div class="details" id="details3">
+                Compiling involves sourcing articles, scanning images, and organizing them chronologically or thematically. Digital tools can enhance this process, making it efficient for modern use.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(detailId) {
+            const details = document.getElementById(detailId);
+            details.style.display = details.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

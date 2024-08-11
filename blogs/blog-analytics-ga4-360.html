@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Analytics with GA4 360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Analytics with GA4 360</h1>
+    </header>
+    <div class="content">
+        <h2>Understanding GA4 360</h2>
+        <p>Google Analytics 4 (GA4) 360 is a powerful tool for tracking website performance and user engagement on your blog. It provides insights into audience behavior, traffic sources, and content effectiveness.</p>
+        
+        <h3>Key Metrics to Track</h3>
+        <ul>
+            <li>User Engagement</li>
+            <li>Traffic Sources</li>
+            <li>Conversion Rates</li>
+            <li>Bounce Rates</li>
+        </ul>
+
+        <h3>Interactive Dashboard</h3>
+        <p>Click the button below to toggle a sample dashboard view!</p>
+        <button id="toggleDashboard">Show Sample Dashboard</button>
+        <div id="dashboard" style="display:none; padding: 15px; background: #eef; border-radius: 5px; margin-top: 10px;">
+            <h4>Sample Dashboard</h4>
+            <p>Visitors: 1,500</p>
+            <p>Bounce Rate: 45%</p>
+            <p>Average Session Duration: 3:25</p>
+            <p>Top Traffic Source: Organic Search</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggleDashboard').addEventListener('click', function() {
+            var dashboard = document.getElementById('dashboard');
+            if (dashboard.style.display === 'none') {
+                dashboard.style.display = 'block';
+            } else {
+                dashboard.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

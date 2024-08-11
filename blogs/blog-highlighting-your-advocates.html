@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlighting Our Advocates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .advocate {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .advocate:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Highlighting Our Advocates</h1>
+    <p>Appreciating those who support our mission</p>
+</header>
+
+<div class="advocate" onclick="showDetails('John Doe', 'A passionate advocate for social justice.')">
+    <h2>John Doe</h2>
+    <p>Advocate for Social Justice</p>
+</div>
+
+<div class="advocate" onclick="showDetails('Jane Smith', 'An environmental activist working towards sustainability.')">
+    <h2>Jane Smith</h2>
+    <p>Environmental Activist</p>
+</div>
+
+<div class="advocate" onclick="showDetails('Emily Johnson', 'A champion for education reform.')">
+    <h2>Emily Johnson</h2>
+    <p>Education Reform Champion</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Highlighting Advocates Blog</p>
+</footer>
+
+<script>
+    function showDetails(name, info) {
+        alert(name + ': ' + info);
+    }
+</script>
+
+</body>
+</html>

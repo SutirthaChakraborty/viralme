@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Video Marketing 3 Simple Rules for 2016</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .rule {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .rule h2 {
+            margin-bottom: 10px;
+        }
+        .rule p {
+            line-height: 1.5em;
+        }
+        .rule ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        .cta {
+            background-color: #007BFF;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        // JavaScript for interactive elements (e.g., animation, tooltip)
+        function showRules(data) {
+            const ruleElements = document.querySelectorAll('.rule');
+            ruleElements.forEach((ruleElement, index) => {
+                ruleElement.style.display = (index < data.length) ? 'block' : 'none';
+            });
+        }
+        window.onload = function() {
+            const yearInput = document.getElementById('year');
+            yearInput.addEventListener('change', (event) => {
+                showRules(JSON.parse(yearInput.value));
+            });
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Marketing: 3 Simple Rules

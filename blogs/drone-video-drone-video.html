@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of drone video technology, capturing stunning aerial footage. Learn about drone videography types, techniques, and equipment.">
+    <title>Drone Video Technology</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .video-section {
+            margin: 20px 0;
+        }
+        .video-thumb {
+            max-width: 100%;
+            transition: transform 0.3s;
+        }
+        .video-thumb:hover {
+            transform: scale(1.05);
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Drone Video: Capture Aerial Perspectives</h1>
+    <p>Drone videography has revolutionized how we capture stunning aerial footage, providing unique perspectives for filmmakers, real estate agents, and event planners. Explore the different types of drones:</p>
+    <ul>
+        <li>Quadcopters</li>
+        <li>Fixed-wing drones</li>
+        <li>Camera-mounted drones</li>
+    </ul>
+    
+    <div class="video-section">
+        <h2>Watch a Drone Video</h2>
+        <img src="drone-video-thumb.jpg" alt="Drone Video Thumbnail" class="video-thumb" onclick="playVideo()">
+        <div id="video-container" style="display:none;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <button onclick="toggleVideo()">Play Video</button>
+
+    <script>
+        function toggleVideo() {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.style.display = videoContainer.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function playVideo() {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

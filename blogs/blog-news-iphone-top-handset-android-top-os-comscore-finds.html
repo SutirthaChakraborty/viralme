@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: iPhone vs Android</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest Blog News: iPhone vs Android</h1>
+</header>
+
+<article>
+    <h2>iPhone: The Top Handset</h2>
+    <p>According to recent findings by Comscore, the iPhone continues to dominate the smartphone market as the top handset choice among consumers.</p>
+    <span class="toggle">Read more...</span>
+    <div class="content">
+        <p>With its sleek design, user-friendly interface, and robust ecosystem, the iPhone remains a favorite. Its integration with iOS provides a seamless experience, making it a top choice for many users.</p>
+    </div>
+</article>
+
+<article>
+    <h2>Android: The Leading OS</h2>
+    <p>Comscore also highlights Android as the leading operating system, powering a vast array of devices across different manufacturers.</p>
+    <span class="toggle">Read more...</span>
+    <div class="content">
+        <p>Android's flexibility and customization options attract a diverse user base, allowing for a wide range of applications and functionalities that cater to various needs.</p>
+    </div>
+</article>
+
+<script>
+    document.querySelectorAll('.toggle').forEach(item => {
+        item.addEventListener('click', event => {
+            const content = item.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

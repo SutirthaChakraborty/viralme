@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Lapse for Construction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .main {
+            width: 65%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .topic {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .topic:hover {
+            background-color: #f0f0f0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Time Lapse for Construction</h1>
+        <p>Explore the fascinating world of construction time lapses!</p>
+    </header>
+    <div class="content">
+        <div class="sidebar">
+            <h2>Topics</h2>
+            <div class="topic" onclick="showContent('intro')">Introduction to Time Lapse</div>
+            <div class="topic" onclick="showContent('benefits')">Benefits of Time Lapse</div>
+            <div class="topic" onclick="showContent('techniques')">Techniques Used</div>
+            <div class="topic" onclick="showContent('applications')">Applications in Construction</div>
+        </div>
+        <div class="main">
+            <div id="intro" class="hidden">
+                <h2>Introduction to Time Lapse</h2>
+                <p>Time lapse photography is a technique that captures a series of images at set intervals to record changes that take place slowly over time.</p>
+            </div>
+            <div id="benefits" class="hidden">
+                <h2>Benefits of Time Lapse</h2>
+                <p>Time lapse videos provide a unique perspective on construction projects, showcasing progress in a condensed format that is engaging and informative.</p>
+            </div>
+            <div id="techniques" class="hidden">
+                <h2>Techniques Used</h2>
+                <p>Common techniques include interval shooting, using stable mounts, and post-production editing to enhance the final video.</p>
+            </div>
+            <div id="applications" class="hidden">
+                <h2>Applications in Construction</h2>
+                <p>Time lapse is widely used in construction to document the building process, monitor progress, and create promotional materials.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showContent(topic) {
+            const sections = document.querySelectorAll('.main > div');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(topic).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

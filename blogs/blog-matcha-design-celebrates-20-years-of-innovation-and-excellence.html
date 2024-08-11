@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Design 20 Years of Innovation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .years {
+            cursor: pointer;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e5ffe5;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Celebrating 20 Years of Innovation & Excellence at Matcha Design</h1>
+    </header>
+    <div class="container">
+        <h2>Our Journey</h2>
+        <p>Matcha Design has been a leader in design innovation for two decades, consistently pushing the boundaries of creativity and excellence.</p>
+        <h2>Highlights</h2>
+        <p>Explore our innovative projects and celebrate our achievements over the past 20 years:</p>
+        <span class="years" onclick="toggleInfo()">Click here to reveal milestones!</span>
+        <div class="info" id="milestones">
+            <ul>
+                <li>2003: Company Established</li>
+                <li>2008: Awarded 'Best Design Studio'</li>
+                <li>2015: Launched our flagship product line</li>
+                <li>2020: Expanded into international markets</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function toggleInfo() {
+            const info = document.getElementById('milestones');
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

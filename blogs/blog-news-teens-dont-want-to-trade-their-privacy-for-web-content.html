@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teenagers and Online Privacy</title>
+	<style>
+		.body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+		}
+		
+		.header {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		.content {
+			padding: 20px;
+		}
+		
+		.graphic {
+			margin: 20px;
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+		
+		.graphic img {
+			width: 100%;
+			height: 150px;
+			object-fit: cover;
+		}
+		
+		.interactive {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.interactive:hover {
+			background-color: #e0e0e0;
+		}
+		
+		.js-enabled {
+			display: block;
+		}
+		
+		.no-js-enabled {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="body">
+		<div class="header">
+			<h1>Teenagers and Online Privacy: The Trade-Off</h1>
+			<p>As teenagers spend more time online, they are faced with a difficult decision: trade their privacy for access to web content.</p>
+		</div>
+		
+		<div class="content">
+			<p>According to a recent survey, 70% of teenagers believe that online privacy is important, but 60% are willing to trade their privacy for access to free content.</p>
+			<p>This raises questions about the impact of online privacy on teenagers' lives and the consequences of sacrificing their privacy for online benefits.</p>
+			<div class="graphic">
+				<img src="graphic.jpg" alt="Graphic illustrating the trade-off between online privacy and web content">
+			</div>
+			<p>Interactive elements:</p>
+			<button class="interactive js-enabled" onclick="alert('You have chosen to prioritize online privacy!')">Prioritize Online Privacy</button>
+			<button class="interactive js-enabled" onclick="alert('You have chosen to prioritize web content!')">Prioritize Web Content</button>
+			<button class="interactive no-js-enabled" onclick="alert('You have chosen to prioritize online privacy!')">Prioritize Online Privacy</button>
+			<button class="interactive no-js-enabled" onclick="alert('You have chosen to prioritize web content!')">Prioritize Web Content</button>
+		</div>
+		
+		<script>
+			if (window.addEventListener) {
+				document.body.addEventListener('load', function() {
+					document.querySelector('.js-enabled').addEventListener('click', function() {
+						this.classList.add('active');
+					});
+				});
+			}
+		</script>
+	</div>
+</body>
+</html>
+
+
+Keywords: Teenagers, Online Privacy, Web Content, Trade-Off, Digital Citizenship, Online Safety, Cybersecurity, Data Protection, Personal Data, Information Security, Online Behavior, Internet Safety.

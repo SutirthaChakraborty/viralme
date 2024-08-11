@@ -1,0 +1,88 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News - Facebook's Paid Content Policy Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5;
+        }
+
+        header {
+            background-color: #3B5998;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .keyword {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        .search {
+            display: flex;
+            margin-bottom: 1rem;
+        }
+
+        .search input[type="text"] {
+            width: 60%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .search button {
+            width: 30%;
+            padding: 5px 10px;
+            background-color: #3B5998;
+            color: white;
+            border: none;
+            font-size: 14px;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function highlightKeyword(keyword) {
+            document.querySelectorAll('.keyword').forEach((element) => {
+                element.classList.remove('highlight');
+            });
+            const searchInput = document.querySelector('.search input');
+            const userInput = searchInput.value.toLowerCase();
+            if (userInput.includes(keyword.toLowerCase())) {
+                const highlightedElement = document.querySelector(`.keyword:contains('${keyword}')`);
+                highlightedElement.classList.add('highlight');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blog News: Facebook's Paid Content Policy Shift</h1>
+        <div class="search">
+            <input type="text" placeholder="Search paid content, news..." onkeyup

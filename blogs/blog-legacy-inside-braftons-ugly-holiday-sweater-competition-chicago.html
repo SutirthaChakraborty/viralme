@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brafton's Ugly Holiday Sweater Competition in Chicago</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            overflow: hidden;
+            color: #333;
+        }
+        .sweater-image {
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .sweater-image:hover {
+            transform: scale(1.05);
+        }
+        .info {
+            width: 40%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.08);
+            border-radius: 5px;
+            color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #3d84ff;
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+        a:hover {
+            background-color: #2b66d6;
+        }
+    </style>
+    <script>
+        function showDetails() {
+            var sweaterDetails = document.getElementById("sweater-description");
+            var closeButton = document.getElementById("close-button");
+            if (sweaterDetails.style.display === "block") {
+                sweaterDetails.style.display = "none";
+                closeButton.style.display = "none";
+            } else {
+                sweaterDetails.style.display = "block";
+                closeButton.style.display =

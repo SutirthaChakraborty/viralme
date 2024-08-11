@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of drone photography, its benefits, techniques, and tips for capturing stunning aerial images.">
+    <title>Drone Photography: Capture Stunning Aerial Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle-btn {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e2e6e9;
+            border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Drone Photography</h1>
+        <p>Discover the magic of <strong>drone photography</strong>! With drones, you can capture breathtaking aerial views and unique perspectives that were once impossible to achieve.</p>
+        <button class="toggle-btn" id="toggleInfo">Learn More</button>
+        <div class="info" id="additionalInfo">
+            <h2>Benefits of Drone Photography</h2>
+            <ul>
+                <li>Able to reach high altitudes for stunning landscapes.</li>
+                <li>Access hard-to-reach areas for unique shots.</li>
+                <li>High-resolution images with advanced cameras.</li>
+                <li>Time-lapse capabilities for dynamic photography.</li>
+            </ul>
+            <h2>Tips for Capturing Great Drone Photos</h2>
+            <ul>
+                <li>Master the drone controls for smooth movements.</li>
+                <li>Utilize optimal lighting, preferably during golden hour.</li>
+                <li>Experiment with different angles and altitudes.</li>
+                <li>Always respect local regulations regarding drone usage.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('toggleInfo').addEventListener('click', function() {
+            var info = document.getElementById('additionalInfo');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+                this.textContent = 'Show Less';
+            } else {
+                info.style.display = 'none';
+                this.textContent = 'Learn More';
+            }
+        });
+    </script>
+</body>
+</html>

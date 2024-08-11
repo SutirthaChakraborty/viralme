@@ -1,0 +1,91 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+ header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+ }
+
+ .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+ }
+
+ h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+
+ article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .blog-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .post-content {
+    margin-left: 100px;
+ }
+
+ .post-date {
+    color: #666;
+    font-size: 14px;
+ }
+
+ .read-more {
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+ }
+
+ .read-more:hover {
+    color: #e74c3c;
+ }
+
+ footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+ }
+
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const readMoreButtons = document.querySelectorAll('.read-more');
+
+    readMoreButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const hiddenContent = this.nextElementSibling;
+            if (hiddenContent.style.display === 'none') {
+                hiddenContent.style.display = 'block';
+                this.textContent = 'Read Less';
+            } else {
+                hiddenContent.style.display = 'none';
+                this.textContent = 'Read More';

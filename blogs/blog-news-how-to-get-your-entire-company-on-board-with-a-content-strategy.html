@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Content Strategy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Getting Your Company On Board with a Content Strategy</h1>
+    </header>
+    <div class="content">
+        <h2>Why a Content Strategy?</h2>
+        <p>Implementing a <span class="keyword">content strategy</span> is essential for aligning your team and enhancing brand visibility. It helps in creating consistent messaging and engaging your audience effectively.</p>
+        
+        <h2>Steps to Engage Your Team</h2>
+        <ul>
+            <li>**Educate** your team about the benefits of a content strategy.</li>
+            <li>**Involve** key stakeholders in the planning process.</li>
+            <li>**Set clear goals** and metrics to measure success.</li>
+            <li>**Encourage collaboration** across departments.</li>
+        </ul>
+        
+        <button onclick="showMore()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <h3>Additional Resources</h3>
+            <p>Consider workshops and training sessions to deepen understanding of content marketing principles.</p>
+        </div>
+    </div>
+
+    <script>
+        function showMore() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

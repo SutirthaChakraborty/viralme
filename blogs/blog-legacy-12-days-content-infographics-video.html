@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: 12 Days of Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .infographic {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .day {
+            margin: 10px 0;
+            padding: 10px;
+            background: #eaeaea;
+            border-left: 5px solid #007bff;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Legacy: 12 Days of Content</h1>
+        <p>Explore our infographic and video content created over the past 12 days to enhance engagement and knowledge.</p>
+        <div class="day" onclick="toggleInfographic('day1')">
+            <h2>Day 1: Introduction to Content Marketing</h2>
+            <p>Learn the basics of content marketing and its importance.</p>
+        </div>
+        <div class="day" onclick="toggleInfographic('day2')">
+            <h2>Day 2: Social Media Strategies</h2>
+            <p>Discover effective strategies for leveraging social media.</p>
+        </div>
+        <div class="day" onclick="toggleInfographic('day3')">
+            <h2>Day 3: SEO Best Practices</h2>
+            <p>Understand the fundamental SEO techniques for better reach.</p>
+        </div>
+        <!-- Add more days as needed -->
+        
+        <div id="day1" class="infographic">
+            <h3>Infographic: Content Marketing 101</h3>
+            <img src="content-marketing-infographic.png" alt="Content Marketing Infographic" style="width:100%;">
+            <video controls>
+                <source src="content-marketing-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="day2" class="infographic">
+            <h3>Infographic: Social Media Strategies</h3>
+            <img src="social-media-infographic.png" alt="Social Media Infographic" style="width:100%;">
+            <video controls>
+                <source src="social-media-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="day3" class="infographic">
+            <h3>Infographic: SEO Best Practices</h3>
+            <img src="seo-infographic.png" alt="SEO Infographic" style="width:100%;">
+            <video controls>
+                <source src="seo-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <!-- Add more infographics and videos as needed -->
+    </div>
+    
+    <script>
+        function toggleInfographic(dayId) {
+            const infographic = document.getElementById(dayId);
+            infographic.style.display = infographic.style.display === 'none' || infographic.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

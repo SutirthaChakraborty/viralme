@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft's New Search Engine: Bing 1298616</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+.news-content {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.news-content p {
+    margin: 10px 0;
+}
+.news-content a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+.news-content a:hover {
+    color: #000;
+}
+</style>
+<script>
+function showDetails() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'news_details.json', true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            var data = JSON.parse(xhr.responseText);
+            var newsDetails = document.getElementById('news-details');
+            newsDetails.innerHTML = '';
+            newsDetails.innerHTML += '<h2>' + data.title + '</h2>';
+            newsDetails.innerHTML += '<p>' + data.description + '</p>';
+            newsDetails.innerHTML += '<p><a href="' + data.link + '">Read More</a></p>';
+        } else {
+            console.log('Error fetching news details');
+        }
+    };
+    xhr.send();
+}
+</script>
+</head>
+<body onload="showDetails();">
+<div class="container">
+<h1>Blog News: Microsoft's New Search Engine</h1>
+<div class="news-content" id="news-details">
+<p>Loading...</p>
+</div>
+</div>
+</body>
+</html>

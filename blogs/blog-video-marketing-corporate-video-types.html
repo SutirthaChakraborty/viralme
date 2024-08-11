@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Corporate Video Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .video-type {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Corporate Video Marketing</h1>
+        <p>Explore Effective Corporate Video Types for Your Brand</p>
+    </header>
+    <section>
+        <h2>Video Marketing Types</h2>
+        <div class="video-type" onclick="toggleDetails('introVideo')">1. Introductory Videos</div>
+        <div id="introVideo" class="details">
+            <p>Introduce your brand, mission, and values through engaging introductory videos. They are essential for building brand awareness.</p>
+        </div>
+        <div class="video-type" onclick="toggleDetails('testimonialVideo')">2. Testimonial Videos</div>
+        <div id="testimonialVideo" class="details">
+            <p>Showcase satisfied clients and their positive experiences. Testimonial videos build trust and credibility for your corporate brand.</p>
+        </div>
+        <div class="video-type" onclick="toggleDetails('explainerVideo')">3. Explainer Videos</div>
+        <div id="explainerVideo" class="details">
+            <p>Use explainer videos to break down complex concepts and demonstrate products or services clearly and concisely.</p>
+        </div>
+        <div class="video-type" onclick="toggleDetails('trainingVideo')">4. Training Videos</div>
+        <div id="trainingVideo" class="details">
+            <p>Provide training materials and onboarding resources through video. It's an effective way to enhance employee engagement and learning.</p>
+        </div>
+        <div class="video-type" onclick="toggleDetails('eventVideo')">5. Event Videos</div>
+        <div id="eventVideo" class="details">
+            <p>Capture key moments from corporate events, conferences, and product launches to share with a broader audience.</p>
+        </div>
+    </section>
+    <script>
+        function toggleDetails(id) {
+            const detailsElement = document.getElementById(id);
+            if (detailsElement.style.display === "none" || detailsElement.style.display === "") {
+                detailsElement.style.display = "block";
+            } else {
+                detailsElement.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

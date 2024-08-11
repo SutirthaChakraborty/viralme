@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Fail at Blogging</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 15px 0;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #3b7a8c;
+        }
+        .failure-tip {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e0f7fa;
+            border: 1px solid #00796b;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>How to Fail at Blogging</h1>
+</header>
+
+<section>
+    <h2>1. Ignore SEO Best Practices</h2>
+    <p>Not optimizing your content for search engines will limit your visibility.</p>
+    <button onclick="toggleTip('tip1')">Show Tip</button>
+    <div id="tip1" class="failure-tip">Use keywords strategically in your posts.</div>
+</section>
+
+<section>
+    <h2>2. Post Irregularly</h2>
+    <p>Inconsistent posting schedules confuse your audience.</p>
+    <button onclick="toggleTip('tip2')">Show Tip</button>
+    <div id="tip2" class="failure-tip">Establish a regular publishing schedule.</div>
+</section>
+
+<section>
+    <h2>3. Neglect Your Audience</h2>
+    <p>Ignoring reader feedback can lead to a disengaged audience.</p>
+    <button onclick="toggleTip('tip3')">Show Tip</button>
+    <div id="tip3" class="failure-tip">Engage with your audience through comments and social media.</div>
+</section>
+
+<section>
+    <h2>4. Write Only for Yourself</h2>
+    <p>Focusing solely on personal interests may alienate potential readers.</p>
+    <button onclick="toggleTip('tip4')">Show Tip</button>
+    <div id="tip4" class="failure-tip">Research what your audience wants to read about.</div>
+</section>
+
+<script>
+    function toggleTip(tipId) {
+        const tip = document.getElementById(tipId);
+        if (tip.style.display === 'none' || tip.style.display === '') {
+            tip.style.display = 'block';
+        } else {
+            tip.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

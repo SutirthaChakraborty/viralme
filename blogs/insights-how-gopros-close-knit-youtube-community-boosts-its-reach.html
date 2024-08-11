@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoPro YouTube Community Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007acc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .keyword {
+            font-weight: bold;
+            color: #007acc;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005f99;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights on GoPro's YouTube Community</h1>
+    </header>
+    <section>
+        <h2>Building a Close-Knit Community</h2>
+        <p>GoPro's strategy focuses on creating a <span class="keyword">strong community</span> on YouTube, which enhances brand loyalty and engagement. By treating their channel as a <span class="keyword">social platform</span>, they foster interactions that lead to increased shares and reach.</p>
+        <button onclick="toggleDetails()">Show More Insights</button>
+        <div id="moreInsights" style="display:none;">
+            <p>Engaging with viewers through comments and featuring user-generated content has significantly boosted GoPro's visibility. This approach not only strengthens community ties but also encourages <span class="keyword">content sharing</span>, making GoPro one of the most popular brands on YouTube.</p>
+        </div>
+    </section>
+    <script>
+        function toggleDetails() {
+            var insights = document.getElementById("moreInsights");
+            if (insights.style.display === "none") {
+                insights.style.display = "block";
+            } else {
+                insights.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

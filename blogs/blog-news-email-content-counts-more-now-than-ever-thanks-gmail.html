@@ -1,0 +1,147 @@
+以下是关于“博客新闻电子邮件：Gmail时代，内容计数更重要了”主题的小型 HTML 代码，包括 CSS 和 JavaScript：
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>博客新闻电子邮件：Gmail时代，内容计数更重要了</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #f9f9f9;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		.content {
+			padding: 20px;
+		}
+		.statistics {
+			background-color: #f2f2f2;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-top: none;
+		}
+		.statistics table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		.statistics th, .statistics td {
+			border: 1px solid #ddd;
+			padding: 10px;
+			text-align: center;
+		}
+		.statistics th {
+			background-color: #f2f2f2;
+			color: #333;
+		}
+		.interactive {
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.interactive input[type="number"] {
+			width: 50px;
+			height: 30px;
+			padding: 5px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+		}
+		.interactive button[type="button"] {
+			width: 100px;
+			height: 30px;
+			padding: 5px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.interactive button[type="button"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>博客新闻电子邮件：Gmail时代，内容计数更重要了</h1>
+		</div>
+		<div class="content">
+			<p>在 Gmail 时代，电子邮件内容计数变得更加重要。随着 Gmail 的广泛使用，电子邮件的长度和内容变得更加重要。以下是一个简单的统计表格，展示了电子邮件内容计数的重要性：</p>
+			<table class="statistics">
+				<thead>
+					<tr>
+						<th>内容计数</th>
+						<th>电子邮件长度</th>
+						<th>打开率</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>100-200 字</td>
+						<td>短信</td>
+						<td>60%</td>
+					</tr>
+					<tr>
+						<td>200-500 字</td>
+						<td>简短文章</td>
+						<td>40%</td>
+					</tr>
+					<tr>
+						<td>500-1000 字</td>
+						<td>中等文章</td>
+						<td>20%</td>
+					</tr>
+					<tr>
+						<td>1000 字以上</td>
+						<td>长篇文章</td>
+						<td>10%</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>想要了解更多关于电子邮件内容计数的信息，可以使用以下交互式工具：</p>
+			<div class="interactive">
+				<label>输入电子邮件长度（字）：</label>
+				<input type="number" id="length" value="200">
+				<button type="button" id="submit">提交</button>
+				<p id="result"></p>
+			</div>
+		</div>
+	</div>
+	<script>
+		const lengthInput = document.getElementById('length');
+		const submitButton = document.getElementById('submit');
+		const resultParagraph = document.getElementById('result');
+
+		submitButton.addEventListener('click', () => {
+			const length = parseInt(lengthInput.value);
+			if (length < 100) {
+				resultParagraph.textContent = '短信';
+			} else if (length < 500) {
+				resultParagraph.textContent = '简短文章';
+			} else if (length < 1000) {
+				resultParagraph.textContent = '中等文章';
+			} else {
+				resultParagraph.textContent = '长篇文章';
+			}
+		});
+	</script>
+</body>
+</html>
+
+这段代码使用 HTML、CSS 和 JavaScript 创建了一个简单的电子邮件内容计数统计表格和交互式工具。用户可以输入电子邮件长度，并点击“提交”按钮以获取相关信息。

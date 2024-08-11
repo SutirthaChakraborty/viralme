@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to Dublin City Council's official website. Discover city news, projects, and events.">
+    <title>Dublin City Council</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 1rem;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card p {
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        // Use JavaScript to add interactivity, for example: showing content on hover
+        document.addEventListener('DOMContentLoaded', function() {
+            var cards = document.querySelectorAll('.card');
+            for (var i = 0; i < cards.length; i++) {
+                cards[i].addEventListener('mouseover', function(e) {
+                    this.style.boxShadow = '0 10px 15px rgba(0, 0, 0, 0.2)';
+                });
+                cards[i].addEventListener('mouseout', function(e) {
+                    this.style.boxShadow = '0 5px

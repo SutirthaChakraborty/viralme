@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing Weekly: Mobility & Algorithms Galore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f3f7;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header h1 {
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .keyword-list {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+        .keyword-card {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .keyword-card p {
+            margin: 0;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+        }
+        .tooltip::before {
+            content: attr(title);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.3s;
+        }
+        .tooltip:hover::before {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+    <script>
+        function highlightKeywords(keyword) {
+            document.querySelectorAll('.keyword-list a').forEach(a => {
+                if (a.innerText.toLowerCase().includes(keyword.toLowerCase())) {
+                    a.style.color = '#3399ff';
+                    a.title = 'Learn more about ' + keyword;
+                    a.classList.add('tooltip');
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <header class="container">
+        <h1>Content Marketing Weekly: <span id="topic">Mobility & Algorithms Galore</span></h1>

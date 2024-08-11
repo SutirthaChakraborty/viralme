@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Blog News: World Cup Hot Terms and Score Updates - Boost Your Online Visibility">
+    <meta name="keywords" content="World Cup, hot terms, score updates, online searches, 1377562, news, blog, football, soccer, analytics">
+    <title>World Cup News Scroller</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .news-item {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .news-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .news-desc {
+            color: #555;
+        }
+        .scroll-indicator {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .scroll-indicator .inactive {
+            color: gray;
+            cursor: default;
+        }
+        .scroll-indicator .active {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function updateScrollStatus(isScrolled) {
+            const statusElement = document.getElementById("scroll-status");
+            statusElement.innerText = isScrolled ? "Loading more..." : "Scroll to see more updates";
+            if (isScrolled) {
+                document.getElementById("load-more").style.display = "none";
+            } else {
+                document.getElementById("load-more").style.display = "inline";
+            }
+        }
+
+        function loadMoreContent() {
+            // Replace this with actual data fetching or AJAX call
+            const moreContent = "<div class='news-item'>...</div> <!-- Hot News and Scores -->";
+            const container = document.getElementById("news-container");
+            container.insertAdjacentHTML('beforeend', moreContent);
+            updateScrollStatus(true);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>World Cup Blog News: Hot Terms & Scores</h1>
+        <div class="scroll-indicator">
+            <span id

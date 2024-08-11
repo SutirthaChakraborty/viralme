@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing's Britannica Online Encyclopedia vs. Google's Knowledge Graph</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bing's Britannica Online Encyclopedia Answers</h1>
+    </header>
+    <section>
+        <h2>Overview</h2>
+        <p>Bing has recently rolled out its Britannica Online Encyclopedia Answers, aiming to counter Google's Knowledge Graph. This new feature provides users with direct answers from Britannica's extensive database, enhancing the search experience.</p>
+    </section>
+    <section>
+        <h2>Key Differences</h2>
+        <p>Unlike Google's Knowledge Graph, which displays information in a sidebar with links to related searches, Bing's feature integrates answers directly into the search results. This means users can access encyclopedia entries without navigating away from the main search page.</p>
+    </section>
+    <section class="interactive">
+        <h2>Learn More</h2>
+        <p>Click the button below to see a comparison of how both features work:</p>
+        <button onclick="toggleComparison()">Show Comparison</button>
+        <div id="comparison" style="display:none;">
+            <h3>Comparison of Features</h3>
+            <ul>
+                <li><strong>Bing:</strong> Direct answers from Britannica, no related search links.</li>
+                <li><strong>Google:</strong> Sidebar with links to related topics and searches.</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function toggleComparison() {
+            var comparison = document.getElementById("comparison");
+            if (comparison.style.display === "none") {
+                comparison.style.display = "block";
+            } else {
+                comparison.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

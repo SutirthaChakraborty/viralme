@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Use Videos for Social Media Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Why Use Videos for Social Media Marketing</h1>
+    <p>Videos enhance engagement and reach across platforms, making them essential for effective social media strategies. With higher retention rates, videos convey your brand's message in a captivating way.</p>
+    <p>Here are some reasons to incorporate video content:</p>
+    <ul>
+        <li>Boosts Engagement: Video content sees higher shares and likes.</li>
+        <li>Improves Conversion Rates: Videos can lead to better sales.</li>
+        <li>Enhances SEO: Videos can improve your search visibility.</li>
+        <li>Builds Brand Awareness: Visual storytelling strengthens connections.</li>
+    </ul>
+    <button class="btn" onclick="toggleVideo()">Watch Video Explanation</button>
+
+    <div class="video-container" id="videoContainer" style="display: none;">
+        <video controls>
+            <source src="your-video-url.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<script>
+    function toggleVideo() {
+        var videoContainer = document.getElementById("videoContainer");
+        if (videoContainer.style.display === "none") {
+            videoContainer.style.display = "block";
+        } else {
+            videoContainer.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

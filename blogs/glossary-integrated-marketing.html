@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Integrated Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-term {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .glossary-term:hover {
+            background-color: #e9ecef;
+        }
+        .definition {
+            display: none;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Glossary of Integrated Marketing</h1>
+    <div class="glossary-term" onclick="toggleDefinition('def1')">
+        **Integrated Marketing** 
+        <div id="def1" class="definition">A strategic approach that aligns and integrates all marketing communications to deliver a consistent message across all channels.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def2')">
+        **Brand Consistency** 
+        <div id="def2" class="definition">The practice of ensuring that all marketing materials and messages are uniform in style and tone, reinforcing the brand identity.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def3')">
+        **Cross-Channel Marketing** 
+        <div id="def3" class="definition">A marketing strategy that uses multiple channels to reach customers, ensuring a seamless experience across platforms.</div>
+    </div>
+    <div class="glossary-term" onclick="toggleDefinition('def4')">
+        **Customer Journey** 
+        <div id="def4" class="definition">The complete experience a customer has with a brand, from initial awareness to post-purchase interactions.</div>
+    </div>
+
+    <script>
+        function toggleDefinition(id) {
+            var definition = document.getElementById(id);
+            if (definition.style.display === "none" || definition.style.display === "") {
+                definition.style.display = "block";
+            } else {
+                definition.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>

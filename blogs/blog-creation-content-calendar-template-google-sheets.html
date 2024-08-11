@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Creation Content Calendar Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        #calendar {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .calendar-header {
+            background-color: #0077cc;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .calendar-day {
+            display: inline-block;
+            width: 14.28%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .calendar-day:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Creation Content Calendar Template</h1>
+</header>
+
+<div class="container">
+    <p>Organize your blog posts and streamline your content strategy with our comprehensive <strong>content calendar template</strong> designed for <strong>Google Sheets</strong>. This template helps you plan, schedule, and track your blog posts effectively.</p>
+    <a href="#" class="button" onclick="toggleCalendar()">Show Content Calendar</a>
+
+    <div id="calendar">
+        <div class="calendar-header">Content Calendar</div>
+        <div class="calendar-day">1</div>
+        <div class="calendar-day">2</div>
+        <div class="calendar-day">3</div>
+        <div class="calendar-day">4</div>
+        <div class="calendar-day">5</div>
+        <div class="calendar-day">6</div>
+        <div class="calendar-day">7</div>
+        <div class="calendar-day">8</div>
+        <div class="calendar-day">9</div>
+        <div class="calendar-day">10</div>
+        <!-- Add more days as needed -->
+    </div>
+</div>
+
+<script>
+    function toggleCalendar() {
+        var calendar = document.getElementById('calendar');
+        if (calendar.style.display === 'none') {
+            calendar.style.display = 'block';
+        } else {
+            calendar.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

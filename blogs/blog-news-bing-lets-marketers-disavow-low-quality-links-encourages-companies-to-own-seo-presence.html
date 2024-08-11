@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing News for Marketers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0078D4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .keywords {
+            display: inline-block;
+            background: #0078D4;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .keywords:hover {
+            background: #005A9E;
+        }
+        .info {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            border: 1px solid #0078D4;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bing's Latest SEO Features</h1>
+</header>
+
+<article>
+    <h2>Disavow Low-Quality Links</h2>
+    <p>Bing now allows marketers to disavow low-quality links that may harm their SEO efforts. This empowers companies to take control of their online presence and improve their search engine rankings.</p>
+    <span class="keywords" onclick="toggleInfo('disavowInfo')">SEO Control</span>
+    <div id="disavowInfo" class="info">Disavowing is a process where you can indicate to search engines that certain links should not be considered while ranking your site.</div>
+</article>
+
+<article>
+    <h2>Own Your SEO Presence</h2>
+    <p>With Bing's new features, companies are encouraged to take charge of their digital footprint, ensuring better visibility and engagement with their target audience.</p>
+    <span class="keywords" onclick="toggleInfo('ownInfo')">Digital Footprint</span>
+    <div id="ownInfo" class="info">Owning your SEO presence means actively managing how your brand appears in search results, improving trustworthiness, and enhancing user experience.</div>
+</article>
+
+<script>
+    function toggleInfo(infoId) {
+        var infoDiv = document.getElementById(infoId);
+        if (infoDiv.style.display === "none" || infoDiv.style.display === "") {
+            infoDiv.style.display = "block";
+        } else {
+            infoDiv.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

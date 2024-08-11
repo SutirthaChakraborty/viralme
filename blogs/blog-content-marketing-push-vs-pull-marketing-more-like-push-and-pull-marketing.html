@@ -1,0 +1,77 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog: Content Marketing Push vs Pull</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function toggleContent(event) {
+            var target = event.target;
+            if (target.tagName === 'H2') {
+                var content = target.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            }
+        }
+    </script>
+</head>
+<body onclick="toggleContent(event);">
+    <header>
+        <h1>Content Marketing Push vs Pull</h1>
+    </header>
+    <nav>
+        <h2>Push Marketing</h2>
+        <p>Explains how content is pushed out to the audience through paid, owned, and earned media.</p>
+        <h2>Pull Marketing</h2>
+        <p>Highlights how content is pulled in by the audience through search engines and social media.</p>
+    </nav>
+    <article>
+        <h2>What is Content Marketing?</h2>
+        <p>Content marketing is a strategy that involves creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience and, ultimately, drive profitable customer action.</p>
+        <h2>Push vs Pull Marketing</h2>
+        <p>Content marketing can be categorized into two main types: push and pull marketing.</p>
+        <h3>Push Marketing</h3>
+        <p>In push marketing, content is actively pushed out to the audience. This can include paid advertising, owned media (like a company's website or social media profiles), and earned media (through partnerships or mentions on other websites). The goal is to get the content in front of the audience as much as possible, regardless of their current engagement level.</p>
+        <h3>Pull Marketing</h3>
+        <p>Pull marketing, on the other hand, relies on content being pulled in by the audience. This often happens through search engines and social media platforms where users actively seek out content that is relevant to their interests. Pull marketing requires content to be highly engaging and relevant to the audience's needs and questions.</p>
+    </article>
+    <footer>
+        <p>&copy; 2024 Blog on Content Marketing</p>
+    </footer>
+</body>
+</html>

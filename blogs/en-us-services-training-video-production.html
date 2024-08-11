@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Services Training Video Production</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.3s;
+            background-color: #fff;
+            border: 1px solid #007bff;
+            margin: 5px 0;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #007bff;
+            color: white;
+        }
+        .panel {
+            padding: 0 10px;
+            display: none;
+            overflow: hidden;
+            border: 1px solid #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>US Services: Training Video Production</h1>
+</header>
+
+<section>
+    <h2>Why Video Training?</h2>
+    <p>Effective training video production greatly enhances learning. Services we provide help businesses convey complex information simply.</p>
+    <button class="accordion">Benefits of Video Training</button>
+    <div class="panel">
+        <p>Increases engagement, provides consistency, allows for flexibility, and caters to various learning styles.</p>
+    </div>
+
+    <button class="accordion">Our Production Process</button>
+    <div class="panel">
+        <p>We follow a structured process: scripting, storyboarding, filming, and editing to ensure high-quality output.</p>
+    </div>
+
+    <button class="accordion">Contact Us</button>
+    <div class="panel">
+        <p>For more details on our training video services, <a href="mailto:info@yourcompany.com">email us</a> or call us at (123) 456-7890.</p>
+    </div>
+</section>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

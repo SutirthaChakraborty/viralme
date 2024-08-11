@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQs about the typical lead time for travel videos, including production, editing, and delivery times.">
+    <title>Travel Video FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background: #35424a;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .faq-item {
+            background: white;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .faq-item:hover {
+            background: #e5e5e5;
+        }
+        .answer {
+            display: none;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FAQs: Travel Video Lead Time</h1>
+    </header>
+    <div class="faq-item">
+        <strong>What is the typical lead time for a travel video?</strong>
+        <div class="answer">Typically, the lead time for a travel video ranges from 4 to 8 weeks, depending on the length and complexity of the project.</div>
+    </div>
+    <div class="faq-item">
+        <strong>How long does production take?</strong>
+        <div class="answer">Production usually takes 1 to 3 weeks, including shooting the footage and organizing the content.</div>
+    </div>
+    <div class="faq-item">
+        <strong>What about editing time?</strong>
+        <div class="answer">Editing can take anywhere from 2 to 4 weeks, depending on the amount of footage and desired effects.</div>
+    </div>
+    <div class="faq-item">
+        <strong>When do I receive the final video?</strong>
+        <div class="answer">After edits and revisions, the final video is delivered 1 week post-production approval.</div>
+    </div>
+
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.answer');
+                answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

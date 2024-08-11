@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover scriptwriting tips for impactful videos, a marketer's guide to effective storytelling and engagement.">
+    <title>Insights: Scriptwriting Tips for Impactful Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .tip {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .tip:hover {
+            transform: scale(1.05);
+            border-color: #3498db;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Scriptwriting Tips for Impactful Videos</h1>
+    <div class="tip" id="tip1">1. Start with a Strong Hook: Capture your audience's attention in the first few seconds with a compelling introduction.</div>
+    <div class="tip" id="tip2">2. Know Your Audience: Tailor your script to resonate with your target demographic for maximum engagement.</div>
+    <div class="tip" id="tip3">3. Keep It Concise: Aim for clarity and brevity. Avoid jargon and keep your message straightforward.</div>
+    <button onclick="toggleTips()">Show/Hide More Tips</button>
+    <script>
+        function toggleTips() {
+            const tips = document.querySelectorAll('.tip');
+            tips.forEach(tip => {
+                tip.style.display = (tip.style.display === 'none') ? 'block' : 'none';
+            });
+        }
+        // Initially hide other tips
+        document.querySelectorAll('.tip').forEach((tip, index) => {
+            if (index > 2) tip.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

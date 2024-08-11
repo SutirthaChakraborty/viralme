@@ -1,0 +1,77 @@
+Here's a simple HTML code with CSS and JavaScript to explain how to measure the success of your promotional video:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measuring Video Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 0.5rem 0;
+        }
+        button {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insights on How to Measure the Success of Your Promotional Video</h1>
+    <p>Measuring the success of your promotional video is crucial for understanding its impact and optimizing future campaigns. Here are some useful techniques:</p>
+    
+    <div id="results"></div>
+    
+    <button onclick="generateResults()">Generate Results</button>
+    
+    <script>
+        function generateResults() {
+            const resultsElement = document.getElementById('results');
+            
+            // Example data for demonstration purposes
+            const views = [1000, 2000, 3000];
+            const clicks = [50, 100, 150];
+            const conversions = [20, 40, 60];
+            
+            // Clear previous results if any
+            resultsElement.innerHTML = '';
+            
+            // Display results in a table format
+            const table = document.createElement('table');
+            table.style.borderCollapse = 'collapse';
+            
+            for (let i = 0; i < views.length; i++) {
+                const row = document.createElement('tr');
+                
+                const viewCell = document.createElement('td');
+                viewCell.textContent = `Views ${i + 1}: ${views[i]}`;
+                row.appendChild(viewCell);
+                
+                const clickCell = document.createElement('td');
+                clickCell.textContent = `Clicks ${i + 1}: ${clicks[i]}`;
+                row.appendChild(clickCell);
+                
+                const conversionCell = document.createElement('td');
+                conversionCell.textContent = `Conversions ${i + 1}: ${conversions[i]}`;
+                row.appendChild(conversionCell);
+                
+                table.appendChild(row);
+            }
+            
+            resultsElement.appendChild(table);
+        }
+    </script>
+</body>
+</html>

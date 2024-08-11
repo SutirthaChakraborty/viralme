@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Explorer News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .news-item {
+            margin: 10px 0;
+        }
+        .news-title {
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .news-description {
+            color: #666;
+            font-size: 16px;
+        }
+        .news-date {
+            color: #999;
+            font-size: 14px;
+        }
+        .interactive-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Internet Explorer News</h1>
+        <div class="news-item">
+            <div class="news-title">Microsoft to End Support for Internet Explorer</div>
+            <div class="news-description">As of June 2022, Microsoft announced that it would be ending support for Internet Explorer, marking the end of an era for the browser that dominated the web in the late 90s and early 2000s.</div>
+            <div class="news-date">June 2022</div>
+        </div>
+        <div class="news-item">
+            <div class="news-title">Internet Explorer Mobile to be Removed from Windows 10 Mobile</div>
+            <div class="news-description">In July 2016, Microsoft announced that Internet Explorer Mobile would be removed from Windows 10 Mobile, pushing users towards using modern browsers.</div>
+            <div class="news-date">July 2016</div>
+        </div>
+        <div class="news-item">
+            <div class="news-title">Internet Explorer 11 to be the Last Version</div>
+            <div class="news-description">In September 2015, Microsoft announced that Internet Explorer 11 would be the last version of the browser, focusing on Edge instead.</div>
+            <div class="news-date">September 2015</div>
+        </div>
+        <button class="interactive-button">Learn More</button>
+    </div>
+    <script>
+        document.querySelector('.interactive-button').addEventListener('click', function() {
+            alert('Learn more about Internet Explorer news!');
+        });
+    </script>
+</body>
+</html>

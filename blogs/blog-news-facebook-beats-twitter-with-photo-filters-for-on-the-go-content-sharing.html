@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Facebook Beats Twitter with Photo Filters</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #3b5998;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .filters {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .filter-option {
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .filter-option:hover {
+            background: #3b5998;
+            color: white;
+        }
+        .photo-display {
+            margin-top: 20px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog News: Facebook Beats Twitter with Photo Filters</h1>
+    <p>Your go-to source for on-the-go content sharing</p>
+</header>
+
+<div class="content">
+    <h2>The Power of Photo Filters</h2>
+    <p>In the age of social media, sharing visually appealing content is crucial. Facebook's photo filters offer unique ways to enhance your images, making them stand out compared to other platforms like Twitter.</p>
+    
+    <div class="filters">
+        <div class="filter-option" onclick="applyFilter('filter1')">Vintage</div>
+        <div class="filter-option" onclick="applyFilter('filter2')">Black & White</div>
+        <div class="filter-option" onclick="applyFilter('filter3')">Bright</div>
+    </div>
+
+    <div class="photo-display" id="photoDisplay">
+        <img id="sharedPhoto" src="https://via.placeholder.com/400" alt="Share this photo">
+    </div>
+</div>
+
+<script>
+    function applyFilter(filter) {
+        const photo = document.getElementById('sharedPhoto');
+        if (filter === 'filter1') {
+            photo.style.filter = 'sepia(100%)';
+        } else if (filter === 'filter2') {
+            photo.style.filter = 'grayscale(100%)';
+        } else if (filter === 'filter3') {
+            photo.style.filter = 'brightness(150%)';
+        }
+    }
+</script>
+
+</body>
+</html>

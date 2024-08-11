@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Roundup: Content Marketing Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .company {
+            margin-bottom: 15px;
+        }
+        .company h3 {
+            color: #007BFF;
+        }
+        .interactive {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .interactive:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Weekly Roundup: Content Marketing Insights</h1>
+</header>
+
+<article>
+    <h2>3 Companies Lending a Helping Hand</h2>
+    <div class="company">
+        <h3>Company A: Innovative Strategies</h3>
+        <p>Company A is leading the way in content marketing by providing valuable resources and insights to startups. Their focus on SEO and keyword optimization helps businesses reach their target audience effectively.</p>
+        <span class="interactive" onclick="showDetails('detailsA')">Learn More</span>
+        <div id="detailsA" style="display:none;">
+            <p>They offer free webinars and guides on best practices for content creation and distribution.</p>
+        </div>
+    </div>
+    <div class="company">
+        <h3>Company B: Community Engagement</h3>
+        <p>Company B emphasizes community-driven content marketing, encouraging user-generated content to enhance brand loyalty and engagement.</p>
+        <span class="interactive" onclick="showDetails('detailsB')">Learn More</span>
+        <div id="detailsB" style="display:none;">
+            <p>They host monthly challenges that invite customers to share their experiences, boosting interaction and visibility.</p>
+        </div>
+    </div>
+    <div class="company">
+        <h3>Company C: Data-Driven Insights</h3>
+        <p>Company C utilizes analytics to refine their content strategies, ensuring that their marketing efforts are aligned with audience preferences.</p>
+        <span class="interactive" onclick="showDetails('detailsC')">Learn More</span>
+        <div id="detailsC" style="display:none;">
+            <p>They provide detailed reports on content performance, helping businesses adjust their strategies in real-time.</p>
+        </div>
+    </div>
+</article>
+
+<script>
+    function showDetails(id) {
+        var details = document.getElementById(id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        } else {
+            details.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

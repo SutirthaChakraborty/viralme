@@ -1,0 +1,70 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data News - The Untold Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        header {
+            background-color: #6c757d;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        article {
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .news-post {
+            border-bottom: 1px solid #e9ecef;
+            margin-bottom: 30px;
+        }
+        .post-date {
+            color: #6c757d;
+            font-size: smaller;
+            font-style: italic;
+        }
+        .post-content p {
+            line-height: 1.6;
+        }
+        .content-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .content-btn {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <script>
+        function scrollReveal() {
+            const revealBtn = document.getElementById('scrollReveal');
+            const contentContainer = document.getElementById('content-container');
+    
+            window.addEventListener('scroll', function() {
+                const scrollPercentage = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+                revealBtn.style.transform = 'translateY(-' + (scrollPercentage * 50) + '%)';
+                if (scrollPercentage > 0.9) {
+                    contentContainer.classList.remove('hidden

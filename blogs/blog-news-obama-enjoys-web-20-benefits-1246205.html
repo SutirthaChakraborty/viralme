@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore how Obama enjoys the benefits of Web 2.0 technologies in this insightful blog. Discover the impact of social media and digital communication.">
+    <title>Blog News: Obama Enjoys Web 2.0 Benefits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #777;
+        }
+        .button {
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #218838;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Obama and the Benefits of Web 2.0</h1>
+</header>
+
+<div class="content">
+    <h2>Understanding Web 2.0</h2>
+    <p>Web 2.0 represents the shift to a user-generated internet, allowing for greater interaction and collaboration. It plays a pivotal role in social media, blogs, and wikis.</p>
+    
+    <h2>Obama's Engagement with Digital Media</h2>
+    <p>Former President Barack Obama effectively utilized Web 2.0 tools during his campaigns and presidency, connecting with younger audiences and fostering community engagement.</p>
+
+    <button class="button" id="moreInfoBtn">Learn More</button>
+    <div class="hidden" id="moreInfo">
+        <p>Through platforms like Twitter and Facebook, Obama leveraged digital outreach to rally supporters, facilitate discussions, and gather feedback, showcasing the power of modern communication tools.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Blog News. All Rights Reserved.</p>
+</footer>
+
+<script>
+    const moreInfoBtn = document.getElementById('moreInfoBtn');
+    const moreInfo = document.getElementById('moreInfo');
+
+    moreInfoBtn.addEventListener('click', () => {
+        moreInfo.classList.toggle('hidden');
+        moreInfoBtn.textContent = moreInfo.classList.contains('hidden') ? 'Learn More' : 'Show Less';
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Streamlining UX for 400M Facebook Users on Mobile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 36px;
+        }
+        
+        .post {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .post-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .post-excerpt {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        .cta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            background-color: #6ab04c;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .cta a {
+            color: white;
+        }
+    </style>
+    <script>
+        // JavaScript to highlight search keywords (optional)
+        function highlightKeywords(text, keywords) {
+            const regex = new RegExp("\\b[" + keywords.join("|") + "\\b]", "gi");
+            return text.replace(regex, function(match) {
+                return `<span class="keyword">${match}</span>`;
+            });
+        }
+
+        window.addEventListener("DOMContentLoaded", function() {
+            const keywordList = document.querySelectorAll('.keyword');
+            Array.from(keywordList).forEach((keyword) => {
+                keyword.classList.add('highlighted');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+       

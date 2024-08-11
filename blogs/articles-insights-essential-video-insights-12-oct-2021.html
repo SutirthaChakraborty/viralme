@@ -1,0 +1,76 @@
+#### HTML Code with CSS and JS for Articles and Video Insights
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articles and Video Insights</title>
+  <style>
+    /* CSS for styling the page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+    .left-section {
+      width: 30%;
+      background-color: #f9f9f9;
+      padding: 1rem;
+    }
+    .right-section {
+      width: 65%;
+      background-color: #fff;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Articles and Video Insights</h1>
+  </header>
+  <div class="container">
+    <div class="left-section">
+      <h2>Topics</h2>
+      <ul>
+        <li onclick="loadContent('article-insights')">Article Insights</li>
+        <li onclick="loadContent('video-insights')">Video Insights</li>
+      </ul>
+    </div>
+    <div class="right-section" id="content">
+      <h2>Welcome</h2>
+      <p>Select a topic from the left to view insights.</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for loading content on the right section
+    function loadContent(topic) {
+      const contentDiv = document.getElementById('content');
+      if (topic === 'article-insights') {
+        contentDiv.innerHTML = "<h2>Article Insights</h2><p>Essential information about articles as of 12th October 2021.</p>";
+      } else if (topic === 'video-insights') {
+        contentDiv.innerHTML = "<h2>Video Insights</h2><p>Essential information about videos as of 12th October 2021.</p>";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a simple web page with two topics, "Article Insights" and "Video Insights," listed on the left section. When a topic is clicked, the content related to that topic is displayed on the right section using JavaScript for interactivity. The CSS provides basic styling to the page, including a header, two sections for topics and content, and responsive layout design.
+
+**Keywords:** HTML, CSS, JavaScript, interactive web design, article insights, video insights, essential information, web development, beginner projects, technical documentation.

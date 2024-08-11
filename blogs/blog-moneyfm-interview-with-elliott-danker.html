@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview with Elliott Danker - MoneyFM Blog</title>
+    <meta name="description" content="Interview with Elliott Danker on MoneyFM discussing financial insights, market trends, and investment strategies.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MoneyFM Interview with Elliott Danker</h1>
+    </header>
+    <div class="content">
+        <h2>Financial Insights & Market Trends</h2>
+        <p>Join us as Elliott Danker shares his expertise on the latest financial trends, investment opportunities, and economic outlook in this exclusive MoneyFM interview.</p>
+        <button id="moreInfoBtn">Learn More</button>
+        <p id="moreInfo" style="display:none;">In this interview, Elliott highlights key strategies for navigating the volatile market, discussing sectors to watch, and the importance of staying informed through reliable sources. Tune in to explore the intricacies of wealth management and financial planning.</p>
+    </div>
+
+    <script>
+        document.getElementById("moreInfoBtn").onclick = function() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+                this.innerText = "Show Less";
+            } else {
+                moreInfo.style.display = "none";
+                this.innerText = "Learn More";
+            }
+        };
+    </script>
+</body>
+</html>

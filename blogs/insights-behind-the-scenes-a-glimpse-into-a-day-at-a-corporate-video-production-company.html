@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Behind the scenes at a corporate video production company. Explore a day in the life of video creators.">
+    <title>Behind the Scenes: A Day at a Corporate Video Production Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+        }
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insights Behind the Scenes</h1>
+        <div class="section">
+            <h2>A Glimpse into a Day</h2>
+            <p>Discover the dynamic environment of a corporate video production company. From brainstorming sessions to filming and editing, every day is filled with creativity and collaboration.</p>
+            <button onclick="toggleInteractive('dayOverview')">Show Interactive Overview</button>
+            <div id="dayOverview" class="interactive">
+                <p>Morning: Team meetings to discuss project goals.</p>
+                <p>Afternoon: Filming on location with the crew.</p>
+                <p>Evening: Editing footage and preparing for client reviews.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Key Roles in Production</h2>
+            <p>Learn about the essential roles that contribute to successful video production, including directors, cinematographers, and editors.</p>
+            <button onclick="toggleInteractive('rolesOverview')">Show Interactive Roles</button>
+            <div id="rolesOverview" class="interactive">
+                <p>Director: Oversees the creative vision.</p>
+                <p>Cinematographer: Responsible for capturing the visuals.</p>
+                <p>Editor: Assembles the final product.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleInteractive(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

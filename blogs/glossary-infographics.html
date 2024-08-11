@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Glossary Infographics - Interactive Learning</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.glossary {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.term {
+    margin-bottom: 20px;
+}
+
+.term h3 {
+    color: #333;
+    font-size: 18px;
+}
+
+.definition {
+    color: #666;
+    line-height: 1.6;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.interactive-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lightblue {
+    background-color: #add8e6;
+    color: #fff;
+}
+
+.clickable {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #9ebae0;
+}
+
+.button-text {
+    color: #fff;
+    font-weight: bold;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+适应移动端 {
+    @media (max-width: 768px) {
+        .glossary {
+            width: 90%;
+        }
+    }
+}
+</style>
+<script>
+function toggleDefinition(termId, definitionId) {
+    var termElement = document.getElementById(termId);
+    var definitionElement = document.getElementById(definitionId);
+    if (termElement.classList.contains('active')) {
+        termElement.classList.remove('active');
+        definitionElement.style.display = 'none';
+    } else {
+        termElement.classList

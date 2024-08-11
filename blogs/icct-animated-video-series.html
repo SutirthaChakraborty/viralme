@@ -1,0 +1,80 @@
+#### HTML Code with CSS for ICCT Animated Video Series
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICCT Animated Video Series</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+        /* Your custom CSS styles for the ICCT Animated Video Series */
+        .container {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            background-color: #000000;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .container ul {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+        .container ul li {
+            list-style: none;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .container ul li video {
+            width: 200px;
+            transition: all 0.3s;
+        }
+        .container ul li video:hover {
+            transform: scale(1.1);
+        }
+        .video {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <!-- Your animated video series content goes here -->
+        </div>
+        <ul>
+            <li><video src="video1.mp4" controls></video></li>
+            <li><video src="video2.mp4" controls></video></li>
+            <!-- Add more video elements as needed -->
+        </ul>
+    </div>
+</body>
+</html>
+
+
+#### Explanation
+The provided HTML code sets up a webpage for the ICCT Animated Video Series. It includes a container for the video slider and a list of videos with interactive CSS effects. The CSS styles are used to create an immersive and engaging experience for the viewers.
+
+The CSS styles define the layout and behavior of the video slider and individual videos. The container is set to occupy the entire viewport, and the videos are displayed with a hover effect for enhanced user interaction.
+
+The script.js file is included for any additional JavaScript functionality that may be required for the animated video series.
+
+Feel free to customize the HTML and CSS to suit the specific requirements of the ICCT Animated Video Series.

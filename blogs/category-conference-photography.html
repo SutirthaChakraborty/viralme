@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the art of conference photography, capturing key moments and interactions at events. Learn tips and techniques for stunning conference photography.">
+    <meta name="keywords" content="conference photography, event photography, corporate events, capturing moments, photography tips, photography techniques">
+    <title>Conference Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: white;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        h2 {
+            font-size: 1.8em;
+        }
+        .toggle {
+            margin: 20px 0;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mastering Conference Photography</h1>
+    <p>Capture the essence of events with stunning photography.</p>
+</header>
+
+<section>
+    <h2>Why Choose Conference Photography?</h2>
+    <p>Conference photography not only preserves memories but also highlights key moments, engages participants, and boosts brand visibility.</p>
+    
+    <button class="toggle">Show Photography Tips</button>
+    <div class="hidden">
+        <ul>
+            <li>Plan your shots ahead.</li>
+            <li>Focus on candid moments.</li>
+            <li>Utilize natural light where possible.</li>
+            <li>Get a variety of shots - wide, medium, and close-up.</li>
+            <li>Be attentive to speakers and audience interactions.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    document.querySelector('.toggle').addEventListener('click', function() {
+        const tips = document.querySelector('.hidden');
+        tips.classList.toggle('hidden');
+        this.textContent = tips.classList.contains('hidden') ? 'Show Photography Tips' : 'Hide Photography Tips';
+    });
+</script>
+
+</body>
+</html>

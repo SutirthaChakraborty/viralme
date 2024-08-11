@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest blog news on Apple iOS leading mobile search percentages. Discover insights and statistics on mobile search trends.">
+    <title>Apple iOS Dominates Mobile Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007aff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #007aff;
+        }
+        button {
+            background-color: #007aff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Apple iOS: The Leader in Mobile Search</h1>
+</header>
+
+<article>
+    <h2>Latest Insights on Mobile Search Trends</h2>
+    <p>According to recent statistics, Apple iOS claims the highest percentage of mobile search usage, showcasing its impact on how users access information globally. With over 55% of mobile users relying on Apple devices, iOS continues to shape the future of mobile search.</p>
+    
+    <h3>Key Facts:</h3>
+    <ul>
+        <li>iOS mobile search traffic has increased by 30% in the last year.</li>
+        <li>Apple's Safari browser dominates with a 50% market share among mobile web browsers.</li>
+        <li>Improved user experience and integrated features contribute to iOS's search preference.</li>
+    </ul>
+
+    <h3>Interactive Chart:</h3>
+    <button onclick="toggleVisibility()">Show/Hide iOS Search Statistics</button>
+    <div id="stats" style="display:none; margin-top: 10px;">
+        <p><strong>iOS Vs Android Mobile Search:</strong></p>
+        <canvas id="searchChart" width="400" height="200"></canvas>
+    </div>
+</article>
+
+<script>
+    function toggleVisibility() {
+        var statsDiv = document.getElementById('stats');
+        if (statsDiv.style.display === 'none') {
+            statsDiv.style.display = 'block';
+            drawChart();
+        } else {
+            statsDiv.style.display = 'none';
+        }
+    }
+
+    function drawChart() {
+        var ctx = document.getElementById('searchChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['iOS', 'Android'],
+                datasets: [{
+                    label: 'Mobile Search Share (%)',
+                    data: [55, 45],
+                    backgroundColor: [
+                        'rgba(0, 122, 255, 0.6)',
+                        'rgba(255, 59, 48, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(0, 122, 255, 1)',
+                        'rgba(255, 59, 48, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+
+</body>
+</html>

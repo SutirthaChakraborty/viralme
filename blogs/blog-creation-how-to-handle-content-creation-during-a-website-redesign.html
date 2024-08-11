@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Creation: Handling Content During Website Redesign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Effective Content Creation During Website Redesign</h1>
+    </header>
+    <section>
+        <h2>Importance of Content Strategy</h2>
+        <p>Developing a solid content strategy is crucial when redesigning your site. It ensures that your content remains relevant and engaging.</p>
+    </section>
+    <section>
+        <h2>Keywords and SEO Optimization</h2>
+        <p>Focus on using relevant keywords to improve your search engine ranking. Consider using tools like Google Keyword Planner to find the best terms.</p>
+    </section>
+    <section>
+        <h2>Engaging Your Audience</h2>
+        <p>Interactive content such as polls and quizzes can help keep your audience engaged during the redesign process.</p>
+        <button id="pollButton">Take our Quick Poll!</button>
+        <div id="pollResult" style="display:none;">Thanks for participating!</div>
+    </section>
+
+    <script>
+        document.getElementById('pollButton').addEventListener('click', function() {
+            document.getElementById('pollResult').style.display = 'block';
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

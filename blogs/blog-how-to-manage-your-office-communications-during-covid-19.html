@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage office communications during COVID-19 with these effective strategies.">
+    <title>Managing Office Communications During COVID-19</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .collapsible {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .active, .collapsible:hover {
+            background-color: #0056b3;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Managing Office Communications During COVID-19</h1>
+</header>
+
+<article>
+    <h2>Key Strategies</h2>
+    <button class="collapsible">1. Embrace Remote Communication Tools</button>
+    <div class="content">
+        <p>Utilize tools like Zoom, Microsoft Teams, or Slack for video conferencing and messaging. This ensures seamless communication among team members.</p>
+    </div>
+
+    <button class="collapsible">2. Establish Clear Guidelines</button>
+    <div class="content">
+        <p>Set clear protocols for communication, response times, and the appropriate channels for various types of messages to minimize confusion.</p>
+    </div>
+
+    <button class="collapsible">3. Prioritize Mental Health</button>
+    <div class="content">
+        <p>Encourage open conversations about mental well-being and make resources available to support employees during these challenging times.</p>
+    </div>
+
+    <button class="collapsible">4. Regular Check-ins</button>
+    <div class="content">
+        <p>Hold regular check-ins to ensure all team members are aligned and address any issues or concerns promptly.</p>
+    </div>
+</article>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

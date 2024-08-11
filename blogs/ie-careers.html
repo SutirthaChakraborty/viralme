@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IE Careers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .career-option {
+            cursor: pointer;
+            margin: 10px 0;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #0073e6;
+            border-radius: 5px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background: #e1f5fe;
+            border-left: 5px solid #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore IE Careers</h1>
+        <p>Your pathway to a successful career in International Education</p>
+    </header>
+    <section>
+        <h2>Career Opportunities</h2>
+        <div class="career-option" onclick="toggleDetails('consultant')">
+            <strong>International Education Consultant</strong>
+        </div>
+        <div id="consultant" class="details">
+            <p>Help students navigate their educational journeys abroad, providing guidance on programs and institutions.</p>
+        </div>
+        <div class="career-option" onclick="toggleDetails('admissions')">
+            <strong>Admissions Officer</strong>
+        </div>
+        <div id="admissions" class="details">
+            <p>Manage the admissions process, evaluate applications, and promote the institution to prospective students.</p>
+        </div>
+        <div class="career-option" onclick="toggleDetails('program-coordinator')">
+            <strong>Program Coordinator</strong>
+        </div>
+        <div id="program-coordinator" class="details">
+            <p>Oversee the development and implementation of educational programs, ensuring quality and compliance.</p>
+        </div>
+    </section>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

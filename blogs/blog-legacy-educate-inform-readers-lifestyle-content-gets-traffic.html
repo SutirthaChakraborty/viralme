@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy - Lifestyle & Informative Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+        }
+        article {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0b7dda;
+        }
+        #info {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #e7f3fe;
+            border: 1px solid #b3d4fc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Legacy</h1>
+    <p>Educate & Inform Your Readers about Lifestyle Content</p>
+</header>
+
+<article>
+    <h2>Why Lifestyle Content Matters</h2>
+    <p>Lifestyle blogging educates and informs readers, driving traffic and engagement.</p>
+    <button onclick="toggleInfo()">Learn More</button>
+    <div id="info">
+        <p>Content such as health tips, travel experiences, and personal finance guides can significantly impact readers' lives and improve your blog's visibility.</p>
+    </div>
+</article>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById('info');
+        if (info.style.display === "none" || info.style.display === "") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

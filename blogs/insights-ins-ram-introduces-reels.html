@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Reels Insights</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #ff2b2b;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .insight {
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 5px solid #ff2b2b;
+            background: #ffe6e6;
+        }
+        button {
+            padding: 10px 15px;
+            background: #ff2b2b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e60000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Insights into Instagram Reels</h1>
+</header>
+
+<section>
+    <h2>Understanding Reels Insights</h2>
+    <div class="insight">Instagram Reels engage around **2.35 billion active users** monthly, making them crucial for social media marketing.</div>
+    <div class="insight">Reels receive **22% more interactions** than standard video posts, enhancing your reach and engagement.</div>
+    <div class="insight">Utilizing **Topics** in Reels helps the algorithm categorize content, increasing visibility to relevant audiences.</div>
+    <button onclick="showMore()">Show More Insights</button>
+    <div id="moreInsights" style="display:none;">
+        <div class="insight">Insights include metrics like **Accounts Reached**, **Peak Concurrent Viewers**, and **Shares**.</div>
+        <div class="insight">Regular posting of Reels can significantly boost your engagement rates.</div>
+    </div>
+</section>
+
+<script>
+    function showMore() {
+        var insights = document.getElementById("moreInsights");
+        if (insights.style.display === "none") {
+            insights.style.display = "block";
+        } else {
+            insights.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

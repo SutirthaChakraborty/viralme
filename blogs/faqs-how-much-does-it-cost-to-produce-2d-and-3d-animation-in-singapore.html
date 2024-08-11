@@ -1,0 +1,63 @@
+Here's a simple HTML code with embedded CSS and JavaScript for a FAQs section about 2D and 3D animation production costs in Singapore. The page includes interactive elements for better user experience:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D & 3D Animation Production Costs in Singapore</title>
+    <style>
+        .faq-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .faq-item {
+            width: 45%;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .faq-item h3 {
+            margin-top: 0;
+        }
+        .toggle-button {
+            cursor: pointer;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+        .toggle-button.active {
+            background-color: #2980b9;
+        }
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+    </style>
+    <script>
+        function toggleContent(title) {
+            const content = document.getElementById(title + '-content');
+            const button = document.querySelector(`.toggle-button[data-title="${title}"]`);
+            if (content.style.maxHeight === '0px') {
+                button.classList.add('active');
+                content.style.maxHeight = '600px';
+            } else {
+                button.classList.remove('active');
+                content.style.maxHeight = '0px';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3>FAQ 1: How much does 2D animation cost in Singapore?</h3>
+            <button class="toggle-button" data-title="faq1-content" onclick="toggleContent('faq1')">Show Details</button>
+            <div id="faq1-content" class="content">
+                <p>Answer: 2D animation costs in

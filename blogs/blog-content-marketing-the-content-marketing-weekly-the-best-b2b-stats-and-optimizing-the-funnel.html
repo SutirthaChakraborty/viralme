@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Content Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .stat {
+            background: #e7f3fe;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Content Marketing</h1>
+        <p>Optimize Your B2B Funnel with Effective Strategies</p>
+    </header>
+    <section>
+        <h2>The Content Marketing Weekly</h2>
+        <p>Stay updated with the latest trends and insights in content marketing. Discover how to create valuable content that resonates with your audience and drives engagement.</p>
+    </section>
+    <section>
+        <h2>Best B2B Stats</h2>
+        <div class="stats">
+            <div class="stat">
+                <h3>70%</h3>
+                <p>of B2B marketers say content marketing increases engagement.</p>
+            </div>
+            <div class="stat">
+                <h3>61%</h3>
+                <p>of B2B marketers say generating traffic is their top challenge.</p>
+            </div>
+            <div class="stat">
+                <h3>80%</h3>
+                <p>of decision-makers prefer to get company information through articles.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Optimizing the Funnel</h2>
+        <p>Learn how to effectively optimize your marketing funnel by targeting the right keywords and creating content that addresses your audience's needs at every stage.</p>
+        <button onclick="showTips()">Click for Optimization Tips</button>
+        <div id="tips" style="display:none; margin-top: 10px;">
+            <ul>
+                <li>Focus on informational keywords at the top of the funnel.</li>
+                <li>Create engaging content that answers common questions.</li>
+                <li>Utilize SEO best practices to enhance visibility.</li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        function showTips() {
+            var tips = document.getElementById("tips");
+            if (tips.style.display === "none") {
+                tips.style.display = "block";
+            } else {
+                tips.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

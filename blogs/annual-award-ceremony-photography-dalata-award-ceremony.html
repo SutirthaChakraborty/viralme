@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Capture the essence of the Annual Dalata Award Ceremony with stunning photography.">
+    <title>Annual Dalata Award Ceremony Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal img {
+            width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Annual Dalata Award Ceremony Photography</h1>
+</header>
+
+<section>
+    <h2>About the Ceremony</h2>
+    <p>The Annual Dalata Award Ceremony celebrates excellence in various fields, recognizing outstanding achievements and contributions. Our professional photography captures these memorable moments, ensuring that the glamour and excitement are preserved for years to come.</p>
+</section>
+
+<section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Award Winners" onclick="openModal(this.src)">
+        <img src="image2.jpg" alt="Ceremony Highlights" onclick="openModal(this.src)">
+        <img src="image3.jpg" alt="Red Carpet Moments" onclick="openModal(this.src)">
+    </div>
+</section>
+
+<div id="myModal" class="modal" onclick="this.style.display='none'">
+    <img id="modalImage" src="" alt="Large View">
+</div>
+
+<script>
+    function openModal(src) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('myModal').style.display = 'flex';
+    }
+</script>
+
+</body>
+</html>

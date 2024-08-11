@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the latest insights from British Vogue's Stephen Quinn in this exclusive video interview.">
+    <title>Stephen Quinn Video Interview - British Vogue Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #e5e5e5;
+            border-bottom: 2px solid #d5d5d5;
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        video {
+            max-width: 100%;
+            border: 1px solid #d5d5d5;
+        }
+        .keywords {
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        #toggle {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Stephen Quinn Interview</h1>
+    <p>Exclusive Insights from British Vogue</p>
+</header>
+
+<div class="video-container">
+    <video controls>
+        <source src="stephen_quinn_interview.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<div class="keywords">
+    <h2>Related Keywords:</h2>
+    <ul>
+        <li>British Vogue</li>
+        <li>Stephen Quinn</li>
+        <li>Fashion Insights</li>
+        <li>Video Interview</li>
+        <li>Fashion Editor</li>
+        <li>Vogue Blog</li>
+    </ul>
+</div>
+
+<footer>
+    <button id="toggle" onclick="toggleKeywords()">Toggle Keywords</button>
+    <p>&copy; 2023 British Vogue Blog</p>
+</footer>
+
+<script>
+    function toggleKeywords() {
+        const keywords = document.querySelector('.keywords');
+        if (keywords.style.display === "none" || keywords.style.display === "") {
+            keywords.style.display = "block";
+            document.getElementById('toggle').innerText = 'Hide Keywords';
+        } else {
+            keywords.style.display = "none";
+            document.getElementById('toggle').innerText = 'Show Keywords';
+        }
+    }
+</script>
+
+</body>
+</html>

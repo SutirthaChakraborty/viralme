@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Typos Impact on Search Rankings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .impact {
+            font-weight: bold;
+            color: #FF5733;
+        }
+        button {
+            padding: 10px 15px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Understanding Typos and Their Impact on Search Rankings</h1>
+    </header>
+    <section>
+        <h2>Why Typos Matter</h2>
+        <p>Typos can significantly affect your blog's <span class="impact">search rankings</span>. Search engines prioritize content that is clear and free of errors. A single typo can lead to a loss of credibility and lower click-through rates.</p>
+        <button onclick="showTip()">Click for a Tip!</button>
+        <p id="tip" style="display:none;">Always proofread your content and use tools like Grammarly to catch errors before publishing!</p>
+    </section>
+    <script>
+        function showTip() {
+            var tip = document.getElementById("tip");
+            if (tip.style.display === "none") {
+                tip.style.display = "block";
+            } else {
+                tip.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

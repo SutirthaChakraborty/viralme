@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trove Approaches Launch: Blog News and Search Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        article {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3ff;
+            border-left: 6px solid #0077cc;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+        button {
+            background: #0077cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trove Approaches Launch</h1>
+        <p>Your Source for Blog News & Facebook Search Tool Updates</p>
+    </header>
+    <article>
+        <h2>The Importance of Trove in Modern Research</h2>
+        <p>Trove is a valuable tool for researchers, journalists, and history enthusiasts, providing access to a wealth of information from various sources.</p>
+        <div class="interactive">
+            <h3>Engage with Our New Features</h3>
+            <button id="searchBtn">Search News</button>
+            <div id="result" style="margin-top: 10px;"></div>
+        </div>
+    </article>
+    <footer>
+        <p>Follow us on <a href="https://www.facebook.com" target="_blank">Facebook</a> for more updates!</p>
+    </footer>
+
+    <script>
+        document.getElementById('searchBtn').addEventListener('click', function() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Searching for the latest news...';
+            setTimeout(() => {
+                resultDiv.innerHTML = 'Latest Trove news: Launching new search algorithms to enhance user experience!';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary: Native Advertising</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .glossary-term {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .glossary-term:hover {
+            background: #e2e2e2;
+        }
+        .definition {
+            display: none;
+            padding: 10px;
+            border-left: 4px solid #007bff;
+            background: #f9f9f9;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Glossary of Native Advertising</h1>
+
+<div class="glossary-term" onclick="toggleDefinition('native-ad')">
+    Native Advertising
+    <div class="definition" id="native-ad">
+        Native advertising is a form of paid media that matches the form and function of the platform on which it appears. 
+        It’s designed to blend in with regular content, making it less intrusive and more engaging for the audience.
+    </div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('content-marketing')">
+    Content Marketing
+    <div class="definition" id="content-marketing">
+        Content marketing involves creating and distributing valuable, relevant content to attract and engage a clearly defined audience. 
+        Native advertising is often a key strategy in content marketing efforts.
+    </div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('sponsored-content')">
+    Sponsored Content
+    <div class="definition" id="sponsored-content">
+        Sponsored content is a type of native advertising that is created by a brand to promote a product or service while resembling the editorial content of the platform it's featured on.
+    </div>
+</div>
+
+<div class="glossary-term" onclick="toggleDefinition('ad-disclosure')">
+    Ad Disclosure
+    <div class="definition" id="ad-disclosure">
+        Ad disclosure refers to the practice of informing readers that the content is sponsored or paid for, typically through labels like "Sponsored" or "Promoted."
+    </div>
+</div>
+
+<script>
+    function toggleDefinition(id) {
+        const definition = document.getElementById(id);
+        definition.style.display = definition.style.display === 'none' || definition.style.display === '' ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

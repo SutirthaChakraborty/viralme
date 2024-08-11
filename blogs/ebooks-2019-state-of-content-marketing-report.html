@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\">
+    <title>Ebooks 2019 State of Content Marketing Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class=\"container\">
+        <h1>Ebooks 2019 State of Content Marketing Report</h1>
+        <ul>
+            <li><a href=\"#section1\" onclick=\"loadSection('section1')\">Introduction to Content Marketing</a></li>
+            <li><a href=\"#section2\" onclick=\"loadSection('section2')\">Benefits of E-books</a></li>
+            <li><a href=\"#section3\" onclick=\"loadSection('section3')\">Types of E-books</a></li>
+            <li><a href=\"#section4\" onclick=\"loadSection('section4')\">Best Practices for E-book Creation</a></li>
+        </ul>
+        <div id=\"section1\" class=\"content\">
+            <!-- Content for section 1 -->
+        </div>
+        <div id=\"section2\" class=\"content">
+            <!-- Content for section 2 -->
+        </div>
+        <div id=\"section3\" class=\"content\">
+            <!-- Content for section 3 -->
+        </div>
+        <div id=\"section4\" class=\"content\">
+            <!-- Content for section 4 -->
+        </div>
+    </div>
+    <script>
+        function loadSection(sectionId) {
+            var content = document.getElementById(sectionId).innerHTML;
+            document.getElementById(\"section-\" + sectionId).innerHTML = content;
+        }
+    </script>
+</body>
+</html>

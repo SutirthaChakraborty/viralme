@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog news on Nielsen's findings about social media's dominance in mobile and desktop web usage.">
+    <title>Nielsen Insights: Social Media Dominance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .interactive {
+            margin: 20px 0;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #35424a;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nielsen Insights on Social Media Usage</h1>
+    </header>
+    <div class="container">
+        <h2>The Dominance of Social Media</h2>
+        <p>Recent studies by Nielsen highlight how social media platforms are becoming the primary source of web traffic, significantly impacting mobile and desktop usage.</p>
+        <p>As more users engage with platforms like Facebook, Instagram, and Twitter, marketers must adapt their strategies to capture audience attention effectively.</p>
+        <div class="interactive">
+            <button onclick="showUsageStats()">Show Usage Statistics</button>
+            <p id="stats" style="display:none;">Mobile: 75%, Desktop: 25% | Engagement on Social Media: Increased by 60% in the last year.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Social Media Insights Blog</p>
+    </footer>
+    <script>
+        function showUsageStats() {
+            var stats = document.getElementById("stats");
+            if (stats.style.display === "none") {
+                stats.style.display = "block";
+            } else {
+                stats.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

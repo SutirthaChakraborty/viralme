@@ -1,0 +1,82 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  border: 1px solid #e3e6ea;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #354555;
+}
+
+h2 {
+  color: #6a778d;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.linkLabel {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3679b7;
+}
+</style>
+
+<script>
+function toggleExplanation() {
+  const explanationBlock = document.getElementById("explanation");
+  const btn = document.getElementById("btn-toggle");
+  if (explanationBlock.style.display === "none") {
+    explanationBlock.style.display = "block";
+    btn.textContent = "Hide Explanation";
+  } else {
+    explanationBlock.style.display = "none";
+    btn.textContent = "Show Explanation";
+  }
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Integrating Video & Images into AI-Generated Google Search Results</h1>
+  </div>
+  <div class="content">
+    <p>Google has recently <span class=".linkLabel" onclick="toggleExplanation()" id="btn-toggle">enhanced</span> its search algorithm to incorporate <strong>AI-generated video</strong> and visually relevant images, making content more informative and engaging.<br>These advancements improve the

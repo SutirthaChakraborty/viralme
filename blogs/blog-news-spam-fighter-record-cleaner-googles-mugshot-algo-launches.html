@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Spam Fighter & Google's Mugshot Algorithm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Latest Blog News on Spam Fighters & Google's Mugshot Algorithm</h1>
+    </header>
+
+    <article>
+        <h2>1. The Rise of Spam Fighters in Digital Marketing</h2>
+        <p>Spam fighters play a crucial role in protecting online platforms from bots and malicious content. Effective spam detection is essential for maintaining user trust and engagement.</p>
+        <button onclick="toggleInfo('spamFighter')">Learn More</button>
+        <div id="spamFighter" style="display:none;">
+            <p>Utilizing advanced algorithms, spam fighters can distinguish between genuine interaction and spammy behavior, enhancing overall user experience.</p>
+        </div>
+    </article>
+
+    <article>
+        <h2>2. Google's Mugshot Algorithm Launch: What You Need to Know</h2>
+        <p>Google has unveiled its latest mugshot algorithm aimed at cleaning up online records. This initiative targets outdated and harmful images, promoting a positive digital presence.</p>
+        <button onclick="toggleInfo('mugshotAlgo')">Learn More</button>
+        <div id="mugshotAlgo" style="display:none;">
+            <p>The algorithm prioritizes user privacy and ensures that only relevant images are displayed in search results, helping individuals maintain their online reputation.</p>
+        </div>
+    </article>
+
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

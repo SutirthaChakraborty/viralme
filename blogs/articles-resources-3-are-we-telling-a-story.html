@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore articles and resources that tell a compelling story through HTML and CSS.">
+    <title>Articles and Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+        article {
+            background: white;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        .interactive:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Articles and Resources: Telling a Story</h1>
+    </header>
+    <article>
+        <h2>Understanding HTML Articles</h2>
+        <p>The <strong>&lt;article&gt;</strong> element is essential for creating self-contained compositions in web documents. It can represent a blog post, a news article, or any independent content that can be reused or syndicated.</p>
+        <p class="interactive" onclick="showMore('htmlArticle')">Learn more about HTML articles</p>
+        <div id="htmlArticle" style="display:none;">
+            <p>HTML articles are structured using the <strong>&lt;article&gt;</strong> tag, which enhances SEO and accessibility. They can include headings, paragraphs, images, and even interactive elements.</p>
+        </div>
+    </article>
+    <article>
+        <h2>CSS for Styling Articles</h2>
+        <p>CSS plays a crucial role in enhancing the visual appeal of articles. By using styles, you can create engaging layouts that attract readers.</p>
+        <p class="interactive" onclick="showMore('cssStyling')">Discover CSS styling techniques</p>
+        <div id="cssStyling" style="display:none;">
+            <p>Utilizing CSS properties like <strong>margin</strong>, <strong>padding</strong>, and <strong>box-shadow</strong> can significantly improve the readability and aesthetics of your articles.</p>
+        </div>
+    </article>
+    <article>
+        <h2>JavaScript for Interactivity</h2>
+        <p>JavaScript can be used to add interactivity to your articles, making them more engaging for users.</p>
+        <p class="interactive" onclick="showMore('jsInteractivity')">Explore JavaScript interactivity</p>
+        <div id="jsInteractivity" style="display:none;">
+            <p>With JavaScript, you can create dynamic content, handle user events, and enhance the overall user experience on your web pages.</p>
+        </div>
+    </article>
+    <script>
+        function showMore(id) {
+            var content = document.getElementById(id);
+            content.style.display = content.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

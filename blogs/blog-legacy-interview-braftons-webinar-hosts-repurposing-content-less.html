@@ -1,0 +1,93 @@
+#### HTML Code with CSS and JS
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Interview - Repurposing Content with Less</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            color: #333;
+        }
+        .blog-post p {
+            color: #555;
+        }
+        .blog-post a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .blog-post a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // Interactive JS functionality can be added here
+        // For example, a function to toggle visibility of blog post content
+        function toggleContent(postId) {
+            var content = document.getElementById(postId);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Blog Legacy Interview - Repurposing Content with Less</h1>
+    </header>
+    <section>
+        <div class="blog-post" onclick="toggleContent('post1')">
+            <h2>Interview with Brafton Webinar Hosts</h2>
+            <p>FM: I would say the webinar is about connecting content - how can one type of content be spread around other mediums. If you have a white paper, you can use the research in a video blog or infographic...</p>
+            <p><a href="#">Read more...</a></p>
+            <div id="post1" style="display: none;">
+                <p>When I started at Brafton in late 2008, the conversations we had with companies revolved around, Lets use this keyword or this keyword phrase and lets track it...</p>
+            </div>
+        </div>
+        <div class="blog-post" onclick="toggleContent('post2')">
+            <h2>11 Clever Ways to Repurpose Webinar Content</h2>
+            <p>Speaking of Q&A, the interactive elements of a webinar are a goldmine for repurposing content. During the live presentation, questions can spark inspiration for follow-up blog posts or even warrant an offline conversation to do a deep dive into the topic...</p>
+            <p><a href="#">Read more...</a></p>
+            <div id="post2" style="display: none;">
+                <p>For awareness-stage webinars with external speakers, there will need to be additional content to connect the topic to your product or company...</p>
+            </div>
+        </div>
+        <!-- More blog posts can be added here -->
+    </section>
+</body>
+</html>
+
+
+This HTML code creates a simple webpage for a blog legacy interview on the topic of repurposing content with less. The page includes interactive CSS and JS elements to showcase the interview content and allow users to expand and collapse the blog post details for a better user experience.
+
+The CSS styles the page layout, colors, and fonts, while the JavaScript function enables the interactive feature of expanding and collapsing the blog post content with a click.
+
+The content of the blog posts is based on the provided search snippets, incorporating relevant keywords such as "repurposing content," "webinar hosts," and "blog legacy interview" to enhance reach and relevance.
+
+Feel free to customize and expand this code further to meet specific requirements or add more interactive features based on the topic and information provided.

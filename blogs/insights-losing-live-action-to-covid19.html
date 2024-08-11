@@ -1,0 +1,90 @@
+#### HTML Code with CSS and JS for Insights on Losing Live Action to COVID-19
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insights on Losing Live Action to COVID-19</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+    }
+    .topic-list {
+      float: left;
+      width: 30%;
+      padding: 0 2rem 0 0;
+    }
+    .topic-list ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .topic-list li {
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+    .topic-content {
+      float: left;
+      width: 70%;
+    }
+    .topic-content h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Insights on Losing Live Action to COVID-19</h1>
+  </header>
+  <main>
+    <div class="topic-list">
+      <h2>Topics</h2>
+      <ul>
+        <li onclick="loadContent('impact')">Impact of COVID-19</li>
+        <li onclick="loadContent('challenges')">Challenges Faced</li>
+        <li onclick="loadContent('adaptation')">Adaptation Strategies</li>
+      </ul>
+    </div>
+    <div class="topic-content" id="topicContent">
+      <h2>Welcome</h2>
+      <p>Select a topic from the list to view insights.</p>
+    </div>
+  </main>
+  <script>
+    function loadContent(topic) {
+      const topicContent = document.getElementById('topicContent');
+      switch (topic) {
+        case 'impact':
+          topicContent.innerHTML = "<h2>Impact of COVID-19</h2><p>The pandemic has significantly impacted live action events, leading to cancellations and postponements across various industries.</p>";
+          break;
+        case 'challenges':
+          topicContent.innerHTML = "<h2>Challenges Faced</h2><p>Organizers have faced challenges in maintaining audience engagement and revenue streams amidst restrictions on gatherings.</p>";
+          break;
+        case 'adaptation':
+          topicContent.innerHTML = "<h2>Adaptation Strategies</h2><p>Many have turned to virtual events and innovative digital experiences to mitigate the effects of the pandemic.</p>";
+          break;
+        default:
+          topicContent.innerHTML = "<h2>Welcome</h2><p>Select a topic from the list to view insights.</p>";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+This HTML code creates a simple page for exploring insights on losing live action to COVID-19. It includes a header, a list of topics on the left side, and a content area on the right side. The user can click on a topic to view related insights, which are dynamically loaded using JavaScript based on the selected topic. The CSS styles the layout and provides a visually appealing design. The interactive nature of the page is achieved through the use of JavaScript to dynamically update the content based on user interaction.
+
+This code snippet incorporates useful keywords such as "insights," "live action," "COVID-19," "interactive," "CSS," and "JavaScript" to enhance its reach and relevance.

@@ -1,0 +1,73 @@
+Here's a small HTML code with CSS to display information about "30 interview questions for a creative team" using interactive CSS and JS to explain the topics:
+
+HTML:
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30 Interview Questions for a Creative Team</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to the Creative Team Interview Questions Blog</h1>
+  <div class="question">
+    <h2>1. Tell us about a project where you had to think outside the box.</h2>
+    <p>Answer goes here...</p>
+  </div>
+  <div class="question">
+    <h2>2. How do you handle constructive criticism of your work?</h2>
+    <p>Answer goes here...</p>
+  </div>
+  <!-- More questions go here... -->
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (styles.css):
+css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.question {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.question h2 {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.question p {
+  display: none;
+}
+
+.question.active p {
+  display: block;
+}
+
+
+JS (script.js):
+javascript
+document.querySelectorAll('.question h2').forEach(item => {
+  item.addEventListener('click', () => {
+    item.parentNode.classList.toggle('active');
+  });
+});
+
+
+This HTML code includes CSS for styling the blog content and an interactive JavaScript to toggle the display of the interview questions and answers. The keywords used aim to enhance reach and relevance for the topic.

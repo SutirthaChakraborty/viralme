@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary of Responsive Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        .glossary {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .term {
+            margin-top: 15px;
+            cursor: pointer;
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .term:hover {
+            background: #d6d9db;
+        }
+        .definition {
+            display: none;
+            margin-top: 5px;
+            padding: 10px;
+            background: #f1f1f1;
+            border-left: 3px solid #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Glossary of Responsive Design</h1>
+    <div class="glossary">
+        <div class="term" onclick="toggleDefinition(this)">Viewport</div>
+        <div class="definition">The user’s visible area of a web page, typically displayed as a rectangle. It varies with the device, such as mobile, tablet, or desktop.</div>
+        
+        <div class="term" onclick="toggleDefinition(this)">Media Queries</div>
+        <div class="definition">CSS techniques that allow the web page to adapt its layout based on the device's characteristics, such as screen size and resolution.</div>
+        
+        <div class="term" onclick="toggleDefinition(this)">Fluid Grid</div>
+        <div class="definition">A responsive layout structure that uses proportional sizing instead of fixed units, allowing content to resize smoothly for different screen sizes.</div>
+        
+        <div class="term" onclick="toggleDefinition(this)">Responsive Images</div>
+        <div class="definition">Images that scale nicely with the layout, using CSS to adapt or using HTML attributes like 'srcset' for different resolutions.</div>
+    </div>
+
+    <script>
+        function toggleDefinition(term) {
+            const definition = term.nextElementSibling;
+            definition.style.display = definition.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

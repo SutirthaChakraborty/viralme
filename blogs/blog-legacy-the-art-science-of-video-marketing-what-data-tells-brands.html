@@ -1,0 +1,52 @@
+Here's a simple HTML and CSS structure with JavaScript that highlights the keywords and provides a basic interactive experience related to your topic:
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy: The Art & Science of Video Marketing (Data Insights)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .keyword {
+            color: #ff6347; /* Use a color that stands out */
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function highlightKeyword(keyword) {
+            var text = document.body.innerHTML;
+            var regex = new RegExp("\\b(" + keyword + ")\\b", "gi");
+            text = text.replace(regex, '<span class="highlight">$1</span>');
+            document.body.innerHTML = text;
+        }
+
+        // On page load, highlight the target keywords
+        highlightKeyword('video marketing');
+        highlightKeyword('data');
+        highlightKeyword('brand insights');
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Blog Legacy: The Art <span class="keyword" onclick="highlightKeyword('science')">&</span> Science of <span class="keyword" onclick="highlightKeyword('video')">Video</span> Marketing (<span class="keyword" onclick="highlightKeyword('data tells brands')">Data</span> that Matters)</h1>
+    
+    <p>Learn how video content can revolutionize brand strategies, and discover how data-driven insights guide successful campaigns.</p>
+    <p>Explore topics such as:</p>
+    <ul>
+        <li>Creating engaging <span class="keyword" onclick="highlightKeyword('content')">content</span></li>
+        <li>Optimizing video <span class="keyword" onclick="highlightKeyword('performance')">performance</span></li>
+        <li>AI-driven <span class="keyword" onclick="highlightKeyword('analysis')">analysis</span> and audience targeting</li>
+        <li>Data storytelling for better <span class="keyword" onclick="highlightKeyword('brand awareness

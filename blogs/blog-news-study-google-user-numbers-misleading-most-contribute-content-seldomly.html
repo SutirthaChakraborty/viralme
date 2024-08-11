@@ -1,0 +1,51 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News Study Google User Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            margin: 0 0 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog News Study Google User Numbers</h1>
+        <p>Google's user numbers are often misleading. Most of the content on their platform is contributed by a small number of users, and these users seldomly create high-quality content.</p>
+        <button onclick="showUserNumbers()">Show User Numbers</button>
+        <p id="userNumbers"></p>
+    </div>
+    <script>
+        function showUserNumbers() {
+            const userNumbers = document.getElementById('userNumbers');
+            userNumbers.innerHTML = 'Most contributing users have less than 100 followers.';
+        }
+    </script>
+</body>
+</html>

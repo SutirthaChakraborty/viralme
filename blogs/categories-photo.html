@@ -1,0 +1,55 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类照片</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            max-width: 300px;
+            margin: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>分类照片</h1>
+    <p>点击下方按钮查看不同类别的照片。</p>
+    <button onclick="showCategory('nature')">自然</button>
+    <button onclick="showCategory('city')">城市</button>
+    <button onclick="showCategory('animals')">动物</button>
+    <div id="category"></div>
+
+    <script>
+        function showCategory(category) {
+            const images = [
+                'nature1.jpg', 'nature2.jpg', 'nature3.jpg',
+                'city1.jpg', 'city2.jpg', 'city3.jpg',
+                'animals1.jpg', 'animals2.jpg', 'animals3.jpg'
+            ];
+            const categoryImages = images.filter(img => img.includes(category));
+            let categoryHtml = '';
+            for (let img of categoryImages) {
+                categoryHtml += `<img src="${img}" alt="${category}">`;
+            }
+            document.getElementById('category').innerHTML = categoryHtml;
+        }
+    </script>
+</body>
+</html>

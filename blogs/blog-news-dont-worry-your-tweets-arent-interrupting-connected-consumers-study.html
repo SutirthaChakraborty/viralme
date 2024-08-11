@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Connected Consumers Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        article {
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .keywords {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #0073e6;
+        }
+        button {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Don't Worry, Your Tweets Aren't Interrupting!</h1>
+    </header>
+    <article>
+        <p>The study on <span class="keywords">connected consumers</span> reveals key insights about how social media engagement, like tweeting, affects brand perceptions.</p>
+        <p>Consumers today are more digitally connected than ever, leading to a demand for real-time interactions with brands.</p>
+        <p>Don't fret! Your tweets play a role in enhancing engagement and are critical for building brand loyalty.</p>
+        <button id="moreInfoBtn">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <p>Active social media users are vigilant about communication. Studies indicate that timely responses can elevate consumer satisfaction.</p>
+            <p>The interconnectedness of social platforms highlights the importance of a responsive digital presence in marketing strategies.</p>
+        </div>
+    </article>
+    <script>
+        document.getElementById('moreInfoBtn').addEventListener('click', function() {
+            var infoDiv = document.getElementById('moreInfo');
+            if (infoDiv.style.display === 'none') {
+                infoDiv.style.display = 'block';
+                this.textContent = 'Show Less';
+            } else {
+                infoDiv.style.display = 'none';
+                this.textContent = 'Learn More';
+            }
+        });
+    </script>
+</body>
+</html>

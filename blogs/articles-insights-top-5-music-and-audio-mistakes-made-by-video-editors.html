@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 Music and Audio Mistakes by Video Editors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .mistake {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .mistake:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Top 5 Music and Audio Mistakes Made by Video Editors</h1>
+    
+    <div class="mistake" id="mistake1">
+        <h2>1. Ignoring Audio Levels</h2>
+        <p>Many editors overlook the importance of balancing audio levels, leading to inconsistent sound quality.</p>
+        <button onclick="showDetails('mistake1')">Learn More</button>
+    </div>
+
+    <div class="mistake" id="mistake2">
+        <h2>2. Poor Music Selection</h2>
+        <p>Choosing the wrong music can detract from the video's message and emotional impact.</p>
+        <button onclick="showDetails('mistake2')">Learn More</button>
+    </div>
+
+    <div class="mistake" id="mistake3">
+        <h2>3. Overusing Sound Effects</h2>
+        <p>Excessive sound effects can overwhelm the viewer and distract from the main content.</p>
+        <button onclick="showDetails('mistake3')">Learn More</button>
+    </div>
+
+    <div class="mistake" id="mistake4">
+        <h2>4. Neglecting Background Noise</h2>
+        <p>Failing to eliminate background noise can make the audio unprofessional and hard to listen to.</p>
+        <button onclick="showDetails('mistake4')">Learn More</button>
+    </div>
+
+    <div class="mistake" id="mistake5">
+        <h2>5. Not Using Proper Formats</h2>
+        <p>Using incorrect audio formats can lead to compatibility issues and poor playback quality.</p>
+        <button onclick="showDetails('mistake5')">Learn More</button>
+    </div>
+
+    <script>
+        function showDetails(mistakeId) {
+            const details = {
+                mistake1: "Balancing audio levels is crucial for maintaining a professional sound. Use meters to monitor levels.",
+                mistake2: "Select music that complements the video's tone and message. Consider licensing issues as well.",
+                mistake3: "Use sound effects sparingly to enhance the video without overwhelming the viewer.",
+                mistake4: "Always check for background noise and use noise reduction tools to clean up the audio.",
+                mistake5: "Ensure audio files are in formats like WAV or MP3 for best compatibility across platforms."
+            };
+            alert(details[mistakeId]);
+        }
+    </script>
+
+</body>
+</html>

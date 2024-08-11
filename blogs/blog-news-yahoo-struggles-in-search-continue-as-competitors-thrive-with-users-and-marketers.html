@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yahoo struggles in search as competitors thrive. Explore the latest trends in digital marketing and search engine competition.">
+    <title>Yahoo Struggles in Search - Blog News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #0066cc;
+        }
+        .news-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .keyword {
+            display: inline-block;
+            background: #e7f1ff;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .keyword:hover {
+            background: #d0e7ff;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="news-container">
+        <h1>Yahoo's Search Struggles</h1>
+        <p>In an ever-evolving digital landscape, Yahoo continues to face challenges in its search engine capabilities. While competitors like Google and Bing accelerate their innovation, Yahoo appears stagnant, affecting its user engagement and market share.</p>
+        
+        <div>
+            <span class="keyword" onclick="toggleInfo('searchCompetitors')">Search Competitors</span>
+            <span class="keyword" onclick="toggleInfo('digitalMarketing')">Digital Marketing</span>
+            <span class="keyword" onclick="toggleInfo('userEngagement')">User Engagement</span>
+            <span class="keyword" onclick="toggleInfo('marketShare')">Market Share</span>
+        </div>
+
+        <div id="searchCompetitors" class="hidden">
+            <p>Major players like Google have improved their algorithms and increased personalized results, leaving Yahoo struggling to keep up.</p>
+        </div>
+        <div id="digitalMarketing" class="hidden">
+            <p>Effective digital marketing strategies leverage SEO and SEM, where Yahoo's performance has lagged behind due to outdated practices.</p>
+        </div>
+        <div id="userEngagement" class="hidden">
+            <p>Higher user engagement is driven by optimal search results; users are gravitating towards platforms that provide more relevant information.</p>
+        </div>
+        <div id="marketShare" class="hidden">
+            <p>Yahoo's decline in market share is evident, as it loses ground to search giants who understand consumer needs better.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            info.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

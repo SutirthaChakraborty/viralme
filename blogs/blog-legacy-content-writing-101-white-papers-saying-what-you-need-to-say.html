@@ -1,0 +1,83 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Legacy Content Writing 101: White Papers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #F5F5F5;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 32px;
+            border-bottom: 1px solid #ccc;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .section {
+            width: 45%;
+            margin-right: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .section:last-child {
+            margin-right: 0;
+        }
+        h2 {
+            color: #555;
+            font-size: 24px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #1DA1F2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .interactive {
+            position: relative;
+        }
+        .interactive .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #F5F5F5;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #333;
+            font-size: 14px;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+        }
+        .interactive:hover .tooltip {
+            display: block;
+            color: #555;
+        }
+    </style>
+    <script>
+        function toggleTooltip(targetId, tooltipId) {
+            const tooltip = document.getElementById(tooltipId);
+            if (tooltip) {
+                tooltip.classList.toggle("active");
+            }
+        }
+    </script

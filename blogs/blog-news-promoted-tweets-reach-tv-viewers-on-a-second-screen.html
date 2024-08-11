@@ -1,0 +1,126 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Screen Engagement</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    nav a {
+        display: block;
+    }
+}
+</style>
+<script>
+function toggleNav() {
+    var nav = document.getElementById('nav');
+    var body = document.getElementsByTagName('body')[0];
+    if (nav.style.display === 'block') {
+        nav.style.display = 'none';
+        body.style.overflowY = 'auto';
+    } else {
+        nav.style.display = 'block';
+        body.style.overflowY = 'hidden';
+    }
+}
+</script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Second Screen Engagement</h1>
+    </header>
+    <nav id="nav">
+        <a href="#blog">Blog</a>
+        <a href="#news">News</a>
+        <a href="#promoted-tweets">Promoted Tweets</a>
+        <a href="#reach">Reach</a>
+        <a href="#tv-viewers">TV Viewers</a>
+        <button onclick="toggleNav()">Toggle Navigation</button>
+    </nav>
+    <main>
+        <section id="blog">
+            <h2>Blog</h2>
+            <p>Discover insights and trends in second screen engagement through our blog.</p>
+        </section>
+        <section id="news">
+            <h2>News</h2>
+            <p>Stay updated with the latest news and announcements regarding second screen engagement.</p>
+        </section>
+        <section id="promoted-tweets">
+            <h2>Promoted Tweets</h2>
+            <p>Learn how promoted tweets can enhance your second screen experience.</p>
+        </section>
+        <section id="reach">
+            <h2>Reach</h2>
+            <p>Understand the strategies to maximize reach among your target audience.</p>
+        </section>
+        <section id="tv-viewers">
+            <h2>TV Viewers</h2>
+            <p>Explore methods to engage TV viewers on the second screen.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Second Screen Engagement. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

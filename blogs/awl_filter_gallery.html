@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWL Filter Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-item {
+            margin: 15px;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            width: 200px;
+            transition: transform 0.2s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            border-color: #3498db;
+        }
+        .filter-button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .filter-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>AWL Filter Gallery</h1>
+<div>
+    <button class="filter-button" onclick="filterGallery('all')">All</button>
+    <button class="filter-button" onclick="filterGallery('nature')">Nature</button>
+    <button class="filter-button" onclick="filterGallery('architecture')">Architecture</button>
+    <button class="filter-button" onclick="filterGallery('people')">People</button>
+</div>
+
+<div class="gallery-container" id="gallery">
+    <div class="gallery-item nature" data-category="nature">
+        <img src="nature1.jpg" alt="Nature 1" width="200">
+    </div>
+    <div class="gallery-item architecture" data-category="architecture">
+        <img src="architecture1.jpg" alt="Architecture 1" width="200">
+    </div>
+    <div class="gallery-item people" data-category="people">
+        <img src="people1.jpg" alt="People 1" width="200">
+    </div>
+    <div class="gallery-item nature" data-category="nature">
+        <img src="nature2.jpg" alt="Nature 2" width="200">
+    </div>
+    <div class="gallery-item architecture" data-category="architecture">
+        <img src="architecture2.jpg" alt="Architecture 2" width="200">
+    </div>
+</div>
+
+<script>
+    function filterGallery(category) {
+        const items = document.querySelectorAll('.gallery-item');
+        items.forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

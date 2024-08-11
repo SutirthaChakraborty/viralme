@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Brand Videos</title>
+    <style>
+        --primary-color: #007BFF; /* Use a branded color */
+        --font-family: Arial, sans-serif;
+        .blog-header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .blog-post {
+            max-width: 960px;
+            margin: 0 auto;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            border-left: 10px solid var(--primary-color);
+        }
+        h1 {
+            font-family: var(--font-family);
+            margin-bottom: 20px;
+        }
+        .post-title {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+        .post-excerpt {
+            font-size: 16px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 30px; /* Create space for video info */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe, .video-container object, .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .video-controls {
+            position: absolute;
+            bottom: 20px;
+            z-index: 1;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function showVideoControls() {
+            const videoControls = document.getElementById('video-controls');
+            if (!videoControls.classList.contains('visible')) {
+                videoControls.style.display = 'flex';
+                videoControls.classList.add('visible');
+            }
+        }
+        function hideVideoControls() {
+            const videoControls = document.getElementById('video-controls');
+            if (videoControls.classList.contains('visible')) {
+                videoControls.style.display = 'none';
+                videoControls.classList.remove('visible');
+            }
+       

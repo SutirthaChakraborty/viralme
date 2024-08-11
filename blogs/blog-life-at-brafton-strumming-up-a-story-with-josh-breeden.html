@@ -1,0 +1,135 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life at Brafton: Strumming Up a Story with Josh Breeden</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Life at Brafton: Strumming Up a Story with Josh Breeden</h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Brafton</h2>
+            <p>Brafton is a leading content marketing agency that helps businesses tell their stories through compelling, engaging content. Our team of experts specializes in crafting narratives that resonate with audiences, driving engagement and conversion.</p>
+        </section>
+        <section id="josh-breeden">
+            <h2>Strumming Up Stories</h2>
+            <p>At Brafton, the art of storytelling is not just a craft but a way of life. One of our talented writers, Josh Breeden, shares his passion for storytelling and how he brings stories to life with his unique voice.</p>
+            <div id="josh-bio">
+                <h3>Josh Breeden</h3>
+                <p>Josh Breeden is a seasoned writer at Brafton, known for his ability to craft stories that resonate with audiences. With a background in music and a love for storytelling, Josh brings a unique perspective to his work.</p>
+            </div>
+        </section>
+        <section id="interactive-story">
+            <h2>Interactive Story</h2>
+            <p>Ever wonder how a story comes to life? Explore the interactive story below to see the process of turning a raw idea into a compelling narrative.</p>
+            <div id="story-slider">
+                <div class="story-slide">
+                    <h3>Concept</h3>
+                    <p>Here's the initial idea...</p>
+                </div>
+                <div class="story-slide">
+                    <h3>Outline</h3>
+                    <p>Developing the structure...</p>
+                </div>
+                <div class="story-slide">
+                    <h3>First Draft</h3>
+                    <p>Writing the first draft...</p>
+                </div>
+                <div class="story-slide">
+                    <h3>Revision</h3>
+                    <p>Refining the story...</p>
+                </div>
+                <div class="story-slide">
+                    <h3>Final Draft</h3>
+                    <p>Finalizing the narrative...</p>
+                </div>
+            </div>
+            <button id="next-slide">Next Slide</button>
+        </section>
+        <footer>
+            <p>© 2024 Brafton. All rights reserved.</p>
+        </footer>
+    </main>
+    <script>
+        $(document).ready(function() {
+            $('#next-slide').click(function() {
+                var currentSlide = $('#story-slide.active');
+                var nextSlide = currentSlide.next();
+                if (nextSlide.length === 0) {
+                    nextSlide = $('#story-slide').first();
+                }
+                currentSlide.removeClass('active');
+                nextSlide.addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+#about {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+#josh-bio {
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+
+#interactive-story {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#story-slide {
+    display: none;
+}
+
+#story-slide.active {
+    display: block;
+}
+
+#next-slide {
+    display: block;
+    margin-top: 20px;
+}

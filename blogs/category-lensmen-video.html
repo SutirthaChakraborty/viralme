@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world of lensmen and videography. Learn skills for capturing stunning videos, tips for filmmakers, and techniques for incredible cinematography.">
+    <title>Lensmen Video Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #5a9;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            background: #5a9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #4a8;
+        }
+        #videoInformation {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lensmen Video Guide</h1>
+    <p>Your source for videography tips and techniques</p>
+</header>
+
+<section>
+    <h2>What is a Lensman?</h2>
+    <p>A lensman is a skilled videographer who captures stunning video content using various techniques and equipment. Whether for documentaries, films, or YouTube vlogs, the role requires creativity and technical expertise.</p>
+    <button onclick="toggleInfo()">Show Video Tips</button>
+    <div id="videoInformation">
+        <h3>Top 5 Video Tips:</h3>
+        <ul>
+            <li>Use natural lighting whenever possible.</li>
+            <li>Stabilize your shots using a tripod.</li>
+            <li>Experiment with different angles and perspectives.</li>
+            <li>Pay attention to audio quality; invest in a good microphone.</li>
+            <li>Learn basic video editing techniques for enhancing your footage.</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function toggleInfo() {
+        var info = document.getElementById('videoInformation');
+        if (info.style.display === 'none' || info.style.display === '') {
+            info.style.display = 'block';
+        } else {
+            info.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore audience preferences across YouTube and Facebook with insightful comparisons.">
+    <title>Audience Preferences: YouTube vs Facebook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .platform {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .platform:hover {
+            transform: scale(1.02);
+        }
+        .button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Insights into Audience Preferences: YouTube vs Facebook</h1>
+
+<div class="platform" id="youtube">
+    <h2>YouTube Insights</h2>
+    <p>YouTube is renowned for video content consumption, with viewers typically favoring longer content for deeper engagement. Key demographics include young adults aged 18-34.</p>
+    <button class="button" onclick="showMore('youtube')">Discover More</button>
+    <div class="more-info" style="display:none;">
+        <p>YouTube users prefer entertainment, tutorials, and music videos, showing high engagement rates particularly during evenings and weekends.</p>
+    </div>
+</div>
+
+<div class="platform" id="facebook">
+    <h2>Facebook Insights</h2>
+    <p>Facebook serves a diverse audience, with a mix of video, images, and text-based content. Users often engage with shorter snippets, memes, and news updates.</p>
+    <button class="button" onclick="showMore('facebook')">Discover More</button>
+    <div class="more-info" style="display:none;">
+        <p>Facebook attracts a wider age range, particularly users aged 25-54. Engagement peaks during lunch breaks and late evenings.</p>
+    </div>
+</div>
+
+<script>
+    function showMore(platform) {
+        var moreInfo = document.querySelector(`#${platform} .more-info`);
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

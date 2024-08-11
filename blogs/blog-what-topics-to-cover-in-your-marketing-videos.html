@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Video Topics & Keywords</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .topic {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        .topic-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .keyword-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .keyword {
+            color: #007BFF;
+            cursor: pointer;
+        }
+        .keyword:hover {
+            text-decoration: underline;
+        }
+        .explain {
+            display: none;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .show-explain {
+            display: block;
+        }
+    </style>
+    <script>
+        function toggleExplanation(topic) {
+            var explainBlock = document.querySelector('.(topic_' + topic + ') .explain');
+            var explainButton = document.querySelector('.topic_' + topic + ') .keyword.show-explain');
+            if (explainBlock.style.display === 'block') {
+                explainBlock.style.display = 'none';
+                explainButton.textContent = 'Show Explanation';
+            } else {
+                explainBlock.style.display = 'block';
+                explainButton.textContent = 'Hide Explanation';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Marketing Video Topics &amp; Keywords for Better Reach</h1>
+        <div class="section">
+            <div class="topic" id="topic1" onclick="toggleExplanation('1')">
+               

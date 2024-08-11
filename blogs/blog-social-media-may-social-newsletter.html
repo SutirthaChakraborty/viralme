@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>博客社交媒体 newsletter</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		
+		.social-media {
+			margin-top: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.social-media a {
+			margin: 10px;
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+		
+		.social-media a:hover {
+			background-color: #3e8e41;
+		}
+		
+		.newsletter {
+			margin-top: 20px;
+			padding: 20px;
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.newsletter h2 {
+			margin-top: 0;
+		}
+		
+		.newsletter p {
+			margin-bottom: 20px;
+		}
+		
+		.newsletter input[type="email"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		
+		.newsletter input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.newsletter input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>博客社交媒体 newsletter</h1>
+	</div>
+	<div class="social-media">
+		<a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+		<a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+		<a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<div class="newsletter">
+		<h2>订阅我们的newsletter</h2>
+		<p>每周更新最新的博客文章和新闻</p>
+		<form>
+			<input type="email" placeholder="Email">
+			<input type="submit" value="订阅">
+		</form>
+	</div>
+	<script src="https://kit.fontawesome.com/your-font-awesome-key.js"></script>
+	<script>
+		// 将 newsletter 表单中的输入值发送到服务器
+		const newsletterForm = document.querySelector('form');
+		newsletterForm.addEventListener('submit', (e) => {
+			e.preventDefault();
+			const email = newsletterForm.querySelector('input[type="email"]').value;
+			// 发送请求到服务器
+			fetch('/newsletter', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({ email })
+			})
+			.then((response) => response.json())
+			.then((data) => {
+				if (data.success) {
+					alert('订阅成功!');
+					newsletterForm.reset();
+				} else {
+					alert('订阅失败，请检查邮箱是否正确');
+				}
+			})
+			.catch((error) => {
+				alert('订阅失败，请检查网络连接');
+			});
+		});
+	</script>
+</body>
+</html>
+
+注意：请将 Font Awesome 的 key 替换为您的实际 key。

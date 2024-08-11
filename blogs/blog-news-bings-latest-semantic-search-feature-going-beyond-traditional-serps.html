@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing's Latest Semantic Search Feature</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            margin: 20px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background: #0078d4;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #005a9e;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bing's Semantic Search Revolution</h1>
+</header>
+
+<div class="content">
+    <h2>What is Semantic Search?</h2>
+    <p>Bing's latest semantic search feature enhances user experience by understanding the intent behind queries rather than just focusing on keyword matching.</p>
+    
+    <h2>Key Features</h2>
+    <ul>
+        <li>Contextual Understanding</li>
+        <li>Natural Language Processing</li>
+        <li>Personalized Search Results</li>
+        <li>Enhanced User Engagement</li>
+    </ul>
+    
+    <button id="moreInfoBtn">Learn More</button>
+    <div id="moreInfo" class="hidden">
+        <p>This new feature harnesses machine learning algorithms to analyze user behavior, allowing Bing to provide more relevant search results that cater to individual needs.</p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('moreInfoBtn').addEventListener('click', function() {
+        var moreInfo = document.getElementById('moreInfo');
+        moreInfo.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

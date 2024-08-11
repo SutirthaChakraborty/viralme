@@ -1,0 +1,53 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Category Packshot Exploration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  .packshot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .packshot {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  .packshot img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+
+<h2>Category Packshot Exploration</h2>
+
+<div class="packshot-container">
+  <div class="packshot" style="background-image: url('packshot1.jpg');"></div>
+  <div class="packshot" style="background-image: url('packshot2.jpg');"></div>
+  <div class="packshot" style="background-image: url('packshot3.jpg');"></div>
+</div>
+
+<script>
+  document.querySelectorAll('.packshot').forEach(packshot => {
+    packshot.addEventListener('click', function() {
+      alert('Clicked on packshot with image: ' + packshot.style.backgroundImage);
+    });
+  });
+</script>
+
+</body>
+</html>

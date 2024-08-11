@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weirs Custom Publishing - Luxury Magazine Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            margin: 20px 0;
+        }
+        .content {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .button {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Weirs Custom Publishing</h1>
+    <h2>Your Source for Luxury Magazine Insights</h2>
+</header>
+
+<div class="content">
+    <h3>About Our Blog</h3>
+    <p>Weirs Custom Publishing specializes in creating bespoke luxury magazines tailored to niche markets. Our blog offers insights into the world of premium content, custom publishing strategies, and the art of storytelling through high-quality print and digital media.</p>
+    
+    <h3>Why Custom Publishing?</h3>
+    <p>Custom publishing provides brands with a personalized approach, increasing engagement and loyalty among discerning audiences. Discover tips on how to leverage luxury magazines for your brand.</p>
+    
+    <button class="button" onclick="showMore()">Learn More</button>
+    
+    <div id="more-info" style="display: none; margin-top: 20px;">
+        <h3>Benefits of Luxury Magazines</h3>
+        <ul>
+            <li>Enhanced Brand Image</li>
+            <li>Targeted Outreach</li>
+            <li>High-Quality Visuals</li>
+            <li>Engaged Readership</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Weirs Custom Publishing | All Rights Reserved</p>
+</footer>
+
+<script>
+    function showMore() {
+        var moreInfo = document.getElementById("more-info");
+        if (moreInfo.style.display === "none") {
+            moreInfo.style.display = "block";
+        } else {
+            moreInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

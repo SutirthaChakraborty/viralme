@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTLD Glossary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #0073e6;
+        }
+        .glossary {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .term {
+            margin: 15px 0;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #eaeaea;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .term:hover {
+            background-color: #d1e7fd;
+        }
+        .definition {
+            display: none;
+            margin-top: 5px;
+            padding: 10px;
+            background-color: #f0f8ff;
+            border-left: 5px solid #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="glossary">
+        <h1>CCTLD Glossary</h1>
+        <div class="term" onclick="toggleDefinition('definition1')">
+            <strong>.co</strong> - Colombia's Country Code TLD
+            <div id="definition1" class="definition">.co is the country code top-level domain for Colombia, often popular for commercial purposes worldwide.</div>
+        </div>
+        <div class="term" onclick="toggleDefinition('definition2')">
+            <strong>.uk</strong> - United Kingdom's Country Code TLD
+            <div id="definition2" class="definition">.uk is the country code top-level domain designated for the United Kingdom, widely used by British businesses and organizations.</div>
+        </div>
+        <div class="term" onclick="toggleDefinition('definition3')">
+            <strong>.de</strong> - Germany's Country Code TLD
+            <div id="definition3" class="definition">.de is the country code top-level domain for Germany, known for its strong online presence and numerous registrations.</div>
+        </div>
+        <div class="term" onclick="toggleDefinition('definition4')">
+            <strong>.jp</strong> - Japan's Country Code TLD
+            <div id="definition4" class="definition">.jp is the country code top-level domain for Japan, favored by Japanese companies and institutions for local identity.</div>
+        </div>
+    </div>
+    <script>
+        function toggleDefinition(id) {
+            var definition = document.getElementById(id);
+            if (definition.style.display === "none" || definition.style.display === "") {
+                definition.style.display = "block";
+            } else {
+                definition.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

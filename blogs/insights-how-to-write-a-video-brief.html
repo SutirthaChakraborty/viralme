@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Write a Video Brief</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .toggle {
+            cursor: pointer;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+        .details {
+            display: none;
+            margin-top: 10px;
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Insights on Writing a Video Brief</h1>
+    <h2>Understanding Your Audience</h2>
+    <p>Identify your target audience to tailor your video content to their needs.</p>
+    <span class="toggle" onclick="toggleDetails('audienceDetails')">Read More</span>
+    <div class="details" id="audienceDetails">
+        <p>Consider demographic factors such as age, location, and interests to create impactful videos.</p>
+    </div>
+
+    <h2>Defining Objectives</h2>
+    <p>Clarify the purpose of the video, whether it's to inform, entertain, or persuade.</p>
+    <span class="toggle" onclick="toggleDetails('objectiveDetails')">Read More</span>
+    <div class="details" id="objectiveDetails">
+        <p>Establish key performance indicators (KPIs) to measure the video's success post-release.</p>
+    </div>
+
+    <h2>Key Messages</h2>
+    <p>Outline the main messages or story you want to convey in your video.</p>
+    <span class="toggle" onclick="toggleDetails('messageDetails')">Read More</span>
+    <div class="details" id="messageDetails">
+        <p>Ensure that the key messages align with your brand voice and resonate with your audience.</p>
+    </div>
+
+    <h2>Budget and Resources</h2>
+    <p>Determine your budget and the resources needed for production.</p>
+    <span class="toggle" onclick="toggleDetails('budgetDetails')">Read More</span>
+    <div class="details" id="budgetDetails">
+        <p>Allocate funds for equipment, location, talent, and post-production to ensure a smooth process.</p>
+    </div>
+
+    <h2>Timeline</h2>
+    <p>Set a realistic timeline for the production and release of your video.</p>
+    <span class="toggle" onclick="toggleDetails('timelineDetails')">Read More</span>
+    <div class="details" id="timelineDetails">
+        <p>Include key milestones to keep the project on track and meet deadlines.</p>
+    </div>
+</div>
+
+<script>
+    function toggleDetails(id) {
+        const detailSection = document.getElementById(id);
+        if (detailSection.style.display === "none" || detailSection.style.display === "") {
+            detailSection.style.display = "block";
+        } else {
+            detailSection.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

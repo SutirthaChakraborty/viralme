@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematography of Dark | Blog</title>
+    <meta name="description" content="Explore the intricate cinematography of the German series Dark. Discover lighting, framing, and visual storytelling techniques.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #EDEDED;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #FFCC00;
+        }
+        h2 {
+            color: #FFC107;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #1E1E1E;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #FFCC00;
+            color: #121212;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #FFC107;
+        }
+        .video {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cinematography of Dark</h1>
+        <p>The German series <strong>Dark</strong> is renowned for its stunning cinematography and intricate visual storytelling. From moody lighting to meticulous framing, every shot contributes to the show’s haunting atmosphere.</p>
+        
+        <h2>Key Cinematic Elements</h2>
+        <ul>
+            <li><strong>Lighting:</strong> The use of chiaroscuro enhances the emotional weight of each scene.</li>
+            <li><strong>Framing:</strong> Innovative angles tell a deeper story beyond the script.</li>
+            <li><strong>Color Palette:</strong> Earthy tones create a sense of dread and mystery.</li>
+        </ul>
+        
+        <h2>Interactive Analysis</h2>
+        <p>Click the button below to see a breakdown of a selected scene from the series!</p>
+        <button class="button" onclick="toggleVideo()">Show Video Analysis</button>
+        <div id="videoContainer" style="display:none;">
+            <h3>Scene Analysis</h3>
+            <video class="video" controls>
+                <source src="dark-scene-analysis.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        function toggleVideo() {
+            var videoContainer = document.getElementById('videoContainer');
+            if (videoContainer.style.display === "none") {
+                videoContainer.style.display = "block";
+            } else {
+                videoContainer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

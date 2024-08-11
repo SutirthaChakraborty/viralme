@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching with Brianna De Lairre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .keywords {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog Content & Podcast Coaching with Brianna De Lairre</h1>
+    </header>
+    <div class="content">
+        <h2>Welcome to Your Coaching Journey!</h2>
+        <p>Join Brianna De Lairre as she guides you through the world of **blog content creation**, **podcasting**, and **personal coaching**. Enhance your skills and reach your audience effectively!</p>
+        <p>Explore topics like <span class="keywords">content strategy</span>, <span class="keywords">audience engagement</span>, and <span class="keywords">digital marketing</span>.</p>
+        <button onclick="showMore()">Learn More</button>
+        <div id="moreInfo" style="display:none;">
+            <h3>Interactive Learning</h3>
+            <p>Discover how to create compelling content that resonates with your audience. Brianna's coaching includes:</p>
+            <ul>
+                <li>Effective storytelling techniques</li>
+                <li>Podcast production tips</li>
+                <li>Building a personal brand</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showMore() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

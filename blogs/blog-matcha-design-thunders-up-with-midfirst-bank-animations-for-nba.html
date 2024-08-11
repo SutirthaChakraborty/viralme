@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Design & MidFirst Bank NBA Animations</title>
+    <meta name="description" content="Explore how Matcha Design collaborates with MidFirst Bank to create dynamic animations for NBA events.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #3b3b3b;
+            text-align: center;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <h1>Matcha Design & MidFirst Bank NBA Animations</h1>
+    <p>Discover the integration of <span class="highlight">Matcha Design's creativity</span> and <span class="highlight">MidFirst Bank's marketing strategy</span> to enhance NBA fans' experience through <span class="highlight">dynamic animations</span>.</p>
+    <p>This collaboration emphasizes engaging visuals and seamless interaction that resonate with basketball enthusiasts and enhance brand visibility.</p>
+    <button id="exploreBtn">Explore More</button>
+    <p id="extraInfo" style="display:none;">The animations aim to capture key moments in basketball, driving more interaction on social media platforms and increasing brand engagement.</p>
+</div>
+
+<script>
+    document.getElementById('exploreBtn').addEventListener('click', function() {
+        const info = document.getElementById('extraInfo');
+        if (info.style.display === 'none') {
+            info.style.display = 'block';
+            this.textContent = 'Show Less';
+        } else {
+            info.style.display = 'none';
+            this.textContent = 'Explore More';
+        }
+    });
+</script>
+
+</body>
+</html>

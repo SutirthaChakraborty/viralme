@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies: Influencers in Irish Life</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content {
+            width: 70%;
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #e9ecef;
+        }
+        .case-study {
+            display: none;
+        }
+        .case-study.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Case Studies: Influencers in Irish Life</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Topics</h2>
+            <a href="#" onclick="showStudy('study1')">Influencer Marketing</a>
+            <a href="#" onclick="showStudy('study2')">Social Media Impact</a>
+            <a href="#" onclick="showStudy('study3')">Cultural Influence</a>
+        </div>
+        <div class="content">
+            <div id="study1" class="case-study active">
+                <h2>Influencer Marketing</h2>
+                <p>Influencer marketing has become a powerful tool in Ireland, leveraging social media platforms to reach targeted audiences effectively.</p>
+            </div>
+            <div id="study2" class="case-study">
+                <h2>Social Media Impact</h2>
+                <p>Social media has transformed how brands communicate with consumers, creating a direct line of engagement and feedback.</p>
+            </div>
+            <div id="study3" class="case-study">
+                <h2>Cultural Influence</h2>
+                <p>Influencers play a significant role in shaping cultural trends and public opinion in Ireland, impacting everything from fashion to politics.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showStudy(studyId) {
+            const studies = document.querySelectorAll('.case-study');
+            studies.forEach(study => {
+                study.classList.remove('active');
+            });
+            document.getElementById(studyId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

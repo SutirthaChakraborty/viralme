@@ -1,0 +1,79 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Blog: Social Media Handles</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6f7;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #4caf50;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+</style>
+<script>
+window.onload = function() {
+  // If you want to add some interactivity, you can use this JavaScript to show a tooltip when hovering over a social media handle
+  var handles = document.querySelectorAll(".social-media");
+  handles.forEach(function(handle) {
+    handle.addEventListener("mouseover", function(e) {
+      e.target.title = "Click to follow on " + e.target.innerText;
+    });
+    handle.addEventListener("mouseout", function(e) {
+      e.target.title = "";
+    });
+  });
+};
+</script>
+</head>
+<body>
+<div class="container">
+  <h1>Enhance Your Blog's Social Media Reach</h1>
+  <p>Stay connected with your audience and grow your online presence by showcasing your social media handles effectively. Here are a few:</p>
+  
+  <ul>
+    <li class="social-media">Twitter: <a href="https://twitter.com/yourhandle">@yourhandle</a></li>
+    <li class="social-media">Facebook: <a href="

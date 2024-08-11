@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Spice Man Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #d50000;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .button {
+            background-color: #d50000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #a70000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Old Spice: Smells Like a Winner!</h1>
+        <p>Discover how the Old Spice Man social media campaign transformed Procter & Gamble's sales, skyrocketing them to an impressive <strong>800% increase</strong>. The engaging, humorous commercials resonated with audiences, turning the brand into a cultural sensation.</p>
+        <p>Keywords: Old Spice, Procter & Gamble, social campaign, marketing success, fragrance sales, branding strategy.</p>
+        <button class="button" onclick="showMoreInformation()">Learn More</button>
+        <p id="moreInfo" style="display:none; margin-top: 20px;">The "Smell Like a Man" campaign leveraged viral marketing, utilizing platforms like YouTube, Twitter, and Facebook to engage consumers directly, allowing them to interact with the brand and its hilarious character, the Old Spice Man.</p>
+    </div>
+
+    <script>
+        function showMoreInformation() {
+            var moreInfo = document.getElementById("moreInfo");
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

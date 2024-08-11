@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights to Make Relationships Easier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #6200ea;
+            color: white;
+        }
+        h1 {
+            margin: 10px 0;
+        }
+        h2 {
+            color: #6200ea;
+        }
+        .sections {
+            margin: 20px 0;
+            border: 1px solid #6200ea;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: white;
+        }
+        .toggle-button {
+            padding: 10px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Insights for Lasting Relationships</h1>
+        <p>Explore effective strategies that improve communication, trust, and connection.</p>
+    </header>
+
+    <div class="sections">
+        <h2>Effective Communication</h2>
+        <button class="toggle-button" onclick="toggleContent('comms')">Show More</button>
+        <div id="comms" class="content">
+            <p>Active listening and expressing your feelings openly can significantly enhance your connection.</p>
+        </div>
+    </div>
+
+    <div class="sections">
+        <h2>Building Trust</h2>
+        <button class="toggle-button" onclick="toggleContent('trust')">Show More</button>
+        <div id="trust" class="content">
+            <p>Consistency in actions and transparency strengthens your relationship’s foundation.</p>
+        </div>
+    </div>
+
+    <div class="sections">
+        <h2>Quality Time Together</h2>
+        <button class="toggle-button" onclick="toggleContent('time')">Show More</button>
+        <div id="time" class="content">
+            <p>Engaging in shared activities fosters bonding and creates cherished memories.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

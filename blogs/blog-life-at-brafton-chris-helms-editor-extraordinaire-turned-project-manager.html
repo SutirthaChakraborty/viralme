@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the journey of Chris Helms, an extraordinary editor turned project manager at Brafton. Discover the dynamic life and skills he brings to the digital marketing industry.">
+    <title>Life at Brafton - Chris Helms, Editor Extraordinaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life at Brafton</h1>
+        <p>Featuring Chris Helms: Editor Extraordinaire to Project Manager</p>
+    </header>
+    <div class="content">
+        <h2>Meet Chris Helms</h2>
+        <p>Chris Helms has transformed from an exceptional editor to a dynamic project manager at Brafton, refining the process of content creation and digital marketing management.</p>
+        <button id="showSkills">Show Skills</button>
+        <div id="skills" style="display:none;">
+            <h3>Skills & Expertise</h3>
+            <ul>
+                <li>Content Strategy</li>
+                <li>Project Management</li>
+                <li>SEO Optimization</li>
+                <li>Team Collaboration</li>
+                <li>Creative Problem Solving</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById("showSkills").onclick = function() {
+            var skillsDiv = document.getElementById("skills");
+            if (skillsDiv.style.display === "none") {
+                skillsDiv.style.display = "block";
+            } else {
+                skillsDiv.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

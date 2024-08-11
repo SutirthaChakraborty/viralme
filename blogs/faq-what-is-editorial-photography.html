@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about editorial photography, its importance, and how it differs from commercial photography. Explore FAQs and enhance your knowledge on this engaging topic.">
+    <title>FAQ: What is Editorial Photography?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .faq {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 15px;
+            transition: background-color 0.5s;
+        }
+        .faq:hover {
+            background-color: #eaeaea;
+        }
+        .faq h2 {
+            cursor: pointer;
+            margin: 0;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Frequently Asked Questions</h1>
+<div class="faq">
+    <h2 onclick="toggleAnswer(this)">What is Editorial Photography?</h2>
+    <div class="answer">
+        <p>Editorial photography is a genre of photography that aims to illustrate a story or concept within the context of media publications such as magazines, newspapers, or online platforms. Unlike commercial photography, which focuses on selling products, editorial images provide a narrative about a topic.</p>
+    </div>
+</div>
+
+<div class="faq">
+    <h2 onclick="toggleAnswer(this)">What is the purpose of Editorial Photography?</h2>
+    <div class="answer">
+        <p>The purpose of editorial photography is to enhance storytelling. It accompanies articles, interviews, and features, providing a visual representation of the content and engaging the audience on an emotional level.</p>
+    </div>
+</div>
+
+<div class="faq">
+    <h2 onclick="toggleAnswer(this)">How does it differ from Commercial Photography?</h2>
+    <div class="answer">
+        <p>While commercial photography focuses on marketing and sales, editorial photography is about storytelling and conveying messages. Editorial images may not directly promote a product but instead offer context or provoke thought about specific subjects.</p>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>

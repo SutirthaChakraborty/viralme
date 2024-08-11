@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FAQs about cancellation policies for VFX video services from the Big 3 media companies. Learn about terms, conditions, and processes.">
+    <title>VFX Video Cancellation Policies - FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        .question {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            color: #555;
+        }
+        .active {
+            background: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <h1>FAQs: Cancellation Policies for VFX Videos</h1>
+    <div class="faq">
+        <div class="question">1. What is the cancellation policy for Company A?</div>
+        <div class="answer">Company A allows cancellations up to 48 hours before the scheduled video shoot for a full refund. Please refer to their terms for specific conditions.</div>
+    </div>
+    <div class="faq">
+        <div class="question">2. How does Company B handle cancellations?</div>
+        <div class="answer">Company B requires a 50% deposit for all VFX projects. Cancellations made 72 hours in advance will receive a partial refund of the deposit.</div>
+    </div>
+    <div class="faq">
+        <div class="question">3. Are there fees for cancelling with Company C?</div>
+        <div class="answer">Company C charges a cancellation fee of $100 if the project is cancelled less than 48 hours prior to the start date.</div>
+    </div>
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

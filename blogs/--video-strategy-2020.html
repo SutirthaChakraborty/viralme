@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Strategy 2020</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .video-container {
+            text-align: center;
+        }
+        .button {
+            background-color: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Video Strategy 2020</h1>
+</header>
+
+<section>
+    <h2>Introduction to Video Marketing</h2>
+    <p>In 2020, video marketing became essential for brands to engage audiences. Key strategies include:</p>
+    <ul>
+        <li>Creating engaging video content</li>
+        <li>Utilizing social media video</li>
+        <li>Implementing SEO for videos</li>
+        <li>Leveraging live streaming</li>
+    </ul>
+</section>
+
+<section class="video-container">
+    <h2>Watch Our Video Strategy Explained</h2>
+    <iframe id="video" src="https://www.youtube.com/embed/your-video-id" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    <button class="button" onclick="toggleVideo()">Show/Hide Description</button>
+    <p id="description" class="hidden">Watch as we delve into effective video marketing strategies and how to captivate your audience in 2020!</p>
+</section>
+
+<script>
+    function toggleVideo() {
+        const description = document.getElementById('description');
+        description.classList.toggle('hidden');
+    }
+</script>
+
+</body>
+</html>

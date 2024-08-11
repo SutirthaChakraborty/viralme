@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brafton Research Lab Survey 2019 Marketing Goals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .interactive {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brafton Research Lab Survey 2019</h1>
+        <p>Exploring Marketing Goals and Strategies</p>
+    </header>
+    <section>
+        <h2>Key Findings</h2>
+        <p>The 2019 Brafton Research Lab survey revealed that **content marketing** remains a top priority for businesses, with **SEO** and **social media engagement** being critical goals for success.</p>
+    </section>
+    <section>
+        <h2>Marketing Goals</h2>
+        <ul>
+            <li>Increase **organic traffic** by 30%</li>
+            <li>Enhance **brand awareness** through targeted campaigns</li>
+            <li>Boost **email subscriptions** by 25%</li>
+            <li>Improve **conversion rates** via optimized landing pages</li>
+        </ul>
+    </section>
+    <div class="interactive">
+        <h2>Interactive Goal Tracker</h2>
+        <p>Click the button below to simulate achieving your marketing goals!</p>
+        <button onclick="trackGoals()">Track Goals</button>
+        <p id="goalMessage"></p>
+    </div>
+    <script>
+        function trackGoals() {
+            const goals = [
+                "Organic traffic increased by 30%!",
+                "Brand awareness enhanced through campaigns!",
+                "Email subscriptions boosted by 25%!",
+                "Conversion rates improved via landing pages!"
+            ];
+            const randomGoal = goals[Math.floor(Math.random() * goals.length)];
+            document.getElementById("goalMessage").innerText = randomGoal;
+        }
+    </script>
+</body>
+</html>

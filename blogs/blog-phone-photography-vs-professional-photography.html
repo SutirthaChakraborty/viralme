@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the differences between blog phone photography and professional photography. Learn tips for capturing stunning images with your smartphone and the advantages of hiring a professional photographer.">
+    <title>Blog: Phone Photography vs. Professional Photography</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 15px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .toggle {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 100%;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        .content.active {
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Phone Photography vs. Professional Photography</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Phone Photography</h2>
+            <button class="toggle" onclick="toggleContent('phone')">Learn More</button>
+            <div id="phone" class="content">
+                <p>Smartphones have democratized photography, allowing individuals to capture moments on the go.</p>
+                <p>Using specific apps, you can enhance your photos with filters, adjust lighting, and even utilize manual settings.</p>
+                <p>Pros include affordability, accessibility, and convenience, making it perfect for casual photographers and bloggers.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Professional Photography</h2>
+            <button class="toggle" onclick="toggleContent('professional')">Learn More</button>
+            <div id="professional" class="content">
+                <p>Professional photography involves advanced techniques and equipment, producing high-quality images.</p>
+                <p>Professional photographers use DSLRs and mirrorless cameras to achieve superior image quality and creative control.</p>
+                <p>Advantages include expert composition, lighting mastery, and the ability to capture unique moments effectively.</p>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <p>Discover more about photography tips and techniques on our blog!</p>
+    </div>
+    <script>
+        function toggleContent(section) {
+            const content = document.getElementById(section);
+            content.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

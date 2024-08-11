@@ -1,0 +1,78 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog News: Google Dominance in Internet Marketing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #42b88e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            underline: none;
+            text-decoration: underline;
+        }
+
+        .keyword-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .keyword {
+            font-weight: bold;
+            color: #42b88e;
+            cursor: pointer;
+        }
+
+        .keyword:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleExplanation(keyword) {
+            const explanations = document.getElementsByClassName("keyword-explanation");
+            for (let i = 0; i < explanations.length; i++) {
+                explanations[i].style.display = "none";
+            }
+            const explanation = document.getElementById(keyword + "-explanation");
+            explanation.style.display = (explanation.style.display === "none") ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog News: Google Dominance in Internet Marketing</h1>
+        <p>Google continues to be a pivotal player in the world of internet marketing, driving <a href="#" onclick="toggleExplanation('keyword1')">relevant keywords</a

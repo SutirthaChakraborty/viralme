@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Cynet cybersecurity videos for insights on threat detection, prevention, and response. Stay informed on the latest cybersecurity practices.">
+    <title>Cynet Cybersecurity Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .video {
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .video:hover {
+            transform: scale(1.05);
+        }
+        .info {
+            margin-top: 15px;
+            padding: 10px;
+            text-align: center;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .toggle-info {
+            cursor: pointer;
+            color: #007bff;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cynet Cybersecurity Videos</h1>
+    <p>Empowering users with cybersecurity knowledge</p>
+</header>
+
+<div class="video-container">
+    <div class="video" onclick="toggleInfo('info1')">
+        <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+        <div class="info" id="info1" style="display: none;">
+            <p>This video explains threat detection techniques and strategies used in cybersecurity.</p>
+        </div>
+        <div class="toggle-info">Toggle Info</div>
+    </div>
+    <div class="video" onclick="toggleInfo('info2')">
+        <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+        <div class="info" id="info2" style="display: none;">
+            <p>Learn about cyber threat prevention methods in this insightful video.</p>
+        </div>
+        <div class="toggle-info">Toggle Info</div>
+    </div>
+    <div class="video" onclick="toggleInfo('info3')">
+        <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+        <div class="info" id="info3" style="display: none;">
+            <p>This video focuses on incident response and what to do when a breach occurs.</p>
+        </div>
+        <div class="toggle-info">Toggle Info</div>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(infoId) {
+        var info = document.getElementById(infoId);
+        if (info.style.display === "none") {
+            info.style.display = "block";
+        } else {
+            info.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

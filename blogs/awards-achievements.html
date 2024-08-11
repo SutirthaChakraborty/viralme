@@ -1,0 +1,57 @@
+#### Generating HTML Code for Awards and Achievements Topic
+
+Creating an HTML code snippet with CSS and interactive JavaScript to showcase awards and achievements.
+
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards and Achievements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            color: #2e86c1;
+        }
+        .award {
+            border: 2px solid #2e86c1;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .award:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Awards and Achievements</h1>
+    <div class="award">
+        <h2>Outstanding Performance Award</h2>
+        <p>Received for exceptional contributions to the company's success.</p>
+    </div>
+    <div class="award">
+        <h2>Scholarship Achievement</h2>
+        <p>Awarded for academic excellence and dedication to learning.</p>
+    </div>
+    <script>
+        const awards = document.querySelectorAll('.award');
+        awards.forEach(award => {
+            award.addEventListener('click', () => {
+                alert('Congratulations on your achievement!');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+This HTML code snippet includes CSS for styling and an interactive JavaScript function that triggers an alert message upon clicking on each award box.

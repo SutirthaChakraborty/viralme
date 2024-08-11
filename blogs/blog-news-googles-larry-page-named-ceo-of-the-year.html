@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Larry Page named CEO of the Year, highlighting his impact on technology and innovation at Google.">
+    <title>Larry Page Named CEO of the Year</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4285F4;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #34A853;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #28A745;
+        }
+        .summary {
+            display: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Larry Page: CEO of the Year</h1>
+</header>
+
+<article>
+    <h2>The Visionary Leader Behind Google</h2>
+    <p>Larry Page, co-founder of Google, has been recognized as the CEO of the Year for his innovative leadership and commitment to technological advancements. His vision continues to shape the future of the tech industry.</p>
+    <button onclick="toggleSummary()">Read More</button>
+    <div class="summary">
+        <p>Under Page's leadership, Google has made significant strides in areas such as artificial intelligence, cloud computing, and sustainable energy solutions. His approach emphasizes creativity, collaboration, and user-centric experiences, setting a standard for future leaders.</p>
+    </div>
+</article>
+
+<script>
+    function toggleSummary() {
+        var summary = document.querySelector('.summary');
+        if (summary.style.display === "none" || summary.style.display === "") {
+            summary.style.display = "block";
+        } else {
+            summary.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>

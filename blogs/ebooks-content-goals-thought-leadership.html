@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebooks: Content Goals & Thought Leadership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .goal {
+            margin: 20px 0;
+            padding: 10px;
+            border-left: 5px solid #007BFF;
+            background-color: #e9f7ff;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .interactive {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e2f0d9;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Understanding Ebooks: Content Goals & Thought Leadership</h1>
+        <div class="goal">
+            <h2>Goal 1: Lead Generation</h2>
+            <p>The primary goal of your ebook should be to generate leads for your sales team. Choose topics that resonate with your audience.</p>
+        </div>
+        <div class="goal">
+            <h2>Goal 2: Establishing Authority</h2>
+            <p>Position your brand as a thought leader in your industry by providing valuable insights and information.</p>
+        </div>
+        <button onclick="toggleInteractive()">Learn More</button>
+        <div class="interactive" id="interactiveContent">
+            <h3>Interactive Insights</h3>
+            <p>Conduct keyword research to uncover trends and better reach users interested in your topic. This enhances visibility and credibility.</p>
+        </div>
+    </div>
+    <script>
+        function toggleInteractive() {
+            var content = document.getElementById("interactiveContent");
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

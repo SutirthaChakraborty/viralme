@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary: Banner Ads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .glossary-term {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #007bff;
+            background-color: #ffffff;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .glossary-term:hover {
+            background-color: #e7f1ff;
+            transform: scale(1.02);
+        }
+
+        .definition {
+            display: none;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Glossary of Banner Ads</h1>
+</header>
+
+<div class="glossary-term">
+    <h2>What are Banner Ads?</h2>
+    <button onclick="toggleDefinition(this)">Show Definition</button>
+    <p class="definition">Banner ads are online advertisements that are displayed on web pages, often using graphical images and text to promote products or services.</p>
+</div>
+
+<div class="glossary-term">
+    <h2>Click-Through Rate (CTR)</h2>
+    <button onclick="toggleDefinition(this)">Show Definition</button>
+    <p class="definition">Click-Through Rate (CTR) is a metric that measures the number of clicks an ad receives divided by the number of times it is shown (impressions).</p>
+</div>
+
+<div class="glossary-term">
+    <h2>Impressions</h2>
+    <button onclick="toggleDefinition(this)">Show Definition</button>
+    <p class="definition">Impressions refer to the number of times an ad is displayed on a webpage, regardless of whether it is clicked.</p>
+</div>
+
+<div class="glossary-term">
+    <h2>Conversion Rate</h2>
+    <button onclick="toggleDefinition(this)">Show Definition</button>
+    <p class="definition">Conversion Rate is the percentage of users who take a desired action after clicking on a banner ad, such as purchasing a product or signing up for a service.</p>
+</div>
+
+<script>
+    function toggleDefinition(button) {
+        const definition = button.nextElementSibling;
+        if (definition.style.display === "none" || definition.style.display === "") {
+            definition.style.display = "block";
+            button.textContent = "Hide Definition";
+        } else {
+            definition.style.display = "none";
+            button.textContent = "Show Definition";
+        }
+    }
+</script>
+
+</body>
+</html>
