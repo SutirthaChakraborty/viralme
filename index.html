@@ -747,10 +747,15 @@
   }
 </style>
 
-
-<div style="height:1px;overflow:hidden;position:absolute;left:-9999px;">
-  <?php include 'seo_links.html'; ?>
-</div>
+<div id="seo-links"></div>
+<script>
+fetch('links.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('seo-links').innerHTML = data;
+  })
+  .catch(error => console.error('Error loading SEO links:', error));
+</script>
 
 </body>
 </html>
