@@ -675,29 +675,32 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-      const whatsappButton = document.querySelector('.whatsapp_float');
-      let isDragging = false;
+      const floatButtons = document.querySelectorAll('.whatsapp_float, .facebook_float, .instagram_float, .youtube_float');
+      floatButtons.forEach(function(button) {
+          let isDragging = false;
+          let offsetX, offsetY;
 
-      whatsappButton.addEventListener('mousedown', function(e) {
-          isDragging = true;
-          const offsetX = e.clientX - whatsappButton.getBoundingClientRect().left;
-          const offsetY = e.clientY - whatsappButton.getBoundingClientRect().top;
+          button.addEventListener('mousedown', function(e) {
+              isDragging = true;
+              offsetX = e.clientX - button.getBoundingClientRect().left;
+              offsetY = e.clientY - button.getBoundingClientRect().top;
 
-          function mouseMoveHandler(e) {
-              if (isDragging) {
-                  whatsappButton.style.left = `${e.clientX - offsetX}px`;
-                  whatsappButton.style.top = `${e.clientY - offsetY}px`;
+              function mouseMoveHandler(e) {
+                  if (isDragging) {
+                      button.style.left = `${e.clientX - offsetX}px`;
+                      button.style.top = `${e.clientY - offsetY}px`;
+                  }
               }
-          }
 
-          function mouseUpHandler() {
-              isDragging = false;
-              document.removeEventListener('mousemove', mouseMoveHandler);
-              document.removeEventListener('mouseup', mouseUpHandler);
-          }
+              function mouseUpHandler() {
+                  isDragging = false;
+                  document.removeEventListener('mousemove', mouseMoveHandler);
+                  document.removeEventListener('mouseup', mouseUpHandler);
+              }
 
-          document.addEventListener('mousemove', mouseMoveHandler);
-          document.addEventListener('mouseup', mouseUpHandler);
+              document.addEventListener('mousemove', mouseMoveHandler);
+              document.addEventListener('mouseup', mouseUpHandler);
+          });
       });
   });
 </script>
@@ -709,7 +712,6 @@
   <img src="img/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
 </a>
 
-
 <!-- Facebook Floating Button -->
 <a href="https://www.facebook.com/profile.php?id=61563558449291" class="facebook_float" target="_blank">
   <img src="img/facebook.png" alt="Facebook" class="facebook-icon">
@@ -719,6 +721,12 @@
 <a href="https://www.instagram.com/viralme.eu" class="instagram_float" target="_blank">
   <img src="img/insta.png" alt="Instagram" class="instagram-icon">
 </a>
+
+<!-- YouTube Floating Button -->
+<a href="https://www.youtube.com/@ViralmeOfficial" class="youtube_float" target="_blank">
+  <img src="img/youtube.png" alt="YouTube" class="youtube-icon">
+</a>
+
 
 <h1 align="center"> Best Affordable Video Production and Promo in Dublin, Ireland</h1>
 <div class="hashtag-marquee">
@@ -745,17 +753,27 @@
     width: 100%;
     white-space: nowrap;
   }
-</style>
 
-<div id="seo-links"></div>
-<script>
-fetch('links.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('seo-links').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading SEO links:', error));
-</script>
+  .blog-link {
+    text-align: center;      /* Center the link horizontally */
+    font-size: 12px;         /* Make the text smaller */
+    margin: 20px 0;          /* Add some vertical spacing */
+  }
+
+  .blog-link a {
+    color: #333;             /* Set the link color */
+    text-decoration: none;   /* Remove underline */
+  }
+
+  .blog-link a:hover {
+    text-decoration: underline;  /* Underline on hover */
+  }
+
+
+</style>
+<div class="blog-link">
+  <a href="links.html">Blogs</a>
+</div>
 
 </body>
 </html>

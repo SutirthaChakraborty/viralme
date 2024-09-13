@@ -2554,56 +2554,47 @@ display:none;
 }
 
 
-/* WhatsApp Floating Button */
+/* Floating Buttons Styling */
+.whatsapp_float,
+.facebook_float,
+.instagram_float,
+.youtube_float {
+  position: fixed;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
 .whatsapp_float {
-    position: fixed;
-    bottom: 180px; /* Adjusted to be above Instagram */
-    right: 40px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;
-    cursor: pointer;
+  bottom: 20px;
 }
 
-.whatsapp_float img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 2px 2px 3px #999;
-}
-
-/* Instagram Floating Button */
-.instagram_float {
-    position: fixed;
-    bottom: 110px; /* Positioned between WhatsApp and Facebook */
-    right: 40px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;
-    cursor: pointer;
-}
-
-.instagram_float img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 2px 2px 3px #999;
-}
-
-/* Facebook Floating Button */
 .facebook_float {
-    position: fixed;
-    bottom: 40px; /* Remains at the bottom */
-    right: 40px;
-    width: 60px;
-    height: 60px;
-    z-index: 1000;
-    cursor: pointer;
+  bottom: 80px;
 }
 
-.facebook_float img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: 2px 2px 3px #999;
+.instagram_float {
+  bottom: 140px;
+}
+
+.youtube_float {
+  bottom: 200px;
+}
+
+.whatsapp_float img,
+.facebook_float img,
+.instagram_float img,
+.youtube_float img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Optional Hover Effect */
+.whatsapp_float img:hover,
+.facebook_float img:hover,
+.instagram_float img:hover,
+.youtube_float img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
