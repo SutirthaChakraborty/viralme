@@ -1,0 +1,69 @@
+<div class="header-menu mt-50" id="sticky-header">
+    <div class="container">
+        <div class="row">
+            <!-- Logo Area Start -->
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="logo-img">
+                    <a href="{{ url_for('home.home') }}"><img src="{{ url_for('static', filename='images/logos/logo.png') }}" alt=""></a>
+                </div>
+            </div>
+            <!-- Logo Area End -->
+            <!-- Menu Area Start -->
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="main-menu text-right">
+                    <nav>
+                        <ul>
+                            <li {% if request.endpoint == 'home.home' %}class="active"{% endif %}><a href="{{ url_for('home.home') }}">Home</a></li>
+                            <li {% if request.endpoint == 'about.about' %}class="active"{% endif %}><a href="{{ url_for('about.about') }}">About us</a></li>
+                            <li><a href="#">Services</a>
+                                <ul>
+                                    <li><a href="#">Corporate Video Production</a></li>
+                                    <li><a href="#">Event Video Production</a></li>
+                                    <li><a href="#">Marketing Video Production</a></li>
+                                    <li><a href="#">Product Video Production</a></li>
+                                </ul>
+                            </li>
+
+                            <li {% if request.endpoint == 'portfolio.portfolio'%} class="active" {% endif%}><a href="{{ url_for('portfolio.portfolio') }}">Our Works</a></li>
+                            <li {% if request.endpoint == 'blog_archive.blog_archive'%} class="active" {% endif %}><a href="{{ url_for('blog_archive.blog_archive') }}">Blogs</a></li>
+                            <li {% if request.endpoint == 'contact.contact'%} class="active" {% endif %}><a href="{{ url_for('contact.contact') }}">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Header Menu Area Start -->
+        </div>
+    </div>
+    <!-- MOBILE-MENU-AREA START -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="mobile-area">
+                        <div class="mobile-menu">
+                            <nav id="mobile-nav">
+                                <ul>
+                                    <li><a href="{{ url_for('home.home') }}">Home</a></li>
+                                    <li><a href="{{ url_for('about.about') }}">About us</a></li>
+                                    <li><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="#">Corporate Video Production</a></li>
+                                            <li><a href="#">Event Video Production</a></li>
+                                            <li><a href="#">Marketing Video Production</a></li>
+                                            <li><a href="#">Product Video Production</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="{{ url_for('portfolio.portfolio') }}">Our Works</a></li>
+                                    <li><a href="{{ url_for('blog_archive.blog_archive') }}">Blogs</a></li>
+                                    <li><a href="{{ url_for('contact.contact') }}">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MOBILE-MENU-AREA END  -->
+</div>

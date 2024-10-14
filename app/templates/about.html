@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>About Us | Viral Me</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/home-one/apple-touch-icon.html') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/logos/fav-icon.png') }}">
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shortcode/shortcodes.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
+</head>
+
+<body>
+
+
+    <!-- Page Wraper Here Start -->
+    <div class="page-wraper" id="main-home">
+        <!-- Header Area Start -->
+        <header>
+            <!-- Header Menu Area Start -->
+            {% include "partials/header.html" %}
+            <!-- Header Menu Area Start -->
+            <!-- Breadcamb Area Start -->
+            <section class="breadcamb-area bg-17 bg-overlay-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bradcamb-content text-center text-white text-uppercase">
+                                <h1>ABOUT US</h1>
+                                <ul>
+                                    <li><a href="{{ url_for('home.home') }}">HOME <span>/</span></a></li>
+                                    <li><a href="{{ url_for('about.about') }}">ABOUT US</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Breadcamb Area End -->
+        </header>
+        <!-- Header Area End -->
+        <!-- Page Content Start -->
+        <div class="page-content">
+
+            <section class="aboutus-area-actor gray-dark-bg ptb-90">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-12 col-sm-12">
+                            <div class="about-actor-left">
+                                <h3>Who we <span>are ?</span></h3>
+
+                                <div class="text mt-20">
+                                    {% for about in about %}
+                                        {{ about[2] | safe }}
+                                    {% endfor %}
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-sm-12">
+                            <div class="actor-about-image">
+                                <img src="{{ url_for('static', filename='img/home-actor/about/about.png') }}" alt="">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="service-area service-style-two pt-100 pb-70 indicator-style">
+                <div class="container">
+                    <div class="row">
+                        <!-- Single Item -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="service-single text-center">
+                                <div class="servce-icon">
+                                    <i class="icofont icofont-ui-video-play"></i>
+                                </div>
+                                <div class="service-details">
+                                    <h4><a href="#">Corporate Video Production</a></h4>
+                                    <p>Craft compelling corporate messages that resonate with your audience. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="service-single text-center">
+                                <div class="servce-icon">
+                                    <i class="icofont icofont-video-cam"></i>
+                                </div>
+                                <div class="service-details">
+                                    <h4><a href="#">Event Video Production</a></h4>
+                                    <p>Capture the essence of your events with professional videography.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="service-single text-center">
+                                <div class="servce-icon">
+                                    <i class="icofont icofont-movie"></i>
+                                </div>
+                                <div class="service-details">
+                                    <h4><a href="#">Marketing Video Production</a></h4>
+                                    <p>Create engaging content to promote your brand and products.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+                        <!-- Single Item -->
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="service-single text-center">
+                                <div class="servce-icon">
+                                    <i class="icofont icofont-record"></i>
+                                </div>
+                                <div class="service-details">
+                                    <h4><a href="#">Product Video Production</a></h4>
+                                    <p>Showcase your products with high-quality video presentations. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Item -->
+
+
+                    </div>
+                    <!-- Service Single Item Area End -->
+                </div>
+            </section>
+
+        </div>
+        <!-- Page Content End -->
+        <!-- Footer Area Start -->
+        {% include 'partials/footer.html' %}
+        <!-- Footer Area End -->
+    </div>
+    <!-- Page Wraper Here Start -->
+
+    <!-- all js here -->
+    <script src="{{ url_for('static', filename='js/vendor/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/vendor/jquery-migrate-3.3.2.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/popper.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/plugins.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>

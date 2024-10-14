@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blogs | Viral Me</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/home-one/apple-touch-icon.html') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/logos/fav-icon.png') }}">
+
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shortcode/shortcodes.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js')}}"></script>
+</head>
+
+<body>
+    
+
+    <!-- Page Wraper Here Start -->
+    <div class="page-wraper" id="main-home">
+        <!-- Header Area Start -->
+        <header>
+            <!-- Header Menu Area Start -->
+            {% include "partials/header.html" %}
+            <!-- Header Menu Area Start -->
+            <!-- Breadcamb Area Start -->
+            <section class="breadcamb-area bg-17 bg-overlay-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bradcamb-content text-center text-white text-uppercase">
+                                <h1>Blogs Title</h1>
+                                <ul>
+                                    <li><a href="{{ url_for('home.home') }}">HOME <span>/</span></a></li>
+                                    <li>Blogs Title</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Breadcamb Area End -->
+        </header>
+        <!-- Header Area End -->
+        <!-- Page Content Start -->
+        <div class="page-content">
+
+          <div class="news-details-area ptb-100">
+					<div class="container">
+						<div class="row">
+							<!-- Service Details Left Sidebar Start -->
+							<div class="col-lg-12 col-md-12 col-sm-12">
+								<div class="service-details-content">
+									<div class="serv-image mb-40">
+										<img src="{{ url_for('static', filename='img/service/service-details-two.jpg') }}" alt="service">
+									</div>
+									<div class="blog-content">
+	                                    <h2>{{ blog[1] }}</h2>
+	                                    <div class="blog-date-categori">
+	                                        <ul>
+	                                            <li>{{blog[6]}}}</li>
+	                                            <li>{{blog[3]}}</li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                                <div class="dec-img-wrapper">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="dec-img">
+													<img src="{{ url_for('static', filename='img/news-details/1.jpg') }}" alt="">
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+												<div class="dec-img dec-mrg">
+													<img src="{{ url_for('static', filename='img/news-details/2.jpg') }}" alt="">
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+									{{blog[2] | safe}}
+	                                <div class="blog-dec-tags-social">
+	                                    <div class="blog-dec-tags">
+	                                        <ul>
+	                                            <li><a href="#">Film</a></li>
+	                                            <li><a href="#">Maker</a></li>
+	                                            <li><a href="#">Editing</a></li>
+	                                        </ul>
+	                                    </div>
+	                                    <div class="blog-dec-social">
+	                                        <span>share :</span>
+	                                        <ul>
+	                                            <li><a href="#"><i class="icofont icofont-facebook"></i></a></li>
+	                                            <li><a href="#"><i class="icofont icofont-twitter"></i></a></li>
+	                                            <li><a href="#"><i class="icofont icofont-pinterest"></i></a></li>
+	                                            <li><a href="#"><i class="icofont icofont-instagram"></i></a></li>
+	                                        </ul>
+	                                    </div>
+	                                </div>
+	                                <div class="administrator-wrapper">
+	                                    <div class="administrator-img">
+	                                        <img src="{{ url_for('static', filename='img/news-details/blog-administrator.png') }}" alt=""/>
+	                                    </div>
+	                                    <div class="administrator-content">
+	                                        <h4>{{blog[4]}}</h4>
+	                                        <p>{{blog[5]}}</p>
+	                                    </div>
+	                                </div>
+								</div>
+								<div class="blog-comment-wrapper mt-40">
+	                                <h4 class="blog-dec-title">COMMENTS :</h4>
+									{% for comment in comments %}
+										<div class="single-comment-wrapper mt-35">
+											<div class="blog-comment-img">
+												<img src="{{ url_for('static', filename='img/news-details/blog-comment1.png') }}" alt=""/>
+											</div>
+											<div class="blog-comment-content">
+												<h4>{{comment[2]}}</h4>
+												<span>{{ comment[5] }}</span>
+												<p>{{comment[4]}}</p>
+												<div class="blog-btn">
+													<a href="news-details.html">Read More</a>
+												</div>
+											</div>
+										</div>
+									{% endfor %}
+	                            </div>
+	                            <div class="blog-reply-wrapper mt-50">
+	                                <h4 class="blog-dec-title">POST A COMMENT</h4>
+	                                <form action="{{ url_for('blog.comment', blog_id=blog[0]) }}" method="POST">
+	                                    <div class="row">
+	                                        <div class="col-md-6">
+	                                            <div class="leave-form">
+	                                                <input type="text" placeholder="Full Name" name="name" required>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-6">
+	                                            <div class="leave-form">
+	                                                <input type="email" placeholder="Eail Address" name="email" required>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-12">
+	                                            <div class="text-leave">
+	                                                <textarea placeholder="Massage" name="message" required></textarea>
+	                                                <input type="submit" value="SEND MASSAGE">
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </form>
+	                            </div>
+							</div>
+							<!-- Service Details Left Sidebar End -->
+						</div>
+					</div>
+				</div>
+
+        </div>
+        <!-- Page Content End -->
+        <!-- Footer Area Start -->
+        {% include 'partials/footer.html' %}
+        <!-- Footer Area End -->
+    </div>
+    <!-- Page Wraper Here Start -->
+
+    <!-- all js here -->
+    <script src="{{ url_for('static', filename='js/vendor/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vendor/jquery-migrate-3.3.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

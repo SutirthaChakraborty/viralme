@@ -1,0 +1,141 @@
+<footer class="bg-5 bg-overlay-2">
+    <!-- Footer Top Area Start -->
+    <div class="footer-top ptb-90">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Single Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-single">
+                        <h5>STAY WITH US</h5>
+                        <div class="stay-with-content">
+                            <p>From expert scriptwriting to compelling storytelling, we cover all aspects of
+                                professional video production in Ireland.<a href="#">Read More</a> </p>
+                            <div class="subcribe">
+                                <form id="mc-form" action="{{ url_for('subscribe') }}" method="post">
+                                    <input autocomplete="off" placeholder="Your E-mail" type="text" name="email">
+                                    <button value="Submit" type="submit" class="search-button">SUBSCRIBE</button>
+                                    <!-- mailchimp-alerts Start -->
+                                    <div class="mailchimp-alerts text-centre">
+                                        <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                        <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                        <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                                    </div>
+                                    <!-- mailchimp-alerts end -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Single Item -->
+                <!-- Footer Single Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-single">
+                        <h5>SERVICES</h5>
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Corporate Video Production</a></li>
+                                <li><a href="#">Event Video Production</a></li>
+                                <li><a href="#">Marketing Video Production</a></li>
+                                <li><a href="#">Product Video Production</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Single Item -->
+                <!-- Footer Single Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-single">
+                        <h5>IMPORTANT LINK</h5>
+                        <div class="footer-menu">
+                            <ul>
+                                <li {% if request.endpoint == 'home.home' %} class="active" {% endif %}><a href="{{ url_for('home.home') }}">Home</a></li>
+                                <li {% if request.endpoint == 'about.about' %} class="active" {% endif %}><a href="{{ url_for('about.about') }}">About us</a></li>
+                                <li {% if request.endpoint == 'portfolio.portfolio' %} class="active" {% endif %}><a href="{{ url_for('portfolio.portfolio') }}">Our Works</a></li>
+                                <li{% if request.endpoint == 'blog_archive.blog_archive' %} class="active" {% endif %}><a href="{{ url_for('blog_archive.blog_archive') }}">Blogs</a></li>
+                                <li {% if request.endpoint == 'contact.contact' %} class="active" {% endif %}><a href="{{ url_for('contact.contact') }}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Single Item -->
+                <!-- Footer Single Item -->
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-single">
+                        <h5>QUICK CONTACT</h5>
+                        <div class="contact-info">
+                            <ul>
+                                <li>
+                                    <p>Address: Maynooth, Ireland</p>
+                                </li>
+                                <li>
+                                    <p>Phone: +353 894 376007</p>
+                                </li>
+                                <li>
+                                    <p>E-mail: contact.viralme.ie@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Single Item -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer Top Area End -->
+    <!-- Footer Bottom Area Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-bottom">
+                    <div class="footer-left">
+                        <p>© 2024 <b class="text-white">Viral Me</b> Made by <a href="#"><b> Sutirtha</b></a></p>
+                    </div>
+                    <div class="footer-right-social f-right">
+                        <ul>
+                            <li><a href="#"><i class="icofont icofont-facebook"></i></a></li>
+                            <li><a href="#"><i class="icofont icofont-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icofont icofont-twitter"></i></a></li>
+                            <li><a href="#"><i class="icofont icofont-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom Area End -->
+</footer>
+<script>
+    // Get the form element
+    const form = document.getElementById('mc-form');
+
+    // Add an event listener to the form submission
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Get the email address from the form
+        const email = document.querySelector('input[name="email"]').value;
+
+        // Send a POST request to the /subscribe route
+        fetch('/subscribe', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `email=${email}`
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            // Handle the response from the server
+            if (data.success) {
+                // Show a success message to the subscriber
+                document.querySelector('.mailchimp-success').innerHTML = 'Thank you for subscribing!';
+            } else {
+                // Show an error message to the subscriber
+                document.querySelector('.mailchimp-error').innerHTML = 'Error subscribing. Please try again.';
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+    });
+</script>

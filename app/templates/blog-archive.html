@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blog Title | Viral Me</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/home-one/apple-touch-icon.html') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/logos/fav-icon.png') }}">
+    <!-- Place favicon.ico in the root directory -->
+
+
+    <!-- all css here -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/plugins.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shortcode/shortcodes.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3.min.js') }}"></script>
+</head>
+
+<body>
+ 
+
+    <!-- Page Wraper Here Start -->
+    <div class="page-wraper" id="main-home">
+        <!-- Header Area Start -->
+        <header>
+            <!-- Header Menu Area Start -->
+            {% include "partials/header.html" %}
+            <!-- Header Menu Area Start -->
+            <!-- Breadcamb Area Start -->
+            <section class="breadcamb-area bg-17 bg-overlay-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bradcamb-content text-center text-white text-uppercase">
+                                <h1>Blogs</h1>
+                                <ul>
+                                    <li><a href="{{ url_for('home.home') }}">HOME <span>/</span></a></li>
+                                    <li>Blogs</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Breadcamb Area End -->
+        </header>
+        <!-- Header Area End -->
+        <!-- Page Content Start -->
+        <div class="page-content">
+
+           <section class="service-area-actor ptb-90">
+					<div class="container">
+						<div class="row">
+							<!-- Section Titel -->
+							<div class="col-md-12">
+								<div class="section-titel-img text-center mb-45">
+									<h2>My Recent Blogs</h2>
+									<p>It is a long established fact that a reader will be distracted readable </p>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="row">
+							{% for blog in blogs %}
+								<div class="col-lg-4 col-md-6 col-sm-12">
+									<div class="recent-news-single">
+										<div class="news-thumbnail">
+											<a href="{{ url_for('blog_single.blog_single', id=blog[0]) }}"><img src="{{ url_for('static', filename='img/home-actor/news/1.png') }}" alt=""></a>
+										</div>
+										<div class="news-content">
+											<h4><a href="{{ url_for('blog_single.blog_single', id=blog[0]) }}">{{ blog[1]}}</a></h4>
+											<div class="news-meta">
+												<span>{{ blog[6] }}</span>
+												<span>By<a href="#"> {{blog[4]}}</a></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</section>
+
+        </div>
+        <!-- Page Content End -->
+        <!-- Footer Area Start -->
+        {% include 'partials/footer.html' %}
+        <!-- Footer Area End -->
+    </div>
+    <!-- Page Wraper Here Start -->
+
+    <!-- all js here -->
+    <script src="{{ url_for('static', filename='js/vendor/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/vendor/jquery-migrate-3.3.2.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
